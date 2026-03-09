@@ -11,20 +11,23 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>科研工具集</h1>
-            <p class="subtitle">Research Tools Hub - 提升科研效率的工具集合</p>
+        <div class="container header-flex">
+            <button id="langToggle" class="lang-toggle" onclick="toggleLanguage()">🌐 EN</button>
+            <div>
+                <h1 data-i18n="site.title">科研工具集</h1>
+                <p class="subtitle" data-i18n="site.subtitle">Research Tools Hub - 提升科研效率的工具集合</p>
+            </div>
         </div>
     </header>
 
     <nav class="main-nav">
         <div class="container">
             <ul>
-                <li><a href="#home" class="nav-link active">首页</a></li>
-                <li><a href="#latex" class="nav-link">LaTeX工具</a></li>
-                <li><a href="#svg" class="nav-link">SVG编辑器</a></li>
-                <li><a href="#models" class="nav-link">神经网络模型库</a></li>
-                <li><a href="#resources" class="nav-link">科研资源</a></li>
+                <li><a href="#home" class="nav-link active" data-i18n="nav.home">首页</a></li>
+                <li><a href="#latex" class="nav-link" data-i18n="nav.latex">LaTeX工具</a></li>
+                <li><a href="#svg" class="nav-link" data-i18n="nav.svg">SVG编辑器</a></li>
+                <li><a href="#models" class="nav-link" data-i18n="nav.models">神经网络模型库</a></li>
+                <li><a href="#resources" class="nav-link" data-i18n="nav.resources">科研资源</a></li>
             </ul>
         </div>
     </nav>
@@ -32,34 +35,34 @@
     <main class="container">
         <!-- 首页 -->
         <section id="home" class="section active">
-            <h2>欢迎使用科研工具集</h2>
+            <h2 data-i18n="home.welcome">欢迎使用科研工具集</h2>
             <div class="tool-cards">
                 <div class="card" onclick="navigateTo('latex')">
-                    <h3>📝 LaTeX格式化工具</h3>
-                    <p>格式化、美化和预览LaTeX代码</p>
+                    <h3 data-i18n="home.latex.title">📝 LaTeX格式化工具</h3>
+                    <p data-i18n="home.latex.desc">格式化、美化和预览LaTeX代码</p>
                 </div>
                 <div class="card" onclick="navigateTo('svg')">
-                    <h3>🎨 SVG图片编辑器</h3>
-                    <p>在线创建和编辑SVG矢量图形</p>
+                    <h3 data-i18n="home.svg.title">🎨 SVG图片编辑器</h3>
+                    <p data-i18n="home.svg.desc">在线创建和编辑SVG矢量图形</p>
                 </div>
                 <div class="card" onclick="navigateTo('models')">
-                    <h3>🧠 神经网络模型库</h3>
-                    <p>常见神经网络架构图示例</p>
+                    <h3 data-i18n="home.models.title">🧠 神经网络模型库</h3>
+                    <p data-i18n="home.models.desc">常见神经网络架构图示例</p>
                 </div>
                 <div class="card" onclick="navigateTo('resources')">
-                    <h3>📚 科研资源导航</h3>
-                    <p>论文、会议、期刊等资源整合</p>
+                    <h3 data-i18n="home.resources.title">📚 科研资源导航</h3>
+                    <p data-i18n="home.resources.desc">论文、会议、期刊等资源整合</p>
                 </div>
             </div>
         </section>
 
         <!-- LaTeX工具 -->
         <section id="latex" class="section">
-            <h2>LaTeX 格式化工具</h2>
+            <h2 data-i18n="latex.heading">LaTeX 格式化工具</h2>
             <div class="tool-container-three">
                 <div class="editor-panel">
-                    <h3>输入LaTeX代码</h3>
-                    <textarea id="latexInput" placeholder="在此输入LaTeX代码...
+                    <h3 data-i18n="latex.input.heading">输入LaTeX代码</h3>
+                    <textarea id="latexInput" data-i18n="latex.input.placeholder" placeholder="在此输入LaTeX代码...
 
 示例:
 \begin{equation}
@@ -71,46 +74,46 @@ E = mc^2
 \nabla \times \mathbf{B} &= \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial \mathbf{E}}{\partial t}
 \end{align}"></textarea>
                     <div class="button-group">
-                        <button onclick="formatLatex()">格式化代码</button>
-                        <button onclick="clearLatex()">清空</button>
-                        <button onclick="copyLatex()">复制结果</button>
+                        <button onclick="formatLatex()" data-i18n="latex.btn.format">格式化代码</button>
+                        <button onclick="clearLatex()" data-i18n="latex.btn.clear">清空</button>
+                        <button onclick="copyLatex()" data-i18n="latex.btn.copy">复制结果</button>
                     </div>
                 </div>
                 <div class="output-panel">
-                    <h3>格式化结果</h3>
-                    <pre id="latexOutput" class="output-box">格式化后的代码将显示在这里...</pre>
+                    <h3 data-i18n="latex.output.heading">格式化结果</h3>
+                    <pre id="latexOutput" class="output-box" data-i18n="latex.output.placeholder">格式化后的代码将显示在这里...</pre>
                 </div>
                 <div class="preview-panel">
-                    <h3>实时预览</h3>
+                    <h3 data-i18n="latex.preview.heading">实时预览</h3>
                     <div id="latexPreview" class="preview-box">
-                        <p class="preview-placeholder">数学公式预览将显示在这里...</p>
+                        <p class="preview-placeholder" data-i18n="latex.preview.placeholder">数学公式预览将显示在这里...</p>
                     </div>
                     <div class="button-group">
-                        <button onclick="renderLatexPreview()">渲染预览</button>
-                        <button onclick="toggleAutoPreview()" id="autoPreviewBtn">开启自动预览</button>
+                        <button onclick="renderLatexPreview()" data-i18n="latex.btn.render">渲染预览</button>
+                        <button onclick="toggleAutoPreview()" id="autoPreviewBtn" data-i18n="latex.btn.autopreview.on">开启自动预览</button>
                     </div>
                 </div>
             </div>
             <div class="latex-tips">
-                <h3>常用LaTeX命令参考</h3>
+                <h3 data-i18n="latex.tips.heading">常用LaTeX命令参考</h3>
                 <div class="tips-grid">
                     <div class="tip-item">
-                        <strong>分数:</strong> <code>\frac{a}{b}</code>
+                        <strong data-i18n="latex.tip.frac">分数:</strong> <code>\frac{a}{b}</code>
                     </div>
                     <div class="tip-item">
-                        <strong>上下标:</strong> <code>x^2, x_i</code>
+                        <strong data-i18n="latex.tip.sup">上下标:</strong> <code>x^2, x_i</code>
                     </div>
                     <div class="tip-item">
-                        <strong>希腊字母:</strong> <code>\alpha, \beta, \gamma</code>
+                        <strong data-i18n="latex.tip.greek">希腊字母:</strong> <code>\alpha, \beta, \gamma</code>
                     </div>
                     <div class="tip-item">
-                        <strong>求和:</strong> <code>\sum_{i=1}^{n}</code>
+                        <strong data-i18n="latex.tip.sum">求和:</strong> <code>\sum_{i=1}^{n}</code>
                     </div>
                     <div class="tip-item">
-                        <strong>积分:</strong> <code>\int_{a}^{b}</code>
+                        <strong data-i18n="latex.tip.int">积分:</strong> <code>\int_{a}^{b}</code>
                     </div>
                     <div class="tip-item">
-                        <strong>矩阵:</strong> <code>\begin{matrix}...\end{matrix}</code>
+                        <strong data-i18n="latex.tip.matrix">矩阵:</strong> <code>\begin{matrix}...\end{matrix}</code>
                     </div>
                 </div>
             </div>
@@ -118,59 +121,59 @@ E = mc^2
 
         <!-- SVG编辑器 -->
         <section id="svg" class="section">
-            <h2>SVG 图片编辑器</h2>
+            <h2 data-i18n="svg.heading">SVG 图片编辑器</h2>
             <div class="svg-editor-container">
                 <div class="svg-toolbar">
-                    <h3>工具栏</h3>
+                    <h3 data-i18n="svg.toolbar">工具栏</h3>
                     <div class="tool-buttons">
-                        <button onclick="svgAddRect()">矩形</button>
-                        <button onclick="svgAddCircle()">圆形</button>
-                        <button onclick="svgAddLine()">直线</button>
-                        <button onclick="svgAddText()">文本</button>
-                        <button onclick="svgAddArrow()">箭头</button>
+                        <button onclick="svgAddRect()" data-i18n="svg.btn.rect">矩形</button>
+                        <button onclick="svgAddCircle()" data-i18n="svg.btn.circle">圆形</button>
+                        <button onclick="svgAddLine()" data-i18n="svg.btn.line">直线</button>
+                        <button onclick="svgAddText()" data-i18n="svg.btn.text">文本</button>
+                        <button onclick="svgAddArrow()" data-i18n="svg.btn.arrow">箭头</button>
                     </div>
                     <div class="color-picker">
-                        <label>填充色: <input type="color" id="fillColor" value="#3498db"></label>
-                        <label>边框色: <input type="color" id="strokeColor" value="#2c3e50"></label>
-                        <label>边框宽度: <input type="number" id="strokeWidth" value="2" min="0" max="20"></label>
+                        <label><span data-i18n="svg.label.fill">填充色:</span> <input type="color" id="fillColor" value="#3498db"></label>
+                        <label><span data-i18n="svg.label.stroke">边框色:</span> <input type="color" id="strokeColor" value="#2c3e50"></label>
+                        <label><span data-i18n="svg.label.strokewidth">边框宽度:</span> <input type="number" id="strokeWidth" value="2" min="0" max="20"></label>
                     </div>
                     <div class="svg-actions">
-                        <button onclick="svgClear()">清空画布</button>
-                        <button onclick="svgDownload()">下载SVG</button>
-                        <button onclick="svgShowCode()">查看代码</button>
+                        <button onclick="svgClear()" data-i18n="svg.btn.clear">清空画布</button>
+                        <button onclick="svgDownload()" data-i18n="svg.btn.download">下载SVG</button>
+                        <button onclick="svgShowCode()" data-i18n="svg.btn.code">查看代码</button>
                     </div>
                 </div>
                 <div class="svg-canvas-area">
-                    <h3>画布</h3>
+                    <h3 data-i18n="svg.canvas">画布</h3>
                     <svg id="svgCanvas" width="800" height="600" style="border: 1px solid #ccc; background: white;">
                     </svg>
                 </div>
                 <div class="svg-layers-panel">
-                    <h3>图层管理</h3>
+                    <h3 data-i18n="svg.layers">图层管理</h3>
                     <div id="layersList" class="layers-list">
-                        <p class="layers-placeholder">暂无图层</p>
+                        <p class="layers-placeholder" data-i18n="svg.layers.empty">暂无图层</p>
                     </div>
                     <div class="layer-actions">
-                        <button onclick="deleteSelectedLayer()" title="删除选中图层">删除选中</button>
-                        <button onclick="moveLayerUp()" title="上移图层">上移</button>
-                        <button onclick="moveLayerDown()" title="下移图层">下移</button>
+                        <button onclick="deleteSelectedLayer()" data-i18n="svg.btn.delete">删除选中</button>
+                        <button onclick="moveLayerUp()" data-i18n="svg.btn.moveup">上移</button>
+                        <button onclick="moveLayerDown()" data-i18n="svg.btn.movedown">下移</button>
                     </div>
                 </div>
             </div>
             <div class="svg-code-panel" id="svgCodePanel" style="display: none;">
-                <h3>SVG代码</h3>
+                <h3 data-i18n="svg.code.heading">SVG代码</h3>
                 <textarea id="svgCodeOutput" readonly></textarea>
-                <button onclick="copySvgCode()">复制代码</button>
-                <button onclick="closeSvgCode()">关闭</button>
+                <button onclick="copySvgCode()" data-i18n="svg.btn.copycode">复制代码</button>
+                <button onclick="closeSvgCode()" data-i18n="svg.btn.close">关闭</button>
             </div>
         </section>
 
         <!-- 神经网络模型库 -->
         <section id="models" class="section">
-            <h2>神经网络模型库</h2>
+            <h2 data-i18n="models.heading">神经网络模型库</h2>
             <div class="model-gallery">
                 <div class="model-card">
-                    <h3>卷积神经网络 (CNN)</h3>
+                    <h3 data-i18n="models.cnn.title">卷积神经网络 (CNN)</h3>
                     <svg width="600" height="200" class="model-diagram">
                         <defs>
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -220,12 +223,12 @@ E = mc^2
                             </marker>
                         </defs>
                     </svg>
-                    <p>经典卷积神经网络架构，包含卷积层、池化层和全连接层</p>
-                    <button onclick="downloadModelSvg(this)">下载此模型图</button>
+                    <p data-i18n="models.cnn.desc">经典卷积神经网络架构，包含卷积层、池化层和全连接层</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
                 </div>
 
                 <div class="model-card">
-                    <h3>循环神经网络 (RNN)</h3>
+                    <h3 data-i18n="models.rnn.title">循环神经网络 (RNN)</h3>
                     <svg width="600" height="200" class="model-diagram">
                         <!-- RNN cells -->
                         <rect x="50" y="60" width="80" height="80" fill="#e67e22" stroke="#2c3e50" stroke-width="2" rx="10"/>
@@ -270,12 +273,12 @@ E = mc^2
                             </marker>
                         </defs>
                     </svg>
-                    <p>循环神经网络结构，展示时间步之间的循环连接</p>
-                    <button onclick="downloadModelSvg(this)">下载此模型图</button>
+                    <p data-i18n="models.rnn.desc">循环神经网络结构，展示时间步之间的循环连接</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
                 </div>
 
                 <div class="model-card">
-                    <h3>Transformer 架构</h3>
+                    <h3 data-i18n="models.transformer.title">Transformer 架构</h3>
                     <svg width="600" height="250" class="model-diagram">
                         <!-- Encoder -->
                         <g>
@@ -318,12 +321,12 @@ E = mc^2
                             </marker>
                         </defs>
                     </svg>
-                    <p>Transformer架构，包含编码器和解码器，使用注意力机制</p>
-                    <button onclick="downloadModelSvg(this)">下载此模型图</button>
+                    <p data-i18n="models.transformer.desc">Transformer架构，包含编码器和解码器，使用注意力机制</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
                 </div>
 
                 <div class="model-card">
-                    <h3>生成对抗网络 (GAN)</h3>
+                    <h3 data-i18n="models.gan.title">生成对抗网络 (GAN)</h3>
                     <svg width="600" height="200" class="model-diagram">
                         <!-- Noise -->
                         <circle cx="80" cy="100" r="30" fill="#95a5a6" stroke="#2c3e50" stroke-width="2"/>
@@ -363,142 +366,142 @@ E = mc^2
                             </marker>
                         </defs>
                     </svg>
-                    <p>生成对抗网络，生成器和判别器相互博弈训练</p>
-                    <button onclick="downloadModelSvg(this)">下载此模型图</button>
+                    <p data-i18n="models.gan.desc">生成对抗网络，生成器和判别器相互博弈训练</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
                 </div>
             </div>
         </section>
 
         <!-- 科研资源 -->
         <section id="resources" class="section">
-            <h2>科研资源导航</h2>
+            <h2 data-i18n="resources.heading">科研资源导航</h2>
 
             <div class="resource-category">
-                <h3>🔍 论文搜索与下载</h3>
+                <h3 data-i18n="resources.search.title">🔍 论文搜索与下载</h3>
                 <div class="resource-links">
                     <a href="https://scholar.google.com" target="_blank" class="resource-link">
                         <strong>Google Scholar</strong>
-                        <span>最全面的学术搜索引擎</span>
+                        <span data-i18n="resources.scholar.desc">最全面的学术搜索引擎</span>
                     </a>
                     <a href="https://arxiv.org" target="_blank" class="resource-link">
                         <strong>arXiv</strong>
-                        <span>物理、数学、计算机科学预印本</span>
+                        <span data-i18n="resources.arxiv.desc">物理、数学、计算机科学预印本</span>
                     </a>
                     <a href="https://www.semanticscholar.org" target="_blank" class="resource-link">
                         <strong>Semantic Scholar</strong>
-                        <span>AI驱动的学术搜索</span>
+                        <span data-i18n="resources.semantic.desc">AI驱动的学术搜索</span>
                     </a>
                     <a href="https://www.researchgate.net" target="_blank" class="resource-link">
                         <strong>ResearchGate</strong>
-                        <span>学术社交网络平台</span>
+                        <span data-i18n="resources.researchgate.desc">学术社交网络平台</span>
                     </a>
                     <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" class="resource-link">
                         <strong>PubMed</strong>
-                        <span>生物医学文献数据库</span>
+                        <span data-i18n="resources.pubmed.desc">生物医学文献数据库</span>
                     </a>
                     <a href="https://ieeexplore.ieee.org" target="_blank" class="resource-link">
                         <strong>IEEE Xplore</strong>
-                        <span>电气电子工程师学会数字图书馆</span>
+                        <span data-i18n="resources.ieee.desc">电气电子工程师学会数字图书馆</span>
                     </a>
                 </div>
             </div>
 
             <div class="resource-category">
-                <h3>📊 数据集与代码</h3>
+                <h3 data-i18n="resources.datasets.title">📊 数据集与代码</h3>
                 <div class="resource-links">
                     <a href="https://www.kaggle.com/datasets" target="_blank" class="resource-link">
                         <strong>Kaggle Datasets</strong>
-                        <span>机器学习数据集平台</span>
+                        <span data-i18n="resources.kaggle.desc">机器学习数据集平台</span>
                     </a>
                     <a href="https://github.com" target="_blank" class="resource-link">
                         <strong>GitHub</strong>
-                        <span>开源代码托管平台</span>
+                        <span data-i18n="resources.github.desc">开源代码托管平台</span>
                     </a>
                     <a href="https://paperswithcode.com" target="_blank" class="resource-link">
                         <strong>Papers with Code</strong>
-                        <span>论文与代码实现对照</span>
+                        <span data-i18n="resources.pwc.desc">论文与代码实现对照</span>
                     </a>
                     <a href="https://huggingface.co/datasets" target="_blank" class="resource-link">
                         <strong>Hugging Face Datasets</strong>
-                        <span>NLP和ML数据集</span>
+                        <span data-i18n="resources.hf.desc">NLP和ML数据集</span>
                     </a>
                     <a href="https://www.tensorflow.org/datasets" target="_blank" class="resource-link">
                         <strong>TensorFlow Datasets</strong>
-                        <span>TensorFlow官方数据集</span>
+                        <span data-i18n="resources.tfds.desc">TensorFlow官方数据集</span>
                     </a>
                 </div>
             </div>
 
             <div class="resource-category">
-                <h3>📅 学术会议</h3>
+                <h3 data-i18n="resources.conferences.title">📅 学术会议</h3>
                 <div class="resource-links">
                     <a href="https://neurips.cc" target="_blank" class="resource-link">
                         <strong>NeurIPS</strong>
-                        <span>神经信息处理系统大会</span>
+                        <span data-i18n="resources.neurips.desc">神经信息处理系统大会</span>
                     </a>
                     <a href="https://icml.cc" target="_blank" class="resource-link">
                         <strong>ICML</strong>
-                        <span>国际机器学习大会</span>
+                        <span data-i18n="resources.icml.desc">国际机器学习大会</span>
                     </a>
                     <a href="https://cvpr.thecvf.com" target="_blank" class="resource-link">
                         <strong>CVPR</strong>
-                        <span>计算机视觉与模式识别会议</span>
+                        <span data-i18n="resources.cvpr.desc">计算机视觉与模式识别会议</span>
                     </a>
                     <a href="https://iclr.cc" target="_blank" class="resource-link">
                         <strong>ICLR</strong>
-                        <span>国际学习表征会议</span>
+                        <span data-i18n="resources.iclr.desc">国际学习表征会议</span>
                     </a>
                     <a href="https://aaai.org" target="_blank" class="resource-link">
                         <strong>AAAI</strong>
-                        <span>人工智能促进协会会议</span>
+                        <span data-i18n="resources.aaai.desc">人工智能促进协会会议</span>
                     </a>
                 </div>
             </div>
 
             <div class="resource-category">
-                <h3>📖 期刊与出版物</h3>
+                <h3 data-i18n="resources.journals.title">📖 期刊与出版物</h3>
                 <div class="resource-links">
                     <a href="https://www.nature.com" target="_blank" class="resource-link">
                         <strong>Nature</strong>
-                        <span>自然科学综合性期刊</span>
+                        <span data-i18n="resources.nature.desc">自然科学综合性期刊</span>
                     </a>
                     <a href="https://www.science.org" target="_blank" class="resource-link">
                         <strong>Science</strong>
-                        <span>科学综合性期刊</span>
+                        <span data-i18n="resources.science.desc">科学综合性期刊</span>
                     </a>
                     <a href="https://www.cell.com" target="_blank" class="resource-link">
                         <strong>Cell</strong>
-                        <span>生命科学期刊</span>
+                        <span data-i18n="resources.cell.desc">生命科学期刊</span>
                     </a>
                     <a href="https://www.jmlr.org" target="_blank" class="resource-link">
                         <strong>JMLR</strong>
-                        <span>机器学习研究期刊</span>
+                        <span data-i18n="resources.jmlr.desc">机器学习研究期刊</span>
                     </a>
                 </div>
             </div>
 
             <div class="resource-category">
-                <h3>🛠️ 科研工具</h3>
+                <h3 data-i18n="resources.tools.title">🛠️ 科研工具</h3>
                 <div class="resource-links">
                     <a href="https://www.overleaf.com" target="_blank" class="resource-link">
                         <strong>Overleaf</strong>
-                        <span>在线LaTeX编辑器</span>
+                        <span data-i18n="resources.overleaf.desc">在线LaTeX编辑器</span>
                     </a>
                     <a href="https://www.zotero.org" target="_blank" class="resource-link">
                         <strong>Zotero</strong>
-                        <span>文献管理工具</span>
+                        <span data-i18n="resources.zotero.desc">文献管理工具</span>
                     </a>
                     <a href="https://www.mendeley.com" target="_blank" class="resource-link">
                         <strong>Mendeley</strong>
-                        <span>文献管理与学术社交</span>
+                        <span data-i18n="resources.mendeley.desc">文献管理与学术社交</span>
                     </a>
                     <a href="https://www.connectedpapers.com" target="_blank" class="resource-link">
                         <strong>Connected Papers</strong>
-                        <span>论文关系图谱可视化</span>
+                        <span data-i18n="resources.connectedpapers.desc">论文关系图谱可视化</span>
                     </a>
                     <a href="https://www.scispace.com" target="_blank" class="resource-link">
                         <strong>SciSpace</strong>
-                        <span>AI论文阅读助手</span>
+                        <span data-i18n="resources.scispace.desc">AI论文阅读助手</span>
                     </a>
                 </div>
             </div>
@@ -507,7 +510,7 @@ E = mc^2
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 科研工具集 Research Tools Hub | 提升科研效率</p>
+            <p data-i18n="footer.text">&copy; 2025 科研工具集 Research Tools Hub | 提升科研效率</p>
         </div>
     </footer>
 

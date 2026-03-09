@@ -25,6 +25,32 @@ header {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+.header-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.lang-toggle {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+    background: rgba(255,255,255,0.35);
+    border-color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;

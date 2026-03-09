@@ -1,3 +1,313 @@
+// ==================== i18n System ====================
+
+let currentLang = localStorage.getItem('lang') || 'zh';
+
+const translations = {
+    zh: {
+        // Header
+        'site.title': '科研工具集',
+        'site.subtitle': 'Research Tools Hub - 提升科研效率的工具集合',
+        // Nav
+        'nav.home': '首页',
+        'nav.latex': 'LaTeX工具',
+        'nav.svg': 'SVG编辑器',
+        'nav.models': '神经网络模型库',
+        'nav.resources': '科研资源',
+        // Home
+        'home.welcome': '欢迎使用科研工具集',
+        'home.latex.title': '📝 LaTeX格式化工具',
+        'home.latex.desc': '格式化、美化和预览LaTeX代码',
+        'home.svg.title': '🎨 SVG图片编辑器',
+        'home.svg.desc': '在线创建和编辑SVG矢量图形',
+        'home.models.title': '🧠 神经网络模型库',
+        'home.models.desc': '常见神经网络架构图示例',
+        'home.resources.title': '📚 科研资源导航',
+        'home.resources.desc': '论文、会议、期刊等资源整合',
+        // LaTeX
+        'latex.heading': 'LaTeX 格式化工具',
+        'latex.input.heading': '输入LaTeX代码',
+        'latex.input.placeholder': '在此输入LaTeX代码...\n\n示例:\n\\begin{equation}\nE = mc^2\n\\end{equation}\n\n\\begin{align}\n\\nabla \\times \\mathbf{E} &= -\\frac{\\partial \\mathbf{B}}{\\partial t} \\\\\n\\nabla \\times \\mathbf{B} &= \\mu_0\\mathbf{J} + \\mu_0\\epsilon_0\\frac{\\partial \\mathbf{E}}{\\partial t}\n\\end{align}',
+        'latex.btn.format': '格式化代码',
+        'latex.btn.clear': '清空',
+        'latex.btn.copy': '复制结果',
+        'latex.output.heading': '格式化结果',
+        'latex.output.placeholder': '格式化后的代码将显示在这里...',
+        'latex.preview.heading': '实时预览',
+        'latex.preview.placeholder': '数学公式预览将显示在这里...',
+        'latex.btn.render': '渲染预览',
+        'latex.btn.autopreview.on': '开启自动预览',
+        'latex.btn.autopreview.off': '关闭自动预览',
+        'latex.tips.heading': '常用LaTeX命令参考',
+        'latex.tip.frac': '分数:',
+        'latex.tip.sup': '上下标:',
+        'latex.tip.greek': '希腊字母:',
+        'latex.tip.sum': '求和:',
+        'latex.tip.int': '积分:',
+        'latex.tip.matrix': '矩阵:',
+        // SVG
+        'svg.heading': 'SVG 图片编辑器',
+        'svg.toolbar': '工具栏',
+        'svg.btn.rect': '矩形',
+        'svg.btn.circle': '圆形',
+        'svg.btn.line': '直线',
+        'svg.btn.text': '文本',
+        'svg.btn.arrow': '箭头',
+        'svg.label.fill': '填充色:',
+        'svg.label.stroke': '边框色:',
+        'svg.label.strokewidth': '边框宽度:',
+        'svg.btn.clear': '清空画布',
+        'svg.btn.download': '下载SVG',
+        'svg.btn.code': '查看代码',
+        'svg.canvas': '画布',
+        'svg.layers': '图层管理',
+        'svg.layers.empty': '暂无图层',
+        'svg.btn.delete': '删除选中',
+        'svg.btn.moveup': '上移',
+        'svg.btn.movedown': '下移',
+        'svg.code.heading': 'SVG代码',
+        'svg.btn.copycode': '复制代码',
+        'svg.btn.close': '关闭',
+        // Models
+        'models.heading': '神经网络模型库',
+        'models.cnn.title': '卷积神经网络 (CNN)',
+        'models.cnn.desc': '经典卷积神经网络架构，包含卷积层、池化层和全连接层',
+        'models.rnn.title': '循环神经网络 (RNN)',
+        'models.rnn.desc': '循环神经网络结构，展示时间步之间的循环连接',
+        'models.transformer.title': 'Transformer 架构',
+        'models.transformer.desc': 'Transformer架构，包含编码器和解码器，使用注意力机制',
+        'models.gan.title': '生成对抗网络 (GAN)',
+        'models.gan.desc': '生成对抗网络，生成器和判别器相互博弈训练',
+        'models.btn.download': '下载此模型图',
+        // Resources
+        'resources.heading': '科研资源导航',
+        'resources.search.title': '🔍 论文搜索与下载',
+        'resources.datasets.title': '📊 数据集与代码',
+        'resources.conferences.title': '📅 学术会议',
+        'resources.journals.title': '📖 期刊与出版物',
+        'resources.tools.title': '🛠️ 科研工具',
+        'resources.scholar.desc': '最全面的学术搜索引擎',
+        'resources.arxiv.desc': '物理、数学、计算机科学预印本',
+        'resources.semantic.desc': 'AI驱动的学术搜索',
+        'resources.researchgate.desc': '学术社交网络平台',
+        'resources.pubmed.desc': '生物医学文献数据库',
+        'resources.ieee.desc': '电气电子工程师学会数字图书馆',
+        'resources.kaggle.desc': '机器学习数据集平台',
+        'resources.github.desc': '开源代码托管平台',
+        'resources.pwc.desc': '论文与代码实现对照',
+        'resources.hf.desc': 'NLP和ML数据集',
+        'resources.tfds.desc': 'TensorFlow官方数据集',
+        'resources.neurips.desc': '神经信息处理系统大会',
+        'resources.icml.desc': '国际机器学习大会',
+        'resources.cvpr.desc': '计算机视觉与模式识别会议',
+        'resources.iclr.desc': '国际学习表征会议',
+        'resources.aaai.desc': '人工智能促进协会会议',
+        'resources.nature.desc': '自然科学综合性期刊',
+        'resources.science.desc': '科学综合性期刊',
+        'resources.cell.desc': '生命科学期刊',
+        'resources.jmlr.desc': '机器学习研究期刊',
+        'resources.overleaf.desc': '在线LaTeX编辑器',
+        'resources.zotero.desc': '文献管理工具',
+        'resources.mendeley.desc': '文献管理与学术社交',
+        'resources.connectedpapers.desc': '论文关系图谱可视化',
+        'resources.scispace.desc': 'AI论文阅读助手',
+        // Footer
+        'footer.text': '© 2025 科研工具集 Research Tools Hub | 提升科研效率',
+        // JS alerts & prompts
+        'alert.noContent': '没有可复制的内容',
+        'alert.copied': '已复制到剪贴板!',
+        'alert.copyFail': '复制失败: ',
+        'alert.svgCopied': 'SVG代码已复制到剪贴板!',
+        'alert.clearCanvas': '确定要清空画布吗?',
+        'alert.selectLayer': '请先选择一个图层',
+        'alert.deleteLayer': '确定要删除选中的图层吗?',
+        'alert.downloadSuccess': '下载成功!',
+        'prompt.text': '请输入文本内容:',
+        'prompt.textDefault': '示例文本',
+        'alert.inputLatex': '请输入LaTeX代码...',
+        'alert.renderError': '渲染错误: ',
+        'alert.loadingMathJax': '正在加载MathJax，请稍候...',
+        'alert.formatError': '格式化出错: ',
+        // Layer names
+        'layer.rect': '矩形',
+        'layer.circle': '圆形',
+        'layer.line': '直线',
+        'layer.arrow': '箭头',
+    },
+    en: {
+        // Header
+        'site.title': 'Research Tools Hub',
+        'site.subtitle': 'A Collection of Tools to Boost Research Productivity',
+        // Nav
+        'nav.home': 'Home',
+        'nav.latex': 'LaTeX Tools',
+        'nav.svg': 'SVG Editor',
+        'nav.models': 'Neural Network Models',
+        'nav.resources': 'Resources',
+        // Home
+        'home.welcome': 'Welcome to Research Tools Hub',
+        'home.latex.title': '📝 LaTeX Formatter',
+        'home.latex.desc': 'Format, beautify, and preview LaTeX code',
+        'home.svg.title': '🎨 SVG Image Editor',
+        'home.svg.desc': 'Create and edit SVG vector graphics online',
+        'home.models.title': '🧠 Neural Network Models',
+        'home.models.desc': 'Common neural network architecture diagrams',
+        'home.resources.title': '📚 Research Resources',
+        'home.resources.desc': 'Papers, conferences, journals and more',
+        // LaTeX
+        'latex.heading': 'LaTeX Formatter',
+        'latex.input.heading': 'Input LaTeX Code',
+        'latex.input.placeholder': 'Enter LaTeX code here...\n\nExample:\n\\begin{equation}\nE = mc^2\n\\end{equation}\n\n\\begin{align}\n\\nabla \\times \\mathbf{E} &= -\\frac{\\partial \\mathbf{B}}{\\partial t} \\\\\n\\nabla \\times \\mathbf{B} &= \\mu_0\\mathbf{J} + \\mu_0\\epsilon_0\\frac{\\partial \\mathbf{E}}{\\partial t}\n\\end{align}',
+        'latex.btn.format': 'Format Code',
+        'latex.btn.clear': 'Clear',
+        'latex.btn.copy': 'Copy Result',
+        'latex.output.heading': 'Formatted Result',
+        'latex.output.placeholder': 'Formatted code will appear here...',
+        'latex.preview.heading': 'Live Preview',
+        'latex.preview.placeholder': 'Math formula preview will appear here...',
+        'latex.btn.render': 'Render Preview',
+        'latex.btn.autopreview.on': 'Enable Auto Preview',
+        'latex.btn.autopreview.off': 'Disable Auto Preview',
+        'latex.tips.heading': 'Common LaTeX Commands Reference',
+        'latex.tip.frac': 'Fraction:',
+        'latex.tip.sup': 'Super/Subscript:',
+        'latex.tip.greek': 'Greek Letters:',
+        'latex.tip.sum': 'Summation:',
+        'latex.tip.int': 'Integral:',
+        'latex.tip.matrix': 'Matrix:',
+        // SVG
+        'svg.heading': 'SVG Image Editor',
+        'svg.toolbar': 'Toolbar',
+        'svg.btn.rect': 'Rectangle',
+        'svg.btn.circle': 'Circle',
+        'svg.btn.line': 'Line',
+        'svg.btn.text': 'Text',
+        'svg.btn.arrow': 'Arrow',
+        'svg.label.fill': 'Fill Color:',
+        'svg.label.stroke': 'Stroke Color:',
+        'svg.label.strokewidth': 'Stroke Width:',
+        'svg.btn.clear': 'Clear Canvas',
+        'svg.btn.download': 'Download SVG',
+        'svg.btn.code': 'View Code',
+        'svg.canvas': 'Canvas',
+        'svg.layers': 'Layer Manager',
+        'svg.layers.empty': 'No layers yet',
+        'svg.btn.delete': 'Delete Selected',
+        'svg.btn.moveup': 'Move Up',
+        'svg.btn.movedown': 'Move Down',
+        'svg.code.heading': 'SVG Code',
+        'svg.btn.copycode': 'Copy Code',
+        'svg.btn.close': 'Close',
+        // Models
+        'models.heading': 'Neural Network Model Gallery',
+        'models.cnn.title': 'Convolutional Neural Network (CNN)',
+        'models.cnn.desc': 'Classic CNN architecture with convolutional, pooling, and fully connected layers',
+        'models.rnn.title': 'Recurrent Neural Network (RNN)',
+        'models.rnn.desc': 'RNN structure showing recurrent connections across time steps',
+        'models.transformer.title': 'Transformer Architecture',
+        'models.transformer.desc': 'Transformer with encoder and decoder using attention mechanism',
+        'models.gan.title': 'Generative Adversarial Network (GAN)',
+        'models.gan.desc': 'GAN with generator and discriminator trained adversarially',
+        'models.btn.download': 'Download Model Diagram',
+        // Resources
+        'resources.heading': 'Research Resources',
+        'resources.search.title': '🔍 Paper Search & Download',
+        'resources.datasets.title': '📊 Datasets & Code',
+        'resources.conferences.title': '📅 Academic Conferences',
+        'resources.journals.title': '📖 Journals & Publications',
+        'resources.tools.title': '🛠️ Research Tools',
+        'resources.scholar.desc': 'Most comprehensive academic search engine',
+        'resources.arxiv.desc': 'Physics, Math, CS preprints',
+        'resources.semantic.desc': 'AI-powered academic search',
+        'resources.researchgate.desc': 'Academic social network',
+        'resources.pubmed.desc': 'Biomedical literature database',
+        'resources.ieee.desc': 'IEEE digital library',
+        'resources.kaggle.desc': 'Machine learning datasets platform',
+        'resources.github.desc': 'Open-source code hosting platform',
+        'resources.pwc.desc': 'Papers matched with code implementations',
+        'resources.hf.desc': 'NLP and ML datasets',
+        'resources.tfds.desc': 'Official TensorFlow datasets',
+        'resources.neurips.desc': 'Neural Information Processing Systems',
+        'resources.icml.desc': 'International Conference on Machine Learning',
+        'resources.cvpr.desc': 'Computer Vision and Pattern Recognition',
+        'resources.iclr.desc': 'International Conference on Learning Representations',
+        'resources.aaai.desc': 'Association for the Advancement of AI',
+        'resources.nature.desc': 'Multidisciplinary science journal',
+        'resources.science.desc': 'Comprehensive science journal',
+        'resources.cell.desc': 'Life sciences journal',
+        'resources.jmlr.desc': 'Journal of Machine Learning Research',
+        'resources.overleaf.desc': 'Online LaTeX editor',
+        'resources.zotero.desc': 'Reference management tool',
+        'resources.mendeley.desc': 'Reference management & academic social network',
+        'resources.connectedpapers.desc': 'Paper citation graph visualization',
+        'resources.scispace.desc': 'AI-powered paper reading assistant',
+        // Footer
+        'footer.text': '© 2025 Research Tools Hub | Boosting Research Productivity',
+        // JS alerts & prompts
+        'alert.noContent': 'Nothing to copy',
+        'alert.copied': 'Copied to clipboard!',
+        'alert.copyFail': 'Copy failed: ',
+        'alert.svgCopied': 'SVG code copied to clipboard!',
+        'alert.clearCanvas': 'Are you sure you want to clear the canvas?',
+        'alert.selectLayer': 'Please select a layer first',
+        'alert.deleteLayer': 'Are you sure you want to delete the selected layer?',
+        'alert.downloadSuccess': 'Downloaded!',
+        'prompt.text': 'Enter text content:',
+        'prompt.textDefault': 'Sample text',
+        'alert.inputLatex': 'Please enter LaTeX code...',
+        'alert.renderError': 'Render error: ',
+        'alert.loadingMathJax': 'Loading MathJax, please wait...',
+        'alert.formatError': 'Format error: ',
+        // Layer names
+        'layer.rect': 'Rectangle',
+        'layer.circle': 'Circle',
+        'layer.line': 'Line',
+        'layer.arrow': 'Arrow',
+    }
+};
+
+function t(key) {
+    return translations[currentLang][key] || translations['zh'][key] || key;
+}
+
+function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+
+    // Update all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const text = t(key);
+        if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') {
+            el.placeholder = text;
+        } else {
+            el.textContent = text;
+        }
+    });
+
+    // Update the auto-preview button text
+    const autoBtn = document.getElementById('autoPreviewBtn');
+    if (autoBtn) {
+        autoBtn.textContent = autoPreviewEnabled ? t('latex.btn.autopreview.off') : t('latex.btn.autopreview.on');
+    }
+
+    // Update toggle button
+    const langBtn = document.getElementById('langToggle');
+    if (langBtn) {
+        langBtn.textContent = lang === 'zh' ? '🌐 EN' : '🌐 中文';
+    }
+
+    // Update layers list
+    if (typeof updateLayersList === 'function') {
+        updateLayersList();
+    }
+}
+
+function toggleLanguage() {
+    setLanguage(currentLang === 'zh' ? 'en' : 'zh');
+}
+
+// ==================== Navigation ====================
+
 // Navigation functionality
 function navigateTo(sectionId) {
     const sections = document.querySelectorAll('.section');
@@ -41,7 +351,7 @@ function formatLatex() {
     const output = document.getElementById('latexOutput');
 
     if (!input.trim()) {
-        output.textContent = '请输入LaTeX代码...';
+        output.textContent = t('alert.inputLatex');
         return;
     }
 
@@ -87,7 +397,7 @@ function formatLatex() {
 
         output.textContent = formatted.trim();
     } catch (error) {
-        output.textContent = '格式化出错: ' + error.message;
+        output.textContent = t('alert.formatError') + error.message;
     }
 }
 
@@ -96,7 +406,7 @@ function renderLatexPreview() {
     const preview = document.getElementById('latexPreview');
 
     if (!input.trim()) {
-        preview.innerHTML = '<p class="preview-placeholder">数学公式预览将显示在这里...</p>';
+        preview.innerHTML = '<p class="preview-placeholder">' + t('latex.preview.placeholder') + '</p>';
         return;
     }
 
@@ -113,10 +423,10 @@ function renderLatexPreview() {
     // Render with MathJax if available
     if (window.MathJax) {
         MathJax.typesetPromise([preview]).catch((err) => {
-            preview.innerHTML = '<p style="color: red;">渲染错误: ' + err.message + '</p>';
+            preview.innerHTML = '<p style="color: red;">' + t('alert.renderError') + err.message + '</p>';
         });
     } else {
-        preview.innerHTML = '<p style="color: orange;">正在加载MathJax，请稍候...</p>';
+        preview.innerHTML = '<p style="color: orange;">' + t('alert.loadingMathJax') + '</p>';
         setTimeout(renderLatexPreview, 1000);
     }
 }
@@ -126,33 +436,33 @@ function toggleAutoPreview() {
     const btn = document.getElementById('autoPreviewBtn');
 
     if (autoPreviewEnabled) {
-        btn.textContent = '关闭自动预览';
+        btn.textContent = t('latex.btn.autopreview.off');
         btn.style.background = '#e74c3c';
         renderLatexPreview();
     } else {
-        btn.textContent = '开启自动预览';
+        btn.textContent = t('latex.btn.autopreview.on');
         btn.style.background = '';
     }
 }
 
 function clearLatex() {
     document.getElementById('latexInput').value = '';
-    document.getElementById('latexOutput').textContent = '格式化后的代码将显示在这里...';
-    document.getElementById('latexPreview').innerHTML = '<p class="preview-placeholder">数学公式预览将显示在这里...</p>';
+    document.getElementById('latexOutput').textContent = t('latex.output.placeholder');
+    document.getElementById('latexPreview').innerHTML = '<p class="preview-placeholder">' + t('latex.preview.placeholder') + '</p>';
 }
 
 function copyLatex() {
     const output = document.getElementById('latexOutput').textContent;
 
-    if (output === '格式化后的代码将显示在这里...' || output === '请输入LaTeX代码...') {
-        alert('没有可复制的内容');
+    if (output === t('latex.output.placeholder') || output === t('alert.inputLatex')) {
+        alert(t('alert.noContent'));
         return;
     }
 
     navigator.clipboard.writeText(output).then(() => {
-        alert('已复制到剪贴板!');
+        alert(t('alert.copied'));
     }).catch(err => {
-        alert('复制失败: ' + err);
+        alert(t('alert.copyFail') + err);
     });
 }
 
@@ -176,7 +486,7 @@ function svgAddRect() {
     rect.setAttribute('stroke', document.getElementById('strokeColor').value);
     rect.setAttribute('stroke-width', document.getElementById('strokeWidth').value);
     rect.setAttribute('id', 'rect-' + svgElementCounter++);
-    rect.setAttribute('data-layer-name', '矩形 ' + svgElementCounter);
+    rect.setAttribute('data-layer-name', t('layer.rect') + ' ' + svgElementCounter);
 
     makeDraggable(rect);
     svg.appendChild(rect);
@@ -197,7 +507,7 @@ function svgAddCircle() {
     circle.setAttribute('stroke', document.getElementById('strokeColor').value);
     circle.setAttribute('stroke-width', document.getElementById('strokeWidth').value);
     circle.setAttribute('id', 'circle-' + svgElementCounter++);
-    circle.setAttribute('data-layer-name', '圆形 ' + svgElementCounter);
+    circle.setAttribute('data-layer-name', t('layer.circle') + ' ' + svgElementCounter);
 
     makeDraggable(circle);
     svg.appendChild(circle);
@@ -218,7 +528,7 @@ function svgAddLine() {
     line.setAttribute('stroke', document.getElementById('strokeColor').value);
     line.setAttribute('stroke-width', document.getElementById('strokeWidth').value);
     line.setAttribute('id', 'line-' + svgElementCounter++);
-    line.setAttribute('data-layer-name', '直线 ' + svgElementCounter);
+    line.setAttribute('data-layer-name', t('layer.line') + ' ' + svgElementCounter);
 
     svg.appendChild(line);
     updateLayersList();
@@ -231,7 +541,7 @@ function svgAddText() {
     const x = 100 + Math.random() * 200;
     const y = 100 + Math.random() * 200;
 
-    const textContent = prompt('请输入文本内容:', '示例文本');
+    const textContent = prompt(t('prompt.text'), t('prompt.textDefault'));
     if (!textContent) return;
 
     text.setAttribute('x', x);
@@ -287,7 +597,7 @@ function svgAddArrow() {
     line.setAttribute('stroke-width', document.getElementById('strokeWidth').value);
     line.setAttribute('marker-end', `url(#${markerId})`);
     line.setAttribute('id', 'arrow-' + svgElementCounter++);
-    line.setAttribute('data-layer-name', '箭头 ' + svgElementCounter);
+    line.setAttribute('data-layer-name', t('layer.arrow') + ' ' + svgElementCounter);
 
     svg.appendChild(line);
     updateLayersList();
@@ -343,7 +653,7 @@ function makeDraggable(element) {
 }
 
 function svgClear() {
-    if (confirm('确定要清空画布吗?')) {
+    if (confirm(t('alert.clearCanvas'))) {
         const svg = document.getElementById('svgCanvas');
         while (svg.lastChild) {
             svg.removeChild(svg.lastChild);
@@ -390,9 +700,9 @@ function closeSvgCode() {
 function copySvgCode() {
     const code = document.getElementById('svgCodeOutput').value;
     navigator.clipboard.writeText(code).then(() => {
-        alert('SVG代码已复制到剪贴板!');
+        alert(t('alert.svgCopied'));
     }).catch(err => {
-        alert('复制失败: ' + err);
+        alert(t('alert.copyFail') + err);
     });
 }
 
@@ -406,7 +716,7 @@ function updateLayersList() {
     const elements = Array.from(svg.children).filter(el => el.tagName !== 'defs');
 
     if (elements.length === 0) {
-        layersList.innerHTML = '<p class="layers-placeholder">暂无图层</p>';
+        layersList.innerHTML = '<p class="layers-placeholder">' + t('svg.layers.empty') + '</p>';
         return;
     }
 
@@ -481,11 +791,11 @@ function selectLayer(element) {
 
 function deleteSelectedLayer() {
     if (!selectedLayer) {
-        alert('请先选择一个图层');
+        alert(t('alert.selectLayer'));
         return;
     }
 
-    if (confirm('确定要删除选中的图层吗?')) {
+    if (confirm(t('alert.deleteLayer'))) {
         selectedLayer.remove();
         selectedLayer = null;
         updateLayersList();
@@ -494,7 +804,7 @@ function deleteSelectedLayer() {
 
 function moveLayerUp() {
     if (!selectedLayer) {
-        alert('请先选择一个图层');
+        alert(t('alert.selectLayer'));
         return;
     }
 
@@ -507,7 +817,7 @@ function moveLayerUp() {
 
 function moveLayerDown() {
     if (!selectedLayer) {
-        alert('请先选择一个图层');
+        alert(t('alert.selectLayer'));
         return;
     }
 
@@ -541,7 +851,7 @@ function downloadModelSvg(button) {
 
     // Show success message
     const originalText = button.textContent;
-    button.textContent = '下载成功!';
+    button.textContent = t('alert.downloadSuccess');
     button.style.background = '#27ae60';
 
     setTimeout(() => {
@@ -599,7 +909,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Apply saved language on load
+document.addEventListener('DOMContentLoaded', function() {
+    setLanguage(currentLang);
+});
+
 // Welcome message
-console.log('%c欢迎使用科研工具集!', 'color: #667eea; font-size: 20px; font-weight: bold;');
-console.log('%c这是一个开源的科研工具整合平台', 'color: #555; font-size: 14px;');
-console.log('%c如果您有任何建议或问题，欢迎反馈!', 'color: #27ae60; font-size: 14px;');
+console.log('%cWelcome to Research Tools Hub!', 'color: #667eea; font-size: 20px; font-weight: bold;');
+console.log('%cAn open-source research tools platform', 'color: #555; font-size: 14px;');
