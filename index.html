@@ -26,6 +26,8 @@
                 <li><a href="#home" class="nav-link active" data-i18n="nav.home">首页</a></li>
                 <li><a href="#latex" class="nav-link" data-i18n="nav.latex">LaTeX工具</a></li>
                 <li><a href="#svg" class="nav-link" data-i18n="nav.svg">SVG编辑器</a></li>
+                <li><a href="#ai-writing" class="nav-link" data-i18n="nav.aiwriting">AI写作助手</a></li>
+                <li><a href="#ai-tools" class="nav-link" data-i18n="nav.aitools">AI工具导航</a></li>
                 <li><a href="#models" class="nav-link" data-i18n="nav.models">神经网络模型库</a></li>
                 <li><a href="#resources" class="nav-link" data-i18n="nav.resources">科研资源</a></li>
             </ul>
@@ -44,6 +46,14 @@
                 <div class="card" onclick="navigateTo('svg')">
                     <h3 data-i18n="home.svg.title">🎨 SVG图片编辑器</h3>
                     <p data-i18n="home.svg.desc">在线创建和编辑SVG矢量图形</p>
+                </div>
+                <div class="card" onclick="navigateTo('ai-writing')">
+                    <h3 data-i18n="home.aiwriting.title">🤖 AI写作助手</h3>
+                    <p data-i18n="home.aiwriting.desc">论文润色、降重、审稿回复等Prompt模板</p>
+                </div>
+                <div class="card" onclick="navigateTo('ai-tools')">
+                    <h3 data-i18n="home.aitools.title">🔧 AI工具导航</h3>
+                    <p data-i18n="home.aitools.desc">精选AI写作、绘图、PPT等效率工具</p>
                 </div>
                 <div class="card" onclick="navigateTo('models')">
                     <h3 data-i18n="home.models.title">🧠 神经网络模型库</h3>
@@ -165,6 +175,334 @@ E = mc^2
                 <textarea id="svgCodeOutput" readonly></textarea>
                 <button onclick="copySvgCode()" data-i18n="svg.btn.copycode">复制代码</button>
                 <button onclick="closeSvgCode()" data-i18n="svg.btn.close">关闭</button>
+            </div>
+        </section>
+
+        <!-- AI写作助手 -->
+        <section id="ai-writing" class="section">
+            <h2 data-i18n="aiwriting.heading">AI 写作助手</h2>
+            <p class="section-desc" data-i18n="aiwriting.desc">精选学术写作 Prompt 模板，点击即可复制，粘贴到 ChatGPT / Claude 等 AI 工具中使用</p>
+
+            <div class="prompt-filter">
+                <button class="filter-btn active" onclick="filterPrompts('all')" data-i18n="aiwriting.filter.all">全部</button>
+                <button class="filter-btn" onclick="filterPrompts('polish')" data-i18n="aiwriting.filter.polish">论文润色</button>
+                <button class="filter-btn" onclick="filterPrompts('reduce-ai')" data-i18n="aiwriting.filter.reduceai">降低AI率</button>
+                <button class="filter-btn" onclick="filterPrompts('review')" data-i18n="aiwriting.filter.review">审稿回复</button>
+                <button class="filter-btn" onclick="filterPrompts('abstract')" data-i18n="aiwriting.filter.abstract">摘要生成</button>
+                <button class="filter-btn" onclick="filterPrompts('translation')" data-i18n="aiwriting.filter.translation">学术翻译</button>
+                <button class="filter-btn" onclick="filterPrompts('grant')" data-i18n="aiwriting.filter.grant">基金写作</button>
+            </div>
+
+            <div class="prompt-cards" id="promptCards">
+                <!-- 论文润色 -->
+                <div class="prompt-card" data-category="polish">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-polish" data-i18n="aiwriting.tag.polish">论文润色</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.polish1.title">学术论文英文润色</h3>
+                    <div class="prompt-content">I want you to act as a professional academic editor. Please polish the following academic text to improve clarity, grammar, and academic tone while preserving the original meaning. Make it suitable for publication in a top-tier journal. Fix any grammatical errors, improve sentence structure, and enhance the formal academic style. Please provide the polished version directly:
+
+[Paste your text here]</div>
+                </div>
+
+                <div class="prompt-card" data-category="polish">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-polish" data-i18n="aiwriting.tag.polish">论文润色</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.polish2.title">中文论文润色与改进</h3>
+                    <div class="prompt-content">你是一位资深的学术论文编辑专家。请对以下中文学术论文段落进行润色，要求：1）提升语言的学术性和专业性；2）修正语法和标点错误；3）改善句式结构，使表达更加流畅；4）保持原文的核心含义不变。请直接给出润色后的版本：
+
+[在此粘贴你的文本]</div>
+                </div>
+
+                <div class="prompt-card" data-category="polish">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-polish" data-i18n="aiwriting.tag.polish">论文润色</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.polish3.title">逐句润色并标注修改</h3>
+                    <div class="prompt-content">Please act as an academic writing consultant. Polish the following text sentence by sentence. For each sentence, provide: 1) The original sentence; 2) The polished version; 3) A brief explanation of what was changed and why. Focus on academic tone, precision, and clarity:
+
+[Paste your text here]</div>
+                </div>
+
+                <!-- 降低AI率 -->
+                <div class="prompt-card" data-category="reduce-ai">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-reduce" data-i18n="aiwriting.tag.reduceai">降低AI率</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.reduce1.title">人性化改写（降低AI检测率）</h3>
+                    <div class="prompt-content">Please rewrite the following text to make it sound more naturally human-written. Use these techniques: 1) Vary sentence length significantly - mix short punchy sentences with longer complex ones; 2) Add occasional colloquial transitions; 3) Include subtle imperfections like starting sentences with "And" or "But"; 4) Use more specific and concrete examples instead of generic statements; 5) Add personal perspective or hedging language like "it seems that" or "arguably"; 6) Avoid overly parallel structures. Keep the academic meaning intact:
+
+[Paste your text here]</div>
+                </div>
+
+                <div class="prompt-card" data-category="reduce-ai">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-reduce" data-i18n="aiwriting.tag.reduceai">降低AI率</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.reduce2.title">中文论文降低AI痕迹</h3>
+                    <div class="prompt-content">请将以下文本改写得更加自然，像人类真实写作的风格。要求：1）打破固定的句式模式，长短句交替使用；2）减少"首先、其次、最后"等过于工整的连接词；3）适当加入口语化的学术表达；4）避免过于对称的排比结构；5）加入一些个人观点的表达方式，如"笔者认为""从某种程度上说"；6）保持学术严谨性的同时增加文本的自然感。请保持原意不变：
+
+[在此粘贴你的文本]</div>
+                </div>
+
+                <div class="prompt-card" data-category="reduce-ai">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-reduce" data-i18n="aiwriting.tag.reduceai">降低AI率</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.reduce3.title">模拟特定写作风格改写</h3>
+                    <div class="prompt-content">Rewrite the following text mimicking the writing style of a seasoned researcher who writes in a direct, no-nonsense manner. The rewrite should: 1) Use active voice predominantly; 2) Include domain-specific jargon naturally; 3) Have an uneven rhythm - some paragraphs short, others detailed; 4) Occasionally reference methodology choices with brief justifications; 5) Sound like it was written by someone who has spent years in the field, not by an AI. Maintain all factual content:
+
+[Paste your text here]</div>
+                </div>
+
+                <!-- 审稿回复 -->
+                <div class="prompt-card" data-category="review">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-review" data-i18n="aiwriting.tag.review">审稿回复</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.review1.title">审稿意见回复信</h3>
+                    <div class="prompt-content">You are an experienced academic researcher skilled at responding to peer review comments. Please help me draft a professional response letter to the following reviewer comments. For each comment: 1) Thank the reviewer politely; 2) Address the concern directly; 3) Describe what changes were made (or explain why no changes were needed); 4) Be respectful but confident. Format as a proper response letter with "Response to Reviewer #X" headers:
+
+Reviewer comments:
+[Paste reviewer comments here]
+
+Key changes we made:
+[Briefly list your main revisions]</div>
+                </div>
+
+                <div class="prompt-card" data-category="review">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-review" data-i18n="aiwriting.tag.review">审稿回复</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.review2.title">逐条回复审稿意见</h3>
+                    <div class="prompt-content">请帮我逐条回复以下审稿意见。对每条意见，请按以下格式生成回复：
+【审稿意见原文】：（复述原文）
+【回复】：感谢审稿人的建议。（然后具体回应）
+【修改说明】：我们在论文中做了如下修改...
+
+要求：态度诚恳、专业，对合理意见积极采纳，对不合理意见委婉解释。
+
+审稿意见：
+[在此粘贴审稿意见]</div>
+                </div>
+
+                <!-- 摘要生成 -->
+                <div class="prompt-card" data-category="abstract">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-abstract" data-i18n="aiwriting.tag.abstract">摘要生成</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.abstract1.title">结构化摘要生成</h3>
+                    <div class="prompt-content">Based on the following paper content, generate a structured academic abstract (200-300 words) that includes: 1) Background/Motivation (1-2 sentences); 2) Research Gap/Problem (1 sentence); 3) Method/Approach (2-3 sentences); 4) Key Results (2-3 sentences); 5) Significance/Impact (1-2 sentences). Use formal academic language and be specific about contributions:
+
+[Paste your paper content or key sections here]</div>
+                </div>
+
+                <div class="prompt-card" data-category="abstract">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-abstract" data-i18n="aiwriting.tag.abstract">摘要生成</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.abstract2.title">中文论文摘要撰写</h3>
+                    <div class="prompt-content">请根据以下论文内容，撰写一段中文学术摘要（300-500字）。要求包含以下要素：1）研究背景与意义（1-2句）；2）研究问题或不足（1句）；3）研究方法（2-3句）；4）主要发现/结果（2-3句）；5）结论与创新点（1-2句）。使用规范的学术语言，突出创新性：
+
+[在此粘贴论文关键内容]</div>
+                </div>
+
+                <!-- 学术翻译 -->
+                <div class="prompt-card" data-category="translation">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-translation" data-i18n="aiwriting.tag.translation">学术翻译</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.trans1.title">中译英学术翻译</h3>
+                    <div class="prompt-content">You are a professional academic translator. Please translate the following Chinese academic text into English. Requirements: 1) Use precise academic terminology appropriate for the field; 2) Maintain formal academic register; 3) Ensure the translation reads naturally to native English speakers; 4) Preserve all technical terms and proper nouns; 5) Follow conventions of top-tier English academic journals. Provide the translation directly:
+
+[Paste Chinese text here]</div>
+                </div>
+
+                <div class="prompt-card" data-category="translation">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-translation" data-i18n="aiwriting.tag.translation">学术翻译</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.trans2.title">英译中学术翻译</h3>
+                    <div class="prompt-content">你是一位专业的学术翻译专家。请将以下英文学术文本翻译为中文。要求：1）使用准确的专业术语；2）符合中文学术论文的表达习惯；3）译文通顺流畅，不带翻译腔；4）保留所有技术术语的准确性；5）符合中文核心期刊的写作规范。请直接给出译文：
+
+[Paste English text here]</div>
+                </div>
+
+                <!-- 基金写作 -->
+                <div class="prompt-card" data-category="grant">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-grant" data-i18n="aiwriting.tag.grant">基金写作</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.grant1.title">基金申请书研究意义撰写</h3>
+                    <div class="prompt-content">请帮我撰写一段国家自然科学基金申请书的"项目研究意义"部分。要求：1）从国家战略需求或学科前沿出发阐述理论意义；2）结合实际应用场景说明应用价值；3）指出当前研究的不足和亟待解决的关键问题；4）论述本项目的预期突破；5）语言精炼、逻辑清晰、有说服力。
+
+研究方向：[填写你的研究方向]
+关键技术/方法：[填写核心技术]
+预期创新点：[填写创新点]</div>
+                </div>
+
+                <div class="prompt-card" data-category="grant">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-grant" data-i18n="aiwriting.tag.grant">基金写作</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.grant2.title">Research Proposal Introduction</h3>
+                    <div class="prompt-content">Help me write a compelling introduction section for a research grant proposal. The introduction should: 1) Open with a hook that highlights the importance of the research area; 2) Provide context with key statistics or recent findings; 3) Clearly identify the research gap; 4) State the research objectives concisely; 5) Preview the methodology briefly; 6) End with the expected impact. Keep it persuasive and within 500 words.
+
+Research topic: [Your topic]
+Key innovation: [Your innovation]
+Target funding agency: [e.g., NSF, ERC, etc.]</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI工具导航 -->
+        <section id="ai-tools" class="section">
+            <h2 data-i18n="aitools.heading">AI 工具导航</h2>
+            <p class="section-desc" data-i18n="aitools.desc">精选高校教师常用的 AI 效率工具</p>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.chat.title">💬 AI 对话助手</h3>
+                <div class="resource-links">
+                    <a href="https://chat.openai.com" target="_blank" class="resource-link">
+                        <strong>ChatGPT</strong>
+                        <span data-i18n="aitools.chatgpt.desc">OpenAI 旗舰对话模型</span>
+                    </a>
+                    <a href="https://claude.ai" target="_blank" class="resource-link">
+                        <strong>Claude</strong>
+                        <span data-i18n="aitools.claude.desc">Anthropic 出品，擅长长文分析与写作</span>
+                    </a>
+                    <a href="https://gemini.google.com" target="_blank" class="resource-link">
+                        <strong>Gemini</strong>
+                        <span data-i18n="aitools.gemini.desc">Google AI 助手，集成搜索能力</span>
+                    </a>
+                    <a href="https://kimi.moonshot.cn" target="_blank" class="resource-link">
+                        <strong>Kimi</strong>
+                        <span data-i18n="aitools.kimi.desc">支持超长文本，适合论文阅读</span>
+                    </a>
+                    <a href="https://tongyi.aliyun.com" target="_blank" class="resource-link">
+                        <strong data-i18n="aitools.tongyi.name">通义千问</strong>
+                        <span data-i18n="aitools.tongyi.desc">阿里云 AI，中文理解出色</span>
+                    </a>
+                    <a href="https://www.deepseek.com" target="_blank" class="resource-link">
+                        <strong>DeepSeek</strong>
+                        <span data-i18n="aitools.deepseek.desc">开源高性能推理模型</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.paper.title">📄 AI 论文工具</h3>
+                <div class="resource-links">
+                    <a href="https://consensus.app" target="_blank" class="resource-link">
+                        <strong>Consensus</strong>
+                        <span data-i18n="aitools.consensus.desc">AI 驱动的学术搜索引擎</span>
+                    </a>
+                    <a href="https://elicit.com" target="_blank" class="resource-link">
+                        <strong>Elicit</strong>
+                        <span data-i18n="aitools.elicit.desc">AI 文献综述与论文分析助手</span>
+                    </a>
+                    <a href="https://www.researchrabbit.ai" target="_blank" class="resource-link">
+                        <strong>Research Rabbit</strong>
+                        <span data-i18n="aitools.rabbit.desc">AI 论文发现与推荐</span>
+                    </a>
+                    <a href="https://typeset.io" target="_blank" class="resource-link">
+                        <strong>SciSpace (Typeset)</strong>
+                        <span data-i18n="aitools.scispace2.desc">AI 论文阅读、解释与写作</span>
+                    </a>
+                    <a href="https://www.chatpdf.com" target="_blank" class="resource-link">
+                        <strong>ChatPDF</strong>
+                        <span data-i18n="aitools.chatpdf.desc">上传 PDF 与 AI 对话</span>
+                    </a>
+                    <a href="https://notebooklm.google" target="_blank" class="resource-link">
+                        <strong>NotebookLM</strong>
+                        <span data-i18n="aitools.notebooklm.desc">Google AI 笔记本，多文档分析</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.writing.title">✍️ AI 写作与翻译</h3>
+                <div class="resource-links">
+                    <a href="https://www.grammarly.com" target="_blank" class="resource-link">
+                        <strong>Grammarly</strong>
+                        <span data-i18n="aitools.grammarly.desc">英文语法检查与写作增强</span>
+                    </a>
+                    <a href="https://www.deepl.com/translator" target="_blank" class="resource-link">
+                        <strong>DeepL</strong>
+                        <span data-i18n="aitools.deepl.desc">高质量 AI 翻译工具</span>
+                    </a>
+                    <a href="https://quillbot.com" target="_blank" class="resource-link">
+                        <strong>QuillBot</strong>
+                        <span data-i18n="aitools.quillbot.desc">AI 改写与释义工具</span>
+                    </a>
+                    <a href="https://writefull.com" target="_blank" class="resource-link">
+                        <strong>Writefull</strong>
+                        <span data-i18n="aitools.writefull.desc">学术写作专用 AI 助手</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.visual.title">🎨 AI 绘图与演示</h3>
+                <div class="resource-links">
+                    <a href="https://www.napkin.ai" target="_blank" class="resource-link">
+                        <strong>Napkin AI</strong>
+                        <span data-i18n="aitools.napkin.desc">AI 自动生成论文配图与图表</span>
+                    </a>
+                    <a href="https://mermaid.live" target="_blank" class="resource-link">
+                        <strong>Mermaid Live</strong>
+                        <span data-i18n="aitools.mermaid.desc">代码生成流程图、时序图</span>
+                    </a>
+                    <a href="https://gamma.app" target="_blank" class="resource-link">
+                        <strong>Gamma</strong>
+                        <span data-i18n="aitools.gamma.desc">AI 一键生成精美 PPT</span>
+                    </a>
+                    <a href="https://www.beautiful.ai" target="_blank" class="resource-link">
+                        <strong>Beautiful.ai</strong>
+                        <span data-i18n="aitools.beautifulai.desc">AI 驱动的演示文稿设计</span>
+                    </a>
+                    <a href="https://excalidraw.com" target="_blank" class="resource-link">
+                        <strong>Excalidraw</strong>
+                        <span data-i18n="aitools.excalidraw.desc">手绘风格白板与图表工具</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.productivity.title">⚡ AI 效率工具</h3>
+                <div class="resource-links">
+                    <a href="https://www.notion.so" target="_blank" class="resource-link">
+                        <strong>Notion AI</strong>
+                        <span data-i18n="aitools.notion.desc">AI 增强的笔记与项目管理</span>
+                    </a>
+                    <a href="https://otter.ai" target="_blank" class="resource-link">
+                        <strong>Otter.ai</strong>
+                        <span data-i18n="aitools.otter.desc">AI 会议/讲座录音转文字</span>
+                    </a>
+                    <a href="https://www.perplexity.ai" target="_blank" class="resource-link">
+                        <strong>Perplexity</strong>
+                        <span data-i18n="aitools.perplexity.desc">AI 搜索引擎，带引用来源</span>
+                    </a>
+                    <a href="https://www.connected-papers.com" target="_blank" class="resource-link">
+                        <strong>Connected Papers</strong>
+                        <span data-i18n="aitools.connpapers.desc">论文引用关系可视化</span>
+                    </a>
+                </div>
             </div>
         </section>
 

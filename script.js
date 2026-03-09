@@ -11,6 +11,8 @@ const translations = {
         'nav.home': '首页',
         'nav.latex': 'LaTeX工具',
         'nav.svg': 'SVG编辑器',
+        'nav.aiwriting': 'AI写作助手',
+        'nav.aitools': 'AI工具导航',
         'nav.models': '神经网络模型库',
         'nav.resources': '科研资源',
         // Home
@@ -19,6 +21,10 @@ const translations = {
         'home.latex.desc': '格式化、美化和预览LaTeX代码',
         'home.svg.title': '🎨 SVG图片编辑器',
         'home.svg.desc': '在线创建和编辑SVG矢量图形',
+        'home.aiwriting.title': '🤖 AI写作助手',
+        'home.aiwriting.desc': '论文润色、降重、审稿回复等Prompt模板',
+        'home.aitools.title': '🔧 AI工具导航',
+        'home.aitools.desc': '精选AI写作、绘图、PPT等效率工具',
         'home.models.title': '🧠 神经网络模型库',
         'home.models.desc': '常见神经网络架构图示例',
         'home.resources.title': '📚 科研资源导航',
@@ -110,6 +116,71 @@ const translations = {
         'resources.mendeley.desc': '文献管理与学术社交',
         'resources.connectedpapers.desc': '论文关系图谱可视化',
         'resources.scispace.desc': 'AI论文阅读助手',
+        // AI Writing
+        'aiwriting.heading': 'AI 写作助手',
+        'aiwriting.desc': '精选学术写作 Prompt 模板，点击即可复制，粘贴到 ChatGPT / Claude 等 AI 工具中使用',
+        'aiwriting.filter.all': '全部',
+        'aiwriting.filter.polish': '论文润色',
+        'aiwriting.filter.reduceai': '降低AI率',
+        'aiwriting.filter.review': '审稿回复',
+        'aiwriting.filter.abstract': '摘要生成',
+        'aiwriting.filter.translation': '学术翻译',
+        'aiwriting.filter.grant': '基金写作',
+        'aiwriting.tag.polish': '论文润色',
+        'aiwriting.tag.reduceai': '降低AI率',
+        'aiwriting.tag.review': '审稿回复',
+        'aiwriting.tag.abstract': '摘要生成',
+        'aiwriting.tag.translation': '学术翻译',
+        'aiwriting.tag.grant': '基金写作',
+        'aiwriting.btn.copy': '复制',
+        'aiwriting.polish1.title': '学术论文英文润色',
+        'aiwriting.polish2.title': '中文论文润色与改进',
+        'aiwriting.polish3.title': '逐句润色并标注修改',
+        'aiwriting.reduce1.title': '人性化改写（降低AI检测率）',
+        'aiwriting.reduce2.title': '中文论文降低AI痕迹',
+        'aiwriting.reduce3.title': '模拟特定写作风格改写',
+        'aiwriting.review1.title': '审稿意见回复信',
+        'aiwriting.review2.title': '逐条回复审稿意见',
+        'aiwriting.abstract1.title': '结构化摘要生成',
+        'aiwriting.abstract2.title': '中文论文摘要撰写',
+        'aiwriting.trans1.title': '中译英学术翻译',
+        'aiwriting.trans2.title': '英译中学术翻译',
+        'aiwriting.grant1.title': '基金申请书研究意义撰写',
+        'aiwriting.grant2.title': 'Research Proposal Introduction',
+        // AI Tools
+        'aitools.heading': 'AI 工具导航',
+        'aitools.desc': '精选高校教师常用的 AI 效率工具',
+        'aitools.chat.title': '💬 AI 对话助手',
+        'aitools.chatgpt.desc': 'OpenAI 旗舰对话模型',
+        'aitools.claude.desc': 'Anthropic 出品，擅长长文分析与写作',
+        'aitools.gemini.desc': 'Google AI 助手，集成搜索能力',
+        'aitools.kimi.desc': '支持超长文本，适合论文阅读',
+        'aitools.tongyi.name': '通义千问',
+        'aitools.tongyi.desc': '阿里云 AI，中文理解出色',
+        'aitools.deepseek.desc': '开源高性能推理模型',
+        'aitools.paper.title': '📄 AI 论文工具',
+        'aitools.consensus.desc': 'AI 驱动的学术搜索引擎',
+        'aitools.elicit.desc': 'AI 文献综述与论文分析助手',
+        'aitools.rabbit.desc': 'AI 论文发现与推荐',
+        'aitools.scispace2.desc': 'AI 论文阅读、解释与写作',
+        'aitools.chatpdf.desc': '上传 PDF 与 AI 对话',
+        'aitools.notebooklm.desc': 'Google AI 笔记本，多文档分析',
+        'aitools.writing.title': '✍️ AI 写作与翻译',
+        'aitools.grammarly.desc': '英文语法检查与写作增强',
+        'aitools.deepl.desc': '高质量 AI 翻译工具',
+        'aitools.quillbot.desc': 'AI 改写与释义工具',
+        'aitools.writefull.desc': '学术写作专用 AI 助手',
+        'aitools.visual.title': '🎨 AI 绘图与演示',
+        'aitools.napkin.desc': 'AI 自动生成论文配图与图表',
+        'aitools.mermaid.desc': '代码生成流程图、时序图',
+        'aitools.gamma.desc': 'AI 一键生成精美 PPT',
+        'aitools.beautifulai.desc': 'AI 驱动的演示文稿设计',
+        'aitools.excalidraw.desc': '手绘风格白板与图表工具',
+        'aitools.productivity.title': '⚡ AI 效率工具',
+        'aitools.notion.desc': 'AI 增强的笔记与项目管理',
+        'aitools.otter.desc': 'AI 会议/讲座录音转文字',
+        'aitools.perplexity.desc': 'AI 搜索引擎，带引用来源',
+        'aitools.connpapers.desc': '论文引用关系可视化',
         // Footer
         'footer.text': '© 2025 科研工具集 Research Tools Hub | 提升科研效率',
         // JS alerts & prompts
@@ -141,6 +212,8 @@ const translations = {
         'nav.home': 'Home',
         'nav.latex': 'LaTeX Tools',
         'nav.svg': 'SVG Editor',
+        'nav.aiwriting': 'AI Writing',
+        'nav.aitools': 'AI Tools',
         'nav.models': 'Neural Network Models',
         'nav.resources': 'Resources',
         // Home
@@ -149,6 +222,10 @@ const translations = {
         'home.latex.desc': 'Format, beautify, and preview LaTeX code',
         'home.svg.title': '🎨 SVG Image Editor',
         'home.svg.desc': 'Create and edit SVG vector graphics online',
+        'home.aiwriting.title': '🤖 AI Writing Assistant',
+        'home.aiwriting.desc': 'Prompt templates for paper polishing, rewriting, review replies',
+        'home.aitools.title': '🔧 AI Tools Directory',
+        'home.aitools.desc': 'Curated AI tools for writing, design, presentations & more',
         'home.models.title': '🧠 Neural Network Models',
         'home.models.desc': 'Common neural network architecture diagrams',
         'home.resources.title': '📚 Research Resources',
@@ -240,6 +317,71 @@ const translations = {
         'resources.mendeley.desc': 'Reference management & academic social network',
         'resources.connectedpapers.desc': 'Paper citation graph visualization',
         'resources.scispace.desc': 'AI-powered paper reading assistant',
+        // AI Writing
+        'aiwriting.heading': 'AI Writing Assistant',
+        'aiwriting.desc': 'Curated academic writing prompt templates — click to copy and paste into ChatGPT / Claude',
+        'aiwriting.filter.all': 'All',
+        'aiwriting.filter.polish': 'Polish',
+        'aiwriting.filter.reduceai': 'Reduce AI',
+        'aiwriting.filter.review': 'Review Reply',
+        'aiwriting.filter.abstract': 'Abstract',
+        'aiwriting.filter.translation': 'Translation',
+        'aiwriting.filter.grant': 'Grant Writing',
+        'aiwriting.tag.polish': 'Polish',
+        'aiwriting.tag.reduceai': 'Reduce AI',
+        'aiwriting.tag.review': 'Review Reply',
+        'aiwriting.tag.abstract': 'Abstract',
+        'aiwriting.tag.translation': 'Translation',
+        'aiwriting.tag.grant': 'Grant Writing',
+        'aiwriting.btn.copy': 'Copy',
+        'aiwriting.polish1.title': 'Academic English Polishing',
+        'aiwriting.polish2.title': 'Chinese Paper Polishing',
+        'aiwriting.polish3.title': 'Sentence-by-Sentence Polish',
+        'aiwriting.reduce1.title': 'Humanize Text (Reduce AI Detection)',
+        'aiwriting.reduce2.title': 'Chinese Text Humanization',
+        'aiwriting.reduce3.title': 'Mimic Specific Writing Style',
+        'aiwriting.review1.title': 'Reviewer Response Letter',
+        'aiwriting.review2.title': 'Point-by-Point Review Reply',
+        'aiwriting.abstract1.title': 'Structured Abstract Generator',
+        'aiwriting.abstract2.title': 'Chinese Abstract Writing',
+        'aiwriting.trans1.title': 'Chinese to English Translation',
+        'aiwriting.trans2.title': 'English to Chinese Translation',
+        'aiwriting.grant1.title': 'Research Significance Statement',
+        'aiwriting.grant2.title': 'Research Proposal Introduction',
+        // AI Tools
+        'aitools.heading': 'AI Tools Directory',
+        'aitools.desc': 'Curated AI productivity tools for university teachers',
+        'aitools.chat.title': '💬 AI Chat Assistants',
+        'aitools.chatgpt.desc': 'OpenAI flagship conversational model',
+        'aitools.claude.desc': 'By Anthropic, excels at long text analysis & writing',
+        'aitools.gemini.desc': 'Google AI assistant with search integration',
+        'aitools.kimi.desc': 'Ultra-long context, ideal for paper reading',
+        'aitools.tongyi.name': 'Tongyi Qianwen',
+        'aitools.tongyi.desc': 'Alibaba Cloud AI, excellent Chinese comprehension',
+        'aitools.deepseek.desc': 'Open-source high-performance reasoning model',
+        'aitools.paper.title': '📄 AI Paper Tools',
+        'aitools.consensus.desc': 'AI-powered academic search engine',
+        'aitools.elicit.desc': 'AI literature review & paper analysis',
+        'aitools.rabbit.desc': 'AI paper discovery & recommendations',
+        'aitools.scispace2.desc': 'AI paper reading, explanation & writing',
+        'aitools.chatpdf.desc': 'Upload PDF and chat with AI',
+        'aitools.notebooklm.desc': 'Google AI notebook, multi-doc analysis',
+        'aitools.writing.title': '✍️ AI Writing & Translation',
+        'aitools.grammarly.desc': 'English grammar check & writing enhancement',
+        'aitools.deepl.desc': 'High-quality AI translation tool',
+        'aitools.quillbot.desc': 'AI paraphrasing & rewriting tool',
+        'aitools.writefull.desc': 'AI assistant for academic writing',
+        'aitools.visual.title': '🎨 AI Design & Presentations',
+        'aitools.napkin.desc': 'AI-generated paper figures & charts',
+        'aitools.mermaid.desc': 'Code-to-flowcharts & sequence diagrams',
+        'aitools.gamma.desc': 'AI-powered beautiful presentations',
+        'aitools.beautifulai.desc': 'AI-driven presentation design',
+        'aitools.excalidraw.desc': 'Hand-drawn style whiteboard & diagrams',
+        'aitools.productivity.title': '⚡ AI Productivity Tools',
+        'aitools.notion.desc': 'AI-enhanced notes & project management',
+        'aitools.otter.desc': 'AI meeting/lecture transcription',
+        'aitools.perplexity.desc': 'AI search engine with cited sources',
+        'aitools.connpapers.desc': 'Paper citation graph visualization',
         // Footer
         'footer.text': '© 2025 Research Tools Hub | Boosting Research Productivity',
         // JS alerts & prompts
@@ -913,6 +1055,40 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     setLanguage(currentLang);
 });
+
+// ==================== AI Writing Assistant ====================
+
+function filterPrompts(category) {
+    const cards = document.querySelectorAll('.prompt-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+}
+
+function copyPrompt(btn) {
+    const card = btn.closest('.prompt-card');
+    const content = card.querySelector('.prompt-content').textContent;
+    navigator.clipboard.writeText(content).then(() => {
+        const originalText = btn.textContent;
+        btn.textContent = t('alert.copied');
+        btn.style.background = '#27ae60';
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+        }, 2000);
+    }).catch(err => {
+        alert(t('alert.copyFail') + err);
+    });
+}
 
 // Welcome message
 console.log('%cWelcome to Research Tools Hub!', 'color: #667eea; font-size: 20px; font-weight: bold;');
