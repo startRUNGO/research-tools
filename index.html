@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Google AdSense (uncomment when approved) -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX" crossorigin="anonymous"></script> -->
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
     <!-- MathJax for LaTeX rendering -->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -69,6 +71,12 @@
                 <li><a href="#text-tools" class="nav-link" data-i18n="nav.texttools">文本工具</a></li>
                 <li><a href="#markdown" class="nav-link" data-i18n="nav.markdown">Markdown</a></li>
                 <li><a href="#references" class="nav-link" data-i18n="nav.references">参考文献</a></li>
+                <li><a href="#dataviz" class="nav-link" data-i18n="nav.dataviz">数据可视化</a></li>
+                <li><a href="#codehighlight" class="nav-link" data-i18n="nav.codehighlight">代码高亮</a></li>
+                <li><a href="#cron" class="nav-link" data-i18n="nav.cron">Cron解析</a></li>
+                <li><a href="#calendar" class="nav-link" data-i18n="nav.calendar">学术日历</a></li>
+                <li><a href="#formula" class="nav-link" data-i18n="nav.formula">公式助手</a></li>
+                <li><a href="#pomodoro" class="nav-link" data-i18n="nav.pomodoro">番茄钟</a></li>
                 <li><a href="#models" class="nav-link" data-i18n="nav.models">神经网络模型库</a></li>
                 <li><a href="#resources" class="nav-link" data-i18n="nav.resources">科研资源</a></li>
             </ul>
@@ -107,6 +115,30 @@
             <div class="card" onclick="navigateTo('references')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
                 <h3 data-i18n="home.ref.title">📚 参考文献管理</h3>
                 <p data-i18n="home.ref.desc">BibTeX解析、DOI抓取、APA/IEEE/GB格式转换</p>
+            </div>
+            <div class="card" onclick="navigateTo('dataviz')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
+                <h3 data-i18n="home.viz.title">📊 数据可视化</h3>
+                <p data-i18n="home.viz.desc">粘贴CSV数据，生成折线图、柱状图、饼图等</p>
+            </div>
+            <div class="card" onclick="navigateTo('codehighlight')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
+                <h3 data-i18n="home.code.title">💻 代码高亮分享</h3>
+                <p data-i18n="home.code.desc">生成带语法高亮的代码图片或HTML</p>
+            </div>
+            <div class="card" onclick="navigateTo('cron')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
+                <h3 data-i18n="home.cron.title">⏰ Cron表达式解析</h3>
+                <p data-i18n="home.cron.desc">解析Cron表达式，查看下次执行时间</p>
+            </div>
+            <div class="card" onclick="navigateTo('calendar')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
+                <h3 data-i18n="home.cal.title">📅 学术日历</h3>
+                <p data-i18n="home.cal.desc">重要学术会议截止日期与倒计时</p>
+            </div>
+            <div class="card" onclick="navigateTo('formula')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
+                <h3 data-i18n="home.formula.title">∑ 公式助手</h3>
+                <p data-i18n="home.formula.desc">LaTeX数学符号面板与实时公式预览</p>
+            </div>
+            <div class="card" onclick="navigateTo('pomodoro')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
+                <h3 data-i18n="home.pomo.title">🍅 番茄钟</h3>
+                <p data-i18n="home.pomo.desc">科研专注计时器，统计工作时长</p>
             </div>
                 <div class="card" onclick="navigateTo('models')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
                     <h3 data-i18n="home.models.title">🧠 神经网络模型库</h3>
@@ -922,6 +954,219 @@ Main changes we made:
         </div>
     </section>
 
+    <!-- Data Visualization -->
+    <section id="dataviz" class="section">
+        <h2 data-i18n="viz.heading">数据可视化</h2>
+        <p class="section-desc" data-i18n="viz.desc">粘贴CSV数据，快速生成图表</p>
+        <div class="tool-container">
+            <div class="editor-panel">
+                <h3 data-i18n="viz.input.heading">输入数据 (CSV)</h3>
+                <div class="button-group">
+                    <select id="chartType" style="padding:0.5rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);">
+                        <option value="bar">Bar</option>
+                        <option value="line">Line</option>
+                        <option value="pie">Pie</option>
+                        <option value="doughnut">Doughnut</option>
+                        <option value="radar">Radar</option>
+                        <option value="polarArea">Polar Area</option>
+                    </select>
+                    <button onclick="renderChart()" data-i18n="viz.btn.render">生成图表</button>
+                    <button onclick="loadSampleData()" data-i18n="viz.btn.sample">示例数据</button>
+                    <button onclick="clearViz()" data-i18n="viz.btn.clear">清空</button>
+                </div>
+                <textarea id="csvInput" data-i18n-placeholder="viz.input.placeholder" placeholder="粘贴CSV数据，如：&#10;Name,Score,Age&#10;Alice,90,22&#10;Bob,85,24&#10;Carol,95,21" rows="10"></textarea>
+            </div>
+            <div class="preview-panel">
+                <h3 data-i18n="viz.output.heading">图表预览</h3>
+                <div class="button-group">
+                    <button onclick="downloadChart()" class="btn-export" data-i18n="viz.btn.download">下载PNG</button>
+                </div>
+                <div id="vizCanvasContainer" style="display:none;min-height:400px;position:relative;">
+                    <canvas id="vizCanvas"></canvas>
+                </div>
+                <p id="vizPlaceholder" class="preview-placeholder" data-i18n="viz.output.placeholder">图表将显示在这里...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Highlight -->
+    <section id="codehighlight" class="section">
+        <h2 data-i18n="code.heading">代码高亮分享</h2>
+        <p class="section-desc" data-i18n="code.desc">粘贴代码，生成带语法高亮的图片或HTML</p>
+        <div class="tool-container">
+            <div class="editor-panel">
+                <h3 data-i18n="code.input.heading">输入代码</h3>
+                <div class="button-group">
+                    <select id="codeLang" style="padding:0.5rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C/C++</option>
+                        <option value="go">Go</option>
+                        <option value="rust">Rust</option>
+                        <option value="sql">SQL</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="bash">Bash</option>
+                    </select>
+                    <button onclick="highlightCode()" data-i18n="code.btn.highlight">高亮</button>
+                    <button onclick="clearCode()" data-i18n="code.btn.clear">清空</button>
+                </div>
+                <textarea id="codeInput" data-i18n-placeholder="code.input.placeholder" placeholder="粘贴代码..." rows="12" style="font-family:'Courier New',monospace;font-size:14px;"></textarea>
+            </div>
+            <div class="preview-panel">
+                <h3 data-i18n="code.output.heading">预览</h3>
+                <div class="button-group">
+                    <button onclick="copyCodeHtml()" data-i18n="code.btn.copyhtml">复制HTML</button>
+                    <button onclick="downloadCodeImage()" class="btn-export" data-i18n="code.btn.downloadpng">下载图片</button>
+                </div>
+                <div id="codeOutputContainer" class="code-output-container" style="display:none;">
+                    <pre class="code-output-pre"><code id="codeOutput"></code></pre>
+                </div>
+                <p class="preview-placeholder" data-i18n="code.output.placeholder">代码预览将显示在这里...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cron Parser -->
+    <section id="cron" class="section">
+        <h2 data-i18n="cron.heading">Cron 表达式解析</h2>
+        <p class="section-desc" data-i18n="cron.desc">解析Cron表达式，查看下次执行时间</p>
+        <div class="tool-container">
+            <div class="editor-panel">
+                <h3 data-i18n="cron.input.heading">输入Cron表达式</h3>
+                <input type="text" id="cronInput" placeholder="* * * * *" style="width:100%;padding:0.75rem;font-family:'Courier New',monospace;font-size:1.2rem;border:2px solid var(--border-color);border-radius:8px;background:var(--bg-card);color:var(--text-primary);text-align:center;letter-spacing:2px;box-sizing:border-box;" oninput="parseCron()">
+                <div class="button-group" style="margin-top:1rem">
+                    <button onclick="parseCron()" data-i18n="cron.btn.parse">解析</button>
+                    <button onclick="clearCron()" data-i18n="cron.btn.clear">清空</button>
+                </div>
+                <div style="margin-top:1rem">
+                    <h4 data-i18n="cron.presets.title">常用预设</h4>
+                    <div class="button-group" style="margin-top:0.5rem">
+                        <button class="template-btn" onclick="insertCronPreset('* * * * *')">Every minute</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 * * * *')">Every hour</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 0 * * *')">Daily midnight</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 9 * * 1-5')">Weekdays 9am</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 0 * * 0')">Weekly Sunday</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 0 1 * *')">Monthly 1st</button>
+                        <button class="template-btn" onclick="insertCronPreset('*/5 * * * *')">Every 5 min</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 */2 * * *')">Every 2 hours</button>
+                    </div>
+                </div>
+            </div>
+            <div class="output-panel">
+                <h3 data-i18n="cron.output.heading">解析结果</h3>
+                <div id="cronOutput">
+                    <p class="preview-placeholder" data-i18n="cron.output.placeholder">Cron解析结果将显示在这里...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Calendar -->
+    <section id="calendar" class="section">
+        <h2 data-i18n="cal.heading">学术日历</h2>
+        <p class="section-desc" data-i18n="cal.desc">重要学术会议截止日期与倒计时</p>
+        <div class="button-group" style="margin-bottom:1rem">
+            <select id="calFieldFilter" onchange="renderCalendar()" style="padding:0.5rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);">
+                <option value="all" data-i18n="cal.filter.all">全部领域</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="CV">Computer Vision</option>
+                <option value="NLP">NLP</option>
+                <option value="DB">Database</option>
+                <option value="Systems">Systems</option>
+                <option value="Web">Web</option>
+                <option value="DM">Data Mining</option>
+                <option value="SE">Software Engineering</option>
+                <option value="Security">Security</option>
+            </select>
+            <select id="calStatusFilter" onchange="renderCalendar()" style="padding:0.5rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);">
+                <option value="all" data-i18n="cal.filter.allstatus">全部状态</option>
+                <option value="open" data-i18n="cal.filter.open">征稿中</option>
+                <option value="soon" data-i18n="cal.filter.soon">即将截止</option>
+            </select>
+            <button onclick="renderCalendar()" data-i18n="cal.btn.refresh">刷新</button>
+        </div>
+        <div id="calendarOutput">
+            <p class="preview-placeholder" data-i18n="cal.output.placeholder">点击上方筛选条件或刷新查看会议信息</p>
+        </div>
+    </section>
+
+    <!-- Formula Helper -->
+    <section id="formula" class="section">
+        <h2 data-i18n="formula.heading">公式助手</h2>
+        <p class="section-desc" data-i18n="formula.desc">LaTeX数学符号面板 + 实时公式预览</p>
+        <div id="symbolPalette" class="symbol-palette"></div>
+        <div class="tool-container" style="margin-top:1rem">
+            <div class="editor-panel">
+                <h3 data-i18n="formula.input.heading">编辑公式</h3>
+                <textarea id="formulaInput" data-i18n-placeholder="formula.input.placeholder" placeholder="输入LaTeX公式..." oninput="renderFormulaPreview()" rows="4" style="font-family:'Courier New',monospace;"></textarea>
+                <div class="button-group">
+                    <button onclick="copyFormula()" data-i18n="formula.btn.copy">复制公式</button>
+                    <button onclick="clearFormula()" data-i18n="formula.btn.clear">清空</button>
+                </div>
+            </div>
+            <div class="preview-panel">
+                <h3 data-i18n="formula.preview.heading">实时预览</h3>
+                <div id="formulaPreview" class="preview-box" style="min-height:150px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
+                    <p class="preview-placeholder" data-i18n="formula.preview.placeholder">公式预览将显示在这里...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pomodoro Timer -->
+    <section id="pomodoro" class="section">
+        <h2 data-i18n="pomo.heading">番茄钟</h2>
+        <p class="section-desc" data-i18n="pomo.desc">科研专注计时器，配合全屏专注模式使用效果更佳</p>
+
+        <div class="pomo-container">
+            <div class="pomo-mode-buttons">
+                <button class="pomo-mode-btn active" data-mode="work" onclick="switchPomodoroMode('work')" data-i18n="pomo.mode.work">专注</button>
+                <button class="pomo-mode-btn" data-mode="break" onclick="switchPomodoroMode('break')" data-i18n="pomo.mode.break">短休息</button>
+                <button class="pomo-mode-btn" data-mode="longbreak" onclick="switchPomodoroMode('longbreak')" data-i18n="pomo.mode.longbreak">长休息</button>
+            </div>
+
+            <div class="pomo-timer">
+                <svg class="pomo-ring" viewBox="0 0 300 300">
+                    <circle cx="150" cy="150" r="140" fill="none" stroke="var(--border-color)" stroke-width="6" opacity="0.3"></circle>
+                    <circle id="pomodoroProgress" cx="150" cy="150" r="140" fill="none" stroke="#e74c3c" stroke-width="6" stroke-linecap="round" transform="rotate(-90 150 150)" style="transition: stroke-dashoffset 0.5s ease;"></circle>
+                </svg>
+                <div class="pomo-time-display">
+                    <div id="pomodoroModeLabel" class="pomo-mode-label">专注</div>
+                    <div id="pomodoroTime" class="pomo-time">25:00</div>
+                </div>
+            </div>
+
+            <div class="pomo-controls">
+                <button id="pomodoroStartBtn" class="pomo-start-btn" onclick="togglePomodoro()" data-i18n="pomo.btn.start">开始</button>
+                <button class="pomo-control-btn" onclick="resetPomodoro()" data-i18n="pomo.btn.reset">重置</button>
+            </div>
+
+            <div class="pomo-settings">
+                <div class="pomo-custom">
+                    <input type="number" id="pomodoroCustomMinutes" min="1" max="120" value="25" style="width:60px;padding:0.4rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);text-align:center;">
+                    <span data-i18n="pomo.minutes">分钟</span>
+                    <button class="template-btn" onclick="setCustomTime()" data-i18n="pomo.btn.settime">设置</button>
+                </div>
+            </div>
+
+            <div class="pomo-stats">
+                <div class="pomo-stat">
+                    <div class="pomo-stat-value" id="pomodoroCountDisplay">0</div>
+                    <div class="pomo-stat-label" data-i18n="pomo.stat.count">今日番茄数</div>
+                </div>
+                <div class="pomo-stat">
+                    <div class="pomo-stat-value" id="pomodoroTotalDisplay">0 分钟</div>
+                    <div class="pomo-stat-label" data-i18n="pomo.stat.total">累计专注时长</div>
+                </div>
+                <div class="pomo-stat">
+                    <button class="template-btn" onclick="resetPomodoroStats()" data-i18n="pomo.btn.resetstats">重置统计</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
         <!-- 神经网络模型库 -->
         <section id="models" class="section">
             <h2 data-i18n="models.heading">神经网络模型库</h2>
@@ -1643,6 +1888,9 @@ Main changes we made:
     <!-- Toast Notification Container -->
     <div id="toastContainer" class="toast-container" aria-live="polite" role="status"></div>
 
+    <!-- Focus Mode Button -->
+    <button class="focus-btn" onclick="toggleFocusMode()" aria-label="Toggle focus mode" title="Focus Mode (F11)">⛶</button>
+
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">&#8679;</button>
 
@@ -1655,6 +1903,12 @@ Main changes we made:
     <script src="js/text-tools.js"></script>
     <script src="js/markdown.js"></script>
     <script src="js/references.js"></script>
+    <script src="js/data-viz.js"></script>
+    <script src="js/code-highlight.js"></script>
+    <script src="js/cron-parser.js"></script>
+    <script src="js/academic-cal.js"></script>
+    <script src="js/formula-helper.js"></script>
+    <script src="js/pomodoro.js"></script>
     <script src="js/ai-features.js"></script>
     <script src="js/share.js"></script>
     <script>

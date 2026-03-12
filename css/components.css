@@ -379,3 +379,121 @@ button:active {
     margin-right: 0.3rem;
 }
 
+/* Code Highlight */
+.code-output-container {
+    background: #282c34;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.code-output-pre {
+    margin: 0;
+    padding: 1rem;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #abb2bf;
+    background: transparent !important;
+}
+
+.code-hl-keyword { color: #c678dd; font-weight: 600; }
+.code-hl-string { color: #98c379; }
+.code-hl-comment { color: #5c6370; font-style: italic; }
+.code-hl-number { color: #d19a66; }
+
+/* Cron Parser */
+.cron-result h4 {
+    color: var(--text-heading);
+    margin: 1rem 0 0.5rem;
+    font-size: 0.95rem;
+}
+
+.cron-desc-text {
+    background: var(--bg-code);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #667eea;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cron-runs-list {
+    padding-left: 1.5rem;
+    line-height: 1.8;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.cron-fields {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cron-field-box {
+    text-align: center;
+    background: var(--bg-code);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    min-width: 80px;
+    border: 2px solid var(--border-color);
+}
+
+.cron-field-value {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.cron-field-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* Formula Helper - Symbol Palette */
+.symbol-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.symbol-category h4 {
+    color: var(--text-heading);
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.symbol-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.symbol-btn {
+    min-width: 40px;
+    height: 36px;
+    padding: 0 0.4rem !important;
+    font-size: 1rem !important;
+    background: var(--bg-code) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.symbol-btn:hover {
+    background: #667eea !important;
+    color: white !important;
+    border-color: #667eea !important;
+    transform: translateY(-1px);
+}
+

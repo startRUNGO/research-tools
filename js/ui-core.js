@@ -61,3 +61,43 @@ window.addEventListener('scroll', function() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// ==================== Focus Mode (Fullscreen) ====================
+
+let focusModeActive = false;
+
+function toggleFocusMode() {
+    const activeSection = document.querySelector('.section.active');
+    if (!activeSection) return;
+
+    focusModeActive = !focusModeActive;
+    document.body.classList.toggle('focus-mode', focusModeActive);
+    activeSection.classList.toggle('focus-section', focusModeActive);
+
+    // Toggle browser fullscreen
+    if (focusModeActive) {
+        const el = document.documentElement;
+        if (el.requestFullscreen) el.requestFullscreen();
+        else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+    } else {
+        if (document.exitFullscreen) document.exitFullscreen();
+        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    }
+}
+
+// Exit focus mode on Esc or when leaving fullscreen
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && focusModeActive) {
+        focusModeActive = false;
+        document.body.classList.remove('focus-mode');
+        document.querySelectorAll('.focus-section').forEach(el => el.classList.remove('focus-section'));
+    }
+});
+
+document.addEventListener('fullscreenchange', function() {
+    if (!document.fullscreenElement && focusModeActive) {
+        focusModeActive = false;
+        document.body.classList.remove('focus-mode');
+        document.querySelectorAll('.focus-section').forEach(el => el.classList.remove('focus-section'));
+    }
+});

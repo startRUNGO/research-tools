@@ -199,3 +199,216 @@ footer {
     color: #888;
     margin-top: 0.3rem;
 }
+
+/* Academic Calendar */
+.cal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cal-item {
+    background: var(--bg-card);
+    border-radius: 8px;
+    padding: 1rem;
+    border-left: 4px solid #27ae60;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.cal-item.cal-soon { border-left-color: #f39c12; }
+.cal-item.cal-closed { border-left-color: #95a5a6; opacity: 0.7; }
+.cal-item.cal-past { border-left-color: #bdc3c7; opacity: 0.5; }
+
+.cal-item-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.cal-name a {
+    font-weight: 600;
+    color: #667eea;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.cal-name a:hover { text-decoration: underline; }
+
+.cal-tier {
+    background: #667eea;
+    color: white;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.cal-badge {
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+.cal-item-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Pomodoro Timer */
+.pomo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pomo-mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.pomo-mode-btn {
+    background: var(--bg-code) !important;
+    color: var(--text-secondary) !important;
+    border: 2px solid transparent !important;
+    padding: 0.5rem 1.2rem !important;
+    border-radius: 20px !important;
+    font-size: 0.9rem !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pomo-mode-btn:hover {
+    transform: translateY(-1px);
+}
+
+.pomo-mode-btn.active {
+    background: #667eea !important;
+    color: #fff !important;
+}
+
+.pomo-timer {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 2rem;
+}
+
+.pomo-ring {
+    width: 100%;
+    height: 100%;
+}
+
+.pomo-time-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pomo-mode-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pomo-time {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    color: var(--text-primary);
+    letter-spacing: 4px;
+}
+
+.pomo-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.pomo-start-btn {
+    background: #e74c3c !important;
+    color: #fff !important;
+    padding: 0.75rem 2.5rem !important;
+    border-radius: 30px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.pomo-start-btn:hover {
+    background: #c0392b !important;
+}
+
+.pomo-control-btn {
+    background: var(--bg-code) !important;
+    color: var(--text-secondary) !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 30px !important;
+}
+
+.pomo-settings {
+    margin-bottom: 2rem;
+}
+
+.pomo-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.pomo-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.pomo-stat {
+    text-align: center;
+}
+
+.pomo-stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.pomo-stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* Focus mode enhancements for Pomodoro */
+body.focus-mode .pomo-timer {
+    width: 350px;
+    height: 350px;
+}
+
+body.focus-mode .pomo-time {
+    font-size: 5rem;
+}
+
+body.focus-mode .pomo-container {
+    max-width: 600px;
+    padding-top: 3rem;
+}

@@ -53,6 +53,12 @@ const requiredFiles = [
     'js/text-tools.js',
     'js/markdown.js',
     'js/references.js',
+    'js/data-viz.js',
+    'js/code-highlight.js',
+    'js/cron-parser.js',
+    'js/academic-cal.js',
+    'js/formula-helper.js',
+    'js/pomodoro.js',
     'js/ai-features.js',
     'js/share.js'
 ];
