@@ -1,0 +1,11 @@
+{
+  "name": "research-tools-hub",
+  "version": "1.0.0",
+  "description": "Research Tools Hub - 科研工具集",
+  "scripts": {
+    "test": "node tests/run.js",
+    "test:html": "node tests/html-validate.js"
+  },
+  "devDependencies": {},
+  "private": true
+}

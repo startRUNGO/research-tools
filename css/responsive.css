@@ -1,0 +1,73 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tool-container,
+    .tool-container-three,
+    .svg-editor-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--nav-bg);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .main-nav ul.menu-open {
+        display: flex;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 0.8rem 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .model-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .model-diagram {
+        width: 100%;
+        height: auto;
+    }
+
+    .tool-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .prompt-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .text-tools-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .resource-links {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}

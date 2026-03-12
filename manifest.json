@@ -1,0 +1,19 @@
+{
+  "name": "科研工具集 - Research Tools Hub",
+  "short_name": "研工具集",
+  "description": "高校教师科研效率工具集合",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f0f2f5",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "zh-CN"
+}

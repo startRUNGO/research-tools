@@ -1,0 +1,236 @@
+/* SVG Editor */
+.svg-editor-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 250px;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.svg-toolbar,
+.svg-layers-panel {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.layers-list {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background: var(--bg-code);
+}
+
+.layer-item {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: var(--bg-card);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layer-item:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.layer-item.selected {
+    background: #e7f3ff;
+    border-color: #667eea;
+}
+
+.layer-item .layer-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.layer-item .layer-name {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.layer-item .layer-type {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: var(--bg-code);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+}
+
+.layers-placeholder {
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 2rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.layer-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.layer-actions button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+}
+
+.tool-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tool-buttons button {
+    width: 100%;
+}
+
+.color-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.color-picker label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.color-picker input[type="color"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.color-picker input[type="number"] {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.svg-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.svg-canvas-area {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#svgCanvas {
+    display: block;
+    margin: 1rem auto;
+    cursor: crosshair;
+}
+
+.svg-code-panel {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+#svgCodeOutput {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    margin: 1rem 0;
+    background: var(--bg-code);
+}
+
+/* Layer grouping */
+.layer-item.grouped {
+    border-left: 3px solid #9b59b6;
+}
+
+.layer-item.group-header {
+    background: #f0e6ff;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .layer-item.group-header {
+    background: #2d1f4e;
+}
+
+/* Properties Panel */
+.svg-properties-panel {
+    background: var(--bg-card);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+.svg-properties-panel h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-heading);
+}
+
+.prop-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.prop-row label {
+    min-width: 60px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.prop-row input[type="color"] {
+    width: 32px;
+    height: 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.prop-row input[type="number"] {
+    width: 70px;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-code);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+}
+
+.prop-row input[type="range"] {
+    flex: 1;
+}
+
+.prop-row span {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
