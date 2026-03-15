@@ -4,8 +4,8 @@ let paperDigestData = [];
 let pdLoaded = false;
 
 // Load papers from external JSON file
-function loadPaperDigest() {
-    if (pdLoaded) { renderPaperDigest(); return; }
+function loadPaperDigest(callback) {
+    if (pdLoaded) { if (callback) callback(); return; }
 
     fetch('data/papers.json')
         .then(function (r) {
@@ -17,12 +17,12 @@ function loadPaperDigest() {
                 paperDigestData = data;
             }
             pdLoaded = true;
-            renderPaperDigest();
+            if (callback) callback();
         })
         .catch(function () {
             paperDigestData = [];
             pdLoaded = true;
-            renderPaperDigest();
+            if (callback) callback();
         });
 }
 
@@ -43,19 +43,24 @@ function togglePdBookmark(id) {
         showToast(t('pd.bookmarked'));
     }
     localStorage.setItem('pd_bookmarks', JSON.stringify(bookmarks));
-    renderPaperDigest();
+    renderPdTo('');
+    renderPdTo('Home');
 }
 
-function renderPaperDigest() {
-    const list = document.getElementById('pdList');
-    const countEl = document.getElementById('pdCount');
+// Render paper digest to a specific set of elements (suffix: '' or 'Home')
+function renderPdTo(suffix) {
+    const list = document.getElementById('pdList' + suffix);
+    const countEl = document.getElementById('pdCount' + suffix);
     if (!list) return;
 
-    if (!pdLoaded) { loadPaperDigest(); return; }
+    if (!pdLoaded) {
+        loadPaperDigest(function () { renderPdTo(suffix); });
+        return;
+    }
 
-    const fieldFilter = document.getElementById('pdFieldFilter');
-    const dateFilter = document.getElementById('pdDateFilter');
-    const searchInput = document.getElementById('pdSearchInput');
+    const fieldFilter = document.getElementById('pdFieldFilter' + suffix);
+    const dateFilter = document.getElementById('pdDateFilter' + suffix);
+    const searchInput = document.getElementById('pdSearchInput' + suffix);
     const field = fieldFilter ? fieldFilter.value : 'all';
     const days = dateFilter ? dateFilter.value : 'all';
     const search = searchInput ? searchInput.value.trim().toLowerCase() : '';
@@ -64,27 +69,23 @@ function renderPaperDigest() {
 
     let items = paperDigestData.slice();
 
-    // Field filter
     if (field !== 'all') {
-        items = items.filter(p => p.field === field);
+        items = items.filter(function (p) { return p.field === field; });
     }
 
-    // Date filter
     if (days !== 'all') {
         const cutoff = new Date(now.getTime() - parseInt(days) * 86400000);
-        items = items.filter(p => new Date(p.date) >= cutoff);
+        items = items.filter(function (p) { return new Date(p.date) >= cutoff; });
     }
 
-    // Search filter
     if (search) {
-        items = items.filter(p => {
+        items = items.filter(function (p) {
             const haystack = (p.title + ' ' + p.authors + ' ' + (p.tags || []).join(' ') + ' ' + (p.abstract || '')).toLowerCase();
             return haystack.includes(search);
         });
     }
 
-    // Sort by date descending (newest first)
-    items.sort((a, b) => new Date(b.date) - new Date(a.date));
+    items.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
 
     if (countEl) {
         countEl.textContent = t('pd.count').replace('{n}', items.length);
@@ -98,8 +99,7 @@ function renderPaperDigest() {
     let html = '';
     let lastDate = '';
 
-    items.forEach(paper => {
-        // Date divider
+    items.forEach(function (paper) {
         if (paper.date !== lastDate) {
             lastDate = paper.date;
             const dateObj = new Date(paper.date);
@@ -111,9 +111,7 @@ function renderPaperDigest() {
 
         const isBookmarked = bookmarks.includes(paper.id);
 
-        html += '<article class="pd-card" id="' + paper.id + '">';
-
-        // Header
+        html += '<article class="pd-card">';
         html += '<div class="pd-card-header">';
         html += '<div class="pd-card-meta">';
         html += '<span class="pd-journal">' + paper.journal + '</span>';
@@ -122,47 +120,28 @@ function renderPaperDigest() {
         html += '<button class="pd-bookmark' + (isBookmarked ? ' active' : '') + '" onclick="togglePdBookmark(\'' + paper.id + '\')" title="' + t('pd.bookmark') + '">' + (isBookmarked ? '★' : '☆') + '</button>';
         html += '</div>';
 
-        // Title
         html += '<h3 class="pd-title">' + paper.title + '</h3>';
         html += '<p class="pd-authors">' + paper.authors + '</p>';
 
-        // Abstract
         if (paper.abstract) {
-            html += '<div class="pd-abstract">';
-            html += '<p>' + paper.abstract + '</p>';
-            html += '</div>';
+            html += '<div class="pd-abstract"><p>' + paper.abstract + '</p></div>';
         }
 
-        // Highlights
         if (paper.highlights && paper.highlights.length > 0) {
-            html += '<div class="pd-highlights">';
-            html += '<h4>' + t('pd.highlights') + '</h4>';
-            html += '<ul>';
-            paper.highlights.forEach(h => {
-                html += '<li>' + h + '</li>';
-            });
-            html += '</ul>';
-            html += '</div>';
+            html += '<div class="pd-highlights"><h4>' + t('pd.highlights') + '</h4><ul>';
+            paper.highlights.forEach(function (h) { html += '<li>' + h + '</li>'; });
+            html += '</ul></div>';
         }
 
-        // Comment
         if (paper.comment) {
-            html += '<div class="pd-comment">';
-            html += '<h4>' + t('pd.comment') + '</h4>';
-            html += '<p>' + paper.comment + '</p>';
-            html += '</div>';
+            html += '<div class="pd-comment"><h4>' + t('pd.comment') + '</h4><p>' + paper.comment + '</p></div>';
         }
 
-        // Tags & Links
-        html += '<div class="pd-card-footer">';
-        html += '<div class="pd-tags">';
+        html += '<div class="pd-card-footer"><div class="pd-tags">';
         if (paper.tags) {
-            paper.tags.forEach(tag => {
-                html += '<span class="pd-tag">' + tag + '</span>';
-            });
+            paper.tags.forEach(function (tag) { html += '<span class="pd-tag">' + tag + '</span>'; });
         }
-        html += '</div>';
-        html += '<div class="pd-links">';
+        html += '</div><div class="pd-links">';
         if (paper.url) {
             html += '<a href="' + paper.url + '" target="_blank" rel="noopener">' + t('pd.link.paper') + '</a>';
         }
@@ -172,21 +151,28 @@ function renderPaperDigest() {
         if (paper.doi) {
             html += '<a href="https://doi.org/' + paper.doi + '" target="_blank" rel="noopener">DOI</a>';
         }
-        html += '</div>';
-        html += '</div>';
-
+        html += '</div></div>';
         html += '</article>';
     });
 
     list.innerHTML = html;
 }
 
-// Auto-render on section visit
+// Wrapper functions for the two instances
+function renderPaperDigest() { renderPdTo(''); }
+function renderPaperDigestHome() { renderPdTo('Home'); }
+
+// Load and render on page load (home shows papers immediately)
 document.addEventListener('DOMContentLoaded', function () {
+    loadPaperDigest(function () {
+        renderPdTo('Home');
+    });
+
+    // Also render when paper-digest section is visited
     const pdSection = document.getElementById('paper-digest');
     if (pdSection) {
         const observer = new MutationObserver(function () {
-            if (pdSection.classList.contains('active')) loadPaperDigest();
+            if (pdSection.classList.contains('active')) renderPdTo('');
         });
         observer.observe(pdSection, { attributes: true, attributeFilter: ['class'] });
     }

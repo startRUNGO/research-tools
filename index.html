@@ -106,81 +106,36 @@
     </nav>
 
     <main class="container" id="main-content">
-        <!-- 首页 -->
+        <!-- 首页 = 论文速递 -->
         <section id="home" class="section active">
-            <h2 data-i18n="home.welcome">欢迎使用科研工具集</h2>
-            <div class="tool-cards">
-                <div class="card" onclick="navigateTo('latex')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.latex.title">📝 LaTeX格式化工具</h3>
-                    <p data-i18n="home.latex.desc">格式化、美化和预览LaTeX代码</p>
+            <h2 data-i18n="pd.heading">论文速递</h2>
+            <p class="section-desc" data-i18n="pd.desc">每日精选顶刊论文，解析核心亮点与创新方法。</p>
+
+            <!-- Filters -->
+            <div class="pd-toolbar">
+                <div class="pd-filters">
+                    <select id="pdFieldFilterHome" onchange="renderPaperDigestHome()">
+                        <option value="all" data-i18n="pd.filter.all">全部领域</option>
+                        <option value="AI/ML">AI/ML</option>
+                        <option value="CV">Computer Vision</option>
+                        <option value="NLP">NLP</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <select id="pdDateFilterHome" onchange="renderPaperDigestHome()">
+                        <option value="all" data-i18n="pd.filter.alltime">全部时间</option>
+                        <option value="7" data-i18n="pd.filter.week">最近7天</option>
+                        <option value="30" data-i18n="pd.filter.month">最近30天</option>
+                    </select>
+                    <input type="text" id="pdSearchInputHome" placeholder="搜索论文标题/关键词..." data-i18n-placeholder="pd.search.placeholder" oninput="renderPaperDigestHome()">
                 </div>
-                <div class="card" onclick="navigateTo('svg')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.svg.title">🎨 SVG图片编辑器</h3>
-                    <p data-i18n="home.svg.desc">在线创建和编辑SVG矢量图形</p>
-                </div>
-                <div class="card" onclick="navigateTo('ai-writing')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.aiwriting.title">🤖 AI写作助手</h3>
-                    <p data-i18n="home.aiwriting.desc">论文润色、降重、审稿回复等Prompt模板</p>
-                </div>
-                <div class="card" onclick="navigateTo('ai-tools')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.aitools.title">🔧 AI工具导航</h3>
-                    <p data-i18n="home.aitools.desc">精选AI写作、绘图、PPT等效率工具</p>
-                </div>
-                <div class="card" onclick="navigateTo('text-tools')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.texttools.title">📊 文本工具</h3>
-                    <p data-i18n="home.texttools.desc">字数统计、文本清理、阅读时长估算</p>
-                </div>
-                <div class="card" onclick="navigateTo('markdown')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.markdown.title">📝 Markdown编辑器</h3>
-                    <p data-i18n="home.markdown.desc">实时预览的Markdown编辑器，支持数学公式</p>
-                </div>
-            <div class="card" onclick="navigateTo('references')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                <h3 data-i18n="home.ref.title">📚 参考文献管理</h3>
-                <p data-i18n="home.ref.desc">BibTeX解析、DOI抓取、APA/IEEE/GB格式转换</p>
-            </div>
-            <div class="card" onclick="navigateTo('dataviz')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                <h3 data-i18n="home.viz.title">📊 数据可视化</h3>
-                <p data-i18n="home.viz.desc">粘贴CSV数据，生成折线图、柱状图、饼图等</p>
-            </div>
-            <div class="card" onclick="navigateTo('codehighlight')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                <h3 data-i18n="home.code.title">💻 代码高亮分享</h3>
-                <p data-i18n="home.code.desc">生成带语法高亮的代码图片或HTML</p>
-            </div>
-            <div class="card" onclick="navigateTo('cron')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                <h3 data-i18n="home.cron.title">⏰ Cron表达式解析</h3>
-                <p data-i18n="home.cron.desc">解析Cron表达式，查看下次执行时间</p>
-            </div>
-            <div class="card" onclick="navigateTo('calendar')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                <h3 data-i18n="home.cal.title">📅 学术日历</h3>
-                <p data-i18n="home.cal.desc">重要学术会议截止日期与倒计时</p>
-            </div>
-            <div class="card" onclick="navigateTo('formula')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                <h3 data-i18n="home.formula.title">∑ 公式助手</h3>
-                <p data-i18n="home.formula.desc">LaTeX数学符号面板与实时公式预览</p>
-            </div>
-            <div class="card" onclick="navigateTo('pomodoro')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                <h3 data-i18n="home.pomo.title">🍅 番茄钟</h3>
-                <p data-i18n="home.pomo.desc">科研专注计时器，统计工作时长</p>
-            </div>
-                <div class="card" onclick="navigateTo('models')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.models.title">🧠 神经网络模型库</h3>
-                    <p data-i18n="home.models.desc">常见神经网络架构图示例</p>
-                </div>
-                <div class="card" onclick="navigateTo('flowcharts')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.flowcharts.title">📐 顶刊流程图画廊</h3>
-                    <p data-i18n="home.flowcharts.desc">顶级期刊论文流程图SVG重绘，高清下载</p>
-                </div>
-                <div class="card" onclick="navigateTo('paper-digest')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.paperdigest.title">📰 论文速递</h3>
-                    <p data-i18n="home.paperdigest.desc">每日顶刊论文解析，提炼核心亮点</p>
-                </div>
-                <div class="card" onclick="navigateTo('resources')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
-                    <h3 data-i18n="home.resources.title">📚 科研资源导航</h3>
-                    <p data-i18n="home.resources.desc">论文、会议、期刊等资源整合</p>
+                <div class="pd-stats">
+                    <span id="pdCountHome"></span>
                 </div>
             </div>
-            <!-- Ad placeholder -->
-            <div class="ad-container"></div>
+
+            <div id="pdListHome" class="pd-list"></div>
         </section>
 
         <!-- LaTeX工具 -->
