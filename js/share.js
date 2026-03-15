@@ -45,7 +45,18 @@ function handleImportFile(event) {
     reader.onload = function(e) {
         try {
             const data = JSON.parse(e.target.result);
-            Object.keys(data).forEach(key => { localStorage.setItem(key, data[key]); });
+            if (typeof data !== 'object' || data === null || Array.isArray(data)) {
+                showToast(t('share.importError'), 'error'); return;
+            }
+            const maxSize = 5 * 1024 * 1024; // 5MB limit
+            if (e.target.result.length > maxSize) {
+                showToast(t('share.importError'), 'error'); return;
+            }
+            Object.keys(data).forEach(key => {
+                if (typeof data[key] === 'string') {
+                    localStorage.setItem(key, data[key]);
+                }
+            });
             showToast(t('share.imported'));
             setTimeout(() => location.reload(), 1500);
         } catch (err) {
@@ -86,6 +97,3 @@ document.addEventListener('DOMContentLoaded', function() {
     setLanguage(currentLang);
 });
 
-// Welcome message
-console.log('%cWelcome to Research Tools Hub!', 'color: #667eea; font-size: 20px; font-weight: bold;');
-console.log('%cAn open-source research tools platform', 'color: #555; font-size: 14px;');

@@ -78,6 +78,8 @@
                 <li><a href="#formula" class="nav-link" data-i18n="nav.formula">公式助手</a></li>
                 <li><a href="#pomodoro" class="nav-link" data-i18n="nav.pomodoro">番茄钟</a></li>
                 <li><a href="#models" class="nav-link" data-i18n="nav.models">神经网络模型库</a></li>
+                <li><a href="#flowcharts" class="nav-link" data-i18n="nav.flowcharts">流程图画廊</a></li>
+                <li><a href="#paper-digest" class="nav-link" data-i18n="nav.paperdigest">论文速递</a></li>
                 <li><a href="#resources" class="nav-link" data-i18n="nav.resources">科研资源</a></li>
             </ul>
         </div>
@@ -143,6 +145,14 @@
                 <div class="card" onclick="navigateTo('models')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
                     <h3 data-i18n="home.models.title">🧠 神经网络模型库</h3>
                     <p data-i18n="home.models.desc">常见神经网络架构图示例</p>
+                </div>
+                <div class="card" onclick="navigateTo('flowcharts')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
+                    <h3 data-i18n="home.flowcharts.title">📐 顶刊流程图画廊</h3>
+                    <p data-i18n="home.flowcharts.desc">顶级期刊论文流程图SVG重绘，高清下载</p>
+                </div>
+                <div class="card" onclick="navigateTo('paper-digest')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
+                    <h3 data-i18n="home.paperdigest.title">📰 论文速递</h3>
+                    <p data-i18n="home.paperdigest.desc">每日顶刊论文解析，提炼核心亮点</p>
                 </div>
                 <div class="card" onclick="navigateTo('resources')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')this.click()">
                     <h3 data-i18n="home.resources.title">📚 科研资源导航</h3>
@@ -312,7 +322,8 @@ E = mc^2
             </div>
             <div class="svg-code-panel" id="svgCodePanel" style="display: none;">
                 <h3 data-i18n="svg.code.heading">SVG代码</h3>
-                <textarea id="svgCodeOutput" readonly></textarea>
+                <textarea id="svgCodeOutput" placeholder="在此粘贴SVG源代码，点击「导入代码」预览..."></textarea>
+                <button onclick="importSvgCode()" data-i18n="svg.btn.importcode">导入代码</button>
                 <button onclick="copySvgCode()" data-i18n="svg.btn.copycode">复制代码</button>
                 <button onclick="closeSvgCode()" data-i18n="svg.btn.close">关闭</button>
             </div>
@@ -1618,6 +1629,78 @@ Main changes we made:
             </div>
         </section>
 
+        <!-- 顶刊流程图画廊 -->
+        <section id="flowcharts" class="section">
+            <h2 data-i18n="fc.heading">顶刊流程图画廊</h2>
+            <p class="section-desc" data-i18n="fc.desc">精选顶级期刊论文流程图，使用SVG矢量重绘，高清无损下载。</p>
+
+            <!-- Unlock bar -->
+            <div id="fcLockBar" class="fc-lock-bar">
+                <div class="fc-lock-info">
+                    <span class="fc-lock-icon">🔒</span>
+                    <span data-i18n="fc.locked.hint">输入解锁密码以获取高清SVG下载</span>
+                </div>
+                <div class="fc-unlock-form">
+                    <input type="password" id="fcPasswordInput" placeholder="请输入解锁密码" data-i18n-placeholder="fc.password.placeholder">
+                    <button onclick="unlockFlowcharts()" data-i18n="fc.btn.unlock">解锁</button>
+                </div>
+            </div>
+            <div id="fcUnlockedBar" class="fc-unlocked-bar" style="display:none;">
+                <span class="fc-lock-icon">🔓</span>
+                <span data-i18n="fc.unlocked.hint">已解锁，可自由下载所有流程图</span>
+                <button onclick="lockFlowcharts()" class="fc-btn-lock" data-i18n="fc.btn.lock">锁定</button>
+            </div>
+
+            <!-- Filter -->
+            <div class="fc-filter">
+                <label data-i18n="fc.filter.field">领域筛选：</label>
+                <select id="fcFieldFilter" onchange="renderFlowcharts()">
+                    <option value="all" data-i18n="fc.filter.all">全部</option>
+                    <option value="AI/ML">AI/ML</option>
+                    <option value="CV">Computer Vision</option>
+                    <option value="NLP">NLP</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- Gallery grid -->
+            <div id="fcGallery" class="fc-gallery"></div>
+        </section>
+
+        <!-- 论文速递 -->
+        <section id="paper-digest" class="section">
+            <h2 data-i18n="pd.heading">论文速递</h2>
+            <p class="section-desc" data-i18n="pd.desc">每日精选顶刊论文，解析核心亮点与创新方法。</p>
+
+            <!-- Filters -->
+            <div class="pd-toolbar">
+                <div class="pd-filters">
+                    <select id="pdFieldFilter" onchange="renderPaperDigest()">
+                        <option value="all" data-i18n="pd.filter.all">全部领域</option>
+                        <option value="AI/ML">AI/ML</option>
+                        <option value="CV">Computer Vision</option>
+                        <option value="NLP">NLP</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <select id="pdDateFilter" onchange="renderPaperDigest()">
+                        <option value="all" data-i18n="pd.filter.alltime">全部时间</option>
+                        <option value="7" data-i18n="pd.filter.week">最近7天</option>
+                        <option value="30" data-i18n="pd.filter.month">最近30天</option>
+                    </select>
+                    <input type="text" id="pdSearchInput" placeholder="搜索论文标题/关键词..." data-i18n-placeholder="pd.search.placeholder" oninput="renderPaperDigest()">
+                </div>
+                <div class="pd-stats">
+                    <span id="pdCount"></span>
+                </div>
+            </div>
+
+            <!-- Paper list -->
+            <div id="pdList" class="pd-list"></div>
+        </section>
+
         <!-- 科研资源 -->
         <section id="resources" class="section">
             <h2 data-i18n="resources.heading">科研资源导航</h2>
@@ -1909,6 +1992,8 @@ Main changes we made:
     <script src="js/academic-cal.js"></script>
     <script src="js/formula-helper.js"></script>
     <script src="js/pomodoro.js"></script>
+    <script src="js/flowcharts.js"></script>
+    <script src="js/paper-digest.js"></script>
     <script src="js/ai-features.js"></script>
     <script src="js/share.js"></script>
     <script>

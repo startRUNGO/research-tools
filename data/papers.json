@@ -1,0 +1,942 @@
+[
+  {
+    "id": "pd-20260315-01",
+    "date": "2026-03-15",
+    "title": "FED-IoV: A Federated Learning-based Comprehensive Intrusion Detection Method for IoV",
+    "authors": "详见原文",
+    "journal": "Computers & Security",
+    "field": "AI/ML",
+    "doi": "10.1016/j.cose.2024.104067",
+    "url": "https://doi.org/10.1016/j.cose.2024.104067",
+    "abstract": "FED-IoV利用联邦学习架构实现分布式协同车联网入侵检测。将CAN总线流量转换为三通道彩色图像，设计剪枝优化的MobileNet-Tiny模型进行特征提取，在Raspberry Pi 4上完成实际部署验证。",
+    "highlights": [
+      "创新性地将CAN总线流量转换为图像表示，利用CV方法进行异常检测",
+      "MobileNet-Tiny通过通道剪枝实现极低计算开销，单样本推理<10ms",
+      "在Raspberry Pi 4上实际部署，CAN-Intrusion和CICIDS2017上分别达98.51%和97.74%准确率"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "MobileNet",
+      "CAN总线",
+      "边缘部署",
+      "中科院2区"
+    ],
+    "comment": "FL+轻量模型+边缘部署的完整方案，但仅在Raspberry Pi验证，未在MCU级设备测试，蒸馏/量化可进一步压缩"
+  },
+  {
+    "id": "pd-20260315-02",
+    "date": "2026-03-15",
+    "title": "H-RT-IDPS: Hierarchical Real-Time Intrusion Detection and Prevention System for IoV using TinyML Distilled CNN",
+    "authors": "详见原文",
+    "journal": "Technologies (MDPI)",
+    "field": "AI/ML",
+    "doi": "10.3390/technologies13120572",
+    "url": "https://doi.org/10.3390/technologies13120572",
+    "abstract": "提出三层防御架构：车载TinyML蒸馏CNN、RSU级BiLSTM-XGBoost混合模型、城市级Kafka-Spark Streaming监控层，实现从车端到云端的分层实时入侵检测。",
+    "highlights": [
+      "分层防御架构：车载TinyML + RSU深度模型 + 云端流处理，兼顾实时性和检测深度",
+      "通过知识蒸馏将BiLSTM-XGBoost迁移到超轻量CNN，车载端毫秒级响应",
+      "使用CICIoV2024数据集，覆盖DoS和多种欺骗攻击（GAS/RPM/SPEED/方向盘）"
+    ],
+    "tags": [
+      "TinyML",
+      "知识蒸馏",
+      "分层架构",
+      "车联网",
+      "实时检测"
+    ],
+    "comment": "分层架构思路有价值，但发表在MDPI Technologies影响力有限，且未在真实车载ECU/MCU上验证"
+  },
+  {
+    "id": "pd-20260315-03",
+    "date": "2026-03-15",
+    "title": "KD-GAT: CAN Bus Intrusion Detection with Knowledge Distillation and Graph Attention Transformer",
+    "authors": "Robert Frenken, Sidra Ghayour Bhatti, Hanqin Zhang, Qadeer Ahmed",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2507.19686",
+    "url": "https://arxiv.org/abs/2507.19686",
+    "abstract": "将CAN流量建模为图结构，结合多层GAT和跳跃知识聚合提取丰富特征，通过两阶段知识蒸馏使学生模型仅为教师的6.32%参数量，同时保持99.97%检测准确率。",
+    "highlights": [
+      "图表示方法天然适配CAN协议多ID并行通信特性，GAT捕获时序和关系模式",
+      "两阶段蒸馏（有监督预训练+软硬标签联合监督），学生仅6.32%教师参数",
+      "代码完全开源（GitHub: OSU-CAR-MSL/KD-GAT），可复现性5/5"
+    ],
+    "tags": [
+      "图注意力网络",
+      "知识蒸馏",
+      "CAN总线",
+      "开源",
+      "预印本"
+    ],
+    "comment": "开源+高可复现性是最大亮点，图表示+蒸馏思路可与FL结合设计分布式图联邦学习CAN IDS"
+  },
+  {
+    "id": "pd-20260315-04",
+    "date": "2026-03-15",
+    "title": "LCSMC-Net: Lightweight Separable Multi-Scale Convolution with Attention for CAN Intrusion Detection",
+    "authors": "详见原文",
+    "journal": "Sensors (MDPI)",
+    "field": "AI/ML",
+    "doi": "10.3390/s26041399",
+    "url": "https://doi.org/10.3390/s26041399",
+    "abstract": "超轻量CAN IDS架构，通过SMC-Lite多尺度卷积和LCTA线性注意力机制，INT8量化后仅3.6KB Flash / 3KB RAM，推理延迟5.6ms，完全满足汽车嵌入式ECU约束。",
+    "highlights": [
+      "INT8量化后Flash仅3.6KB（64KB预算的5.6%），RAM仅3KB（16KB预算的18.8%）",
+      "推理延迟5.6ms，在10ms截止时间前留有44%实时性余量",
+      "SMC-Lite + LCTA线性注意力避免二次复杂度，极致参数效率"
+    ],
+    "tags": [
+      "TinyML",
+      "INT8量化",
+      "ECU部署",
+      "多尺度卷积",
+      "注意力机制",
+      "中科院3区"
+    ],
+    "comment": "目前少有的真正满足ECU硬件约束的CAN IDS，可作为FL本地模型基线架构，但仅在Car-Hacking数据集验证"
+  },
+  {
+    "id": "pd-20260315-05",
+    "date": "2026-03-15",
+    "title": "APFed-LDwCBN: Adaptive Personalized Federated Learning with Lightweight Depthwise Convolutional Bottleneck Network for IoV Intrusion Detection",
+    "authors": "详见原文",
+    "journal": "Scientific Reports (Nature)",
+    "field": "AI/ML",
+    "doi": "10.1038/s41598-025-17699-3",
+    "url": "https://doi.org/10.1038/s41598-025-17699-3",
+    "abstract": "针对车联网数据异构性和非IID分布，提出自适应个性化联邦学习（APFed）模型，集成轻量级深度可分离卷积瓶颈网络（LDwCBN），通过细粒度自适应更新和动态权重融合增强模型个性化。",
+    "highlights": [
+      "APFed根据每个车辆的数据分布动态调整更新幅度和方向，有效解决非IID偏移",
+      "LDwCBN采用深度可分离卷积+瓶颈结构+残差连接，大幅降低计算量",
+      "在非IID数据下显著优于FedAvg和FedProx，发表于Nature子刊Scientific Reports（2区）"
+    ],
+    "tags": [
+      "联邦学习",
+      "个性化FL",
+      "非IID",
+      "轻量化",
+      "车联网",
+      "中科院2区"
+    ],
+    "comment": "FL+轻量模型路线与用户研究方向最接近，可在此基础上增加拜占庭鲁棒聚合和MCU级量化部署"
+  },
+  {
+    "id": "pd-20260315-06",
+    "date": "2026-03-15",
+    "title": "FedXgbBagging: Secure, Efficient, and Scalable Federated Learning for IoV Intrusion Detection",
+    "authors": "Alwash et al.",
+    "journal": "Concurrency and Computation (Wiley)",
+    "field": "AI/ML",
+    "doi": "10.1002/cpe.70160",
+    "url": "https://doi.org/10.1002/cpe.70160",
+    "abstract": "采用自适应FedXgbBagging聚合策略结合差分隐私机制，同时检测外部网络攻击和内部CAN总线攻击，在CICIoV2024上达到99.99%准确率。",
+    "highlights": [
+      "XGBoost集成学习与联邦Bagging策略结合，有效处理数据异构性",
+      "差分隐私在模型更新传输前添加校准噪声，防止梯度反演攻击",
+      "CICIoV2024上99.99%准确率，CSE-CIC-IDS2018上99.64%准确率"
+    ],
+    "tags": [
+      "联邦学习",
+      "XGBoost",
+      "差分隐私",
+      "CAN总线",
+      "中科院3区"
+    ],
+    "comment": "FL+差分隐私框架思路可复用，但XGBoost在MCU上部署困难，可替换为TinyML兼容的轻量DL模型"
+  },
+  {
+    "id": "pd-20260315-07",
+    "date": "2026-03-15",
+    "title": "KD-XVAE: Knowledge Distillation of VAE for In-Vehicle Network Intrusion Detection with Explainable AI",
+    "authors": "详见原文",
+    "journal": "ACM CPSIoTSec 2024 (CCS Workshop)",
+    "field": "AI/ML",
+    "doi": "10.1145/3690134.3694819",
+    "url": "https://doi.org/10.1145/3690134.3694819",
+    "abstract": "基于VAE知识蒸馏的车载入侵检测，学生模型仅1669个参数，0.3ms/批次推理速度，集成SHAP可解释AI，在HCRL Car-Hacking数据集上四类攻击F1均达100%。",
+    "highlights": [
+      "极致轻量：仅1669参数，0.3ms/批次推理，高度适合MCU部署",
+      "VAE异常检测范式天然适合检测未知攻击——偏离正常分布即标记",
+      "SHAP可解释性满足汽车安全标准要求，四类攻击F1 100%（但需警惕过拟合）"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "VAE",
+      "可解释AI",
+      "超轻量",
+      "CAN总线",
+      "ACM顶会Workshop"
+    ],
+    "comment": "1669参数+0.3ms推理是目前最极致的轻量蒸馏方案，但100% F1过于完美需警惕数据泄漏，仅单一数据集验证"
+  },
+  {
+    "id": "pd-20260315-08",
+    "date": "2026-03-15",
+    "title": "HED-ID: Metaheuristic-Optimized Edge-Deployable Explainable Intrusion Detection System",
+    "authors": "详见原文",
+    "journal": "Scientific Reports (Nature)",
+    "field": "AI/ML",
+    "doi": "10.1038/s41598-025-32183-8",
+    "url": "https://doi.org/10.1038/s41598-025-32183-8",
+    "abstract": "边缘可部署可解释IDS框架，采用S-BiGRU+注意力机制，结合灰狼优化（GWO）联合进行特征选择和超参数调优，兼顾高精度、可解释性和边缘适配。",
+    "highlights": [
+      "GWO元启发式算法同时优化特征子集和超参数，避免人工调参次优性",
+      "S-BiGRU捕获双向时序依赖，注意力聚焦最具判别性的时间步",
+      "联合优化有效去除冗余特征降低输入维度，加速边缘推理"
+    ],
+    "tags": [
+      "边缘部署",
+      "灰狼优化",
+      "BiGRU",
+      "可解释AI",
+      "特征选择",
+      "中科院2区"
+    ],
+    "comment": "GWO联合优化思路可借鉴到FL+CAN IDS场景，但S-BiGRU对MCU仍偏重，需进一步蒸馏压缩"
+  },
+  {
+    "id": "pd-20260315-09",
+    "date": "2026-03-15",
+    "title": "CGP-Mamba: Intrusion Detection Method Based on CNN and Mamba State Space Model",
+    "authors": "详见原文",
+    "journal": "Springer Conference",
+    "field": "AI/ML",
+    "doi": "10.1007/978-981-96-4509-1_18",
+    "url": "https://doi.org/10.1007/978-981-96-4509-1_18",
+    "abstract": "首次将Mamba状态空间模型（SSM）引入入侵检测领域，结合CNN局部特征提取与Mamba长程依赖建模，以线性时间复杂度处理长序列，在日志检测数据集上达96.23%精确率。",
+    "highlights": [
+      "Mamba SSM以线性时间复杂度替代Transformer的二次复杂度，天然适合边缘部署",
+      "CNN+Mamba混合架构同时捕获局部异常和长期行为模式，适合APT检测",
+      "重要研究空白：Mamba尚未应用于车载CAN IDS，极具首发价值"
+    ],
+    "tags": [
+      "Mamba",
+      "状态空间模型",
+      "CNN",
+      "APT检测",
+      "研究空白"
+    ],
+    "comment": "Mamba在车载CAN IDS领域完全空白，联邦Mamba轻量CAN IDS极具首发价值，线性复杂度是MCU友好的关键优势"
+  },
+  {
+    "id": "pd-20260315-10",
+    "date": "2026-03-15",
+    "title": "DSC-KAN: Lightweight CAN Bus Intrusion Detection using Depthwise Separable Convolution Kolmogorov-Arnold Network",
+    "authors": "详见原文",
+    "journal": "Scientific Reports (Nature)",
+    "field": "AI/ML",
+    "doi": "10.1038/s41598-025-02474-1",
+    "url": "https://doi.org/10.1038/s41598-025-02474-1",
+    "abstract": "结合深度可分离卷积与KAN（Kolmogorov-Arnold Network），KAN通过可学习激活函数替代固定激活函数，在极小参数量下达到高检测精度，面向车载嵌入式部署设计。",
+    "highlights": [
+      "KAN可学习激活函数提供比MLP更强的非线性表达能力，参数更紧凑",
+      "深度可分离卷积将标准卷积分解为深度+逐点两步，大幅减少参数",
+      "KAN在CAN IDS中的应用尚处早期，发表于Nature子刊Scientific Reports（2区）"
+    ],
+    "tags": [
+      "KAN",
+      "深度可分离卷积",
+      "轻量化",
+      "CAN总线",
+      "中科院2区"
+    ],
+    "comment": "KAN是新兴架构，可探索KAN在FL通信效率上的优势，以及KAN的知识蒸馏潜力，在MCU上的实际部署性能待验证"
+  },
+  {
+    "id": "pd-20260315-11",
+    "date": "2026-03-15",
+    "title": "DFF-FL: A Lightweight IDS with Dynamic Feature Fusion Federated Learning for Vehicular Network Security",
+    "authors": "详见原文",
+    "journal": "Sensors 2025, 25(15), 4622",
+    "field": "Security",
+    "url": "https://www.mdpi.com/1424-8220/25/15/4622",
+    "abstract": "提出动态特征融合联邦学习(DFF-FL)框架,采用双流架构(Transformer增强自编码器+轻量CNN-LSTM-Attention),在FL中同时融合特征空间表示而非仅聚合参数。F1>99%,内存1.11MB,可训练参数81,863。",
+    "highlights": [
+      "F1>99%,内存仅1.11MB,81,863可训练参数",
+      "双流架构同时提取抽象特征和原始数据特征",
+      "首次在FL中融合特征空间表示"
+    ],
+    "tags": [
+      "联邦学习",
+      "特征融合",
+      "车载网络",
+      "轻量化",
+      "Transformer",
+      "边缘部署"
+    ],
+    "comment": "FL框架中的轻量IDS,81K参数可与LCSMC-Net的9.4K对比"
+  },
+  {
+    "id": "pd-20260315-12",
+    "date": "2026-03-15",
+    "title": "PerFedHypID: Personalized Federated Hypernetworks-based Aggregation for Intrusion Detection Systems",
+    "authors": "详见原文",
+    "journal": "Scientific Reports, 2025",
+    "field": "Security",
+    "url": "https://www.nature.com/articles/s41598-025-11659-7",
+    "abstract": "基于超网络的个性化FL聚合策略,用嵌入向量替代权重聚合,通信成本降低约53%(每轮0.62M vs 1.17M参数)。在CSE-CICIDS-2018和UNSW-NB-15上优于现有个性化FL方法。",
+    "highlights": [
+      "嵌入向量聚合,通信成本降低53%",
+      "支持Non-IID异构数据和不同模型架构",
+      "IDS领域的个性化FL新范式"
+    ],
+    "tags": [
+      "联邦学习",
+      "个性化FL",
+      "超网络",
+      "Non-IID",
+      "入侵检测",
+      "通信效率"
+    ],
+    "comment": "嵌入聚合策略适合异构车载FL场景"
+  },
+  {
+    "id": "pd-20260315-13",
+    "date": "2026-03-15",
+    "title": "FL-IoV: Federated Learning for Secure In-Vehicle Communication with MobileNet-Tiny",
+    "authors": "详见原文",
+    "journal": "World Electric Vehicle Journal, 2025, 6(3), 48",
+    "field": "Security",
+    "url": "https://www.mdpi.com/2673-4001/6/3/48",
+    "abstract": "面向车载安全通信的FL框架,使用轻量MobileNet-Tiny CNN进行特征提取,检测准确率>98%,适合资源受限车载设备部署。",
+    "highlights": [
+      "MobileNet-Tiny适合资源受限车载设备",
+      "检测准确率>98%",
+      "隐私保护的去中心化训练"
+    ],
+    "tags": [
+      "联邦学习",
+      "MobileNet",
+      "车载通信",
+      "轻量化",
+      "隐私保护"
+    ],
+    "comment": "MobileNet-Tiny可与LCSMC-Net的SMC-Lite作参数量对比"
+  },
+  {
+    "id": "pd-20260315-14",
+    "date": "2026-03-15",
+    "title": "ParC1D-Net: Two-Stage CAN Bus Attack Detection by Fusing Temporal and Deep Features",
+    "authors": "Tan Mingming et al.",
+    "journal": "电子与信息学报(JEIT), 2025",
+    "field": "Security",
+    "url": "https://jeit.ac.cn/en/article/doi/10.11999/JEIT250651",
+    "abstract": "两阶段CAN总线攻击检测:第一阶段BiLSTM处理自定义时序特征(PDE+IFMD)高召回异常检测;第二阶段轻量ParC1D-Net(DSC+SE+FFN)对异常样本精分类。",
+    "highlights": [
+      "两阶段设计兼顾效率和精度",
+      "ParC1D Block: DSC+SE Attention+FFN",
+      "自定义特征PDE和IFMD无需深层提取"
+    ],
+    "tags": [
+      "CAN总线",
+      "轻量化",
+      "深度可分离卷积",
+      "两阶段检测",
+      "时序特征",
+      "注意力机制"
+    ],
+    "comment": "DSC+SE与LCSMC-Net的SMC-Lite+LCTA有相似设计哲学"
+  },
+  {
+    "id": "pd-20260315-15",
+    "date": "2026-03-15",
+    "title": "DST-IDS: Dynamic Spatial-Temporal Graph-Transformer for In-Vehicle Network IDS",
+    "authors": "详见原文",
+    "journal": "Scientific Reports, 2025",
+    "field": "Security",
+    "url": "https://www.nature.com/articles/s41598-025-18401-3",
+    "abstract": "基于动态时空图-Transformer的车载IDS,利用滑动窗口和动态图构建捕获CAN消息间时空依赖。Car-Hacking准确率99.9999%,IVN-IDS准确率99.96%。",
+    "highlights": [
+      "图神经网络建模CAN信号间关系",
+      "Car-Hacking准确率99.9999%",
+      "时空联合建模新范式"
+    ],
+    "tags": [
+      "图神经网络",
+      "Transformer",
+      "CAN总线",
+      "时空建模",
+      "动态图",
+      "入侵检测"
+    ],
+    "comment": "精度极高但模型复杂,可作为KD Teacher供LCSMC-Net蒸馏"
+  },
+  {
+    "id": "pd-20260315-16",
+    "date": "2026-03-15",
+    "title": "TSFF-IDS: Temporal-Spatial Feature Fusion Based IDS for In-Vehicle Networks",
+    "authors": "详见原文",
+    "journal": "Computers & Security, 2025",
+    "field": "Security",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167404825004705",
+    "abstract": "BiLSTM和CNN并行提取时序和空间特征,自动融合多维度信息用于车载网络攻击检测。",
+    "highlights": [
+      "BiLSTM+CNN并行双分支架构",
+      "时序和空间特征自动融合",
+      "车载网络专用设计"
+    ],
+    "tags": [
+      "特征融合",
+      "BiLSTM",
+      "CNN",
+      "CAN总线",
+      "时空特征",
+      "入侵检测"
+    ],
+    "comment": "并行特征融合思路可启发LCSMC-Net扩展版加入时序分支"
+  },
+  {
+    "id": "pd-20260315-17",
+    "date": "2026-03-15",
+    "title": "Lightweight Sequential AI Framework for Real-Time IDS in Dynamic Vehicular Networks",
+    "authors": "详见原文",
+    "journal": "Scientific Reports, 2026",
+    "field": "Security",
+    "url": "https://www.nature.com/articles/s41598-026-36103-2",
+    "abstract": "面向动态车载网络的轻量顺序AI框架,针对车载环境的动态性和实时性需求设计,在保持轻量的同时确保检测性能。",
+    "highlights": [
+      "2026年最新发表",
+      "轻量化设计支持实时检测",
+      "顺序处理架构适合流式数据"
+    ],
+    "tags": [
+      "轻量化",
+      "实时检测",
+      "车载网络",
+      "顺序AI",
+      "动态网络"
+    ],
+    "comment": "同为2026年轻量车载IDS,可作为直接对比论文"
+  },
+  {
+    "id": "pd-20260315-18",
+    "date": "2026-03-15",
+    "title": "KD-DNN-IDS: Lightweight IDS for IoT and UAV Using DNNs with Knowledge Distillation",
+    "authors": "详见原文",
+    "journal": "Computers 2025, 14(7), 291",
+    "field": "Security",
+    "url": "https://www.mdpi.com/2073-431X/14/7/291",
+    "abstract": "使用KD将DNN教师模型知识迁移到浅层学生模型,在NSL-KDD/UNSW-NB15/CIC-IDS2017/IoTID20/UAV IDS上验证,参数减少92-95%,推理加速7-11%,性能提升最高6.12%。",
+    "highlights": [
+      "参数减少92-95%,推理加速7-11%",
+      "5个数据集交叉验证",
+      "DNN→浅层网络的极端压缩"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "轻量化",
+      "IoT",
+      "UAV",
+      "DNN",
+      "模型压缩"
+    ],
+    "comment": "92-95%压缩率可作为LCSMC-Net KD实验的参考基线"
+  },
+  {
+    "id": "pd-20260315-19",
+    "date": "2026-03-15",
+    "title": "KD-Cluster-IDS: Knowledge Distillation-based Lightweight IDS for IoT",
+    "authors": "详见原文",
+    "journal": "Cluster Computing, 2025",
+    "field": "Security",
+    "url": "https://link.springer.com/article/10.1007/s10586-025-05597-2",
+    "abstract": "基于KD的轻量IoT入侵检测,学生模型比教师小近三个数量级,结合可解释性驱动剪枝和结构化压缩,实现低延迟低功耗推理。",
+    "highlights": [
+      "学生模型比教师小近三个数量级",
+      "可解释性驱动的剪枝+结构化压缩",
+      "面向异构IoT环境"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "模型压缩",
+      "IoT",
+      "轻量化",
+      "可解释性",
+      "入侵检测"
+    ],
+    "comment": "三个数量级压缩比启示:可设计大型Teacher→LCSMC-Net Student蒸馏"
+  },
+  {
+    "id": "pd-20260315-20",
+    "date": "2026-03-15",
+    "title": "KD-Cloud-Edge: Optimising IDS in Cloud-Edge Continuum with Knowledge Distillation",
+    "authors": "详见原文",
+    "journal": "arXiv:2504.10698, 2025",
+    "field": "Security",
+    "url": "https://arxiv.org/html/2504.10698",
+    "abstract": "云-边缘协同IDS优化,使用KD将云端复杂模型知识蒸馏到边缘轻量模型,结合FL框架保护隐私。",
+    "highlights": [
+      "云-边缘协同架构中的KD",
+      "KD+FL联合框架",
+      "隐私保护的模型压缩"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "联邦学习",
+      "云边协同",
+      "隐私保护",
+      "入侵检测",
+      "边缘计算"
+    ],
+    "comment": "云端大模型→边缘LCSMC-Net的KD+FL联合方案"
+  },
+  {
+    "id": "pd-20260315-21",
+    "date": "2026-03-15",
+    "title": "SMEESI: TinyML-Enabled Energy-Efficient Intrusion Detection System",
+    "authors": "详见原文",
+    "journal": "JISIS, 2025",
+    "field": "Security",
+    "url": "https://jisis.org/wp-content/uploads/2025/11/2025.I3.041.pdf",
+    "abstract": "结合Q-CNN(94.3%准确率,内存减少65%)、自编码器、模糊逻辑功耗管理和TinyML优化。能耗213.6mJ,比DAGMM减少60%。面向MCU(STM32/ESP32)部署。",
+    "highlights": [
+      "Q-CNN+自编码器+模糊逻辑四合一",
+      "能耗仅213.6mJ,比竞品减少43-60%",
+      "模糊逻辑动态功耗管理"
+    ],
+    "tags": [
+      "TinyML",
+      "MCU部署",
+      "量化CNN",
+      "能效优化",
+      "模糊逻辑",
+      "入侵检测",
+      "STM32",
+      "ESP32"
+    ],
+    "comment": "LCSMC-Net的9.4K参数INT8量化后可能比Q-CNN更轻量"
+  },
+  {
+    "id": "pd-20260315-22",
+    "date": "2026-03-15",
+    "title": "SNN-TinyML-IDS: Siamese Neural Network on MCU for Class Imbalance IDS in IoT-Edge",
+    "authors": "Fusco et al.",
+    "journal": "AINA 2025 (Springer LNNS)",
+    "field": "Security",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-87769-8_34",
+    "abstract": "MCU上部署Siamese神经网络处理IoT-边缘域入侵检测的类别不平衡问题。SNN的few-shot能力使新攻击类型无需重训练即可识别。",
+    "highlights": [
+      "Siamese网络few-shot:新攻击类型无需重训练",
+      "MCU部署验证",
+      "解决类别不平衡的新思路"
+    ],
+    "tags": [
+      "TinyML",
+      "MCU部署",
+      "Siamese网络",
+      "few-shot",
+      "类别不平衡",
+      "边缘AI"
+    ],
+    "comment": "SNN的few-shot能力可用于LCSMC-Net扩展应对未知攻击"
+  },
+  {
+    "id": "pd-20260315-23",
+    "date": "2026-03-15",
+    "title": "FL-TinyML Survey: Federated Learning and TinyML on IoT Edge Devices",
+    "authors": "Ramadan et al.",
+    "journal": "ICT Express, 2025",
+    "field": "AI/ML",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2405959525000839",
+    "abstract": "FL+TinyML在IoT边缘设备上的融合综述。涵盖量化/剪枝/KD等模型优化,联邦平均/梯度稀疏化等通信高效算法,以及LoRa分布式通信和无损压缩。",
+    "highlights": [
+      "FL+TinyML融合的系统综述",
+      "全套优化技术:量化/剪枝/KD",
+      "通信方案:LoRa+数据压缩"
+    ],
+    "tags": [
+      "联邦学习",
+      "TinyML",
+      "综述",
+      "模型优化",
+      "通信效率",
+      "IoT边缘"
+    ],
+    "comment": "为LCSMC-Net的FL+TinyML扩展提供系统性技术路线图"
+  },
+  {
+    "id": "pd-20260315-24",
+    "date": "2026-03-15",
+    "title": "RMPFD: Robust Personalized Federated Distillation with Adaptive Hierarchical Clustering",
+    "authors": "详见原文",
+    "journal": "Scientific Reports, 2025",
+    "field": "AI/ML",
+    "url": "https://www.nature.com/articles/s41598-025-96468-8",
+    "abstract": "鲁棒个性化联邦蒸馏框架,自适应分层聚类按数据分布相似度分组客户端,生成半全局模型。KD+FL自然融合。",
+    "highlights": [
+      "分层聚类+联邦蒸馏双创新",
+      "自适应客户端分组",
+      "KD+FL自然融合"
+    ],
+    "tags": [
+      "联邦学习",
+      "知识蒸馏",
+      "聚类",
+      "个性化FL",
+      "隐私保护"
+    ],
+    "comment": "KD+FL直接融合,正是LCSMC-Net五合一扩展的核心技术"
+  },
+  {
+    "id": "pd-20260315-25",
+    "date": "2026-03-15",
+    "title": "FedACA: Adaptive Classifier Aggregation and Clustering for Personalized Heterogeneous FL",
+    "authors": "详见原文",
+    "journal": "Neurocomputing, 2026",
+    "field": "AI/ML",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231226003693",
+    "abstract": "自适应分类器聚合和聚类的个性化异构FL方法,解决原型偏移和模糊决策边界问题。",
+    "highlights": [
+      "2026年最新,解决原型偏移",
+      "自适应分类器聚合(非简单参数平均)",
+      "异构模型支持"
+    ],
+    "tags": [
+      "联邦学习",
+      "聚类",
+      "个性化FL",
+      "异构模型",
+      "自适应聚合"
+    ],
+    "comment": "自适应聚合策略可直接用于车载FL的异构模型聚合"
+  },
+  {
+    "id": "pd-20260315-26",
+    "date": "2026-03-15",
+    "title": "HAPFL: Heterogeneity-aware Personalized FL via Adaptive Dual-Agent Reinforcement Learning",
+    "authors": "详见原文",
+    "journal": "arXiv:2501.16966, 2025",
+    "field": "AI/ML",
+    "url": "https://arxiv.org/html/2501.16966v1",
+    "abstract": "双智能体RL驱动的异构感知个性化FL,减少训练时间20.9-40.4%,降低掉队延迟19.0-48.0%。",
+    "highlights": [
+      "RL驱动自适应聚合策略",
+      "训练时间减少20-40%",
+      "掉队延迟降低19-48%"
+    ],
+    "tags": [
+      "联邦学习",
+      "强化学习",
+      "异构感知",
+      "个性化FL",
+      "通信效率"
+    ],
+    "comment": "RL自适应聚合可解决车载FL中ECU计算能力异构的掉队问题"
+  },
+  {
+    "id": "pd-20260315-27",
+    "date": "2026-03-15",
+    "title": "SaAS-FL: Efficient Aggregation with Synchronous-Asynchronous Mechanism for FL",
+    "authors": "详见原文",
+    "journal": "Scientific Reports, 2025",
+    "field": "AI/ML",
+    "url": "https://www.nature.com/articles/s41598-025-24622-3",
+    "abstract": "同步-异步混合FL聚合算法,缓解过时梯度对模型精度的影响,整合两种训练范式的优势。",
+    "highlights": [
+      "同步+异步混合训练范式",
+      "缓解过时梯度问题",
+      "适合异构计算资源场景"
+    ],
+    "tags": [
+      "联邦学习",
+      "异步聚合",
+      "同步异步混合",
+      "通信效率",
+      "聚合策略"
+    ],
+    "comment": "混合范式适合车载场景:不同ECU计算周期差异大"
+  },
+  {
+    "id": "pd-20260313-01",
+    "date": "2026-03-13",
+    "title": "H-FL: A Robust Multi-Stage Intrusion Detection System for In-Vehicle Network Security using Hierarchical Federated Learning",
+    "authors": "Althunayyan, Javed, Rana",
+    "journal": "Vehicular Communications",
+    "field": "Security",
+    "doi": "10.1016/j.vehcom.2024.100837",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2214209624001128",
+    "abstract": "分层联邦学习框架，第一阶段ANN检测已知攻击（F1>0.99），第二阶段LSTM自编码器检测零日攻击（F1>0.95），FAR仅0.016%。多边缘聚合器+中央聚合器，解决单点故障问题。",
+    "highlights": [
+      "H-FL分层架构解决传统FL单点故障问题，多边缘聚合器提升鲁棒性和可扩展性",
+      "两阶段检测：ANN快速过滤已知攻击 + LSTM-AE捕获零日攻击，F1>0.99/0.95",
+      "FAR仅0.016%，在non-IID数据场景下H-FL在24个场景中16个提升了F1"
+    ],
+    "tags": [
+      "联邦学习",
+      "分层FL",
+      "零日攻击",
+      "CAN总线",
+      "车载网络",
+      "中科院2区"
+    ],
+    "comment": "H-FL架构思路可复用，但ANN+LSTM模型较重，无MCU部署验证，无KD压缩"
+  },
+  {
+    "id": "pd-20260313-02",
+    "date": "2026-03-13",
+    "title": "PFMeta-IDS: Personalized Federated Meta-Learning Automotive Intrusion Detection System",
+    "authors": "详见原文",
+    "journal": "Preprints.org / P2P Networking and Applications (Springer)",
+    "field": "AI/ML",
+    "url": "https://www.preprints.org/manuscript/202502.0017/v1",
+    "abstract": "个性化联邦元学习IDS，PFMetaSWR算法采用相似度加权聚合平衡个性化与泛化，FOMAML元学习实现few-shot快速适应新攻击场景，LDwCBN轻量网络确保计算效率。",
+    "highlights": [
+      "PFMetaSWR根据制造商相似度加权聚合，不同车型获得差异化全局模型",
+      "FOMAML元学习：各制造商可用少量样本快速适应新攻击，无需全量重训",
+      "正则化损失函数让本地模型部分学习全局元参数，平衡个性化和泛化"
+    ],
+    "tags": [
+      "联邦学习",
+      "元学习",
+      "个性化FL",
+      "few-shot",
+      "车载网络"
+    ],
+    "comment": "元学习+FL是创新组合，但LDwCBN参数量较重，元学习额外开销在MCU上不可行"
+  },
+  {
+    "id": "pd-20260313-03",
+    "date": "2026-03-13",
+    "title": "Ultra-Lightweight Pruned Binarised Neural Networks for Intrusion Detection in In-Vehicle Networks",
+    "authors": "Rangsikunpum, Amiri, Ost",
+    "journal": "Electronics (MDPI)",
+    "field": "AI/ML",
+    "doi": "10.3390/electronics14091710",
+    "url": "https://www.mdpi.com/2079-9292/14/9/1710",
+    "abstract": "二值化神经网络(BNN)结合网络剪枝，实现91.07%参数减少仅损0.1%精度。粗到细(C2F)两阶段过滤正常流量。FPGA部署比GPU快3.7x，能效7.4x。",
+    "highlights": [
+      "BNN+剪枝91%参数减少仅损0.1%精度，C2F两阶段先过滤正常流量减少计算",
+      "FPGA实测：比GPU快3.7x/能效7.4x，比CPU快2.4x/能效3.8x",
+      "BNN方案中最快平均推理速度，比同类快3.3x-12x"
+    ],
+    "tags": [
+      "二值化网络",
+      "剪枝",
+      "FPGA部署",
+      "CAN总线",
+      "超轻量",
+      "车载网络"
+    ],
+    "comment": "FPGA路线与MCU路线互补，BNN极致压缩思路可借鉴，但缺少FL和KD"
+  },
+  {
+    "id": "pd-20260313-04",
+    "date": "2026-03-13",
+    "title": "BNN-IDS: Efficient and Effective In-Vehicle Intrusion Detection System using Binarized Convolutional Neural Network",
+    "authors": "Zhang, Yan, Ma",
+    "journal": "IEEE INFOCOM 2024",
+    "field": "Security",
+    "url": "https://www.researchgate.net/publication/383081912",
+    "abstract": "针对ECU内存约束和实时要求，设计二值化CNN实现高效车载IDS。在保持>99%检测精度的同时，大幅降低内存占用，满足车载嵌入式实时性要求。",
+    "highlights": [
+      "CCF-A类顶会论文(INFOCOM 2024)，学术影响力强",
+      "二值化CNN针对ECU内存约束设计，模型极小",
+      ">99%检测精度下实现实时推理，面向真实嵌入式部署"
+    ],
+    "tags": [
+      "二值化CNN",
+      "ECU部署",
+      "CAN总线",
+      "轻量化",
+      "CCF-A"
+    ],
+    "comment": "INFOCOM 2024 CCF-A顶会，二值化CNN+ECU部署是最直接竞品，但无FL无KD"
+  },
+  {
+    "id": "pd-20260313-05",
+    "date": "2026-03-13",
+    "title": "CGTS: Graph Transformer-Based Anomaly Detection in Controller Area Networks",
+    "authors": "详见原文",
+    "journal": "Cybersecurity (Springer)",
+    "field": "Security",
+    "doi": "10.1186/s42400-025-00365-6",
+    "url": "https://link.springer.com/article/10.1186/s42400-025-00365-6",
+    "abstract": "将CAN报文建模为图结构，Graph Transformer提取复杂结构信息，SVDD单类分类实现无监督异常检测，无需攻击样本标注。",
+    "highlights": [
+      "图建模CAN ID关系：将CAN报文间的时序和功能关系建模为图，Graph Transformer提取结构特征",
+      "无监督方法(SVDD)无需攻击样本标注，适合检测未知攻击类型",
+      "Graph Transformer对CAN拓扑结构的建模是新颖视角"
+    ],
+    "tags": [
+      "图神经网络",
+      "Transformer",
+      "无监督",
+      "CAN总线",
+      "异常检测"
+    ],
+    "comment": "图建模CAN拓扑是创新思路，但Graph Transformer较重不适合MCU，无FL无KD"
+  },
+  {
+    "id": "pd-20260313-06",
+    "date": "2026-03-13",
+    "title": "TFTKD: Lightweight Intrusion Detection Model Based on CNN and Knowledge Distillation",
+    "authors": "详见原文",
+    "journal": "Applied Soft Computing",
+    "field": "AI/ML",
+    "doi": "10.1016/j.asoc.2024.112045",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1568494624008925",
+    "abstract": "2D傅里叶变换将流量数据从时域转频域解决稀疏问题，8层CNN教师+1层CNN学生，自适应温度知识蒸馏动态调整蒸馏强度。",
+    "highlights": [
+      "傅里叶变换域转换：将稀疏流量数据转到频域，增强像素相似性",
+      "自适应温度KD：根据训练阶段动态调整软标签温度，比固定温度效果更好",
+      "1层CNN学生模型极其轻量，发表在中科院2区Applied Soft Computing (IF≈8.7)"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "自适应温度",
+      "傅里叶变换",
+      "轻量化",
+      "CNN",
+      "中科院2区"
+    ],
+    "comment": "自适应温度KD技术可直接迁移到LCSMC-Net蒸馏中，但非CAN专用，无FL无MCU"
+  },
+  {
+    "id": "pd-20260313-07",
+    "date": "2026-03-13",
+    "title": "CP-LSKD: Knowledge Distillation-Based Lightweight Intrusion Detection for IoT",
+    "authors": "详见原文",
+    "journal": "Cluster Computing (Springer)",
+    "field": "AI/ML",
+    "doi": "10.1007/s10586-025-05597-2",
+    "url": "https://link.springer.com/article/10.1007/s10586-025-05597-2",
+    "abstract": "对比PCA降维+倒残差网络+深度可分离卷积学生模型，梯子式KD(LSKD)在教师-学生间建立shortcut连接，从知识转移和标签两个维度联合优化蒸馏。",
+    "highlights": [
+      "梯子式KD (LSKD)：在教师-学生间多层建shortcut，比传统KD知识转移更充分",
+      "倒残差+深度可分离卷积：与LCSMC-Net的SMC-Lite技术路线高度契合",
+      "对比PCA(CPCA)降维：保留类间差异同时压缩特征维度"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "梯子式KD",
+      "深度可分离卷积",
+      "IoT",
+      "轻量化",
+      "中科院3区"
+    ],
+    "comment": "LSKD多层shortcut蒸馏思路可直接应用于LCSMC-Net的教师-学生训练"
+  },
+  {
+    "id": "pd-20260313-08",
+    "date": "2026-03-13",
+    "title": "LNet-SKD: A Lightweight Approach for Network Intrusion Detection based on Self-Knowledge Distillation",
+    "authors": "详见原文",
+    "journal": "IEEE ICC / arXiv",
+    "field": "AI/ML",
+    "url": "https://arxiv.org/pdf/2307.10191",
+    "abstract": "DeepMax Block高效特征提取+批次自蒸馏(self-KD)无需教师模型。FLOPs降低63.1%(194.58K)，参数量减少62%，精度反而提升2.1%(NSL-KDD)/1.6%(CICIDS2017)。",
+    "highlights": [
+      "自蒸馏无需教师模型：用自身历史输出做soft targets，零额外参数开销",
+      "194.58K FLOPs极低计算量，比LCSMC-Net的2.84M更低",
+      "参数减少62%的同时精度反升，证明自蒸馏正则化效果"
+    ],
+    "tags": [
+      "自蒸馏",
+      "知识蒸馏",
+      "轻量化",
+      "DeepMax",
+      "零额外参数"
+    ],
+    "comment": "自蒸馏方案在FL场景中特别有价值——无需传输教师模型，每个客户端独立自蒸馏"
+  },
+  {
+    "id": "pd-20260313-09",
+    "date": "2026-03-13",
+    "title": "On-Device Lightweight Transfer Learning for Automotive Intrusion Detection on STM32",
+    "authors": "详见原文",
+    "journal": "Conference Paper (ResearchGate)",
+    "field": "Security",
+    "url": "https://www.researchgate.net/publication/381337796",
+    "abstract": "目前唯一针对STM32平台的CAN IDS部署论文。DCNN+迁移学习在STM32上实现车载入侵检测，无需手工特征设计，学习CAN流量模式自动检测恶意流量。",
+    "highlights": [
+      "目前唯一STM32 CAN IDS部署论文!!!  直接相关的竞品/基线",
+      "迁移学习在目标STM32平台fine-tune，减少车型适配成本",
+      "DCNN自动学习CAN流量模式，无需人工特征工程"
+    ],
+    "tags": [
+      "STM32",
+      "MCU部署",
+      "迁移学习",
+      "CAN总线",
+      "DCNN",
+      "TinyML"
+    ],
+    "comment": "最重要的直接竞品! 但仅推理部署无FL，模型较重需TL压缩，无KD"
+  },
+  {
+    "id": "pd-20260313-10",
+    "date": "2026-03-13",
+    "title": "FedLESAM: Locally Estimated Global Perturbations for Federated Sharpness-aware Minimization",
+    "authors": "Fan et al.",
+    "journal": "ICML 2024 (Spotlight)",
+    "field": "AI/ML",
+    "url": "https://github.com/MediaBrain-SJTU/FedLESAM",
+    "abstract": "ICML 2024 Spotlight论文。局部估计全局扰动方向实现高效联邦SAM优化，复用/估计一致性扰动方向减少SAM额外前向-反向传播开销，在non-IID数据上显著提升泛化。",
+    "highlights": [
+      "ICML 2024 Spotlight (CCF-A)，完整开源代码，包含FedProx等baseline实现",
+      "解决SAM在FL中的实际瓶颈：每步额外计算开销，通过局部估计降低成本",
+      "在Dirichlet分区的non-IID数据上优于FedSAM和其他变体"
+    ],
+    "tags": [
+      "联邦学习",
+      "SAM",
+      "non-IID",
+      "泛化",
+      "开源",
+      "CCF-A",
+      "ICML"
+    ],
+    "comment": "开源代码可直接复用! SAM在MCU上额外开销可能过大，需评估轻量化SAM变体"
+  },
+  {
+    "id": "pd-20260313-11",
+    "date": "2026-03-13",
+    "title": "FedSCAM: Scam-resistant SAM for Robust Federated Optimization in Heterogeneous Environments",
+    "authors": "详见原文",
+    "journal": "arXiv preprint",
+    "field": "AI/ML",
+    "url": "https://arxiv.org/abs/2601.00853",
+    "abstract": "根据客户端异质性评分动态调整SAM扰动半径和聚合权重。异质性高的客户端使用小扰动防止模型不稳定，CIFAR-10/Fashion-MNIST上优于FedSAM和FedLESAM。",
+    "highlights": [
+      "客户端自适应SAM：根据数据异质性自动调整扰动半径，无需手动调参",
+      "聚类聚合：异质性相近的客户端聚类后分别聚合，减少冲突梯度",
+      "non-IID鲁棒性强，适合不同车型CAN数据分布差异大的场景"
+    ],
+    "tags": [
+      "联邦学习",
+      "SAM",
+      "自适应",
+      "non-IID",
+      "聚类聚合",
+      "预印本"
+    ],
+    "comment": "自适应SAM半径思路很适合车型异质性场景，但需适配到MCU可承受的计算预算"
+  },
+  {
+    "id": "pd-20260313-12",
+    "date": "2026-03-13",
+    "title": "SHAP-KD-FL: A Novel Federated Learning Approach for IoT Botnet Intrusion Detection using SHAP-based Knowledge Distillation",
+    "authors": "详见原文",
+    "journal": "Complex & Intelligent Systems (Springer)",
+    "field": "AI/ML",
+    "doi": "10.1007/s40747-025-02001-9",
+    "url": "https://link.springer.com/article/10.1007/s40747-025-02001-9",
+    "abstract": "唯一同时结合FL+KD+可解释性的工作。各IoT客户端本地训练后计算SHAP值量化特征重要性，仅共享蒸馏后的特征知识而非原始模型参数，实现隐私保护的知识共享。",
+    "highlights": [
+      "FL+KD+SHAP三合一：目前唯一同时涉及联邦学习和知识蒸馏的IDS论文",
+      "SHAP引导选择性蒸馏：只蒸馏重要特征的知识，通信量更小",
+      "蒸馏式知识共享替代模型参数共享，从根本上降低隐私泄露风险"
+    ],
+    "tags": [
+      "联邦学习",
+      "知识蒸馏",
+      "SHAP",
+      "可解释AI",
+      "IoT",
+      "中科院2区"
+    ],
+    "comment": "FL+KD融合框架最可参考! 虽是IoT通用场景，但SHAP引导蒸馏思路可迁移到CAN IDS"
+  }
+]

@@ -80,10 +80,15 @@ function downloadCodeImage() {
     canvas.width = Math.max(maxLineWidth + padding * 2, 600);
     canvas.height = lines.length * lineHeight + padding * 2;
 
-    // Background
+    // Background (use roundRect with fallback for older browsers)
     ctx.fillStyle = '#282c34';
-    ctx.roundRect(0, 0, canvas.width, canvas.height, 12);
-    ctx.fill();
+    if (ctx.roundRect) {
+        ctx.beginPath();
+        ctx.roundRect(0, 0, canvas.width, canvas.height, 12);
+        ctx.fill();
+    } else {
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
 
     // Window dots
     ctx.fillStyle = '#ff5f56'; ctx.beginPath(); ctx.arc(20, 18, 6, 0, Math.PI * 2); ctx.fill();

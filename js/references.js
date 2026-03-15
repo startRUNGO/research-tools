@@ -160,7 +160,10 @@ function fetchDOI() {
     showToast(t('ref.fetching'), 'info');
 
     fetch('https://api.crossref.org/works/' + encodeURIComponent(doi))
-        .then(r => r.json())
+        .then(r => {
+            if (!r.ok) throw new Error('HTTP ' + r.status + (r.status === 404 ? ' - DOI not found' : ''));
+            return r.json();
+        })
         .then(data => {
             const work = data.message;
             if (!work) throw new Error('No data');

@@ -263,6 +263,53 @@ function svgShowCode() {
 
 function closeSvgCode() { document.getElementById('svgCodePanel').style.display = 'none'; }
 
+function importSvgCode() {
+    const codeInput = document.getElementById('svgCodeOutput');
+    if (!codeInput) return;
+    const code = codeInput.value.trim();
+    if (!code) { showToast(t('alert.noContent'), 'warning'); return; }
+
+    // Wrap in <svg> if the input is just inner SVG content (no root <svg> tag)
+    let svgString = code;
+    if (!/<svg[\s>]/i.test(svgString)) {
+        svgString = '<svg xmlns="http://www.w3.org/2000/svg">' + svgString + '</svg>';
+    }
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(svgString, 'image/svg+xml');
+    const errorNode = doc.querySelector('parsererror');
+    if (errorNode) {
+        showToast(t('svg.import.parseError'), 'error');
+        return;
+    }
+
+    const svgCanvas = document.getElementById('svgCanvas');
+    saveUndoState();
+
+    // Clear existing content
+    while (svgCanvas.firstChild) svgCanvas.removeChild(svgCanvas.firstChild);
+
+    // Import child elements from parsed SVG
+    const srcSvg = doc.documentElement;
+
+    // Copy viewBox if present
+    if (srcSvg.getAttribute('viewBox')) {
+        svgCanvas.setAttribute('viewBox', srcSvg.getAttribute('viewBox'));
+    }
+
+    Array.from(srcSvg.children).forEach(child => {
+        const imported = document.importNode(child, true);
+        svgCanvas.appendChild(imported);
+    });
+
+    // Re-attach drag handlers
+    svgCanvas.querySelectorAll('rect, circle, ellipse, text, polygon, path').forEach(el => makeDraggable(el));
+    updateLayersList();
+
+    closeSvgCode();
+    showToast(t('svg.import.success'));
+}
+
 function copySvgCode() {
     const code = document.getElementById('svgCodeOutput').value;
     navigator.clipboard.writeText(code).then(() => {
