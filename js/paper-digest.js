@@ -31,6 +31,17 @@ function loadPaperDigest(callback) {
                     paperDigestData = paperDigestData.concat(arr);
                 }
             });
+            if (paperDigestData.length === 0) {
+                // Daily files all failed/empty, try legacy fallback
+                return fetch('data/papers.json')
+                    .then(function (r) { return r.ok ? r.json() : []; })
+                    .then(function (data) {
+                        if (Array.isArray(data)) paperDigestData = data;
+                    })
+                    .catch(function () { paperDigestData = []; });
+            }
+        })
+        .then(function () {
             pdLoaded = true;
             if (callback) callback();
         })
