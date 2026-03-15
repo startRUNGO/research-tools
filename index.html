@@ -64,23 +64,43 @@
             </button>
             <ul id="navMenu">
                 <li><a href="#home" class="nav-link active" data-i18n="nav.home">首页</a></li>
-                <li><a href="#latex" class="nav-link" data-i18n="nav.latex">LaTeX工具</a></li>
-                <li><a href="#svg" class="nav-link" data-i18n="nav.svg">SVG编辑器</a></li>
-                <li><a href="#ai-writing" class="nav-link" data-i18n="nav.aiwriting">AI写作助手</a></li>
-                <li><a href="#ai-tools" class="nav-link" data-i18n="nav.aitools">AI工具导航</a></li>
-                <li><a href="#text-tools" class="nav-link" data-i18n="nav.texttools">文本工具</a></li>
-                <li><a href="#markdown" class="nav-link" data-i18n="nav.markdown">Markdown</a></li>
-                <li><a href="#references" class="nav-link" data-i18n="nav.references">参考文献</a></li>
-                <li><a href="#dataviz" class="nav-link" data-i18n="nav.dataviz">数据可视化</a></li>
-                <li><a href="#codehighlight" class="nav-link" data-i18n="nav.codehighlight">代码高亮</a></li>
-                <li><a href="#cron" class="nav-link" data-i18n="nav.cron">Cron解析</a></li>
-                <li><a href="#calendar" class="nav-link" data-i18n="nav.calendar">学术日历</a></li>
-                <li><a href="#formula" class="nav-link" data-i18n="nav.formula">公式助手</a></li>
-                <li><a href="#pomodoro" class="nav-link" data-i18n="nav.pomodoro">番茄钟</a></li>
-                <li><a href="#models" class="nav-link" data-i18n="nav.models">神经网络模型库</a></li>
-                <li><a href="#flowcharts" class="nav-link" data-i18n="nav.flowcharts">流程图画廊</a></li>
-                <li><a href="#paper-digest" class="nav-link" data-i18n="nav.paperdigest">论文速递</a></li>
-                <li><a href="#resources" class="nav-link" data-i18n="nav.resources">科研资源</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav.group.writing">写作工具 ▾</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#latex" class="nav-link" data-i18n="nav.latex">LaTeX工具</a></li>
+                        <li><a href="#markdown" class="nav-link" data-i18n="nav.markdown">Markdown</a></li>
+                        <li><a href="#references" class="nav-link" data-i18n="nav.references">参考文献</a></li>
+                        <li><a href="#ai-writing" class="nav-link" data-i18n="nav.aiwriting">AI写作助手</a></li>
+                        <li><a href="#formula" class="nav-link" data-i18n="nav.formula">公式助手</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav.group.graphics">图形工具 ▾</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#svg" class="nav-link" data-i18n="nav.svg">SVG编辑器</a></li>
+                        <li><a href="#dataviz" class="nav-link" data-i18n="nav.dataviz">数据可视化</a></li>
+                        <li><a href="#codehighlight" class="nav-link" data-i18n="nav.codehighlight">代码高亮</a></li>
+                        <li><a href="#models" class="nav-link" data-i18n="nav.models">神经网络模型库</a></li>
+                        <li><a href="#flowcharts" class="nav-link" data-i18n="nav.flowcharts">流程图画廊</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav.group.tools">效率工具 ▾</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#text-tools" class="nav-link" data-i18n="nav.texttools">文本工具</a></li>
+                        <li><a href="#cron" class="nav-link" data-i18n="nav.cron">Cron解析</a></li>
+                        <li><a href="#calendar" class="nav-link" data-i18n="nav.calendar">学术日历</a></li>
+                        <li><a href="#pomodoro" class="nav-link" data-i18n="nav.pomodoro">番茄钟</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav.group.ai">AI & 资源 ▾</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#ai-tools" class="nav-link" data-i18n="nav.aitools">AI工具导航</a></li>
+                        <li><a href="#paper-digest" class="nav-link" data-i18n="nav.paperdigest">论文速递</a></li>
+                        <li><a href="#resources" class="nav-link" data-i18n="nav.resources">科研资源</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>

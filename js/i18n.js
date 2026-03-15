@@ -10,6 +10,10 @@ const translations = {
         'site.subtitle': 'Research Tools Hub - 提升科研效率的工具集合',
         // Nav
         'nav.home': '首页',
+        'nav.group.writing': '写作工具 ▾',
+        'nav.group.graphics': '图形工具 ▾',
+        'nav.group.tools': '效率工具 ▾',
+        'nav.group.ai': 'AI & 资源 ▾',
         'nav.latex': 'LaTeX工具',
         'nav.svg': 'SVG编辑器',
         'nav.aiwriting': 'AI写作助手',
@@ -550,7 +554,9 @@ const translations = {
     en: {
         'site.title': 'Research Tools Hub',
         'site.subtitle': 'A Collection of Tools to Boost Research Productivity',
-        'nav.home': 'Home', 'nav.latex': 'LaTeX Tools', 'nav.svg': 'SVG Editor',
+        'nav.home': 'Home',
+        'nav.group.writing': 'Writing ▾', 'nav.group.graphics': 'Graphics ▾', 'nav.group.tools': 'Tools ▾', 'nav.group.ai': 'AI & Resources ▾',
+        'nav.latex': 'LaTeX Tools', 'nav.svg': 'SVG Editor',
         'nav.aiwriting': 'AI Writing', 'nav.aitools': 'AI Tools',
         'nav.models': 'Neural Network Models', 'nav.resources': 'Resources',
         'home.welcome': 'Welcome to Research Tools Hub',
