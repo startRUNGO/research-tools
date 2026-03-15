@@ -17,9 +17,9 @@ function navigateTo(sectionId) {
     if (targetLink) {
         targetLink.classList.add('active');
         // Also highlight parent dropdown toggle
-        constdropdown = targetLink.closest('.nav-dropdown');
+        const dropdown = targetLink.closest('.nav-dropdown');
         if (dropdown) {
-            consttoggle = dropdown.querySelector('.nav-dropdown-toggle');
+            const toggle = dropdown.querySelector('.nav-dropdown-toggle');
             if (toggle) toggle.classList.add('active');
         }
     }
@@ -32,13 +32,13 @@ function navigateTo(sectionId) {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Handle nav link clicks
-    constnavLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
             // If it's a dropdown toggle, toggle the dropdown on mobile
             if (this.classList.contains('nav-dropdown-toggle')) {
                 e.preventDefault();
-                constparent = this.closest('.nav-dropdown');
+                const parent = this.closest('.nav-dropdown');
                 if (parent) {
                     // Close other open dropdowns
                     document.querySelectorAll('.nav-dropdown.open').forEach(function(d) {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 return;
             }
-            consthref = this.getAttribute('href');
+            const href = this.getAttribute('href');
             if (href && href.startsWith('#')) {
                 e.preventDefault();
                 navigateTo(href.substring(1));

@@ -176,7 +176,7 @@ header h1 {
     cursor: pointer;
 }
 
-.nav-dropdown-menu {
+.main-nav .nav-dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -191,8 +191,8 @@ header h1 {
     list-style: none;
 }
 
-.nav-dropdown:hover > .nav-dropdown-menu,
-.nav-dropdown.open > .nav-dropdown-menu {
+.main-nav .nav-dropdown:hover > .nav-dropdown-menu,
+.main-nav .nav-dropdown.open > .nav-dropdown-menu {
     display: flex;
 }
 

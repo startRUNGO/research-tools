@@ -120,7 +120,12 @@ function renderPdTo(suffix) {
         html += '<button class="pd-bookmark' + (isBookmarked ? ' active' : '') + '" onclick="togglePdBookmark(\'' + paper.id + '\')" title="' + t('pd.bookmark') + '">' + (isBookmarked ? '★' : '☆') + '</button>';
         html += '</div>';
 
-        html += '<h3 class="pd-title">' + paper.title + '</h3>';
+        var titleLink = paper.url || (paper.arxiv ? 'https://arxiv.org/abs/' + paper.arxiv : '') || (paper.doi ? 'https://doi.org/' + paper.doi : '');
+        if (titleLink) {
+            html += '<h3 class="pd-title"><a href="' + titleLink + '" target="_blank" rel="noopener">' + paper.title + '</a></h3>';
+        } else {
+            html += '<h3 class="pd-title">' + paper.title + '</h3>';
+        }
         html += '<p class="pd-authors">' + paper.authors + '</p>';
 
         if (paper.abstract) {
