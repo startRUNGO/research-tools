@@ -121,6 +121,47 @@ function exportPdBibtex() {
     showToast(t('pd.export.success') || 'BibTeX exported (' + bookmarks.length + ' papers)');
 }
 
+// Share a paper via Web Share API or copy to clipboard
+function sharePaper(encodedTitle, encodedUrl) {
+    var title = decodeURIComponent(encodedTitle);
+    var url = decodeURIComponent(encodedUrl);
+    if (navigator.share) {
+        navigator.share({ title: title, url: url }).catch(function () {});
+    } else {
+        // Fallback: show share menu
+        var menu = document.getElementById('shareMenu');
+        if (menu) { menu.remove(); return; }
+        menu = document.createElement('div');
+        menu.id = 'shareMenu';
+        menu.className = 'pd-share-menu';
+        menu.innerHTML =
+            '<a href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(title) + '&url=' + encodeURIComponent(url) + '" target="_blank">Twitter</a>' +
+            '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url) + '" target="_blank">LinkedIn</a>' +
+            '<button onclick="copyPaperLink(\'' + encodeURIComponent(url) + '\')">' + t('pd.share.copy') + '</button>';
+        event.target.closest('.pd-card-footer').appendChild(menu);
+        setTimeout(function () {
+            document.addEventListener('click', function closeMenu(e) {
+                if (!e.target.closest('.pd-share-menu')) {
+                    var m = document.getElementById('shareMenu');
+                    if (m) m.remove();
+                    document.removeEventListener('click', closeMenu);
+                }
+            });
+        }, 10);
+    }
+}
+
+function copyPaperLink(encodedUrl) {
+    var url = decodeURIComponent(encodedUrl);
+    navigator.clipboard.writeText(url).then(function () {
+        showToast(t('pd.share.copied'));
+    }).catch(function () {
+        showToast('Copy failed');
+    });
+    var m = document.getElementById('shareMenu');
+    if (m) m.remove();
+}
+
 // Render paper digest to a specific set of elements (suffix: '' or 'Home')
 function renderPdTo(suffix) {
     const list = document.getElementById('pdList' + suffix);
@@ -236,6 +277,11 @@ function renderPdTo(suffix) {
         }
         if (paper.doi) {
             html += '<a href="https://doi.org/' + paper.doi + '" target="_blank" rel="noopener">DOI</a>';
+        }
+        // Share button
+        var shareUrl = paper.url || (paper.arxiv ? 'https://arxiv.org/abs/' + paper.arxiv : '') || (paper.doi ? 'https://doi.org/' + paper.doi : '');
+        if (shareUrl) {
+            html += '<button class="pd-share-btn" onclick="sharePaper(\'' + encodeURIComponent(paper.title) + '\',\'' + encodeURIComponent(shareUrl) + '\')" title="Share">&#x1F517;</button>';
         }
         html += '</div></div>';
         html += '</article>';
