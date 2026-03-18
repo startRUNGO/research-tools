@@ -200,7 +200,16 @@ function renderPdTo(suffix) {
     const list = document.getElementById('pdList' + suffix);
     const countEl = document.getElementById('pdCount' + suffix);
     if (!list) return;
-    if (!pdLoaded) { loadPaperDigest(function () { renderPdTo(suffix); }); return; }
+    if (!pdLoaded) {
+        // Show skeleton loading
+        var skel = '';
+        for (var s = 0; s < 3; s++) {
+            skel += '<div class="pd-skeleton"><div class="pd-skel-header"></div><div class="pd-skel-title"></div><div class="pd-skel-line"></div><div class="pd-skel-line short"></div></div>';
+        }
+        list.innerHTML = skel;
+        loadPaperDigest(function () { renderPdTo(suffix); });
+        return;
+    }
 
     const fieldFilter = document.getElementById('pdFieldFilter' + suffix);
     const dateFilter = document.getElementById('pdDateFilter' + suffix);
@@ -304,19 +313,26 @@ function renderPdTo(suffix) {
         var authorsText = search ? highlightSearch(paper.authors, search) : paper.authors;
         html += '<p class="pd-authors">' + authorsText + '</p>';
 
-        if (paper.abstract) {
-            var abstractText = search ? highlightSearch(paper.abstract, search) : paper.abstract;
-            html += '<div class="pd-abstract"><p>' + abstractText + '</p></div>';
-        }
-        if (paper.highlights && paper.highlights.length > 0) {
-            html += '<div class="pd-highlights"><h4>' + t('pd.highlights') + '</h4><ul>';
-            paper.highlights.forEach(function (h) {
-                html += '<li>' + (search ? highlightSearch(h, search) : h) + '</li>';
-            });
-            html += '</ul></div>';
-        }
-        if (paper.comment) {
-            html += '<div class="pd-comment"><h4>' + t('pd.comment') + '</h4><p>' + paper.comment + '</p></div>';
+        // Collapsible detail section
+        var hasDetail = paper.abstract || (paper.highlights && paper.highlights.length > 0) || paper.comment;
+        if (hasDetail) {
+            html += '<div class="pd-detail-toggle" onclick="this.parentElement.classList.toggle(\'pd-expanded\')">' + t('pd.expand') + '</div>';
+            html += '<div class="pd-detail">';
+            if (paper.abstract) {
+                var abstractText = search ? highlightSearch(paper.abstract, search) : paper.abstract;
+                html += '<div class="pd-abstract"><p>' + abstractText + '</p></div>';
+            }
+            if (paper.highlights && paper.highlights.length > 0) {
+                html += '<div class="pd-highlights"><h4>' + t('pd.highlights') + '</h4><ul>';
+                paper.highlights.forEach(function (h) {
+                    html += '<li>' + (search ? highlightSearch(h, search) : h) + '</li>';
+                });
+                html += '</ul></div>';
+            }
+            if (paper.comment) {
+                html += '<div class="pd-comment"><h4>' + t('pd.comment') + '</h4><p>' + paper.comment + '</p></div>';
+            }
+            html += '</div>';
         }
 
         html += '<div class="pd-card-footer"><div class="pd-tags">';

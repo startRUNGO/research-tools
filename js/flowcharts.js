@@ -214,6 +214,107 @@ const flowchartData = [
 <text x="825" y="280" text-anchor="middle" fill="#333" font-size="10" font-weight="bold">Softmax</text><text x="825" y="293" text-anchor="middle" fill="#999" font-size="8">N classes</text>
 <text x="862" y="148" fill="#2ecc71" font-size="9">Cat</text><text x="862" y="178" fill="#e74c3c" font-size="9">Dog</text><text x="862" y="208" fill="#f39c12" font-size="9">...</text>
 </svg>`
+    },
+    {
+        id: 'fc-transformer',
+        title: 'Transformer Architecture (Attention Is All You Need)',
+        journal: 'NeurIPS 2017',
+        field: 'AI/ML',
+        authors: 'Vaswani et al.',
+        tags: ['Transformer', 'Self-Attention', 'NLP', 'Deep Learning'],
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" font-family="Arial,sans-serif">
+<rect width="700" height="500" fill="#f8f9ff" rx="12"/>
+<text x="350" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Transformer Architecture</text>
+<rect x="60" y="50" width="250" height="400" rx="12" fill="#fff" stroke="#667eea" stroke-width="2"/>
+<text x="185" y="75" text-anchor="middle" fill="#667eea" font-size="14" font-weight="bold">Encoder (×N)</text>
+<rect x="85" y="90" width="200" height="40" rx="8" fill="#e8ecff" stroke="#667eea" stroke-width="1"/><text x="185" y="115" text-anchor="middle" fill="#667eea" font-size="11">Multi-Head Attention</text>
+<rect x="85" y="140" width="200" height="25" rx="6" fill="#f0f0f0"/><text x="185" y="157" text-anchor="middle" fill="#999" font-size="10">Add & Norm</text>
+<rect x="85" y="175" width="200" height="40" rx="8" fill="#e8ecff" stroke="#667eea" stroke-width="1"/><text x="185" y="200" text-anchor="middle" fill="#667eea" font-size="11">Feed Forward</text>
+<rect x="85" y="225" width="200" height="25" rx="6" fill="#f0f0f0"/><text x="185" y="242" text-anchor="middle" fill="#999" font-size="10">Add & Norm</text>
+<rect x="85" y="280" width="200" height="35" rx="8" fill="#fff8e6" stroke="#f39c12" stroke-width="1"/><text x="185" y="303" text-anchor="middle" fill="#f39c12" font-size="11">Positional Encoding</text>
+<rect x="105" y="330" width="160" height="35" rx="8" fill="#e8fff0" stroke="#2ecc71" stroke-width="1"/><text x="185" y="352" text-anchor="middle" fill="#2ecc71" font-size="11">Input Embedding</text>
+<rect x="120" y="400" width="130" height="30" rx="6" fill="#2ecc71"/><text x="185" y="420" text-anchor="middle" fill="#fff" font-size="11">Input Tokens</text>
+<rect x="390" y="50" width="250" height="400" rx="12" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+<text x="515" y="75" text-anchor="middle" fill="#e74c3c" font-size="14" font-weight="bold">Decoder (×N)</text>
+<rect x="415" y="90" width="200" height="35" rx="8" fill="#ffeaea" stroke="#e74c3c" stroke-width="1"/><text x="515" y="113" text-anchor="middle" fill="#e74c3c" font-size="10">Masked Multi-Head Attention</text>
+<rect x="415" y="133" width="200" height="22" rx="6" fill="#f0f0f0"/><text x="515" y="148" text-anchor="middle" fill="#999" font-size="9">Add & Norm</text>
+<rect x="415" y="163" width="200" height="35" rx="8" fill="#ffeaea" stroke="#e74c3c" stroke-width="1"/><text x="515" y="185" text-anchor="middle" fill="#e74c3c" font-size="10">Cross Multi-Head Attention</text>
+<rect x="415" y="206" width="200" height="22" rx="6" fill="#f0f0f0"/><text x="515" y="221" text-anchor="middle" fill="#999" font-size="9">Add & Norm</text>
+<rect x="415" y="236" width="200" height="35" rx="8" fill="#ffeaea" stroke="#e74c3c" stroke-width="1"/><text x="515" y="258" text-anchor="middle" fill="#e74c3c" font-size="11">Feed Forward</text>
+<rect x="415" y="279" width="200" height="22" rx="6" fill="#f0f0f0"/><text x="515" y="294" text-anchor="middle" fill="#999" font-size="9">Add & Norm</text>
+<rect x="415" y="330" width="200" height="35" rx="8" fill="#fff8e6" stroke="#f39c12" stroke-width="1"/><text x="515" y="352" text-anchor="middle" fill="#f39c12" font-size="11">Positional Encoding</text>
+<rect x="435" y="380" width="160" height="35" rx="8" fill="#e8fff0" stroke="#2ecc71" stroke-width="1"/><text x="515" y="402" text-anchor="middle" fill="#2ecc71" font-size="11">Output Embedding</text>
+<rect x="450" y="430" width="130" height="30" rx="6" fill="#e74c3c"/><text x="515" y="450" text-anchor="middle" fill="#fff" font-size="11">Output Tokens</text>
+<path d="M310,180 L415,180" stroke="#9b59b6" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="362" y="173" text-anchor="middle" fill="#9b59b6" font-size="9">K,V</text>
+</svg>`
+    },
+    {
+        id: 'fc-gan',
+        title: 'Generative Adversarial Network (GAN)',
+        journal: 'Classic Architecture',
+        field: 'AI/ML',
+        authors: 'Goodfellow et al.',
+        tags: ['GAN', 'Generative Model', 'Deep Learning', 'Adversarial'],
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" font-family="Arial,sans-serif">
+<rect width="800" height="350" fill="#f8f9ff" rx="12"/>
+<text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Generative Adversarial Network</text>
+<rect x="30" y="120" width="120" height="80" rx="10" fill="#9b59b6"/><text x="90" y="155" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">Latent</text><text x="90" y="175" text-anchor="middle" fill="#ddd" font-size="10">z ~ N(0,1)</text>
+<path d="M150,160 L195,160" stroke="#9b59b6" stroke-width="2"/>
+<rect x="195" y="90" width="200" height="140" rx="12" fill="#fff" stroke="#2ecc71" stroke-width="2.5"/>
+<text x="295" y="125" text-anchor="middle" fill="#2ecc71" font-size="14" font-weight="bold">Generator G</text>
+<rect x="215" y="140" width="160" height="25" rx="5" fill="#e8fff0"/><text x="295" y="157" text-anchor="middle" fill="#2ecc71" font-size="10">Deconv / Upsample</text>
+<rect x="215" y="172" width="160" height="25" rx="5" fill="#e8fff0"/><text x="295" y="189" text-anchor="middle" fill="#2ecc71" font-size="10">BatchNorm + ReLU</text>
+<path d="M395,130 L445,130" stroke="#2ecc71" stroke-width="2"/>
+<text x="420" y="123" text-anchor="middle" fill="#2ecc71" font-size="9">G(z)</text>
+<text x="420" y="143" text-anchor="middle" fill="#999" font-size="8">Fake</text>
+<rect x="30" y="260" width="120" height="50" rx="8" fill="#3498db"/><text x="90" y="290" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">Real Data x</text>
+<path d="M150,285 L445,285 L445,200" stroke="#3498db" stroke-width="2"/>
+<text x="300" y="278" text-anchor="middle" fill="#3498db" font-size="9">Real</text>
+<rect x="445" y="90" width="200" height="140" rx="12" fill="#fff" stroke="#e74c3c" stroke-width="2.5"/>
+<text x="545" y="125" text-anchor="middle" fill="#e74c3c" font-size="14" font-weight="bold">Discriminator D</text>
+<rect x="465" y="140" width="160" height="25" rx="5" fill="#ffeaea"/><text x="545" y="157" text-anchor="middle" fill="#e74c3c" font-size="10">Conv / Downsample</text>
+<rect x="465" y="172" width="160" height="25" rx="5" fill="#ffeaea"/><text x="545" y="189" text-anchor="middle" fill="#e74c3c" font-size="10">LeakyReLU + Sigmoid</text>
+<path d="M645,160 L700,160" stroke="#e74c3c" stroke-width="2"/>
+<rect x="700" y="130" width="70" height="60" rx="10" fill="#f39c12"/><text x="735" y="155" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">Real?</text><text x="735" y="173" text-anchor="middle" fill="#fff" font-size="10">Fake?</text>
+<path d="M545,230 L545,310 L295,310 L295,230" stroke="#667eea" stroke-width="2" stroke-dasharray="6,3" fill="none"/>
+<text x="420" y="325" text-anchor="middle" fill="#667eea" font-size="11" font-weight="bold">Adversarial Loss: min_G max_D V(D,G)</text>
+</svg>`
+    },
+    {
+        id: 'fc-autoencoder',
+        title: 'Variational AutoEncoder (VAE)',
+        journal: 'Classic Architecture',
+        field: 'AI/ML',
+        authors: 'Kingma et al.',
+        tags: ['AutoEncoder', 'VAE', 'Generative Model', 'Latent Space'],
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" font-family="Arial,sans-serif">
+<rect width="800" height="300" fill="#f8f9ff" rx="12"/>
+<text x="400" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Variational AutoEncoder (VAE)</text>
+<rect x="20" y="90" width="100" height="120" rx="10" fill="#3498db"/><text x="70" y="145" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">Input x</text><text x="70" y="165" text-anchor="middle" fill="#ddd" font-size="9">28×28</text>
+<path d="M120,150 L160,150" stroke="#3498db" stroke-width="2"/>
+<rect x="160" y="65" width="180" height="170" rx="12" fill="#fff" stroke="#667eea" stroke-width="2"/>
+<text x="250" y="90" text-anchor="middle" fill="#667eea" font-size="13" font-weight="bold">Encoder q(z|x)</text>
+<rect x="178" y="100" width="144" height="25" rx="5" fill="#e8ecff"/><text x="250" y="117" text-anchor="middle" fill="#667eea" font-size="10">FC 784 → 400</text>
+<rect x="178" y="132" width="144" height="25" rx="5" fill="#e8ecff"/><text x="250" y="149" text-anchor="middle" fill="#667eea" font-size="10">FC 400 → 200</text>
+<rect x="178" y="170" width="68" height="28" rx="5" fill="#667eea"/><text x="212" y="189" text-anchor="middle" fill="#fff" font-size="9">μ</text>
+<rect x="254" y="170" width="68" height="28" rx="5" fill="#667eea"/><text x="288" y="189" text-anchor="middle" fill="#fff" font-size="9">log σ²</text>
+<path d="M340,150 L380,150" stroke="#667eea" stroke-width="2"/>
+<rect x="380" y="105" width="80" height="90" rx="40" fill="#f39c12" opacity="0.15" stroke="#f39c12" stroke-width="2"/>
+<text x="420" y="140" text-anchor="middle" fill="#f39c12" font-size="11" font-weight="bold">z</text>
+<text x="420" y="158" text-anchor="middle" fill="#f39c12" font-size="9">Latent</text>
+<text x="420" y="173" text-anchor="middle" fill="#f39c12" font-size="8">μ + σ·ε</text>
+<text x="420" y="210" text-anchor="middle" fill="#999" font-size="8">ε ~ N(0,1)</text>
+<path d="M460,150 L500,150" stroke="#f39c12" stroke-width="2"/>
+<rect x="500" y="65" width="180" height="170" rx="12" fill="#fff" stroke="#2ecc71" stroke-width="2"/>
+<text x="590" y="90" text-anchor="middle" fill="#2ecc71" font-size="13" font-weight="bold">Decoder p(x|z)</text>
+<rect x="518" y="105" width="144" height="25" rx="5" fill="#e8fff0"/><text x="590" y="122" text-anchor="middle" fill="#2ecc71" font-size="10">FC 20 → 200</text>
+<rect x="518" y="138" width="144" height="25" rx="5" fill="#e8fff0"/><text x="590" y="155" text-anchor="middle" fill="#2ecc71" font-size="10">FC 200 → 400</text>
+<rect x="518" y="171" width="144" height="25" rx="5" fill="#e8fff0"/><text x="590" y="188" text-anchor="middle" fill="#2ecc71" font-size="10">FC 400 → 784</text>
+<path d="M680,150 L720,150" stroke="#2ecc71" stroke-width="2"/>
+<rect x="720" y="90" width="60" height="120" rx="10" fill="#2ecc71"/><text x="750" y="145" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">x̂</text><text x="750" y="163" text-anchor="middle" fill="#ddd" font-size="9">28×28</text>
+<text x="400" y="275" text-anchor="middle" fill="#667eea" font-size="11" font-weight="bold">Loss = Reconstruction (BCE) + KL Divergence</text>
+</svg>`
     }
 ];
 

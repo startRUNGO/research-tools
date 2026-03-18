@@ -1994,14 +1994,25 @@ Main changes we made:
                     </ul>
                 </div>
             </div>
+            <div class="footer-stats" id="footerStats"></div>
             <div class="footer-bottom">
-                <p data-i18n="footer.text">&copy; 2025 科研工具集 Research Tools Hub | 提升科研效率</p>
+                <p>&copy; 2026 Research Tools Hub | <a href="feed.xml" target="_blank">RSS</a> | <a href="https://github.com/startRUNGO/research-tools" target="_blank">GitHub</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- Ad container placeholder (above footer) -->
-    <div class="ad-container"></div>
+    <!-- Ad container placeholder -->
+    <div class="ad-container" id="adContainer">
+        <!-- Google AdSense: uncomment after approval -->
+        <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXX" data-ad-slot="XXXX" data-ad-format="auto"></ins> -->
+    </div>
+
+    <!-- PWA Install Prompt -->
+    <div id="pwaInstall" class="pwa-install" style="display:none">
+        <span data-i18n="pwa.prompt">Install this app for quick access</span>
+        <button onclick="installPwa()" data-i18n="pwa.install">Install</button>
+        <button onclick="dismissPwa()" class="pwa-dismiss">&times;</button>
+    </div>
 
     <!-- Toast Notification Container -->
     <div id="toastContainer" class="toast-container" aria-live="polite" role="status"></div>
@@ -2058,6 +2069,36 @@ Main changes we made:
         </div>
     </div>
     <script>
+    // PWA install prompt
+    var pwaEvent = null;
+    window.addEventListener('beforeinstallprompt', function(e) {
+        e.preventDefault();
+        pwaEvent = e;
+        if (!localStorage.getItem('pwa_dismissed')) {
+            document.getElementById('pwaInstall').style.display = 'flex';
+        }
+    });
+    function installPwa() {
+        if (pwaEvent) { pwaEvent.prompt(); pwaEvent = null; }
+        document.getElementById('pwaInstall').style.display = 'none';
+    }
+    function dismissPwa() {
+        document.getElementById('pwaInstall').style.display = 'none';
+        localStorage.setItem('pwa_dismissed', '1');
+    }
+
+    // Footer stats
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            var el = document.getElementById('footerStats');
+            if (el && typeof paperDigestData !== 'undefined') {
+                var papers = paperDigestData.length || 0;
+                var tools = document.querySelectorAll('.section').length - 1;
+                el.innerHTML = papers + ' papers · ' + tools + ' tools · Updated daily';
+            }
+        }, 2000);
+    });
+
     // Back to top: show on scroll
     window.addEventListener('scroll', function() {
         var btn = document.getElementById('backToTop');
