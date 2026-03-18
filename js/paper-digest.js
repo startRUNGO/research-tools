@@ -82,6 +82,39 @@ function togglePdBookmark(id) {
     renderPdTo('Home');
 }
 
+// Read/unread tracking in localStorage
+function getPdReadList() {
+    try {
+        return JSON.parse(localStorage.getItem('pd_read') || '[]');
+    } catch { return []; }
+}
+
+function togglePdRead(id) {
+    var readList = getPdReadList();
+    if (readList.includes(id)) {
+        readList = readList.filter(function (r) { return r !== id; });
+        showToast(t('pd.markunread'));
+    } else {
+        readList.push(id);
+        showToast(t('pd.markread'));
+    }
+    localStorage.setItem('pd_read', JSON.stringify(readList));
+    renderPdTo('');
+    renderPdTo('Home');
+}
+
+// Tag click filter: fill search input with tag text
+function filterByTag(tag, suffix) {
+    var input = document.getElementById('pdSearchInput' + suffix);
+    if (!input) input = document.getElementById('pdSearchInputHome');
+    if (input) {
+        input.value = tag;
+        pdCurrentPage[suffix || 'Home'] = 1;
+        renderPdTo(suffix || 'Home');
+        renderPdTo(suffix === 'Home' ? '' : 'Home');
+    }
+}
+
 // Highlight search keywords in text
 function highlightSearch(text, search) {
     if (!search || !text) return text;
@@ -242,15 +275,22 @@ function renderPdTo(suffix) {
         html += '</div>';
         html += '<div class="pd-date-papers"' + (collapsed ? ' style="display:none"' : '') + '>';
 
+        var readList = getPdReadList();
+
         group.papers.forEach(function (paper) {
-        const isBookmarked = bookmarks.includes(paper.id);
-        html += '<article class="pd-card">';
+        var isBookmarked = bookmarks.includes(paper.id);
+        var isRead = readList.includes(paper.id);
+        html += '<article class="pd-card' + (isRead ? ' pd-read' : '') + '">';
         html += '<div class="pd-card-header">';
         html += '<div class="pd-card-meta">';
         html += '<span class="pd-journal">' + paper.journal + '</span>';
         html += '<span class="pd-field">' + paper.field + '</span>';
+        if (isRead) html += '<span class="pd-read-badge">' + t('pd.read') + '</span>';
         html += '</div>';
+        html += '<div class="pd-card-actions">';
+        html += '<button class="pd-read-btn' + (isRead ? ' active' : '') + '" onclick="togglePdRead(\'' + paper.id + '\')" title="' + (isRead ? t('pd.markunread') : t('pd.markread')) + '">' + (isRead ? '\u2713' : '\u25CB') + '</button>';
         html += '<button class="pd-bookmark' + (isBookmarked ? ' active' : '') + '" onclick="togglePdBookmark(\'' + paper.id + '\')" title="' + t('pd.bookmark') + '">' + (isBookmarked ? '\u2605' : '\u2606') + '</button>';
+        html += '</div>';
         html += '</div>';
 
         var titleText = search ? highlightSearch(paper.title, search) : paper.title;
@@ -283,7 +323,7 @@ function renderPdTo(suffix) {
         if (paper.tags) {
             paper.tags.forEach(function (tag) {
                 var tagText = search ? highlightSearch(tag, search) : tag;
-                html += '<span class="pd-tag">' + tagText + '</span>';
+                html += '<span class="pd-tag" onclick="filterByTag(\'' + tag.replace(/'/g, "\\'") + '\',\'' + suffix + '\')">' + tagText + '</span>';
             });
         }
         html += '</div><div class="pd-links">';
@@ -350,4 +390,33 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         observer.observe(pdSection, { attributes: true, attributeFilter: ['class'] });
     }
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function (e) {
+        // Skip if typing in input/textarea
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+            if (e.key === 'Escape') {
+                e.target.blur();
+                e.preventDefault();
+            }
+            return;
+        }
+        // "/" to focus search
+        if (e.key === '/') {
+            e.preventDefault();
+            var input = document.getElementById('pdSearchInputHome');
+            if (!input || !input.offsetParent) input = document.getElementById('pdSearchInput');
+            if (input) input.focus();
+        }
+        // Escape to close onboarding / share menu
+        if (e.key === 'Escape') {
+            var onboard = document.getElementById('onboarding');
+            if (onboard && onboard.style.display !== 'none') {
+                dismissOnboarding();
+                return;
+            }
+            var shareMenu = document.getElementById('shareMenu');
+            if (shareMenu) { shareMenu.remove(); return; }
+        }
+    });
 });

@@ -840,6 +840,63 @@ body.focus-mode .pomo-container {
     padding-top: 3rem;
 }
 
+/* ==================== Read/Unread ==================== */
+.pd-card.pd-read {
+    opacity: 0.7;
+    border-left: 3px solid #52c41a;
+}
+.pd-card.pd-read:hover {
+    opacity: 1;
+}
+.pd-card-actions {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+.pd-read-btn {
+    background: none;
+    border: 1px solid var(--border-color, #e0e0e0);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--text-secondary, #999);
+    transition: all 0.2s;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pd-read-btn:hover {
+    border-color: #52c41a;
+    color: #52c41a;
+}
+.pd-read-btn.active {
+    background: #52c41a;
+    border-color: #52c41a;
+    color: #fff;
+}
+.pd-read-badge {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+    background: #52c41a;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* ==================== Clickable tags ==================== */
+.pd-tag {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.pd-tag:hover {
+    background: #667eea;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
 /* ==================== Load More ==================== */
 .pd-load-more {
     text-align: center;
