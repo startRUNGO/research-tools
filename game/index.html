@@ -4,74 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>科研人生模拟器 - Research Life Simulator</title>
-    <meta name="description" content="从大一新生到学术巅峰，模拟完整的科研人生旅程">
+    <meta name="description" content="从大一新生到学术巅峰，模拟完整的科研人生旅程。每个选择都会改变你的命运。">
+    <meta property="og:title" content="科研人生模拟器">
+    <meta property="og:description" content="你的科研人生会走向何方？来测测你能成为什么级别的学者！">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Start Screen -->
+    <!-- Start -->
     <div id="startScreen" class="screen active">
         <div class="start-content">
             <h1>科研人生模拟器</h1>
-            <p class="start-sub">Research Life Simulator</p>
-            <p class="start-desc">从大一新生到学术巅峰，每一个选择都将改变你的命运</p>
+            <p class="start-sub">RESEARCH LIFE SIMULATOR</p>
+            <p class="start-desc">从大一萌新到学术巅峰<br>每个选择都将塑造你的命运<br>你，准备好了吗？</p>
             <div class="start-fields">
-                <input type="text" id="playerName" placeholder="输入你的名字" maxlength="10">
+                <input type="text" id="playerName" placeholder="你的名字" maxlength="10">
                 <select id="playerField">
-                    <option value="CS">计算机科学</option>
-                    <option value="EE">电子工程</option>
-                    <option value="AI">人工智能</option>
-                    <option value="Energy">能源与环境</option>
-                    <option value="Bio">生物医学</option>
-                    <option value="Math">数学与统计</option>
+                    <option value="CS">计算机科学 💻</option>
+                    <option value="EE">电子工程 ⚡</option>
+                    <option value="AI">人工智能 🤖</option>
+                    <option value="Energy">新能源 🔋</option>
+                    <option value="Bio">生物医学 🧬</option>
+                    <option value="Math">数学 📐</option>
                 </select>
             </div>
             <button class="btn-primary" onclick="startGame()">开始人生旅程</button>
-            <p class="start-tip">提示：每个选择都会影响你的属性和未来走向</p>
+            <p class="start-tip">⏱ 约5-8分钟 · 🎯 20+种结局 · 🏅 30+成就</p>
         </div>
     </div>
 
-    <!-- Game Screen -->
+    <!-- Game -->
     <div id="gameScreen" class="screen">
+        <div class="timeline-bar">
+            <span class="timeline-age" id="timelineAge">18岁</span>
+            <div class="timeline-track"><div class="timeline-fill" id="timelineFill" style="width:0%"></div></div>
+            <span class="timeline-age" id="timelineStage">大一</span>
+        </div>
+        <div class="timeline-labels"><span>本科</span><span>硕士</span><span>博士</span><span>博后</span><span>讲师</span><span>教授</span><span>巅峰</span></div>
         <div class="stats-bar">
             <div class="stat"><span class="stat-icon">📅</span><span class="stat-label">年份</span><span class="stat-value" id="statYear">2020</span></div>
-            <div class="stat"><span class="stat-icon">🎓</span><span class="stat-label">阶段</span><span class="stat-value" id="statStage">大一新生</span></div>
             <div class="stat"><span class="stat-icon">📄</span><span class="stat-label">论文</span><span class="stat-value" id="statPapers">0</span></div>
-            <div class="stat"><span class="stat-icon">💰</span><span class="stat-label">积蓄(万)</span><span class="stat-value" id="statMoney">0</span></div>
+            <div class="stat"><span class="stat-icon">⭐</span><span class="stat-label">顶刊</span><span class="stat-value" id="statTop">0</span></div>
+            <div class="stat"><span class="stat-icon">💰</span><span class="stat-label">积蓄</span><span class="stat-value" id="statMoney">0万</span></div>
         </div>
         <div class="stats-bar secondary">
-            <div class="stat-bar-item"><span>智力</span><div class="bar"><div class="bar-fill intel" id="barIntel" style="width:50%"></div></div><span id="statIntel">50</span></div>
-            <div class="stat-bar-item"><span>精力</span><div class="bar"><div class="bar-fill energy" id="barEnergy" style="width:100%"></div></div><span id="statEnergy">100</span></div>
-            <div class="stat-bar-item"><span>人脉</span><div class="bar"><div class="bar-fill social" id="barSocial" style="width:20%"></div></div><span id="statSocial">20</span></div>
-            <div class="stat-bar-item"><span>压力</span><div class="bar"><div class="bar-fill stress" id="barStress" style="width:10%"></div></div><span id="statStress">10</span></div>
-            <div class="stat-bar-item"><span>声望</span><div class="bar"><div class="bar-fill fame" id="barFame" style="width:0%"></div></div><span id="statFame">0</span></div>
-            <div class="stat-bar-item"><span>幸福</span><div class="bar"><div class="bar-fill happy" id="barHappy" style="width:80%"></div></div><span id="statHappy">80</span></div>
+            <div class="stat-bar-item"><span>智力</span><div class="bar"><div class="bar-fill intel" id="barIntel"></div></div><span id="statIntel">50</span></div>
+            <div class="stat-bar-item"><span>精力</span><div class="bar"><div class="bar-fill energy" id="barEnergy"></div></div><span id="statEnergy">100</span></div>
+            <div class="stat-bar-item"><span>人脉</span><div class="bar"><div class="bar-fill social" id="barSocial"></div></div><span id="statSocial">20</span></div>
+            <div class="stat-bar-item"><span>压力</span><div class="bar"><div class="bar-fill stress" id="barStress"></div></div><span id="statStress">10</span></div>
+            <div class="stat-bar-item"><span>声望</span><div class="bar"><div class="bar-fill fame" id="barFame"></div></div><span id="statFame">0</span></div>
+            <div class="stat-bar-item"><span>幸福</span><div class="bar"><div class="bar-fill happy" id="barHappy"></div></div><span id="statHappy">80</span></div>
         </div>
-        <div class="game-main">
+        <div class="game-main" id="gameMain">
             <div class="event-card" id="eventCard">
                 <div class="event-emoji" id="eventEmoji">🎒</div>
-                <div class="event-title" id="eventTitle">欢迎来到大学</div>
-                <div class="event-desc" id="eventDesc">你的旅程即将开始...</div>
+                <div class="event-title" id="eventTitle"></div>
+                <div class="event-desc" id="eventDesc"></div>
             </div>
             <div class="choices" id="choices"></div>
         </div>
-        <div class="game-log" id="gameLog">
-            <div class="log-toggle" onclick="toggleLog()">📋 人生记录 <span id="logToggleIcon">▼</span></div>
-            <div class="log-content" id="logContent"></div>
-        </div>
+        <div class="game-log"><div class="log-toggle" onclick="toggleLog()">📋 人生记录 <span id="logToggleIcon">▼</span></div><div class="log-content" id="logContent"></div></div>
     </div>
 
-    <!-- End Screen -->
+    <!-- End -->
     <div id="endScreen" class="screen">
         <div class="end-content">
-            <h2 id="endTitle">人生结算</h2>
+            <h2>人生结算</h2>
             <div class="end-card" id="endCard"></div>
+            <div class="end-score" id="endScore"></div>
             <div class="end-stats" id="endStats"></div>
             <div class="end-achievements" id="endAchievements"></div>
-            <button class="btn-primary" onclick="location.reload()">再来一次</button>
-            <a href="../" class="btn-secondary">返回工具集</a>
+            <div class="end-leaderboard" id="endLeaderboard"></div>
+            <div class="end-buttons">
+                <button class="btn-primary" onclick="location.reload()">再来一次</button>
+                <button class="btn-secondary" onclick="shareResult()">📤 分享结果</button>
+                <a href="../" class="btn-secondary">返回工具集</a>
+            </div>
         </div>
     </div>
-
+    <canvas id="shareCanvas" class="share-canvas" width="600" height="800"></canvas>
     <script src="game.js"></script>
 </body>
 </html>
