@@ -1,111 +1,44 @@
 [
   {
-    "id": "pd-20260315-vpp01",
-    "date": "2026-03-15",
-    "title": "Federated Deep Reinforcement Learning for Optimal Scheduling of Virtual Power Plants with Distributed Energy Resources",
-    "authors": "Zhang Y, Li H, Wang X, et al.",
-    "journal": "Applied Energy",
-    "field": "VPP",
-    "doi": "10.1016/j.apenergy.2026.03.045",
-    "url": "",
-    "abstract": "提出基于联邦深度强化学习的虚拟电厂调度优化框架。各分布式能源资源(DER)在本地训练DRL智能体，通过联邦聚合共享策略参数，在保护数据隐私的前提下实现全局最优调度，显著降低运营成本与碳排放。",
+    "id": "pd-20260318-01",
+    "date": "2026-03-18",
+    "title": "Incremental Federated Learning for Intrusion Detection in IoT Networks under Evolving Threat Landscape",
+    "authors": "Muaan Ur Rehman, Hayretdin Bahsi, Rajesh Kalakoti",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2603.10776v2",
+    "url": "https://arxiv.org/abs/2603.10776v2",
+    "abstract": "The expansion of Internet of Things (IoT) devices has increased the attack surface of networks, necessitating a robust and adaptive intrusion detection systems. Machine learning based systems have been considered promising in enhancing the detection performance. Federated learning settings enabled u",
     "highlights": [
-      "首次将联邦学习与DRL结合应用于虚拟电厂调度问题",
-      "设计异步联邦聚合策略，解决DER异构性和通信延迟问题",
-      "在IEEE 33节点配电网仿真中，运营成本降低18.7%，碳排放减少23.4%"
+      "研究Incremental Federated Learning...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
     ],
-    "tags": ["虚拟电厂", "联邦学习", "深度强化学习", "分布式能源", "调度优化", "中科院1区Top"],
-    "comment": "FL+DRL在VPP调度中的创新应用，但仿真规模较小，实际电网验证有待补充"
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
   },
   {
-    "id": "pd-20260315-vpp02",
-    "date": "2026-03-15",
-    "title": "Privacy-Preserving Aggregation for Virtual Power Plant Bidding in Electricity Markets: A Blockchain-Federated Learning Approach",
-    "authors": "Chen L, Zhao M, Liu J, et al.",
-    "journal": "IEEE Transactions on Smart Grid",
-    "field": "VPP",
-    "doi": "10.1109/TSG.2026.3145678",
-    "url": "",
-    "abstract": "提出区块链辅助的联邦学习框架用于虚拟电厂电力市场竞价。利用差分隐私保护各聚合单元负荷数据，通过智能合约实现可验证的联邦聚合，在保障隐私的同时提升VPP市场竞争力。",
+    "id": "pd-20260318-02",
+    "date": "2026-03-18",
+    "title": "Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems",
+    "authors": "Riya Samanta, Bidyut Saha",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.15085v1",
+    "url": "https://arxiv.org/abs/2603.15085v1",
+    "abstract": "Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small",
     "highlights": [
-      "区块链+FL双重隐私保障，解决VPP聚合中的数据信任问题",
-      "差分隐私机制在ε=1.0时仍保持97.2%的预测精度",
-      "在PJM电力市场真实数据上验证，竞价收益提升12.3%"
+      "研究Affordable Precision Agricultu...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
     ],
-    "tags": ["虚拟电厂", "区块链", "联邦学习", "电力市场", "差分隐私", "中科院1区Top"],
-    "comment": "隐私保护+市场竞价的新颖组合，区块链开销分析充分，但链上吞吐量在大规模DER场景下可能受限"
-  },
-  {
-    "id": "pd-20260315-vpp03",
-    "date": "2026-03-15",
-    "title": "TinyML-based Edge Intelligence for Real-Time Demand Response in Virtual Power Plants",
-    "authors": "Wang R, Sun K, Yang T, et al.",
-    "journal": "Energy and AI",
-    "field": "VPP",
-    "doi": "10.1016/j.egyai.2026.100312",
-    "url": "",
-    "abstract": "提出基于TinyML的边缘智能需求响应系统，将轻量化负荷预测模型部署至智能电表MCU端。通过模型量化与知识蒸馏实现毫秒级本地推理，支持VPP实时需求响应调度。",
-    "highlights": [
-      "将Transformer负荷预测模型压缩至48KB，部署在STM32H7 MCU上",
-      "INT8量化后精度损失仅0.8%，单次推理仅需3.2ms",
-      "端侧实时响应使VPP调度延迟从分钟级降至秒级"
+    "tags": [
+      "轻量化"
     ],
-    "tags": ["虚拟电厂", "TinyML", "需求响应", "边缘智能", "模型压缩", "中科院2区"],
-    "comment": "TinyML+VPP的交叉方向，边缘部署方案实用性强，与联邦学习结合可进一步探索"
-  },
-  {
-    "id": "pd-20260315-em01",
-    "date": "2026-03-15",
-    "title": "Federated Multi-Agent Deep Reinforcement Learning for Building Energy Management with Privacy Guarantees",
-    "authors": "Liu W, Gao S, Xu Y, et al.",
-    "journal": "Energy and Buildings",
-    "field": "Energy",
-    "doi": "10.1016/j.enbuild.2026.113456",
-    "url": "",
-    "abstract": "提出联邦多智能体DRL框架用于建筑群能源管理。每栋建筑作为独立智能体本地训练HVAC控制策略，通过联邦平均共享模型参数。在保护建筑能耗隐私的同时实现区域级能源协同优化。",
-    "highlights": [
-      "多智能体+联邦学习架构天然适配建筑群分布式能源管理场景",
-      "提出基于注意力机制的智能体间通信模块，提升协同效率",
-      "5栋商业建筑实测数据验证，总能耗降低15.6%，峰值负荷削减21.8%"
-    ],
-    "tags": ["能源管理", "联邦学习", "多智能体", "强化学习", "建筑能耗", "中科院1区"],
-    "comment": "FL+MARL在建筑能源管理中的完整方案，实测数据增强说服力，但季节性变化适应性需进一步验证"
-  },
-  {
-    "id": "pd-20260315-em02",
-    "date": "2026-03-15",
-    "title": "Edge-Cloud Collaborative Energy Management for Industrial IoT: A TinyML and Federated Learning Co-Design",
-    "authors": "Park J, Kim H, Lee S, et al.",
-    "journal": "IEEE Transactions on Industrial Informatics",
-    "field": "Energy",
-    "doi": "10.1109/TII.2026.3156789",
-    "url": "",
-    "abstract": "提出端云协同的工业物联网能源管理框架。TinyML模型在边缘设备实现本地能耗异常检测与短期预测，联邦学习在云端聚合多工厂模型实现全局优化，实现隐私保护下的工业能效提升。",
-    "highlights": [
-      "TinyML+FL端云协同架构，兼顾实时性与全局优化",
-      "设计自适应联邦聚合权重，根据各工厂数据质量动态调整",
-      "在3个制造工厂部署验证，能耗异常检测F1达96.3%，能效提升11.2%"
-    ],
-    "tags": ["能源管理", "TinyML", "联邦学习", "工业物联网", "端云协同", "中科院1区Top"],
-    "comment": "端云协同设计思路清晰，TinyML+FL的结合具有工业落地价值，自适应聚合权重是亮点"
-  },
-  {
-    "id": "pd-20260315-em03",
-    "date": "2026-03-15",
-    "title": "Lightweight Intrusion Detection for Smart Grid Energy Management Systems Using Pruned CNN on Resource-Constrained Devices",
-    "authors": "Ali M, Hassan R, Ahmed N, et al.",
-    "journal": "IEEE Internet of Things Journal",
-    "field": "Energy",
-    "doi": "10.1109/JIOT.2026.3148901",
-    "url": "",
-    "abstract": "提出面向智能电网能源管理系统的轻量化入侵检测方案。通过结构化剪枝将CNN模型压缩至原始大小的8%，部署在ARM Cortex-M7设备上，实现对电网通信协议攻击的实时检测。",
-    "highlights": [
-      "针对IEC 61850和DNP3协议的攻击检测，填补智能电网安全的TinyML空白",
-      "结构化剪枝+INT8量化，模型仅32KB，推理延迟4.1ms",
-      "在电力系统CPS攻击数据集上F1达95.7%，误报率仅0.8%"
-    ],
-    "tags": ["能源管理", "入侵检测", "智能电网", "TinyML", "模型剪枝", "中科院1区Top"],
-    "comment": "电网安全+TinyML的交叉研究，与IoV安全方法论相通，剪枝策略可借鉴。IDS+能源管理双重视角"
+    "comment": "待详细分析"
   },
   {
     "id": "pd-20260315-01",
@@ -755,6 +688,156 @@
       "聚合策略"
     ],
     "comment": "混合范式适合车载场景:不同ECU计算周期差异大"
+  },
+  {
+    "id": "pd-20260315-em01",
+    "date": "2026-03-15",
+    "title": "Federated Multi-Agent Deep Reinforcement Learning for Building Energy Management with Privacy Guarantees",
+    "authors": "Liu W, Gao S, Xu Y, et al.",
+    "journal": "Energy and Buildings",
+    "field": "Energy",
+    "doi": "10.1016/j.enbuild.2026.113456",
+    "url": "",
+    "abstract": "提出联邦多智能体DRL框架用于建筑群能源管理。每栋建筑作为独立智能体本地训练HVAC控制策略，通过联邦平均共享模型参数。在保护建筑能耗隐私的同时实现区域级能源协同优化。",
+    "highlights": [
+      "多智能体+联邦学习架构天然适配建筑群分布式能源管理场景",
+      "提出基于注意力机制的智能体间通信模块，提升协同效率",
+      "5栋商业建筑实测数据验证，总能耗降低15.6%，峰值负荷削减21.8%"
+    ],
+    "tags": [
+      "能源管理",
+      "联邦学习",
+      "多智能体",
+      "强化学习",
+      "建筑能耗",
+      "中科院1区"
+    ],
+    "comment": "FL+MARL在建筑能源管理中的完整方案，实测数据增强说服力，但季节性变化适应性需进一步验证"
+  },
+  {
+    "id": "pd-20260315-em02",
+    "date": "2026-03-15",
+    "title": "Edge-Cloud Collaborative Energy Management for Industrial IoT: A TinyML and Federated Learning Co-Design",
+    "authors": "Park J, Kim H, Lee S, et al.",
+    "journal": "IEEE Transactions on Industrial Informatics",
+    "field": "Energy",
+    "doi": "10.1109/TII.2026.3156789",
+    "url": "",
+    "abstract": "提出端云协同的工业物联网能源管理框架。TinyML模型在边缘设备实现本地能耗异常检测与短期预测，联邦学习在云端聚合多工厂模型实现全局优化，实现隐私保护下的工业能效提升。",
+    "highlights": [
+      "TinyML+FL端云协同架构，兼顾实时性与全局优化",
+      "设计自适应联邦聚合权重，根据各工厂数据质量动态调整",
+      "在3个制造工厂部署验证，能耗异常检测F1达96.3%，能效提升11.2%"
+    ],
+    "tags": [
+      "能源管理",
+      "TinyML",
+      "联邦学习",
+      "工业物联网",
+      "端云协同",
+      "中科院1区Top"
+    ],
+    "comment": "端云协同设计思路清晰，TinyML+FL的结合具有工业落地价值，自适应聚合权重是亮点"
+  },
+  {
+    "id": "pd-20260315-em03",
+    "date": "2026-03-15",
+    "title": "Lightweight Intrusion Detection for Smart Grid Energy Management Systems Using Pruned CNN on Resource-Constrained Devices",
+    "authors": "Ali M, Hassan R, Ahmed N, et al.",
+    "journal": "IEEE Internet of Things Journal",
+    "field": "Energy",
+    "doi": "10.1109/JIOT.2026.3148901",
+    "url": "",
+    "abstract": "提出面向智能电网能源管理系统的轻量化入侵检测方案。通过结构化剪枝将CNN模型压缩至原始大小的8%，部署在ARM Cortex-M7设备上，实现对电网通信协议攻击的实时检测。",
+    "highlights": [
+      "针对IEC 61850和DNP3协议的攻击检测，填补智能电网安全的TinyML空白",
+      "结构化剪枝+INT8量化，模型仅32KB，推理延迟4.1ms",
+      "在电力系统CPS攻击数据集上F1达95.7%，误报率仅0.8%"
+    ],
+    "tags": [
+      "能源管理",
+      "入侵检测",
+      "智能电网",
+      "TinyML",
+      "模型剪枝",
+      "中科院1区Top"
+    ],
+    "comment": "电网安全+TinyML的交叉研究，与IoV安全方法论相通，剪枝策略可借鉴。IDS+能源管理双重视角"
+  },
+  {
+    "id": "pd-20260315-vpp01",
+    "date": "2026-03-15",
+    "title": "Federated Deep Reinforcement Learning for Optimal Scheduling of Virtual Power Plants with Distributed Energy Resources",
+    "authors": "Zhang Y, Li H, Wang X, et al.",
+    "journal": "Applied Energy",
+    "field": "VPP",
+    "doi": "10.1016/j.apenergy.2026.03.045",
+    "url": "",
+    "abstract": "提出基于联邦深度强化学习的虚拟电厂调度优化框架。各分布式能源资源(DER)在本地训练DRL智能体，通过联邦聚合共享策略参数，在保护数据隐私的前提下实现全局最优调度，显著降低运营成本与碳排放。",
+    "highlights": [
+      "首次将联邦学习与DRL结合应用于虚拟电厂调度问题",
+      "设计异步联邦聚合策略，解决DER异构性和通信延迟问题",
+      "在IEEE 33节点配电网仿真中，运营成本降低18.7%，碳排放减少23.4%"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "联邦学习",
+      "深度强化学习",
+      "分布式能源",
+      "调度优化",
+      "中科院1区Top"
+    ],
+    "comment": "FL+DRL在VPP调度中的创新应用，但仿真规模较小，实际电网验证有待补充"
+  },
+  {
+    "id": "pd-20260315-vpp02",
+    "date": "2026-03-15",
+    "title": "Privacy-Preserving Aggregation for Virtual Power Plant Bidding in Electricity Markets: A Blockchain-Federated Learning Approach",
+    "authors": "Chen L, Zhao M, Liu J, et al.",
+    "journal": "IEEE Transactions on Smart Grid",
+    "field": "VPP",
+    "doi": "10.1109/TSG.2026.3145678",
+    "url": "",
+    "abstract": "提出区块链辅助的联邦学习框架用于虚拟电厂电力市场竞价。利用差分隐私保护各聚合单元负荷数据，通过智能合约实现可验证的联邦聚合，在保障隐私的同时提升VPP市场竞争力。",
+    "highlights": [
+      "区块链+FL双重隐私保障，解决VPP聚合中的数据信任问题",
+      "差分隐私机制在ε=1.0时仍保持97.2%的预测精度",
+      "在PJM电力市场真实数据上验证，竞价收益提升12.3%"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "区块链",
+      "联邦学习",
+      "电力市场",
+      "差分隐私",
+      "中科院1区Top"
+    ],
+    "comment": "隐私保护+市场竞价的新颖组合，区块链开销分析充分，但链上吞吐量在大规模DER场景下可能受限"
+  },
+  {
+    "id": "pd-20260315-vpp03",
+    "date": "2026-03-15",
+    "title": "TinyML-based Edge Intelligence for Real-Time Demand Response in Virtual Power Plants",
+    "authors": "Wang R, Sun K, Yang T, et al.",
+    "journal": "Energy and AI",
+    "field": "VPP",
+    "doi": "10.1016/j.egyai.2026.100312",
+    "url": "",
+    "abstract": "提出基于TinyML的边缘智能需求响应系统，将轻量化负荷预测模型部署至智能电表MCU端。通过模型量化与知识蒸馏实现毫秒级本地推理，支持VPP实时需求响应调度。",
+    "highlights": [
+      "将Transformer负荷预测模型压缩至48KB，部署在STM32H7 MCU上",
+      "INT8量化后精度损失仅0.8%，单次推理仅需3.2ms",
+      "端侧实时响应使VPP调度延迟从分钟级降至秒级"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "TinyML",
+      "需求响应",
+      "边缘智能",
+      "模型压缩",
+      "中科院2区"
+    ],
+    "comment": "TinyML+VPP的交叉方向，边缘部署方案实用性强，与联邦学习结合可进一步探索"
   },
   {
     "id": "pd-20260313-01",
