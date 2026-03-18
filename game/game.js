@@ -8,10 +8,19 @@ var G = {
     papers:0, topPapers:0, patents:0, money:0, funding:0,
     students:0, awards:0, teaching:0,
     gpa:3.0, hasPhd:false, hasMaster:false, isAbroad:false,
-    mentor:'', partner:false, burnout:false, hasJob:false,
+    mentor:'', mentorType:'', partner:false, burnout:false, hasJob:false,
     hasCat:false, hasStartup:false, reviewer:false, phdYears:0,
     traits:[], // earned traits that affect future events
-    log:[], achievements:[], turnCount:0
+    log:[], achievements:[], turnCount:0,
+    yearSummary:[], bgmOn:false
+};
+
+// Mentor types (10. 导师性格系统)
+var MENTOR_TYPES={
+    push:{name:'Push型导师',desc:'每天催进度，高压但高产',stressMod:3,intelMod:2,icon:'😤'},
+    free:{name:'放羊型导师',desc:'基本不管你，自由但迷茫',stressMod:-2,happyMod:2,icon:'🐑'},
+    academic:{name:'学术大牛导师',desc:'要求极高但资源丰富',intelMod:3,fameMod:1,icon:'🎓'},
+    industry:{name:'横向项目导师',desc:'天天做项目，赚钱但没论文',moneyMod:2,stressMod:1,icon:'💰'}
 };
 
 var STAGES=['大一新生','大二','大三','大四','研一','研二','研三/博一','博二','博三','博四','博士后','讲师','副教授','教授','杰出学者'];
@@ -58,6 +67,74 @@ function showFloat(text,type){
     el.textContent=text;
     document.body.appendChild(el);
     setTimeout(function(){el.remove();},1300);
+}
+
+// ==================== BGM System (6) ====================
+var bgmInterval;
+function toggleBgm(){
+    G.bgmOn=!G.bgmOn;
+    var btn=document.getElementById('bgmBtn');
+    if(btn)btn.textContent=G.bgmOn?'🔊':'🔇';
+    if(G.bgmOn)startBgm();else stopBgm();
+}
+function startBgm(){
+    if(bgmInterval)return;
+    bgmInterval=setInterval(function(){
+        if(!G.bgmOn||!audioCtx)return;
+        try{
+            var notes=[262,294,330,349,392,440,494,523];
+            var n=notes[rand(0,notes.length-1)];
+            var o=audioCtx.createOscillator(),g=audioCtx.createGain();
+            o.connect(g);g.connect(audioCtx.destination);
+            o.frequency.value=n;o.type='sine';
+            g.gain.setValueAtTime(0.015,audioCtx.currentTime);
+            g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+1.5);
+            o.start();o.stop(audioCtx.currentTime+1.5);
+        }catch(e){}
+    },2000);
+}
+function stopBgm(){if(bgmInterval){clearInterval(bgmInterval);bgmInterval=null;}}
+
+// ==================== Typewriter Effect (7) ====================
+var typeTimer;
+function typeWrite(el,text,cb){
+    if(typeTimer)clearInterval(typeTimer);
+    el.textContent='';
+    var i=0;
+    typeTimer=setInterval(function(){
+        if(i<text.length){el.textContent+=text[i];i++;}
+        else{clearInterval(typeTimer);typeTimer=null;if(cb)cb();}
+    },18);
+}
+
+// ==================== Fullscreen Celebration (8) ====================
+function showCelebration(emoji,text){
+    var overlay=document.createElement('div');
+    overlay.style.cssText='position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.85);animation:fadeIn 0.3s ease';
+    overlay.innerHTML='<div style="font-size:6rem;animation:bounce 0.8s ease">'+emoji+'</div><div style="font-size:1.8rem;color:#ffd700;font-weight:700;margin-top:1rem;text-shadow:0 0 20px rgba(255,215,0,0.5)">'+text+'</div><div style="font-size:0.9rem;color:#888;margin-top:1.5rem">点击继续</div>';
+    // Particles
+    for(var p=0;p<20;p++){
+        var particle=document.createElement('div');
+        var px=rand(10,90),py=rand(10,90),size=rand(4,12);
+        var colors=['#667eea','#f093fb','#ffd700','#52c41a','#f5576c'];
+        particle.style.cssText='position:absolute;left:'+px+'%;top:'+py+'%;width:'+size+'px;height:'+size+'px;background:'+pick(colors)+';border-radius:50%;animation:floatUp '+rand(10,25)/10+'s ease infinite;opacity:0.7';
+        overlay.appendChild(particle);
+    }
+    overlay.onclick=function(){overlay.remove();};
+    document.body.appendChild(overlay);
+    playSound('great');
+}
+
+// ==================== Year Summary (3) ====================
+function showYearSummary(){
+    if(G.yearSummary.length===0)return;
+    var overlay=document.createElement('div');
+    overlay.style.cssText='position:fixed;inset:0;z-index:9998;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)';
+    var items=G.yearSummary.map(function(s){return'<div style="padding:0.3rem 0;font-size:0.9rem;color:#aaa">'+s+'</div>';}).join('');
+    overlay.innerHTML='<div style="background:#13132e;border:1px solid #252550;border-radius:16px;padding:2rem;max-width:400px;width:90%;text-align:center"><div style="font-size:1.3rem;color:#667eea;font-weight:700;margin-bottom:1rem">📅 '+G.year+'年度回顾</div>'+items+'<div style="margin-top:1rem;font-size:0.75rem;color:#555">点击继续</div></div>';
+    overlay.onclick=function(){overlay.remove();};
+    document.body.appendChild(overlay);
+    G.yearSummary=[];
 }
 
 // ==================== Meme Quotes ====================
@@ -376,6 +453,128 @@ function getEvents(){
         ]});
     }
 
+    // ===== 导师性格系统 (10) - 分配导师 =====
+    if(s===4&&!G.mentorType&&chance(100)){
+        var types=Object.keys(MENTOR_TYPES);
+        pool.push({emoji:'👨‍🏫',title:'你的导师是...',
+            desc:'研究生入学，最重要的事就是——你分到了什么样的导师？',
+            choices:types.map(function(t){var m=MENTOR_TYPES[t];return{
+                text:m.icon+' '+m.name,icon:m.icon,effect:m.desc,
+                fn:function(){G.mentorType=t;addLog('你的导师是'+m.name+'（'+m.desc+'）','good');showFloat(m.icon+' '+m.name,'good');}
+            };})
+        });
+    }
+
+    // ===== 导师性格持续影响 =====
+    if(G.mentorType&&s>=4&&s<=9&&chance(30)){
+        var mt=MENTOR_TYPES[G.mentorType];
+        if(G.mentorType==='push')pool.push({emoji:'😤',title:'导师又催了',desc:'"'+pick(['你的论文初稿什么时候给我？','组会你准备好了吗？','你这个月的工作量不够啊','隔壁组的学生都发了两篇了'])+'"',
+            choices:[
+                {text:'加班赶进度',icon:'💪',effect:'智力+8 压力+12',fn:function(){mod({intel:8,stress:12});addLog('被导师push后疯狂加班','');}},
+                {text:'表面答应暗中摸鱼',icon:'🐟',effect:'幸福+5 压力+3',fn:function(){mod({happy:5,stress:3});addLog('"好的老师，在做了在做了"','');}}
+            ]});
+        if(G.mentorType==='free')pool.push({emoji:'🐑',title:'导师消失了',desc:'你已经一个月没见到导师了。邮件不回，微信已读不回。\n研究方向完全迷茫...',
+            choices:[
+                {text:'自己摸索方向',icon:'🔍',effect:'智力+12 压力+8',fn:function(){mod({intel:12,stress:8});addLog('独立思考能力大幅提升','good');G.traits.push('independent');}},
+                {text:'找师兄师姐求助',icon:'🤝',effect:'人脉+10 智力+5',fn:function(){mod({social:10,intel:5});addLog('师兄带你入门了','good');}}
+            ]});
+        if(G.mentorType==='academic')pool.push({emoji:'🎓',title:'导师的高标准',desc:'"这个idea不够新颖，重新想。"\n你的方案第三次被否...',
+            choices:[
+                {text:'继续打磨，追求完美',icon:'💎',effect:'智力+15 压力+10',fn:function(){mod({intel:15,stress:10});if(chance(40)){addLog('在导师的严格要求下想出了绝妙idea','good');showFloat('💡 灵感爆发！','good');}else{addLog('还在改...','');}}},
+                {text:'先做一个简单版本',icon:'📋',effect:'智力+5 压力-5',fn:function(){mod({intel:5,stress:-5});addLog('先把基础做好再说','');}}
+            ]});
+        if(G.mentorType==='industry')pool.push({emoji:'💰',title:'又一个横向项目',desc:'导师接了一个企业项目，让你去对接...\n跟科研关系不大，但有钱拿。',
+            choices:[
+                {text:'接！先赚钱再说',icon:'💰',effect:'积蓄+5万 人脉+8',fn:function(){G.money+=5;mod({social:8});addLog('横向项目赚了外快','good');}},
+                {text:'跟导师商量减少横向',icon:'🗣️',effect:'压力+5 智力+5',fn:function(){mod({stress:5,intel:5});addLog('跟导师谈了之后，时间多了些做科研','');}}
+            ]});
+    }
+
+    // ===== 专业专属事件 (1) =====
+    if(G.field==='AI'&&s>=2&&chance(25)){
+        pool.push({emoji:'🤖',title:'AI热潮',desc:pick([
+            'ChatGPT横空出世，整个AI圈都炸了。你的研究方向突然变成了热门！',
+            '大模型时代来了，你之前的传统方法论文突然没人看了...',
+            '老板让你也搞大模型，可是GPU不够啊...',
+            'AI生成的论文质量越来越高，你感到了一丝危机...'
+        ]),choices:[
+            {text:'拥抱变化，转向大模型',icon:'🔥',effect:'智力+12 声望+10',fn:function(){mod({intel:12,fame:10});addLog('成功转型LLM方向','good');}},
+            {text:'坚守自己的方向',icon:'🧱',effect:'智力+8',fn:function(){mod({intel:8});addLog('热潮会过去，基础研究永远有价值','');}}
+        ]});
+    }
+    if(G.field==='Bio'&&s>=4&&chance(20)){
+        pool.push({emoji:'🧬',title:'实验室事故',desc:pick(['培养了三个月的细胞被污染了...','PCR实验第15次失败','实验小鼠逃跑了3只','冰箱断电，样本全废了']),
+            choices:[
+                {text:'从头再来',icon:'💪',effect:'精力-15 压力+10 智力+5',fn:function(){mod({energy:-15,stress:10,intel:5});addLog('生物实验就是这样...重来吧','');}},
+                {text:'先大哭一场',icon:'😭',effect:'压力-10 幸福-5',fn:function(){mod({stress:-10,happy:-5});addLog('哭完继续做实验','');}}
+            ]});
+    }
+    if(G.field==='EE'&&s>=4&&chance(20)){
+        pool.push({emoji:'⚡',title:'硬件调试',desc:pick(['焊了一周的板子烧了...','示波器显示的波形跟仿真完全不一样','芯片缺货，项目停滞','FPGA编译一次要3小时']),
+            choices:[
+                {text:'换个方案试试',icon:'🔧',effect:'智力+8 精力-10',fn:function(){mod({intel:8,energy:-10});addLog('工程师的日常：换方案','');}},
+                {text:'转软件方向算了',icon:'💻',effect:'智力+5',fn:function(){mod({intel:5,stress:-5});addLog('硬件太难了，写代码舒服多了','');}}
+            ]});
+    }
+    if(G.field==='Energy'&&s>=4&&chance(20)){
+        pool.push({emoji:'🔋',title:'能源政策变了',desc:pick(['国家发布新能源补贴政策，你的研究方向正好踩中风口！','碳中和目标推动，虚拟电厂成了热门方向','储能技术突破的新闻上了热搜，导师让你跟进']),
+            choices:[
+                {text:'紧跟政策热点',icon:'📈',effect:'声望+12 基金+10万',fn:function(){mod({fame:12});G.funding+=10;addLog('踩中政策风口！','good');}},
+                {text:'专注基础研究',icon:'🔬',effect:'智力+10',fn:function(){mod({intel:10});addLog('基础研究才是根本','');}}
+            ]});
+    }
+    if(G.field==='Math'&&s>=4&&chance(20)){
+        pool.push({emoji:'📐',title:'证明卡住了',desc:'你已经在一个定理的证明上卡了两个月了...\n草稿纸用了几百页，但关键一步总是过不去。',
+            choices:[
+                {text:'换个思路',icon:'💡',effect:'智力+12',fn:function(){mod({intel:12});if(chance(30)){addLog('灵光一闪，证明完成了！','good');playSound('great');showFloat('📐 证明完成！','great');G.papers++;}else{addLog('新思路也卡住了...','');}}},
+                {text:'找同行讨论',icon:'🤝',effect:'人脉+8 智力+5',fn:function(){mod({social:8,intel:5});addLog('讨论后有了新思路','good');}}
+            ]});
+    }
+
+    // ===== 决策因果链 (2) =====
+    if(G.traits.indexOf('early_research')>=0&&s===4&&chance(60)){
+        pool.push({emoji:'🌟',title:'本科导师推荐信',desc:'你大一就进实验室的经历发挥了作用！\n本科导师写了一封强推荐信，新导师对你另眼相看。',
+            choices:[{text:'感恩前行',icon:'🙏',effect:'声望+12 人脉+10',fn:function(){mod({fame:12,social:10});addLog('本科的积累终于回报了！','good');checkAch('butterfly','蝴蝶效应','🦋');}}]
+        });
+    }
+    if(G.traits.indexOf('gamer')>=0&&s>=4&&chance(20)){
+        pool.push({emoji:'🎮',title:'游戏技能意外派上用场',desc:'你在' + pick(['强化学习项目中用上了游戏策略思维','做用户研究时对游戏化设计侃侃而谈','团队合作中展现了打游戏练出的指挥能力']) + '。',
+            choices:[{text:'哈哈，没白玩',icon:'😎',effect:'智力+8 幸福+8',fn:function(){mod({intel:8,happy:8});addLog('大一打游戏的时光没白费','good');}}]
+        });
+    }
+    if(G.traits.indexOf('social_butterfly')>=0&&s>=6&&chance(25)){
+        pool.push({emoji:'🤝',title:'人脉带来的机会',desc:'一个大二认识的学长现在在'+pick(['Google','微软','清华','MIT'])+'，他给你介绍了一个绝佳的合作机会。',
+            choices:[{text:'感谢大二的自己！',icon:'🌟',effect:'声望+15 人脉+10',fn:function(){mod({fame:15,social:10});addLog('多年前建立的人脉发挥了作用！','good');checkAch('butterfly','蝴蝶效应','🦋');}}]
+        });
+    }
+    if(G.traits.indexOf('independent')>=0&&s>=10&&chance(30)){
+        pool.push({emoji:'💡',title:'独立思考的回报',desc:'因为导师放羊逼出来的独立研究能力，你比同龄人更快建立了自己的研究方向。',
+            choices:[{text:'感谢当年的困境',icon:'💪',effect:'声望+12 智力+8',fn:function(){mod({fame:12,intel:8});addLog('独立能力成了你最大的优势','good');}}]
+        });
+    }
+
+    // ===== 学术不端抉择 (9) =====
+    if(s>=5&&s<=12&&chance(15)){
+        var ethicsEvents=[
+            {emoji:'⚖️',title:'灌水的诱惑',desc:'师兄建议把一篇论文拆成三篇发，数据换个角度就行。\n"大家都这么干的。"',
+                choices:[
+                    {text:'拒绝，坚持学术标准',icon:'✊',effect:'智力+5 声望+8',fn:function(){mod({intel:5,fame:8});addLog('拒绝灌水，坚守底线','good');checkAch('integrity','学术诚信','⚖️');}},
+                    {text:'那就拆吧...生存第一',icon:'📄',effect:'论文+2 压力+5',fn:function(){G.papers+=2;mod({stress:5,fame:-5});addLog('拆了论文...心里有点不安','');}}
+                ]},
+            {emoji:'⚖️',title:'挂名请求',desc:'一个不认识的教授找你导师，想在你的论文上挂个名字。\n导师说"人家给了我们经费，加上吧。"',
+                choices:[
+                    {text:'听导师的，加上名字',icon:'🤝',effect:'基金+5万 人脉+5',fn:function(){G.funding+=5;mod({social:5});addLog('加了挂名...学术界的潜规则','');}},
+                    {text:'委婉拒绝，作者应该有贡献',icon:'✊',effect:'声望+10 压力+8',fn:function(){mod({fame:10,stress:8});addLog('坚持了作者贡献原则','good');checkAch('integrity','学术诚信','⚖️');}}
+                ]},
+            {emoji:'⚖️',title:'数据的诱惑',desc:'实验结果离发表还差一点点...如果把那几个异常值去掉，结果就完美了。\n"没人会发现的。"',
+                choices:[
+                    {text:'如实报告，包括异常值',icon:'✊',effect:'智力+8 声望+10',fn:function(){mod({intel:8,fame:10});addLog('如实报告数据，科学的底线不能破','good');checkAch('integrity','学术诚信','⚖️');}},
+                    {text:'去掉异常值，没人会查的',icon:'📊',effect:'论文+1 压力+10',fn:function(){G.papers++;mod({stress:10,happy:-5});if(chance(15)){mod({fame:-20,stress:20});addLog('数据造假被查出来了！声誉受损！','bad');playSound('bad');showFloat('⚠️ 学术不端！','bad');}else{addLog('论文发了...但心里一直不安','');}}}
+                ]}
+        ];
+        pool.push(pick(ethicsEvents));
+    }
+
     // 压力过高
     if(G.stress>=78&&G.energy<=30&&chance(65)){
         pool.push({emoji:'⚠️',title:'身体亮红灯',
@@ -443,6 +642,33 @@ function nextTurn(){
     if(G.hasCat)mod({happy:2,stress:-1});
     if(G.age>=35)mod({energy:-1});
     if(G.age>=45)mod({energy:-1});
+    // Mentor natural effects (10)
+    if(G.mentorType){
+        var mt=MENTOR_TYPES[G.mentorType];
+        if(mt.stressMod)mod({stress:mt.stressMod});
+        if(mt.intelMod)mod({intel:mt.intelMod});
+        if(mt.happyMod)mod({happy:mt.happyMod});
+        if(mt.fameMod)mod({fame:mt.fameMod});
+        if(mt.moneyMod)G.money+=mt.moneyMod;
+    }
+
+    // Year summary (3) - show every 3 turns after stage 4
+    if(G.turnCount>1&&G.turnCount%3===0&&G.stage>=4){
+        var summary=[];
+        summary.push('📄 论文: '+G.papers+' 篇 (顶刊 '+G.topPapers+')');
+        summary.push('💰 经费: '+G.funding+'万 | 积蓄: '+G.money+'万');
+        summary.push('😊 幸福: '+G.happy+' | 😰 压力: '+G.stress);
+        if(G.partner)summary.push('❤️ 恋爱中');
+        if(G.hasCat)summary.push('🐱 Paper猫陪伴中');
+        if(G.mentorType)summary.push(MENTOR_TYPES[G.mentorType].icon+' '+MENTOR_TYPES[G.mentorType].name);
+        G.yearSummary=summary;
+        setTimeout(showYearSummary,100);
+    }
+
+    // Celebration for major milestones (8)
+    if(G.stage===12&&G.substage===0&&G.turnCount>1)showCelebration('👨‍🏫','评上副教授了！');
+    if(G.stage===13&&G.substage===0&&G.turnCount>1)showCelebration('🏅','晋升教授！！！');
+    if(G.stage===14)showCelebration('👑','杰出学者！学术巅峰！');
 
     updateUI();
     showEvent(getEvents());
@@ -452,7 +678,8 @@ function showEvent(ev){
     if(!ev){nextTurn();return;}
     document.getElementById('eventEmoji').textContent=ev.emoji;
     document.getElementById('eventTitle').textContent=ev.title;
-    document.getElementById('eventDesc').textContent=ev.desc;
+    // Typewriter effect (7)
+    typeWrite(document.getElementById('eventDesc'),ev.desc);
     var el=document.getElementById('choices');
     el.innerHTML='';
     ev.choices.forEach(function(c){
