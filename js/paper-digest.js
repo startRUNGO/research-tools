@@ -214,17 +214,35 @@ function renderPdTo(suffix) {
     var hasMore = items.length > showCount;
     var visibleItems = items.slice(0, showCount);
 
-    let html = '';
-    let lastDate = '';
+    // Group by date
+    var today = new Date().toISOString().slice(0, 10);
+    var dateGroups = [];
+    var currentGroup = null;
     visibleItems.forEach(function (paper) {
-        if (paper.date !== lastDate) {
-            lastDate = paper.date;
-            const dateObj = new Date(paper.date);
-            const dateStr = dateObj.toLocaleDateString(currentLang === 'zh' ? 'zh-CN' : 'en-US', {
-                year: 'numeric', month: 'long', day: 'numeric', weekday: 'short'
-            });
-            html += '<div class="pd-date-divider"><span>' + dateStr + '</span></div>';
+        if (!currentGroup || currentGroup.date !== paper.date) {
+            currentGroup = { date: paper.date, papers: [] };
+            dateGroups.push(currentGroup);
         }
+        currentGroup.papers.push(paper);
+    });
+
+    let html = '';
+    dateGroups.forEach(function (group, gi) {
+        var dateObj = new Date(group.date);
+        var dateStr = dateObj.toLocaleDateString(currentLang === 'zh' ? 'zh-CN' : 'en-US', {
+            year: 'numeric', month: 'long', day: 'numeric', weekday: 'short'
+        });
+        var isToday = group.date === today;
+        var collapsed = !isToday && gi > 0;
+
+        html += '<div class="pd-date-group' + (collapsed ? ' collapsed' : '') + '">';
+        html += '<div class="pd-date-divider" onclick="toggleDateGroup(this)">';
+        html += '<span>' + dateStr + ' (' + group.papers.length + ')</span>';
+        html += '<span class="pd-collapse-icon">' + (collapsed ? '+' : '\u2212') + '</span>';
+        html += '</div>';
+        html += '<div class="pd-date-papers"' + (collapsed ? ' style="display:none"' : '') + '>';
+
+        group.papers.forEach(function (paper) {
         const isBookmarked = bookmarks.includes(paper.id);
         html += '<article class="pd-card">';
         html += '<div class="pd-card-header">';
@@ -285,6 +303,9 @@ function renderPdTo(suffix) {
         }
         html += '</div></div>';
         html += '</article>';
+        });
+
+        html += '</div></div>'; // close pd-date-papers and pd-date-group
     });
 
     // Load more button
@@ -293,6 +314,21 @@ function renderPdTo(suffix) {
     }
 
     list.innerHTML = html;
+}
+
+function toggleDateGroup(el) {
+    var group = el.closest('.pd-date-group');
+    var papers = group.querySelector('.pd-date-papers');
+    var icon = group.querySelector('.pd-collapse-icon');
+    if (group.classList.contains('collapsed')) {
+        group.classList.remove('collapsed');
+        papers.style.display = '';
+        icon.textContent = '\u2212';
+    } else {
+        group.classList.add('collapsed');
+        papers.style.display = 'none';
+        icon.textContent = '+';
+    }
 }
 
 function pdLoadMore(suffix) {
