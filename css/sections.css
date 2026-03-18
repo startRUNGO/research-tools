@@ -1,3 +1,45 @@
+/* LaTeX Templates */
+.latex-templates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.latex-tpl-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: box-shadow 0.2s;
+}
+.latex-tpl-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.latex-tpl-card h4 {
+    margin: 0 0 0.3rem;
+    font-size: 0.95rem;
+    color: var(--text-heading);
+}
+.latex-tpl-card p {
+    margin: 0 0 0.8rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+.latex-tpl-btn {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    background: #667eea;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.82rem;
+    transition: background 0.2s;
+}
+.latex-tpl-btn:hover {
+    background: #5a6fd6;
+}
+
 /* Model Gallery */
 .model-gallery {
     display: grid;

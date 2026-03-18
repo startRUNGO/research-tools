@@ -55,6 +55,8 @@ const translations = {
         'latex.tip.sum': '求和:',
         'latex.tip.int': '积分:',
         'latex.tip.matrix': '矩阵:',
+        'latex.templates.heading': '顶刊 LaTeX 模板',
+        'latex.templates.download': '下载',
         // SVG
         'svg.heading': 'SVG 图片编辑器',
         'svg.toolbar': '工具栏',
@@ -599,6 +601,7 @@ const translations = {
         'latex.tips.heading': 'Common LaTeX Commands Reference',
         'latex.tip.frac': 'Fraction:', 'latex.tip.sup': 'Super/Subscript:', 'latex.tip.greek': 'Greek Letters:',
         'latex.tip.sum': 'Summation:', 'latex.tip.int': 'Integral:', 'latex.tip.matrix': 'Matrix:',
+        'latex.templates.heading': 'Journal LaTeX Templates', 'latex.templates.download': 'Download',
         'svg.heading': 'SVG Image Editor', 'svg.toolbar': 'Toolbar',
         'svg.btn.rect': 'Rectangle', 'svg.btn.circle': 'Circle', 'svg.btn.line': 'Line', 'svg.btn.text': 'Text', 'svg.btn.arrow': 'Arrow',
         'svg.label.fill': 'Fill Color:', 'svg.label.stroke': 'Stroke Color:', 'svg.label.strokewidth': 'Stroke Width:',
