@@ -1,15 +1,34 @@
-/* Responsive Design */
+/* ==================== Responsive Design ==================== */
+
+/* ---- Tablet & Mobile (<=768px) ---- */
 @media (max-width: 768px) {
-    .tool-container,
-    .tool-container-three,
-    .svg-editor-container {
-        grid-template-columns: 1fr;
+    /* Header */
+    header {
+        padding: 1.2rem 0;
+    }
+    header h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+    }
+    .subtitle {
+        font-size: 0.85rem;
+    }
+    .header-flex {
+        gap: 0.8rem;
+    }
+    .lang-toggle {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.8rem;
+    }
+    #darkModeToggle {
+        padding: 0.35rem 0.5rem;
+        font-size: 1rem;
     }
 
+    /* Hamburger menu */
     .hamburger {
         display: block;
     }
-
     .main-nav ul {
         display: none;
         flex-direction: column;
@@ -17,69 +36,381 @@
         background: var(--nav-bg);
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
     .main-nav ul.menu-open {
         display: flex;
     }
-
     .nav-link {
         text-align: center;
         padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
     }
 
-    .nav-dropdown-menu {
-        position: static;
+    /* Mobile dropdown: static, not absolute */
+    .nav-dropdown-menu,
+    .main-nav .nav-dropdown-menu {
+        position: static !important;
         box-shadow: none;
         border-radius: 0;
         background: rgba(102, 126, 234, 0.04);
+        min-width: auto;
     }
-
     .nav-dropdown-menu .nav-link {
         padding: 0.6rem 2rem;
         font-size: 0.85rem;
     }
 
-    header h1 {
-        font-size: 2rem;
+    /* Main content */
+    main {
+        padding: 1rem 12px;
+    }
+    .container {
+        padding: 0 12px;
     }
 
+    /* Section headings */
+    .section h2 {
+        font-size: 1.4rem;
+    }
+    .section-desc {
+        font-size: 0.9rem;
+    }
+
+    /* Paper Digest */
+    .pd-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+    }
+    .pd-filters {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    .pd-filters select,
+    .pd-filters input {
+        width: 100%;
+        min-width: auto;
+        font-size: 0.9rem;
+    }
+    .pd-stats {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    .pd-card {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .pd-title {
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+    .pd-card-header {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+    .pd-card-meta {
+        flex-wrap: wrap;
+    }
+    .pd-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+    .pd-links {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+    .pd-abstract {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.6rem;
+    }
+    .pd-highlights li {
+        font-size: 0.85rem;
+    }
+    .pd-comment {
+        padding: 0.5rem 0.6rem;
+    }
+    .pd-comment p,
+    .pd-comment h4 {
+        font-size: 0.82rem;
+    }
+    .pd-share-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        border-radius: 16px 16px 0 0;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        z-index: 1000;
+    }
+    .pd-share-menu a,
+    .pd-share-menu button {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    /* Tool grids */
+    .tool-container,
+    .tool-container-three,
+    .svg-editor-container {
+        grid-template-columns: 1fr;
+    }
     .model-gallery {
         grid-template-columns: 1fr;
     }
-
     .model-diagram {
         width: 100%;
         height: auto;
     }
-
     .tool-cards {
         grid-template-columns: 1fr;
     }
-
     .prompt-cards {
         grid-template-columns: 1fr;
     }
-
     .text-tools-container {
         grid-template-columns: 1fr;
     }
-
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-}
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 10px;
+    /* SVG editor */
+    .svg-canvas-wrap {
+        min-height: 250px;
+    }
+    .svg-toolbar {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+    .svg-toolbar button {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
     }
 
+    /* LaTeX */
+    .latex-tips {
+        font-size: 0.85rem;
+    }
+
+    /* Flowchart gallery */
+    .fc-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Onboarding */
+    .onboarding-card {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    .onboarding-card h3 {
+        font-size: 1.2rem;
+    }
+    .onboarding-card li {
+        font-size: 0.85rem;
+    }
+
+    /* Back to top */
+    #backToTop {
+        bottom: 1.2rem;
+        right: 1.2rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    /* Pomodoro */
+    .pomo-time {
+        font-size: 3rem;
+    }
+    .pomo-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Data viz */
+    .chart-container {
+        height: 250px;
+    }
+
+    /* References */
+    .ref-results {
+        font-size: 0.85rem;
+    }
+
+    /* AI tools grid */
+    .ai-tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Resource links */
     .resource-links {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Small phones (<=480px) ---- */
+@media (max-width: 480px) {
+    header {
+        padding: 0.8rem 0;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    .subtitle {
+        font-size: 0.75rem;
+    }
+    .header-flex {
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 0.8rem 8px;
+    }
+    .container {
+        padding: 0 8px;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    .pd-card {
+        padding: 0.8rem;
+    }
+    .pd-title {
+        font-size: 0.95rem;
+    }
+    .pd-journal, .pd-field {
+        font-size: 0.7rem;
+    }
+    .pd-authors {
+        font-size: 0.78rem;
+    }
+    .pd-tag {
+        font-size: 0.72rem;
+        padding: 0.15rem 0.4rem;
+    }
+
+    .nav-link {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+    .nav-dropdown-menu .nav-link {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.82rem;
     }
 
     .tips-grid {
         grid-template-columns: 1fr;
+    }
+
+    .pomo-time {
+        font-size: 2.5rem;
+    }
+    .pomo-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .onboarding-card {
+        padding: 1.2rem;
+    }
+    .onboarding-card h3 {
+        font-size: 1.1rem;
+    }
+    .onboarding-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ---- Touch optimization ---- */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pd-bookmark {
+        min-width: 40px;
+        min-height: 40px;
+        font-size: 1.3rem;
+    }
+    .pd-btn-sm {
+        min-height: 36px;
+        padding: 0.35rem 0.8rem;
+    }
+    .pd-links a {
+        min-height: 36px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.3rem 0.6rem;
+    }
+    .pd-share-btn {
+        min-width: 40px;
+        min-height: 40px;
+    }
+    .pd-tag {
+        min-height: 30px;
+        display: inline-flex;
+        align-items: center;
+    }
+    button, select, input {
+        min-height: 40px;
+    }
+
+    /* Disable hover effects on touch devices */
+    .nav-dropdown:hover > .nav-dropdown-menu {
+        display: none;
+    }
+    .nav-dropdown.open > .nav-dropdown-menu {
+        display: flex;
+    }
+    .main-nav .nav-dropdown:hover > .nav-dropdown-menu {
+        display: none;
+    }
+    .main-nav .nav-dropdown.open > .nav-dropdown-menu {
+        display: flex;
+    }
+}
+
+/* ---- Landscape phone ---- */
+@media (max-height: 500px) and (orientation: landscape) {
+    header {
+        padding: 0.5rem 0;
+    }
+    header h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .subtitle {
+        display: none;
+    }
+    .main-nav {
+        position: static;
+    }
+}
+
+/* ---- Print ---- */
+@media print {
+    header, .main-nav, footer, #backToTop, .pd-toolbar, .hamburger, .onboarding-overlay, #onboarding {
+        display: none !important;
+    }
+    main {
+        padding: 0;
+    }
+    .pd-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+        margin-bottom: 1rem;
     }
 }
