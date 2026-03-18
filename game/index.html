@@ -19,12 +19,46 @@
             <div class="start-fields">
                 <input type="text" id="playerName" placeholder="你的名字" maxlength="10">
                 <select id="playerField">
-                    <option value="CS">计算机科学 💻</option>
-                    <option value="EE">电子工程 ⚡</option>
-                    <option value="AI">人工智能 🤖</option>
-                    <option value="Energy">新能源 🔋</option>
-                    <option value="Bio">生物医学 🧬</option>
-                    <option value="Math">数学 📐</option>
+                    <optgroup label="🖥️ 信息科学">
+                        <option value="CS">计算机科学 💻</option>
+                        <option value="AI">人工智能 🤖</option>
+                        <option value="EE">电子工程 ⚡</option>
+                        <option value="Cyber">网络安全 🔒</option>
+                    </optgroup>
+                    <optgroup label="🔧 工学">
+                        <option value="Civil">土木工程 🏗️</option>
+                        <option value="Mech">机械工程 ⚙️</option>
+                        <option value="Energy">新能源 🔋</option>
+                        <option value="Material">材料科学 🧪</option>
+                    </optgroup>
+                    <optgroup label="🧬 生化环材">
+                        <option value="Bio">生物医学 🧬</option>
+                        <option value="Chem">化学 ⚗️</option>
+                        <option value="Env">环境科学 🌿</option>
+                    </optgroup>
+                    <optgroup label="📐 理学">
+                        <option value="Math">数学 📐</option>
+                        <option value="Physics">物理学 ⚛️</option>
+                    </optgroup>
+                    <optgroup label="🌾 农学">
+                        <option value="Agri">农学 🌾</option>
+                        <option value="Food">食品科学 🍎</option>
+                    </optgroup>
+                    <optgroup label="💊 医学">
+                        <option value="Med">临床医学 🏥</option>
+                        <option value="Pharm">药学 💊</option>
+                    </optgroup>
+                    <optgroup label="📚 人文社科">
+                        <option value="Econ">经济学 📊</option>
+                        <option value="Law">法学 ⚖️</option>
+                        <option value="Edu">教育学 📖</option>
+                        <option value="Psych">心理学 🧠</option>
+                    </optgroup>
+                    <optgroup label="🎨 艺术">
+                        <option value="Art">艺术设计 🎨</option>
+                        <option value="Music">音乐 🎵</option>
+                        <option value="Film">影视传媒 🎬</option>
+                    </optgroup>
                 </select>
             </div>
             <button class="btn-primary" onclick="startGame()">开始人生旅程</button>

@@ -24,7 +24,27 @@ var MENTOR_TYPES={
 };
 
 var STAGES=['大一新生','大二','大三','大四','研一','研二','研三/博一','博二','博三','博四','博士后','讲师','副教授','教授','杰出学者'];
-var FIELD_NAMES={CS:'计算机',EE:'电子工程',AI:'人工智能',Energy:'新能源',Bio:'生物医学',Math:'数学'};
+var FIELD_NAMES={
+    CS:'计算机',AI:'人工智能',EE:'电子工程',Cyber:'网络安全',
+    Civil:'土木工程',Mech:'机械工程',Energy:'新能源',Material:'材料科学',
+    Bio:'生物医学',Chem:'化学',Env:'环境科学',
+    Math:'数学',Physics:'物理学',
+    Agri:'农学',Food:'食品科学',
+    Med:'临床医学',Pharm:'药学',
+    Econ:'经济学',Law:'法学',Edu:'教育学',Psych:'心理学',
+    Art:'艺术设计',Music:'音乐',Film:'影视传媒'
+};
+// Field categories for shared events
+var FIELD_CAT={
+    CS:'信息',AI:'信息',EE:'信息',Cyber:'信息',
+    Civil:'工学',Mech:'工学',Energy:'工学',Material:'工学',
+    Bio:'生化',Chem:'生化',Env:'生化',
+    Math:'理学',Physics:'理学',
+    Agri:'农学',Food:'农学',
+    Med:'医学',Pharm:'医学',
+    Econ:'人文',Law:'人文',Edu:'人文',Psych:'人文',
+    Art:'艺术',Music:'艺术',Film:'艺术'
+};
 
 // Audio context for sound effects
 var audioCtx;
@@ -490,45 +510,121 @@ function getEvents(){
             ]});
     }
 
-    // ===== 专业专属事件 (1) =====
-    if(G.field==='AI'&&s>=2&&chance(25)){
-        pool.push({emoji:'🤖',title:'AI热潮',desc:pick([
-            'ChatGPT横空出世，整个AI圈都炸了。你的研究方向突然变成了热门！',
-            '大模型时代来了，你之前的传统方法论文突然没人看了...',
-            '老板让你也搞大模型，可是GPU不够啊...',
-            'AI生成的论文质量越来越高，你感到了一丝危机...'
-        ]),choices:[
+    // ===== 专业专属事件 (1) - 每个学科独立支线 =====
+    var cat=FIELD_CAT[G.field];
+    if(s>=2&&chance(28)){
+        // --- 信息科学 ---
+        if(G.field==='CS')pool.push({emoji:'💻',title:'开源项目',desc:pick(['你写的一个工具库在GitHub上火了！','参加了Google Summer of Code','操作系统课的大作业写了个mini OS']),choices:[
+            {text:'全力维护开源项目',icon:'🌟',effect:'声望+15 人脉+12',fn:function(){mod({fame:15,social:12});addLog('开源项目1000+ star！','good');checkAch('opensource','开源贡献者','💻');}},
+            {text:'写进简历就行',icon:'📋',effect:'声望+5',fn:function(){mod({fame:5});addLog('简历又多了一项','');}}
+        ]});
+        if(G.field==='AI')pool.push({emoji:'🤖',title:'AI热潮',desc:pick(['ChatGPT横空出世，整个AI圈都炸了！','大模型时代来了，你之前的方法突然没人看了...','老板让你也搞大模型，可是GPU不够啊...','AI生成论文越来越强，你感到了危机...']),choices:[
             {text:'拥抱变化，转向大模型',icon:'🔥',effect:'智力+12 声望+10',fn:function(){mod({intel:12,fame:10});addLog('成功转型LLM方向','good');}},
             {text:'坚守自己的方向',icon:'🧱',effect:'智力+8',fn:function(){mod({intel:8});addLog('热潮会过去，基础研究永远有价值','');}}
         ]});
-    }
-    if(G.field==='Bio'&&s>=4&&chance(20)){
-        pool.push({emoji:'🧬',title:'实验室事故',desc:pick(['培养了三个月的细胞被污染了...','PCR实验第15次失败','实验小鼠逃跑了3只','冰箱断电，样本全废了']),
-            choices:[
-                {text:'从头再来',icon:'💪',effect:'精力-15 压力+10 智力+5',fn:function(){mod({energy:-15,stress:10,intel:5});addLog('生物实验就是这样...重来吧','');}},
-                {text:'先大哭一场',icon:'😭',effect:'压力-10 幸福-5',fn:function(){mod({stress:-10,happy:-5});addLog('哭完继续做实验','');}}
-            ]});
-    }
-    if(G.field==='EE'&&s>=4&&chance(20)){
-        pool.push({emoji:'⚡',title:'硬件调试',desc:pick(['焊了一周的板子烧了...','示波器显示的波形跟仿真完全不一样','芯片缺货，项目停滞','FPGA编译一次要3小时']),
-            choices:[
-                {text:'换个方案试试',icon:'🔧',effect:'智力+8 精力-10',fn:function(){mod({intel:8,energy:-10});addLog('工程师的日常：换方案','');}},
-                {text:'转软件方向算了',icon:'💻',effect:'智力+5',fn:function(){mod({intel:5,stress:-5});addLog('硬件太难了，写代码舒服多了','');}}
-            ]});
-    }
-    if(G.field==='Energy'&&s>=4&&chance(20)){
-        pool.push({emoji:'🔋',title:'能源政策变了',desc:pick(['国家发布新能源补贴政策，你的研究方向正好踩中风口！','碳中和目标推动，虚拟电厂成了热门方向','储能技术突破的新闻上了热搜，导师让你跟进']),
-            choices:[
-                {text:'紧跟政策热点',icon:'📈',effect:'声望+12 基金+10万',fn:function(){mod({fame:12});G.funding+=10;addLog('踩中政策风口！','good');}},
-                {text:'专注基础研究',icon:'🔬',effect:'智力+10',fn:function(){mod({intel:10});addLog('基础研究才是根本','');}}
-            ]});
-    }
-    if(G.field==='Math'&&s>=4&&chance(20)){
-        pool.push({emoji:'📐',title:'证明卡住了',desc:'你已经在一个定理的证明上卡了两个月了...\n草稿纸用了几百页，但关键一步总是过不去。',
-            choices:[
-                {text:'换个思路',icon:'💡',effect:'智力+12',fn:function(){mod({intel:12});if(chance(30)){addLog('灵光一闪，证明完成了！','good');playSound('great');showFloat('📐 证明完成！','great');G.papers++;}else{addLog('新思路也卡住了...','');}}},
-                {text:'找同行讨论',icon:'🤝',effect:'人脉+8 智力+5',fn:function(){mod({social:8,intel:5});addLog('讨论后有了新思路','good');}}
-            ]});
+        if(G.field==='EE')pool.push({emoji:'⚡',title:'硬件噩梦',desc:pick(['焊了一周的板子烧了...','示波器波形跟仿真完全不一样','芯片缺货项目停滞','FPGA编译一次要3小时']),choices:[
+            {text:'换个方案试试',icon:'🔧',effect:'智力+8 精力-10',fn:function(){mod({intel:8,energy:-10});addLog('工程师日常：换方案','');}},
+            {text:'转软件方向算了',icon:'💻',effect:'智力+5 压力-5',fn:function(){mod({intel:5,stress:-5});addLog('硬件太难了，写代码吧','');}}
+        ]});
+        if(G.field==='Cyber')pool.push({emoji:'🔒',title:'网安事件',desc:pick(['发现了一个知名软件的0day漏洞！','CTF比赛打到全国前10','学校网站被攻击，你帮忙做了应急响应','某大厂的安全团队来招实习生']),choices:[
+            {text:'提交漏洞/深入研究',icon:'🛡️',effect:'声望+15 智力+10',fn:function(){mod({fame:15,intel:10});addLog('在安全圈获得了名气','good');checkAch('hacker','白帽黑客','🔒');}},
+            {text:'低调处理',icon:'🤫',effect:'智力+5',fn:function(){mod({intel:5});addLog('默默记录下来作为研究素材','');}}
+        ]});
+
+        // --- 工学 ---
+        if(G.field==='Civil')pool.push({emoji:'🏗️',title:'工地实习',desc:pick(['导师要求你去工地实习三个月...烈日下搬砖的日子','混凝土配比实验做了30组','结构力学考试差点挂科','看到新闻说土木就业越来越难...']),choices:[
+            {text:'坚持！土木人不怕苦',icon:'💪',effect:'精力-10 人脉+10 智力+5',fn:function(){mod({energy:-10,social:10,intel:5});addLog('工地实习让你更务实了','good');}},
+            {text:'考虑转行/跨考',icon:'🔄',effect:'压力+10 智力+8',fn:function(){mod({stress:10,intel:8});addLog('开始思考是否要转行...','');}},
+            {text:'往BIM/智能建造方向转',icon:'💻',effect:'智力+12 声望+5',fn:function(){mod({intel:12,fame:5});addLog('数字化转型是土木的未来','good');}}
+        ]});
+        if(G.field==='Mech')pool.push({emoji:'⚙️',title:'机械制图/加工',desc:pick(['三维建模做了一个月，渲染图很漂亮','数控加工的零件精度差了0.01mm','机器人大赛备赛中，天天泡在车间','有限元仿真跑了一周还没收敛']),choices:[
+            {text:'精益求精',icon:'🔧',effect:'智力+10 精力-10',fn:function(){mod({intel:10,energy:-10});addLog('机械精度就是生命','good');}},
+            {text:'差不多就行了',icon:'😅',effect:'幸福+5',fn:function(){mod({happy:5});addLog('公差范围内就行吧...','');}}
+        ]});
+        if(G.field==='Material')pool.push({emoji:'🧪',title:'材料表征',desc:pick(['XRD谱图解析不出来...','TEM排队排了两个月','合成的新材料性能不达标','隔壁课题组的材料性能碾压你的']),choices:[
+            {text:'优化工艺参数，再试100次',icon:'🔬',effect:'智力+12 精力-15',fn:function(){mod({intel:12,energy:-15});if(chance(40)){G.papers++;addLog('终于合成出了理想材料！','good');playSound('good');}else{addLog('还在摸索中...','');}}},
+            {text:'换一种材料体系',icon:'🔄',effect:'智力+5 压力-5',fn:function(){mod({intel:5,stress:-5});addLog('换个体系重新开始','');}}
+        ]});
+        if(G.field==='Energy')pool.push({emoji:'🔋',title:'能源政策风口',desc:pick(['国家发布新能源补贴政策，方向踩中风口！','碳中和推动虚拟电厂成热门','储能技术突破上了热搜']),choices:[
+            {text:'紧跟政策热点',icon:'📈',effect:'声望+12 基金+10万',fn:function(){mod({fame:12});G.funding+=10;addLog('踩中政策风口！','good');}},
+            {text:'专注基础研究',icon:'🔬',effect:'智力+10',fn:function(){mod({intel:10});addLog('基础研究才是根本','');}}
+        ]});
+
+        // --- 生化环材 ---
+        if(G.field==='Bio')pool.push({emoji:'🧬',title:'生物实验室日常',desc:pick(['培养三个月的细胞被污染了...','PCR实验第15次失败','实验小鼠逃跑了3只','冰箱断电样本全废了','Western Blot跑出了鬼条带']),choices:[
+            {text:'从头再来',icon:'💪',effect:'精力-15 压力+10 智力+5',fn:function(){mod({energy:-15,stress:10,intel:5});addLog('生物实验就是这样...重来吧','');}},
+            {text:'先大哭一场再说',icon:'😭',effect:'压力-10 幸福-5',fn:function(){mod({stress:-10,happy:-5});addLog('哭完继续做实验','');}}
+        ]});
+        if(G.field==='Chem')pool.push({emoji:'⚗️',title:'化学实验室',desc:pick(['合成反应炸了！幸好穿了防护服','产率只有2%，导师让你提到20%','有机合成味道太大，回宿舍被室友嫌弃','在通风橱前站了8小时']),choices:[
+            {text:'调整条件，继续合成',icon:'🧪',effect:'智力+10 精力-12',fn:function(){mod({intel:10,energy:-12});addLog('化学就是不断尝试的过程','');}},
+            {text:'改用计算化学模拟',icon:'💻',effect:'智力+8 精力+5',fn:function(){mod({intel:8,energy:5});addLog('用DFT算一算再做实验','good');}}
+        ]});
+        if(G.field==='Env')pool.push({emoji:'🌿',title:'环境调研',desc:pick(['去某工厂采样，味道令人窒息...','水样分析数据异常，怀疑仪器出了问题','环保政策更新，研究方向需要调整','写环评报告写到天亮']),choices:[
+            {text:'实地调研，拿到一手数据',icon:'🏭',effect:'智力+10 精力-10',fn:function(){mod({intel:10,energy:-10});addLog('拿到了宝贵的实地数据','good');}},
+            {text:'用遥感数据代替',icon:'🛰️',effect:'智力+8',fn:function(){mod({intel:8});addLog('遥感+大数据是环境研究新趋势','');}}
+        ]});
+
+        // --- 理学 ---
+        if(G.field==='Math')pool.push({emoji:'📐',title:'证明卡住了',desc:'一个定理的证明卡了两个月...\n草稿纸用了几百页，关键一步总是过不去。',choices:[
+            {text:'换个思路',icon:'💡',effect:'智力+12',fn:function(){mod({intel:12});if(chance(30)){G.papers++;addLog('灵光一闪，证明完成了！','good');playSound('great');showFloat('📐 证明完成！','great');}else{addLog('新思路也卡住了...','');}}},
+            {text:'找同行讨论',icon:'🤝',effect:'人脉+8 智力+5',fn:function(){mod({social:8,intel:5});addLog('讨论后有了新思路','good');}}
+        ]});
+        if(G.field==='Physics')pool.push({emoji:'⚛️',title:'物理实验/理论',desc:pick(['粒子对撞实验数据处理量惊人','量子计算的理论推导让你头秃','实验室的激光对准花了三天','凝聚态实验在2K低温下操作']),choices:[
+            {text:'沉浸在物理的美中',icon:'✨',effect:'智力+15 幸福+5',fn:function(){mod({intel:15,happy:5});addLog('物理学的优雅让你着迷','good');}},
+            {text:'想转去做计算物理',icon:'💻',effect:'智力+8 人脉+5',fn:function(){mod({intel:8,social:5});addLog('计算物理是新趋势','');}}
+        ]});
+
+        // --- 农学 ---
+        if(G.field==='Agri')pool.push({emoji:'🌾',title:'田间实验',desc:pick(['水稻种了三个月，台风来了全倒了...','田间采样要在烈日下站一整天','转基因作物实验进展顺利','害虫防治的新方法效果显著']),choices:[
+            {text:'重新播种，不怕从头来',icon:'🌱',effect:'精力-12 智力+8',fn:function(){mod({energy:-12,intel:8});addLog('农学人最不怕的就是重来','good');checkAch('farmer','田间科学家','🌾');}},
+            {text:'改用温室/实验室模拟',icon:'🏠',effect:'智力+10',fn:function(){mod({intel:10});addLog('设施农业也是方向','');}}
+        ]});
+        if(G.field==='Food')pool.push({emoji:'🍎',title:'食品研发',desc:pick(['新配方的口感测试，要吃100份样品...','食品安全检测指标全部达标！','开发的新产品在展会上获好评','微生物发酵实验又失败了']),choices:[
+            {text:'继续优化配方',icon:'👨‍🍳',effect:'智力+10 幸福+5',fn:function(){mod({intel:10,happy:5});addLog('美食+科学的完美结合','good');}},
+            {text:'申请食品专利',icon:'📋',effect:'专利+1 声望+5',fn:function(){G.patents++;mod({fame:5});addLog('拿到食品专利！','good');}}
+        ]});
+
+        // --- 医学 ---
+        if(G.field==='Med')pool.push({emoji:'🏥',title:'临床+科研',desc:pick(['白天值班晚上做科研，每天只睡4小时','临床病例启发了一个新研究方向','SCI论文和住院医规培同时进行','手术观摩学到了很多但没时间写论文']),choices:[
+            {text:'临床科研两手抓',icon:'💪',effect:'智力+12 精力-18 压力+12',fn:function(){mod({intel:12,energy:-18,stress:12});addLog('医学生的日常：永远在忙','');checkAch('doctor','医学战士','🏥');}},
+            {text:'先把临床做好',icon:'🩺',effect:'人脉+10 幸福+5',fn:function(){mod({social:10,happy:5});addLog('患者的感谢让你觉得一切值得','good');}}
+        ]});
+        if(G.field==='Pharm')pool.push({emoji:'💊',title:'药物研发',desc:pick(['新药候选分子活性很好！','动物实验结果不理想，回到起点','药企合作机会来了','药物合成路线需要重新设计']),choices:[
+            {text:'推进临床前研究',icon:'🔬',effect:'智力+12 声望+8',fn:function(){mod({intel:12,fame:8});if(chance(25)){G.patents++;addLog('新药专利申请成功！','good');playSound('great');checkAch('pharma','新药发现者','💊');}else{addLog('研究在推进中','');}}},
+            {text:'和药企合作开发',icon:'🏭',effect:'基金+15万 人脉+10',fn:function(){G.funding+=15;mod({social:10});addLog('产学研合作启动','good');}}
+        ]});
+
+        // --- 人文社科 ---
+        if(G.field==='Econ')pool.push({emoji:'📊',title:'经济学研究',desc:pick(['计量模型跑了一周，结果不显著...','找到了一个绝佳的自然实验场景','审稿人说你的因果识别有问题','央行政策变了，论文要重写']),choices:[
+            {text:'换模型/换数据重做',icon:'📈',effect:'智力+10 压力+8',fn:function(){mod({intel:10,stress:8});addLog('经济学就是跟数据死磕','');}},
+            {text:'加入政策研究团队',icon:'🏛️',effect:'人脉+12 声望+8',fn:function(){mod({social:12,fame:8});addLog('政策咨询项目提升了影响力','good');}}
+        ]});
+        if(G.field==='Law')pool.push({emoji:'⚖️',title:'法学研究',desc:pick(['新的司法解释出来了，论文观点要修改','模拟法庭比赛获奖','去法院实习体验了真实案件','法条背了一万条，脑子快炸了']),choices:[
+            {text:'深耕某个法律分支',icon:'📚',effect:'智力+12 声望+8',fn:function(){mod({intel:12,fame:8});addLog('成为了某领域的法律专家','good');}},
+            {text:'跨学科：法律+科技',icon:'💻',effect:'智力+10 人脉+8',fn:function(){mod({intel:10,social:8});addLog('科技法/AI伦理是新蓝海','good');}}
+        ]});
+        if(G.field==='Edu')pool.push({emoji:'📖',title:'教育研究',desc:pick(['课堂观察记录做了一学期','问卷调查回收率只有15%...','教育政策改革为研究提供了新课题','去偏远学校支教一个月']),choices:[
+            {text:'扎根一线做田野研究',icon:'🏫',effect:'智力+10 幸福+10',fn:function(){mod({intel:10,happy:10});addLog('教育研究需要脚踏实地','good');checkAch('educator','教育情怀','📖');}},
+            {text:'用大数据分析教育问题',icon:'📊',effect:'智力+12 声望+5',fn:function(){mod({intel:12,fame:5});addLog('教育+AI是未来方向','good');}}
+        ]});
+        if(G.field==='Psych')pool.push({emoji:'🧠',title:'心理学实验',desc:pick(['EEG实验被试迟到了，一下午白等','问卷数据统计发现了有趣的相关性','认知实验的范式设计获得导师表扬','被试量不够，在校园里到处拉人']),choices:[
+            {text:'严格设计实验，追求可重复性',icon:'🔬',effect:'智力+12 声望+8',fn:function(){mod({intel:12,fame:8});addLog('严谨的实验设计是心理学的生命','good');}},
+            {text:'用计算建模替代部分实验',icon:'💻',effect:'智力+10',fn:function(){mod({intel:10});addLog('计算心理学越来越火','');}}
+        ]});
+
+        // --- 艺术 ---
+        if(G.field==='Art')pool.push({emoji:'🎨',title:'艺术创作与学术',desc:pick(['毕业设计作品在展览上获了奖','导师说你的设计缺乏理论深度','作品被某品牌看中想要合作','写学术论文对艺术生来说太痛苦了...']),choices:[
+            {text:'用作品说话',icon:'🖌️',effect:'声望+15 幸福+10',fn:function(){mod({fame:15,happy:10});addLog('好的设计自己会说话','good');checkAch('artist','艺术家','🎨');}},
+            {text:'恶补学术写作',icon:'📝',effect:'智力+10 压力+8',fn:function(){mod({intel:10,stress:8});addLog('论文写作是艺术生的噩梦...','');}}
+        ]});
+        if(G.field==='Music')pool.push({emoji:'🎵',title:'音乐学术',desc:pick(['作曲的新作品获得教授好评','音乐分析论文写了三个月','去音乐厅听了一场改变人生的演出','练琴练到手指起泡']),choices:[
+            {text:'创作+学术双轨发展',icon:'🎹',effect:'智力+10 幸福+12',fn:function(){mod({intel:10,happy:12});addLog('音乐让灵魂自由','good');checkAch('musician','音乐人','🎵');}},
+            {text:'专注音乐技术研究',icon:'🔬',effect:'智力+12 声望+5',fn:function(){mod({intel:12,fame:5});addLog('音频AI/计算音乐学是跨学科方向','');}}
+        ]});
+        if(G.field==='Film')pool.push({emoji:'🎬',title:'影视创作',desc:pick(['短片获得了校园电影节最佳导演','拍摄经费不够，自掏腰包补上','在某平台发布的视频意外走红了','论文被要求分析100部电影...']),choices:[
+            {text:'用影像记录世界',icon:'📹',effect:'声望+12 人脉+10 幸福+8',fn:function(){mod({fame:12,social:10,happy:8});addLog('好的影像作品有改变世界的力量','good');checkAch('filmmaker','影像创作者','🎬');}},
+            {text:'深入影视理论研究',icon:'📚',effect:'智力+12',fn:function(){mod({intel:12});addLog('理论是创作的根基','');}}
+        ]});
     }
 
     // ===== 决策因果链 (2) =====
