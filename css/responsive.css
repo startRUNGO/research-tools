@@ -91,6 +91,20 @@
         min-width: auto;
         font-size: 0.9rem;
     }
+    .pd-analytics {
+        padding: 1rem;
+    }
+    .pd-analytics-tabs {
+        overflow-x: auto;
+    }
+    .pd-author-name {
+        width: 90px;
+        font-size: 0.78rem;
+    }
+    .pd-ranking-info a,
+    .pd-ranking-info span {
+        font-size: 0.82rem;
+    }
     .pd-stats {
         display: flex;
         align-items: center;

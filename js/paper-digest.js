@@ -419,4 +419,143 @@ document.addEventListener('DOMContentLoaded', function () {
             if (shareMenu) { shareMenu.remove(); return; }
         }
     });
+
+    // Render analytics after papers load
+    loadPaperDigest(function () { renderPdAnalytics(); });
 });
+
+// ==================== Analytics ====================
+
+function showPdPanel(name, btn) {
+    document.querySelectorAll('.pd-panel').forEach(function (p) { p.classList.remove('active'); });
+    document.querySelectorAll('.pd-tab').forEach(function (t) { t.classList.remove('active'); });
+    var panel = document.getElementById('pdPanel' + name.charAt(0).toUpperCase() + name.slice(1));
+    if (panel) panel.classList.add('active');
+    if (btn) btn.classList.add('active');
+    if (name === 'trend') renderTrendChart();
+    if (name === 'ranking') renderRankingList();
+    if (name === 'authors') renderAuthorsList();
+}
+
+var pdTrendChartInstance = null;
+
+function renderTrendChart() {
+    var canvas = document.getElementById('pdTrendChart');
+    if (!canvas || typeof Chart === 'undefined') return;
+
+    // Group papers by date and field
+    var dateMap = {};
+    var fields = new Set();
+    paperDigestData.forEach(function (p) {
+        if (!dateMap[p.date]) dateMap[p.date] = {};
+        if (!dateMap[p.date][p.field]) dateMap[p.date][p.field] = 0;
+        dateMap[p.date][p.field]++;
+        fields.add(p.field);
+    });
+
+    var dates = Object.keys(dateMap).sort();
+    var fieldArr = Array.from(fields);
+    var colors = ['#667eea', '#f39c12', '#e74c3c', '#2ecc71', '#9b59b6', '#1abc9c', '#e67e22', '#3498db'];
+
+    var datasets = fieldArr.map(function (f, i) {
+        return {
+            label: f,
+            data: dates.map(function (d) { return dateMap[d][f] || 0; }),
+            backgroundColor: colors[i % colors.length] + '33',
+            borderColor: colors[i % colors.length],
+            borderWidth: 2,
+            fill: true,
+            tension: 0.3
+        };
+    });
+
+    if (pdTrendChartInstance) pdTrendChartInstance.destroy();
+    pdTrendChartInstance = new Chart(canvas, {
+        type: 'line',
+        data: { labels: dates, datasets: datasets },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom', labels: { boxWidth: 12, padding: 15 } }
+            },
+            scales: {
+                y: { beginAtZero: true, ticks: { stepSize: 1 } }
+            }
+        }
+    });
+}
+
+function renderRankingList() {
+    var el = document.getElementById('pdRankingList');
+    if (!el) return;
+
+    var bookmarks = getPdBookmarks();
+    // Count bookmarks per paper
+    var ranked = paperDigestData.filter(function (p) {
+        return bookmarks.includes(p.id);
+    });
+
+    if (ranked.length === 0) {
+        el.innerHTML = '<p class="pd-analytics-empty">' + t('pd.ranking.empty') + '</p>';
+        return;
+    }
+
+    var html = '<ol class="pd-ranking">';
+    ranked.forEach(function (p, i) {
+        var link = p.url || (p.arxiv ? 'https://arxiv.org/abs/' + p.arxiv : '');
+        html += '<li class="pd-ranking-item">';
+        html += '<span class="pd-ranking-num">' + (i + 1) + '</span>';
+        html += '<div class="pd-ranking-info">';
+        if (link) {
+            html += '<a href="' + link + '" target="_blank" rel="noopener">' + p.title + '</a>';
+        } else {
+            html += '<span>' + p.title + '</span>';
+        }
+        html += '<span class="pd-ranking-meta">' + p.journal + ' · ' + p.field + ' · ' + p.date + '</span>';
+        html += '</div></li>';
+    });
+    html += '</ol>';
+    el.innerHTML = html;
+}
+
+function renderAuthorsList() {
+    var el = document.getElementById('pdAuthorsList');
+    if (!el) return;
+
+    // Parse and count authors/institutions
+    var authorCount = {};
+    paperDigestData.forEach(function (p) {
+        if (!p.authors) return;
+        var names = p.authors.split(',').map(function (a) { return a.trim(); });
+        names.forEach(function (name) {
+            if (!name || name === 'et al.' || name === '详见原文') return;
+            authorCount[name] = (authorCount[name] || 0) + 1;
+        });
+    });
+
+    var sorted = Object.entries(authorCount).sort(function (a, b) { return b[1] - a[1]; }).slice(0, 20);
+
+    if (sorted.length === 0) {
+        el.innerHTML = '<p class="pd-analytics-empty">' + t('pd.authors.empty') + '</p>';
+        return;
+    }
+
+    var maxCount = sorted[0][1];
+    var html = '<div class="pd-authors-chart">';
+    sorted.forEach(function (entry) {
+        var name = entry[0], count = entry[1];
+        var width = Math.max(10, Math.round(count / maxCount * 100));
+        html += '<div class="pd-author-row">';
+        html += '<span class="pd-author-name">' + name + '</span>';
+        html += '<div class="pd-author-bar-wrap"><div class="pd-author-bar" style="width:' + width + '%"></div></div>';
+        html += '<span class="pd-author-count">' + count + '</span>';
+        html += '</div>';
+    });
+    html += '</div>';
+    el.innerHTML = html;
+}
+
+function renderPdAnalytics() {
+    renderTrendChart();
+}

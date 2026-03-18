@@ -175,6 +175,25 @@
             </div>
 
             <div id="pdListHome" class="pd-list"></div>
+
+            <!-- Analytics panels -->
+            <div class="pd-analytics">
+                <h3 data-i18n="pd.analytics.title">Paper Analytics</h3>
+                <div class="pd-analytics-tabs">
+                    <button class="pd-tab active" onclick="showPdPanel('trend',this)" data-i18n="pd.analytics.trend">Trend</button>
+                    <button class="pd-tab" onclick="showPdPanel('ranking',this)" data-i18n="pd.analytics.ranking">Ranking</button>
+                    <button class="pd-tab" onclick="showPdPanel('authors',this)" data-i18n="pd.analytics.authors">Authors</button>
+                </div>
+                <div id="pdPanelTrend" class="pd-panel active">
+                    <canvas id="pdTrendChart" height="260"></canvas>
+                </div>
+                <div id="pdPanelRanking" class="pd-panel">
+                    <div id="pdRankingList"></div>
+                </div>
+                <div id="pdPanelAuthors" class="pd-panel">
+                    <div id="pdAuthorsList"></div>
+                </div>
+            </div>
         </section>
 
         <!-- LaTeX工具 -->
