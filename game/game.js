@@ -159,11 +159,13 @@ function showYearSummary(){
 
 // ==================== Meme Quotes ====================
 var MEMES={
-    rejectPaper:['Reviewer 2: "This paper lacks novelty." 你：???','审稿人："建议大修"——其实就是让你重写','拒稿信比情书来得还频繁...'],
-    gradLife:['科研就是：白天做实验，晚上改论文，梦里跑代码','导师说"再改改"的意思是"推倒重来"','读博就是一个人的夜路，偶尔有论文作伴'],
-    work:['DDL是第一生产力','改论文改到怀疑人生，发出去又觉得还行','写代码一时爽，debug火葬场'],
-    success:['今天的我，配得上所有的好运！','知道这一刻为什么值得吗？因为之前的每一天都没白费','从投稿到接收，中间隔了一个太平洋的焦虑'],
-    life:['食堂的麻辣烫，是科研人最后的倔强','实验室的灯永远比宿舍先亮','和猫比，导师催得更紧']
+    rejectPaper:['Reviewer 2: "This paper lacks novelty." 你：???','审稿人："建议大修"——其实就是让你重写','拒稿信比情书来得还频繁...','Major revision其实就是"我不想直接拒你"','审稿人：建议作者去读一下我的论文（就是想让你引用）','投稿像丢漂流瓶，回复像开盲盒'],
+    gradLife:['科研就是：白天做实验，晚上改论文，梦里跑代码','导师说"再改改"的意思是"推倒重来"','读博就是一个人的夜路，偶尔有论文作伴','每个研究生的手机里都有一个"退学文件夹"','师兄说的"很快就能毕业"跟产品经理说的"这个需求很简单"一样不可信','答辩前一天才发现参考文献格式全错了'],
+    work:['DDL是第一生产力','改论文改到怀疑人生，发出去又觉得还行','写代码一时爽，debug火葬场','Paper写完了！等等，让我再读一遍...又要改了','周末？科研人没有周末','组会就是公开处刑现场'],
+    success:['今天的我，配得上所有的好运！','知道这一刻为什么值得吗？因为之前的每一天都没白费','从投稿到接收，中间隔了一个太平洋的焦虑','论文Accept的那封邮件，值得裱起来','人生的高光时刻：Accept邮件到达的那一秒'],
+    life:['食堂的麻辣烫，是科研人最后的倔强','实验室的灯永远比宿舍先亮','和猫比，导师催得更紧','图书馆的固定座位就是我的第二个家','深夜的实验室有一种独特的浪漫','今天的我，比昨天多认识了一个bug'],
+    dorm:['室友打呼噜的分贝，比实验室的设备还大','大学宿舍四人间：一个学霸、一个社牛、一个游戏王、一个...你','凌晨三点宿舍楼道最适合背单词'],
+    mentor:['你和导师之间隔着一个银河系的认知差距','导师永远觉得你能做得更好——这算鼓励吗？','导师的微笑有时候比拒稿信更可怕']
 };
 
 // ==================== EVENTS ====================
@@ -681,6 +683,159 @@ function getEvents(){
             ]
         });
     }
+
+    // ===== 生活大事件 =====
+    if(!G.partner&&s>=4&&s<=10&&chance(15)){
+        pool.push({emoji:'💕',title:'有人介绍对象',desc:'朋友说："我有个'+pick(['师妹','师弟','同事','朋友'])+'挺适合你的，要不见一面？"',
+            choices:[
+                {text:'见见呗',icon:'☕',effect:'幸福±? 人脉+5',fn:function(){if(chance(50)){G.partner=true;mod({happy:20,social:5});addLog('相亲成功！有对象了','good');playSound('good');checkAch('love','恋爱中','❤️');}else{mod({social:5});addLog('聊了一下午，感觉不太合适','');}}},
+                {text:'算了，单身挺好的',icon:'✋',effect:'精力+5',fn:function(){mod({energy:5});addLog('"我和论文谈恋爱"','');}}
+            ]
+        });
+    }
+    if(G.partner&&s>=8&&chance(20)){
+        pool.push({emoji:'💍',title:'人生大事',desc:'你们在一起很久了。另一半暗示想稳定下来...',
+            choices:[
+                {text:'求婚/结婚！',icon:'💒',effect:'幸福+25 人脉+10 积蓄-10万',fn:function(){mod({happy:25,social:10});G.money-=10;addLog('结婚了！人生新阶段','good');playSound('great');showFloat('💒 结婚了！','great');checkAch('married','步入婚姻','💒');}},
+                {text:'再等等，事业为重',icon:'📚',effect:'压力+5',fn:function(){mod({stress:5});if(chance(30)){G.partner=false;mod({happy:-20});addLog('等太久了...ta走了','bad');playSound('bad');}else{addLog('ta表示理解，愿意等','');}}}
+            ]
+        });
+    }
+    if(G.partner&&s>=10&&chance(15)){
+        pool.push({emoji:'👶',title:'新生命',desc:'你要当爸爸/妈妈了！这意味着更大的责任...但也是更大的幸福。',
+            choices:[
+                {text:'全心迎接新生命',icon:'🍼',effect:'幸福+30 精力-15 压力+10',fn:function(){mod({happy:30,energy:-15,stress:10});addLog('孩子出生了！世界上最美好的时刻','good');playSound('great');showFloat('👶 新生命！','great');checkAch('parent','为人父母','👶');}},
+                {text:'边带娃边搞科研',icon:'💪',effect:'幸福+20 精力-20 压力+15',fn:function(){mod({happy:20,energy:-20,stress:15});addLog('一手抱娃一手写论文...科研人的极限挑战','');}}
+            ]
+        });
+    }
+
+    // ===== 更多校园随机事件 =====
+    if(s<=3&&chance(25)){
+        var campusEvents=[
+            {emoji:'🏃',title:'运动会',desc:'学院运动会要求每人至少报一个项目...',choices:[
+                {text:'报了3000米长跑',icon:'🏃',effect:'精力+10 幸福+8',fn:function(){mod({energy:10,happy:8});if(chance(30)){G.awards++;addLog('运动会拿了名次！','good');}else{addLog('跑了个参与奖，但很开心','');}}},
+                {text:'当志愿者发水',icon:'🤝',effect:'人脉+8',fn:function(){mod({social:8});addLog('做志愿者也是一种参与','');}}
+            ]},
+            {emoji:'🎤',title:'期末考试周',desc:'图书馆座位被抢光了，考试周的焦虑弥漫整个校园。\n'+pick(MEMES.dorm),choices:[
+                {text:'提前一个月就开始复习',icon:'📚',effect:'智力+10 压力+5',fn:function(){mod({intel:10,stress:5});G.gpa=Math.min(4.0,G.gpa+0.2);addLog('考试全部90+','good');}},
+                {text:'考前三天速成',icon:'⚡',effect:'智力+3 压力+10',fn:function(){mod({intel:3,stress:10});addLog('差点挂科...下次不敢了','');}},
+                {text:'佛系考试，及格万岁',icon:'🙏',effect:'幸福+5 压力-5',fn:function(){mod({happy:5,stress:-5});addLog('60分飘过，多一分浪费','');}}
+            ]},
+            {emoji:'🎪',title:'校园文化节',desc:'学校办了一场大型文化节，有演出、美食、游园会...',choices:[
+                {text:'逛吃逛吃一整天',icon:'🍔',effect:'幸福+12 人脉+5',fn:function(){mod({happy:12,social:5});addLog('快乐的一天！','good');}},
+                {text:'在实验室/图书馆照常学习',icon:'📖',effect:'智力+5',fn:function(){mod({intel:5});addLog('全校狂欢的时候你在看论文...','');}}
+            ]},
+            {emoji:'🏠',title:'假期选择',desc:'寒/暑假到了，你打算怎么过？',choices:[
+                {text:'回家陪爸妈',icon:'🏡',effect:'幸福+15 精力+15 压力-10',fn:function(){mod({happy:15,energy:15,stress:-10});addLog('回家吃到了妈妈做的饭，幸福','good');}},
+                {text:'留校做项目/实习',icon:'💼',effect:'智力+8 积蓄+2万',fn:function(){mod({intel:8});G.money+=2;addLog('假期也没闲着','');}},
+                {text:'来一场旅行',icon:'✈️',effect:'幸福+12 精力+10 积蓄-1万',fn:function(){mod({happy:12,energy:10});G.money-=1;addLog('旅行让你充满了新的灵感','good');}}
+            ]}
+        ];
+        pool.push(pick(campusEvents));
+    }
+
+    // ===== 更多研究生随机事件 =====
+    if(s>=4&&s<=9&&chance(22)){
+        var gradEvents=[
+            {emoji:'🍕',title:'组会时间',desc:pick(MEMES.mentor)+'\n\n今天轮到你做组会汇报了...',choices:[
+                {text:'准备了50页PPT',icon:'📊',effect:'声望+8 智力+5',fn:function(){mod({fame:8,intel:5});addLog('组会汇报获得好评','good');}},
+                {text:'随便做了几页混过去',icon:'😅',effect:'压力-3',fn:function(){mod({stress:-3});addLog('低空飞过...导师似乎不太满意','');}},
+                {text:'请假说身体不舒服',icon:'🤒',effect:'压力-8 声望-3',fn:function(){mod({stress:-8,fame:-3});addLog('逃过了一次组会','');}}
+            ]},
+            {emoji:'🏢',title:'学术会议',desc:'有一个'+FIELD_NAMES[G.field]+'领域的学术会议在'+pick(['北京','上海','深圳','杭州','成都','武汉','新加坡','东京','伦敦'])+'举办。',choices:[
+                {text:'投稿+参会',icon:'📄',effect:'声望+12 人脉+10 积蓄-0.5万',fn:function(){mod({fame:12,social:10});G.money-=0.5;if(chance(40)){G.papers++;addLog('会议论文被接收！','good');playSound('good');}else{addLog('被拒了...但认识了很多同行','');}}},
+                {text:'只去听报告',icon:'👂',effect:'智力+8 人脉+5',fn:function(){mod({intel:8,social:5});addLog('几个报告让你很有启发','good');}},
+                {text:'太忙了不去了',icon:'📚',effect:'智力+3',fn:function(){mod({intel:3});addLog('留在实验室继续做实验','');}}
+            ]},
+            {emoji:'☕',title:'深夜实验室',desc:'凌晨1点，整栋楼只有你实验室还亮着灯。\n'+pick(MEMES.life),choices:[
+                {text:'泡杯咖啡继续干',icon:'☕',effect:'智力+5 精力-8',fn:function(){mod({intel:5,energy:-8});addLog('又是一个科研之夜','');}},
+                {text:'收拾东西回去睡',icon:'🌙',effect:'精力+10 幸福+3',fn:function(){mod({energy:10,happy:3});addLog('今天到此为止，明天继续','');}}
+            ]},
+            {emoji:'🤝',title:'同行交流',desc:'在'+pick(['学术论坛','微信群','Twitter/X','知乎'])+'上，有人对你的研究方向表示很感兴趣，想要合作。',choices:[
+                {text:'聊聊看',icon:'💬',effect:'人脉+12 智力+5',fn:function(){mod({social:12,intel:5});if(chance(35)){addLog('聊出了一个很好的合作idea！','good');G.papers++;}else{addLog('聊了很久但最后不了了之','');}}},
+                {text:'不太信任网上的人',icon:'🤔',effect:'智力+2',fn:function(){mod({intel:2});addLog('保持警惕也是对的','');}}
+            ]},
+            {emoji:'💸',title:'奖学金评选',desc:'学院开始评选'+pick(['国家奖学金(2万)','学业奖学金(1万)','企业奖学金(0.5万)'])+'，你的条件'+((G.papers>=2&&G.intel>=60)?'很有竞争力':'有点悬')+'。',choices:[
+                {text:'认真准备材料',icon:'📋',effect:'压力+5',fn:function(){mod({stress:5});if(G.papers>=2&&G.intel>=60&&chance(60)){G.money+=2;mod({fame:5,happy:10});addLog('拿到奖学金了！','good');playSound('good');checkAch('scholarship','奖学金得主','💸');}else{addLog('差一点没拿到...','bad');}}},
+                {text:'让给更需要的同学',icon:'🤝',effect:'人脉+8 幸福+5',fn:function(){mod({social:8,happy:5});addLog('大家对你的大度很佩服','good');}}
+            ]}
+        ];
+        pool.push(pick(gradEvents));
+    }
+
+    // ===== 更多职场事件 =====
+    if(s>=11&&chance(25)){
+        var careerEvents=[
+            {emoji:'📰',title:'媒体采访',desc:'因为你的研究，'+pick(['央视','人民日报','学校公众号','行业媒体'])+'想采访你。',choices:[
+                {text:'接受采访',icon:'🎤',effect:'声望+15 人脉+8',fn:function(){mod({fame:15,social:8});addLog('媒体报道让你的研究受到关注','good');checkAch('media','媒体之星','📰');}},
+                {text:'低调拒绝',icon:'🤫',effect:'声望+3',fn:function(){mod({fame:3});addLog('还是安心做研究吧','');}}
+            ]},
+            {emoji:'🎓',title:'学生的好消息',desc:'你带的一个研究生'+pick(['拿到了顶刊Accept','获得了国奖','保送到更好的学校读博','拿到了大厂offer'])+'。',choices:[
+                {text:'太骄傲了！请学生吃饭庆祝',icon:'🥳',effect:'幸福+15 声望+8',fn:function(){mod({happy:15,fame:8});addLog('桃李芬芳，当老师最开心的时刻','good');}},
+                {text:'勉励ta继续努力',icon:'👍',effect:'声望+5',fn:function(){mod({fame:5});addLog('又培养了一个优秀的学生','good');}}
+            ]},
+            {emoji:'✈️',title:'海外邀请',desc:pick(['MIT','Stanford','Cambridge','ETH Zurich','清华','北大'])+'的教授邀请你去做学术报告。',choices:[
+                {text:'精心准备，去做报告',icon:'🌍',effect:'声望+18 人脉+15 积蓄-1万',fn:function(){mod({fame:18,social:15});G.money-=1;addLog('在顶级学府做了报告！','good');playSound('good');}},
+                {text:'太忙了，线上做吧',icon:'💻',effect:'声望+8 人脉+5',fn:function(){mod({fame:8,social:5});addLog('线上报告也不错','');}}
+            ]},
+            {emoji:'🏆',title:'评奖机会',desc:'你有资格申报'+pick(['"优秀青年教师"','"省科技进步奖"','"教学名师"','"科研新星"'])+'了。',choices:[
+                {text:'认真准备申报材料',icon:'📋',effect:'声望+12 压力+8',fn:function(){mod({fame:12,stress:8});if(chance(40+G.fame/5)){G.awards++;addLog('获奖了！又一个荣誉','good');playSound('great');showFloat('🏆 获奖！','great');checkAch('award','荣誉等身','🏆');}else{addLog('评选落选了...','bad');}}},
+                {text:'不图虚名，做好手头的事',icon:'💪',effect:'智力+5 幸福+5',fn:function(){mod({intel:5,happy:5});addLog('奖项不重要，做出好研究才重要','');}}
+            ]},
+            {emoji:'🔄',title:'跳槽机会',desc:pick(['另一所大学开出了更好的条件','某企业研究院年薪翻3倍','有人邀请你去当院长/系主任'])+'。\n你心动了吗？',choices:[
+                {text:'跳！',icon:'🚀',effect:'积蓄+20万 声望+10 压力+10',fn:function(){G.money+=20;mod({fame:10,stress:10});addLog('跳到了新平台','good');}},
+                {text:'留下来，这里有感情了',icon:'🏠',effect:'幸福+10 人脉+5',fn:function(){mod({happy:10,social:5});addLog('选择留下，继续深耕','');}}
+            ]}
+        ];
+        pool.push(pick(careerEvents));
+    }
+
+    // ===== 更多随机生活事件 =====
+    if(chance(18)){
+        var lifeEvents=[
+            {emoji:'📱',title:'朋友圈刷屏',desc:'刷朋友圈发现：'+pick(['高中同学买了第二套房','前同事创业成功了','隔壁实验室的师兄去了大厂年薪百万','本科室友在抖音上成了网红'])+'。\n你酸了吗？',choices:[
+                {text:'人各有志，做好自己',icon:'💪',effect:'幸福+5 智力+3',fn:function(){mod({happy:5,intel:3});addLog('不比较，不焦虑','good');}},
+                {text:'有点emo...连刷了一小时',icon:'😔',effect:'幸福-8 压力+5',fn:function(){mod({happy:-8,stress:5});addLog('内耗了...','bad');}}
+            ]},
+            {emoji:'🏃',title:'健身觉醒',desc:'体检报告显示你'+pick(['BMI偏高','颈椎有问题','久坐导致腰间盘突出','严重缺乏运动'])+'...',choices:[
+                {text:'办了健身卡开始锻炼',icon:'💪',effect:'精力+15 幸福+8',fn:function(){mod({energy:15,happy:8});addLog('坚持锻炼，身体好了很多','good');checkAch('fitness','健康生活','🏃');}},
+                {text:'知道了（继续坐着）',icon:'🪑',effect:'幸福+2',fn:function(){mod({happy:2});addLog('"明天一定去运动"——第N+1次说','');}}
+            ]},
+            {emoji:'📚',title:'灵感突现',desc:'洗澡/走路/做梦的时候，突然想到了一个绝妙的idea！\n赶紧记下来...',choices:[
+                {text:'立刻去验证！',icon:'💡',effect:'智力+12 精力-8',fn:function(){mod({intel:12,energy:-8});if(chance(45)){addLog('idea成立！新的研究方向诞生','good');showFloat('💡 灵感！','good');playSound('good');}else{addLog('验证后发现不太行...但还是有收获','');}}},
+                {text:'记在本子上以后再说',icon:'📝',effect:'智力+3',fn:function(){mod({intel:3});addLog('记在了灵感本上...然后再也没翻过','');}}
+            ]},
+            {emoji:'🌧️',title:'心情低落期',desc:'最近什么都提不起劲...论文不想写，实验不想做，连饭都不想吃。\n这种状态已经持续一周了。',choices:[
+                {text:'找朋友聊聊',icon:'👥',effect:'幸福+12 压力-10 人脉+5',fn:function(){mod({happy:12,stress:-10,social:5});addLog('朋友的倾听和理解帮了大忙','good');}},
+                {text:'去户外走走',icon:'🌳',effect:'精力+10 幸福+8 压力-8',fn:function(){mod({energy:10,happy:8,stress:-8});addLog('大自然的力量让你重新振作','good');}},
+                {text:'硬扛过去',icon:'🫠',effect:'压力+5',fn:function(){mod({stress:5});addLog('又是emo的一周...','');}}
+            ]},
+            {emoji:'🎰',title:'意外收入/支出',desc:pick(['支付宝年度账单吓了你一跳','老家的房子涨了不少','股票基金又跌了','中了一个小奖']),choices:[
+                {text:'认真理财',icon:'📊',effect:'积蓄+3万',fn:function(){G.money+=3;addLog('开始学习理财','good');}},
+                {text:'及时行乐',icon:'🛍️',effect:'幸福+10 积蓄-2万',fn:function(){mod({happy:10});G.money-=2;addLog('买了一直想要的东西','');}}
+            ]}
+        ];
+        pool.push(pick(lifeEvents));
+    }
+
+    // ===== 更多成就检查 =====
+    if(G.papers>=20)checkAch('paper20','论文等身','📚');
+    if(G.papers>=50)checkAch('paper50','发论文机器','🖨️');
+    if(G.topPapers>=5)checkAch('top5','顶刊高手','🌟');
+    if(G.funding>=100)checkAch('fund100','百万经费','💰');
+    if(G.funding>=500)checkAch('fund500','科研富翁','💎');
+    if(G.students>=20)checkAch('stu20','桃李芬芳','🌸');
+    if(G.students>=50)checkAch('stu50','一代宗师','🏛️');
+    if(G.happy>=95)checkAch('bliss','极乐净土','😇');
+    if(G.stress>=95)checkAch('burnout','燃尽','🔥');
+    if(G.money>=100)checkAch('rich','财富自由','💵');
+    if(G.intel>=95)checkAch('genius','天才','🧠');
+    if(G.social>=90)checkAch('social_king','社交之王','👑');
+    if(G.age>=60&&G.stage>=13)checkAch('legacy','学术传承','🏆');
+    if(G.awards>=5)checkAch('trophy_hunter','奖项收割机','🏅');
+    if(G.patents>=3)checkAch('inventor','发明达人','💡');
+    if(G.turnCount>=30)checkAch('long_run','漫长人生','⏳');
 
     // 随机好事
     if(chance(20)&&s>=3){
