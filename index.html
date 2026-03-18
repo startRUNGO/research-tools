@@ -59,6 +59,7 @@
         ]
     }
     </script>
+    <link rel="alternate" type="application/rss+xml" title="Paper Digest RSS" href="feed.xml">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#667eea" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
@@ -168,6 +169,8 @@
                 </div>
                 <div class="pd-stats">
                     <span id="pdCountHome"></span>
+                    <button class="pd-btn-sm" onclick="exportPdBibtex()" title="Export bookmarked papers as BibTeX">BibTeX</button>
+                    <a class="pd-btn-sm" href="feed.xml" target="_blank" title="RSS Feed">RSS</a>
                 </div>
             </div>
 
@@ -2013,6 +2016,45 @@ Main changes we made:
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('./sw.js').catch(() => {});
+        });
+    }
+    </script>
+
+    <!-- Back to top button -->
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&uarr;</button>
+
+    <!-- First visit onboarding -->
+    <div id="onboarding" style="display:none">
+        <div class="onboarding-overlay" onclick="dismissOnboarding()"></div>
+        <div class="onboarding-card">
+            <h3 data-i18n="onboard.title">Welcome to Research Tools Hub!</h3>
+            <p data-i18n="onboard.desc">Free online tools for academic researchers. Browse daily paper digests, format LaTeX, edit SVG graphics, and more.</p>
+            <ul>
+                <li data-i18n="onboard.tip1">Use the top navigation to switch between tools</li>
+                <li data-i18n="onboard.tip2">Bookmark papers with the star icon</li>
+                <li data-i18n="onboard.tip3">Export bookmarks as BibTeX for your references</li>
+                <li data-i18n="onboard.tip4">Toggle language with the EN/中文 button</li>
+            </ul>
+            <button onclick="dismissOnboarding()" data-i18n="onboard.btn">Get Started</button>
+        </div>
+    </div>
+    <script>
+    // Back to top: show on scroll
+    window.addEventListener('scroll', function() {
+        var btn = document.getElementById('backToTop');
+        if (btn) btn.classList.toggle('visible', window.scrollY > 400);
+    });
+    // Onboarding: show once for first visitors
+    function dismissOnboarding() {
+        document.getElementById('onboarding').style.display = 'none';
+        localStorage.setItem('onboarded', '1');
+    }
+    if (!localStorage.getItem('onboarded')) {
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('onboarding').style.display = 'flex';
+                if (typeof setLanguage === 'function') setLanguage(currentLang);
+            }, 800);
         });
     }
     </script>

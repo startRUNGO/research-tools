@@ -1,7 +1,9 @@
-// ==================== Paper Digest / è®ºæéé ====================
+// ==================== Paper Digest ====================
 
 let paperDigestData = [];
 let pdLoaded = false;
+var PD_PAGE_SIZE = 10;
+var pdCurrentPage = { '': 1, 'Home': 1 };
 
 // Load papers from daily JSON files via papers-index.json
 function loadPaperDigest(callback) {
@@ -13,7 +15,6 @@ function loadPaperDigest(callback) {
             return r.json();
         })
         .then(function (dates) {
-            // Fetch all daily files in parallel
             var fetches = dates.map(function (d) {
                 return fetch('data/papers/' + d + '.json')
                     .then(function (r) {
@@ -32,7 +33,6 @@ function loadPaperDigest(callback) {
                 }
             });
             if (paperDigestData.length === 0) {
-                // Daily files all failed/empty, try legacy fallback
                 return fetch('data/papers.json')
                     .then(function (r) { return r.ok ? r.json() : []; })
                     .then(function (data) {
@@ -46,7 +46,6 @@ function loadPaperDigest(callback) {
             if (callback) callback();
         })
         .catch(function () {
-            // Fallback: try legacy single papers.json
             fetch('data/papers.json')
                 .then(function (r) { return r.ok ? r.json() : []; })
                 .then(function (data) {
@@ -83,6 +82,45 @@ function togglePdBookmark(id) {
     renderPdTo('Home');
 }
 
+// Highlight search keywords in text
+function highlightSearch(text, search) {
+    if (!search || !text) return text;
+    var escaped = search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return text.replace(new RegExp('(' + escaped + ')', 'gi'), '<mark>$1</mark>');
+}
+
+// Export bookmarked papers as BibTeX
+function exportPdBibtex() {
+    var bookmarks = getPdBookmarks();
+    if (bookmarks.length === 0) {
+        showToast(t('pd.export.empty') || 'No bookmarked papers to export');
+        return;
+    }
+    var bibtex = '';
+    paperDigestData.forEach(function (p) {
+        if (!bookmarks.includes(p.id)) return;
+        var key = p.id.replace(/[^a-zA-Z0-9]/g, '');
+        var type = p.arxiv ? 'article' : 'article';
+        bibtex += '@' + type + '{' + key + ',\n';
+        bibtex += '  title = {' + p.title + '},\n';
+        bibtex += '  author = {' + p.authors + '},\n';
+        bibtex += '  journal = {' + p.journal + '},\n';
+        bibtex += '  year = {' + (p.date || '').substring(0, 4) + '},\n';
+        if (p.doi) bibtex += '  doi = {' + p.doi + '},\n';
+        if (p.arxiv) bibtex += '  eprint = {' + p.arxiv + '},\n  archivePrefix = {arXiv},\n';
+        if (p.url) bibtex += '  url = {' + p.url + '},\n';
+        bibtex += '}\n\n';
+    });
+
+    var blob = new Blob([bibtex], { type: 'text/plain' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'papers-bookmarked.bib';
+    a.click();
+    URL.revokeObjectURL(a.href);
+    showToast(t('pd.export.success') || 'BibTeX exported (' + bookmarks.length + ' papers)');
+}
+
 // Render paper digest to a specific set of elements (suffix: '' or 'Home')
 function renderPdTo(suffix) {
     const list = document.getElementById('pdList' + suffix);
@@ -100,6 +138,7 @@ function renderPdTo(suffix) {
     const bookmarks = getPdBookmarks();
     const now = new Date();
 
+    // Reset page when filters change
     let items = paperDigestData.slice();
 
     if (field !== 'all') {
@@ -118,8 +157,9 @@ function renderPdTo(suffix) {
 
     items.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
 
+    var totalCount = items.length;
     if (countEl) {
-        countEl.textContent = t('pd.count').replace('{n}', items.length);
+        countEl.textContent = t('pd.count').replace('{n}', totalCount);
     }
 
     if (items.length === 0) {
@@ -127,9 +167,15 @@ function renderPdTo(suffix) {
         return;
     }
 
+    // Lazy load: show only first N pages
+    var page = pdCurrentPage[suffix] || 1;
+    var showCount = page * PD_PAGE_SIZE;
+    var hasMore = items.length > showCount;
+    var visibleItems = items.slice(0, showCount);
+
     let html = '';
     let lastDate = '';
-    items.forEach(function (paper) {
+    visibleItems.forEach(function (paper) {
         if (paper.date !== lastDate) {
             lastDate = paper.date;
             const dateObj = new Date(paper.date);
@@ -145,24 +191,29 @@ function renderPdTo(suffix) {
         html += '<span class="pd-journal">' + paper.journal + '</span>';
         html += '<span class="pd-field">' + paper.field + '</span>';
         html += '</div>';
-        html += '<button class="pd-bookmark' + (isBookmarked ? ' active' : '') + '" onclick="togglePdBookmark(\'' + paper.id + '\')" title="' + t('pd.bookmark') + '">' + (isBookmarked ? 'â' : 'â') + '</button>';
+        html += '<button class="pd-bookmark' + (isBookmarked ? ' active' : '') + '" onclick="togglePdBookmark(\'' + paper.id + '\')" title="' + t('pd.bookmark') + '">' + (isBookmarked ? '\u2605' : '\u2606') + '</button>';
         html += '</div>';
 
+        var titleText = search ? highlightSearch(paper.title, search) : paper.title;
         var titleLink = paper.url || (paper.arxiv ? 'https://arxiv.org/abs/' + paper.arxiv : '') || (paper.doi ? 'https://doi.org/' + paper.doi : '');
         if (titleLink) {
-            html += '<h3 class="pd-title"><a href="' + titleLink + '" target="_blank" rel="noopener">' + paper.title + '</a></h3>';
+            html += '<h3 class="pd-title"><a href="' + titleLink + '" target="_blank" rel="noopener">' + titleText + '</a></h3>';
         } else {
-            html += '<h3 class="pd-title">' + paper.title + '</h3>';
+            html += '<h3 class="pd-title">' + titleText + '</h3>';
         }
 
-        html += '<p class="pd-authors">' + paper.authors + '</p>';
+        var authorsText = search ? highlightSearch(paper.authors, search) : paper.authors;
+        html += '<p class="pd-authors">' + authorsText + '</p>';
 
         if (paper.abstract) {
-            html += '<div class="pd-abstract"><p>' + paper.abstract + '</p></div>';
+            var abstractText = search ? highlightSearch(paper.abstract, search) : paper.abstract;
+            html += '<div class="pd-abstract"><p>' + abstractText + '</p></div>';
         }
         if (paper.highlights && paper.highlights.length > 0) {
             html += '<div class="pd-highlights"><h4>' + t('pd.highlights') + '</h4><ul>';
-            paper.highlights.forEach(function (h) { html += '<li>' + h + '</li>'; });
+            paper.highlights.forEach(function (h) {
+                html += '<li>' + (search ? highlightSearch(h, search) : h) + '</li>';
+            });
             html += '</ul></div>';
         }
         if (paper.comment) {
@@ -171,7 +222,10 @@ function renderPdTo(suffix) {
 
         html += '<div class="pd-card-footer"><div class="pd-tags">';
         if (paper.tags) {
-            paper.tags.forEach(function (tag) { html += '<span class="pd-tag">' + tag + '</span>'; });
+            paper.tags.forEach(function (tag) {
+                var tagText = search ? highlightSearch(tag, search) : tag;
+                html += '<span class="pd-tag">' + tagText + '</span>';
+            });
         }
         html += '</div><div class="pd-links">';
         if (paper.url) {
@@ -186,19 +240,30 @@ function renderPdTo(suffix) {
         html += '</div></div>';
         html += '</article>';
     });
+
+    // Load more button
+    if (hasMore) {
+        html += '<div class="pd-load-more"><button onclick="pdLoadMore(\'' + suffix + '\')">' + t('pd.loadmore') + ' (' + showCount + '/' + totalCount + ')</button></div>';
+    }
+
     list.innerHTML = html;
 }
 
-// Wrapper functions for the two instances
-function renderPaperDigest() { renderPdTo(''); }
-function renderPaperDigestHome() { renderPdTo('Home'); }
+function pdLoadMore(suffix) {
+    pdCurrentPage[suffix] = (pdCurrentPage[suffix] || 1) + 1;
+    renderPdTo(suffix);
+}
+
+// Reset page on filter change
+function renderPaperDigest() { pdCurrentPage[''] = 1; renderPdTo(''); }
+function renderPaperDigestHome() { pdCurrentPage['Home'] = 1; renderPdTo('Home'); }
 
 // Load and render on page load
 document.addEventListener('DOMContentLoaded', function () {
     loadPaperDigest(function () { renderPdTo('Home'); });
-    const pdSection = document.getElementById('paper-digest');
+    var pdSection = document.getElementById('paper-digest');
     if (pdSection) {
-        const observer = new MutationObserver(function () {
+        var observer = new MutationObserver(function () {
             if (pdSection.classList.contains('active')) renderPdTo('');
         });
         observer.observe(pdSection, { attributes: true, attributeFilter: ['class'] });

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'research-tools-v1';
+const CACHE_NAME = 'research-tools-v3';
 const ASSETS = [
     './',
     './index.html',
@@ -24,8 +24,11 @@ const ASSETS = [
     './js/academic-cal.js',
     './js/formula-helper.js',
     './js/pomodoro.js',
+    './js/flowcharts.js',
+    './js/paper-digest.js',
     './js/ai-features.js',
-    './js/share.js'
+    './js/share.js',
+    './data/papers-index.json'
 ];
 
 // Install: cache all static assets
@@ -64,7 +67,21 @@ self.addEventListener('fetch', event => {
         return;
     }
 
-    // Cache-first for local assets
+    // Network-first for paper data (so daily updates show immediately)
+    if (url.pathname.includes('/data/')) {
+        event.respondWith(
+            fetch(event.request)
+                .then(response => {
+                    const clone = response.clone();
+                    caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+                    return response;
+                })
+                .catch(() => caches.match(event.request))
+        );
+        return;
+    }
+
+    // Cache-first for local assets (stale-while-revalidate)
     event.respondWith(
         caches.match(event.request).then(cached => {
             if (cached) {
