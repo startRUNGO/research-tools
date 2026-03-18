@@ -25,7 +25,7 @@ const { execSync } = require('child_process');
 // 配置
 // ============================================================
 const REQUIRED_FIELDS = ['id', 'date', 'title', 'authors', 'journal', 'field'];
-const VALID_FIELDS = ['AI/ML', 'CV', 'NLP', 'Medical', 'Robotics', 'Security', 'Other'];
+const VALID_FIELDS = ['AI/ML', 'CV', 'NLP', 'Medical', 'Robotics', 'Security', 'VPP', 'Energy', 'Other'];
 
 function getDataDir(args) {
     const idx = args.indexOf('--data-dir');
