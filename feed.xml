@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Mar 2026 06:34:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 03:34:27 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems</title>
+      <link>https://arxiv.org/abs/2603.15085v1</link>
+      <guid>pd-20260319-01</guid>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small
+
+• 研究Affordable Precision Agricultu...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Incremental Federated Learning for Intrusion Detection in IoT Networks under Evolving Threat Landscape</title>
       <link>https://arxiv.org/abs/2603.10776v2</link>
