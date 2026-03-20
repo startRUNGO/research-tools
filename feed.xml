@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Mar 2026 03:34:27 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 03:24:49 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems</title>
+      <link>https://arxiv.org/abs/2603.15085v1</link>
+      <guid>pd-20260320-01</guid>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small
+
+• 研究Affordable Precision Agricultu...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees</title>
+      <link>https://arxiv.org/abs/2603.19106v1</link>
+      <guid>pd-20260320-02</guid>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model
+
+• 研究Stochastic Virtual Power Plant...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems</title>
       <link>https://arxiv.org/abs/2603.15085v1</link>
