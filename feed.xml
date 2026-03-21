@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Mar 2026 03:24:49 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2026 03:12:57 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems</title>
+      <link>https://arxiv.org/abs/2603.15085v1</link>
+      <guid>pd-20260321-01</guid>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small
+
+• 研究Affordable Precision Agricultu...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees</title>
+      <link>https://arxiv.org/abs/2603.19106v1</link>
+      <guid>pd-20260321-02</guid>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model
+
+• 研究Stochastic Virtual Power Plant...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems</title>
       <link>https://arxiv.org/abs/2603.15085v1</link>
@@ -678,34 +706,6 @@ LSKD多层shortcut蒸馏思路可直接应用于LCSMC-Net的教师-学生训练<
 • 在Dirichlet分区的non-IID数据上优于FedSAM和其他变体
 
 开源代码可直接复用! SAM在MCU上额外开销可能过大，需评估轻量化SAM变体</description>
-    </item>
-    <item>
-      <title>FedSCAM: Scam-resistant SAM for Robust Federated Optimization in Heterogeneous Environments</title>
-      <link>https://arxiv.org/abs/2601.00853</link>
-      <guid>pd-20260313-11</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>根据客户端异质性评分动态调整SAM扰动半径和聚合权重。异质性高的客户端使用小扰动防止模型不稳定，CIFAR-10/Fashion-MNIST上优于FedSAM和FedLESAM。
-
-• 客户端自适应SAM：根据数据异质性自动调整扰动半径，无霃手动调参
-• 聚类聚合：异质性相近的客户端聚类后分别聚合，减少冲突梯度
-• non-IID鲁棒性强，适合不同车型CAN数据分布差异大的场景
-
-自适应SAM半径思路很适合车型异质性场景，但需适配到MCU可承受的计算预算</description>
-    </item>
-    <item>
-      <title>SHAP-KD-FL: A Novel Federated Learning Approach for IoT Botnet Intrusion Detection using SHAP-based Knowledge Distillation</title>
-      <link>https://link.springer.com/article/10.1007/s40747-025-02001-9</link>
-      <guid>pd-20260313-12</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>唯一同时结合FL+KD+可解释性的工作。各IoT客户端本地训练后计算SHAP值量化特征重要性，仅共享蒸馏后的特征知识而非原始模型参数，实现隐私保护的知识共享。
-
-• FL+KD+SHAP三合一：目前唯一同时涉及联邦学习和知识蒸馏的IDS论文
-• SHAP引导选择性蒸馏：只蒸馏重要特征的知识，通信量更小
-• 蒸馏式知识共享替代模型参数共享，从根本上降低隐私泄露风险
-
-FL+KD融合框架最可参考! 虽是IoT通用场景，但SHAP引导蒸馏思路可迁移到CAN IDS</description>
     </item>
   </channel>
 </rss>
