@@ -1,5 +1,45 @@
 [
   {
+    "id": "pd-20260322-01",
+    "date": "2026-03-22",
+    "title": "Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems",
+    "authors": "Riya Samanta, Bidyut Saha",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.15085v1",
+    "url": "https://arxiv.org/abs/2603.15085v1",
+    "abstract": "Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small",
+    "highlights": [
+      "研究Affordable Precision Agricultu...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260322-02",
+    "date": "2026-03-22",
+    "title": "Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees",
+    "authors": "Luca Santosuosso, Fei Teng, Sonja Wogrin",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2603.19106v1",
+    "url": "https://arxiv.org/abs/2603.19106v1",
+    "abstract": "This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model",
+    "highlights": [
+      "研究Stochastic Virtual Power Plant...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260321-01",
     "date": "2026-03-21",
     "title": "Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems",
