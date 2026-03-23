@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Mar 2026 03:33:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 03:37:46 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TinyML Enhances CubeSat Mission Capabilities</title>
+      <link>https://arxiv.org/abs/2603.20174v1</link>
+      <guid>pd-20260323-01</guid>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Earth observation (EO) missions traditionally rely on transmitting raw or minimally processed imagery from satellites to ground stations for computationally intensive analysis. This paradigm is infeasible for CubeSat systems due to stringent constraints on the onboard embedded processors, energy ava
+
+• 研究TinyML Enhances CubeSat Missio...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>LiteAtt: Secure and Seamless IoT Services Using TinyML-based Self-Attestation as a Primitive</title>
+      <link>https://arxiv.org/abs/2603.19727v1</link>
+      <guid>pd-20260323-02</guid>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>As the Internet of Things (IoT) becomes an integral part of critical infrastructure, smart cities, and consumer networks, there has been an increase in the number of software attacks on the microcontrollers (MCUs) that constitute such networks. Runtime firmware attestation, i.e., the verification of
+
+• 研究LiteAtt: Secure and Seamless I...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems</title>
+      <link>https://arxiv.org/abs/2603.15085v1</link>
+      <guid>pd-20260323-03</guid>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small
+
+• 研究Affordable Precision Agricultu...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees</title>
+      <link>https://arxiv.org/abs/2603.19106v1</link>
+      <guid>pd-20260323-04</guid>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model
+
+• 研究Stochastic Virtual Power Plant...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems</title>
       <link>https://arxiv.org/abs/2603.15085v1</link>
@@ -650,62 +706,6 @@ FPGA路线与MCU路线互补，BNN极致压缩思路可借鉴，但缺少FL和KD
 • &gt;99%检测精度下实现实时推理，面向真实嵌入式部署
 
 INFOCOM 2024 CCF-A顶会，二值化CNN+ECU部署是最直接竞品，但无FL无KD</description>
-    </item>
-    <item>
-      <title>CGTS: Graph Transformer-Based Anomaly Detection in Controller Area Networks</title>
-      <link>https://link.springer.com/article/10.1186/s42400-025-00365-6</link>
-      <guid>pd-20260313-05</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>将CAN报文建模为图结构，Graph Transformer提取复杂结构信息，SVDD单类分类实现无监督异常检测，无需攻击样本标注。
-
-• 图建模CAN ID关系：将CAN报文间的时序和功能关系建模为图，Graph Transformer提取结构特征
-• 无监督方法(SVDD)无需攻击样本标注，适合检测未知攻击类型
-• Graph Transformer对CAN拓扑结构的建模是新颖视角
-
-图建模CAN拓扑是创新思路，但Graph Transformer较重不适合MCU，无FL无KD</description>
-    </item>
-    <item>
-      <title>TFTKD: Lightweight Intrusion Detection Model Based on CNN and Knowledge Distillation</title>
-      <link>https://www.sciencedirect.com/science/article/abs/pii/S1568494624008925</link>
-      <guid>pd-20260313-06</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>2D傅里叶变换将流量数据从时域转频域解决稀疏问题，8层CNN教师+1层CNN学生，自适应温度知识蒸馏动态调整蒸馏强度。
-
-• 傅里叶变换域转换：将稀疏流量数据转到频域，增强像素相似性
-• 自适应温度KD：根据训练阶段动态调整软标签温度，比固定温度效果更好
-• 1层CNN学生模型极其轻量，发表在中科院2区Applied Soft Computing (IF≈8.7)
-
-自适应温度KD技术可直接迁移到LCSMC-Net蒸馏中，但非CAN专用，无FL无MCU</description>
-    </item>
-    <item>
-      <title>CP-LSKD: Knowledge Distillation-Based Lightweight Intrusion Detection for IoT</title>
-      <link>https://link.springer.com/article/10.1007/s10586-025-05597-2</link>
-      <guid>pd-20260313-07</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>对比PCA降维+倒残差网络+深度可分离卷积学生模型，梯子式KD(LSKD)在教师-学生间建立shortcut连接，从知识转移和标签两个维度联合优化蒸馏。
-
-• 梯子式KD (LSKD)：在教师-学生间多层建shortcut，比传统KD知识转移更充分
-• 倒残差+深度可分离卷积：与LCSMC-Net的SMC-Lite技术路线高度契合
-• 对比PCA(CPCA)降维：保留类间差异同时压缩特征维度
-
-LSKD多层shortcut蒸馏思路可直接应用于LCSMC-Net的教师-学生训练</description>
-    </item>
-    <item>
-      <title>LNet-SKD: A Lightweight Approach for Network Intrusion Detection based on Self-Knowledge Distillation</title>
-      <link>https://arxiv.org/pdf/2307.10191</link>
-      <guid>pd-20260313-08</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>DeepMax Block高效特征提取+批次自蒸馏(self-KD)无需教师模型。FLOPs降低63.1%(194.58K)，参数量减少62%，精度反而提升2.1%(NSL-KDD)/1.6%(CICIDS2017)。
-
-• 自蒸馏无需教师模型：用自身历史输出做soft targets，零额外参数开销
-• 194.58K FLOPs极低计算量，比LCSMC-Net的2.84M更低
-• 参数减少62%的同时精度反升，证明自蒸馏正则化效果
-
-自蒸馏方案在FL场景中特别有价值——无需传输教师模型，每个客户端独立自蒸馏</description>
     </item>
   </channel>
 </rss>

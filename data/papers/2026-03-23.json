@@ -1,0 +1,82 @@
+[
+  {
+    "id": "pd-20260323-01",
+    "date": "2026-03-23",
+    "title": "TinyML Enhances CubeSat Mission Capabilities",
+    "authors": "Luigi Capogrosso, Michele Magno",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.20174v1",
+    "url": "https://arxiv.org/abs/2603.20174v1",
+    "abstract": "Earth observation (EO) missions traditionally rely on transmitting raw or minimally processed imagery from satellites to ground stations for computationally intensive analysis. This paradigm is infeasible for CubeSat systems due to stringent constraints on the onboard embedded processors, energy ava",
+    "highlights": [
+      "研究TinyML Enhances CubeSat Missio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260323-02",
+    "date": "2026-03-23",
+    "title": "LiteAtt: Secure and Seamless IoT Services Using TinyML-based Self-Attestation as a Primitive",
+    "authors": "Varun Kohli, Biplab Sikdar",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.19727v1",
+    "url": "https://arxiv.org/abs/2603.19727v1",
+    "abstract": "As the Internet of Things (IoT) becomes an integral part of critical infrastructure, smart cities, and consumer networks, there has been an increase in the number of software attacks on the microcontrollers (MCUs) that constitute such networks. Runtime firmware attestation, i.e., the verification of",
+    "highlights": [
+      "研究LiteAtt: Secure and Seamless I...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260323-03",
+    "date": "2026-03-23",
+    "title": "Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems",
+    "authors": "Riya Samanta, Bidyut Saha",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.15085v1",
+    "url": "https://arxiv.org/abs/2603.15085v1",
+    "abstract": "Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small",
+    "highlights": [
+      "研究Affordable Precision Agricultu...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260323-04",
+    "date": "2026-03-23",
+    "title": "Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees",
+    "authors": "Luca Santosuosso, Fei Teng, Sonja Wogrin",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2603.19106v1",
+    "url": "https://arxiv.org/abs/2603.19106v1",
+    "abstract": "This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model",
+    "highlights": [
+      "研究Stochastic Virtual Power Plant...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  }
+]
