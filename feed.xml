@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Mar 2026 03:37:46 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 03:28:33 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TinyML Enhances CubeSat Mission Capabilities</title>
+      <link>https://arxiv.org/abs/2603.20174v1</link>
+      <guid>pd-20260324-01</guid>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Earth observation (EO) missions traditionally rely on transmitting raw or minimally processed imagery from satellites to ground stations for computationally intensive analysis. This paradigm is infeasible for CubeSat systems due to stringent constraints on the onboard embedded processors, energy ava
+
+• 研究TinyML Enhances CubeSat Missio...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>LiteAtt: Secure and Seamless IoT Services Using TinyML-based Self-Attestation as a Primitive</title>
+      <link>https://arxiv.org/abs/2603.19727v1</link>
+      <guid>pd-20260324-02</guid>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>As the Internet of Things (IoT) becomes an integral part of critical infrastructure, smart cities, and consumer networks, there has been an increase in the number of software attacks on the microcontrollers (MCUs) that constitute such networks. Runtime firmware attestation, i.e., the verification of
+
+• 研究LiteAtt: Secure and Seamless I...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees</title>
+      <link>https://arxiv.org/abs/2603.19106v1</link>
+      <guid>pd-20260324-03</guid>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model
+
+• 研究Stochastic Virtual Power Plant...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>TinyML Enhances CubeSat Mission Capabilities</title>
       <link>https://arxiv.org/abs/2603.20174v1</link>
@@ -664,48 +706,6 @@ RL自适应聚合可解决车载FL中ECU计算能力异构的掉队问题</descr
 • FAR仅0.016%，在non-IID数据场景下H-FL在24个场景中16个提升了F1
 
 H-FL架构思路可复用，但ANN+LSTM模型较重，无MCU部署验证，无KD压缩</description>
-    </item>
-    <item>
-      <title>PFMeta-IDS: Personalized Federated Meta-Learning Automotive Intrusion Detection System</title>
-      <link>https://www.preprints.org/manuscript/202502.0017/v1</link>
-      <guid>pd-20260313-02</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>个性化联邦元学习IDS，PFMetaSWR算法采用相似度加权聚合平衡个性化与泛化，FOMAML元学习实现few-shot快速适应新攻击场景，LDwCBN轻量网络确保计算效率。
-
-• PFMetaSWR根据制造商相似度加权聚合，不同车型获得差异化全局模型
-• FOMAML元学习：各制造商可用少量样本快速适应新攻击，无需全量重训
-• 正则化损失函数让本地模型部分学习全局元参数，平衡个性化和泛化
-
-元学习+FL是创新组合，但LDwCBN参数量较重，元学习额外开销在MCU上不可行</description>
-    </item>
-    <item>
-      <title>Ultra-Lightweight Pruned Binarised Neural Networks for Intrusion Detection in In-Vehicle Networks</title>
-      <link>https://www.mdpi.com/2079-9292/14/9/1710</link>
-      <guid>pd-20260313-03</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>二值化神经网络(BNN)结合网络剪枝，实现91.07%参数减少仅损0.1%精度。粗到细(C2F)两阶段过滤正常流量。FPGA部署比GPU快3.7x，能效7.4x。
-
-• BNN+剪枝91%参数减少仅损0.1%精度，C2F两阶段先过滤正常流量减少计算
-• FPGA实测：比GPU快3.7x/能效7.4x，比CPU快2.4x/能效3.8x
-• BNN方案中最快平均推理速度，比同类快3.3x-12x
-
-FPGA路线与MCU路线互补，BNN极致压缩思路可借鉴，但缺少FL和KD</description>
-    </item>
-    <item>
-      <title>BNN-IDS: Efficient and Effective In-Vehicle Intrusion Detection System using Binarized Convolutional Neural Network</title>
-      <link>https://www.researchgate.net/publication/383081912</link>
-      <guid>pd-20260313-04</guid>
-      <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>针对ECU内存约束和实时要求，设计二值化CNN实现高效车载IDS。在保持&gt;99%检测精度的同时，大幅降低内存占用，满足车载嵌入式实时性要求。
-
-• CCF-A类顶会论文(INFOCOM 2024)，学术影响力强
-• 二值化CNN针对ECU内存约束设计，模型极小
-• &gt;99%检测精度下实现实时推理，面向真实嵌入式部署
-
-INFOCOM 2024 CCF-A顶会，二值化CNN+ECU部署是最直接竞品，但无FL无KD</description>
     </item>
   </channel>
 </rss>
