@@ -1,0 +1,123 @@
+[
+  {
+    "id": "pd-20260326-01",
+    "date": "2026-03-26",
+    "title": "Energy Efficient Software Hardware CoDesign for Machine Learning: From TinyML to Large Language Models",
+    "authors": "Mohammad Saleh Vahdatpour, Yanqing Zhang",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.23668v1",
+    "url": "https://arxiv.org/abs/2603.23668v1",
+    "abstract": "The rapid deployment of machine learning across platforms from milliwatt-class TinyML devices to large language models has made energy efficiency a primary constraint for sustainable AI. Across these scales, performance and energy are increasingly limited by data movement and memory-system behavior ",
+    "highlights": [
+      "研究Energy Efficient Software Hard...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260326-02",
+    "date": "2026-03-26",
+    "title": "TinyML Enhances CubeSat Mission Capabilities",
+    "authors": "Luigi Capogrosso, Michele Magno",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.20174v1",
+    "url": "https://arxiv.org/abs/2603.20174v1",
+    "abstract": "Earth observation (EO) missions traditionally rely on transmitting raw or minimally processed imagery from satellites to ground stations for computationally intensive analysis. This paradigm is infeasible for CubeSat systems due to stringent constraints on the onboard embedded processors, energy ava",
+    "highlights": [
+      "研究TinyML Enhances CubeSat Missio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260326-03",
+    "date": "2026-03-26",
+    "title": "LiteAtt: Secure and Seamless IoT Services Using TinyML-based Self-Attestation as a Primitive",
+    "authors": "Varun Kohli, Biplab Sikdar",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.19727v1",
+    "url": "https://arxiv.org/abs/2603.19727v1",
+    "abstract": "As the Internet of Things (IoT) becomes an integral part of critical infrastructure, smart cities, and consumer networks, there has been an increase in the number of software attacks on the microcontrollers (MCUs) that constitute such networks. Runtime firmware attestation, i.e., the verification of",
+    "highlights": [
+      "研究LiteAtt: Secure and Seamless I...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260326-04",
+    "date": "2026-03-26",
+    "title": "Robust Optimal Operation of Virtual Power Plants Under Decision-Dependent Uncertainty of Price Elasticity",
+    "authors": "Tao Tan, Rui Xie, Meng Yang, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2603.24419v1",
+    "url": "https://arxiv.org/abs/2603.24419v1",
+    "abstract": "The rapid deployment of distributed energy resources (DERs) is one of the essential efforts to mitigate global climate change. However, a vast number of small-scale DERs are difficult to manage individually, motivating the introduction of virtual power plants (VPPs). A VPP operator coordinates a gro",
+    "highlights": [
+      "研究Robust Optimal Operation of Vi...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260326-05",
+    "date": "2026-03-26",
+    "title": "Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees",
+    "authors": "Luca Santosuosso, Fei Teng, Sonja Wogrin",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2603.19106v1",
+    "url": "https://arxiv.org/abs/2603.19106v1",
+    "abstract": "This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model",
+    "highlights": [
+      "研究Stochastic Virtual Power Plant...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260326-06",
+    "date": "2026-03-26",
+    "title": "Targeted Adversarial Traffic Generation : Black-box Approach to Evade Intrusion Detection Systems in IoT Networks",
+    "authors": "Islam Debicha, Tayeb Kenaza, Ishak Charfi, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2603.23438v1",
+    "url": "https://arxiv.org/abs/2603.23438v1",
+    "abstract": "The integration of machine learning (ML) algorithms into Internet of Things (IoT) applications has introduced significant advantages alongside vulnerabilities to adversarial attacks, especially within IoT-based intrusion detection systems (IDS). While theoretical adversarial attacks have been extens",
+    "highlights": [
+      "研究Targeted Adversarial Traffic G...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
