@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Mar 2026 03:32:16 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2026 03:51:24 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Robust Optimal Operation of Virtual Power Plants Under Decision-Dependent Uncertainty of Price Elasticity</title>
+      <link>https://arxiv.org/abs/2603.24419v1</link>
+      <guid>pd-20260329-01</guid>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>The rapid deployment of distributed energy resources (DERs) is one of the essential efforts to mitigate global climate change. However, a vast number of small-scale DERs are difficult to manage individually, motivating the introduction of virtual power plants (VPPs). A VPP operator coordinates a gro
+
+• 研究Robust Optimal Operation of Vi...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Once-for-All Channel Mixers (HYPERTINYPW): Generative Compression for TinyML</title>
       <link>https://arxiv.org/abs/2603.24916v1</link>
@@ -692,20 +706,6 @@ FL框架中的轻量IDS,81K参数可与LCSMC-Net的9.4K对比</description>
 • IDS领域的个性化FL新范式
 
 嵌入聚合策略适合异构车载FL场景</description>
-    </item>
-    <item>
-      <title>FL-IoV: Federated Learning for Secure In-Vehicle Communication with MobileNet-Tiny</title>
-      <link>https://www.mdpi.com/2673-4001/6/3/48</link>
-      <guid>pd-20260315-13</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>面向车载安全通信的FL框架,使用轻量MobileNet-Tiny CNN进行特征提取,检测准确率&gt;98%,适合资源受限车载设备部署。
-
-• MobileNet-Tiny适合资源受限车载设备
-• 检测准确率&gt;98%
-• 隐私保护的去中心化训练
-
-MobileNet-Tiny可与LCSMC-Net的SMC-Lite作参数量对比</description>
     </item>
   </channel>
 </rss>
