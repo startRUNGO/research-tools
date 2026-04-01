@@ -1,5 +1,109 @@
 [
   {
+    "id": "pd-20260401-01",
+    "date": "2026-04-01",
+    "title": "K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)",
+    "authors": "Abdulrahman Albaiz, Fathi Amsaad",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2603.27393v1",
+    "url": "https://arxiv.org/abs/2603.27393v1",
+    "abstract": "This paper presents a lightweight K-Means anomaly detection model and a distributed model-sharing workflow designed for resource-constrained microcontrollers (MCUs). Using real power measurements from a mini-fridge appliance, the system performs on-device feature extraction, clustering, and threshol",
+    "highlights": [
+      "研究K-Means Based TinyML Anomaly D...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260401-02",
+    "date": "2026-04-01",
+    "title": "TinyML for Acoustic Anomaly Detection in IoT Sensor Networks",
+    "authors": "Amar Almaini, Jakob Folz, Ghadeer Ashour",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2603.26135v1",
+    "url": "https://arxiv.org/abs/2603.26135v1",
+    "abstract": "Tiny Machine Learning enables real-time, energy-efficient data processing directly on microcontrollers, making it ideal for Internet of Things sensor networks. This paper presents a compact TinyML pipeline for detecting anomalies in environmental sound within IoT sensor networks. Acoustic monitoring",
+    "highlights": [
+      "研究TinyML for Acoustic Anomaly De...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260401-03",
+    "date": "2026-04-01",
+    "title": "Once-for-All Channel Mixers (HYPERTINYPW): Generative Compression for TinyML",
+    "authors": "Yassien Shaalan",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.24916v1",
+    "url": "https://arxiv.org/abs/2603.24916v1",
+    "abstract": "Deploying neural networks on microcontrollers is constrained by kilobytes of flash and SRAM, where 1x1 pointwise (PW) mixers often dominate memory even after INT8 quantization across vision, audio, and wearable sensing. We present HYPER-TINYPW, a compression-as-generation approach that replaces most",
+    "highlights": [
+      "研究Once-for-All Channel Mixers (H...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260401-04",
+    "date": "2026-04-01",
+    "title": "Robust Optimal Operation of Virtual Power Plants Under Decision-Dependent Uncertainty of Price Elasticity",
+    "authors": "Tao Tan, Rui Xie, Meng Yang, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2603.24419v1",
+    "url": "https://arxiv.org/abs/2603.24419v1",
+    "abstract": "The rapid deployment of distributed energy resources (DERs) is one of the essential efforts to mitigate global climate change. However, a vast number of small-scale DERs are difficult to manage individually, motivating the introduction of virtual power plants (VPPs). A VPP operator coordinates a gro",
+    "highlights": [
+      "研究Robust Optimal Operation of Vi...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260401-05",
+    "date": "2026-04-01",
+    "title": "Knowledge Distillation for Efficient Transformer-Based Reinforcement Learning in Hardware-Constrained Energy Management Systems",
+    "authors": "Pascal Henrich, Jonas Sievers, Maximilian Beichter, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2603.26249v1",
+    "url": "https://arxiv.org/abs/2603.26249v1",
+    "abstract": "Transformer-based reinforcement learning has emerged as a strong candidate for sequential control in residential energy management. In particular, the Decision Transformer can learn effective battery dispatch policies from historical data, thereby increasing photovoltaic self-consumption and reducin",
+    "highlights": [
+      "研究Knowledge Distillation for Eff...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化",
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260331-01",
     "date": "2026-03-31",
     "title": "K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)",

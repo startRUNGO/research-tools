@@ -5,8 +5,78 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Mar 2026 03:44:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 03:56:03 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)</title>
+      <link>https://arxiv.org/abs/2603.27393v1</link>
+      <guid>pd-20260401-01</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>This paper presents a lightweight K-Means anomaly detection model and a distributed model-sharing workflow designed for resource-constrained microcontrollers (MCUs). Using real power measurements from a mini-fridge appliance, the system performs on-device feature extraction, clustering, and threshol
+
+• 研究K-Means Based TinyML Anomaly D...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>TinyML for Acoustic Anomaly Detection in IoT Sensor Networks</title>
+      <link>https://arxiv.org/abs/2603.26135v1</link>
+      <guid>pd-20260401-02</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Tiny Machine Learning enables real-time, energy-efficient data processing directly on microcontrollers, making it ideal for Internet of Things sensor networks. This paper presents a compact TinyML pipeline for detecting anomalies in environmental sound within IoT sensor networks. Acoustic monitoring
+
+• 研究TinyML for Acoustic Anomaly De...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Once-for-All Channel Mixers (HYPERTINYPW): Generative Compression for TinyML</title>
+      <link>https://arxiv.org/abs/2603.24916v1</link>
+      <guid>pd-20260401-03</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Deploying neural networks on microcontrollers is constrained by kilobytes of flash and SRAM, where 1x1 pointwise (PW) mixers often dominate memory even after INT8 quantization across vision, audio, and wearable sensing. We present HYPER-TINYPW, a compression-as-generation approach that replaces most
+
+• 研究Once-for-All Channel Mixers (H...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Robust Optimal Operation of Virtual Power Plants Under Decision-Dependent Uncertainty of Price Elasticity</title>
+      <link>https://arxiv.org/abs/2603.24419v1</link>
+      <guid>pd-20260401-04</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>The rapid deployment of distributed energy resources (DERs) is one of the essential efforts to mitigate global climate change. However, a vast number of small-scale DERs are difficult to manage individually, motivating the introduction of virtual power plants (VPPs). A VPP operator coordinates a gro
+
+• 研究Robust Optimal Operation of Vi...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Knowledge Distillation for Efficient Transformer-Based Reinforcement Learning in Hardware-Constrained Energy Management Systems</title>
+      <link>https://arxiv.org/abs/2603.26249v1</link>
+      <guid>pd-20260401-05</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Transformer-based reinforcement learning has emerged as a strong candidate for sequential control in residential energy management. In particular, the Decision Transformer can learn effective battery dispatch policies from historical data, thereby increasing photovoltaic self-consumption and reducin
+
+• 研究Knowledge Distillation for Eff...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)</title>
       <link>https://arxiv.org/abs/2603.27393v1</link>
@@ -636,76 +706,6 @@ FL+MARL在建筑能源管理中的完整方案，实测数据增强说服力，�
 • 在电力系统CPS攻击数据集上F1达95.7%，误报率仅0.8%
 
 电网安全+TinyML的交叉研究，与IoV安全方法论相通，剪枝策略可借鉴。IDS+能源管理双重视角</description>
-    </item>
-    <item>
-      <title>FED-IoV: A Federated Learning-based Comprehensive Intrusion Detection Method for IoV</title>
-      <link>https://doi.org/10.1016/j.cose.2024.104067</link>
-      <guid>pd-20260315-01</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>FED-IoV利用联邦学习架构实现分布式协同车联网入侵检测。将CAN总线流量转换为三通道彩色图像，设计剪枝优化的MobileNet-Tiny模型进行特征提取，在Raspberry Pi 4上完成实际部署验证。
-
-• 创新性地将CAN总线流量转换为图像表示，利用CV方法进行异常检测
-• MobileNet-Tiny通过通道剪枝实现极低计算开销，单样本推理&lt;10ms
-• 在Raspberry Pi 4上实际部署，CAN-Intrusion和CICIDS2017上分别达98.51%和97.74%准确率
-
-FL+轻量模型+边缘部署的完整方案，但仅在Raspberry Pi验证，未在MCU级设备测试，蒸馏/量化可进一步压缩</description>
-    </item>
-    <item>
-      <title>H-RT-IDPS: Hierarchical Real-Time Intrusion Detection and Prevention System for IoV using TinyML Distilled CNN</title>
-      <link>https://doi.org/10.3390/technologies13120572</link>
-      <guid>pd-20260315-02</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>提出三层防御架构：车载TinyML蒸馏CNN、RSU级BiLSTM-XGBoost混合模型、城市级Kafka-Spark Streaming监控层，实现从车端到云端的分层实时入侵检测。
-
-• 分层防御架构：车载TinyML + RSU深度模型 + 云端流处理，兼顾实时性和检测深度
-• 通过知识蒸馏将BiLSTM-XGBoost迁移到超轻量CNN，车载端毫秒级响应
-• 使用CICIoV2024数据集，覆盖DoS和多种欺骗攻击（GAS/RPM/SPEED/方向盘）
-
-分层架构思路有价值，但发表在MDPI Technologies影响力有限，且未在真实车载ECU/MCU上验证</description>
-    </item>
-    <item>
-      <title>KD-GAT: CAN Bus Intrusion Detection with Knowledge Distillation and Graph Attention Transformer</title>
-      <link>https://arxiv.org/abs/2507.19686</link>
-      <guid>pd-20260315-03</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>将CAN流量建模为图结构，结合多层GAT和跳跃知识聚合提取丰富特征，通过两阶段知识蒸馏使学生模型仅为教师的6.32%参数量，同时保持99.97%检测准确率。
-
-• 图表示方法天然适配CAN协议多ID并行通信特性，GAT捕获时序和关系模式
-• 两阶段蒸馏（有监督预训练+软硬标签联合监督），学生仅6.32%教师参数
-• 代码完全开源（GitHub: OSU-CAR-MSL/KD-GAT），可复现性5/5
-
-开源+高可复现性是最大亮点，图表示+蒸馏思路可与FL结合设计分布式图联邦学习CAN IDS</description>
-    </item>
-    <item>
-      <title>LCSMC-Net: Lightweight Separable Multi-Scale Convolution with Attention for CAN Intrusion Detection</title>
-      <link>https://doi.org/10.3390/s26041399</link>
-      <guid>pd-20260315-04</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>超轻量CAN IDS架构，通过SMC-Lite多尺度卷积和LCTA线性注意力机制，INT8量化后仅3.6KB Flash / 3KB RAM，推理延迟5.6ms，完全满足汽车嵌入式ECU约束。
-
-• INT8量化后Flash仅3.6KB（64KB预算的5.6%），RAM仅3KB（16KB预算的18.8%）
-• 推理延迟5.6ms，在10ms截止时间前留有44%实时性余量
-• SMC-Lite + LCTA线性注意力避免二次复杂度，极致参数效率
-
-目前少有的真正满足ECU硬件约束的CAN IDS，可作为FL本地模型基线架构，但仅在Car-Hacking数据集验证</description>
-    </item>
-    <item>
-      <title>APFed-LDwCBN: Adaptive Personalized Federated Learning with Lightweight Depthwise Convolutional Bottleneck Network for IoV Intrusion Detection</title>
-      <link>https://doi.org/10.1038/s41598-025-17699-3</link>
-      <guid>pd-20260315-05</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>针对车联网数据异构性和非IID分布，提出自适应个性化联邦学习（APFed）模型，集成轻量级深度可分离卷积瓶颈网络（LDwCBN），通过细粒度自适应更新和动态权重融合增强模型个性化。
-
-• APFed根据每个车辆的数据分布动态调整更新幅度和方向，有效解决非IID偏移
-• LDwCBN采用深度可分离卷积+瓶颈结构+残差连接，大幅降低计算量
-• 在非IID数据下显著优于FedAvg和FedProx，发表于Nature子刊Scientific Reports（2区）
-
-FL+轻量模型路线与用户研究方向最接近，可在此基础上增加拜占庭鲁棒聚合和MCU级量化部署</description>
     </item>
   </channel>
 </rss>
