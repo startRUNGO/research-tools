@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Apr 2026 03:56:03 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 03:37:33 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)</title>
+      <link>https://arxiv.org/abs/2603.27393v1</link>
+      <guid>pd-20260402-01</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>This paper presents a lightweight K-Means anomaly detection model and a distributed model-sharing workflow designed for resource-constrained microcontrollers (MCUs). Using real power measurements from a mini-fridge appliance, the system performs on-device feature extraction, clustering, and threshol
+
+• 研究K-Means Based TinyML Anomaly D...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>TinyML for Acoustic Anomaly Detection in IoT Sensor Networks</title>
+      <link>https://arxiv.org/abs/2603.26135v1</link>
+      <guid>pd-20260402-02</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Tiny Machine Learning enables real-time, energy-efficient data processing directly on microcontrollers, making it ideal for Internet of Things sensor networks. This paper presents a compact TinyML pipeline for detecting anomalies in environmental sound within IoT sensor networks. Acoustic monitoring
+
+• 研究TinyML for Acoustic Anomaly De...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Once-for-All Channel Mixers (HYPERTINYPW): Generative Compression for TinyML</title>
+      <link>https://arxiv.org/abs/2603.24916v1</link>
+      <guid>pd-20260402-03</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Deploying neural networks on microcontrollers is constrained by kilobytes of flash and SRAM, where 1x1 pointwise (PW) mixers often dominate memory even after INT8 quantization across vision, audio, and wearable sensing. We present HYPER-TINYPW, a compression-as-generation approach that replaces most
+
+• 研究Once-for-All Channel Mixers (H...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Knowledge Distillation for Efficient Transformer-Based Reinforcement Learning in Hardware-Constrained Energy Management Systems</title>
+      <link>https://arxiv.org/abs/2603.26249v1</link>
+      <guid>pd-20260402-04</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Transformer-based reinforcement learning has emerged as a strong candidate for sequential control in residential energy management. In particular, the Decision Transformer can learn effective battery dispatch policies from historical data, thereby increasing photovoltaic self-consumption and reducin
+
+• 研究Knowledge Distillation for Eff...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)</title>
       <link>https://arxiv.org/abs/2603.27393v1</link>
@@ -650,62 +706,6 @@ FL+DRL在VPP调度中的创新应用，但仿真规模较小，实际电网验�
 • 在PJM电力市场真实数据上验证，竞价收益提升12.3%
 
 隐私保护+市场竞价的新颖组合，区块链开销分析充分，但链上吞吐量在大规模DER场景下可能受限</description>
-    </item>
-    <item>
-      <title>TinyML-based Edge Intelligence for Real-Time Demand Response in Virtual Power Plants</title>
-      <link>https://doi.org/10.1016/j.egyai.2026.100312</link>
-      <guid>pd-20260315-vpp03</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>提出基于TinyML的边缘智能需求响应系统，将轻量化负荷预测模型部署至智能电表MCU端。通过模型量化与知识蒸馏实现毫秒级本地推理，支持VPP实时需求响应调度。
-
-• 将Transformer负荷预测模型压缩至48KB，部署在STM32H7 MCU上
-• INT8量化后精度损失仅0.8%，单次推理仅需3.2ms
-• 端侧实时响应使VPP调度延迟从分钟级降至秒级
-
-TinyML+VPP的交叉方向，边缘部署方案实用性强，与联邦学习结合可进一步探索</description>
-    </item>
-    <item>
-      <title>Federated Multi-Agent Deep Reinforcement Learning for Building Energy Management with Privacy Guarantees</title>
-      <link>https://doi.org/10.1016/j.enbuild.2026.113456</link>
-      <guid>pd-20260315-em01</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>提出联邦多智能体DRL框架用于建筑群能源管理。每栋建筑作为独立智能体本地训练HVAC控制策略，通过联邦平均共享模型参数。在保护建筑能耗隐私的同时实现区域级能源协同优化。
-
-• 多智能体+联邦学习架构天然适配建筑群分布式能源管理场景
-• 提出基于注意力机制的智能体间通信模块，提升协同效率
-• 5栋商业建筑实测数据验证，总能耗降低15.6%，峰值负荷削减21.8%
-
-FL+MARL在建筑能源管理中的完整方案，实测数据增强说服力，但季节性变化适应性需进一步验证</description>
-    </item>
-    <item>
-      <title>Edge-Cloud Collaborative Energy Management for Industrial IoT: A TinyML and Federated Learning Co-Design</title>
-      <link>https://doi.org/10.1109/TII.2026.3156789</link>
-      <guid>pd-20260315-em02</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>提出端云协同的工业物联网能源管理框架。TinyML模型在边缘设备实现本地能耗异常检测与短期预测，联邦学习在云端聚合多工厂模型实现全局优化，实现隐私保护下的工业能效提升。
-
-• TinyML+FL端云协同架构，兼顾实时性与全局优化
-• 设计自适应联邦聚合权重，根据各工厂数据质量动态调整
-• 在3个制造工厂部署验证，能耗异常检测F1达96.3%，能效提升11.2%
-
-端云协同设计思路清晰，TinyML+FL的结合具有工业落地价值，自适应聚合权重是亮点</description>
-    </item>
-    <item>
-      <title>Lightweight Intrusion Detection for Smart Grid Energy Management Systems Using Pruned CNN on Resource-Constrained Devices</title>
-      <link>https://doi.org/10.1109/JIOT.2026.3148901</link>
-      <guid>pd-20260315-em03</guid>
-      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>提出面向智能电网能源管理系统的轻量化入侵检测方案。通过结构化剪枝将CNN模型压缩至原始大小的8%，部署在ARM Cortex-M7设备上，实现对电网通信协议攻击的实时检测。
-
-• 针对IEC 61850和DNP3协议的攻击检测，填补智能电网安全的TinyML空白
-• 结构化剪枝+INT8量化，模型仅32KB，推理延迟4.1ms
-• 在电力系统CPS攻击数据集上F1达95.7%，误报率仅0.8%
-
-电网安全+TinyML的交叉研究，与IoV安全方法论相通，剪枝策略可借鉴。IDS+能源管理双重视角</description>
     </item>
   </channel>
 </rss>
