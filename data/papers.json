@@ -1,5 +1,219 @@
 [
   {
+    "id": "pd-20260403-01",
+    "date": "2026-04-03",
+    "title": "Incremental Federated Learning for Intrusion Detection in IoT Networks under Evolving Threat Landscape",
+    "authors": "Muaan Ur Rehman, Hayretdin Bahsi, Rajesh Kalakoti",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2603.10776v2",
+    "url": "https://arxiv.org/abs/2603.10776v2",
+    "abstract": "The expansion of Internet of Things (IoT) devices has increased the attack surface of networks, necessitating a robust and adaptive intrusion detection systems. Machine learning based systems have been considered promising in enhancing the detection performance. Federated learning settings enabled u",
+    "highlights": [
+      "研究Incremental Federated Learning...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-02",
+    "date": "2026-04-03",
+    "title": "Semantic Communication-Enhanced Split Federated Learning for Vehicular Networks: Architecture, Challenges, and Case Study",
+    "authors": "Lu Yu, Zheng Chang, Ying-Chang Liang",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2603.04936v1",
+    "url": "https://arxiv.org/abs/2603.04936v1",
+    "abstract": "Vehicular edge intelligence (VEI) is vital for future intelligent transportation systems. However, traditional centralized learning in dynamic vehicular networks faces significant communication overhead and privacy risks. Split federated learning (SFL) offers a distributed solution but is often hind",
+    "highlights": [
+      "研究Semantic Communication-Enhance...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-03",
+    "date": "2026-04-03",
+    "title": "On Electric Vehicle Energy Demand Forecasting and the Effect of Federated Learning",
+    "authors": "Andreas Tritsarolis, Gil Sampaio, Nikos Pelekis, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2602.20782v1",
+    "url": "https://arxiv.org/abs/2602.20782v1",
+    "abstract": "The wide spread of new energy resources, smart devices, and demand side management strategies has motivated several analytics operations, from infrastructure load modeling to user behavior profiling. Energy Demand Forecasting (EDF) of Electric Vehicle Supply Equipments (EVSEs) is one of the most cri",
+    "highlights": [
+      "研究On Electric Vehicle Energy Dem...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-04",
+    "date": "2026-04-03",
+    "title": "Fractional Order Federated Learning for Battery Electric Vehicle Energy Consumption Modeling",
+    "authors": "Mohammad Partohaghighi, Roummel Marcia, Bruce J. West, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2602.12567v1",
+    "url": "https://arxiv.org/abs/2602.12567v1",
+    "abstract": "Federated learning on connected electric vehicles (BEVs) faces severe instability due to intermittent connectivity, time-varying client participation, and pronounced client-to-client variation induced by diverse operating conditions. Conventional FedAvg and many advanced methods can suffer from exce",
+    "highlights": [
+      "研究Fractional Order Federated Lea...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-05",
+    "date": "2026-04-03",
+    "title": "Lightweight Cluster-Based Federated Learning for Intrusion Detection in Heterogeneous IoT Networks",
+    "authors": "Saadat Izadi, Mahmood Ahmadi",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2602.12543v1",
+    "url": "https://arxiv.org/abs/2602.12543v1",
+    "abstract": "The rise of heterogeneous Internet of Things (IoT) devices has raised security concerns due to their vulnerability to cyberattacks. Intrusion Detection Systems (IDS) are crucial in addressing these threats. Federated Learning (FL) offers a privacy-preserving solution, but IoT heterogeneity and limit",
+    "highlights": [
+      "研究Lightweight Cluster-Based Fede...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-06",
+    "date": "2026-04-03",
+    "title": "Adaptive Meta-Aggregation Federated Learning for Intrusion Detection in Heterogeneous Internet of Things",
+    "authors": "Saadat Izadi, Mahmood Ahmadi",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2602.12541v1",
+    "url": "https://arxiv.org/abs/2602.12541v1",
+    "abstract": "The rapid proliferation of the Internet of Things (IoT) has brought remarkable advancements to industries by enabling interconnected systems and intelligent automation. However, this exponential growth has also introduced significant security vulnerabilities, making IoT networks increasingly targets",
+    "highlights": [
+      "研究Adaptive Meta-Aggregation Fede...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-07",
+    "date": "2026-04-03",
+    "title": "VR-VFL: Joint Rate and Client Selection for Vehicular Federated Learning Under Imperfect CSI",
+    "authors": "Metehan Karatas, Subhrakanti Dey, Christian Rohner, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2602.03711v1",
+    "url": "https://arxiv.org/abs/2602.03711v1",
+    "abstract": "Federated learning in vehicular edge networks faces major challenges in efficient resource allocation, largely due to high vehicle mobility and the presence of imperfect channel state information. Many existing methods oversimplify these realities, often assuming fixed communication rounds or ideal ",
+    "highlights": [
+      "研究VR-VFL: Joint Rate and Client ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-08",
+    "date": "2026-04-03",
+    "title": "SecureDyn-FL: A Robust Privacy-Preserving Federated Learning Framework for Intrusion Detection in IoT Networks",
+    "authors": "Imtiaz Ali Soomro, Hamood Ur Rehman, S. Jawad Hussain ID, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2601.06466v1",
+    "url": "https://arxiv.org/abs/2601.06466v1",
+    "abstract": "The rapid proliferation of Internet of Things (IoT) devices across domains such as smart homes, industrial control systems, and healthcare networks has significantly expanded the attack surface for cyber threats, including botnet-driven distributed denial-of-service (DDoS), malware injection, and da",
+    "highlights": [
+      "研究SecureDyn-FL: A Robust Privacy...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-09",
+    "date": "2026-04-03",
+    "title": "FLAD: Federated Learning for LLM-based Autonomous Driving in Vehicle-Edge-Cloud Networks",
+    "authors": "Tianao Xiang, Mingjian Zhi, Yuanguo Bi, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2511.09025v1",
+    "url": "https://arxiv.org/abs/2511.09025v1",
+    "abstract": "Large Language Models (LLMs) have impressive data fusion and reasoning capabilities for autonomous driving (AD). However, training LLMs for AD faces significant challenges including high computation transmission costs, and privacy concerns associated with sensitive driving data. Federated Learning (",
+    "highlights": [
+      "研究FLAD: Federated Learning for L...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260403-10",
+    "date": "2026-04-03",
+    "title": "Mist-Assisted Federated Learning for Intrusion Detection in Heterogeneous IoT Networks",
+    "authors": "Saadat Izadi, Shakib Komasi, Ali Salimi, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2511.00271v1",
+    "url": "https://arxiv.org/abs/2511.00271v1",
+    "abstract": "The rapid growth of the Internet of Things (IoT) offers new opportunities but also expands the attack surface of distributed, resource-limited devices. Intrusion detection in such environments is difficult due to data heterogeneity from diverse sensing modalities and the non-IID distribution of samp",
+    "highlights": [
+      "研究Mist-Assisted Federated Learni...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260402-01",
     "date": "2026-04-02",
     "title": "K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)",
