@@ -1,5 +1,46 @@
 [
   {
+    "id": "pd-20260404-01",
+    "date": "2026-04-04",
+    "title": "K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)",
+    "authors": "Abdulrahman Albaiz, Fathi Amsaad",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2603.27393v1",
+    "url": "https://arxiv.org/abs/2603.27393v1",
+    "abstract": "This paper presents a lightweight K-Means anomaly detection model and a distributed model-sharing workflow designed for resource-constrained microcontrollers (MCUs). Using real power measurements from a mini-fridge appliance, the system performs on-device feature extraction, clustering, and threshol",
+    "highlights": [
+      "研究K-Means Based TinyML Anomaly D...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260404-02",
+    "date": "2026-04-04",
+    "title": "Day-Ahead Offering for Virtual Power Plants: A Stochastic Linear Programming Reformulation and Projected Subgradient Method",
+    "authors": "Weiqi Meng, Hongyi Li, Bai Cui",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2604.01755v1",
+    "url": "https://arxiv.org/abs/2604.01755v1",
+    "abstract": "Virtual power plants (VPPs) are an emerging paradigm that aggregates distributed energy resources (DERs) for coordinated participation in power systems, including bidding as a single dispatchable entity in the wholesale market. In this paper, we address a critical operational challenge for VPPs: the",
+    "highlights": [
+      "研究Day-Ahead Offering for Virtual...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260403-01",
     "date": "2026-04-03",
     "title": "Incremental Federated Learning for Intrusion Detection in IoT Networks under Evolving Threat Landscape",

@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Apr 2026 03:40:28 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2026 03:27:16 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)</title>
+      <link>https://arxiv.org/abs/2603.27393v1</link>
+      <guid>pd-20260404-01</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>This paper presents a lightweight K-Means anomaly detection model and a distributed model-sharing workflow designed for resource-constrained microcontrollers (MCUs). Using real power measurements from a mini-fridge appliance, the system performs on-device feature extraction, clustering, and threshol
+
+• 研究K-Means Based TinyML Anomaly D...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Day-Ahead Offering for Virtual Power Plants: A Stochastic Linear Programming Reformulation and Projected Subgradient Method</title>
+      <link>https://arxiv.org/abs/2604.01755v1</link>
+      <guid>pd-20260404-02</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>Virtual power plants (VPPs) are an emerging paradigm that aggregates distributed energy resources (DERs) for coordinated participation in power systems, including bidding as a single dispatchable entity in the wholesale market. In this paper, we address a critical operational challenge for VPPs: the
+
+• 研究Day-Ahead Offering for Virtual...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Incremental Federated Learning for Intrusion Detection in IoT Networks under Evolving Threat Landscape</title>
       <link>https://arxiv.org/abs/2603.10776v2</link>
@@ -670,34 +698,6 @@
       <link>https://arxiv.org/abs/2603.15085v1</link>
       <guid>pd-20260323-03</guid>
       <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small
-
-• 研究Affordable Precision Agricultu...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees</title>
-      <link>https://arxiv.org/abs/2603.19106v1</link>
-      <guid>pd-20260323-04</guid>
-      <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model
-
-• 研究Stochastic Virtual Power Plant...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems</title>
-      <link>https://arxiv.org/abs/2603.15085v1</link>
-      <guid>pd-20260322-01</guid>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
       <category>AI/ML</category>
       <description>Precision agriculture increasingly integrates artificial intelligence to enhance crop monitoring, irrigation management, and resource efficiency. Nevertheless, the vast majority of the current systems are still mostly cloud-based and require reliable connectivity, which hampers the adoption to small
 
