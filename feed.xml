@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Apr 2026 03:52:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 03:43:37 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fair Aggregation in Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2604.03559v1</link>
+      <guid>pd-20260407-01</guid>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>A virtual power plant (VPP) is operated by an aggregator that acts as a market intermediary, aggregating consumers to participate in wholesale power markets. By setting incentive prices, the aggregator induces consumers to sell energy and profits by providing this aggregated energy to the market. Th
+
+• 研究Fair Aggregation in Virtual Po...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Day-Ahead Offering for Virtual Power Plants: A Stochastic Linear Programming Reformulation and Projected Subgradient Method</title>
+      <link>https://arxiv.org/abs/2604.01755v1</link>
+      <guid>pd-20260407-02</guid>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>Virtual power plants (VPPs) are an emerging paradigm that aggregates distributed energy resources (DERs) for coordinated participation in power systems, including bidding as a single dispatchable entity in the wholesale market. In this paper, we address a critical operational challenge for VPPs: the
+
+• 研究Day-Ahead Offering for Virtual...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Reinforcement Learning-Based Energy Management for Industrial Park with Heterogeneous Batteries under Demand Response</title>
+      <link>https://arxiv.org/abs/2604.03655v1</link>
+      <guid>pd-20260407-03</guid>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The integration of photovoltaic (PV) systems, stationary energy storage systems (ESSs), and electric vehicles (EVs) alongside demand response (DR) programmes in industrial parks presents opportunities to reduce costs and improve renewable energy utilisation. Coordinating these resources is challengi
+
+• 研究Reinforcement Learning-Based E...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Day-Ahead Offering for Virtual Power Plants: A Stochastic Linear Programming Reformulation and Projected Subgradient Method</title>
       <link>https://arxiv.org/abs/2604.01755v1</link>
@@ -656,48 +698,6 @@
       <link>https://arxiv.org/abs/2603.20174v1</link>
       <guid>pd-20260324-01</guid>
       <pubDate>Tue, 24 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Earth observation (EO) missions traditionally rely on transmitting raw or minimally processed imagery from satellites to ground stations for computationally intensive analysis. This paradigm is infeasible for CubeSat systems due to stringent constraints on the onboard embedded processors, energy ava
-
-• 研究TinyML Enhances CubeSat Missio...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>LiteAtt: Secure and Seamless IoT Services Using TinyML-based Self-Attestation as a Primitive</title>
-      <link>https://arxiv.org/abs/2603.19727v1</link>
-      <guid>pd-20260324-02</guid>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>As the Internet of Things (IoT) becomes an integral part of critical infrastructure, smart cities, and consumer networks, there has been an increase in the number of software attacks on the microcontrollers (MCUs) that constitute such networks. Runtime firmware attestation, i.e., the verification of
-
-• 研究LiteAtt: Secure and Seamless I...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Stochastic Virtual Power Plant Dispatch via Temporally Aggregated Distributed Predictive Control with Performance Guarantees</title>
-      <link>https://arxiv.org/abs/2603.19106v1</link>
-      <guid>pd-20260324-03</guid>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>This paper addresses the energy dispatch of a virtual power plant comprising renewable generation, energy storage, and thermal units under uncertainty in renewable output, energy prices, and energy demand. The nonlinear dynamics and multiple sources of uncertainty render traditional stochastic model
-
-• 研究Stochastic Virtual Power Plant...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>TinyML Enhances CubeSat Mission Capabilities</title>
-      <link>https://arxiv.org/abs/2603.20174v1</link>
-      <guid>pd-20260323-01</guid>
-      <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
       <category>AI/ML</category>
       <description>Earth observation (EO) missions traditionally rely on transmitting raw or minimally processed imagery from satellites to ground stations for computationally intensive analysis. This paradigm is infeasible for CubeSat systems due to stringent constraints on the onboard embedded processors, energy ava
 
