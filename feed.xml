@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Apr 2026 03:54:24 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 03:30:52 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Towards Resilient Intrusion Detection in CubeSats: Challenges, TinyML Solutions, and Future Directions</title>
+      <link>https://arxiv.org/abs/2604.06411v1</link>
+      <guid>pd-20260411-01</guid>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>CubeSats have revolutionized access to space by providing affordable and accessible platforms for research and education. However, their reliance on Commercial Off-The-Shelf (COTS) components and open-source software has introduced significant cybersecurity vulnerabilities. Ensuring the cybersecurit
+
+• 研究Towards Resilient Intrusion De...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Fair Aggregation in Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2604.03559v1</link>
+      <guid>pd-20260411-02</guid>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>A virtual power plant (VPP) is operated by an aggregator that acts as a market intermediary, aggregating consumers to participate in wholesale power markets. By setting incentive prices, the aggregator induces consumers to sell energy and profits by providing this aggregated energy to the market. Th
+
+• 研究Fair Aggregation in Virtual Po...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Reinforcement Learning-Based Energy Management for Industrial Park with Heterogeneous Batteries under Demand Response</title>
+      <link>https://arxiv.org/abs/2604.03655v1</link>
+      <guid>pd-20260411-03</guid>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The integration of photovoltaic (PV) systems, stationary energy storage systems (ESSs), and electric vehicles (EVs) alongside demand response (DR) programmes in industrial parks presents opportunities to reduce costs and improve renewable energy utilisation. Coordinating these resources is challengi
+
+• 研究Reinforcement Learning-Based E...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>MA-IDS: Multi-Agent RAG Framework for IoT Network Intrusion Detection with an Experience Library</title>
+      <link>https://arxiv.org/abs/2604.05458v1</link>
+      <guid>pd-20260411-04</guid>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Network Intrusion Detection Systems (NIDS) face important limitations. Signature-based methods are effective for known attack patterns, but they struggle to detect zero-day attacks and often miss modified variants of previously known attacks, while many machine learning approaches offer limited inte
+
+• 研究MA-IDS: Multi-Agent RAG Framew...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Towards Resilient Intrusion Detection in CubeSats: Challenges, TinyML Solutions, and Future Directions</title>
       <link>https://arxiv.org/abs/2604.06411v1</link>
@@ -646,62 +702,6 @@
       <description>The rapid deployment of distributed energy resources (DERs) is one of the essential efforts to mitigate global climate change. However, a vast number of small-scale DERs are difficult to manage individually, motivating the introduction of virtual power plants (VPPs). A VPP operator coordinates a gro
 
 • 研究Robust Optimal Operation of Vi...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Targeted Adversarial Traffic Generation : Black-box Approach to Evade Intrusion Detection Systems in IoT Networks</title>
-      <link>https://arxiv.org/abs/2603.23438v1</link>
-      <guid>pd-20260328-04</guid>
-      <pubDate>Sat, 28 Mar 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The integration of machine learning (ML) algorithms into Internet of Things (IoT) applications has introduced significant advantages alongside vulnerabilities to adversarial attacks, especially within IoT-based intrusion detection systems (IDS). While theoretical adversarial attacks have been extens
-
-• 研究Targeted Adversarial Traffic G...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Targeted Adversarial Traffic Generation : Black-box Approach to Evade Intrusion Detection Systems in IoT Networks</title>
-      <link>https://arxiv.org/abs/2603.23438v1</link>
-      <guid>pd-20260327-01</guid>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The integration of machine learning (ML) algorithms into Internet of Things (IoT) applications has introduced significant advantages alongside vulnerabilities to adversarial attacks, especially within IoT-based intrusion detection systems (IDS). While theoretical adversarial attacks have been extens
-
-• 研究Targeted Adversarial Traffic G...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Energy Efficient Software Hardware CoDesign for Machine Learning: From TinyML to Large Language Models</title>
-      <link>https://arxiv.org/abs/2603.23668v1</link>
-      <guid>pd-20260326-01</guid>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>The rapid deployment of machine learning across platforms from milliwatt-class TinyML devices to large language models has made energy efficiency a primary constraint for sustainable AI. Across these scales, performance and energy are increasingly limited by data movement and memory-system behavior 
-
-• 研究Energy Efficient Software Hard...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>TinyML Enhances CubeSat Mission Capabilities</title>
-      <link>https://arxiv.org/abs/2603.20174v1</link>
-      <guid>pd-20260326-02</guid>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Earth observation (EO) missions traditionally rely on transmitting raw or minimally processed imagery from satellites to ground stations for computationally intensive analysis. This paradigm is infeasible for CubeSat systems due to stringent constraints on the onboard embedded processors, energy ava
-
-• 研究TinyML Enhances CubeSat Missio...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
