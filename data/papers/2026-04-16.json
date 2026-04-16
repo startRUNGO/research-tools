@@ -1,0 +1,43 @@
+[
+  {
+    "id": "pd-20260416-01",
+    "date": "2026-04-16",
+    "title": "Enhancing Cross-Problem Vehicle Routing via Federated Learning",
+    "authors": "Xiangchi Meng, Jianan Zhou, Jie Gao, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2604.10652v1",
+    "url": "https://arxiv.org/abs/2604.10652v1",
+    "abstract": "Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene",
+    "highlights": [
+      "研究Enhancing Cross-Problem Vehicl...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260416-02",
+    "date": "2026-04-16",
+    "title": "Optimizing IoT Intrusion Detection with Tabular Foundation Models for Smart City Forensics",
+    "authors": "Asma Al-Dahmani, Abdulla Bin Safwan, Mohammad Obeidat, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2604.11394v1",
+    "url": "https://arxiv.org/abs/2604.11394v1",
+    "abstract": "Security operations in smart cities demand detection systems that balance accuracy with response time. While ensemble methods like Random Forest achieve high accuracy, their computational overhead impedes real-time forensic triage. We present the first systematic evaluation of TabPFNv2.5, a transfor",
+    "highlights": [
+      "研究Optimizing IoT Intrusion Detec...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
