@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2026 04:00:52 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 03:57:47 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Enhancing Cross-Problem Vehicle Routing via Federated Learning</title>
+      <link>https://arxiv.org/abs/2604.10652v1</link>
+      <guid>pd-20260417-01</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene
+
+• 研究Enhancing Cross-Problem Vehicl...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2604.14685v1</link>
+      <guid>pd-20260417-02</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Provenance-based intrusion detection has emerged as a promising approach for analyzing complex attack behaviors through system-level provenance graphs. However, existing defense methods face an inherent granularity limitation. Node-centric detectors, which evaluate anomalies using entities' attribut
+
+• 研究Beyond Nodes vs. Edges: A Mult...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Robustness Analysis of Machine Learning Models for IoT Intrusion Detection Under Data Poisoning Attacks</title>
+      <link>https://arxiv.org/abs/2604.14444v1</link>
+      <guid>pd-20260417-03</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Ensuring the reliability of machine learning-based intrusion detection systems remains a critical challenge in Internet of Things (IoT) environments, particularly as data poisoning attacks increasingly threaten the integrity of model training pipelines. This study evaluates the susceptibility of fou
+
+• 研究Robustness Analysis of Machine...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Optimizing IoT Intrusion Detection with Tabular Foundation Models for Smart City Forensics</title>
+      <link>https://arxiv.org/abs/2604.11394v1</link>
+      <guid>pd-20260417-04</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Security operations in smart cities demand detection systems that balance accuracy with response time. While ensemble methods like Random Forest achieve high accuracy, their computational overhead impedes real-time forensic triage. We present the first systematic evaluation of TabPFNv2.5, a transfor
+
+• 研究Optimizing IoT Intrusion Detec...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Enhancing Cross-Problem Vehicle Routing via Federated Learning</title>
       <link>https://arxiv.org/abs/2604.10652v1</link>
@@ -646,62 +702,6 @@
       <description>Transformer-based reinforcement learning has emerged as a strong candidate for sequential control in residential energy management. In particular, the Decision Transformer can learn effective battery dispatch policies from historical data, thereby increasing photovoltaic self-consumption and reducin
 
 • 研究Knowledge Distillation for Eff...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)</title>
-      <link>https://arxiv.org/abs/2603.27393v1</link>
-      <guid>pd-20260401-01</guid>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>This paper presents a lightweight K-Means anomaly detection model and a distributed model-sharing workflow designed for resource-constrained microcontrollers (MCUs). Using real power measurements from a mini-fridge appliance, the system performs on-device feature extraction, clustering, and threshol
-
-• 研究K-Means Based TinyML Anomaly D...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>TinyML for Acoustic Anomaly Detection in IoT Sensor Networks</title>
-      <link>https://arxiv.org/abs/2603.26135v1</link>
-      <guid>pd-20260401-02</guid>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Tiny Machine Learning enables real-time, energy-efficient data processing directly on microcontrollers, making it ideal for Internet of Things sensor networks. This paper presents a compact TinyML pipeline for detecting anomalies in environmental sound within IoT sensor networks. Acoustic monitoring
-
-• 研究TinyML for Acoustic Anomaly De...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Once-for-All Channel Mixers (HYPERTINYPW): Generative Compression for TinyML</title>
-      <link>https://arxiv.org/abs/2603.24916v1</link>
-      <guid>pd-20260401-03</guid>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Deploying neural networks on microcontrollers is constrained by kilobytes of flash and SRAM, where 1x1 pointwise (PW) mixers often dominate memory even after INT8 quantization across vision, audio, and wearable sensing. We present HYPER-TINYPW, a compression-as-generation approach that replaces most
-
-• 研究Once-for-All Channel Mixers (H...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Robust Optimal Operation of Virtual Power Plants Under Decision-Dependent Uncertainty of Price Elasticity</title>
-      <link>https://arxiv.org/abs/2603.24419v1</link>
-      <guid>pd-20260401-04</guid>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>The rapid deployment of distributed energy resources (DERs) is one of the essential efforts to mitigate global climate change. However, a vast number of small-scale DERs are difficult to manage individually, motivating the introduction of virtual power plants (VPPs). A VPP operator coordinates a gro
-
-• 研究Robust Optimal Operation of Vi...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
