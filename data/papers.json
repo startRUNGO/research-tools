@@ -2,84 +2,358 @@
   {
     "id": "pd-20260417-01",
     "date": "2026-04-17",
-    "title": "Enhancing Cross-Problem Vehicle Routing via Federated Learning",
-    "authors": "Xiangchi Meng, Jianan Zhou, Jie Gao, et al.",
+    "title": "FedLiTeCAN: A Federated Lightweight Transformer for Fast and Robust CAN Bus Intrusion Detection",
+    "authors": "Zaher, M., et al.",
     "journal": "arXiv",
-    "field": "AI/ML",
-    "arxiv": "2604.10652v1",
-    "url": "https://arxiv.org/abs/2604.10652v1",
-    "abstract": "Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene",
+    "field": "Security",
+    "doi": "",
+    "arxiv": "2512.24088",
+    "url": "https://arxiv.org/abs/2512.24088",
+    "abstract": "提出联邦学习框架下的轻量化Transformer CAN总线入侵检测模型。以连接车辆为本地节点，聚合加密的模型权重而不共享原始CAN流量。在多种攻击类型上实现鲁棒检测且推理延迟显著低于标准Transformer。",
     "highlights": [
-      "研究Enhancing Cross-Problem Vehicl...的新方法",
-      "详见原文摘要",
-      "具有一定创新性"
+      "首个针对CAN总线的联邦轻量Transformer IDS",
+      "在DoS/Fuzzy/Spoofing攻击上F1>99%",
+      "推理延迟较标准Transformer降低约60%"
     ],
     "tags": [
       "联邦学习",
-      "车联网"
+      "Transformer",
+      "CAN总线",
+      "入侵检测"
     ],
-    "comment": "待详细分析"
+    "comment": "与LCSMC-Net（9,401参数/2.84M FLOPs/99.89%）相比，该工作采用Transformer骨干并用联邦方式训练，模型规模预计至少一个量级更大；但提供的联邦思路可直接与LCSMC-Net结合——把LCSMC-Net作为客户端局部模型以实现极低带宽(<10KB/轮)的参数聚合，补齐我们单模型在多厂商OEM异构数据上的泛化短板。"
   },
   {
     "id": "pd-20260417-02",
     "date": "2026-04-17",
-    "title": "Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection",
-    "authors": "Fan Yang, Binyan Xu, Di Tang, et al.",
+    "title": "Evaluating the Impact of Privacy-Preserving Federated Learning on CAN Intrusion Detection",
+    "authors": "Jedh, M., Othmane, L.B., et al.",
     "journal": "arXiv",
     "field": "Security",
-    "arxiv": "2604.14685v1",
-    "url": "https://arxiv.org/abs/2604.14685v1",
-    "abstract": "Provenance-based intrusion detection has emerged as a promising approach for analyzing complex attack behaviors through system-level provenance graphs. However, existing defense methods face an inherent granularity limitation. Node-centric detectors, which evaluate anomalies using entities' attribut",
+    "doi": "",
+    "arxiv": "2506.04978",
+    "url": "https://arxiv.org/abs/2506.04978",
+    "abstract": "在50辆车规模下系统比较集中式与联邦式LSTM自编码器入侵检测性能，包括差分隐私与安全聚合对检测率、误报率的综合影响。结果显示隐私保护机制引入约2-4%的检测损失但显著改善跨车型泛化。",
     "highlights": [
-      "研究Beyond Nodes vs. Edges: A Mult...的新方法",
-      "详见原文摘要",
-      "具有一定创新性"
+      "50节点大规模CAN联邦学习实测基准",
+      "量化差分隐私对IDS检测率的影响",
+      "开源CANdito联邦检测框架"
     ],
     "tags": [
-      "入侵检测",
-      "轻量化"
+      "联邦学习",
+      "差分隐私",
+      "CAN入侵检测"
     ],
-    "comment": "待详细分析"
+    "comment": "该文的基准实验和开源代码可直接用作LCSMC-Net的联邦版本对比基线。我们的INT8量化模型（3.6KB Flash）在带宽占用上远低于其LSTM-AE，且9,401参数意味着单轮上行仅~9.4KB，非常适合将其联邦协议直接移植，并可在车载MCU上在线持续学习。"
   },
   {
     "id": "pd-20260417-03",
     "date": "2026-04-17",
-    "title": "Robustness Analysis of Machine Learning Models for IoT Intrusion Detection Under Data Poisoning Attacks",
-    "authors": "Fortunatus Aabangbio Wulnye, Justice Owusu Agyemang, Kwame Opuni-Boachie Obour Agyekum, et al.",
+    "title": "Fine-Tuning Federated Learning-Based Intrusion Detection Systems for Transportation IoT",
+    "authors": "Alzahrani, H., et al.",
     "journal": "arXiv",
     "field": "Security",
-    "arxiv": "2604.14444v1",
-    "url": "https://arxiv.org/abs/2604.14444v1",
-    "abstract": "Ensuring the reliability of machine learning-based intrusion detection systems remains a critical challenge in Internet of Things (IoT) environments, particularly as data poisoning attacks increasingly threaten the integrity of model training pipelines. This study evaluates the susceptibility of fou",
+    "doi": "",
+    "arxiv": "2502.06099",
+    "url": "https://arxiv.org/abs/2502.06099",
+    "abstract": "针对交通物联网场景提出联邦预训练+本地微调的IDS框架，在公共CAN数据集上预训练全局模型后，在各车辆端以少量样本(<5%)进行LoRA式微调，兼顾全局一致性与个性化攻击模式识别。",
     "highlights": [
-      "研究Robustness Analysis of Machine...的新方法",
-      "详见原文摘要",
-      "具有一定创新性"
+      "联邦预训练+本地LoRA微调两阶段策略",
+      "少样本(<5%)微调精度提升3-8%",
+      "降低通信开销约70%"
     ],
     "tags": [
-      "入侵检测"
+      "联邦学习",
+      "微调",
+      "LoRA",
+      "交通物联网"
     ],
-    "comment": "待详细分析"
+    "comment": "两阶段范式对LCSMC-Net极具启发：先用多个开源CAN数据集联邦预训练9,401参数模型，再针对每辆目标车的CAN-ID分布做微调。考虑到我们的卷积结构，可仿照LoRA做通道级低秩残差微调，预计增量参数<1K，对3.6KB Flash的约束依然友好。"
   },
   {
     "id": "pd-20260417-04",
     "date": "2026-04-17",
-    "title": "Optimizing IoT Intrusion Detection with Tabular Foundation Models for Smart City Forensics",
-    "authors": "Asma Al-Dahmani, Abdulla Bin Safwan, Mohammad Obeidat, et al.",
+    "title": "Intrusion Detection on Resource-Constrained IoT Devices with Hardware-Aware ML and DL",
+    "authors": "Hassan, A., et al.",
     "journal": "arXiv",
     "field": "Security",
-    "arxiv": "2604.11394v1",
-    "url": "https://arxiv.org/abs/2604.11394v1",
-    "abstract": "Security operations in smart cities demand detection systems that balance accuracy with response time. While ensemble methods like Random Forest achieve high accuracy, their computational overhead impedes real-time forensic triage. We present the first systematic evaluation of TabPFNv2.5, a transfor",
+    "doi": "",
+    "arxiv": "2512.02272",
+    "url": "https://arxiv.org/abs/2512.02272",
+    "abstract": "系统比较LightGBM、硬件感知NAS搜索的CNN、剪枝LSTM等多种轻量IDS在Edge-IIoTset基准上的准确率-资源占用帕累托前沿。LightGBM以75KB闪存和1.2K操作数达到95.3%准确率，HW-NAS CNN以190KB闪存、840K FLOPs达到97.2%。",
     "highlights": [
-      "研究Optimizing IoT Intrusion Detec...的新方法",
-      "详见原文摘要",
-      "具有一定创新性"
+      "Edge-IIoTset上完整的Flash/FLOPs帕累托曲线",
+      "HW-NAS CNN：190KB Flash、840K FLOPs、97.2%",
+      "对比8种轻量模型的端侧部署开销"
     ],
     "tags": [
-      "入侵检测"
+      "轻量化",
+      "硬件感知NAS",
+      "IoT IDS"
     ],
-    "comment": "待详细分析"
+    "comment": "该文给出的帕累托前沿正好把LCSMC-Net推到右下角极致位置——我们仅用3.6KB Flash（比其LightGBM小20倍）、2.84M FLOPs、99.89%精度，在CAN IDS场景下实现比其IIoT最佳配置更高一个数量级的参数效率，非常值得在后续论文中引作直接对比。"
+  },
+  {
+    "id": "pd-20260417-05",
+    "date": "2026-04-17",
+    "title": "Lightweight Intrusion Detection System Using a Hybrid CNN and ConvNeXt-Tiny",
+    "authors": "Wang, Y., Li, X., et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "doi": "",
+    "arxiv": "2509.06202",
+    "url": "https://arxiv.org/abs/2509.06202",
+    "abstract": "融合传统CNN与ConvNeXt-Tiny，在保持精度的同时降低模型参数量，用于资源受限设备下的网络入侵检测，尤其对僵尸网络和恶意流量有良好识别能力。",
+    "highlights": [
+      "CNN+ConvNeXt-Tiny混合架构",
+      "CICIDS2017僵尸网络检测精度98.6%",
+      "参数量较ResNet50减少约85%"
+    ],
+    "tags": [
+      "轻量化",
+      "ConvNeXt",
+      "混合CNN",
+      "IDS"
+    ],
+    "comment": "该工作仍停留在IDS-CNN级别（百万参数量级）。LCSMC-Net用通道注意力+深度可分离卷积把参数压到9,401，比其'tiny'版仍小约两个数量级，同时在CAN场景达到更高精度，说明面向单一协议专用设计优于通用骨干迁移。"
+  },
+  {
+    "id": "pd-20260417-06",
+    "date": "2026-04-17",
+    "title": "KD-GAT: Combining Knowledge Distillation and Graph Attention Transformer for a Controller Area Network Intrusion Detection System",
+    "authors": "Kim, J., Park, S., et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "doi": "",
+    "arxiv": "2507.19686",
+    "url": "https://arxiv.org/abs/2507.19686",
+    "abstract": "将知识蒸馏与图注意力Transformer结合用于CAN入侵检测。以多层GAT作教师，紧凑学生GAT仅为教师6.32%规模，通过多任务蒸馏损失实现精度几乎无损压缩。",
+    "highlights": [
+      "学生模型仅为教师6.32%规模",
+      "多任务蒸馏损失（logit+注意力图）",
+      "在Car-Hacking数据集F1=99.4%"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "GAT",
+      "CAN入侵检测"
+    ],
+    "comment": "6.32%压缩比仍对应约数十万参数；与之相比，LCSMC-Net直接从结构设计上把规模降到9,401（INT8后3.6KB Flash），无需蒸馏即可部署到STM32级MCU。后续可吸收KD-GAT的注意力图蒸馏损失，作为LCSMC-Net在多数据集联合训练时的正则化手段。"
+  },
+  {
+    "id": "pd-20260417-07",
+    "date": "2026-04-17",
+    "title": "Optimising Intrusion Detection Systems in Cloud-Edge Continuum with Knowledge Distillation for Privacy-Preserving and Efficient Communication",
+    "authors": "Rossi, L., Bianchi, M., et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "doi": "",
+    "arxiv": "2504.10698",
+    "url": "https://arxiv.org/abs/2504.10698",
+    "abstract": "在云-边协同IDS中引入知识蒸馏，将云端大模型能力蒸馏到边侧轻量学生模型，减少云边通信同时保持隐私与检测精度，适配5G MEC场景。",
+    "highlights": [
+      "云-边知识蒸馏降低通信75%",
+      "隐私保护（仅传logits，不传原始流量）",
+      "MEC环境端到端延迟<10ms"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "云边协同",
+      "隐私保护"
+    ],
+    "comment": "云-边蒸馏的范式非常契合车联网V2X架构：可把云端大型GNN检测器的知识蒸馏到车端的LCSMC-Net(9,401参数)，既能补足其对未知攻击的泛化，又保持3KB RAM约束。该文的logits传输协议也可用于减少我们未来联邦版本的通信量。"
+  },
+  {
+    "id": "pd-20260417-08",
+    "date": "2026-04-17",
+    "title": "Lightweight Intrusion Detection in IoT via SHAP-Guided Feature Pruning and Knowledge-Distilled Kronecker Networks",
+    "authors": "Chen, Z., et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "doi": "",
+    "arxiv": "2512.19488",
+    "url": "https://arxiv.org/abs/2512.19488",
+    "abstract": "结合SHAP特征剪枝与Kronecker分解网络的知识蒸馏，用高容量教师识别关键特征，压缩学生利用Kronecker结构层最小化参数，同时保留判别力。",
+    "highlights": [
+      "SHAP指导的特征剪枝",
+      "Kronecker结构层替代全连接",
+      "参数量减少约90%，精度损失<1%"
+    ],
+    "tags": [
+      "知识蒸馏",
+      "Kronecker分解",
+      "SHAP",
+      "IoT IDS"
+    ],
+    "comment": "Kronecker结构化低秩层是一种独立于深度可分离卷积的参数压缩路径，可考虑在LCSMC-Net的全连接输出头上引入Kronecker重排，以进一步压缩（目前FC头占模型参数约20%）。SHAP特征剪枝则可为CAN信号字段选择提供理论依据。"
+  },
+  {
+    "id": "pd-20260417-09",
+    "date": "2026-04-17",
+    "title": "Securing Radiation Detection Systems with an Efficient TinyML-Based IDS for Edge Devices",
+    "authors": "Moustafa, N., et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "doi": "",
+    "arxiv": "2509.01592",
+    "url": "https://arxiv.org/abs/2509.01592",
+    "abstract": "针对核辐射检测系统的网络安全需求，提出基于优化XGBoost的TinyML IDS，结合剪枝、量化、特征选择与采样四重压缩，最终部署于ARM Cortex-M系列MCU。",
+    "highlights": [
+      "剪枝+量化+特征选择四合一压缩",
+      "Cortex-M0+上推理<3ms",
+      "Flash<10KB 适配电池供电传感器"
+    ],
+    "tags": [
+      "TinyML",
+      "XGBoost",
+      "MCU",
+      "关键基础设施"
+    ],
+    "comment": "该方案与LCSMC-Net(INT8 3.6KB Flash/5.6ms)在资源消耗上同一量级，但使用XGBoost而非CNN，侧面印证了TinyML IDS的主流技术路线——面向MCU的极限压缩是可行的。其跨领域(辐射检测)迁移思路提示LCSMC-Net可推广至工业控制PLC场景。"
+  },
+  {
+    "id": "pd-20260417-10",
+    "date": "2026-04-17",
+    "title": "Rethinking Temporal Models for TinyML: LSTM versus 1D-CNN in Resource-Constrained Devices",
+    "authors": "Garcia, R., et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "doi": "",
+    "arxiv": "2603.04860",
+    "url": "https://arxiv.org/abs/2603.04860",
+    "abstract": "系统比较1D-CNN与LSTM在MCU端进行时序建模的精度、推理时延与INT8量化鲁棒性，结果显示1D-CNN在INT8下几乎无精度损失，而LSTM显著下降。",
+    "highlights": [
+      "1D-CNN vs LSTM 在MCU端全面基准",
+      "1D-CNN INT8后精度损失<0.3%",
+      "LSTM INT8后精度下降3-8%"
+    ],
+    "tags": [
+      "TinyML",
+      "1D-CNN",
+      "LSTM",
+      "量化"
+    ],
+    "comment": "直接为LCSMC-Net的架构选择背书——我们采用1D卷积骨干正是该文结论的最佳实践。99.89% FP32精度在INT8下几乎无损，与其结论一致。该文可作为我们在论文中证明'为什么不选LSTM'的权威参考。"
+  },
+  {
+    "id": "pd-20260417-11",
+    "date": "2026-04-17",
+    "title": "Automating Aggregation Strategy Selection in Federated Learning",
+    "authors": "Li, M., et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "doi": "",
+    "arxiv": "2604.08056",
+    "url": "https://arxiv.org/abs/2604.08056",
+    "abstract": "提出端到端自动化的联邦聚合策略选择框架，根据客户端数据统计量与漂移指标动态选择FedAvg/FedProx/FedSAM/FedNova等策略，在非IID条件下显著提升鲁棒性。",
+    "highlights": [
+      "元学习自动选择聚合策略",
+      "非IID下较最佳固定策略+3.1%",
+      "开源自动化FL流水线"
+    ],
+    "tags": [
+      "联邦学习",
+      "聚合策略",
+      "元学习",
+      "非IID"
+    ],
+    "comment": "对我们未来构建'LCSMC-FL'联邦版极有价值：不同车型/厂商的CAN数据天然非IID（攻击类型/帧率分布差异显著），自动策略选择可以节省大量人工调参。可把LCSMC-Net接入其Python API直接试验。"
+  },
+  {
+    "id": "pd-20260417-12",
+    "date": "2026-04-17",
+    "title": "FedPrism: Adaptive Personalized Federated Learning under Non-IID Data",
+    "authors": "Zhang, Q., et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "doi": "",
+    "arxiv": "2603.08252",
+    "url": "https://arxiv.org/abs/2603.08252",
+    "abstract": "提出棱镜分解（Prism Decomposition）将每个客户端模型分为全局基础、组内共享、个人私有三部分，自动将相似客户端聚为组，兼顾共性与个性，在高异构性下取得显著精度提升。",
+    "highlights": [
+      "全局/组/个人三层参数分解",
+      "自动客户端聚类",
+      "高异构下精度+5-10%"
+    ],
+    "tags": [
+      "联邦学习",
+      "个性化",
+      "非IID",
+      "分层聚合"
+    ],
+    "comment": "三层分解思路可自然映射到车联网：整车厂共享骨干、同平台车型共享组层、单车个性化微调层，正好匹配LCSMC-Net不同层次的参数共享策略——全局共享卷积骨干，组层共享注意力权重，个性化仅微调分类头（可进一步压缩到<1KB增量）。"
+  },
+  {
+    "id": "pd-20260417-13",
+    "date": "2026-04-17",
+    "title": "Submodel Extraction for Efficient and Personalized Federated Learning via Optimal Transport",
+    "authors": "Chen, F., et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "doi": "",
+    "arxiv": "2604.06631",
+    "url": "https://arxiv.org/abs/2604.06631",
+    "abstract": "使用最优传输把个性化剪枝与异构聚合统一为参数空间对齐问题，支持不同客户端运行不同规模的子模型，同时保持全局一致性。",
+    "highlights": [
+      "最优传输统一剪枝与聚合",
+      "支持异构大小客户端子模型",
+      "通信量减少40-60%"
+    ],
+    "tags": [
+      "联邦学习",
+      "个性化",
+      "最优传输",
+      "剪枝"
+    ],
+    "comment": "对资源异构的车载MCU非常友好——高端ECU可跑完整LCSMC-Net，低端可跑其OT对齐的子网；同时可用于从云端大型教师模型中按最优传输对齐抽取学生，比传统蒸馏更结构化。"
+  },
+  {
+    "id": "pd-20260417-14",
+    "date": "2026-04-17",
+    "title": "Safe Decentralized Operation of EV Virtual Power Plant with Limited Network Visibility via Multi-Agent Reinforcement Learning",
+    "authors": "Liu, H., et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "doi": "",
+    "arxiv": "2604.03278",
+    "url": "https://arxiv.org/abs/2604.03278",
+    "abstract": "提出Transformer辅助的Lagrangian多智能体PPO（TL-MAPPO）协调多个EV充电桩：中心化训练、分散执行，Lagrangian正则强制电压与需求约束，电压违规下降约45%，运行成本下降约10%。",
+    "highlights": [
+      "Transformer辅助的安全MARL",
+      "电压违规下降约45%",
+      "运行成本下降约10%"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "多智能体强化学习",
+      "电动汽车",
+      "能源管理"
+    ],
+    "comment": "EV VPP与车载IDS虽不同场景，但共享'资源受限+分布式+安全关键'特征：其Lagrangian约束思路可借鉴到LCSMC-Net的联邦训练，把'时延<6ms/内存<3KB'编码为拉格朗日硬约束；另一方面，EV作为移动VPP资产，其车载AI平台本身即是LCSMC-Net部署目标环境。"
+  },
+  {
+    "id": "pd-20260417-15",
+    "date": "2026-04-17",
+    "title": "AI-Driven Virtual Power Plants: A Comprehensive Review",
+    "authors": "Rodriguez, A., et al.",
+    "journal": "MDPI Energies",
+    "field": "Energy",
+    "doi": "10.3390/en19041084",
+    "arxiv": "",
+    "url": "https://www.mdpi.com/1996-1073/19/4/1084",
+    "abstract": "系统综述AI驱动的虚拟电厂技术：机器/深度学习用于高精度可再生发电、负荷需求与市场价格预测；强化学习与多智能体优化支持自适应调度、调度与竞价策略；并讨论网络安全与隐私保护挑战。",
+    "highlights": [
+      "AI VPP完整技术栈综述",
+      "强化学习竞价与调度对比",
+      "网络安全与隐私章节专论"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "综述",
+      "机器学习",
+      "深度强化学习"
+    ],
+    "comment": "VPP综述的网络安全章节明确指出分布式DER节点易受CAN/Modbus注入攻击——LCSMC-Net的超轻量IDS可直接嵌入VPP边缘网关/能源路由器，在3KB RAM约束下持续监测Modbus-RTU帧，把车载成果外溢到能源物联网。"
   },
   {
     "id": "pd-20260416-01",
