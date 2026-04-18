@@ -5,13 +5,13 @@
     <link>https://startrungo.github.io/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Apr 2026 03:57:47 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 03:42:39 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Enhancing Cross-Problem Vehicle Routing via Federated Learning</title>
       <link>https://arxiv.org/abs/2604.10652v1</link>
-      <guid>pd-20260417-01</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <guid>pd-20260418-01</guid>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 GMT</pubDate>
       <category>AI/ML</category>
       <description>Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene
 
@@ -24,8 +24,8 @@
     <item>
       <title>Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection</title>
       <link>https://arxiv.org/abs/2604.14685v1</link>
-      <guid>pd-20260417-02</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <guid>pd-20260418-02</guid>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 GMT</pubDate>
       <category>Security</category>
       <description>Provenance-based intrusion detection has emerged as a promising approach for analyzing complex attack behaviors through system-level provenance graphs. However, existing defense methods face an inherent granularity limitation. Node-centric detectors, which evaluate anomalies using entities' attribut
 
@@ -38,8 +38,8 @@
     <item>
       <title>Robustness Analysis of Machine Learning Models for IoT Intrusion Detection Under Data Poisoning Attacks</title>
       <link>https://arxiv.org/abs/2604.14444v1</link>
-      <guid>pd-20260417-03</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <guid>pd-20260418-03</guid>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 GMT</pubDate>
       <category>Security</category>
       <description>Ensuring the reliability of machine learning-based intrusion detection systems remains a critical challenge in Internet of Things (IoT) environments, particularly as data poisoning attacks increasingly threaten the integrity of model training pipelines. This study evaluates the susceptibility of fou
 
@@ -52,8 +52,8 @@
     <item>
       <title>Optimizing IoT Intrusion Detection with Tabular Foundation Models for Smart City Forensics</title>
       <link>https://arxiv.org/abs/2604.11394v1</link>
-      <guid>pd-20260417-04</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <guid>pd-20260418-04</guid>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 GMT</pubDate>
       <category>Security</category>
       <description>Security operations in smart cities demand detection systems that balance accuracy with response time. While ensemble methods like Random Forest achieve high accuracy, their computational overhead impedes real-time forensic triage. We present the first systematic evaluation of TabPFNv2.5, a transfor
 
@@ -62,6 +62,216 @@
 • 具有一定创新性
 
 待详细分析</description>
+    </item>
+    <item>
+      <title>FedLiTeCAN: A Federated Lightweight Transformer for Fast and Robust CAN Bus Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2512.24088</link>
+      <guid>pd-20260417-01</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>提出联邦学习框架下的轻量化Transformer CAN总线入侵检测模型。以连接车辆为本地节点，聚合加密的模型权重而不共享原始CAN流量。在多种攻击类型上实现鲁棒检测且推理延迟显著低于标准Transformer。
+
+• 首个针对CAN总线的联邦轻量Transformer IDS
+• 在DoS/Fuzzy/Spoofing攻击上F1&gt;99%
+• 推理延迟较标准Transformer降低约60%
+
+与LCSMC-Net（9,401参数/2.84M FLOPs/99.89%）相比，该工作采用Transformer骨干并用联邦方式训练，模型规模预计至少一个量级更大；但提供的联邦思路可直接与LCSMC-Net结合——把LCSMC-Net作为客户端局部模型以实现极低带宽(&lt;10KB/轮)的参数聚合，补齐我们单模型在多厂商OEM异构数据上的泛化短板。</description>
+    </item>
+    <item>
+      <title>Evaluating the Impact of Privacy-Preserving Federated Learning on CAN Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2506.04978</link>
+      <guid>pd-20260417-02</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>在50辆车规模下系统比较集中式与联邦式LSTM自编码器入侵检测性能，包括差分隐私与安全聚合对检测率、误报率的综合影响。结果显示隐私保护机制引入约2-4%的检测损失但显著改善跨车型泛化。
+
+• 50节点大规模CAN联邦学习实测基准
+• 量化差分隐私对IDS检测率的影响
+• 开源CANdito联邦检测框架
+
+该文的基准实验和开源代码可直接用作LCSMC-Net的联邦版本对比基线。我们的INT8量化模型（3.6KB Flash）在带宽占用上远低于其LSTM-AE，且9,401参数意味着单轮上行仅~9.4KB，非常适合将其联邦协议直接移植，并可在车载MCU上在线持续学习。</description>
+    </item>
+    <item>
+      <title>Fine-Tuning Federated Learning-Based Intrusion Detection Systems for Transportation IoT</title>
+      <link>https://arxiv.org/abs/2502.06099</link>
+      <guid>pd-20260417-03</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>针对交通物联网场景提出联邦预训练+本地微调的IDS框架，在公共CAN数据集上预训练全局模型后，在各车辆端以少量样本(&lt;5%)进行LoRA式微调，兼顾全局一致性与个性化攻击模式识别。
+
+• 联邦预训练+本地LoRA微调两阶段策略
+• 少样本(&lt;5%)微调精度提升3-8%
+• 降低通信开销约70%
+
+两阶段范式对LCSMC-Net极具启发：先用多个开源CAN数据集联邦预训练9,401参数模型，再针对每辆目标车的CAN-ID分布做微调。考虑到我们的卷积结构，可仿照LoRA做通道级低秩残差微调，预计增量参数&lt;1K，对3.6KB Flash的约束依然友好。</description>
+    </item>
+    <item>
+      <title>Intrusion Detection on Resource-Constrained IoT Devices with Hardware-Aware ML and DL</title>
+      <link>https://arxiv.org/abs/2512.02272</link>
+      <guid>pd-20260417-04</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>系统比较LightGBM、硬件感知NAS搜索的CNN、剪枝LSTM等多种轻量IDS在Edge-IIoTset基准上的准确率-资源占用帕累托前沿。LightGBM以75KB闪存和1.2K操作数达到95.3%准确率，HW-NAS CNN以190KB闪存、840K FLOPs达到97.2%。
+
+• Edge-IIoTset上完整的Flash/FLOPs帕累托曲线
+• HW-NAS CNN：190KB Flash、840K FLOPs、97.2%
+• 对比8种轻量模型的端侧部署开销
+
+该文给出的帕累托前沿正好把LCSMC-Net推到右下角极致位置——我们仅用3.6KB Flash（比其LightGBM小20倍）、2.84M FLOPs、99.89%精度，在CAN IDS场景下实现比其IIoT最佳配置更高一个数量级的参数效率，非常值得在后续论文中引作直接对比。</description>
+    </item>
+    <item>
+      <title>Lightweight Intrusion Detection System Using a Hybrid CNN and ConvNeXt-Tiny</title>
+      <link>https://arxiv.org/abs/2509.06202</link>
+      <guid>pd-20260417-05</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>融合传统CNN与ConvNeXt-Tiny，在保持精度的同时降低模型参数量，用于资源受限设备下的网络入侵检测，尤其对僵尸网络和恶意流量有良好识别能力。
+
+• CNN+ConvNeXt-Tiny混合架构
+• CICIDS2017僵尸网络检测精度98.6%
+• 参数量较ResNet50减少约85%
+
+该工作仍停留在IDS-CNN级别（百万参数量级）。LCSMC-Net用通道注意力+深度可分离卷积把参数压到9,401，比其'tiny'版仍小约两个数量级，同时在CAN场景达到更高精度，说明面向单一协议专用设计优于通用骨干迁移。</description>
+    </item>
+    <item>
+      <title>KD-GAT: Combining Knowledge Distillation and Graph Attention Transformer for a Controller Area Network Intrusion Detection System</title>
+      <link>https://arxiv.org/abs/2507.19686</link>
+      <guid>pd-20260417-06</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>将知识蒸馏与图注意力Transformer结合用于CAN入侵检测。以多层GAT作教师，紧凑学生GAT仅为教师6.32%规模，通过多任务蒸馏损失实现精度几乎无损压缩。
+
+• 学生模型仅为教师6.32%规模
+• 多任务蒸馏损失（logit+注意力图）
+• 在Car-Hacking数据集F1=99.4%
+
+6.32%压缩比仍对应约数十万参数；与之相比，LCSMC-Net直接从结构设计上把规模降到9,401（INT8后3.6KB Flash），无需蒸馏即可部署到STM32级MCU。后续可吸收KD-GAT的注意力图蒸馏损失，作为LCSMC-Net在多数据集联合训练时的正则化手段。</description>
+    </item>
+    <item>
+      <title>Optimising Intrusion Detection Systems in Cloud-Edge Continuum with Knowledge Distillation for Privacy-Preserving and Efficient Communication</title>
+      <link>https://arxiv.org/abs/2504.10698</link>
+      <guid>pd-20260417-07</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>在云-边协同IDS中引入知识蒸馏，将云端大模型能力蒸馏到边侧轻量学生模型，减少云边通信同时保持隐私与检测精度，适配5G MEC场景。
+
+• 云-边知识蒸馏降低通信75%
+• 隐私保护（仅传logits，不传原始流量）
+• MEC环境端到端延迟&lt;10ms
+
+云-边蒸馏的范式非常契合车联网V2X架构：可把云端大型GNN检测器的知识蒸馏到车端的LCSMC-Net(9,401参数)，既能补足其对未知攻击的泛化，又保持3KB RAM约束。该文的logits传输协议也可用于减少我们未来联邦版本的通信量。</description>
+    </item>
+    <item>
+      <title>Lightweight Intrusion Detection in IoT via SHAP-Guided Feature Pruning and Knowledge-Distilled Kronecker Networks</title>
+      <link>https://arxiv.org/abs/2512.19488</link>
+      <guid>pd-20260417-08</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>结合SHAP特征剪枝与Kronecker分解网络的知识蒸馏，用高容量教师识别关键特征，压缩学生利用Kronecker结构层最小化参数，同时保留判别力。
+
+• SHAP指导的特征剪枝
+• Kronecker结构层替代全连接
+• 参数量减少约90%，精度损失&lt;1%
+
+Kronecker结构化低秩层是一种独立于深度可分离卷积的参数压缩路径，可考虑在LCSMC-Net的全连接输出头上引入Kronecker重排，以进一步压缩（目前FC头占模型参数约20%）。SHAP特征剪枝则可为CAN信号字段选择提供理论依据。</description>
+    </item>
+    <item>
+      <title>Securing Radiation Detection Systems with an Efficient TinyML-Based IDS for Edge Devices</title>
+      <link>https://arxiv.org/abs/2509.01592</link>
+      <guid>pd-20260417-09</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>针对核辐射检测系统的网络安全需求，提出基于优化XGBoost的TinyML IDS，结合剪枝、量化、特征选择与采样四重压缩，最终部署于ARM Cortex-M系列MCU。
+
+• 剪枝+量化+特征选择四合一压缩
+• Cortex-M0+上推理&lt;3ms
+• Flash&lt;10KB 适配电池供电传感器
+
+该方案与LCSMC-Net(INT8 3.6KB Flash/5.6ms)在资源消耗上同一量级，但使用XGBoost而非CNN，侧面印证了TinyML IDS的主流技术路线——面向MCU的极限压缩是可行的。其跨领域(辐射检测)迁移思路提示LCSMC-Net可推广至工业控制PLC场景。</description>
+    </item>
+    <item>
+      <title>Rethinking Temporal Models for TinyML: LSTM versus 1D-CNN in Resource-Constrained Devices</title>
+      <link>https://arxiv.org/abs/2603.04860</link>
+      <guid>pd-20260417-10</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>系统比较1D-CNN与LSTM在MCU端进行时序建模的精度、推理时延与INT8量化鲁棒性，结果显示1D-CNN在INT8下几乎无精度损失，而LSTM显著下降。
+
+• 1D-CNN vs LSTM 在MCU端全面基准
+• 1D-CNN INT8后精度损失&lt;0.3%
+• LSTM INT8后精度下降3-8%
+
+直接为LCSMC-Net的架构选择背书——我们采用1D卷积骨干正是该文结论的最佳实践。99.89% FP32精度在INT8下几乎无损，与其结论一致。该文可作为我们在论文中证明'为什么不选LSTM'的权威参考。</description>
+    </item>
+    <item>
+      <title>Automating Aggregation Strategy Selection in Federated Learning</title>
+      <link>https://arxiv.org/abs/2604.08056</link>
+      <guid>pd-20260417-11</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>提出端到端自动化的联邦聚合策略选择框架，根据客户端数据统计量与漂移指标动态选择FedAvg/FedProx/FedSAM/FedNova等策略，在非IID条件下显著提升鲁棒性。
+
+• 元学习自动选择聚合策略
+• 非IID下较最佳固定策略+3.1%
+• 开源自动化FL流水线
+
+对我们未来构建'LCSMC-FL'联邦版极有价值：不同车型/厂商的CAN数据天然非IID（攻击类型/帧率分布差异显著），自动策略选择可以节省大量人工调参。可把LCSMC-Net接入其Python API直接试验。</description>
+    </item>
+    <item>
+      <title>FedPrism: Adaptive Personalized Federated Learning under Non-IID Data</title>
+      <link>https://arxiv.org/abs/2603.08252</link>
+      <guid>pd-20260417-12</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>提出棱镜分解（Prism Decomposition）将每个客户端模型分为全局基础、组内共享、个人私有三部分，自动将相似客户端聚为组，兼顾共性与个性，在高异构性下取得显著精度提升。
+
+• 全局/组/个人三层参数分解
+• 自动客户端聚类
+• 高异构下精度+5-10%
+
+三层分解思路可自然映射到车联网：整车厂共享骨干、同平台车型共享组层、单车个性化微调层，正好匹配LCSMC-Net不同层次的参数共享策略——全局共享卷积骨干，组层共享注意力权重，个性化仅微调分类头（可进一步压缩到&lt;1KB增量）。</description>
+    </item>
+    <item>
+      <title>Submodel Extraction for Efficient and Personalized Federated Learning via Optimal Transport</title>
+      <link>https://arxiv.org/abs/2604.06631</link>
+      <guid>pd-20260417-13</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>使用最优传输把个性化剪枝与异构聚合统一为参数空间对齐问题，支持不同客户端运行不同规模的子模型，同时保持全局一致性。
+
+• 最优传输统一剪枝与聚合
+• 支持异构大小客户端子模型
+• 通信量减少40-60%
+
+对资源异构的车载MCU非常友好——高端ECU可跑完整LCSMC-Net，低端可跑其OT对齐的子网；同时可用于从云端大型教师模型中按最优传输对齐抽取学生，比传统蒸馏更结构化。</description>
+    </item>
+    <item>
+      <title>Safe Decentralized Operation of EV Virtual Power Plant with Limited Network Visibility via Multi-Agent Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2604.03278</link>
+      <guid>pd-20260417-14</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>提出Transformer辅助的Lagrangian多智能体PPO（TL-MAPPO）协调多个EV充电桩：中心化训练、分散执行，Lagrangian正则强制电压与需求约束，电压违规下降约45%，运行成本下降约10%。
+
+• Transformer辅助的安全MARL
+• 电压违规下降约45%
+• 运行成本下降约10%
+
+EV VPP与车载IDS虽不同场景，但共享'资源受限+分布式+安全关键'特征：其Lagrangian约束思路可借鉴到LCSMC-Net的联邦训练，把'时延&lt;6ms/内存&lt;3KB'编码为拉格朗日硬约束；另一方面，EV作为移动VPP资产，其车载AI平台本身即是LCSMC-Net部署目标环境。</description>
+    </item>
+    <item>
+      <title>AI-Driven Virtual Power Plants: A Comprehensive Review</title>
+      <link>https://www.mdpi.com/1996-1073/19/4/1084</link>
+      <guid>pd-20260417-15</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>系统综述AI驱动的虚拟电厂技术：机器/深度学习用于高精度可再生发电、负荷需求与市场价格预测；强化学习与多智能体优化支持自适应调度、调度与竞价策略；并讨论网络安全与隐私保护挑战。
+
+• AI VPP完整技术栈综述
+• 强化学习竞价与调度对比
+• 网络安全与隐私章节专论
+
+VPP综述的网络安全章节明确指出分布式DER节点易受CAN/Modbus注入攻击——LCSMC-Net的超轻量IDS可直接嵌入VPP边缘网关/能源路由器，在3KB RAM约束下持续监测Modbus-RTU帧，把车载成果外溢到能源物联网。</description>
     </item>
     <item>
       <title>Enhancing Cross-Problem Vehicle Routing via Federated Learning</title>
@@ -492,216 +702,6 @@
       <description>This paper presents a lightweight K-Means anomaly detection model and a distributed model-sharing workflow designed for resource-constrained microcontrollers (MCUs). Using real power measurements from a mini-fridge appliance, the system performs on-device feature extraction, clustering, and threshol
 
 • 研究K-Means Based TinyML Anomaly D...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Day-Ahead Offering for Virtual Power Plants: A Stochastic Linear Programming Reformulation and Projected Subgradient Method</title>
-      <link>https://arxiv.org/abs/2604.01755v1</link>
-      <guid>pd-20260404-02</guid>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>Virtual power plants (VPPs) are an emerging paradigm that aggregates distributed energy resources (DERs) for coordinated participation in power systems, including bidding as a single dispatchable entity in the wholesale market. In this paper, we address a critical operational challenge for VPPs: the
-
-• 研究Day-Ahead Offering for Virtual...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Incremental Federated Learning for Intrusion Detection in IoT Networks under Evolving Threat Landscape</title>
-      <link>https://arxiv.org/abs/2603.10776v2</link>
-      <guid>pd-20260403-01</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The expansion of Internet of Things (IoT) devices has increased the attack surface of networks, necessitating a robust and adaptive intrusion detection systems. Machine learning based systems have been considered promising in enhancing the detection performance. Federated learning settings enabled u
-
-• 研究Incremental Federated Learning...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Semantic Communication-Enhanced Split Federated Learning for Vehicular Networks: Architecture, Challenges, and Case Study</title>
-      <link>https://arxiv.org/abs/2603.04936v1</link>
-      <guid>pd-20260403-02</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Vehicular edge intelligence (VEI) is vital for future intelligent transportation systems. However, traditional centralized learning in dynamic vehicular networks faces significant communication overhead and privacy risks. Split federated learning (SFL) offers a distributed solution but is often hind
-
-• 研究Semantic Communication-Enhance...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>On Electric Vehicle Energy Demand Forecasting and the Effect of Federated Learning</title>
-      <link>https://arxiv.org/abs/2602.20782v1</link>
-      <guid>pd-20260403-03</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>The wide spread of new energy resources, smart devices, and demand side management strategies has motivated several analytics operations, from infrastructure load modeling to user behavior profiling. Energy Demand Forecasting (EDF) of Electric Vehicle Supply Equipments (EVSEs) is one of the most cri
-
-• 研究On Electric Vehicle Energy Dem...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Fractional Order Federated Learning for Battery Electric Vehicle Energy Consumption Modeling</title>
-      <link>https://arxiv.org/abs/2602.12567v1</link>
-      <guid>pd-20260403-04</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Federated learning on connected electric vehicles (BEVs) faces severe instability due to intermittent connectivity, time-varying client participation, and pronounced client-to-client variation induced by diverse operating conditions. Conventional FedAvg and many advanced methods can suffer from exce
-
-• 研究Fractional Order Federated Lea...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Lightweight Cluster-Based Federated Learning for Intrusion Detection in Heterogeneous IoT Networks</title>
-      <link>https://arxiv.org/abs/2602.12543v1</link>
-      <guid>pd-20260403-05</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rise of heterogeneous Internet of Things (IoT) devices has raised security concerns due to their vulnerability to cyberattacks. Intrusion Detection Systems (IDS) are crucial in addressing these threats. Federated Learning (FL) offers a privacy-preserving solution, but IoT heterogeneity and limit
-
-• 研究Lightweight Cluster-Based Fede...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Adaptive Meta-Aggregation Federated Learning for Intrusion Detection in Heterogeneous Internet of Things</title>
-      <link>https://arxiv.org/abs/2602.12541v1</link>
-      <guid>pd-20260403-06</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of the Internet of Things (IoT) has brought remarkable advancements to industries by enabling interconnected systems and intelligent automation. However, this exponential growth has also introduced significant security vulnerabilities, making IoT networks increasingly targets
-
-• 研究Adaptive Meta-Aggregation Fede...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>VR-VFL: Joint Rate and Client Selection for Vehicular Federated Learning Under Imperfect CSI</title>
-      <link>https://arxiv.org/abs/2602.03711v1</link>
-      <guid>pd-20260403-07</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Federated learning in vehicular edge networks faces major challenges in efficient resource allocation, largely due to high vehicle mobility and the presence of imperfect channel state information. Many existing methods oversimplify these realities, often assuming fixed communication rounds or ideal 
-
-• 研究VR-VFL: Joint Rate and Client ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SecureDyn-FL: A Robust Privacy-Preserving Federated Learning Framework for Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2601.06466v1</link>
-      <guid>pd-20260403-08</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of Things (IoT) devices across domains such as smart homes, industrial control systems, and healthcare networks has significantly expanded the attack surface for cyber threats, including botnet-driven distributed denial-of-service (DDoS), malware injection, and da
-
-• 研究SecureDyn-FL: A Robust Privacy...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>FLAD: Federated Learning for LLM-based Autonomous Driving in Vehicle-Edge-Cloud Networks</title>
-      <link>https://arxiv.org/abs/2511.09025v1</link>
-      <guid>pd-20260403-09</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Large Language Models (LLMs) have impressive data fusion and reasoning capabilities for autonomous driving (AD). However, training LLMs for AD faces significant challenges including high computation transmission costs, and privacy concerns associated with sensitive driving data. Federated Learning (
-
-• 研究FLAD: Federated Learning for L...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Mist-Assisted Federated Learning for Intrusion Detection in Heterogeneous IoT Networks</title>
-      <link>https://arxiv.org/abs/2511.00271v1</link>
-      <guid>pd-20260403-10</guid>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid growth of the Internet of Things (IoT) offers new opportunities but also expands the attack surface of distributed, resource-limited devices. Intrusion detection in such environments is difficult due to data heterogeneity from diverse sensing modalities and the non-IID distribution of samp
-
-• 研究Mist-Assisted Federated Learni...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>K-Means Based TinyML Anomaly Detection and Distributed Model Reuse via the Distributed Internet of Learning (DIoL)</title>
-      <link>https://arxiv.org/abs/2603.27393v1</link>
-      <guid>pd-20260402-01</guid>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>This paper presents a lightweight K-Means anomaly detection model and a distributed model-sharing workflow designed for resource-constrained microcontrollers (MCUs). Using real power measurements from a mini-fridge appliance, the system performs on-device feature extraction, clustering, and threshol
-
-• 研究K-Means Based TinyML Anomaly D...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>TinyML for Acoustic Anomaly Detection in IoT Sensor Networks</title>
-      <link>https://arxiv.org/abs/2603.26135v1</link>
-      <guid>pd-20260402-02</guid>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Tiny Machine Learning enables real-time, energy-efficient data processing directly on microcontrollers, making it ideal for Internet of Things sensor networks. This paper presents a compact TinyML pipeline for detecting anomalies in environmental sound within IoT sensor networks. Acoustic monitoring
-
-• 研究TinyML for Acoustic Anomaly De...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Once-for-All Channel Mixers (HYPERTINYPW): Generative Compression for TinyML</title>
-      <link>https://arxiv.org/abs/2603.24916v1</link>
-      <guid>pd-20260402-03</guid>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Deploying neural networks on microcontrollers is constrained by kilobytes of flash and SRAM, where 1x1 pointwise (PW) mixers often dominate memory even after INT8 quantization across vision, audio, and wearable sensing. We present HYPER-TINYPW, a compression-as-generation approach that replaces most
-
-• 研究Once-for-All Channel Mixers (H...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Knowledge Distillation for Efficient Transformer-Based Reinforcement Learning in Hardware-Constrained Energy Management Systems</title>
-      <link>https://arxiv.org/abs/2603.26249v1</link>
-      <guid>pd-20260402-04</guid>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Transformer-based reinforcement learning has emerged as a strong candidate for sequential control in residential energy management. In particular, the Decision Transformer can learn effective battery dispatch policies from historical data, thereby increasing photovoltaic self-consumption and reducin
-
-• 研究Knowledge Distillation for Eff...的新方法
 • 详见原文摘要
 • 具有一定创新性
 

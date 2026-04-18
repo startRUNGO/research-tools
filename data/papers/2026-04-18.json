@@ -1,0 +1,84 @@
+[
+  {
+    "id": "pd-20260418-01",
+    "date": "2026-04-18",
+    "title": "Enhancing Cross-Problem Vehicle Routing via Federated Learning",
+    "authors": "Xiangchi Meng, Jianan Zhou, Jie Gao, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2604.10652v1",
+    "url": "https://arxiv.org/abs/2604.10652v1",
+    "abstract": "Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene",
+    "highlights": [
+      "研究Enhancing Cross-Problem Vehicl...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260418-02",
+    "date": "2026-04-18",
+    "title": "Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection",
+    "authors": "Fan Yang, Binyan Xu, Di Tang, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2604.14685v1",
+    "url": "https://arxiv.org/abs/2604.14685v1",
+    "abstract": "Provenance-based intrusion detection has emerged as a promising approach for analyzing complex attack behaviors through system-level provenance graphs. However, existing defense methods face an inherent granularity limitation. Node-centric detectors, which evaluate anomalies using entities' attribut",
+    "highlights": [
+      "研究Beyond Nodes vs. Edges: A Mult...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260418-03",
+    "date": "2026-04-18",
+    "title": "Robustness Analysis of Machine Learning Models for IoT Intrusion Detection Under Data Poisoning Attacks",
+    "authors": "Fortunatus Aabangbio Wulnye, Justice Owusu Agyemang, Kwame Opuni-Boachie Obour Agyekum, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2604.14444v1",
+    "url": "https://arxiv.org/abs/2604.14444v1",
+    "abstract": "Ensuring the reliability of machine learning-based intrusion detection systems remains a critical challenge in Internet of Things (IoT) environments, particularly as data poisoning attacks increasingly threaten the integrity of model training pipelines. This study evaluates the susceptibility of fou",
+    "highlights": [
+      "研究Robustness Analysis of Machine...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260418-04",
+    "date": "2026-04-18",
+    "title": "Optimizing IoT Intrusion Detection with Tabular Foundation Models for Smart City Forensics",
+    "authors": "Asma Al-Dahmani, Abdulla Bin Safwan, Mohammad Obeidat, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2604.11394v1",
+    "url": "https://arxiv.org/abs/2604.11394v1",
+    "abstract": "Security operations in smart cities demand detection systems that balance accuracy with response time. While ensemble methods like Random Forest achieve high accuracy, their computational overhead impedes real-time forensic triage. We present the first systematic evaluation of TabPFNv2.5, a transfor",
+    "highlights": [
+      "研究Optimizing IoT Intrusion Detec...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
