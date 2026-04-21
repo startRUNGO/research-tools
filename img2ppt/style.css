@@ -106,6 +106,18 @@ a:hover { text-decoration: underline; }
 .prec-name { font-size: 15px; color: var(--gold); margin-bottom: 6px; letter-spacing: 0.5px; }
 .prec-desc { font-size: 12px; color: var(--text2); line-height: 1.5; }
 
+.prec-note {
+  background: var(--bg3);
+  border-left: 3px solid var(--text2);
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--text2);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.prec-note strong { color: var(--gold); font-weight: 600; }
+
 .high-fallback {
   background: var(--bg3);
   border-left: 3px solid var(--gold);

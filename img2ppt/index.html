@@ -33,16 +33,19 @@
     <div class="precision-row">
       <button class="prec-btn active" data-prec="low">
         <div class="prec-name">低精度 Low</div>
-        <div class="prec-desc">6 色 · 快速追踪<br>~1 秒 · 少量元素</div>
+        <div class="prec-desc">8 色 · 快速追踪<br>~1 秒 · 海报化</div>
       </button>
       <button class="prec-btn" data-prec="medium">
         <div class="prec-name">中精度 Medium</div>
-        <div class="prec-desc">16 色 · 细节保留<br>~3-10 秒 · 较多元素</div>
+        <div class="prec-desc">32 色 · 细节保留<br>~5-15 秒 · 更多元素</div>
       </button>
       <button class="prec-btn" data-prec="high">
         <div class="prec-name">高精度 High</div>
-        <div class="prec-desc">SAM3 分割<br>需自建后端 · 真正可编辑形状</div>
+        <div class="prec-desc">SAM3 分割 · 需自建后端<br>真正可编辑 shape（非图片）</div>
       </button>
+    </div>
+    <div class="prec-note">
+      <strong>低/中精度</strong>适合线稿、UI 截图、图表；照片和 AI 生图会得到风格化海报（imagetracer 算法天花板）。照片级还原走<strong>高精度</strong>。
     </div>
     <div class="high-fallback" id="highConfig" hidden>
       <label>Backend URL:

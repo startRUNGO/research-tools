@@ -18,10 +18,10 @@ const BACKEND_KEY = 'img2ppt.backendUrl';
 
 const PRECISION_OPTS = {
   low: {
-    numberofcolors: 6,
+    numberofcolors: 8,
     ltres: 1,
     qtres: 1,
-    pathomit: 20,
+    pathomit: 12,
     colorsampling: 2,
     colorquantcycles: 3,
     rightangleenhance: true,
@@ -30,10 +30,10 @@ const PRECISION_OPTS = {
     viewbox: true,
   },
   medium: {
-    numberofcolors: 16,
-    ltres: 0.4,
-    qtres: 0.4,
-    pathomit: 8,
+    numberofcolors: 32,
+    ltres: 0.2,
+    qtres: 0.2,
+    pathomit: 3,
     colorsampling: 2,
     colorquantcycles: 3,
     rightangleenhance: true,
@@ -42,6 +42,8 @@ const PRECISION_OPTS = {
     viewbox: true,
   },
 };
+
+const TRACE_MAX_PX = 1600;
 
 // ---- Upload ----
 const drop = $('drop');
@@ -77,14 +79,14 @@ function loadFile(file) {
 
 function drawOriginal(img) {
   const canvas = $('canvasOrig');
-  const MAX = 800;
-  const scale = Math.min(1, MAX / Math.max(img.width, img.height));
-  canvas.width = img.width * scale;
-  canvas.height = img.height * scale;
+  const scale = Math.min(1, TRACE_MAX_PX / Math.max(img.width, img.height));
+  canvas.width = Math.round(img.width * scale);
+  canvas.height = Math.round(img.height * scale);
   const ctx = canvas.getContext('2d');
   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
   state.imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-  $('metaOrig').textContent = `${img.width} × ${img.height} px  →  preview ${canvas.width} × ${canvas.height}`;
+  const scaleMsg = scale < 1 ? `  →  trace ${canvas.width} × ${canvas.height}` : '';
+  $('metaOrig').textContent = `${img.width} × ${img.height} px${scaleMsg}`;
 }
 
 // ---- Precision selection ----
