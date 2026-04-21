@@ -102,7 +102,14 @@ document.querySelectorAll('.prec-btn').forEach((btn) => {
 
 // ---- Backend URL ----
 const backendInput = $('backendUrl');
-backendInput.value = localStorage.getItem(BACKEND_KEY) || '';
+// If frontend is served from the backend itself (e.g. http://host:8000/ui/),
+// default Backend URL to the current origin — no manual config needed.
+function defaultBackendUrl() {
+  if (!location.protocol.startsWith('http')) return '';
+  if (location.pathname.includes('/ui/')) return location.origin;
+  return '';
+}
+backendInput.value = localStorage.getItem(BACKEND_KEY) || defaultBackendUrl();
 backendInput.addEventListener('change', () => {
   localStorage.setItem(BACKEND_KEY, backendInput.value.trim());
 });

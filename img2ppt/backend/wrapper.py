@@ -27,11 +27,13 @@ from pathlib import Path
 from fastapi import FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 import uvicorn
 
 EB_DIR = Path(os.environ.get("EB_DIR", Path(__file__).resolve().parent)).resolve()
 INPUT_DIR = EB_DIR / "input"
 OUTPUT_DIR = EB_DIR / "output"
+UI_DIR = Path(os.environ.get("EB_UI_DIR", EB_DIR / "ui")).resolve()
 PYTHON = os.environ.get("EB_PYTHON", sys.executable)
 TIMEOUT_SEC = int(os.environ.get("EB_TIMEOUT", "600"))
 MAIN_SCRIPT = EB_DIR / "main.py"
@@ -46,6 +48,9 @@ app.add_middleware(
     allow_methods=["POST", "GET", "OPTIONS"],
     allow_headers=["*"],
 )
+
+if UI_DIR.is_dir():
+    app.mount("/ui", StaticFiles(directory=str(UI_DIR), html=True), name="ui")
 
 
 @app.on_event("startup")
