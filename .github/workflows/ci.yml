@@ -18,15 +18,15 @@ jobs:
           node-version: '20'
 
       - name: Run tests
-        run: node tests/run.js
+        run: node research-tools/tests/run.js
 
       - name: Validate HTML structure
         run: |
           echo "Checking file sizes..."
-          wc -l index.html css/*.css js/*.js
+          wc -l research-tools/index.html research-tools/css/*.css research-tools/js/*.js
           echo ""
           echo "Checking for console.error/debug left in code..."
-          ! grep -rn "console\.error\|console\.debug" js/ || echo "Warning: console.error/debug found"
+          ! grep -rn "console\.error\|console\.debug" research-tools/js/ || echo "Warning: console.error/debug found"
 
   deploy:
     needs: test

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://startrungo.github.io/research-tools/sitemap.xml

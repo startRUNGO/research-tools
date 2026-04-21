@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://startrungo.github.io/research-tools/</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://startrungo.github.io/research-tools/#paper-digest</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/#paper-digest</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://startrungo.github.io/research-tools/#latex</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/#latex</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://startrungo.github.io/research-tools/#svg</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/#svg</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://startrungo.github.io/research-tools/#ai-writing</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/#ai-writing</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://startrungo.github.io/research-tools/#ai-tools</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/#ai-tools</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://startrungo.github.io/research-tools/#models</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/#models</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://startrungo.github.io/research-tools/#resources</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/#resources</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://startrungo.github.io/research-tools/#flowcharts</loc>
+    <loc>https://startrungo.github.io/research-tools/research-tools/#flowcharts</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -1,0 +1,2158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Tools Hub - Free Academic Research Tools</title>
+    <meta name="description" content="Free online research tools: LaTeX formatter, SVG editor, AI writing assistant, daily paper digest, neural network models. Built for academics and researchers.">
+    <meta name="keywords" content="research tools,LaTeX formatter,SVG editor,AI writing,paper digest,federated learning,TinyML,academic tools,科研工具">
+    <meta name="author" content="startRUNGO">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="rKVL41o8A8OeFikgmbj9HBrCEfa7jQh3aO4tTHZDJ_A" />
+    <link rel="canonical" href="https://startrungo.github.io/research-tools/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Research Tools Hub - Free Academic Research Tools">
+    <meta property="og:description" content="Free online tools for researchers: LaTeX formatter, SVG editor, AI writing assistant, daily paper digest from top journals, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://startrungo.github.io/research-tools/">
+    <meta property="og:image" content="https://startrungo.github.io/research-tools/icons/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Research Tools Hub - Free Academic Research Tools">
+    <meta name="twitter:description" content="LaTeX formatter, SVG editor, AI writing, daily paper digest and more. Free tools for academics.">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Research Tools Hub",
+        "url": "https://startrungo.github.io/research-tools/",
+        "description": "Free online research tools: LaTeX formatter, SVG editor, AI writing assistant, daily paper digest, and more for academics and researchers.",
+        "inLanguage": ["en", "zh-CN"],
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://startrungo.github.io/research-tools/#paper-digest?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Research Tools",
+        "description": "Free online tools for academic researchers",
+        "numberOfItems": 10,
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Paper Digest", "url": "https://startrungo.github.io/research-tools/#paper-digest", "description": "Daily curated papers from top journals with AI-powered analysis" },
+            { "@type": "ListItem", "position": 2, "name": "LaTeX Formatter", "url": "https://startrungo.github.io/research-tools/#latex", "description": "Format and preview LaTeX code online" },
+            { "@type": "ListItem", "position": 3, "name": "SVG Editor", "url": "https://startrungo.github.io/research-tools/#svg", "description": "Create and edit SVG vector graphics for papers" },
+            { "@type": "ListItem", "position": 4, "name": "AI Writing Assistant", "url": "https://startrungo.github.io/research-tools/#ai-writing", "description": "AI prompts for paper polishing and review replies" },
+            { "@type": "ListItem", "position": 5, "name": "Data Visualization", "url": "https://startrungo.github.io/research-tools/#data-viz", "description": "Create charts for research papers" },
+            { "@type": "ListItem", "position": 6, "name": "Reference Manager", "url": "https://startrungo.github.io/research-tools/#references", "description": "DOI lookup and citation formatting" },
+            { "@type": "ListItem", "position": 7, "name": "Neural Network Models", "url": "https://startrungo.github.io/research-tools/#models", "description": "Visual neural network architecture diagrams" },
+            { "@type": "ListItem", "position": 8, "name": "Markdown Editor", "url": "https://startrungo.github.io/research-tools/#markdown", "description": "Online Markdown editor with preview" },
+            { "@type": "ListItem", "position": 9, "name": "Formula Helper", "url": "https://startrungo.github.io/research-tools/#formula", "description": "Math symbols and LaTeX command reference" },
+            { "@type": "ListItem", "position": 10, "name": "Pomodoro Timer", "url": "https://startrungo.github.io/research-tools/#pomodoro", "description": "Focus timer for productive research sessions" }
+        ]
+    }
+    </script>
+    <link rel="alternate" type="application/rss+xml" title="Paper Digest RSS" href="feed.xml">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="icons/icon.svg">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/latex.css">
+    <link rel="stylesheet" href="css/svg-editor.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Google AdSense (uncomment when approved) -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX" crossorigin="anonymous"></script> -->
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+    <!-- MathJax for LaTeX rendering -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <div class="container header-flex">
+            <button id="langToggle" class="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">🌐 EN</button>
+            <button id="darkModeToggle" class="lang-toggle" onclick="toggleDarkMode()" style="margin-left:0.5rem" aria-label="Toggle dark mode">☀️</button>
+            <div>
+                <h1 data-i18n="site.title">科研工具集</h1>
+                <p class="subtitle" data-i18n="site.subtitle">Research Tools Hub - 提升科研效率的工具集合</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#home" class="nav-link active" data-i18n="nav.home">首页</a></li>
+                <li><a href="../game/" class="nav-link" target="_blank">🎮 科研人生</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav.group.writing">写作工具 ▾</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#latex" class="nav-link" data-i18n="nav.latex">LaTeX工具</a></li>
+                        <li><a href="#markdown" class="nav-link" data-i18n="nav.markdown">Markdown</a></li>
+                        <li><a href="#references" class="nav-link" data-i18n="nav.references">参考文献</a></li>
+                        <li><a href="#ai-writing" class="nav-link" data-i18n="nav.aiwriting">AI写作助手</a></li>
+                        <li><a href="#formula" class="nav-link" data-i18n="nav.formula">公式助手</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav.group.graphics">图形工具 ▾</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#svg" class="nav-link" data-i18n="nav.svg">SVG编辑器</a></li>
+                        <li><a href="#dataviz" class="nav-link" data-i18n="nav.dataviz">数据可视化</a></li>
+                        <li><a href="#codehighlight" class="nav-link" data-i18n="nav.codehighlight">代码高亮</a></li>
+                        <li><a href="#models" class="nav-link" data-i18n="nav.models">神经网络模型库</a></li>
+                        <li><a href="#flowcharts" class="nav-link" data-i18n="nav.flowcharts">流程图画廊</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav.group.tools">效率工具 ▾</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#text-tools" class="nav-link" data-i18n="nav.texttools">文本工具</a></li>
+                        <li><a href="#cron" class="nav-link" data-i18n="nav.cron">Cron解析</a></li>
+                        <li><a href="#calendar" class="nav-link" data-i18n="nav.calendar">学术日历</a></li>
+                        <li><a href="#pomodoro" class="nav-link" data-i18n="nav.pomodoro">番茄钟</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav.group.ai">AI & 资源 ▾</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#ai-tools" class="nav-link" data-i18n="nav.aitools">AI工具导航</a></li>
+                        <li><a href="#paper-digest" class="nav-link" data-i18n="nav.paperdigest">论文速递</a></li>
+                        <li><a href="#resources" class="nav-link" data-i18n="nav.resources">科研资源</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" id="main-content">
+        <!-- 首页 = 论文速递 -->
+        <section id="home" class="section active">
+            <h2 data-i18n="pd.heading">论文速递</h2>
+            <p class="section-desc" data-i18n="pd.desc">每日精选顶刊论文，解析核心亮点与创新方法。</p>
+
+            <!-- Filters -->
+            <div class="pd-toolbar">
+                <div class="pd-filters">
+                    <select id="pdFieldFilterHome" onchange="renderPaperDigestHome()">
+                        <option value="all" data-i18n="pd.filter.all">全部领域</option>
+                        <option value="AI/ML">AI/ML</option>
+                        <option value="Security">Security</option>
+                        <option value="VPP">Virtual Power Plant</option>
+                        <option value="Energy">Energy Management</option>
+                        <option value="CV">Computer Vision</option>
+                        <option value="NLP">NLP</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <select id="pdDateFilterHome" onchange="renderPaperDigestHome()">
+                        <option value="all" data-i18n="pd.filter.alltime">全部时间</option>
+                        <option value="7" data-i18n="pd.filter.week">最近7天</option>
+                        <option value="30" data-i18n="pd.filter.month">最近30天</option>
+                    </select>
+                    <input type="text" id="pdSearchInputHome" placeholder="搜索论文标题/关键词..." data-i18n-placeholder="pd.search.placeholder" oninput="renderPaperDigestHome()">
+                </div>
+                <div class="pd-stats">
+                    <span id="pdCountHome"></span>
+                    <button class="pd-btn-sm" onclick="exportPdBibtex()" title="Export bookmarked papers as BibTeX">BibTeX</button>
+                    <a class="pd-btn-sm" href="feed.xml" target="_blank" title="RSS Feed">RSS</a>
+                </div>
+            </div>
+
+            <div id="pdListHome" class="pd-list"></div>
+
+            <!-- Analytics panels -->
+            <div class="pd-analytics">
+                <h3 data-i18n="pd.analytics.title">Paper Analytics</h3>
+                <div class="pd-analytics-tabs">
+                    <button class="pd-tab active" onclick="showPdPanel('trend',this)" data-i18n="pd.analytics.trend">Trend</button>
+                    <button class="pd-tab" onclick="showPdPanel('ranking',this)" data-i18n="pd.analytics.ranking">Ranking</button>
+                    <button class="pd-tab" onclick="showPdPanel('authors',this)" data-i18n="pd.analytics.authors">Authors</button>
+                </div>
+                <div id="pdPanelTrend" class="pd-panel active">
+                    <canvas id="pdTrendChart" height="260"></canvas>
+                </div>
+                <div id="pdPanelRanking" class="pd-panel">
+                    <div id="pdRankingList"></div>
+                </div>
+                <div id="pdPanelAuthors" class="pd-panel">
+                    <div id="pdAuthorsList"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LaTeX工具 -->
+        <section id="latex" class="section">
+            <h2 data-i18n="latex.heading">LaTeX 格式化工具</h2>
+            <div class="tool-container-three">
+                <div class="editor-panel">
+                    <label for="latexInput"><h3 data-i18n="latex.input.heading">输入LaTeX代码</h3></label>
+                    <textarea id="latexInput" data-i18n="latex.input.placeholder" placeholder="在此输入LaTeX代码...
+
+示例:
+\begin{equation}
+E = mc^2
+\end{equation}
+
+\begin{align}
+\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \\
+\nabla \times \mathbf{B} &= \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial \mathbf{E}}{\partial t}
+\end{align}"></textarea>
+                    <div class="button-group">
+                        <button onclick="formatLatex()" data-i18n="latex.btn.format">格式化代码</button>
+                        <button onclick="formatBibtex()" data-i18n="latex.btn.bibtex">BibTeX格式化</button>
+                        <button onclick="clearLatex()" data-i18n="latex.btn.clear">清空</button>
+                        <button onclick="copyLatex()" data-i18n="latex.btn.copy">复制结果</button>
+                        <button onclick="shareLatex()" class="btn-share" data-i18n="share.latex">分享LaTeX</button>
+                        <button onclick="toggleTemplatePanel()" data-i18n="latex.btn.templates">模板库</button>
+                    </div>
+                </div>
+                <div id="templatePanel" class="template-panel" style="display:none">
+                    <h3 data-i18n="latex.templates.heading">LaTeX 模板库</h3>
+                    <div class="template-categories">
+                        <div class="template-category">
+                            <h4 data-i18n="latex.templates.math">数学公式</h4>
+                            <div class="template-grid">
+                                <button class="template-btn" onclick="insertTemplate('equation')" data-i18n="latex.tpl.equation">方程</button>
+                                <button class="template-btn" onclick="insertTemplate('align')" data-i18n="latex.tpl.align">对齐</button>
+                                <button class="template-btn" onclick="insertTemplate('matrix')" data-i18n="latex.tpl.matrix">矩阵</button>
+                                <button class="template-btn" onclick="insertTemplate('fraction')" data-i18n="latex.tpl.fraction">分数/极限</button>
+                                <button class="template-btn" onclick="insertTemplate('integral')" data-i18n="latex.tpl.integral">积分</button>
+                                <button class="template-btn" onclick="insertTemplate('sum')" data-i18n="latex.tpl.sum">求和</button>
+                                <button class="template-btn" onclick="insertTemplate('cases')" data-i18n="latex.tpl.cases">分段函数</button>
+                            </div>
+                        </div>
+                        <div class="template-category">
+                            <h4 data-i18n="latex.templates.structure">文档结构</h4>
+                            <div class="template-grid">
+                                <button class="template-btn" onclick="insertTemplate('table')" data-i18n="latex.tpl.table">表格</button>
+                                <button class="template-btn" onclick="insertTemplate('figure')" data-i18n="latex.tpl.figure">图片</button>
+                                <button class="template-btn" onclick="insertTemplate('algorithm')" data-i18n="latex.tpl.algorithm">算法</button>
+                                <button class="template-btn" onclick="insertTemplate('tikz')" data-i18n="latex.tpl.tikz">TikZ绘图</button>
+                            </div>
+                        </div>
+                        <div class="template-category">
+                            <h4 data-i18n="latex.templates.documents">完整文档</h4>
+                            <div class="template-grid">
+                                <button class="template-btn" onclick="insertTemplate('article')" data-i18n="latex.tpl.article">学术论文</button>
+                                <button class="template-btn" onclick="insertTemplate('beamer')" data-i18n="latex.tpl.beamer">Beamer演示</button>
+                                <button class="template-btn" onclick="insertTemplate('letter')" data-i18n="latex.tpl.letter">信件</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-panel">
+                    <h3 data-i18n="latex.output.heading">格式化结果</h3>
+                    <pre id="latexOutput" class="output-box" data-i18n="latex.output.placeholder">格式化后的代码将显示在这里...</pre>
+                </div>
+                <div class="preview-panel">
+                    <h3 data-i18n="latex.preview.heading">实时预览</h3>
+                    <div id="latexPreview" class="preview-box">
+                        <p class="preview-placeholder" data-i18n="latex.preview.placeholder">数学公式预览将显示在这里...</p>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="renderLatexPreview()" data-i18n="latex.btn.render">渲染预览</button>
+                        <button onclick="toggleAutoPreview()" id="autoPreviewBtn" data-i18n="latex.btn.autopreview.on">开启自动预览</button>
+                    </div>
+                </div>
+            </div>
+            <div class="latex-tips">
+                <h3 data-i18n="latex.tips.heading">常用LaTeX命令参考</h3>
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <strong data-i18n="latex.tip.frac">分数:</strong> <code>\frac{a}{b}</code>
+                    </div>
+                    <div class="tip-item">
+                        <strong data-i18n="latex.tip.sup">上下标:</strong> <code>x^2, x_i</code>
+                    </div>
+                    <div class="tip-item">
+                        <strong data-i18n="latex.tip.greek">希腊字母:</strong> <code>\alpha, \beta, \gamma</code>
+                    </div>
+                    <div class="tip-item">
+                        <strong data-i18n="latex.tip.sum">求和:</strong> <code>\sum_{i=1}^{n}</code>
+                    </div>
+                    <div class="tip-item">
+                        <strong data-i18n="latex.tip.int">积分:</strong> <code>\int_{a}^{b}</code>
+                    </div>
+                    <div class="tip-item">
+                        <strong data-i18n="latex.tip.matrix">矩阵:</strong> <code>\begin{matrix}...\end{matrix}</code>
+                    </div>
+                </div>
+
+                <!-- LaTeX Templates -->
+                <h3 data-i18n="latex.templates.heading">Journal LaTeX Templates</h3>
+                <div class="latex-templates">
+                    <div class="latex-tpl-card">
+                        <h4>IEEE Transactions</h4>
+                        <p>IEEE journals & conferences (IEEEtran)</p>
+                        <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener" class="latex-tpl-btn" data-i18n="latex.templates.download">Download</a>
+                    </div>
+                    <div class="latex-tpl-card">
+                        <h4>ACM (acmart)</h4>
+                        <p>ACM conferences & journals</p>
+                        <a href="https://www.acm.org/publications/proceedings-template" target="_blank" rel="noopener" class="latex-tpl-btn" data-i18n="latex.templates.download">Download</a>
+                    </div>
+                    <div class="latex-tpl-card">
+                        <h4>Elsevier (elsarticle)</h4>
+                        <p>Elsevier journals (Computers & Security, etc.)</p>
+                        <a href="https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions" target="_blank" rel="noopener" class="latex-tpl-btn" data-i18n="latex.templates.download">Download</a>
+                    </div>
+                    <div class="latex-tpl-card">
+                        <h4>Springer (svjour3)</h4>
+                        <p>Springer Nature journals</p>
+                        <a href="https://www.springer.com/gp/livingreviews/latex-templates" target="_blank" rel="noopener" class="latex-tpl-btn" data-i18n="latex.templates.download">Download</a>
+                    </div>
+                    <div class="latex-tpl-card">
+                        <h4>MDPI</h4>
+                        <p>MDPI open access journals</p>
+                        <a href="https://www.mdpi.com/authors/latex" target="_blank" rel="noopener" class="latex-tpl-btn" data-i18n="latex.templates.download">Download</a>
+                    </div>
+                    <div class="latex-tpl-card">
+                        <h4>NeurIPS / ICML</h4>
+                        <p>Top ML conferences</p>
+                        <a href="https://neurips.cc/Conferences/2025/CallForPapers" target="_blank" rel="noopener" class="latex-tpl-btn" data-i18n="latex.templates.download">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SVG编辑器 -->
+        <section id="svg" class="section">
+            <h2 data-i18n="svg.heading">SVG 图片编辑器</h2>
+            <div class="svg-editor-container">
+                <div class="svg-toolbar">
+                    <h3 data-i18n="svg.toolbar">工具栏</h3>
+                    <div class="tool-buttons">
+                        <button onclick="svgAddRect()" data-i18n="svg.btn.rect">矩形</button>
+                        <button onclick="svgAddCircle()" data-i18n="svg.btn.circle">圆形</button>
+                        <button onclick="svgAddLine()" data-i18n="svg.btn.line">直线</button>
+                        <button onclick="svgAddText()" data-i18n="svg.btn.text">文本</button>
+                        <button onclick="svgAddArrow()" data-i18n="svg.btn.arrow">箭头</button>
+                        <button onclick="svgAddEllipse()" data-i18n="svg.btn.ellipse">椭圆</button>
+                        <button onclick="svgAddPolygon()" data-i18n="svg.btn.polygon">多边形</button>
+                    </div>
+                    <div class="color-picker">
+                        <label for="fillColor"><span data-i18n="svg.label.fill">填充色:</span> <input type="color" id="fillColor" value="#3498db"></label>
+                        <label for="strokeColor"><span data-i18n="svg.label.stroke">边框色:</span> <input type="color" id="strokeColor" value="#2c3e50"></label>
+                        <label for="strokeWidth"><span data-i18n="svg.label.strokewidth">边框宽度:</span> <input type="number" id="strokeWidth" value="2" min="0" max="20"></label>
+                    </div>
+                    <div class="svg-actions">
+                        <button onclick="undo()" title="Ctrl+Z" data-i18n="svg.btn.undo">撤销</button>
+                        <button onclick="redo()" title="Ctrl+Y" data-i18n="svg.btn.redo">重做</button>
+                        <button onclick="svgClear()" data-i18n="svg.btn.clear">清空画布</button>
+                        <button onclick="svgDownload()" data-i18n="svg.btn.download">下载SVG</button>
+                        <button onclick="svgExportPNG()" class="btn-export" data-i18n="svg.btn.exportpng">导出PNG</button>
+                        <button onclick="svgExportJPG()" class="btn-export" data-i18n="svg.btn.exportjpg">导出JPG</button>
+                        <button onclick="svgShowCode()" data-i18n="svg.btn.code">查看代码</button>
+                        <button onclick="shareSvg()" class="btn-share" data-i18n="share.svg">分享SVG</button>
+                    </div>
+                </div>
+                <div class="svg-canvas-area">
+                    <h3 data-i18n="svg.canvas">画布</h3>
+                    <svg id="svgCanvas" width="800" height="600" style="border: 1px solid var(--border-color); background: var(--bg-card);" aria-label="SVG drawing canvas" role="img">
+                    </svg>
+                </div>
+                <div class="svg-layers-panel">
+                    <h3 data-i18n="svg.layers">图层管理</h3>
+                    <div id="layersList" class="layers-list">
+                        <p class="layers-placeholder" data-i18n="svg.layers.empty">暂无图层</p>
+                    </div>
+                    <div class="layer-actions">
+                        <button onclick="deleteSelectedLayer()" data-i18n="svg.btn.delete">删除选中</button>
+                        <button onclick="moveLayerUp()" data-i18n="svg.btn.moveup">上移</button>
+                        <button onclick="moveLayerDown()" data-i18n="svg.btn.movedown">下移</button>
+                        <button onclick="toggleMultiSelect()" id="multiSelectBtn" data-i18n="svg.btn.multiselect">多选</button>
+                        <button onclick="groupSelectedLayers()" data-i18n="svg.btn.group">编组</button>
+                        <button onclick="ungroupSelectedLayers()" data-i18n="svg.btn.ungroup">解组</button>
+                    </div>
+                    <div class="svg-properties-panel">
+                        <h3 data-i18n="svg.props.title">属性</h3>
+                        <div id="propertiesPanel">
+                            <p class="layers-placeholder" data-i18n="svg.props.none">选择元素查看属性</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="svg-code-panel" id="svgCodePanel" style="display: none;">
+                <h3 data-i18n="svg.code.heading">SVG代码</h3>
+                <textarea id="svgCodeOutput" placeholder="在此粘贴SVG源代码，点击「导入代码」预览..."></textarea>
+                <button onclick="importSvgCode()" data-i18n="svg.btn.importcode">导入代码</button>
+                <button onclick="copySvgCode()" data-i18n="svg.btn.copycode">复制代码</button>
+                <button onclick="closeSvgCode()" data-i18n="svg.btn.close">关闭</button>
+            </div>
+        </section>
+
+        <!-- AI写作助手 -->
+        <section id="ai-writing" class="section">
+            <h2 data-i18n="aiwriting.heading">AI 写作助手</h2>
+            <p class="section-desc" data-i18n="aiwriting.desc">精选学术写作 Prompt 模板，点击即可复制，粘贴到 ChatGPT / Claude 等 AI 工具中使用</p>
+
+            <div class="prompt-filter">
+                <button class="filter-btn active" onclick="filterPrompts('all', event)" data-i18n="aiwriting.filter.all">全部</button>
+                <button class="filter-btn" onclick="filterPrompts('favorites', event)"><span data-i18n="aiwriting.filter.favorites">收藏</span><span id="favCount"></span></button>
+                <button class="filter-btn" onclick="filterPrompts('polish', event)" data-i18n="aiwriting.filter.polish">论文润色</button>
+                <button class="filter-btn" onclick="filterPrompts('reduce-ai', event)" data-i18n="aiwriting.filter.reduceai">降低AI率</button>
+                <button class="filter-btn" onclick="filterPrompts('review', event)" data-i18n="aiwriting.filter.review">审稿回复</button>
+                <button class="filter-btn" onclick="filterPrompts('abstract', event)" data-i18n="aiwriting.filter.abstract">摘要生成</button>
+                <button class="filter-btn" onclick="filterPrompts('translation', event)" data-i18n="aiwriting.filter.translation">学术翻译</button>
+                <button class="filter-btn" onclick="filterPrompts('grant', event)" data-i18n="aiwriting.filter.grant">基金写作</button>
+                <button class="filter-btn" onclick="filterPrompts('literature', event)" data-i18n="aiwriting.filter.literature">文献综述</button>
+                <button class="filter-btn" onclick="filterPrompts('data', event)" data-i18n="aiwriting.filter.data">数据分析</button>
+            </div>
+
+            <div class="prompt-cards" id="promptCards">
+                <!-- 论文润色 -->
+                <div class="prompt-card" data-category="polish">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-polish" data-i18n="aiwriting.tag.polish">论文润色</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.polish1.title">学术论文英文润色</h3>
+                    <div class="prompt-content">I want you to act as a professional academic editor. Please polish the following academic text to improve clarity, grammar, and academic tone while preserving the original meaning. Make it suitable for publication in a top-tier journal. Fix any grammatical errors, improve sentence structure, and enhance the formal academic style. Please provide the polished version directly:
+
+[Paste your text here]</div>
+                </div>
+
+                <div class="prompt-card" data-category="polish">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-polish" data-i18n="aiwriting.tag.polish">论文润色</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.polish2.title">中文论文润色与改进</h3>
+                    <div class="prompt-content">你是一位资深的学术论文编辑专家。请对以下中文学术论文段落进行润色，要求：1）提升语言的学术性和专业性；2）修正语法和标点错误；3）改善句式结构，使表达更加流畅；4）保持原文的核心含义不变。请直接给出润色后的版本：
+
+[在此粘贴你的文本]</div>
+                </div>
+
+                <div class="prompt-card" data-category="polish">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-polish" data-i18n="aiwriting.tag.polish">论文润色</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.polish3.title">逐句润色并标注修改</h3>
+                    <div class="prompt-content">Please act as an academic writing consultant. Polish the following text sentence by sentence. For each sentence, provide: 1) The original sentence; 2) The polished version; 3) A brief explanation of what was changed and why. Focus on academic tone, precision, and clarity:
+
+[Paste your text here]</div>
+                </div>
+
+                <!-- 降低AI率 -->
+                <div class="prompt-card" data-category="reduce-ai">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-reduce" data-i18n="aiwriting.tag.reduceai">降低AI率</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.reduce1.title">人性化改写（降低AI检测率）</h3>
+                    <div class="prompt-content">Please rewrite the following text to make it sound more naturally human-written. Use these techniques: 1) Vary sentence length significantly - mix short punchy sentences with longer complex ones; 2) Add occasional colloquial transitions; 3) Include subtle imperfections like starting sentences with "And" or "But"; 4) Use more specific and concrete examples instead of generic statements; 5) Add personal perspective or hedging language like "it seems that" or "arguably"; 6) Avoid overly parallel structures. Keep the academic meaning intact:
+
+[Paste your text here]</div>
+                </div>
+
+                <div class="prompt-card" data-category="reduce-ai">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-reduce" data-i18n="aiwriting.tag.reduceai">降低AI率</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.reduce2.title">中文论文降低AI痕迹</h3>
+                    <div class="prompt-content">请将以下文本改写得更加自然，像人类真实写作的风格。要求：1）打破固定的句式模式，长短句交替使用；2）减少"首先、其次、最后"等过于工整的连接词；3）适当加入口语化的学术表达；4）避免过于对称的排比结构；5）加入一些个人观点的表达方式，如"笔者认为""从某种程度上说"；6）保持学术严谨性的同时增加文本的自然感。请保持原意不变：
+
+[在此粘贴你的文本]</div>
+                </div>
+
+                <div class="prompt-card" data-category="reduce-ai">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-reduce" data-i18n="aiwriting.tag.reduceai">降低AI率</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.reduce3.title">模拟特定写作风格改写</h3>
+                    <div class="prompt-content">Rewrite the following text mimicking the writing style of a seasoned researcher who writes in a direct, no-nonsense manner. The rewrite should: 1) Use active voice predominantly; 2) Include domain-specific jargon naturally; 3) Have an uneven rhythm - some paragraphs short, others detailed; 4) Occasionally reference methodology choices with brief justifications; 5) Sound like it was written by someone who has spent years in the field, not by an AI. Maintain all factual content:
+
+[Paste your text here]</div>
+                </div>
+
+                <!-- 审稿回复 -->
+                <div class="prompt-card" data-category="review">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-review" data-i18n="aiwriting.tag.review">审稿回复</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.review1.title">审稿意见回复信</h3>
+                    <div class="prompt-content">You are an experienced academic researcher skilled at responding to peer review comments. Please help me draft a professional response letter to the following reviewer comments. For each comment: 1) Thank the reviewer politely; 2) Address the concern directly; 3) Describe what changes were made (or explain why no changes were needed); 4) Be respectful but confident. Format as a proper response letter with "Response to Reviewer #X" headers:
+
+Reviewer comments:
+[Paste reviewer comments here]
+
+Key changes we made:
+[Briefly list your main revisions]</div>
+                </div>
+
+                <div class="prompt-card" data-category="review">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-review" data-i18n="aiwriting.tag.review">审稿回复</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.review2.title">逐条回复审稿意见</h3>
+                    <div class="prompt-content">请帮我逐条回复以下审稿意见。对每条意见，请按以下格式生成回复：
+【审稿意见原文】：（复述原文）
+【回复】：感谢审稿人的建议。（然后具体回应）
+【修改说明】：我们在论文中做了如下修改...
+
+要求：态度诚恳、专业，对合理意见积极采纳，对不合理意见委婉解释。
+
+审稿意见：
+[在此粘贴审稿意见]</div>
+                </div>
+
+                <!-- 摘要生成 -->
+                <div class="prompt-card" data-category="abstract">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-abstract" data-i18n="aiwriting.tag.abstract">摘要生成</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.abstract1.title">结构化摘要生成</h3>
+                    <div class="prompt-content">Based on the following paper content, generate a structured academic abstract (200-300 words) that includes: 1) Background/Motivation (1-2 sentences); 2) Research Gap/Problem (1 sentence); 3) Method/Approach (2-3 sentences); 4) Key Results (2-3 sentences); 5) Significance/Impact (1-2 sentences). Use formal academic language and be specific about contributions:
+
+[Paste your paper content or key sections here]</div>
+                </div>
+
+                <div class="prompt-card" data-category="abstract">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-abstract" data-i18n="aiwriting.tag.abstract">摘要生成</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.abstract2.title">中文论文摘要撰写</h3>
+                    <div class="prompt-content">请根据以下论文内容，撰写一段中文学术摘要（300-500字）。要求包含以下要素：1）研究背景与意义（1-2句）；2）研究问题或不足（1句）；3）研究方法（2-3句）；4）主要发现/结果（2-3句）；5）结论与创新点（1-2句）。使用规范的学术语言，突出创新性：
+
+[在此粘贴论文关键内容]</div>
+                </div>
+
+                <!-- 学术翻译 -->
+                <div class="prompt-card" data-category="translation">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-translation" data-i18n="aiwriting.tag.translation">学术翻译</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.trans1.title">中译英学术翻译</h3>
+                    <div class="prompt-content">You are a professional academic translator. Please translate the following Chinese academic text into English. Requirements: 1) Use precise academic terminology appropriate for the field; 2) Maintain formal academic register; 3) Ensure the translation reads naturally to native English speakers; 4) Preserve all technical terms and proper nouns; 5) Follow conventions of top-tier English academic journals. Provide the translation directly:
+
+[Paste Chinese text here]</div>
+                </div>
+
+                <div class="prompt-card" data-category="translation">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-translation" data-i18n="aiwriting.tag.translation">学术翻译</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.trans2.title">英译中学术翻译</h3>
+                    <div class="prompt-content">你是一位专业的学术翻译专家。请将以下英文学术文本翻译为中文。要求：1）使用准确的专业术语；2）符合中文学术论文的表达习惯；3）译文通顺流畅，不带翻译腔；4）保留所有技术术语的准确性；5）符合中文核心期刊的写作规范。请直接给出译文：
+
+[Paste English text here]</div>
+                </div>
+
+                <!-- 基金写作 -->
+                <div class="prompt-card" data-category="grant">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-grant" data-i18n="aiwriting.tag.grant">基金写作</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.grant1.title">基金申请书研究意义撰写</h3>
+                    <div class="prompt-content">请帮我撰写一段国家自然科学基金申请书的"项目研究意义"部分。要求：1）从国家战略需求或学科前沿出发阐述理论意义；2）结合实际应用场景说明应用价值；3）指出当前研究的不足和亟待解决的关键问题；4）论述本项目的预期突破；5）语言精炼、逻辑清晰、有说服力。
+
+研究方向：[填写你的研究方向]
+关键技术/方法：[填写核心技术]
+预期创新点：[填写创新点]</div>
+                </div>
+
+                <div class="prompt-card" data-category="grant">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-grant" data-i18n="aiwriting.tag.grant">基金写作</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.grant2.title">Research Proposal Introduction</h3>
+                    <div class="prompt-content">Help me write a compelling introduction section for a research grant proposal. The introduction should: 1) Open with a hook that highlights the importance of the research area; 2) Provide context with key statistics or recent findings; 3) Clearly identify the research gap; 4) State the research objectives concisely; 5) Preview the methodology briefly; 6) End with the expected impact. Keep it persuasive and within 500 words.
+
+Research topic: [Your topic]
+Key innovation: [Your innovation]
+Target funding agency: [e.g., NSF, ERC, etc.]</div>
+                </div>
+
+                <!-- 文献综述 -->
+                <div class="prompt-card" data-category="literature">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-literature" data-i18n="aiwriting.tag.literature">文献综述</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.lit1.title">文献综述段落撰写</h3>
+                    <div class="prompt-content">Please help me write a literature review paragraph that synthesizes the following papers/findings. Requirements: 1) Organize thematically, not paper-by-paper; 2) Identify common themes, agreements, and contradictions; 3) Use proper academic citation style; 4) Conclude with a clear research gap that motivates my study; 5) Maintain a critical and analytical tone rather than just summarizing.
+
+Papers/findings to synthesize:
+[Paste key findings from your papers here]
+
+My research focus: [Your focus area]</div>
+                </div>
+
+                <div class="prompt-card" data-category="literature">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-literature" data-i18n="aiwriting.tag.literature">文献综述</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.lit2.title">研究缺口识别与分析</h3>
+                    <div class="prompt-content">请根据以下文献综述内容，帮我系统地识别和分析研究缺口。要求：1）总结当前研究的主要发现和共识；2）指出现有研究的不足和局限性；3）识别尚未被充分探讨的问题；4）分析这些缺口存在的可能原因；5）提出未来研究的方向建议。用学术语言输出，逻辑清晰。
+
+文献综述内容：
+[在此粘贴你的文献综述]
+
+我的研究方向：[填写研究方向]</div>
+                </div>
+
+                <div class="prompt-card" data-category="literature">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-literature" data-i18n="aiwriting.tag.literature">文献综述</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.lit3.title">Related Work 章节撰写</h3>
+                    <div class="prompt-content">Write a "Related Work" section for my paper. Organize the review into logical subsections based on the research themes below. For each subsection: 1) Summarize 3-5 key papers briefly; 2) Compare their approaches and findings; 3) Explain how my work differs from or extends these approaches. End with a paragraph positioning my contribution within the existing literature.
+
+Research themes to cover:
+[Theme 1: key papers and findings]
+[Theme 2: key papers and findings]
+
+My contribution: [Describe your approach]</div>
+                </div>
+
+                <!-- 数据分析 -->
+                <div class="prompt-card" data-category="data">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-data" data-i18n="aiwriting.tag.data">数据分析</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.data1.title">实验结果描述</h3>
+                    <div class="prompt-content">请用规范的学术语言描述以下实验结果。要求：1）客观准确地陈述数据（包括具体数值、百分比等）；2）指出显著的趋势和模式；3）与baseline或对比方法进行比较；4）使用恰当的统计术语；5）避免在结果描述中加入过多讨论和解释。按照"总体结果→详细分析→对比分析"的结构组织。
+
+实验数据：
+[在此粘贴你的实验结果数据]
+
+对比方法：[列出baseline方法]</div>
+                </div>
+
+                <div class="prompt-card" data-category="data">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-data" data-i18n="aiwriting.tag.data">数据分析</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.data2.title">统计结果解读与报告</h3>
+                    <div class="prompt-content">Help me interpret and report the following statistical results in proper APA/academic format. For each result: 1) State the test used and why; 2) Report the key statistics (F, t, p, r, effect size); 3) Interpret the result in plain academic language; 4) Note if the result is statistically significant; 5) Suggest appropriate visualizations for the data.
+
+Statistical results:
+[Paste your statistical output here]
+
+Research question: [Your research question]</div>
+                </div>
+
+                <div class="prompt-card" data-category="data">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-data" data-i18n="aiwriting.tag.data">数据分析</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.data3.title">图表标题与描述撰写</h3>
+                    <div class="prompt-content">请为以下图表撰写规范的学术标题和描述。要求：1）标题简洁明确，体现图表核心内容；2）描述中包含数据来源、样本量、关键发现；3）指出图表中最重要的趋势或发现；4）符合学术论文的图表标注规范。分别给出中英文版本。
+
+图表内容描述：
+[描述你的图表内容，包括坐标轴、数据等]
+
+论文主题：[你的论文主题]</div>
+                </div>
+
+                <!-- 补充：Introduction润色 -->
+                <div class="prompt-card" data-category="polish">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-polish" data-i18n="aiwriting.tag.polish">论文润色</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.polish4.title">Introduction 章节优化</h3>
+                    <div class="prompt-content">Please help me improve the Introduction section of my paper. Check and enhance: 1) The opening hook - is it compelling enough? 2) Background context - is it sufficient but concise? 3) Research gap - is it clearly stated? 4) Research objectives - are they specific and measurable? 5) Paper structure overview - is it clear? Provide the improved version with comments explaining major changes.
+
+[Paste your Introduction here]</div>
+                </div>
+
+                <!-- 补充：结论撰写 -->
+                <div class="prompt-card" data-category="polish">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-polish" data-i18n="aiwriting.tag.polish">论文润色</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.polish5.title">Conclusion 结论撰写</h3>
+                    <div class="prompt-content">请根据以下论文的摘要和主要发现，帮我撰写一段Conclusion（结论）。要求：1）重申研究目的和主要方法（不要简单重复摘要）；2）总结核心发现及其意义；3）讨论研究的局限性（2-3点）；4）提出未来研究方向（2-3个建议）；5）以一个有力的总结句收尾。中英文均可。
+
+摘要：[粘贴摘要]
+主要发现：[列出关键结果]</div>
+                </div>
+
+                <!-- 补充：Rebuttal -->
+                <div class="prompt-card" data-category="review">
+                    <div class="prompt-card-header">
+                        <span class="prompt-tag tag-review" data-i18n="aiwriting.tag.review">审稿回复</span>
+                        <button class="copy-btn" onclick="copyPrompt(this)" data-i18n="aiwriting.btn.copy">复制</button>
+                    </div>
+                    <h3 data-i18n="aiwriting.review3.title">Rebuttal Letter 模板</h3>
+                    <div class="prompt-content">Help me write a formal rebuttal letter for a rejected/major-revision paper. Structure: 1) Opening: Thank the editor and reviewers; 2) Summary of changes: Brief overview of all revisions made; 3) Point-by-point responses: For each reviewer comment, provide [Original Comment] → [Our Response] → [Changes Made in Paper]; 4) Be diplomatic when disagreeing - provide evidence; 5) Closing: Express confidence in the improved manuscript.
+
+Editor decision: [Accept/Major Revision/Reject]
+Reviewer comments:
+[Paste all reviewer comments]
+
+Main changes we made:
+[List your key revisions]</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI工具导航 -->
+        <section id="ai-tools" class="section">
+            <h2 data-i18n="aitools.heading">AI 工具导航</h2>
+            <p class="section-desc" data-i18n="aitools.desc">精选高校教师常用的 AI 效率工具</p>
+
+            <div class="search-container">
+                <input type="text" id="aiToolsSearch" data-i18n-placeholder="aitools.search.placeholder" placeholder="搜索工具..." oninput="searchAITools(this.value)" aria-label="Search AI tools">
+            </div>
+            <p class="no-results" id="aiToolsNoResults" style="display:none;" data-i18n="aitools.search.noresults">未找到匹配的工具</p>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.chat.title">💬 AI 对话助手</h3>
+                <div class="resource-links">
+                    <a href="https://chat.openai.com" target="_blank" class="resource-link">
+                        <strong>ChatGPT</strong>
+                        <span data-i18n="aitools.chatgpt.desc">OpenAI 旗舰对话模型</span>
+                    </a>
+                    <a href="https://claude.ai" target="_blank" class="resource-link">
+                        <strong>Claude</strong>
+                        <span data-i18n="aitools.claude.desc">Anthropic 出品，擅长长文分析与写作</span>
+                    </a>
+                    <a href="https://gemini.google.com" target="_blank" class="resource-link">
+                        <strong>Gemini</strong>
+                        <span data-i18n="aitools.gemini.desc">Google AI 助手，集成搜索能力</span>
+                    </a>
+                    <a href="https://kimi.moonshot.cn" target="_blank" class="resource-link">
+                        <strong>Kimi</strong>
+                        <span data-i18n="aitools.kimi.desc">支持超长文本，适合论文阅读</span>
+                    </a>
+                    <a href="https://tongyi.aliyun.com" target="_blank" class="resource-link">
+                        <strong data-i18n="aitools.tongyi.name">通义千问</strong>
+                        <span data-i18n="aitools.tongyi.desc">阿里云 AI，中文理解出色</span>
+                    </a>
+                    <a href="https://www.deepseek.com" target="_blank" class="resource-link">
+                        <strong>DeepSeek</strong>
+                        <span data-i18n="aitools.deepseek.desc">开源高性能推理模型</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.paper.title">📄 AI 论文工具</h3>
+                <div class="resource-links">
+                    <a href="https://consensus.app" target="_blank" class="resource-link">
+                        <strong>Consensus</strong>
+                        <span data-i18n="aitools.consensus.desc">AI 驱动的学术搜索引擎</span>
+                    </a>
+                    <a href="https://elicit.com" target="_blank" class="resource-link">
+                        <strong>Elicit</strong>
+                        <span data-i18n="aitools.elicit.desc">AI 文献综述与论文分析助手</span>
+                    </a>
+                    <a href="https://www.researchrabbit.ai" target="_blank" class="resource-link">
+                        <strong>Research Rabbit</strong>
+                        <span data-i18n="aitools.rabbit.desc">AI 论文发现与推荐</span>
+                    </a>
+                    <a href="https://typeset.io" target="_blank" class="resource-link">
+                        <strong>SciSpace (Typeset)</strong>
+                        <span data-i18n="aitools.scispace2.desc">AI 论文阅读、解释与写作</span>
+                    </a>
+                    <a href="https://www.chatpdf.com" target="_blank" class="resource-link">
+                        <strong>ChatPDF</strong>
+                        <span data-i18n="aitools.chatpdf.desc">上传 PDF 与 AI 对话</span>
+                    </a>
+                    <a href="https://notebooklm.google" target="_blank" class="resource-link">
+                        <strong>NotebookLM</strong>
+                        <span data-i18n="aitools.notebooklm.desc">Google AI 笔记本，多文档分析</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.writing.title">✍️ AI 写作与翻译</h3>
+                <div class="resource-links">
+                    <a href="https://www.grammarly.com" target="_blank" class="resource-link">
+                        <strong>Grammarly</strong>
+                        <span data-i18n="aitools.grammarly.desc">英文语法检查与写作增强</span>
+                    </a>
+                    <a href="https://www.deepl.com/translator" target="_blank" class="resource-link">
+                        <strong>DeepL</strong>
+                        <span data-i18n="aitools.deepl.desc">高质量 AI 翻译工具</span>
+                    </a>
+                    <a href="https://quillbot.com" target="_blank" class="resource-link">
+                        <strong>QuillBot</strong>
+                        <span data-i18n="aitools.quillbot.desc">AI 改写与释义工具</span>
+                    </a>
+                    <a href="https://writefull.com" target="_blank" class="resource-link">
+                        <strong>Writefull</strong>
+                        <span data-i18n="aitools.writefull.desc">学术写作专用 AI 助手</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.visual.title">🎨 AI 绘图与演示</h3>
+                <div class="resource-links">
+                    <a href="https://www.napkin.ai" target="_blank" class="resource-link">
+                        <strong>Napkin AI</strong>
+                        <span data-i18n="aitools.napkin.desc">AI 自动生成论文配图与图表</span>
+                    </a>
+                    <a href="https://mermaid.live" target="_blank" class="resource-link">
+                        <strong>Mermaid Live</strong>
+                        <span data-i18n="aitools.mermaid.desc">代码生成流程图、时序图</span>
+                    </a>
+                    <a href="https://gamma.app" target="_blank" class="resource-link">
+                        <strong>Gamma</strong>
+                        <span data-i18n="aitools.gamma.desc">AI 一键生成精美 PPT</span>
+                    </a>
+                    <a href="https://www.beautiful.ai" target="_blank" class="resource-link">
+                        <strong>Beautiful.ai</strong>
+                        <span data-i18n="aitools.beautifulai.desc">AI 驱动的演示文稿设计</span>
+                    </a>
+                    <a href="https://excalidraw.com" target="_blank" class="resource-link">
+                        <strong>Excalidraw</strong>
+                        <span data-i18n="aitools.excalidraw.desc">手绘风格白板与图表工具</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.productivity.title">⚡ AI 效率工具</h3>
+                <div class="resource-links">
+                    <a href="https://www.notion.so" target="_blank" class="resource-link">
+                        <strong>Notion AI</strong>
+                        <span data-i18n="aitools.notion.desc">AI 增强的笔记与项目管理</span>
+                    </a>
+                    <a href="https://otter.ai" target="_blank" class="resource-link">
+                        <strong>Otter.ai</strong>
+                        <span data-i18n="aitools.otter.desc">AI 会议/讲座录音转文字</span>
+                    </a>
+                    <a href="https://www.perplexity.ai" target="_blank" class="resource-link">
+                        <strong>Perplexity</strong>
+                        <span data-i18n="aitools.perplexity.desc">AI 搜索引擎，带引用来源</span>
+                    </a>
+                    <a href="https://www.connected-papers.com" target="_blank" class="resource-link">
+                        <strong>Connected Papers</strong>
+                        <span data-i18n="aitools.connpapers.desc">论文引用关系可视化</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.office.title">📁 办公文档工具</h3>
+                <div class="resource-links">
+                    <a href="https://www.ilovepdf.com" target="_blank" class="resource-link">
+                        <strong>iLovePDF</strong>
+                        <span data-i18n="aitools.ilovepdf.desc">PDF 转换、合并、压缩工具</span>
+                    </a>
+                    <a href="https://smallpdf.com" target="_blank" class="resource-link">
+                        <strong>Smallpdf</strong>
+                        <span data-i18n="aitools.smallpdf.desc">一站式 PDF 处理工具</span>
+                    </a>
+                    <a href="https://www.canva.com" target="_blank" class="resource-link">
+                        <strong>Canva</strong>
+                        <span data-i18n="aitools.canva.desc">在线设计平台，海报、简历、图表</span>
+                    </a>
+                    <a href="https://ai.wps.com" target="_blank" class="resource-link">
+                        <strong>WPS AI</strong>
+                        <span data-i18n="aitools.wpsai.desc">AI 智能办公套件</span>
+                    </a>
+                    <a href="https://tome.app" target="_blank" class="resource-link">
+                        <strong>Tome</strong>
+                        <span data-i18n="aitools.tome.desc">AI 叙事演示文稿生成</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="aitools.coding.title">💻 AI 编程与数据</h3>
+                <div class="resource-links">
+                    <a href="https://github.com/features/copilot" target="_blank" class="resource-link">
+                        <strong>GitHub Copilot</strong>
+                        <span data-i18n="aitools.copilot.desc">AI 代码助手，自动补全与生成</span>
+                    </a>
+                    <a href="https://cursor.com" target="_blank" class="resource-link">
+                        <strong>Cursor</strong>
+                        <span data-i18n="aitools.cursor.desc">AI 优先的代码编辑器</span>
+                    </a>
+                    <a href="https://julius.ai" target="_blank" class="resource-link">
+                        <strong>Julius AI</strong>
+                        <span data-i18n="aitools.julius.desc">AI 数据分析与可视化</span>
+                    </a>
+                    <a href="https://chatglm.cn" target="_blank" class="resource-link">
+                        <strong data-i18n="aitools.chatglm.name">智谱清言</strong>
+                        <span data-i18n="aitools.chatglm.desc">清华系 AI 大模型，学术能力强</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 文本工具 -->
+        <section id="text-tools" class="section">
+            <h2 data-i18n="texttools.heading">文本工具</h2>
+            <p class="section-desc" data-i18n="texttools.desc">字数统计、文本清理、阅读时长估算等实用工具</p>
+            <div class="text-tools-container">
+                <div class="text-input-panel">
+                    <label for="textToolsInput"><h3 data-i18n="texttools.input.title">输入文本</h3></label>
+                    <textarea id="textToolsInput" rows="12" data-i18n-placeholder="texttools.input.placeholder" placeholder="在此粘贴或输入文本..." oninput="analyzeText()"></textarea>
+                    <div class="button-group">
+                        <button onclick="cleanupText()" data-i18n="texttools.btn.cleanup">文本清理</button>
+                        <button onclick="document.getElementById('textToolsInput').value='';analyzeText()" data-i18n="texttools.btn.clear">清空</button>
+                        <button onclick="copyTextResult()" data-i18n="texttools.btn.copy">复制结果</button>
+                    </div>
+                </div>
+                <div class="text-stats-panel">
+                    <h3 data-i18n="texttools.stats.title">统计信息</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value" id="statChars">0</span>
+                            <span class="stat-label" data-i18n="texttools.stat.chars">总字符数</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="statCharsNoSpace">0</span>
+                            <span class="stat-label" data-i18n="texttools.stat.charsNoSpace">不含空格</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="statChinese">0</span>
+                            <span class="stat-label" data-i18n="texttools.stat.chinese">中文字符</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="statEnWords">0</span>
+                            <span class="stat-label" data-i18n="texttools.stat.enWords">英文单词</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="statSentences">0</span>
+                            <span class="stat-label" data-i18n="texttools.stat.sentences">句子数</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="statParagraphs">0</span>
+                            <span class="stat-label" data-i18n="texttools.stat.paragraphs">段落数</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="statReadTime">0</span>
+                            <span class="stat-label" data-i18n="texttools.stat.readTime">阅读时长(分)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Markdown Editor -->
+        <section id="markdown" class="section">
+            <h2 data-i18n="markdown.heading">Markdown 编辑器</h2>
+            <div class="tool-container">
+                <div class="editor-panel">
+                    <h3 data-i18n="markdown.input.heading">编辑 Markdown</h3>
+                    <div class="button-group">
+                        <button onclick="insertMdSyntax('bold')" title="Ctrl+B">B</button>
+                        <button onclick="insertMdSyntax('italic')" title="Ctrl+I"><em>I</em></button>
+                        <button onclick="insertMdSyntax('heading')">H</button>
+                        <button onclick="insertMdSyntax('link')">🔗</button>
+                        <button onclick="insertMdSyntax('image')">🖼</button>
+                        <button onclick="insertMdSyntax('code')">{ }</button>
+                        <button onclick="insertMdSyntax('codeblock')">```</button>
+                        <button onclick="insertMdSyntax('list')">• List</button>
+                        <button onclick="insertMdSyntax('olist')">1. List</button>
+                        <button onclick="insertMdSyntax('quote')">❝</button>
+                        <button onclick="insertMdSyntax('table')" data-i18n="markdown.btn.table">表格</button>
+                        <button onclick="insertMdSyntax('hr')">──</button>
+                        <button onclick="insertMdSyntax('math')">∑</button>
+                    </div>
+                    <textarea id="markdownInput" data-i18n-placeholder="markdown.input.placeholder" placeholder="输入Markdown内容..." oninput="renderMarkdownPreview()"></textarea>
+                </div>
+                <div class="preview-panel">
+                    <h3 data-i18n="markdown.preview.heading">实时预览</h3>
+                    <div class="button-group">
+                        <button onclick="copyMarkdownHtml()" data-i18n="markdown.btn.copyhtml">复制HTML</button>
+                        <button onclick="downloadMarkdownHtml()" class="btn-export" data-i18n="markdown.btn.download">下载HTML</button>
+                        <button onclick="clearMarkdown()" data-i18n="markdown.btn.clear">清空</button>
+                    </div>
+                    <div id="markdownPreview" class="markdown-preview preview-box">
+                        <p class="preview-placeholder" data-i18n="markdown.preview.placeholder">Markdown预览将显示在这里...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Reference Manager -->
+    <section id="references" class="section">
+        <h2 data-i18n="ref.heading">参考文献管理</h2>
+        <p class="section-desc" data-i18n="ref.desc">BibTeX解析、DOI自动抓取、引用格式转换 (APA / IEEE / GB/T 7714)</p>
+
+        <div class="tool-container">
+            <div class="editor-panel">
+                <h3 data-i18n="ref.input.heading">输入BibTeX</h3>
+                <div class="button-group" style="margin-bottom:0.5rem">
+                    <input type="text" id="doiInput" placeholder="输入DOI，如 10.1000/xyz" data-i18n-placeholder="ref.doi.placeholder" style="flex:1; padding:0.5rem; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-card); color:var(--text-primary);">
+                    <button onclick="fetchDOI()" data-i18n="ref.btn.fetchdoi">抓取DOI</button>
+                </div>
+                <textarea id="refInput" data-i18n-placeholder="ref.input.placeholder" placeholder="粘贴BibTeX条目..."></textarea>
+                <div class="button-group">
+                    <label for="refStyle" data-i18n="ref.style.label">输出格式:</label>
+                    <select id="refStyle" style="padding:0.5rem; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-card); color:var(--text-primary);">
+                        <option value="apa">APA (7th)</option>
+                        <option value="ieee">IEEE</option>
+                        <option value="gb">GB/T 7714</option>
+                    </select>
+                    <button onclick="convertCitation()" data-i18n="ref.btn.convert">转换格式</button>
+                    <button onclick="clearRef()" data-i18n="ref.btn.clear">清空</button>
+                </div>
+            </div>
+            <div class="output-panel">
+                <h3 data-i18n="ref.output.heading">格式化结果</h3>
+                <div class="button-group">
+                    <button onclick="copyRefOutput()" data-i18n="ref.btn.copy">复制结果</button>
+                </div>
+                <div id="refOutput" class="preview-box">
+                    <p class="preview-placeholder" data-i18n="ref.output.placeholder">转换后的引用将显示在这里...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Visualization -->
+    <section id="dataviz" class="section">
+        <h2 data-i18n="viz.heading">数据可视化</h2>
+        <p class="section-desc" data-i18n="viz.desc">粘贴CSV数据，快速生成图表</p>
+        <div class="tool-container">
+            <div class="editor-panel">
+                <h3 data-i18n="viz.input.heading">输入数据 (CSV)</h3>
+                <div class="button-group">
+                    <select id="chartType" style="padding:0.5rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);">
+                        <option value="bar">Bar</option>
+                        <option value="line">Line</option>
+                        <option value="pie">Pie</option>
+                        <option value="doughnut">Doughnut</option>
+                        <option value="radar">Radar</option>
+                        <option value="polarArea">Polar Area</option>
+                    </select>
+                    <button onclick="renderChart()" data-i18n="viz.btn.render">生成图表</button>
+                    <button onclick="loadSampleData()" data-i18n="viz.btn.sample">示例数据</button>
+                    <button onclick="clearViz()" data-i18n="viz.btn.clear">清空</button>
+                </div>
+                <textarea id="csvInput" data-i18n-placeholder="viz.input.placeholder" placeholder="粘贴CSV数据，如：&#10;Name,Score,Age&#10;Alice,90,22&#10;Bob,85,24&#10;Carol,95,21" rows="10"></textarea>
+            </div>
+            <div class="preview-panel">
+                <h3 data-i18n="viz.output.heading">图表预览</h3>
+                <div class="button-group">
+                    <button onclick="downloadChart()" class="btn-export" data-i18n="viz.btn.download">下载PNG</button>
+                </div>
+                <div id="vizCanvasContainer" style="display:none;min-height:400px;position:relative;">
+                    <canvas id="vizCanvas"></canvas>
+                </div>
+                <p id="vizPlaceholder" class="preview-placeholder" data-i18n="viz.output.placeholder">图表将显示在这里...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Highlight -->
+    <section id="codehighlight" class="section">
+        <h2 data-i18n="code.heading">代码高亮分享</h2>
+        <p class="section-desc" data-i18n="code.desc">粘贴代码，生成带语法高亮的图片或HTML</p>
+        <div class="tool-container">
+            <div class="editor-panel">
+                <h3 data-i18n="code.input.heading">输入代码</h3>
+                <div class="button-group">
+                    <select id="codeLang" style="padding:0.5rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C/C++</option>
+                        <option value="go">Go</option>
+                        <option value="rust">Rust</option>
+                        <option value="sql">SQL</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="bash">Bash</option>
+                    </select>
+                    <button onclick="highlightCode()" data-i18n="code.btn.highlight">高亮</button>
+                    <button onclick="clearCode()" data-i18n="code.btn.clear">清空</button>
+                </div>
+                <textarea id="codeInput" data-i18n-placeholder="code.input.placeholder" placeholder="粘贴代码..." rows="12" style="font-family:'Courier New',monospace;font-size:14px;"></textarea>
+            </div>
+            <div class="preview-panel">
+                <h3 data-i18n="code.output.heading">预览</h3>
+                <div class="button-group">
+                    <button onclick="copyCodeHtml()" data-i18n="code.btn.copyhtml">复制HTML</button>
+                    <button onclick="downloadCodeImage()" class="btn-export" data-i18n="code.btn.downloadpng">下载图片</button>
+                </div>
+                <div id="codeOutputContainer" class="code-output-container" style="display:none;">
+                    <pre class="code-output-pre"><code id="codeOutput"></code></pre>
+                </div>
+                <p class="preview-placeholder" data-i18n="code.output.placeholder">代码预览将显示在这里...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cron Parser -->
+    <section id="cron" class="section">
+        <h2 data-i18n="cron.heading">Cron 表达式解析</h2>
+        <p class="section-desc" data-i18n="cron.desc">解析Cron表达式，查看下次执行时间</p>
+        <div class="tool-container">
+            <div class="editor-panel">
+                <h3 data-i18n="cron.input.heading">输入Cron表达式</h3>
+                <input type="text" id="cronInput" placeholder="* * * * *" style="width:100%;padding:0.75rem;font-family:'Courier New',monospace;font-size:1.2rem;border:2px solid var(--border-color);border-radius:8px;background:var(--bg-card);color:var(--text-primary);text-align:center;letter-spacing:2px;box-sizing:border-box;" oninput="parseCron()">
+                <div class="button-group" style="margin-top:1rem">
+                    <button onclick="parseCron()" data-i18n="cron.btn.parse">解析</button>
+                    <button onclick="clearCron()" data-i18n="cron.btn.clear">清空</button>
+                </div>
+                <div style="margin-top:1rem">
+                    <h4 data-i18n="cron.presets.title">常用预设</h4>
+                    <div class="button-group" style="margin-top:0.5rem">
+                        <button class="template-btn" onclick="insertCronPreset('* * * * *')">Every minute</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 * * * *')">Every hour</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 0 * * *')">Daily midnight</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 9 * * 1-5')">Weekdays 9am</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 0 * * 0')">Weekly Sunday</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 0 1 * *')">Monthly 1st</button>
+                        <button class="template-btn" onclick="insertCronPreset('*/5 * * * *')">Every 5 min</button>
+                        <button class="template-btn" onclick="insertCronPreset('0 */2 * * *')">Every 2 hours</button>
+                    </div>
+                </div>
+            </div>
+            <div class="output-panel">
+                <h3 data-i18n="cron.output.heading">解析结果</h3>
+                <div id="cronOutput">
+                    <p class="preview-placeholder" data-i18n="cron.output.placeholder">Cron解析结果将显示在这里...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Calendar -->
+    <section id="calendar" class="section">
+        <h2 data-i18n="cal.heading">学术日历</h2>
+        <p class="section-desc" data-i18n="cal.desc">重要学术会议截止日期与倒计时</p>
+        <div class="button-group" style="margin-bottom:1rem">
+            <select id="calFieldFilter" onchange="renderCalendar()" style="padding:0.5rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);">
+                <option value="all" data-i18n="cal.filter.all">全部领域</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="CV">Computer Vision</option>
+                <option value="NLP">NLP</option>
+                <option value="DB">Database</option>
+                <option value="Systems">Systems</option>
+                <option value="Web">Web</option>
+                <option value="DM">Data Mining</option>
+                <option value="SE">Software Engineering</option>
+                <option value="Security">Security</option>
+            </select>
+            <select id="calStatusFilter" onchange="renderCalendar()" style="padding:0.5rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);">
+                <option value="all" data-i18n="cal.filter.allstatus">全部状态</option>
+                <option value="open" data-i18n="cal.filter.open">征稿中</option>
+                <option value="soon" data-i18n="cal.filter.soon">即将截止</option>
+            </select>
+            <button onclick="renderCalendar()" data-i18n="cal.btn.refresh">刷新</button>
+        </div>
+        <div id="calendarOutput">
+            <p class="preview-placeholder" data-i18n="cal.output.placeholder">点击上方筛选条件或刷新查看会议信息</p>
+        </div>
+    </section>
+
+    <!-- Formula Helper -->
+    <section id="formula" class="section">
+        <h2 data-i18n="formula.heading">公式助手</h2>
+        <p class="section-desc" data-i18n="formula.desc">LaTeX数学符号面板 + 实时公式预览</p>
+        <div id="symbolPalette" class="symbol-palette"></div>
+        <div class="tool-container" style="margin-top:1rem">
+            <div class="editor-panel">
+                <h3 data-i18n="formula.input.heading">编辑公式</h3>
+                <textarea id="formulaInput" data-i18n-placeholder="formula.input.placeholder" placeholder="输入LaTeX公式..." oninput="renderFormulaPreview()" rows="4" style="font-family:'Courier New',monospace;"></textarea>
+                <div class="button-group">
+                    <button onclick="copyFormula()" data-i18n="formula.btn.copy">复制公式</button>
+                    <button onclick="clearFormula()" data-i18n="formula.btn.clear">清空</button>
+                </div>
+            </div>
+            <div class="preview-panel">
+                <h3 data-i18n="formula.preview.heading">实时预览</h3>
+                <div id="formulaPreview" class="preview-box" style="min-height:150px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
+                    <p class="preview-placeholder" data-i18n="formula.preview.placeholder">公式预览将显示在这里...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pomodoro Timer -->
+    <section id="pomodoro" class="section">
+        <h2 data-i18n="pomo.heading">番茄钟</h2>
+        <p class="section-desc" data-i18n="pomo.desc">科研专注计时器，配合全屏专注模式使用效果更佳</p>
+
+        <div class="pomo-container">
+            <div class="pomo-mode-buttons">
+                <button class="pomo-mode-btn active" data-mode="work" onclick="switchPomodoroMode('work')" data-i18n="pomo.mode.work">专注</button>
+                <button class="pomo-mode-btn" data-mode="break" onclick="switchPomodoroMode('break')" data-i18n="pomo.mode.break">短休息</button>
+                <button class="pomo-mode-btn" data-mode="longbreak" onclick="switchPomodoroMode('longbreak')" data-i18n="pomo.mode.longbreak">长休息</button>
+            </div>
+
+            <div class="pomo-timer">
+                <svg class="pomo-ring" viewBox="0 0 300 300">
+                    <circle cx="150" cy="150" r="140" fill="none" stroke="var(--border-color)" stroke-width="6" opacity="0.3"></circle>
+                    <circle id="pomodoroProgress" cx="150" cy="150" r="140" fill="none" stroke="#e74c3c" stroke-width="6" stroke-linecap="round" transform="rotate(-90 150 150)" style="transition: stroke-dashoffset 0.5s ease;"></circle>
+                </svg>
+                <div class="pomo-time-display">
+                    <div id="pomodoroModeLabel" class="pomo-mode-label">专注</div>
+                    <div id="pomodoroTime" class="pomo-time">25:00</div>
+                </div>
+            </div>
+
+            <div class="pomo-controls">
+                <button id="pomodoroStartBtn" class="pomo-start-btn" onclick="togglePomodoro()" data-i18n="pomo.btn.start">开始</button>
+                <button class="pomo-control-btn" onclick="resetPomodoro()" data-i18n="pomo.btn.reset">重置</button>
+            </div>
+
+            <div class="pomo-settings">
+                <div class="pomo-custom">
+                    <input type="number" id="pomodoroCustomMinutes" min="1" max="120" value="25" style="width:60px;padding:0.4rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-card);color:var(--text-primary);text-align:center;">
+                    <span data-i18n="pomo.minutes">分钟</span>
+                    <button class="template-btn" onclick="setCustomTime()" data-i18n="pomo.btn.settime">设置</button>
+                </div>
+            </div>
+
+            <div class="pomo-stats">
+                <div class="pomo-stat">
+                    <div class="pomo-stat-value" id="pomodoroCountDisplay">0</div>
+                    <div class="pomo-stat-label" data-i18n="pomo.stat.count">今日番茄数</div>
+                </div>
+                <div class="pomo-stat">
+                    <div class="pomo-stat-value" id="pomodoroTotalDisplay">0 分钟</div>
+                    <div class="pomo-stat-label" data-i18n="pomo.stat.total">累计专注时长</div>
+                </div>
+                <div class="pomo-stat">
+                    <button class="template-btn" onclick="resetPomodoroStats()" data-i18n="pomo.btn.resetstats">重置统计</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 神经网络模型库 -->
+        <section id="models" class="section">
+            <h2 data-i18n="models.heading">神经网络模型库</h2>
+            <div class="model-gallery">
+                <div class="model-card">
+                    <h3 data-i18n="models.cnn.title">卷积神经网络 (CNN)</h3>
+                    <svg width="600" height="200" class="model-diagram">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Input -->
+                        <rect x="20" y="60" width="60" height="80" fill="url(#grad1)" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="50" y="155" text-anchor="middle" font-size="12">Input</text>
+
+                        <!-- Conv1 -->
+                        <rect x="120" y="50" width="50" height="100" fill="#e74c3c" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="145" y="165" text-anchor="middle" font-size="12">Conv</text>
+
+                        <!-- Pool1 -->
+                        <rect x="210" y="65" width="40" height="70" fill="#f39c12" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="230" y="150" text-anchor="middle" font-size="12">Pool</text>
+
+                        <!-- Conv2 -->
+                        <rect x="290" y="55" width="45" height="90" fill="#e74c3c" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="312" y="160" text-anchor="middle" font-size="12">Conv</text>
+
+                        <!-- Pool2 -->
+                        <rect x="375" y="70" width="35" height="60" fill="#f39c12" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="392" y="145" text-anchor="middle" font-size="12">Pool</text>
+
+                        <!-- FC -->
+                        <rect x="450" y="75" width="50" height="50" fill="#9b59b6" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="475" y="140" text-anchor="middle" font-size="12">FC</text>
+
+                        <!-- Output -->
+                        <rect x="540" y="85" width="40" height="30" fill="#27ae60" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="560" y="130" text-anchor="middle" font-size="12">Output</text>
+
+                        <!-- Arrows -->
+                        <path d="M 80 100 L 120 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        <path d="M 170 100 L 210 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        <path d="M 250 100 L 290 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        <path d="M 335 100 L 375 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        <path d="M 410 100 L 450 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        <path d="M 500 100 L 540 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                    <p data-i18n="models.cnn.desc">经典卷积神经网络架构，包含卷积层、池化层和全连接层</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+
+                <div class="model-card">
+                    <h3 data-i18n="models.rnn.title">循环神经网络 (RNN)</h3>
+                    <svg width="600" height="200" class="model-diagram">
+                        <!-- RNN cells -->
+                        <rect x="50" y="60" width="80" height="80" fill="#e67e22" stroke="#2c3e50" stroke-width="2" rx="10"/>
+                        <text x="90" y="105" text-anchor="middle" font-size="14" font-weight="bold">RNN</text>
+                        <text x="90" y="155" text-anchor="middle" font-size="12">t-1</text>
+
+                        <rect x="200" y="60" width="80" height="80" fill="#e67e22" stroke="#2c3e50" stroke-width="2" rx="10"/>
+                        <text x="240" y="105" text-anchor="middle" font-size="14" font-weight="bold">RNN</text>
+                        <text x="240" y="155" text-anchor="middle" font-size="12">t</text>
+
+                        <rect x="350" y="60" width="80" height="80" fill="#e67e22" stroke="#2c3e50" stroke-width="2" rx="10"/>
+                        <text x="390" y="105" text-anchor="middle" font-size="14" font-weight="bold">RNN</text>
+                        <text x="390" y="155" text-anchor="middle" font-size="12">t+1</text>
+
+                        <!-- Recurrent connections -->
+                        <path d="M 130 100 Q 165 70, 200 100" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                        <path d="M 280 100 Q 315 70, 350 100" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+
+                        <!-- Inputs -->
+                        <path d="M 90 160 L 90 180" stroke="#3498db" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                        <text x="90" y="195" text-anchor="middle" font-size="12">x_{t-1}</text>
+
+                        <path d="M 240 160 L 240 180" stroke="#3498db" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                        <text x="240" y="195" text-anchor="middle" font-size="12">x_t</text>
+
+                        <path d="M 390 160 L 390 180" stroke="#3498db" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                        <text x="390" y="195" text-anchor="middle" font-size="12">x_{t+1}</text>
+
+                        <!-- Outputs -->
+                        <path d="M 90 60 L 90 40" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                        <text x="90" y="30" text-anchor="middle" font-size="12">h_{t-1}</text>
+
+                        <path d="M 240 60 L 240 40" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                        <text x="240" y="30" text-anchor="middle" font-size="12">h_t</text>
+
+                        <path d="M 390 60 L 390 40" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                        <text x="390" y="30" text-anchor="middle" font-size="12">h_{t+1}</text>
+
+                        <defs>
+                            <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                    <p data-i18n="models.rnn.desc">循环神经网络结构，展示时间步之间的循环连接</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+
+                <div class="model-card">
+                    <h3 data-i18n="models.transformer.title">Transformer 架构</h3>
+                    <svg width="600" height="250" class="model-diagram">
+                        <!-- Encoder -->
+                        <g>
+                            <rect x="50" y="30" width="150" height="180" fill="none" stroke="#3498db" stroke-width="2" stroke-dasharray="5,5"/>
+                            <text x="125" y="20" text-anchor="middle" font-size="14" font-weight="bold">Encoder</text>
+
+                            <rect x="70" y="50" width="110" height="40" fill="#3498db" stroke="#2c3e50" stroke-width="1" rx="5"/>
+                            <text x="125" y="75" text-anchor="middle" font-size="12">Multi-Head Attention</text>
+
+                            <rect x="70" y="110" width="110" height="30" fill="#9b59b6" stroke="#2c3e50" stroke-width="1" rx="5"/>
+                            <text x="125" y="130" text-anchor="middle" font-size="12">Add & Norm</text>
+
+                            <rect x="70" y="160" width="110" height="30" fill="#e74c3c" stroke="#2c3e50" stroke-width="1" rx="5"/>
+                            <text x="125" y="180" text-anchor="middle" font-size="12">Feed Forward</text>
+                        </g>
+
+                        <!-- Decoder -->
+                        <g>
+                            <rect x="300" y="30" width="150" height="180" fill="none" stroke="#e67e22" stroke-width="2" stroke-dasharray="5,5"/>
+                            <text x="375" y="20" text-anchor="middle" font-size="14" font-weight="bold">Decoder</text>
+
+                            <rect x="320" y="50" width="110" height="35" fill="#e67e22" stroke="#2c3e50" stroke-width="1" rx="5"/>
+                            <text x="375" y="70" text-anchor="middle" font-size="11">Masked Multi-Head</text>
+                            <text x="375" y="82" text-anchor="middle" font-size="11">Attention</text>
+
+                            <rect x="320" y="105" width="110" height="35" fill="#3498db" stroke="#2c3e50" stroke-width="1" rx="5"/>
+                            <text x="375" y="125" text-anchor="middle" font-size="11">Cross Attention</text>
+
+                            <rect x="320" y="160" width="110" height="30" fill="#e74c3c" stroke="#2c3e50" stroke-width="1" rx="5"/>
+                            <text x="375" y="180" text-anchor="middle" font-size="11">Feed Forward</text>
+                        </g>
+
+                        <!-- Connection -->
+                        <path d="M 200 120 L 300 120" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead3)"/>
+                        <text x="250" y="115" text-anchor="middle" font-size="10">context</text>
+
+                        <defs>
+                            <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                    <p data-i18n="models.transformer.desc">Transformer架构，包含编码器和解码器，使用注意力机制</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+
+                <div class="model-card">
+                    <h3 data-i18n="models.gan.title">生成对抗网络 (GAN)</h3>
+                    <svg width="600" height="200" class="model-diagram">
+                        <!-- Noise -->
+                        <circle cx="80" cy="100" r="30" fill="#95a5a6" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="80" y="105" text-anchor="middle" font-size="12">Noise z</text>
+
+                        <!-- Generator -->
+                        <rect x="180" y="60" width="100" height="80" fill="#3498db" stroke="#2c3e50" stroke-width="2" rx="10"/>
+                        <text x="230" y="95" text-anchor="middle" font-size="14" font-weight="bold">Generator</text>
+                        <text x="230" y="115" text-anchor="middle" font-size="11">G(z)</text>
+
+                        <!-- Fake Image -->
+                        <rect x="340" y="70" width="60" height="60" fill="#f39c12" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="370" y="155" text-anchor="middle" font-size="11">Fake</text>
+
+                        <!-- Real Image -->
+                        <rect x="340" y="10" width="60" height="40" fill="#27ae60" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="370" y="65" text-anchor="middle" font-size="11">Real</text>
+
+                        <!-- Discriminator -->
+                        <rect x="460" y="60" width="100" height="80" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" rx="10"/>
+                        <text x="510" y="95" text-anchor="middle" font-size="14" font-weight="bold">Discriminator</text>
+                        <text x="510" y="115" text-anchor="middle" font-size="11">D(x)</text>
+
+                        <!-- Arrows -->
+                        <path d="M 110 100 L 180 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead4)"/>
+                        <path d="M 280 100 L 340 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead4)"/>
+                        <path d="M 400 100 L 460 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead4)"/>
+                        <path d="M 400 30 L 430 30 L 430 100 L 460 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead4)"/>
+
+                        <!-- Feedback -->
+                        <path d="M 510 60 Q 510 20, 230 20 Q 230 40, 230 60" stroke="#9b59b6" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead4)" fill="none"/>
+                        <text x="370" y="15" text-anchor="middle" font-size="10" fill="#9b59b6">Backprop</text>
+
+                        <defs>
+                            <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                    <p data-i18n="models.gan.desc">生成对抗网络，生成器和判别器相互博弈训练</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+
+                <!-- ResNet -->
+                <div class="model-card">
+                    <h3 data-i18n="models.resnet.title">残差网络 (ResNet)</h3>
+                    <svg width="600" height="220" class="model-diagram">
+                        <defs>
+                            <marker id="arrowhead5" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                        </defs>
+                        <!-- Block 1 -->
+                        <rect x="30" y="60" width="80" height="50" fill="#3498db" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="70" y="90" text-anchor="middle" font-size="12" fill="white">Conv Block</text>
+                        <!-- Block 2 -->
+                        <rect x="160" y="60" width="80" height="50" fill="#3498db" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="200" y="90" text-anchor="middle" font-size="12" fill="white">Conv Block</text>
+                        <!-- Skip connection 1 -->
+                        <path d="M 30 85 Q 30 30, 130 30 Q 240 30, 240 60" stroke="#e74c3c" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead5)"/>
+                        <text x="135" y="25" text-anchor="middle" font-size="10" fill="#e74c3c">Skip</text>
+                        <!-- + -->
+                        <circle cx="260" cy="85" r="15" fill="#f39c12" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="260" y="90" text-anchor="middle" font-size="16" font-weight="bold">+</text>
+                        <!-- Block 3 -->
+                        <rect x="310" y="60" width="80" height="50" fill="#9b59b6" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="350" y="90" text-anchor="middle" font-size="12" fill="white">Conv Block</text>
+                        <!-- Block 4 -->
+                        <rect x="440" y="60" width="80" height="50" fill="#9b59b6" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="480" y="90" text-anchor="middle" font-size="12" fill="white">Conv Block</text>
+                        <!-- Skip connection 2 -->
+                        <path d="M 310 85 Q 310 30, 400 30 Q 520 30, 520 60" stroke="#e74c3c" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead5)"/>
+                        <text x="415" y="25" text-anchor="middle" font-size="10" fill="#e74c3c">Skip</text>
+                        <!-- + -->
+                        <circle cx="540" cy="85" r="15" fill="#f39c12" stroke="#2c3e50" stroke-width="2"/>
+                        <text x="540" y="90" text-anchor="middle" font-size="16" font-weight="bold">+</text>
+                        <!-- Arrows -->
+                        <path d="M 110 85 L 160 85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead5)"/>
+                        <path d="M 275 85 L 310 85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead5)"/>
+                        <path d="M 390 85 L 440 85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead5)"/>
+                        <path d="M 555 85 L 580 85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead5)"/>
+                        <!-- Labels -->
+                        <text x="70" y="130" text-anchor="middle" font-size="11">Layer 1</text>
+                        <text x="200" y="130" text-anchor="middle" font-size="11">Layer 2</text>
+                        <text x="350" y="130" text-anchor="middle" font-size="11">Layer 3</text>
+                        <text x="480" y="130" text-anchor="middle" font-size="11">Layer 4</text>
+                        <text x="300" y="200" text-anchor="middle" font-size="13" fill="#e74c3c">Residual / Skip Connections</text>
+                    </svg>
+                    <p data-i18n="models.resnet.desc">通过跳跃连接解决深层网络梯度消失问题</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+
+                <!-- LSTM -->
+                <div class="model-card">
+                    <h3 data-i18n="models.lstm.title">长短期记忆网络 (LSTM)</h3>
+                    <svg width="600" height="250" class="model-diagram">
+                        <defs>
+                            <marker id="arrowhead6" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                        </defs>
+                        <!-- Cell outline -->
+                        <rect x="100" y="30" width="400" height="170" fill="none" stroke="#2c3e50" stroke-width="2" rx="10" stroke-dasharray="5,5"/>
+                        <text x="300" y="22" text-anchor="middle" font-size="14" font-weight="bold">LSTM Cell</text>
+                        <!-- Forget gate -->
+                        <rect x="130" y="80" width="70" height="40" fill="#e74c3c" stroke="#2c3e50" stroke-width="1.5" rx="5"/>
+                        <text x="165" y="105" text-anchor="middle" font-size="11" fill="white">Forget</text>
+                        <text x="165" y="140" text-anchor="middle" font-size="10">f_t</text>
+                        <!-- Input gate -->
+                        <rect x="230" y="80" width="70" height="40" fill="#3498db" stroke="#2c3e50" stroke-width="1.5" rx="5"/>
+                        <text x="265" y="105" text-anchor="middle" font-size="11" fill="white">Input</text>
+                        <text x="265" y="140" text-anchor="middle" font-size="10">i_t</text>
+                        <!-- Cell state -->
+                        <rect x="330" y="80" width="70" height="40" fill="#f39c12" stroke="#2c3e50" stroke-width="1.5" rx="5"/>
+                        <text x="365" y="100" text-anchor="middle" font-size="10" fill="white">Cell</text>
+                        <text x="365" y="115" text-anchor="middle" font-size="10" fill="white">State</text>
+                        <text x="365" y="140" text-anchor="middle" font-size="10">C_t</text>
+                        <!-- Output gate -->
+                        <rect x="430" y="80" width="70" height="40" fill="#27ae60" stroke="#2c3e50" stroke-width="1.5" rx="5"/>
+                        <text x="465" y="105" text-anchor="middle" font-size="11" fill="white">Output</text>
+                        <text x="465" y="140" text-anchor="middle" font-size="10">o_t</text>
+                        <!-- Cell state line (top) -->
+                        <path d="M 80 50 L 520 50" stroke="#f39c12" stroke-width="3" marker-end="url(#arrowhead6)"/>
+                        <text x="300" y="45" text-anchor="middle" font-size="10" fill="#f39c12">Cell State C</text>
+                        <!-- h_t-1 input -->
+                        <path d="M 80 100 L 130 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead6)"/>
+                        <text x="60" y="105" text-anchor="middle" font-size="10">h_{t-1}</text>
+                        <!-- h_t output -->
+                        <path d="M 500 100 L 540 100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead6)"/>
+                        <text x="555" y="105" text-anchor="middle" font-size="10">h_t</text>
+                        <!-- x_t input -->
+                        <path d="M 300 230 L 300 210" stroke="#3498db" stroke-width="2" marker-end="url(#arrowhead6)"/>
+                        <text x="300" y="245" text-anchor="middle" font-size="12">x_t</text>
+                        <!-- connections between gates -->
+                        <path d="M 200 100 L 230 100" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead6)"/>
+                        <path d="M 300 100 L 330 100" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead6)"/>
+                        <path d="M 400 100 L 430 100" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead6)"/>
+                    </svg>
+                    <p data-i18n="models.lstm.desc">通过门控机制控制信息流，有效处理长序列依赖</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+
+                <!-- Autoencoder -->
+                <div class="model-card">
+                    <h3 data-i18n="models.autoencoder.title">自编码器 (Autoencoder)</h3>
+                    <svg width="600" height="220" class="model-diagram">
+                        <defs>
+                            <marker id="arrowhead7" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                        </defs>
+                        <!-- Encoder layers (decreasing) -->
+                        <rect x="30" y="30" width="60" height="150" fill="#3498db" stroke="#2c3e50" stroke-width="2" rx="3"/>
+                        <text x="60" y="195" text-anchor="middle" font-size="11">Input</text>
+                        <rect x="120" y="50" width="50" height="110" fill="#2980b9" stroke="#2c3e50" stroke-width="2" rx="3"/>
+                        <text x="145" y="195" text-anchor="middle" font-size="10">Enc 1</text>
+                        <rect x="200" y="70" width="40" height="70" fill="#1f6dad" stroke="#2c3e50" stroke-width="2" rx="3"/>
+                        <text x="220" y="195" text-anchor="middle" font-size="10">Enc 2</text>
+                        <!-- Bottleneck -->
+                        <rect x="275" y="85" width="50" height="40" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="300" y="110" text-anchor="middle" font-size="10" fill="white">Latent</text>
+                        <text x="300" y="195" text-anchor="middle" font-size="10" fill="#e74c3c">z</text>
+                        <!-- Decoder layers (increasing) -->
+                        <rect x="360" y="70" width="40" height="70" fill="#27ae60" stroke="#2c3e50" stroke-width="2" rx="3"/>
+                        <text x="380" y="195" text-anchor="middle" font-size="10">Dec 1</text>
+                        <rect x="430" y="50" width="50" height="110" fill="#2ecc71" stroke="#2c3e50" stroke-width="2" rx="3"/>
+                        <text x="455" y="195" text-anchor="middle" font-size="10">Dec 2</text>
+                        <rect x="510" y="30" width="60" height="150" fill="#58d68d" stroke="#2c3e50" stroke-width="2" rx="3"/>
+                        <text x="540" y="195" text-anchor="middle" font-size="11">Output</text>
+                        <!-- Arrows -->
+                        <path d="M 90 105 L 120 105" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead7)"/>
+                        <path d="M 170 105 L 200 105" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead7)"/>
+                        <path d="M 240 105 L 275 105" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead7)"/>
+                        <path d="M 325 105 L 360 105" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead7)"/>
+                        <path d="M 400 105 L 430 105" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead7)"/>
+                        <path d="M 480 105 L 510 105" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead7)"/>
+                        <!-- Labels -->
+                        <text x="150" y="15" text-anchor="middle" font-size="13" fill="#3498db" font-weight="bold">Encoder</text>
+                        <text x="450" y="15" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">Decoder</text>
+                    </svg>
+                    <p data-i18n="models.autoencoder.desc">编码器-瓶颈-解码器结构，用于降维和特征学习</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+
+                <!-- U-Net -->
+                <div class="model-card">
+                    <h3 data-i18n="models.unet.title">U-Net 架构</h3>
+                    <svg width="600" height="280" class="model-diagram">
+                        <defs>
+                            <marker id="arrowhead8" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                        </defs>
+                        <!-- Encoder (left, going down) -->
+                        <rect x="30" y="20" width="90" height="40" fill="#3498db" stroke="#2c3e50" stroke-width="2" rx="4"/>
+                        <text x="75" y="45" text-anchor="middle" font-size="10" fill="white">Conv 64</text>
+                        <rect x="50" y="80" width="80" height="40" fill="#2980b9" stroke="#2c3e50" stroke-width="2" rx="4"/>
+                        <text x="90" y="105" text-anchor="middle" font-size="10" fill="white">Conv 128</text>
+                        <rect x="70" y="140" width="70" height="40" fill="#1f6dad" stroke="#2c3e50" stroke-width="2" rx="4"/>
+                        <text x="105" y="165" text-anchor="middle" font-size="10" fill="white">Conv 256</text>
+                        <!-- Bottleneck -->
+                        <rect x="220" y="200" width="160" height="40" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="300" y="225" text-anchor="middle" font-size="11" fill="white">Bottleneck 512</text>
+                        <!-- Decoder (right, going up) -->
+                        <rect x="460" y="140" width="70" height="40" fill="#27ae60" stroke="#2c3e50" stroke-width="2" rx="4"/>
+                        <text x="495" y="165" text-anchor="middle" font-size="10" fill="white">Conv 256</text>
+                        <rect x="470" y="80" width="80" height="40" fill="#2ecc71" stroke="#2c3e50" stroke-width="2" rx="4"/>
+                        <text x="510" y="105" text-anchor="middle" font-size="10" fill="white">Conv 128</text>
+                        <rect x="480" y="20" width="90" height="40" fill="#58d68d" stroke="#2c3e50" stroke-width="2" rx="4"/>
+                        <text x="525" y="45" text-anchor="middle" font-size="10" fill="white">Conv 64</text>
+                        <!-- Down arrows -->
+                        <path d="M 75 60 L 90 80" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead8)"/>
+                        <path d="M 90 120 L 105 140" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead8)"/>
+                        <path d="M 105 180 L 220 220" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead8)"/>
+                        <!-- Up arrows -->
+                        <path d="M 380 220 L 460 160" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead8)"/>
+                        <path d="M 495 140 L 510 120" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead8)"/>
+                        <path d="M 510 80 L 525 60" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead8)"/>
+                        <!-- Skip connections (horizontal) -->
+                        <path d="M 120 40 L 480 40" stroke="#9b59b6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead8)"/>
+                        <path d="M 130 100 L 470 100" stroke="#9b59b6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead8)"/>
+                        <path d="M 140 160 L 460 160" stroke="#9b59b6" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead8)"/>
+                        <!-- Labels -->
+                        <text x="300" y="38" text-anchor="middle" font-size="9" fill="#9b59b6">Skip Connection</text>
+                        <text x="300" y="98" text-anchor="middle" font-size="9" fill="#9b59b6">Skip Connection</text>
+                        <text x="300" y="158" text-anchor="middle" font-size="9" fill="#9b59b6">Skip Connection</text>
+                        <text x="60" y="270" text-anchor="middle" font-size="12" fill="#3498db" font-weight="bold">Encoder</text>
+                        <text x="300" y="270" text-anchor="middle" font-size="12" fill="#e74c3c" font-weight="bold">Bottleneck</text>
+                        <text x="530" y="270" text-anchor="middle" font-size="12" fill="#27ae60" font-weight="bold">Decoder</text>
+                    </svg>
+                    <p data-i18n="models.unet.desc">编码-解码结构配合跳跃连接，广泛用于图像分割</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+
+                <!-- Diffusion Model -->
+                <div class="model-card">
+                    <h3 data-i18n="models.diffusion.title">扩散模型 (Diffusion)</h3>
+                    <svg width="600" height="200" class="model-diagram">
+                        <defs>
+                            <marker id="arrowhead9" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                            </marker>
+                            <marker id="arrowhead9r" markerWidth="10" markerHeight="10" refX="1" refY="3" orient="auto">
+                                <polygon points="10 0, 0 3, 10 6" fill="#27ae60"/>
+                            </marker>
+                        </defs>
+                        <!-- Forward process (adding noise) -->
+                        <text x="300" y="18" text-anchor="middle" font-size="12" fill="#e74c3c" font-weight="bold">Forward Process (Add Noise)</text>
+                        <rect x="20" y="50" width="70" height="70" fill="#3498db" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="55" y="90" text-anchor="middle" font-size="11" fill="white">x_0</text>
+                        <text x="55" y="140" text-anchor="middle" font-size="10">Clean</text>
+                        <rect x="140" y="50" width="70" height="70" fill="#5dade2" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="175" y="90" text-anchor="middle" font-size="11" fill="white">x_1</text>
+                        <rect x="260" y="50" width="70" height="70" fill="#85c1e9" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="295" y="85" text-anchor="middle" font-size="11">...</text>
+                        <rect x="380" y="50" width="70" height="70" fill="#aed6f1" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="415" y="90" text-anchor="middle" font-size="11">x_{T-1}</text>
+                        <rect x="500" y="50" width="70" height="70" fill="#d5d8dc" stroke="#2c3e50" stroke-width="2" rx="5"/>
+                        <text x="535" y="90" text-anchor="middle" font-size="11">x_T</text>
+                        <text x="535" y="140" text-anchor="middle" font-size="10">Noise</text>
+                        <!-- Forward arrows -->
+                        <path d="M 90 85 L 140 85" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead9)"/>
+                        <path d="M 210 85 L 260 85" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead9)"/>
+                        <path d="M 330 85 L 380 85" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead9)"/>
+                        <path d="M 450 85 L 500 85" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead9)"/>
+                        <!-- Reverse process (denoising) -->
+                        <text x="300" y="185" text-anchor="middle" font-size="12" fill="#27ae60" font-weight="bold">Reverse Process (Denoise)</text>
+                        <path d="M 140 105 L 90 105" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead9r)"/>
+                        <path d="M 260 105 L 210 105" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead9r)"/>
+                        <path d="M 380 105 L 330 105" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead9r)"/>
+                        <path d="M 500 105 L 450 105" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead9r)"/>
+                        <!-- Denoise labels -->
+                        <text x="115" y="165" text-anchor="middle" font-size="9" fill="#27ae60">denoise</text>
+                        <text x="235" y="165" text-anchor="middle" font-size="9" fill="#27ae60">denoise</text>
+                        <text x="355" y="165" text-anchor="middle" font-size="9" fill="#27ae60">denoise</text>
+                        <text x="475" y="165" text-anchor="middle" font-size="9" fill="#27ae60">denoise</text>
+                    </svg>
+                    <p data-i18n="models.diffusion.desc">逐步添加噪声再去噪的生成模型，用于高质量图像生成</p>
+                    <button onclick="downloadModelSvg(this)" data-i18n="models.btn.download">下载此模型图</button>
+                    <button onclick="downloadModelPng(this)" class="btn-export" data-i18n="models.btn.downloadpng">下载PNG</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 顶刊流程图画廊 -->
+        <section id="flowcharts" class="section">
+            <h2 data-i18n="fc.heading">顶刊流程图画廊</h2>
+            <p class="section-desc" data-i18n="fc.desc">精选顶级期刊论文流程图，使用SVG矢量重绘，高清无损下载。</p>
+
+            <!-- Unlock bar -->
+            <div id="fcLockBar" class="fc-lock-bar">
+                <div class="fc-lock-info">
+                    <span class="fc-lock-icon">🔒</span>
+                    <span data-i18n="fc.locked.hint">输入解锁密码以获取高清SVG下载</span>
+                </div>
+                <div class="fc-unlock-form">
+                    <input type="password" id="fcPasswordInput" placeholder="请输入解锁密码" data-i18n-placeholder="fc.password.placeholder">
+                    <button onclick="unlockFlowcharts()" data-i18n="fc.btn.unlock">解锁</button>
+                </div>
+            </div>
+            <div id="fcUnlockedBar" class="fc-unlocked-bar" style="display:none;">
+                <span class="fc-lock-icon">🔓</span>
+                <span data-i18n="fc.unlocked.hint">已解锁，可自由下载所有流程图</span>
+                <button onclick="lockFlowcharts()" class="fc-btn-lock" data-i18n="fc.btn.lock">锁定</button>
+            </div>
+
+            <!-- Filter -->
+            <div class="fc-filter">
+                <label data-i18n="fc.filter.field">领域筛选：</label>
+                <select id="fcFieldFilter" onchange="renderFlowcharts()">
+                    <option value="all" data-i18n="fc.filter.all">全部</option>
+                    <option value="AI/ML">AI/ML</option>
+                    <option value="CV">Computer Vision</option>
+                    <option value="NLP">NLP</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- Gallery grid -->
+            <div id="fcGallery" class="fc-gallery"></div>
+        </section>
+
+        <!-- 论文速递 -->
+        <section id="paper-digest" class="section">
+            <h2 data-i18n="pd.heading">论文速递</h2>
+            <p class="section-desc" data-i18n="pd.desc">每日精选顶刊论文，解析核心亮点与创新方法。</p>
+
+            <!-- Filters -->
+            <div class="pd-toolbar">
+                <div class="pd-filters">
+                    <select id="pdFieldFilter" onchange="renderPaperDigest()">
+                        <option value="all" data-i18n="pd.filter.all">全部领域</option>
+                        <option value="AI/ML">AI/ML</option>
+                        <option value="Security">Security</option>
+                        <option value="VPP">Virtual Power Plant</option>
+                        <option value="Energy">Energy Management</option>
+                        <option value="CV">Computer Vision</option>
+                        <option value="NLP">NLP</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <select id="pdDateFilter" onchange="renderPaperDigest()">
+                        <option value="all" data-i18n="pd.filter.alltime">全部时间</option>
+                        <option value="7" data-i18n="pd.filter.week">最近7天</option>
+                        <option value="30" data-i18n="pd.filter.month">最近30天</option>
+                    </select>
+                    <input type="text" id="pdSearchInput" placeholder="搜索论文标题/关键词..." data-i18n-placeholder="pd.search.placeholder" oninput="renderPaperDigest()">
+                </div>
+                <div class="pd-stats">
+                    <span id="pdCount"></span>
+                </div>
+            </div>
+
+            <!-- Paper list -->
+            <div id="pdList" class="pd-list"></div>
+        </section>
+
+        <!-- 科研资源 -->
+        <section id="resources" class="section">
+            <h2 data-i18n="resources.heading">科研资源导航</h2>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.search.title">🔍 论文搜索与下载</h3>
+                <div class="resource-links">
+                    <a href="https://scholar.google.com" target="_blank" class="resource-link">
+                        <strong>Google Scholar</strong>
+                        <span data-i18n="resources.scholar.desc">最全面的学术搜索引擎</span>
+                    </a>
+                    <a href="https://arxiv.org" target="_blank" class="resource-link">
+                        <strong>arXiv</strong>
+                        <span data-i18n="resources.arxiv.desc">物理、数学、计算机科学预印本</span>
+                    </a>
+                    <a href="https://www.semanticscholar.org" target="_blank" class="resource-link">
+                        <strong>Semantic Scholar</strong>
+                        <span data-i18n="resources.semantic.desc">AI驱动的学术搜索</span>
+                    </a>
+                    <a href="https://www.researchgate.net" target="_blank" class="resource-link">
+                        <strong>ResearchGate</strong>
+                        <span data-i18n="resources.researchgate.desc">学术社交网络平台</span>
+                    </a>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" class="resource-link">
+                        <strong>PubMed</strong>
+                        <span data-i18n="resources.pubmed.desc">生物医学文献数据库</span>
+                    </a>
+                    <a href="https://ieeexplore.ieee.org" target="_blank" class="resource-link">
+                        <strong>IEEE Xplore</strong>
+                        <span data-i18n="resources.ieee.desc">电气电子工程师学会数字图书馆</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.datasets.title">📊 数据集与代码</h3>
+                <div class="resource-links">
+                    <a href="https://www.kaggle.com/datasets" target="_blank" class="resource-link">
+                        <strong>Kaggle Datasets</strong>
+                        <span data-i18n="resources.kaggle.desc">机器学习数据集平台</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="resource-link">
+                        <strong>GitHub</strong>
+                        <span data-i18n="resources.github.desc">开源代码托管平台</span>
+                    </a>
+                    <a href="https://paperswithcode.com" target="_blank" class="resource-link">
+                        <strong>Papers with Code</strong>
+                        <span data-i18n="resources.pwc.desc">论文与代码实现对照</span>
+                    </a>
+                    <a href="https://huggingface.co/datasets" target="_blank" class="resource-link">
+                        <strong>Hugging Face Datasets</strong>
+                        <span data-i18n="resources.hf.desc">NLP和ML数据集</span>
+                    </a>
+                    <a href="https://www.tensorflow.org/datasets" target="_blank" class="resource-link">
+                        <strong>TensorFlow Datasets</strong>
+                        <span data-i18n="resources.tfds.desc">TensorFlow官方数据集</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.conferences.title">📅 学术会议</h3>
+                <div class="resource-links">
+                    <a href="https://neurips.cc" target="_blank" class="resource-link">
+                        <strong>NeurIPS</strong>
+                        <span data-i18n="resources.neurips.desc">神经信息处理系统大会</span>
+                    </a>
+                    <a href="https://icml.cc" target="_blank" class="resource-link">
+                        <strong>ICML</strong>
+                        <span data-i18n="resources.icml.desc">国际机器学习大会</span>
+                    </a>
+                    <a href="https://cvpr.thecvf.com" target="_blank" class="resource-link">
+                        <strong>CVPR</strong>
+                        <span data-i18n="resources.cvpr.desc">计算机视觉与模式识别会议</span>
+                    </a>
+                    <a href="https://iclr.cc" target="_blank" class="resource-link">
+                        <strong>ICLR</strong>
+                        <span data-i18n="resources.iclr.desc">国际学习表征会议</span>
+                    </a>
+                    <a href="https://aaai.org" target="_blank" class="resource-link">
+                        <strong>AAAI</strong>
+                        <span data-i18n="resources.aaai.desc">人工智能促进协会会议</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.journals.title">📖 期刊与出版物</h3>
+                <div class="resource-links">
+                    <a href="https://www.nature.com" target="_blank" class="resource-link">
+                        <strong>Nature</strong>
+                        <span data-i18n="resources.nature.desc">自然科学综合性期刊</span>
+                    </a>
+                    <a href="https://www.science.org" target="_blank" class="resource-link">
+                        <strong>Science</strong>
+                        <span data-i18n="resources.science.desc">科学综合性期刊</span>
+                    </a>
+                    <a href="https://www.cell.com" target="_blank" class="resource-link">
+                        <strong>Cell</strong>
+                        <span data-i18n="resources.cell.desc">生命科学期刊</span>
+                    </a>
+                    <a href="https://www.jmlr.org" target="_blank" class="resource-link">
+                        <strong>JMLR</strong>
+                        <span data-i18n="resources.jmlr.desc">机器学习研究期刊</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.tools.title">🛠️ 科研工具</h3>
+                <div class="resource-links">
+                    <a href="https://www.overleaf.com" target="_blank" class="resource-link">
+                        <strong>Overleaf</strong>
+                        <span data-i18n="resources.overleaf.desc">在线LaTeX编辑器</span>
+                    </a>
+                    <a href="https://www.zotero.org" target="_blank" class="resource-link">
+                        <strong>Zotero</strong>
+                        <span data-i18n="resources.zotero.desc">文献管理工具</span>
+                    </a>
+                    <a href="https://www.mendeley.com" target="_blank" class="resource-link">
+                        <strong>Mendeley</strong>
+                        <span data-i18n="resources.mendeley.desc">文献管理与学术社交</span>
+                    </a>
+                    <a href="https://www.connectedpapers.com" target="_blank" class="resource-link">
+                        <strong>Connected Papers</strong>
+                        <span data-i18n="resources.connectedpapers.desc">论文关系图谱可视化</span>
+                    </a>
+                    <a href="https://www.scispace.com" target="_blank" class="resource-link">
+                        <strong>SciSpace</strong>
+                        <span data-i18n="resources.scispace.desc">AI论文阅读助手</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.writing.title">✍️ 写作与排版工具</h3>
+                <div class="resource-links">
+                    <a href="https://www.turnitin.com" target="_blank" class="resource-link">
+                        <strong>Turnitin</strong>
+                        <span data-i18n="resources.turnitin.desc">学术论文查重检测平台</span>
+                    </a>
+                    <a href="https://www.ithenticate.com" target="_blank" class="resource-link">
+                        <strong>iThenticate</strong>
+                        <span data-i18n="resources.ithenticate.desc">出版商级别的查重工具</span>
+                    </a>
+                    <a href="https://www.tablesgenerator.com" target="_blank" class="resource-link">
+                        <strong>Tables Generator</strong>
+                        <span data-i18n="resources.tablesgenerator.desc">在线LaTeX/HTML表格生成器</span>
+                    </a>
+                    <a href="https://asouqi.github.io/bibtex-converter/" target="_blank" class="resource-link">
+                        <strong>BibTeX Converter</strong>
+                        <span data-i18n="resources.bibconvert.desc">引用格式在线转换工具</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.stats.title">📈 统计与可视化</h3>
+                <div class="resource-links">
+                    <a href="https://www.python.org" target="_blank" class="resource-link">
+                        <strong>Python</strong>
+                        <span data-i18n="resources.python.desc">Python科学计算与数据分析</span>
+                    </a>
+                    <a href="https://www.r-project.org" target="_blank" class="resource-link">
+                        <strong>R Project</strong>
+                        <span data-i18n="resources.rproject.desc">统计计算与图形工具</span>
+                    </a>
+                    <a href="https://plotly.com" target="_blank" class="resource-link">
+                        <strong>Plotly</strong>
+                        <span data-i18n="resources.plotly.desc">交互式数据可视化库</span>
+                    </a>
+                    <a href="https://app.diagrams.net" target="_blank" class="resource-link">
+                        <strong>draw.io</strong>
+                        <span data-i18n="resources.drawio.desc">免费在线图表绘制工具</span>
+                    </a>
+                    <a href="https://gephi.org" target="_blank" class="resource-link">
+                        <strong>Gephi</strong>
+                        <span data-i18n="resources.gephi.desc">网络图与复杂系统可视化</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.chinese.title">🇨🇳 中文学术资源</h3>
+                <div class="resource-links">
+                    <a href="https://www.cnki.net" target="_blank" class="resource-link">
+                        <strong>CNKI 中国知网</strong>
+                        <span data-i18n="resources.cnki.desc">中国最大学术文献数据库</span>
+                    </a>
+                    <a href="https://www.wanfangdata.com.cn" target="_blank" class="resource-link">
+                        <strong>万方数据</strong>
+                        <span data-i18n="resources.wanfang.desc">中文科技期刊与学位论文</span>
+                    </a>
+                    <a href="https://chinaxiv.org" target="_blank" class="resource-link">
+                        <strong>ChinaXiv</strong>
+                        <span data-i18n="resources.chinaxiv.desc">中国科学院预印本平台</span>
+                    </a>
+                    <a href="http://sciencechina.cn/cscd.jsp" target="_blank" class="resource-link">
+                        <strong>CSCD 中国科学引文</strong>
+                        <span data-i18n="resources.cscd.desc">中国科学引文索引数据库</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resource-category">
+                <h3 data-i18n="resources.management.title">📋 科研管理</h3>
+                <div class="resource-links">
+                    <a href="https://orcid.org" target="_blank" class="resource-link">
+                        <strong>ORCID</strong>
+                        <span data-i18n="resources.orcid.desc">全球研究者唯一标识系统</span>
+                    </a>
+                    <a href="https://www.researchsquare.com" target="_blank" class="resource-link">
+                        <strong>Research Square</strong>
+                        <span data-i18n="resources.researchsquare.desc">多学科预印本服务平台</span>
+                    </a>
+                    <a href="https://www.notion.so" target="_blank" class="resource-link">
+                        <strong>Notion</strong>
+                        <span data-i18n="resources.notion2.desc">灵活的科研笔记与项目管理</span>
+                    </a>
+                    <a href="https://obsidian.md" target="_blank" class="resource-link">
+                        <strong>Obsidian</strong>
+                        <span data-i18n="resources.obsidian.desc">本地优先的知识管理工具</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Hidden file input for workspace import -->
+    <input type="file" id="importFileInput" accept=".json" style="display:none" onchange="handleImportFile(event)">
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 data-i18n="footer.about.title">关于本站</h4>
+                    <p data-i18n="footer.about.desc">科研工具集是一个面向高校教师和科研人员的在线工具平台，整合了LaTeX排版、AI写作辅助、学术资源导航等实用工具，助力提升科研效率。</p>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.quicklinks.title">快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" onclick="navigateTo('home')" data-i18n="nav.home">首页</a></li>
+                        <li><a href="#ai-writing" onclick="navigateTo('ai-writing')" data-i18n="nav.aiwriting">AI写作助手</a></li>
+                        <li><a href="#ai-tools" onclick="navigateTo('ai-tools')" data-i18n="nav.aitools">AI工具导航</a></li>
+                        <li><a href="#latex" onclick="navigateTo('latex')" data-i18n="nav.latex">LaTeX工具</a></li>
+                        <li><a href="#resources" onclick="navigateTo('resources')" data-i18n="nav.resources">科研资源</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.contact.title">联系我们</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/startRUNGO/research-tools" target="_blank">GitHub</a></li>
+                        <li><a href="mailto:www.13594@qq.com" data-i18n="footer.contact.email">邮箱联系</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); exportWorkspace()" data-i18n="share.export">导出工作区</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); importWorkspace()" data-i18n="share.import">导入工作区</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-stats" id="footerStats"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Research Tools Hub | <a href="feed.xml" target="_blank">RSS</a> | <a href="https://github.com/startRUNGO/research-tools" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ad container placeholder -->
+    <div class="ad-container" id="adContainer">
+        <!-- Google AdSense: uncomment after approval -->
+        <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXX" data-ad-slot="XXXX" data-ad-format="auto"></ins> -->
+    </div>
+
+    <!-- PWA Install Prompt -->
+    <div id="pwaInstall" class="pwa-install" style="display:none">
+        <span data-i18n="pwa.prompt">Install this app for quick access</span>
+        <button onclick="installPwa()" data-i18n="pwa.install">Install</button>
+        <button onclick="dismissPwa()" class="pwa-dismiss">&times;</button>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container" aria-live="polite" role="status"></div>
+
+    <!-- Focus Mode Button -->
+    <button class="focus-btn" onclick="toggleFocusMode()" aria-label="Toggle focus mode" title="Focus Mode (F11)">⛶</button>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">&#8679;</button>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/ui-core.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/latex.js"></script>
+    <script src="js/svg-editor.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/text-tools.js"></script>
+    <script src="js/markdown.js"></script>
+    <script src="js/references.js"></script>
+    <script src="js/data-viz.js"></script>
+    <script src="js/code-highlight.js"></script>
+    <script src="js/cron-parser.js"></script>
+    <script src="js/academic-cal.js"></script>
+    <script src="js/formula-helper.js"></script>
+    <script src="js/pomodoro.js"></script>
+    <script src="js/flowcharts.js"></script>
+    <script src="js/paper-digest.js"></script>
+    <script src="js/ai-features.js"></script>
+    <script src="js/share.js"></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js').catch(() => {});
+        });
+    }
+    </script>
+
+    <!-- Back to top button -->
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&uarr;</button>
+
+    <!-- First visit onboarding -->
+    <div id="onboarding" style="display:none">
+        <div class="onboarding-overlay" onclick="dismissOnboarding()"></div>
+        <div class="onboarding-card">
+            <h3 data-i18n="onboard.title">Welcome to Research Tools Hub!</h3>
+            <p data-i18n="onboard.desc">Free online tools for academic researchers. Browse daily paper digests, format LaTeX, edit SVG graphics, and more.</p>
+            <ul>
+                <li data-i18n="onboard.tip1">Use the top navigation to switch between tools</li>
+                <li data-i18n="onboard.tip2">Bookmark papers with the star icon</li>
+                <li data-i18n="onboard.tip3">Export bookmarks as BibTeX for your references</li>
+                <li data-i18n="onboard.tip4">Toggle language with the EN/中文 button</li>
+            </ul>
+            <button onclick="dismissOnboarding()" data-i18n="onboard.btn">Get Started</button>
+        </div>
+    </div>
+    <script>
+    // PWA install prompt
+    var pwaEvent = null;
+    window.addEventListener('beforeinstallprompt', function(e) {
+        e.preventDefault();
+        pwaEvent = e;
+        if (!localStorage.getItem('pwa_dismissed')) {
+            document.getElementById('pwaInstall').style.display = 'flex';
+        }
+    });
+    function installPwa() {
+        if (pwaEvent) { pwaEvent.prompt(); pwaEvent = null; }
+        document.getElementById('pwaInstall').style.display = 'none';
+    }
+    function dismissPwa() {
+        document.getElementById('pwaInstall').style.display = 'none';
+        localStorage.setItem('pwa_dismissed', '1');
+    }
+
+    // Footer stats
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            var el = document.getElementById('footerStats');
+            if (el && typeof paperDigestData !== 'undefined') {
+                var papers = paperDigestData.length || 0;
+                var tools = document.querySelectorAll('.section').length - 1;
+                el.innerHTML = papers + ' papers · ' + tools + ' tools · Updated daily';
+            }
+        }, 2000);
+    });
+
+    // Back to top: show on scroll
+    window.addEventListener('scroll', function() {
+        var btn = document.getElementById('backToTop');
+        if (btn) btn.classList.toggle('visible', window.scrollY > 400);
+    });
+    // Onboarding: show once for first visitors
+    function dismissOnboarding() {
+        document.getElementById('onboarding').style.display = 'none';
+        localStorage.setItem('onboarded', '1');
+    }
+    if (!localStorage.getItem('onboarded')) {
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('onboarding').style.display = 'flex';
+                if (typeof setLanguage === 'function') setLanguage(currentLang);
+            }, 800);
+        });
+    }
+    </script>
+</body>
+</html>
