@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image → PPT · 图转可编辑 PPT</title>
+<meta name="description" content="Convert any bitmap (PNG/JPG/AI art) into an editable PowerPoint with vector-traced shapes. Runs fully in the browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a href="../" class="back">← Back</a>
+  <div class="brand">
+    <h1>Image → PPT</h1>
+    <p class="sub">图转可编辑 PPT · 纯前端矢量追踪</p>
+  </div>
+  <div class="topright"></div>
+</header>
+
+<main class="container">
+  <!-- STEP 1: upload -->
+  <section class="panel">
+    <h2>1. 选择图片</h2>
+    <div id="drop" class="drop">
+      <p>拖拽 PNG / JPG 到此<br>或 <label class="link"><input type="file" id="fileInput" accept="image/png,image/jpeg,image/webp" hidden>点击选择</label></p>
+      <p class="hint">Any bitmap works — photos, AI art, screenshots, diagrams.</p>
+    </div>
+  </section>
+
+  <!-- STEP 2: precision -->
+  <section class="panel" id="step2" hidden>
+    <h2>2. 选择精度</h2>
+    <div class="precision-row">
+      <button class="prec-btn active" data-prec="low">
+        <div class="prec-name">低精度 Low</div>
+        <div class="prec-desc">6 色 · 快速追踪<br>~1 秒 · 少量元素</div>
+      </button>
+      <button class="prec-btn" data-prec="medium">
+        <div class="prec-name">中精度 Medium</div>
+        <div class="prec-desc">16 色 · 细节保留<br>~3-10 秒 · 较多元素</div>
+      </button>
+      <button class="prec-btn" data-prec="high">
+        <div class="prec-name">高精度 High</div>
+        <div class="prec-desc">SAM3 分割<br>需自建后端 · 真正可编辑形状</div>
+      </button>
+    </div>
+    <div class="high-fallback" id="highConfig" hidden>
+      <label>Backend URL:
+        <input type="url" id="backendUrl" placeholder="http://a6000.tailnet.ts.net:8000" />
+      </label>
+      <button id="btnBackendCheck" class="btn btn-sm">测试连接</button>
+      <span id="backendStatus" class="status"></span>
+      <p class="hint-small">后端部署见 <a href="backend/README.md" target="_blank" rel="noopener">backend/README.md</a>。URL 保存在浏览器 localStorage。</p>
+    </div>
+    <div class="actions">
+      <button id="btnTrace" class="btn primary">开始追踪 →</button>
+      <span id="traceStatus" class="status"></span>
+    </div>
+  </section>
+
+  <!-- STEP 3: preview -->
+  <section class="panel" id="step3" hidden>
+    <h2>3. 预览</h2>
+    <div class="preview-grid">
+      <div class="preview-card">
+        <div class="preview-label">原图 Original</div>
+        <canvas id="canvasOrig"></canvas>
+        <div class="preview-meta" id="metaOrig"></div>
+      </div>
+      <div class="preview-card">
+        <div class="preview-label">矢量追踪 Traced</div>
+        <div id="svgHolder"></div>
+        <div class="preview-meta" id="metaTraced"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 4: export -->
+  <section class="panel" id="step4" hidden>
+    <h2>4. 导出</h2>
+    <div class="export-options">
+      <label><input type="checkbox" id="optWhole" checked> 幻灯片 1：整张原图</label>
+      <label><input type="checkbox" id="optVector" checked> 幻灯片 2：矢量追踪总览</label>
+      <label><input type="checkbox" id="optElements" checked> 幻灯片 3：每元素独立形状（可单独移动）</label>
+    </div>
+    <div class="export-advanced">
+      <label>元素最小面积（px²）：<input type="number" id="optMinArea" value="100" min="0" step="10"></label>
+    </div>
+    <div class="actions">
+      <button id="btnPptx" class="btn primary">导出 PPTX</button>
+      <button id="btnSvg" class="btn">导出 SVG</button>
+      <span id="exportStatus" class="status"></span>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>imagetracerjs + pptxgenjs · 纯浏览器运行，图片不会上传 · <a href="https://github.com/jankovicsandras/imagetracerjs" target="_blank" rel="noopener">imagetracer</a> · <a href="https://gitbrent.github.io/PptxGenJS/" target="_blank" rel="noopener">pptxgenjs</a></p>
+</footer>
+
+<!-- Hidden SVG host for getBBox -->
+<div id="svgHostHidden" aria-hidden="true"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/imagetracerjs@1.2.6/imagetracer_v1.2.6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
