@@ -1,0 +1,63 @@
+[
+  {
+    "id": "pd-20260422-01",
+    "date": "2026-04-22",
+    "title": "Co-Design of CNN Accelerators for TinyML using Approximate Matrix Decomposition",
+    "authors": "José Juan Hernández Morales, Georgios Mentzos, Frank Hannig, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2604.16113v1",
+    "url": "https://arxiv.org/abs/2604.16113v1",
+    "abstract": "The paradigm shift towards local and on-device inference under stringent resource constraints is represented by the tiny machine learning (TinyML) domain. The primary goal of \\gls{tml} is to integrate intelligence into tiny, low-cost devices under strict resource, energy, and latency constraints. Ho",
+    "highlights": [
+      "研究Co-Design of CNN Accelerators ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260422-02",
+    "date": "2026-04-22",
+    "title": "Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection",
+    "authors": "Fan Yang, Binyan Xu, Di Tang, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2604.14685v1",
+    "url": "https://arxiv.org/abs/2604.14685v1",
+    "abstract": "Provenance-based intrusion detection has emerged as a promising approach for analyzing complex attack behaviors through system-level provenance graphs. However, existing defense methods face an inherent granularity limitation. Node-centric detectors, which evaluate anomalies using entities' attribut",
+    "highlights": [
+      "研究Beyond Nodes vs. Edges: A Mult...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260422-03",
+    "date": "2026-04-22",
+    "title": "Robustness Analysis of Machine Learning Models for IoT Intrusion Detection Under Data Poisoning Attacks",
+    "authors": "Fortunatus Aabangbio Wulnye, Justice Owusu Agyemang, Kwame Opuni-Boachie Obour Agyekum, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2604.14444v1",
+    "url": "https://arxiv.org/abs/2604.14444v1",
+    "abstract": "Ensuring the reliability of machine learning-based intrusion detection systems remains a critical challenge in Internet of Things (IoT) environments, particularly as data poisoning attacks increasingly threaten the integrity of model training pipelines. This study evaluates the susceptibility of fou",
+    "highlights": [
+      "研究Robustness Analysis of Machine...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
