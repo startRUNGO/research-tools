@@ -94,6 +94,28 @@ PYEOF
     fi
 fi
 
+# ---------- 4b. RMBG-2.0 ONNX for icon/picture processing ----------
+# Without this the IconPictureProcessor falls back to keep-bg mode (icons
+# get imported as rectangular stickers with original background), which
+# visibly degrades the reconstruction of any image-bearing diagram.
+mkdir -p models/rmbg
+if [ ! -f "models/rmbg/model.onnx" ]; then
+    echo "==> Downloading RMBG-2.0 ONNX (~1GB) via ModelScope, onnx/model.onnx only"
+    python - <<'PYEOF'
+import os
+from modelscope import snapshot_download
+p = snapshot_download(
+    "briaai/RMBG-2.0",
+    cache_dir=os.path.expanduser("models/rmbg_ms"),
+    allow_file_pattern=["onnx/model.onnx", "*.json", "*.py"],
+)
+print("RMBG cached at:", p)
+PYEOF
+    # Symlink to where Edit-Banana expects it.
+    ln -sf "$(pwd)/models/rmbg_ms/briaai/RMBG-2___0/onnx/model.onnx" models/rmbg/model.onnx
+    echo "==> Linked models/rmbg/model.onnx -> $(readlink models/rmbg/model.onnx)"
+fi
+
 # ---------- 5. SAM3 source (for pip install -e + BPE vocab) ----------
 if [ ! -d "sam3_src/.git" ]; then
     echo "==> Running setup_sam3.sh with direct GitHub URL (gitclone.com mirror has bad SSL)"
@@ -141,6 +163,12 @@ ACTUAL_PT="models/sam3_ms/facebook/sam3/sam3.pt"
 if [ -f config/config.yaml ] && grep -q 'checkpoint_path: "models/sam3_ms/sam3.pt"' config/config.yaml; then
     sed -i "s|checkpoint_path: \"models/sam3_ms/sam3.pt\"|checkpoint_path: \"$ACTUAL_PT\"|" config/config.yaml
     echo "==> Updated checkpoint_path in config.yaml"
+fi
+# Switch OCR engine from tesseract (needs sudo apt install) to paddleocr
+# (already pip-installed above) so text in diagrams actually gets into the
+# DrawIO output.
+if [ -f config/config.yaml ]; then
+    sed -i 's|engine: "tesseract"|engine: "paddleocr"|' config/config.yaml
 fi
 
 # ---------- 8. Wrapper ----------

@@ -34,53 +34,70 @@ EB_ROOT=/data/eb CUDA_VER=cu121 PY=python3.11 bash install.sh
 ## Run
 
 ```bash
-cd ~/img2ppt-backend           # or wherever EB_ROOT pointed to
-source .venv/bin/activate
+cd ~/img2ppt-backend
+conda activate img2ppt
 python wrapper.py
 # → Uvicorn running on http://0.0.0.0:8000
+# First request triggers a ~100s warmup (SAM3 + PaddleOCR + RMBG);
+# subsequent requests are ~5-10s on an idle GPU.
 ```
 
 Tune with env:
 
-| Variable     | Default                     | Purpose                              |
-|--------------|-----------------------------|--------------------------------------|
-| `EB_DIR`     | dir containing `wrapper.py` | Edit-Banana clone location           |
-| `EB_HOST`    | `0.0.0.0`                   | Bind address                         |
-| `EB_PORT`    | `8000`                      | Bind port                            |
-| `EB_PYTHON`  | `sys.executable`            | Python used to invoke `main.py`      |
-| `EB_TIMEOUT` | `600`                       | Per-request timeout in seconds       |
+| Variable    | Default                     | Purpose                                      |
+|-------------|-----------------------------|----------------------------------------------|
+| `EB_DIR`    | dir containing `wrapper.py` | Edit-Banana clone location                   |
+| `EB_UI_DIR` | `<EB_DIR>/ui`               | Static UI served at `/ui/`                   |
+| `EB_HOST`   | `0.0.0.0`                   | Bind address                                 |
+| `EB_PORT`   | `8000`                      | Bind port                                    |
+| `EB_WARMUP` | `1`                         | Set `0` to skip the dummy-image warmup       |
 
-Smoke test from the same host:
+Smoke test from the same host (sync mode for curl):
 
 ```bash
 curl http://localhost:8000/health
-# {"status":"ok","eb_dir":"...","main_exists":true,"python":"..."}
+# {"status":"ok","pipeline_loaded":true, ...}
 
-curl -F file=@test.png http://localhost:8000/convert -o out.xml
+curl -F file=@test.png 'http://localhost:8000/convert?sync=true' -o out.xml
 ```
 
 ## Exposing to the browser
 
 Pick one:
 
-- **Tailscale (recommended)**: note the MagicDNS name —
-  `tailscale status --self` — and paste `http://<name>:8000` into the
-  "Backend URL" field of the img2ppt UI. Works over Tailscale; zero config.
+- **Tailscale direct**: paste `http://<tailscale-ip>:8000/ui/` into a
+  browser on a device in the same tailnet. If your Windows browser can't
+  reach the Tailscale IP, it's almost always a system-proxy issue —
+  bypass `100.64.0.0/10` in your OS proxy settings.
 
-- **Public tunnel** (`cloudflared` or `ngrok`): get an HTTPS URL and paste it.
-  Required if you want to call the backend from GitHub Pages (mixed-content
-  rules block HTTP from HTTPS pages).
+- **Cloudflare quick tunnel**: run `cloudflared tunnel --url
+  http://localhost:8000 --no-autoupdate` and use the
+  `https://<slug>.trycloudflare.com/ui/` URL it prints. URL changes each
+  time cloudflared restarts. Works for anyone regardless of network. Uses
+  HTTPS, so safe to embed from GitHub Pages. See systemd unit below.
 
-## API
+- **Named tunnel** (stable URL, requires Cloudflare account + domain):
+  `cloudflared tunnel create img2ppt`, map to `img2ppt.yourdomain.com`,
+  use that URL.
+
+## API (async since v0.2.0)
 
 ```
-GET  /health            → {"status": "ok", ...}
-GET  /                  → service info
-POST /convert           → multipart: field `file`
-                          returns: application/xml (DrawIO)
+GET  /health               → {"status": "ok", "pipeline_loaded": ..., ...}
+GET  /                     → service info
+POST /convert              → 202 Accepted {"job_id": "...", "poll_url": "...", "result_url": "..."}
+POST /convert?sync=true    → blocks up to 15 min, returns FileResponse (for curl testing)
+GET  /jobs/{job_id}        → {"status": "queued|running|done|failed",
+                              "elapsed": <seconds>, ...}
+GET  /jobs/{job_id}/result → FileResponse(XML) once status=done, else 425/404/500
+GET  /ui/                  → bundled frontend (served from EB_UI_DIR)
 ```
 
 Accepted inputs: `.png .jpg .jpeg .bmp .tiff .webp .pdf`.
+
+The `max_workers=1` pool means only one SAM3 job runs at a time (the
+model + RMBG already use ~13 GB VRAM; running two concurrently OOMs).
+Incoming requests queue.
 
 ## Troubleshooting
 
@@ -121,6 +138,29 @@ Accepted inputs: `.png .jpg .jpeg .bmp .tiff .webp .pdf`.
   intercepting Tailscale IPs. Configure your OS proxy to bypass
   `100.64.0.0/10` or your tailnet's CIDR.
 
+### Quality-related gotchas
+
+- **Text missing in the output** — flip
+  `config/config.yaml` `ocr.engine: "tesseract"` → `"paddleocr"`.
+  `install.sh` does this automatically.
+- **Embedded images/icons have dirty backgrounds** — RMBG model missing.
+  Ensure `models/rmbg/model.onnx` exists (should be a symlink into
+  `models/rmbg_ms/briaai/RMBG-2___0/onnx/model.onnx` after install).
+- **Detection too coarse / missing small elements** — lower
+  `sam3.score_threshold` from `0.5` to `0.4`, and per-group
+  `score_threshold` under `prompt_groups` to ~`0.3`. Going below that
+  tends to flood RMBG with false positives and balloon runtime.
+- **Detection too noisy / slow due to too many candidates** — raise
+  thresholds back up, or raise `min_area`.
+
+### Finding the cloudflared URL after a restart
+
+```bash
+grep -oE 'https://[a-z0-9-]+\.trycloudflare\.com' ~/cf-tunnel.log | tail -1
+# or if running under systemd:
+journalctl -u cloudflared-tunnel -n 100 | grep -oE 'https://[a-z0-9-]+\.trycloudflare\.com' | tail -1
+```
+
 ## Making it survive reboots (systemd)
 
 ```ini
@@ -149,4 +189,28 @@ WantedBy=multi-user.target
 sudo systemctl daemon-reload
 sudo systemctl enable --now img2ppt-wrapper
 sudo systemctl status img2ppt-wrapper
+```
+
+Optional companion unit for the cloudflared quick tunnel (the URL it picks
+will change each restart — that's a property of the free trycloudflare
+service, not the unit):
+
+```ini
+# /etc/systemd/system/cloudflared-tunnel.service
+[Unit]
+Description=cloudflared quick tunnel for img2ppt backend
+After=img2ppt-wrapper.service network-online.target
+Wants=img2ppt-wrapper.service network-online.target
+
+[Service]
+Type=simple
+User=hmd
+ExecStart=/home/hmd/bin/cloudflared tunnel --url http://localhost:8000 --no-autoupdate
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/home/hmd/cf-tunnel.log
+StandardError=append:/home/hmd/cf-tunnel.log
+
+[Install]
+WantedBy=multi-user.target
 ```
