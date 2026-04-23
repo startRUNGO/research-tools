@@ -180,15 +180,44 @@ async function traceHighPrecision(status) {
   const url = (localStorage.getItem(BACKEND_KEY) || '').trim().replace(/\/+$/, '');
   if (!url) throw new Error('请先在上面填入 Backend URL 并测试连接');
 
-  status.textContent = '上传图片 → Edit-Banana (SAM3 推理，首次 30-60s)...';
+  status.textContent = '上传图片...';
   const form = new FormData();
   form.append('file', state.imgFile);
-  const resp = await fetch(url + '/convert', { method: 'POST', body: form });
-  if (!resp.ok) {
-    const text = await resp.text().catch(() => '');
-    throw new Error(`后端 ${resp.status}: ${text.slice(0, 300)}`);
+  const submitResp = await fetch(url + '/convert', { method: 'POST', body: form });
+  if (submitResp.status !== 202 && !submitResp.ok) {
+    const text = await submitResp.text().catch(() => '');
+    throw new Error(`提交失败 ${submitResp.status}: ${text.slice(0, 300)}`);
   }
-  const xmlText = await resp.text();
+  const submitBody = await submitResp.json().catch(() => ({}));
+  const jobId = submitBody.job_id;
+  if (!jobId) throw new Error('后端未返回 job_id，可能是旧版本 wrapper');
+
+  // Poll every 3s. No upper limit — GPU contention can push this to 20+ min.
+  const pollStart = Date.now();
+  let lastElapsed = 0;
+  while (true) {
+    await sleep(3000);
+    const statResp = await fetch(url + `/jobs/${jobId}`);
+    if (!statResp.ok) throw new Error(`轮询失败 ${statResp.status}`);
+    const st = await statResp.json();
+    lastElapsed = st.elapsed ?? lastElapsed;
+    const wallSec = Math.round((Date.now() - pollStart) / 1000);
+    if (st.status === 'done') {
+      status.textContent = `推理完成（后端用时 ${lastElapsed.toFixed(1)}s），下载 XML...`;
+      break;
+    }
+    if (st.status === 'failed') {
+      throw new Error(`后端处理失败: ${st.error}`);
+    }
+    status.textContent = `SAM3 推理中... 后端 ${lastElapsed.toFixed(0)}s / 等待 ${wallSec}s`;
+  }
+
+  const resultResp = await fetch(url + `/jobs/${jobId}/result`);
+  if (!resultResp.ok) {
+    const text = await resultResp.text().catch(() => '');
+    throw new Error(`下载结果失败 ${resultResp.status}: ${text.slice(0, 300)}`);
+  }
+  const xmlText = await resultResp.text();
   state.tracedSvgStr = null;
   state.drawioShapes = parseDrawioXml(xmlText);
   $('svgHolder').innerHTML = renderDrawioPreviewSvg(state.drawioShapes);
