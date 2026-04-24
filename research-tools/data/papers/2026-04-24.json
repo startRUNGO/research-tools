@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pd-20260424-01",
+    "date": "2026-04-24",
+    "title": "Co-Design of CNN Accelerators for TinyML using Approximate Matrix Decomposition",
+    "authors": "José Juan Hernández Morales, Georgios Mentzos, Frank Hannig, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2604.16113v2",
+    "url": "https://arxiv.org/abs/2604.16113v2",
+    "abstract": "The paradigm shift towards local and on-device inference under stringent resource constraints is represented by the tiny machine learning (TinyML) domain. The primary goal of TinyML is to integrate intelligence into tiny, low-cost devices under strict resource, energy, and latency constraints. Howev",
+    "highlights": [
+      "研究Co-Design of CNN Accelerators ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260424-02",
+    "date": "2026-04-24",
+    "title": "A-THENA: Early Intrusion Detection for IoT with Time-Aware Hybrid Encoding and Network-Specific Augmentation",
+    "authors": "Ioannis Panopoulos, Maria Lamprini A. Bartsioka, Sokratis Nikolaidis, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2604.21623v1",
+    "url": "https://arxiv.org/abs/2604.21623v1",
+    "abstract": "The proliferation of Internet of Things (IoT) devices has significantly expanded attack surfaces, making IoT ecosystems particularly susceptible to sophisticated cyber threats. To address this challenge, this work introduces A-THENA, a lightweight early intrusion detection system (EIDS) that signifi",
+    "highlights": [
+      "研究A-THENA: Early Intrusion Detec...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
