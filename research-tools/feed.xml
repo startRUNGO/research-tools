@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Apr 2026 04:27:52 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 04:23:13 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A-THENA: Early Intrusion Detection for IoT with Time-Aware Hybrid Encoding and Network-Specific Augmentation</title>
+      <link>https://arxiv.org/abs/2604.21623v1</link>
+      <guid>pd-20260429-01</guid>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The proliferation of Internet of Things (IoT) devices has significantly expanded attack surfaces, making IoT ecosystems particularly susceptible to sophisticated cyber threats. To address this challenge, this work introduces A-THENA, a lightweight early intrusion detection system (EIDS) that signifi
+
+• 研究A-THENA: Early Intrusion Detec...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>A-THENA: Early Intrusion Detection for IoT with Time-Aware Hybrid Encoding and Network-Specific Augmentation</title>
       <link>https://arxiv.org/abs/2604.21623v1</link>
@@ -688,20 +702,6 @@ VPP综述的网络安全章节明确指出分布式DER节点易受CAN/Modbus注�
       <description>CubeSats have revolutionized access to space by providing affordable and accessible platforms for research and education. However, their reliance on Commercial Off-The-Shelf (COTS) components and open-source software has introduced significant cybersecurity vulnerabilities. Ensuring the cybersecurit
 
 • 研究Towards Resilient Intrusion De...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>MA-IDS: Multi-Agent RAG Framework for IoT Network Intrusion Detection with an Experience Library</title>
-      <link>https://arxiv.org/abs/2604.05458v1</link>
-      <guid>pd-20260413-02</guid>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Network Intrusion Detection Systems (NIDS) face important limitations. Signature-based methods are effective for known attack patterns, but they struggle to detect zero-day attacks and often miss modified variants of previously known attacks, while many machine learning approaches offer limited inte
-
-• 研究MA-IDS: Multi-Agent RAG Framew...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
