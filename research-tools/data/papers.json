@@ -1,5 +1,45 @@
 [
   {
+    "id": "pd-20260430-01",
+    "date": "2026-04-30",
+    "title": "Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs",
+    "authors": "Lorenzo Zapparoli, Paul Fäth, Blazhe Gjorgiev, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2604.26424v1",
+    "url": "https://arxiv.org/abs/2604.26424v1",
+    "abstract": "As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l",
+    "highlights": [
+      "研究Risk-Aware Multi-Market Schedu...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260430-02",
+    "date": "2026-04-30",
+    "title": "A-THENA: Early Intrusion Detection for IoT with Time-Aware Hybrid Encoding and Network-Specific Augmentation",
+    "authors": "Ioannis Panopoulos, Maria Lamprini A. Bartsioka, Sokratis Nikolaidis, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2604.21623v1",
+    "url": "https://arxiv.org/abs/2604.21623v1",
+    "abstract": "The proliferation of Internet of Things (IoT) devices has significantly expanded attack surfaces, making IoT ecosystems particularly susceptible to sophisticated cyber threats. To address this challenge, this work introduces A-THENA, a lightweight early intrusion detection system (EIDS) that signifi",
+    "highlights": [
+      "研究A-THENA: Early Intrusion Detec...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260429-01",
     "date": "2026-04-29",
     "title": "A-THENA: Early Intrusion Detection for IoT with Time-Aware Hybrid Encoding and Network-Specific Augmentation",
