@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2026 04:41:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 04:13:22 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
+      <link>https://arxiv.org/abs/2604.26424v1</link>
+      <guid>pd-20260502-01</guid>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
+
+• 研究Risk-Aware Multi-Market Schedu...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
       <link>https://arxiv.org/abs/2604.26424v1</link>
@@ -688,20 +702,6 @@ VPP综述的网络安全章节明确指出分布式DER节点易受CAN/Modbus注�
       <description>Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene
 
 • 研究Enhancing Cross-Problem Vehicl...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Towards Resilient Intrusion Detection in CubeSats: Challenges, TinyML Solutions, and Future Directions</title>
-      <link>https://arxiv.org/abs/2604.06411v1</link>
-      <guid>pd-20260414-02</guid>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>CubeSats have revolutionized access to space by providing affordable and accessible platforms for research and education. However, their reliance on Commercial Off-The-Shelf (COTS) components and open-source software has introduced significant cybersecurity vulnerabilities. Ensuring the cybersecurit
-
-• 研究Towards Resilient Intrusion De...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
