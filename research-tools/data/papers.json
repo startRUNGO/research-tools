@@ -1,5 +1,26 @@
 [
   {
+    "id": "pd-20260505-01",
+    "date": "2026-05-05",
+    "title": "A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management",
+    "authors": "Athanasios Koukosiasa, Vasileios Tzanidakis, Sotiris Athanasiou, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2605.00898v1",
+    "url": "https://arxiv.org/abs/2605.00898v1",
+    "abstract": "Accurate forecasting of battery health indicators, including remaining capacity and lifetime, is of paramount importance for ensuring the reliability, safety, and operational efficiency of applications such as electric vehicles and large scale energy storage infrastructures. The result of the foreca",
+    "highlights": [
+      "研究A Deep Learning Model for Batt...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "深度学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260504-01",
     "date": "2026-05-04",
     "title": "Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs",

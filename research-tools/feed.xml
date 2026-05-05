@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2026 04:34:16 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 04:12:51 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management</title>
+      <link>https://arxiv.org/abs/2605.00898v1</link>
+      <guid>pd-20260505-01</guid>
+      <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Accurate forecasting of battery health indicators, including remaining capacity and lifetime, is of paramount importance for ensuring the reliability, safety, and operational efficiency of applications such as electric vehicles and large scale energy storage infrastructures. The result of the foreca
+
+• 研究A Deep Learning Model for Batt...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
       <link>https://arxiv.org/abs/2604.26424v1</link>
@@ -688,20 +702,6 @@ VPP综述的网络安全章节明确指出分布式DER节点易受CAN/Modbus注�
       <description>Security operations in smart cities demand detection systems that balance accuracy with response time. While ensemble methods like Random Forest achieve high accuracy, their computational overhead impedes real-time forensic triage. We present the first systematic evaluation of TabPFNv2.5, a transfor
 
 • 研究Optimizing IoT Intrusion Detec...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Enhancing Cross-Problem Vehicle Routing via Federated Learning</title>
-      <link>https://arxiv.org/abs/2604.10652v1</link>
-      <guid>pd-20260415-01</guid>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene
-
-• 研究Enhancing Cross-Problem Vehicl...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
