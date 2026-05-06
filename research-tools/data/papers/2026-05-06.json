@@ -1,0 +1,63 @@
+[
+  {
+    "id": "pd-20260506-01",
+    "date": "2026-05-06",
+    "title": "Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty",
+    "authors": "Lorenzo Zapparoli, Blazhe Gjorgiev, Giovanni Sansavini",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2605.02334v1",
+    "url": "https://arxiv.org/abs/2605.02334v1",
+    "abstract": "As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil",
+    "highlights": [
+      "研究Efficient Multi-Market Schedul...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260506-02",
+    "date": "2026-05-06",
+    "title": "Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs",
+    "authors": "Lorenzo Zapparoli, Paul Fäth, Blazhe Gjorgiev, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2604.26424v1",
+    "url": "https://arxiv.org/abs/2604.26424v1",
+    "abstract": "As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l",
+    "highlights": [
+      "研究Risk-Aware Multi-Market Schedu...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260506-03",
+    "date": "2026-05-06",
+    "title": "LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks",
+    "authors": "Dileepa Mabulage, Banuka Athuraliya",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2605.02987v1",
+    "url": "https://arxiv.org/abs/2605.02987v1",
+    "abstract": "The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite",
+    "highlights": [
+      "研究LiteShield: Hybrid Feature Sel...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]

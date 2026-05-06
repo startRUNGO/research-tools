@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 05 May 2026 04:12:51 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 04:27:31 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
+      <link>https://arxiv.org/abs/2605.02334v1</link>
+      <guid>pd-20260506-01</guid>
+      <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
+
+• 研究Efficient Multi-Market Schedul...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
+      <link>https://arxiv.org/abs/2604.26424v1</link>
+      <guid>pd-20260506-02</guid>
+      <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
+
+• 研究Risk-Aware Multi-Market Schedu...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
+      <link>https://arxiv.org/abs/2605.02987v1</link>
+      <guid>pd-20260506-03</guid>
+      <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
+
+• 研究LiteShield: Hybrid Feature Sel...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management</title>
       <link>https://arxiv.org/abs/2605.00898v1</link>
@@ -664,48 +706,6 @@ Kronecker结构化低秩层是一种独立于深度可分离卷积的参数压�
 • 运行成本下降约10%
 
 EV VPP与车载IDS虽不同场景，但共享'资源受限+分布式+安全关键'特征：其Lagrangian约束思路可借鉴到LCSMC-Net的联邦训练，把'时延&lt;6ms/内存&lt;3KB'编码为拉格朗日硬约束；另一方面，EV作为移动VPP资产，其车载AI平台本身即是LCSMC-Net部署目标环境。</description>
-    </item>
-    <item>
-      <title>AI-Driven Virtual Power Plants: A Comprehensive Review</title>
-      <link>https://www.mdpi.com/1996-1073/19/4/1084</link>
-      <guid>pd-20260417-15</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>系统综述AI驱动的虚拟电厂技术：机器/深度学习用于高精度可再生发电、负荷需求与市场价格预测；强化学习与多智能体优化支持自适应调度、调度与竞价策略；并讨论网络安全与隐私保护挑战。
-
-• AI VPP完整技术栈综述
-• 强化学习竞价与调度对比
-• 网络安全与隐私章节专论
-
-VPP综述的网络安全章节明确指出分布式DER节点易受CAN/Modbus注入攻击——LCSMC-Net的超轻量IDS可直接嵌入VPP边缘网关/能源路由器，在3KB RAM约束下持续监测Modbus-RTU帧，把车载成果外溢到能源物联网。</description>
-    </item>
-    <item>
-      <title>Enhancing Cross-Problem Vehicle Routing via Federated Learning</title>
-      <link>https://arxiv.org/abs/2604.10652v1</link>
-      <guid>pd-20260416-01</guid>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene
-
-• 研究Enhancing Cross-Problem Vehicl...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Optimizing IoT Intrusion Detection with Tabular Foundation Models for Smart City Forensics</title>
-      <link>https://arxiv.org/abs/2604.11394v1</link>
-      <guid>pd-20260416-02</guid>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Security operations in smart cities demand detection systems that balance accuracy with response time. While ensemble methods like Random Forest achieve high accuracy, their computational overhead impedes real-time forensic triage. We present the first systematic evaluation of TabPFNv2.5, a transfor
-
-• 研究Optimizing IoT Intrusion Detec...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
     </item>
   </channel>
 </rss>
