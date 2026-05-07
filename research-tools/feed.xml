@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 06 May 2026 04:27:31 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 04:27:52 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
+      <link>https://arxiv.org/abs/2605.02334v1</link>
+      <guid>pd-20260507-01</guid>
+      <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
+
+• 研究Efficient Multi-Market Schedul...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Binary Image-Based Intrusion Detection for Operational Technology Networks: Extending the SPHBI Methodology from IoT to Modbus TCP</title>
+      <link>https://arxiv.org/abs/2605.04250v1</link>
+      <guid>pd-20260507-02</guid>
+      <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve
+
+• 研究Binary Image-Based Intrusion D...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
+      <link>https://arxiv.org/abs/2605.02987v1</link>
+      <guid>pd-20260507-03</guid>
+      <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
+
+• 研究LiteShield: Hybrid Feature Sel...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
       <link>https://arxiv.org/abs/2605.02334v1</link>
@@ -664,48 +706,6 @@ Kronecker结构化低秩层是一种独立于深度可分离卷积的参数压�
 • 开源自动化FL流水线
 
 对我们未来构建'LCSMC-FL'联邦版极有价值：不同车型/厂商的CAN数据天然非IID（攻击类型/帧率分布差异显著），自动策略选择可以节省大量人工调参。可把LCSMC-Net接入其Python API直接试验。</description>
-    </item>
-    <item>
-      <title>FedPrism: Adaptive Personalized Federated Learning under Non-IID Data</title>
-      <link>https://arxiv.org/abs/2603.08252</link>
-      <guid>pd-20260417-12</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>提出棱镜分解（Prism Decomposition）将每个客户端模型分为全局基础、组内共享、个人私有三部分，自动将相似客户端聚为组，兼顾共性与个性，在高异构性下取得显著精度提升。
-
-• 全局/组/个人三层参数分解
-• 自动客户端聚类
-• 高异构下精度+5-10%
-
-三层分解思路可自然映射到车联网：整车厂共享骨干、同平台车型共享组层、单车个性化微调层，正好匹配LCSMC-Net不同层次的参数共享策略——全局共享卷积骨干，组层共享注意力权重，个性化仅微调分类头（可进一步压缩到&lt;1KB增量）。</description>
-    </item>
-    <item>
-      <title>Submodel Extraction for Efficient and Personalized Federated Learning via Optimal Transport</title>
-      <link>https://arxiv.org/abs/2604.06631</link>
-      <guid>pd-20260417-13</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>使用最优传输把个性化剪枝与异构聚合统一为参数空间对齐问题，支持不同客户端运行不同规模的子模型，同时保持全局一致性。
-
-• 最优传输统一剪枝与聚合
-• 支持异构大小客户端子模型
-• 通信量减少40-60%
-
-对资源异构的车载MCU非常友好——高端ECU可跑完整LCSMC-Net，低端可跑其OT对齐的子网；同时可用于从云端大型教师模型中按最优传输对齐抽取学生，比传统蒸馏更结构化。</description>
-    </item>
-    <item>
-      <title>Safe Decentralized Operation of EV Virtual Power Plant with Limited Network Visibility via Multi-Agent Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2604.03278</link>
-      <guid>pd-20260417-14</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>提出Transformer辅助的Lagrangian多智能体PPO（TL-MAPPO）协调多个EV充电桩：中心化训练、分散执行，Lagrangian正则强制电压与需求约束，电压违规下降约45%，运行成本下降约10%。
-
-• Transformer辅助的安全MARL
-• 电压违规下降约45%
-• 运行成本下降约10%
-
-EV VPP与车载IDS虽不同场景，但共享'资源受限+分布式+安全关键'特征：其Lagrangian约束思路可借鉴到LCSMC-Net的联邦训练，把'时延&lt;6ms/内存&lt;3KB'编码为拉格朗日硬约束；另一方面，EV作为移动VPP资产，其车载AI平台本身即是LCSMC-Net部署目标环境。</description>
     </item>
   </channel>
 </rss>
