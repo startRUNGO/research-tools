@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 07 May 2026 04:27:52 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 04:12:10 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
+      <link>https://arxiv.org/abs/2605.02334v1</link>
+      <guid>pd-20260508-01</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
+
+• 研究Efficient Multi-Market Schedul...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics</title>
+      <link>https://arxiv.org/abs/2605.05644v1</link>
+      <guid>pd-20260508-02</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Federated learning (FL) is attractive for cloud-edge intrusion detection because it enables collaborative training over distributed telemetry without centralizing raw logs. In production security analytics pipelines, however, only a subset of clients participates in each round, and heterogeneous ban
+
+• 研究AoI-Guided Client Selection fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Binary Image-Based Intrusion Detection for Operational Technology Networks: Extending the SPHBI Methodology from IoT to Modbus TCP</title>
+      <link>https://arxiv.org/abs/2605.04250v2</link>
+      <guid>pd-20260508-03</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve
+
+• 研究Binary Image-Based Intrusion D...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
+      <link>https://arxiv.org/abs/2605.02987v1</link>
+      <guid>pd-20260508-04</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
+
+• 研究LiteShield: Hybrid Feature Sel...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
       <link>https://arxiv.org/abs/2605.02334v1</link>
@@ -650,62 +706,6 @@
 • MEC环境端到端延迟&lt;10ms
 
 云-边蒸馏的范式非常契合车联网V2X架构：可把云端大型GNN检测器的知识蒸馏到车端的LCSMC-Net(9,401参数)，既能补足其对未知攻击的泛化，又保持3KB RAM约束。该文的logits传输协议也可用于减少我们未来联邦版本的通信量。</description>
-    </item>
-    <item>
-      <title>Lightweight Intrusion Detection in IoT via SHAP-Guided Feature Pruning and Knowledge-Distilled Kronecker Networks</title>
-      <link>https://arxiv.org/abs/2512.19488</link>
-      <guid>pd-20260417-08</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>结合SHAP特征剪枝与Kronecker分解网络的知识蒸馏，用高容量教师识别关键特征，压缩学生利用Kronecker结构层最小化参数，同时保留判别力。
-
-• SHAP指导的特征剪枝
-• Kronecker结构层替代全连接
-• 参数量减少约90%，精度损失&lt;1%
-
-Kronecker结构化低秩层是一种独立于深度可分离卷积的参数压缩路径，可考虑在LCSMC-Net的全连接输出头上引入Kronecker重排，以进一步压缩（目前FC头占模型参数约20%）。SHAP特征剪枝则可为CAN信号字段选择提供理论依据。</description>
-    </item>
-    <item>
-      <title>Securing Radiation Detection Systems with an Efficient TinyML-Based IDS for Edge Devices</title>
-      <link>https://arxiv.org/abs/2509.01592</link>
-      <guid>pd-20260417-09</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>针对核辐射检测系统的网络安全需求，提出基于优化XGBoost的TinyML IDS，结合剪枝、量化、特征选择与采样四重压缩，最终部署于ARM Cortex-M系列MCU。
-
-• 剪枝+量化+特征选择四合一压缩
-• Cortex-M0+上推理&lt;3ms
-• Flash&lt;10KB 适配电池供电传感器
-
-该方案与LCSMC-Net(INT8 3.6KB Flash/5.6ms)在资源消耗上同一量级，但使用XGBoost而非CNN，侧面印证了TinyML IDS的主流技术路线——面向MCU的极限压缩是可行的。其跨领域(辐射检测)迁移思路提示LCSMC-Net可推广至工业控制PLC场景。</description>
-    </item>
-    <item>
-      <title>Rethinking Temporal Models for TinyML: LSTM versus 1D-CNN in Resource-Constrained Devices</title>
-      <link>https://arxiv.org/abs/2603.04860</link>
-      <guid>pd-20260417-10</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>系统比较1D-CNN与LSTM在MCU端进行时序建模的精度、推理时延与INT8量化鲁棒性，结果显示1D-CNN在INT8下几乎无精度损失，而LSTM显著下降。
-
-• 1D-CNN vs LSTM 在MCU端全面基准
-• 1D-CNN INT8后精度损失&lt;0.3%
-• LSTM INT8后精度下降3-8%
-
-直接为LCSMC-Net的架构选择背书——我们采用1D卷积骨干正是该文结论的最佳实践。99.89% FP32精度在INT8下几乎无损，与其结论一致。该文可作为我们在论文中证明'为什么不选LSTM'的权威参考。</description>
-    </item>
-    <item>
-      <title>Automating Aggregation Strategy Selection in Federated Learning</title>
-      <link>https://arxiv.org/abs/2604.08056</link>
-      <guid>pd-20260417-11</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>提出端到端自动化的联邦聚合策略选择框架，根据客户端数据统计量与漂移指标动态选择FedAvg/FedProx/FedSAM/FedNova等策略，在非IID条件下显著提升鲁棒性。
-
-• 元学习自动选择聚合策略
-• 非IID下较最佳固定策略+3.1%
-• 开源自动化FL流水线
-
-对我们未来构建'LCSMC-FL'联邦版极有价值：不同车型/厂商的CAN数据天然非IID（攻击类型/帧率分布差异显著），自动策略选择可以节省大量人工调参。可把LCSMC-Net接入其Python API直接试验。</description>
     </item>
   </channel>
 </rss>
