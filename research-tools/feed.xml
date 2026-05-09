@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 08 May 2026 04:12:10 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 04:16:51 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics</title>
+      <link>https://arxiv.org/abs/2605.05644v1</link>
+      <guid>pd-20260509-01</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Federated learning (FL) is attractive for cloud-edge intrusion detection because it enables collaborative training over distributed telemetry without centralizing raw logs. In production security analytics pipelines, however, only a subset of clients participates in each round, and heterogeneous ban
+
+• 研究AoI-Guided Client Selection fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
+      <link>https://arxiv.org/abs/2605.02334v1</link>
+      <guid>pd-20260509-02</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
+
+• 研究Efficient Multi-Market Schedul...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Binary Image-Based Intrusion Detection for Operational Technology Networks: Extending the SPHBI Methodology from IoT to Modbus TCP</title>
+      <link>https://arxiv.org/abs/2605.04250v2</link>
+      <guid>pd-20260509-03</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve
+
+• 研究Binary Image-Based Intrusion D...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
+      <link>https://arxiv.org/abs/2605.02987v1</link>
+      <guid>pd-20260509-04</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
+
+• 研究LiteShield: Hybrid Feature Sel...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
       <link>https://arxiv.org/abs/2605.02334v1</link>
@@ -650,62 +706,6 @@
 • 降低通信开销约70%
 
 两阶段范式对LCSMC-Net极具启发：先用多个开源CAN数据集联邦预训练9,401参数模型，再针对每辆目标车的CAN-ID分布做微调。考虑到我们的卷积结构，可仿照LoRA做通道级低秩残差微调，预计增量参数&lt;1K，对3.6KB Flash的约束依然友好。</description>
-    </item>
-    <item>
-      <title>Intrusion Detection on Resource-Constrained IoT Devices with Hardware-Aware ML and DL</title>
-      <link>https://arxiv.org/abs/2512.02272</link>
-      <guid>pd-20260417-04</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>系统比较LightGBM、硬件感知NAS搜索的CNN、剪枝LSTM等多种轻量IDS在Edge-IIoTset基准上的准确率-资源占用帕累托前沿。LightGBM以75KB闪存和1.2K操作数达到95.3%准确率，HW-NAS CNN以190KB闪存、840K FLOPs达到97.2%。
-
-• Edge-IIoTset上完整的Flash/FLOPs帕累托曲线
-• HW-NAS CNN：190KB Flash、840K FLOPs、97.2%
-• 对比8种轻量模型的端侧部署开销
-
-该文给出的帕累托前沿正好把LCSMC-Net推到右下角极致位置——我们仅用3.6KB Flash（比其LightGBM小20倍）、2.84M FLOPs、99.89%精度，在CAN IDS场景下实现比其IIoT最佳配置更高一个数量级的参数效率，非常值得在后续论文中引作直接对比。</description>
-    </item>
-    <item>
-      <title>Lightweight Intrusion Detection System Using a Hybrid CNN and ConvNeXt-Tiny</title>
-      <link>https://arxiv.org/abs/2509.06202</link>
-      <guid>pd-20260417-05</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>融合传统CNN与ConvNeXt-Tiny，在保持精度的同时降低模型参数量，用于资源受限设备下的网络入侵检测，尤其对僵尸网络和恶意流量有良好识别能力。
-
-• CNN+ConvNeXt-Tiny混合架构
-• CICIDS2017僵尸网络检测精度98.6%
-• 参数量较ResNet50减少约85%
-
-该工作仍停留在IDS-CNN级别（百万参数量级）。LCSMC-Net用通道注意力+深度可分离卷积把参数压到9,401，比其'tiny'版仍小约两个数量级，同时在CAN场景达到更高精度，说明面向单一协议专用设计优于通用骨干迁移。</description>
-    </item>
-    <item>
-      <title>KD-GAT: Combining Knowledge Distillation and Graph Attention Transformer for a Controller Area Network Intrusion Detection System</title>
-      <link>https://arxiv.org/abs/2507.19686</link>
-      <guid>pd-20260417-06</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>将知识蒸馏与图注意力Transformer结合用于CAN入侵检测。以多层GAT作教师，紧凑学生GAT仅为教师6.32%规模，通过多任务蒸馏损失实现精度几乎无损压缩。
-
-• 学生模型仅为教师6.32%规模
-• 多任务蒸馏损失（logit+注意力图）
-• 在Car-Hacking数据集F1=99.4%
-
-6.32%压缩比仍对应约数十万参数；与之相比，LCSMC-Net直接从结构设计上把规模降到9,401（INT8后3.6KB Flash），无需蒸馏即可部署到STM32级MCU。后续可吸收KD-GAT的注意力图蒸馏损失，作为LCSMC-Net在多数据集联合训练时的正则化手段。</description>
-    </item>
-    <item>
-      <title>Optimising Intrusion Detection Systems in Cloud-Edge Continuum with Knowledge Distillation for Privacy-Preserving and Efficient Communication</title>
-      <link>https://arxiv.org/abs/2504.10698</link>
-      <guid>pd-20260417-07</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>在云-边协同IDS中引入知识蒸馏，将云端大模型能力蒸馏到边侧轻量学生模型，减少云边通信同时保持隐私与检测精度，适配5G MEC场景。
-
-• 云-边知识蒸馏降低通信75%
-• 隐私保护（仅传logits，不传原始流量）
-• MEC环境端到端延迟&lt;10ms
-
-云-边蒸馏的范式非常契合车联网V2X架构：可把云端大型GNN检测器的知识蒸馏到车端的LCSMC-Net(9,401参数)，既能补足其对未知攻击的泛化，又保持3KB RAM约束。该文的logits传输协议也可用于减少我们未来联邦版本的通信量。</description>
     </item>
   </channel>
 </rss>
