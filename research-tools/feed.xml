@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 09 May 2026 04:16:51 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 04:37:17 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics</title>
+      <link>https://arxiv.org/abs/2605.05644v1</link>
+      <guid>pd-20260510-01</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Federated learning (FL) is attractive for cloud-edge intrusion detection because it enables collaborative training over distributed telemetry without centralizing raw logs. In production security analytics pipelines, however, only a subset of clients participates in each round, and heterogeneous ban
+
+• 研究AoI-Guided Client Selection fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
+      <link>https://arxiv.org/abs/2605.02334v1</link>
+      <guid>pd-20260510-02</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
+
+• 研究Efficient Multi-Market Schedul...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Binary Image-Based Intrusion Detection for Operational Technology Networks: Extending the SPHBI Methodology from IoT to Modbus TCP</title>
+      <link>https://arxiv.org/abs/2605.04250v2</link>
+      <guid>pd-20260510-03</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve
+
+• 研究Binary Image-Based Intrusion D...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
+      <link>https://arxiv.org/abs/2605.02987v1</link>
+      <guid>pd-20260510-04</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
+
+• 研究LiteShield: Hybrid Feature Sel...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics</title>
       <link>https://arxiv.org/abs/2605.05644v1</link>
@@ -650,62 +706,6 @@
 • 具有一定创新性
 
 待详细分析</description>
-    </item>
-    <item>
-      <title>Optimizing IoT Intrusion Detection with Tabular Foundation Models for Smart City Forensics</title>
-      <link>https://arxiv.org/abs/2604.11394v1</link>
-      <guid>pd-20260418-04</guid>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Security operations in smart cities demand detection systems that balance accuracy with response time. While ensemble methods like Random Forest achieve high accuracy, their computational overhead impedes real-time forensic triage. We present the first systematic evaluation of TabPFNv2.5, a transfor
-
-• 研究Optimizing IoT Intrusion Detec...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>FedLiTeCAN: A Federated Lightweight Transformer for Fast and Robust CAN Bus Intrusion Detection</title>
-      <link>https://arxiv.org/abs/2512.24088</link>
-      <guid>pd-20260417-01</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>提出联邦学习框架下的轻量化Transformer CAN总线入侵检测模型。以连接车辆为本地节点，聚合加密的模型权重而不共享原始CAN流量。在多种攻击类型上实现鲁棒检测且推理延迟显著低于标准Transformer。
-
-• 首个针对CAN总线的联邦轻量Transformer IDS
-• 在DoS/Fuzzy/Spoofing攻击上F1&gt;99%
-• 推理延迟较标准Transformer降低约60%
-
-与LCSMC-Net（9,401参数/2.84M FLOPs/99.89%）相比，该工作采用Transformer骨干并用联邦方式训练，模型规模预计至少一个量级更大；但提供的联邦思路可直接与LCSMC-Net结合——把LCSMC-Net作为客户端局部模型以实现极低带宽(&lt;10KB/轮)的参数聚合，补齐我们单模型在多厂商OEM异构数据上的泛化短板。</description>
-    </item>
-    <item>
-      <title>Evaluating the Impact of Privacy-Preserving Federated Learning on CAN Intrusion Detection</title>
-      <link>https://arxiv.org/abs/2506.04978</link>
-      <guid>pd-20260417-02</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>在50辆车规模下系统比较集中式与联邦式LSTM自编码器入侵检测性能，包括差分隐私与安全聚合对检测率、误报率的综合影响。结果显示隐私保护机制引入约2-4%的检测损失但显著改善跨车型泛化。
-
-• 50节点大规模CAN联邦学习实测基准
-• 量化差分隐私对IDS检测率的影响
-• 开源CANdito联邦检测框架
-
-该文的基准实验和开源代码可直接用作LCSMC-Net的联邦版本对比基线。我们的INT8量化模型（3.6KB Flash）在带宽占用上远低于其LSTM-AE，且9,401参数意味着单轮上行仅~9.4KB，非常适合将其联邦协议直接移植，并可在车载MCU上在线持续学习。</description>
-    </item>
-    <item>
-      <title>Fine-Tuning Federated Learning-Based Intrusion Detection Systems for Transportation IoT</title>
-      <link>https://arxiv.org/abs/2502.06099</link>
-      <guid>pd-20260417-03</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>针对交通物联网场景提出联邦预训练+本地微调的IDS框架，在公共CAN数据集上预训练全局模型后，在各车辆端以少量样本(&lt;5%)进行LoRA式微调，兼顾全局一致性与个性化攻击模式识别。
-
-• 联邦预训练+本地LoRA微调两阶段策略
-• 少样本(&lt;5%)微调精度提升3-8%
-• 降低通信开销约70%
-
-两阶段范式对LCSMC-Net极具启发：先用多个开源CAN数据集联邦预训练9,401参数模型，再针对每辆目标车的CAN-ID分布做微调。考虑到我们的卷积结构，可仿照LoRA做通道级低秩残差微调，预计增量参数&lt;1K，对3.6KB Flash的约束依然友好。</description>
     </item>
   </channel>
 </rss>

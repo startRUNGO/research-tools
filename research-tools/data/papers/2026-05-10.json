@@ -1,0 +1,85 @@
+[
+  {
+    "id": "pd-20260510-01",
+    "date": "2026-05-10",
+    "title": "AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics",
+    "authors": "Chun Yin Chiu",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2605.05644v1",
+    "url": "https://arxiv.org/abs/2605.05644v1",
+    "abstract": "Federated learning (FL) is attractive for cloud-edge intrusion detection because it enables collaborative training over distributed telemetry without centralizing raw logs. In production security analytics pipelines, however, only a subset of clients participates in each round, and heterogeneous ban",
+    "highlights": [
+      "研究AoI-Guided Client Selection fo...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260510-02",
+    "date": "2026-05-10",
+    "title": "Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty",
+    "authors": "Lorenzo Zapparoli, Blazhe Gjorgiev, Giovanni Sansavini",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2605.02334v1",
+    "url": "https://arxiv.org/abs/2605.02334v1",
+    "abstract": "As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil",
+    "highlights": [
+      "研究Efficient Multi-Market Schedul...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260510-03",
+    "date": "2026-05-10",
+    "title": "Binary Image-Based Intrusion Detection for Operational Technology Networks: Extending the SPHBI Methodology from IoT to Modbus TCP",
+    "authors": "Aamir Omar",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2605.04250v2",
+    "url": "https://arxiv.org/abs/2605.04250v2",
+    "abstract": "This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve",
+    "highlights": [
+      "研究Binary Image-Based Intrusion D...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260510-04",
+    "date": "2026-05-10",
+    "title": "LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks",
+    "authors": "Dileepa Mabulage, Banuka Athuraliya",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2605.02987v1",
+    "url": "https://arxiv.org/abs/2605.02987v1",
+    "abstract": "The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite",
+    "highlights": [
+      "研究LiteShield: Hybrid Feature Sel...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]
