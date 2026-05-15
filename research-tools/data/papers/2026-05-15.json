@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pd-20260515-01",
+    "date": "2026-05-15",
+    "title": "Distributionally Robust Model Predictive Control for Virtual Power Plants",
+    "authors": "Nikolas Recke, Mathias Hudoba de Badyn",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2605.14642v1",
+    "url": "https://arxiv.org/abs/2605.14642v1",
+    "abstract": "This paper presents a distributionally robust model predictive control (DRMPC) framework for the optimal Virtual Power Plant (VPP) operation under electricity price uncertainty. A unified VPP model is formulated that captures the interaction between buildings, battery storage, and renewable generati",
+    "highlights": [
+      "研究Distributionally Robust Model ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260515-02",
+    "date": "2026-05-15",
+    "title": "Empowering IoT Security: On-Device Intrusion Detection in Resource Constrained Devices",
+    "authors": "Vasilis Ieropoulos, Eirini Anthi, Theodoros Spyridopoulos, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2605.13159v1",
+    "url": "https://arxiv.org/abs/2605.13159v1",
+    "abstract": "IoT devices particularly microcontrollers are challenged by their inherent limitations in processing capabilities, memory capacity, and energy conservation. Securing communication within IoT networks is further complicated by the heterogeneity of devices and the myriad of potential security threats.",
+    "highlights": [
+      "研究Empowering IoT Security: On-De...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
