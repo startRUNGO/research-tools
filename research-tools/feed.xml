@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 16 May 2026 04:22:12 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 04:44:43 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Distributionally Robust Model Predictive Control for Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2605.14642v1</link>
+      <guid>pd-20260517-01</guid>
+      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>This paper presents a distributionally robust model predictive control (DRMPC) framework for the optimal Virtual Power Plant (VPP) operation under electricity price uncertainty. A unified VPP model is formulated that captures the interaction between buildings, battery storage, and renewable generati
+
+• 研究Distributionally Robust Model ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Empowering IoT Security: On-Device Intrusion Detection in Resource Constrained Devices</title>
+      <link>https://arxiv.org/abs/2605.13159v1</link>
+      <guid>pd-20260517-02</guid>
+      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>IoT devices particularly microcontrollers are challenged by their inherent limitations in processing capabilities, memory capacity, and energy conservation. Securing communication within IoT networks is further complicated by the heterogeneity of devices and the myriad of potential security threats.
+
+• 研究Empowering IoT Security: On-De...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Distributionally Robust Model Predictive Control for Virtual Power Plants</title>
       <link>https://arxiv.org/abs/2605.14642v1</link>
@@ -674,34 +702,6 @@
       <description>The paradigm shift towards local and on-device inference under stringent resource constraints is represented by the tiny machine learning (TinyML) domain. The primary goal of \gls{tml} is to integrate intelligence into tiny, low-cost devices under strict resource, energy, and latency constraints. Ho
 
 • 研究Co-Design of CNN Accelerators ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection</title>
-      <link>https://arxiv.org/abs/2604.14685v1</link>
-      <guid>pd-20260422-02</guid>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Provenance-based intrusion detection has emerged as a promising approach for analyzing complex attack behaviors through system-level provenance graphs. However, existing defense methods face an inherent granularity limitation. Node-centric detectors, which evaluate anomalies using entities' attribut
-
-• 研究Beyond Nodes vs. Edges: A Mult...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Robustness Analysis of Machine Learning Models for IoT Intrusion Detection Under Data Poisoning Attacks</title>
-      <link>https://arxiv.org/abs/2604.14444v1</link>
-      <guid>pd-20260422-03</guid>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Ensuring the reliability of machine learning-based intrusion detection systems remains a critical challenge in Internet of Things (IoT) environments, particularly as data poisoning attacks increasingly threaten the integrity of model training pipelines. This study evaluates the susceptibility of fou
-
-• 研究Robustness Analysis of Machine...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
