@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pd-20260522-01",
+    "date": "2026-05-22",
+    "title": "XAI FL-IDS: A Federated Learning and SHAP-Based Explainable Framework for Distributed Intrusion Detection Systems",
+    "authors": "Mohammad Hossein Gholamrezazadeh, AhmadReza Montazerolghaem",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2605.19448v1",
+    "url": "https://arxiv.org/abs/2605.19448v1",
+    "abstract": "An Intrusion Detection System (IDS) is vital in cybersecurity, detecting unauthorized activity across networks. With attacks on network layers increasing, stronger IDSs are needed. Yet most IDSs rely on centralized detection, forcing IoT nodes to ship data to a server, adding overhead and offering n",
+    "highlights": [
+      "研究XAI FL-IDS: A Federated Learni...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
