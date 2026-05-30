@@ -1,5 +1,26 @@
 [
   {
+    "id": "pd-20260530-01",
+    "date": "2026-05-30",
+    "title": "Enhancing Autonomous Online Intrusion Detection for IoT with Balanced Learning, Reliable Pseudo-Labels, and Lightweight Architectures",
+    "authors": "Hanzala Afzaal, Danish Memon, Chouhdary Bilal Raza, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2605.26166v1",
+    "url": "https://arxiv.org/abs/2605.26166v1",
+    "abstract": "The rapid proliferation of Internet of Things (IoT) devices has created an urgent demand for adaptive, resource-efficient Intrusion Detection Systems (IDS) capable of handling dynamic and evolving cyber threats. This paper investigates AOC-IDS, a state-of-the-art autonomous online IDS published at I",
+    "highlights": [
+      "研究Enhancing Autonomous Online In...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260528-01",
     "date": "2026-05-28",
     "title": "Enhancing Autonomous Online Intrusion Detection for IoT with Balanced Learning, Reliable Pseudo-Labels, and Lightweight Architectures",
