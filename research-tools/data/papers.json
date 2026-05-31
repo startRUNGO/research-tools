@@ -1,5 +1,217 @@
 [
   {
+    "id": "pd-20260531-01",
+    "date": "2026-05-31",
+    "title": "A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management",
+    "authors": "Athanasios Koukosias, Vasileios Tzanidakis, Sotiris Athanasiou, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2605.00898v2",
+    "url": "https://arxiv.org/abs/2605.00898v2",
+    "abstract": "Accurate forecasting of battery health indicators, including remaining capacity and lifetime, is of paramount importance for ensuring the reliability, safety, and operational efficiency of applications such as electric vehicles and large scale energy storage infrastructures. The result of the foreca",
+    "highlights": [
+      "研究A Deep Learning Model for Batt...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "深度学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-02",
+    "date": "2026-05-31",
+    "title": "Reinforcement Learning-Based Energy Management for Industrial Park with Heterogeneous Batteries under Demand Response",
+    "authors": "Meng Yuan, Tinghui Yan, Zhezhuang Xu",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2604.03655v1",
+    "url": "https://arxiv.org/abs/2604.03655v1",
+    "abstract": "The integration of photovoltaic (PV) systems, stationary energy storage systems (ESSs), and electric vehicles (EVs) alongside demand response (DR) programmes in industrial parks presents opportunities to reduce costs and improve renewable energy utilisation. Coordinating these resources is challengi",
+    "highlights": [
+      "研究Reinforcement Learning-Based E...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-03",
+    "date": "2026-05-31",
+    "title": "Knowledge Distillation for Efficient Transformer-Based Reinforcement Learning in Hardware-Constrained Energy Management Systems",
+    "authors": "Pascal Henrich, Jonas Sievers, Maximilian Beichter, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2603.26249v1",
+    "url": "https://arxiv.org/abs/2603.26249v1",
+    "abstract": "Transformer-based reinforcement learning has emerged as a strong candidate for sequential control in residential energy management. In particular, the Decision Transformer can learn effective battery dispatch policies from historical data, thereby increasing photovoltaic self-consumption and reducin",
+    "highlights": [
+      "研究Knowledge Distillation for Eff...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化",
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-04",
+    "date": "2026-05-31",
+    "title": "Reinforcement Learning-based Home Energy Management with Heterogeneous Batteries and Stochastic EV Behaviour",
+    "authors": "Meng Yuan, Ye Wang, Xinghuo Yu, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2602.04578v1",
+    "url": "https://arxiv.org/abs/2602.04578v1",
+    "abstract": "The widespread adoption of photovoltaic (PV), electric vehicles (EVs), and stationary energy storage systems (ESS) in households increases system complexity while simultaneously offering new opportunities for energy regulation. However, effectively coordinating these resources under uncertainties re",
+    "highlights": [
+      "研究Reinforcement Learning-based H...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-05",
+    "date": "2026-05-31",
+    "title": "Higher-Order Action Regularization in Deep Reinforcement Learning: From Continuous Control to Building Energy Management",
+    "authors": "Faizan Ahmed, Aniket Dixit, James Brusey",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2601.02061v1",
+    "url": "https://arxiv.org/abs/2601.02061v1",
+    "abstract": "Deep reinforcement learning agents often exhibit erratic, high-frequency control behaviors that hinder real-world deployment due to excessive energy consumption and mechanical wear. We systematically investigate action smoothness regularization through higher-order derivative penalties, progressing ",
+    "highlights": [
+      "研究Higher-Order Action Regulariza...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-06",
+    "date": "2026-05-31",
+    "title": "Independent policy gradient-based reinforcement learning for economic and reliable energy management of multi-microgrid systems",
+    "authors": "Junkai Hu, Li Xia",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2511.20977v1",
+    "url": "https://arxiv.org/abs/2511.20977v1",
+    "abstract": "Efficiency and reliability are both crucial for energy management, especially in multi-microgrid systems (MMSs) integrating intermittent and distributed renewable energy sources. This study investigates an economic and reliable energy management problem in MMSs under a distributed scheme, where each",
+    "highlights": [
+      "研究Independent policy gradient-ba...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-07",
+    "date": "2026-05-31",
+    "title": "Uncertainty-Aware Federated Learning for Cyber-Resilient Microgrid Energy Management",
+    "authors": "Oluleke Babayomi, Dong-Seong Kim",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2511.17968v1",
+    "url": "https://arxiv.org/abs/2511.17968v1",
+    "abstract": "Maintaining economic efficiency and operational reliability in microgrid energy management systems under cyberattack conditions remains challenging. Most approaches assume non-anomalous measurements, make predictions with unquantified uncertainties, and do not mitigate malicious attacks on renewable",
+    "highlights": [
+      "研究Uncertainty-Aware Federated Le...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-08",
+    "date": "2026-05-31",
+    "title": "A Receding Horizon Reinforcement Learning Framework for Campus Chiller Energy Management - A case study from an Australian University",
+    "authors": "Laura Musgrave, Arnab Bhattacharjee, Tapan Kumar Saha",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2511.14160v1",
+    "url": "https://arxiv.org/abs/2511.14160v1",
+    "abstract": "This work presents a case study of optimal energy management of a large Heating Ventilation and Cooling (HVAC) system within a university campus in Australia using Reinforcement Learning (RL). The HVAC system supplies to nine university buildings with an annual average electricity consumption of $\\s",
+    "highlights": [
+      "研究A Receding Horizon Reinforceme...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-09",
+    "date": "2026-05-31",
+    "title": "Optimizing Energy Management of Smart Grid using Reinforcement Learning aided by Surrogate models built using Physics-informed Neural Networks",
+    "authors": "Julen Cestero, Carmine Delle Femine, Kenji S. Muro, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2510.17380v1",
+    "url": "https://arxiv.org/abs/2510.17380v1",
+    "abstract": "Optimizing the energy management within a smart grids scenario presents significant challenges, primarily due to the complexity of real-world systems and the intricate interactions among various components. Reinforcement Learning (RL) is gaining prominence as a solution for addressing the challenges",
+    "highlights": [
+      "研究Optimizing Energy Management o...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习",
+      "深度学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260531-10",
+    "date": "2026-05-31",
+    "title": "BuildingGym: An open-source toolbox for AI-based building energy management using reinforcement learning",
+    "authors": "Xilei Dai, Ruotian Chen, Songze Guan, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2509.11922v1",
+    "url": "https://arxiv.org/abs/2509.11922v1",
+    "abstract": "Reinforcement learning (RL) has proven effective for AI-based building energy management. However, there is a lack of flexible framework to implement RL across various control problems in building energy management. To address this gap, we propose BuildingGym, an open-source tool designed as a resea",
+    "highlights": [
+      "研究BuildingGym: An open-source to...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260530-01",
     "date": "2026-05-30",
     "title": "Enhancing Autonomous Online Intrusion Detection for IoT with Balanced Learning, Reliable Pseudo-Labels, and Lightweight Architectures",

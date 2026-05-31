@@ -5,8 +5,148 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2026 04:41:55 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 05:12:25 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management</title>
+      <link>https://arxiv.org/abs/2605.00898v2</link>
+      <guid>pd-20260531-01</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Accurate forecasting of battery health indicators, including remaining capacity and lifetime, is of paramount importance for ensuring the reliability, safety, and operational efficiency of applications such as electric vehicles and large scale energy storage infrastructures. The result of the foreca
+
+• 研究A Deep Learning Model for Batt...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Reinforcement Learning-Based Energy Management for Industrial Park with Heterogeneous Batteries under Demand Response</title>
+      <link>https://arxiv.org/abs/2604.03655v1</link>
+      <guid>pd-20260531-02</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The integration of photovoltaic (PV) systems, stationary energy storage systems (ESSs), and electric vehicles (EVs) alongside demand response (DR) programmes in industrial parks presents opportunities to reduce costs and improve renewable energy utilisation. Coordinating these resources is challengi
+
+• 研究Reinforcement Learning-Based E...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Knowledge Distillation for Efficient Transformer-Based Reinforcement Learning in Hardware-Constrained Energy Management Systems</title>
+      <link>https://arxiv.org/abs/2603.26249v1</link>
+      <guid>pd-20260531-03</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Transformer-based reinforcement learning has emerged as a strong candidate for sequential control in residential energy management. In particular, the Decision Transformer can learn effective battery dispatch policies from historical data, thereby increasing photovoltaic self-consumption and reducin
+
+• 研究Knowledge Distillation for Eff...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Reinforcement Learning-based Home Energy Management with Heterogeneous Batteries and Stochastic EV Behaviour</title>
+      <link>https://arxiv.org/abs/2602.04578v1</link>
+      <guid>pd-20260531-04</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The widespread adoption of photovoltaic (PV), electric vehicles (EVs), and stationary energy storage systems (ESS) in households increases system complexity while simultaneously offering new opportunities for energy regulation. However, effectively coordinating these resources under uncertainties re
+
+• 研究Reinforcement Learning-based H...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Higher-Order Action Regularization in Deep Reinforcement Learning: From Continuous Control to Building Energy Management</title>
+      <link>https://arxiv.org/abs/2601.02061v1</link>
+      <guid>pd-20260531-05</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Deep reinforcement learning agents often exhibit erratic, high-frequency control behaviors that hinder real-world deployment due to excessive energy consumption and mechanical wear. We systematically investigate action smoothness regularization through higher-order derivative penalties, progressing 
+
+• 研究Higher-Order Action Regulariza...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Independent policy gradient-based reinforcement learning for economic and reliable energy management of multi-microgrid systems</title>
+      <link>https://arxiv.org/abs/2511.20977v1</link>
+      <guid>pd-20260531-06</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Efficiency and reliability are both crucial for energy management, especially in multi-microgrid systems (MMSs) integrating intermittent and distributed renewable energy sources. This study investigates an economic and reliable energy management problem in MMSs under a distributed scheme, where each
+
+• 研究Independent policy gradient-ba...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Uncertainty-Aware Federated Learning for Cyber-Resilient Microgrid Energy Management</title>
+      <link>https://arxiv.org/abs/2511.17968v1</link>
+      <guid>pd-20260531-07</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Maintaining economic efficiency and operational reliability in microgrid energy management systems under cyberattack conditions remains challenging. Most approaches assume non-anomalous measurements, make predictions with unquantified uncertainties, and do not mitigate malicious attacks on renewable
+
+• 研究Uncertainty-Aware Federated Le...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>A Receding Horizon Reinforcement Learning Framework for Campus Chiller Energy Management - A case study from an Australian University</title>
+      <link>https://arxiv.org/abs/2511.14160v1</link>
+      <guid>pd-20260531-08</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>This work presents a case study of optimal energy management of a large Heating Ventilation and Cooling (HVAC) system within a university campus in Australia using Reinforcement Learning (RL). The HVAC system supplies to nine university buildings with an annual average electricity consumption of $\s
+
+• 研究A Receding Horizon Reinforceme...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Optimizing Energy Management of Smart Grid using Reinforcement Learning aided by Surrogate models built using Physics-informed Neural Networks</title>
+      <link>https://arxiv.org/abs/2510.17380v1</link>
+      <guid>pd-20260531-09</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Optimizing the energy management within a smart grids scenario presents significant challenges, primarily due to the complexity of real-world systems and the intricate interactions among various components. Reinforcement Learning (RL) is gaining prominence as a solution for addressing the challenges
+
+• 研究Optimizing Energy Management o...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>BuildingGym: An open-source toolbox for AI-based building energy management using reinforcement learning</title>
+      <link>https://arxiv.org/abs/2509.11922v1</link>
+      <guid>pd-20260531-10</guid>
+      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Reinforcement learning (RL) has proven effective for AI-based building energy management. However, there is a lack of flexible framework to implement RL across various control problems in building energy management. To address this gap, we propose BuildingGym, an open-source tool designed as a resea
+
+• 研究BuildingGym: An open-source to...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Enhancing Autonomous Online Intrusion Detection for IoT with Balanced Learning, Reliable Pseudo-Labels, and Lightweight Architectures</title>
       <link>https://arxiv.org/abs/2605.26166v1</link>
@@ -562,146 +702,6 @@
       <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
 
 • 研究Risk-Aware Multi-Market Schedu...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
-      <link>https://arxiv.org/abs/2605.02987v1</link>
-      <guid>pd-20260506-03</guid>
-      <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
-
-• 研究LiteShield: Hybrid Feature Sel...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management</title>
-      <link>https://arxiv.org/abs/2605.00898v1</link>
-      <guid>pd-20260505-01</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Accurate forecasting of battery health indicators, including remaining capacity and lifetime, is of paramount importance for ensuring the reliability, safety, and operational efficiency of applications such as electric vehicles and large scale energy storage infrastructures. The result of the foreca
-
-• 研究A Deep Learning Model for Batt...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
-      <link>https://arxiv.org/abs/2604.26424v1</link>
-      <guid>pd-20260504-01</guid>
-      <pubDate>Mon, 04 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
-
-• 研究Risk-Aware Multi-Market Schedu...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
-      <link>https://arxiv.org/abs/2604.26424v1</link>
-      <guid>pd-20260503-01</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
-
-• 研究Risk-Aware Multi-Market Schedu...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
-      <link>https://arxiv.org/abs/2604.26424v1</link>
-      <guid>pd-20260502-01</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
-
-• 研究Risk-Aware Multi-Market Schedu...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
-      <link>https://arxiv.org/abs/2604.26424v1</link>
-      <guid>pd-20260501-01</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
-
-• 研究Risk-Aware Multi-Market Schedu...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
-      <link>https://arxiv.org/abs/2604.26424v1</link>
-      <guid>pd-20260430-01</guid>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
-
-• 研究Risk-Aware Multi-Market Schedu...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>A-THENA: Early Intrusion Detection for IoT with Time-Aware Hybrid Encoding and Network-Specific Augmentation</title>
-      <link>https://arxiv.org/abs/2604.21623v1</link>
-      <guid>pd-20260430-02</guid>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The proliferation of Internet of Things (IoT) devices has significantly expanded attack surfaces, making IoT ecosystems particularly susceptible to sophisticated cyber threats. To address this challenge, this work introduces A-THENA, a lightweight early intrusion detection system (EIDS) that signifi
-
-• 研究A-THENA: Early Intrusion Detec...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>A-THENA: Early Intrusion Detection for IoT with Time-Aware Hybrid Encoding and Network-Specific Augmentation</title>
-      <link>https://arxiv.org/abs/2604.21623v1</link>
-      <guid>pd-20260429-01</guid>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The proliferation of Internet of Things (IoT) devices has significantly expanded attack surfaces, making IoT ecosystems particularly susceptible to sophisticated cyber threats. To address this challenge, this work introduces A-THENA, a lightweight early intrusion detection system (EIDS) that signifi
-
-• 研究A-THENA: Early Intrusion Detec...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>A-THENA: Early Intrusion Detection for IoT with Time-Aware Hybrid Encoding and Network-Specific Augmentation</title>
-      <link>https://arxiv.org/abs/2604.21623v1</link>
-      <guid>pd-20260428-01</guid>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The proliferation of Internet of Things (IoT) devices has significantly expanded attack surfaces, making IoT ecosystems particularly susceptible to sophisticated cyber threats. To address this challenge, this work introduces A-THENA, a lightweight early intrusion detection system (EIDS) that signifi
-
-• 研究A-THENA: Early Intrusion Detec...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
