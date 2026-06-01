@@ -1,5 +1,25 @@
 [
   {
+    "id": "pd-20260601-01",
+    "date": "2026-06-01",
+    "title": "What changes after deployment? A survey on On-device Learning in TinyML",
+    "authors": "Massimo Pavan, Luca Pezzarossa, Fabrizio Pittorino, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2605.31226v1",
+    "url": "https://arxiv.org/abs/2605.31226v1",
+    "abstract": "Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized ",
+    "highlights": [
+      "研究What changes after deployment?...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260531-01",
     "date": "2026-05-31",
     "title": "A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management",

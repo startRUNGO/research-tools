@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 31 May 2026 05:12:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 05:51:21 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What changes after deployment? A survey on On-device Learning in TinyML</title>
+      <link>https://arxiv.org/abs/2605.31226v1</link>
+      <guid>pd-20260601-01</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
+
+• 研究What changes after deployment?...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management</title>
       <link>https://arxiv.org/abs/2605.00898v2</link>
@@ -688,20 +702,6 @@
       <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
 
 • 研究Efficient Multi-Market Schedul...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs</title>
-      <link>https://arxiv.org/abs/2604.26424v1</link>
-      <guid>pd-20260506-02</guid>
-      <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l
-
-• 研究Risk-Aware Multi-Market Schedu...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
