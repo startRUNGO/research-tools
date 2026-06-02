@@ -5,8 +5,78 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jun 2026 05:51:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 05:18:50 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems</title>
+      <link>https://arxiv.org/abs/2606.02256v1</link>
+      <guid>pd-20260602-01</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded 
+
+• 研究ArrythML: An Autoencoder-Based...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>What changes after deployment? A survey on On-device Learning in TinyML</title>
+      <link>https://arxiv.org/abs/2605.31226v1</link>
+      <guid>pd-20260602-02</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
+
+• 研究What changes after deployment?...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Explainable Data-driven Deep Reinforcement Learning Methods for Optimal Energy Management in Buildings</title>
+      <link>https://arxiv.org/abs/2606.02049v1</link>
+      <guid>pd-20260602-03</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The increasing integration of renewable energy sources into power systems, particularly in buildings equipped with photovoltaic (PV) panels and energy storage systems, introduces significant complexity in energy systems. Volatile power generation, varying electricity tariffs, and increased entities,
+
+• 研究Explainable Data-driven Deep R...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Improving IoT Intrusion Detection Through SMOTE-Based Oversampling and Extended Multi-Model Evaluation on Side-Channel Power Data</title>
+      <link>https://arxiv.org/abs/2606.00161v1</link>
+      <guid>pd-20260602-04</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The detection of intrusions in IoT-based networks poses challenges that cannot be overcome using traditional machine learning methods. Perhaps the biggest of them is related to the presence of a class imbalance in the side-channel dataset, where the number of samples in the normal class compared to 
+
+• 研究Improving IoT Intrusion Detect...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>XAI-SOH-FL: Enhancing SOH-FL with Adaptive Aggregation and Explainable AI for Intrusion Detection in Heterogeneous IoT</title>
+      <link>https://arxiv.org/abs/2606.00134v1</link>
+      <guid>pd-20260602-05</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Intrusion Detection Systems (IDS) in Internet of Things (IoT) environments face significant challenges due to data heterogeneity, lack of labeled data, and limited model interpretability. Federated Learning (FL) offers a privacy-preserving solution; however, existing approaches such as SOH-FL suffer
+
+• 研究XAI-SOH-FL: Enhancing SOH-FL w...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>What changes after deployment? A survey on On-device Learning in TinyML</title>
       <link>https://arxiv.org/abs/2605.31226v1</link>
@@ -632,76 +702,6 @@
       <description>This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve
 
 • 研究Binary Image-Based Intrusion D...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
-      <link>https://arxiv.org/abs/2605.02987v1</link>
-      <guid>pd-20260508-04</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
-
-• 研究LiteShield: Hybrid Feature Sel...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
-      <link>https://arxiv.org/abs/2605.02334v1</link>
-      <guid>pd-20260507-01</guid>
-      <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
-
-• 研究Efficient Multi-Market Schedul...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Binary Image-Based Intrusion Detection for Operational Technology Networks: Extending the SPHBI Methodology from IoT to Modbus TCP</title>
-      <link>https://arxiv.org/abs/2605.04250v1</link>
-      <guid>pd-20260507-02</guid>
-      <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve
-
-• 研究Binary Image-Based Intrusion D...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
-      <link>https://arxiv.org/abs/2605.02987v1</link>
-      <guid>pd-20260507-03</guid>
-      <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
-
-• 研究LiteShield: Hybrid Feature Sel...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
-      <link>https://arxiv.org/abs/2605.02334v1</link>
-      <guid>pd-20260506-01</guid>
-      <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
-
-• 研究Efficient Multi-Market Schedul...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
