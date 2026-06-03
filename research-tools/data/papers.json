@@ -1,5 +1,147 @@
 [
   {
+    "id": "pd-20260603-01",
+    "date": "2026-06-03",
+    "title": "ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems",
+    "authors": "Nagarajan S, Kurian Polachan",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.02256v1",
+    "url": "https://arxiv.org/abs/2606.02256v1",
+    "abstract": "Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded ",
+    "highlights": [
+      "研究ArrythML: An Autoencoder-Based...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260603-02",
+    "date": "2026-06-03",
+    "title": "What changes after deployment? A survey on On-device Learning in TinyML",
+    "authors": "Massimo Pavan, Luca Pezzarossa, Fabrizio Pittorino, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2605.31226v1",
+    "url": "https://arxiv.org/abs/2605.31226v1",
+    "abstract": "Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized ",
+    "highlights": [
+      "研究What changes after deployment?...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260603-03",
+    "date": "2026-06-03",
+    "title": "Fairness as an Investment: Dynamic Participation and Long-Run Profit in Virtual Power Plants",
+    "authors": "Liudong Chen, Bolun Xu",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2606.02820v1",
+    "url": "https://arxiv.org/abs/2606.02820v1",
+    "abstract": "We show that incorporating fairness constraints into virtual power plant (VPP) operations can incentivize consumer participation and thus improve the aggregator's long-run profitability. VPPs rely on sustained participation from heterogeneous consumers to provide a variety of grid services whose tim",
+    "highlights": [
+      "研究Fairness as an Investment: Dyn...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260603-04",
+    "date": "2026-06-03",
+    "title": "Explainable Data-driven Deep Reinforcement Learning Methods for Optimal Energy Management in Buildings",
+    "authors": "Hallah Shahid Butt, Qiong Huang, Gökhan Demirel, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2606.02049v1",
+    "url": "https://arxiv.org/abs/2606.02049v1",
+    "abstract": "The increasing integration of renewable energy sources into power systems, particularly in buildings equipped with photovoltaic (PV) panels and energy storage systems, introduces significant complexity in energy systems. Volatile power generation, varying electricity tariffs, and increased entities,",
+    "highlights": [
+      "研究Explainable Data-driven Deep R...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260603-05",
+    "date": "2026-06-03",
+    "title": "Towards Intrusion Detection Systems for RPL-based IoT Networks using Foundation Models",
+    "authors": "Elias Lunderbye, Sourasekhar Banerjee, Christian Rohner, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.03530v1",
+    "url": "https://arxiv.org/abs/2606.03530v1",
+    "abstract": "AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con",
+    "highlights": [
+      "研究Towards Intrusion Detection Sy...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260603-06",
+    "date": "2026-06-03",
+    "title": "Improving IoT Intrusion Detection Through SMOTE-Based Oversampling and Extended Multi-Model Evaluation on Side-Channel Power Data",
+    "authors": "Muhammad Khuram Shahzad, Haseeb Khan, Muhammad Masood Khan, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.00161v1",
+    "url": "https://arxiv.org/abs/2606.00161v1",
+    "abstract": "The detection of intrusions in IoT-based networks poses challenges that cannot be overcome using traditional machine learning methods. Perhaps the biggest of them is related to the presence of a class imbalance in the side-channel dataset, where the number of samples in the normal class compared to ",
+    "highlights": [
+      "研究Improving IoT Intrusion Detect...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260603-07",
+    "date": "2026-06-03",
+    "title": "XAI-SOH-FL: Enhancing SOH-FL with Adaptive Aggregation and Explainable AI for Intrusion Detection in Heterogeneous IoT",
+    "authors": "Ambreen Aslam, Maaz Hassan, Bibi Zahra, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.00134v1",
+    "url": "https://arxiv.org/abs/2606.00134v1",
+    "abstract": "Intrusion Detection Systems (IDS) in Internet of Things (IoT) environments face significant challenges due to data heterogeneity, lack of labeled data, and limited model interpretability. Federated Learning (FL) offers a privacy-preserving solution; however, existing approaches such as SOH-FL suffer",
+    "highlights": [
+      "研究XAI-SOH-FL: Enhancing SOH-FL w...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260602-01",
     "date": "2026-06-02",
     "title": "ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems",
