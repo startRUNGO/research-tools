@@ -5,8 +5,92 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Jun 2026 04:43:41 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 05:13:59 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
+      <link>https://arxiv.org/abs/2606.05779v1</link>
+      <guid>pd-20260607-01</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
+
+• 研究TinyML-Driven Cybersecurity fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems</title>
+      <link>https://arxiv.org/abs/2606.02256v1</link>
+      <guid>pd-20260607-02</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded 
+
+• 研究ArrythML: An Autoencoder-Based...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Fairness as an Investment: Dynamic Participation and Long-Run Profit in Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2606.02820v1</link>
+      <guid>pd-20260607-03</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>We show that incorporating fairness constraints into virtual power plant (VPP) operations can incentivize consumer participation and thus improve the aggregator's long-run profitability. VPPs rely on sustained participation from heterogeneous consumers to provide a variety of grid services whose tim
+
+• 研究Fairness as an Investment: Dyn...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Explainable Data-driven Deep Reinforcement Learning Methods for Optimal Energy Management in Buildings</title>
+      <link>https://arxiv.org/abs/2606.02049v1</link>
+      <guid>pd-20260607-04</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The increasing integration of renewable energy sources into power systems, particularly in buildings equipped with photovoltaic (PV) panels and energy storage systems, introduces significant complexity in energy systems. Volatile power generation, varying electricity tariffs, and increased entities,
+
+• 研究Explainable Data-driven Deep R...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks</title>
+      <link>https://arxiv.org/abs/2606.05776v1</link>
+      <guid>pd-20260607-05</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da
+
+• 研究An Improved CNN-LSTM Based Int...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Towards Intrusion Detection Systems for RPL-based IoT Networks using Foundation Models</title>
+      <link>https://arxiv.org/abs/2606.03530v1</link>
+      <guid>pd-20260607-06</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con
+
+• 研究Towards Intrusion Detection Sy...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
       <link>https://arxiv.org/abs/2606.05779v1</link>
@@ -618,90 +702,6 @@
       <description>An Intrusion Detection System (IDS) is vital in cybersecurity, detecting unauthorized activity across networks. With attacks on network layers increasing, stronger IDSs are needed. Yet most IDSs rely on centralized detection, forcing IoT nodes to ship data to a server, adding overhead and offering n
 
 • 研究XAI FL-IDS: A Federated Learni...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Distributionally Robust Model Predictive Control for Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2605.14642v1</link>
-      <guid>pd-20260517-01</guid>
-      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>This paper presents a distributionally robust model predictive control (DRMPC) framework for the optimal Virtual Power Plant (VPP) operation under electricity price uncertainty. A unified VPP model is formulated that captures the interaction between buildings, battery storage, and renewable generati
-
-• 研究Distributionally Robust Model ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Empowering IoT Security: On-Device Intrusion Detection in Resource Constrained Devices</title>
-      <link>https://arxiv.org/abs/2605.13159v1</link>
-      <guid>pd-20260517-02</guid>
-      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>IoT devices particularly microcontrollers are challenged by their inherent limitations in processing capabilities, memory capacity, and energy conservation. Securing communication within IoT networks is further complicated by the heterogeneity of devices and the myriad of potential security threats.
-
-• 研究Empowering IoT Security: On-De...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Distributionally Robust Model Predictive Control for Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2605.14642v1</link>
-      <guid>pd-20260516-01</guid>
-      <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>This paper presents a distributionally robust model predictive control (DRMPC) framework for the optimal Virtual Power Plant (VPP) operation under electricity price uncertainty. A unified VPP model is formulated that captures the interaction between buildings, battery storage, and renewable generati
-
-• 研究Distributionally Robust Model ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Empowering IoT Security: On-Device Intrusion Detection in Resource Constrained Devices</title>
-      <link>https://arxiv.org/abs/2605.13159v1</link>
-      <guid>pd-20260516-02</guid>
-      <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>IoT devices particularly microcontrollers are challenged by their inherent limitations in processing capabilities, memory capacity, and energy conservation. Securing communication within IoT networks is further complicated by the heterogeneity of devices and the myriad of potential security threats.
-
-• 研究Empowering IoT Security: On-De...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Distributionally Robust Model Predictive Control for Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2605.14642v1</link>
-      <guid>pd-20260515-01</guid>
-      <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>This paper presents a distributionally robust model predictive control (DRMPC) framework for the optimal Virtual Power Plant (VPP) operation under electricity price uncertainty. A unified VPP model is formulated that captures the interaction between buildings, battery storage, and renewable generati
-
-• 研究Distributionally Robust Model ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Empowering IoT Security: On-Device Intrusion Detection in Resource Constrained Devices</title>
-      <link>https://arxiv.org/abs/2605.13159v1</link>
-      <guid>pd-20260515-02</guid>
-      <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>IoT devices particularly microcontrollers are challenged by their inherent limitations in processing capabilities, memory capacity, and energy conservation. Securing communication within IoT networks is further complicated by the heterogeneity of devices and the myriad of potential security threats.
-
-• 研究Empowering IoT Security: On-De...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
