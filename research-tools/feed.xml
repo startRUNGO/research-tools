@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Jun 2026 05:20:44 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 04:56:38 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
+      <link>https://arxiv.org/abs/2606.05779v1</link>
+      <guid>pd-20260609-01</guid>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
+
+• 研究TinyML-Driven Cybersecurity fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Rethinking IoT Intrusion Detection: Augmenting Routing Metrics with Radio Features</title>
+      <link>https://arxiv.org/abs/2606.07282v1</link>
+      <guid>pd-20260609-02</guid>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan
+
+• 研究Rethinking IoT Intrusion Detec...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks</title>
+      <link>https://arxiv.org/abs/2606.05776v1</link>
+      <guid>pd-20260609-03</guid>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da
+
+• 研究An Improved CNN-LSTM Based Int...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Towards Intrusion Detection Systems for RPL-based IoT Networks using Foundation Models</title>
+      <link>https://arxiv.org/abs/2606.03530v1</link>
+      <guid>pd-20260609-04</guid>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con
+
+• 研究Towards Intrusion Detection Sy...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
       <link>https://arxiv.org/abs/2606.05779v1</link>
@@ -646,62 +702,6 @@
       <description>Maintaining economic efficiency and operational reliability in microgrid energy management systems under cyberattack conditions remains challenging. Most approaches assume non-anomalous measurements, make predictions with unquantified uncertainties, and do not mitigate malicious attacks on renewable
 
 • 研究Uncertainty-Aware Federated Le...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>A Receding Horizon Reinforcement Learning Framework for Campus Chiller Energy Management - A case study from an Australian University</title>
-      <link>https://arxiv.org/abs/2511.14160v1</link>
-      <guid>pd-20260531-08</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>This work presents a case study of optimal energy management of a large Heating Ventilation and Cooling (HVAC) system within a university campus in Australia using Reinforcement Learning (RL). The HVAC system supplies to nine university buildings with an annual average electricity consumption of $\s
-
-• 研究A Receding Horizon Reinforceme...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Optimizing Energy Management of Smart Grid using Reinforcement Learning aided by Surrogate models built using Physics-informed Neural Networks</title>
-      <link>https://arxiv.org/abs/2510.17380v1</link>
-      <guid>pd-20260531-09</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Optimizing the energy management within a smart grids scenario presents significant challenges, primarily due to the complexity of real-world systems and the intricate interactions among various components. Reinforcement Learning (RL) is gaining prominence as a solution for addressing the challenges
-
-• 研究Optimizing Energy Management o...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>BuildingGym: An open-source toolbox for AI-based building energy management using reinforcement learning</title>
-      <link>https://arxiv.org/abs/2509.11922v1</link>
-      <guid>pd-20260531-10</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Reinforcement learning (RL) has proven effective for AI-based building energy management. However, there is a lack of flexible framework to implement RL across various control problems in building energy management. To address this gap, we propose BuildingGym, an open-source tool designed as a resea
-
-• 研究BuildingGym: An open-source to...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Enhancing Autonomous Online Intrusion Detection for IoT with Balanced Learning, Reliable Pseudo-Labels, and Lightweight Architectures</title>
-      <link>https://arxiv.org/abs/2605.26166v1</link>
-      <guid>pd-20260530-01</guid>
-      <pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of Things (IoT) devices has created an urgent demand for adaptive, resource-efficient Intrusion Detection Systems (IDS) capable of handling dynamic and evolving cyber threats. This paper investigates AOC-IDS, a state-of-the-art autonomous online IDS published at I
-
-• 研究Enhancing Autonomous Online In...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
