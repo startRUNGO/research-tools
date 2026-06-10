@@ -1,0 +1,63 @@
+[
+  {
+    "id": "pd-20260610-01",
+    "date": "2026-06-10",
+    "title": "TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection",
+    "authors": "Van Le, Trevor Tran, Tan Le",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.05779v1",
+    "url": "https://arxiv.org/abs/2606.05779v1",
+    "abstract": "Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F",
+    "highlights": [
+      "研究TinyML-Driven Cybersecurity fo...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260610-02",
+    "date": "2026-06-10",
+    "title": "Rethinking IoT Intrusion Detection: Augmenting Routing Metrics with Radio Features",
+    "authors": "Yichang Sun, Andreas Johnsson, Sourasekhar Banerjee",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.07282v1",
+    "url": "https://arxiv.org/abs/2606.07282v1",
+    "abstract": "Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan",
+    "highlights": [
+      "研究Rethinking IoT Intrusion Detec...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260610-03",
+    "date": "2026-06-10",
+    "title": "An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks",
+    "authors": "Mohammad Tariq Ikhlas, Pohanyar Khowaja Khil, Malik Muhammad Mueed Aslam, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.05776v1",
+    "url": "https://arxiv.org/abs/2606.05776v1",
+    "abstract": "With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da",
+    "highlights": [
+      "研究An Improved CNN-LSTM Based Int...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]

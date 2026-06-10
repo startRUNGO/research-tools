@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jun 2026 04:56:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 05:07:59 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
+      <link>https://arxiv.org/abs/2606.05779v1</link>
+      <guid>pd-20260610-01</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
+
+• 研究TinyML-Driven Cybersecurity fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Rethinking IoT Intrusion Detection: Augmenting Routing Metrics with Radio Features</title>
+      <link>https://arxiv.org/abs/2606.07282v1</link>
+      <guid>pd-20260610-02</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan
+
+• 研究Rethinking IoT Intrusion Detec...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks</title>
+      <link>https://arxiv.org/abs/2606.05776v1</link>
+      <guid>pd-20260610-03</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da
+
+• 研究An Improved CNN-LSTM Based Int...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
       <link>https://arxiv.org/abs/2606.05779v1</link>
@@ -660,48 +702,6 @@
       <description>The widespread adoption of photovoltaic (PV), electric vehicles (EVs), and stationary energy storage systems (ESS) in households increases system complexity while simultaneously offering new opportunities for energy regulation. However, effectively coordinating these resources under uncertainties re
 
 • 研究Reinforcement Learning-based H...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Higher-Order Action Regularization in Deep Reinforcement Learning: From Continuous Control to Building Energy Management</title>
-      <link>https://arxiv.org/abs/2601.02061v1</link>
-      <guid>pd-20260531-05</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Deep reinforcement learning agents often exhibit erratic, high-frequency control behaviors that hinder real-world deployment due to excessive energy consumption and mechanical wear. We systematically investigate action smoothness regularization through higher-order derivative penalties, progressing 
-
-• 研究Higher-Order Action Regulariza...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Independent policy gradient-based reinforcement learning for economic and reliable energy management of multi-microgrid systems</title>
-      <link>https://arxiv.org/abs/2511.20977v1</link>
-      <guid>pd-20260531-06</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Efficiency and reliability are both crucial for energy management, especially in multi-microgrid systems (MMSs) integrating intermittent and distributed renewable energy sources. This study investigates an economic and reliable energy management problem in MMSs under a distributed scheme, where each
-
-• 研究Independent policy gradient-ba...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Uncertainty-Aware Federated Learning for Cyber-Resilient Microgrid Energy Management</title>
-      <link>https://arxiv.org/abs/2511.17968v1</link>
-      <guid>pd-20260531-07</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Maintaining economic efficiency and operational reliability in microgrid energy management systems under cyberattack conditions remains challenging. Most approaches assume non-anomalous measurements, make predictions with unquantified uncertainties, and do not mitigate malicious attacks on renewable
-
-• 研究Uncertainty-Aware Federated Le...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
