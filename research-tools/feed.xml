@@ -5,8 +5,64 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jun 2026 05:07:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 05:16:39 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
+      <link>https://arxiv.org/abs/2606.05779v1</link>
+      <guid>pd-20260611-01</guid>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
+
+• 研究TinyML-Driven Cybersecurity fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2606.12336v1</link>
+      <guid>pd-20260611-02</guid>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
+
+• 研究Analysis of a Distributed Opti...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Rethinking IoT Intrusion Detection: Augmenting Routing Metrics with Radio Features</title>
+      <link>https://arxiv.org/abs/2606.07282v1</link>
+      <guid>pd-20260611-03</guid>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan
+
+• 研究Rethinking IoT Intrusion Detec...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks</title>
+      <link>https://arxiv.org/abs/2606.05776v1</link>
+      <guid>pd-20260611-04</guid>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da
+
+• 研究An Improved CNN-LSTM Based Int...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
       <link>https://arxiv.org/abs/2606.05779v1</link>
@@ -646,62 +702,6 @@
       <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
 
 • 研究What changes after deployment?...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>A Deep Learning Model for Battery State Prediction towards Intelligent Energy Management</title>
-      <link>https://arxiv.org/abs/2605.00898v2</link>
-      <guid>pd-20260531-01</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Accurate forecasting of battery health indicators, including remaining capacity and lifetime, is of paramount importance for ensuring the reliability, safety, and operational efficiency of applications such as electric vehicles and large scale energy storage infrastructures. The result of the foreca
-
-• 研究A Deep Learning Model for Batt...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Reinforcement Learning-Based Energy Management for Industrial Park with Heterogeneous Batteries under Demand Response</title>
-      <link>https://arxiv.org/abs/2604.03655v1</link>
-      <guid>pd-20260531-02</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>The integration of photovoltaic (PV) systems, stationary energy storage systems (ESSs), and electric vehicles (EVs) alongside demand response (DR) programmes in industrial parks presents opportunities to reduce costs and improve renewable energy utilisation. Coordinating these resources is challengi
-
-• 研究Reinforcement Learning-Based E...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Knowledge Distillation for Efficient Transformer-Based Reinforcement Learning in Hardware-Constrained Energy Management Systems</title>
-      <link>https://arxiv.org/abs/2603.26249v1</link>
-      <guid>pd-20260531-03</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>Transformer-based reinforcement learning has emerged as a strong candidate for sequential control in residential energy management. In particular, the Decision Transformer can learn effective battery dispatch policies from historical data, thereby increasing photovoltaic self-consumption and reducin
-
-• 研究Knowledge Distillation for Eff...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Reinforcement Learning-based Home Energy Management with Heterogeneous Batteries and Stochastic EV Behaviour</title>
-      <link>https://arxiv.org/abs/2602.04578v1</link>
-      <guid>pd-20260531-04</guid>
-      <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>The widespread adoption of photovoltaic (PV), electric vehicles (EVs), and stationary energy storage systems (ESS) in households increases system complexity while simultaneously offering new opportunities for energy regulation. However, effectively coordinating these resources under uncertainties re
-
-• 研究Reinforcement Learning-based H...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
