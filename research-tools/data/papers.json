@@ -1,5 +1,45 @@
 [
   {
+    "id": "pd-20260612-01",
+    "date": "2026-06-12",
+    "title": "Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants",
+    "authors": "Vivek Khatana, Soham Chakraborty, Murti V. Salapaka",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2606.12336v1",
+    "url": "https://arxiv.org/abs/2606.12336v1",
+    "abstract": "We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.",
+    "highlights": [
+      "研究Analysis of a Distributed Opti...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260612-02",
+    "date": "2026-06-12",
+    "title": "Rethinking IoT Intrusion Detection: Augmenting Routing Metrics with Radio Features",
+    "authors": "Yichang Sun, Andreas Johnsson, Sourasekhar Banerjee",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.07282v1",
+    "url": "https://arxiv.org/abs/2606.07282v1",
+    "abstract": "Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan",
+    "highlights": [
+      "研究Rethinking IoT Intrusion Detec...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260611-01",
     "date": "2026-06-11",
     "title": "TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection",
