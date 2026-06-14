@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jun 2026 05:11:32 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 05:22:21 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2606.12336v1</link>
+      <guid>pd-20260614-01</guid>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
+
+• 研究Analysis of a Distributed Opti...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
       <link>https://arxiv.org/abs/2606.12336v1</link>
@@ -688,20 +702,6 @@
       <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
 
 • 研究What changes after deployment?...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Explainable Data-driven Deep Reinforcement Learning Methods for Optimal Energy Management in Buildings</title>
-      <link>https://arxiv.org/abs/2606.02049v1</link>
-      <guid>pd-20260602-03</guid>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>The increasing integration of renewable energy sources into power systems, particularly in buildings equipped with photovoltaic (PV) panels and energy storage systems, introduces significant complexity in energy systems. Volatile power generation, varying electricity tariffs, and increased entities,
-
-• 研究Explainable Data-driven Deep R...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
