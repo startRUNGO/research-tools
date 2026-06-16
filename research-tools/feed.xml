@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2026 06:11:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 06:19:18 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
+      <link>https://arxiv.org/abs/2606.14427v1</link>
+      <guid>pd-20260616-01</guid>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
+
+• 研究Breaking TinyML: Why Quantized...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2606.12336v2</link>
+      <guid>pd-20260616-02</guid>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
+
+• 研究Analysis of a Distributed Opti...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
       <link>https://arxiv.org/abs/2606.14427v1</link>
@@ -674,34 +702,6 @@
       <description>AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con
 
 • 研究Towards Intrusion Detection Sy...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Improving IoT Intrusion Detection Through SMOTE-Based Oversampling and Extended Multi-Model Evaluation on Side-Channel Power Data</title>
-      <link>https://arxiv.org/abs/2606.00161v1</link>
-      <guid>pd-20260603-06</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The detection of intrusions in IoT-based networks poses challenges that cannot be overcome using traditional machine learning methods. Perhaps the biggest of them is related to the presence of a class imbalance in the side-channel dataset, where the number of samples in the normal class compared to 
-
-• 研究Improving IoT Intrusion Detect...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>XAI-SOH-FL: Enhancing SOH-FL with Adaptive Aggregation and Explainable AI for Intrusion Detection in Heterogeneous IoT</title>
-      <link>https://arxiv.org/abs/2606.00134v1</link>
-      <guid>pd-20260603-07</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Intrusion Detection Systems (IDS) in Internet of Things (IoT) environments face significant challenges due to data heterogeneity, lack of labeled data, and limited model interpretability. Federated Learning (FL) offers a privacy-preserving solution; however, existing approaches such as SOH-FL suffer
-
-• 研究XAI-SOH-FL: Enhancing SOH-FL w...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
