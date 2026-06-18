@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2026 05:54:43 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 05:25:54 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
+      <link>https://arxiv.org/abs/2606.14427v1</link>
+      <guid>pd-20260618-01</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
+
+• 研究Breaking TinyML: Why Quantized...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
       <link>https://arxiv.org/abs/2606.14427v1</link>
@@ -688,20 +702,6 @@
       <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
 
 • 研究What changes after deployment?...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Fairness as an Investment: Dynamic Participation and Long-Run Profit in Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.02820v1</link>
-      <guid>pd-20260603-03</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We show that incorporating fairness constraints into virtual power plant (VPP) operations can incentivize consumer participation and thus improve the aggregator's long-run profitability. VPPs rely on sustained participation from heterogeneous consumers to provide a variety of grid services whose tim
-
-• 研究Fairness as an Investment: Dyn...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
