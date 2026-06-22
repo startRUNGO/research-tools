@@ -5,8 +5,288 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Jun 2026 05:50:13 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 06:15:29 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
+      <link>https://arxiv.org/abs/2606.14427v1</link>
+      <guid>pd-20260622-01</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
+
+• 研究Breaking TinyML: Why Quantized...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2606.12336v2</link>
+      <guid>pd-20260622-02</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
+
+• 研究Analysis of a Distributed Opti...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Rethinking IoT Intrusion Detection: Augmenting Routing Metrics with Radio Features</title>
+      <link>https://arxiv.org/abs/2606.07282v1</link>
+      <guid>pd-20260622-03</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan
+
+• 研究Rethinking IoT Intrusion Detec...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
+      <link>https://arxiv.org/abs/2606.05779v1</link>
+      <guid>pd-20260622-04</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
+
+• 研究TinyML-Driven Cybersecurity fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks</title>
+      <link>https://arxiv.org/abs/2606.05776v1</link>
+      <guid>pd-20260622-05</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da
+
+• 研究An Improved CNN-LSTM Based Int...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Towards Intrusion Detection Systems for RPL-based IoT Networks using Foundation Models</title>
+      <link>https://arxiv.org/abs/2606.03530v1</link>
+      <guid>pd-20260622-06</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con
+
+• 研究Towards Intrusion Detection Sy...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems</title>
+      <link>https://arxiv.org/abs/2606.02256v1</link>
+      <guid>pd-20260622-07</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded 
+
+• 研究ArrythML: An Autoencoder-Based...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Fairness as an Investment: Dynamic Participation and Long-Run Profit in Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2606.02820v1</link>
+      <guid>pd-20260622-08</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>We show that incorporating fairness constraints into virtual power plant (VPP) operations can incentivize consumer participation and thus improve the aggregator's long-run profitability. VPPs rely on sustained participation from heterogeneous consumers to provide a variety of grid services whose tim
+
+• 研究Fairness as an Investment: Dyn...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Explainable Data-driven Deep Reinforcement Learning Methods for Optimal Energy Management in Buildings</title>
+      <link>https://arxiv.org/abs/2606.02049v1</link>
+      <guid>pd-20260622-09</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The increasing integration of renewable energy sources into power systems, particularly in buildings equipped with photovoltaic (PV) panels and energy storage systems, introduces significant complexity in energy systems. Volatile power generation, varying electricity tariffs, and increased entities,
+
+• 研究Explainable Data-driven Deep R...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>What changes after deployment? A survey on On-device Learning in TinyML</title>
+      <link>https://arxiv.org/abs/2605.31226v1</link>
+      <guid>pd-20260622-10</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
+
+• 研究What changes after deployment?...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Improving IoT Intrusion Detection Through SMOTE-Based Oversampling and Extended Multi-Model Evaluation on Side-Channel Power Data</title>
+      <link>https://arxiv.org/abs/2606.00161v1</link>
+      <guid>pd-20260622-11</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The detection of intrusions in IoT-based networks poses challenges that cannot be overcome using traditional machine learning methods. Perhaps the biggest of them is related to the presence of a class imbalance in the side-channel dataset, where the number of samples in the normal class compared to 
+
+• 研究Improving IoT Intrusion Detect...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>XAI-SOH-FL: Enhancing SOH-FL with Adaptive Aggregation and Explainable AI for Intrusion Detection in Heterogeneous IoT</title>
+      <link>https://arxiv.org/abs/2606.00134v1</link>
+      <guid>pd-20260622-12</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Intrusion Detection Systems (IDS) in Internet of Things (IoT) environments face significant challenges due to data heterogeneity, lack of labeled data, and limited model interpretability. Federated Learning (FL) offers a privacy-preserving solution; however, existing approaches such as SOH-FL suffer
+
+• 研究XAI-SOH-FL: Enhancing SOH-FL w...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Enhancing Autonomous Online Intrusion Detection for IoT with Balanced Learning, Reliable Pseudo-Labels, and Lightweight Architectures</title>
+      <link>https://arxiv.org/abs/2605.26166v1</link>
+      <guid>pd-20260622-13</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid proliferation of Internet of Things (IoT) devices has created an urgent demand for adaptive, resource-efficient Intrusion Detection Systems (IDS) capable of handling dynamic and evolving cyber threats. This paper investigates AOC-IDS, a state-of-the-art autonomous online IDS published at I
+
+• 研究Enhancing Autonomous Online In...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>XAI FL-IDS: A Federated Learning and SHAP-Based Explainable Framework for Distributed Intrusion Detection Systems</title>
+      <link>https://arxiv.org/abs/2605.19448v1</link>
+      <guid>pd-20260622-14</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>An Intrusion Detection System (IDS) is vital in cybersecurity, detecting unauthorized activity across networks. With attacks on network layers increasing, stronger IDSs are needed. Yet most IDSs rely on centralized detection, forcing IoT nodes to ship data to a server, adding overhead and offering n
+
+• 研究XAI FL-IDS: A Federated Learni...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Distributionally Robust Model Predictive Control for Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2605.14642v1</link>
+      <guid>pd-20260622-15</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>This paper presents a distributionally robust model predictive control (DRMPC) framework for the optimal Virtual Power Plant (VPP) operation under electricity price uncertainty. A unified VPP model is formulated that captures the interaction between buildings, battery storage, and renewable generati
+
+• 研究Distributionally Robust Model ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Empowering IoT Security: On-Device Intrusion Detection in Resource Constrained Devices</title>
+      <link>https://arxiv.org/abs/2605.13159v1</link>
+      <guid>pd-20260622-16</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>IoT devices particularly microcontrollers are challenged by their inherent limitations in processing capabilities, memory capacity, and energy conservation. Securing communication within IoT networks is further complicated by the heterogeneity of devices and the myriad of potential security threats.
+
+• 研究Empowering IoT Security: On-De...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics</title>
+      <link>https://arxiv.org/abs/2605.05644v1</link>
+      <guid>pd-20260622-17</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Federated learning (FL) is attractive for cloud-edge intrusion detection because it enables collaborative training over distributed telemetry without centralizing raw logs. In production security analytics pipelines, however, only a subset of clients participates in each round, and heterogeneous ban
+
+• 研究AoI-Guided Client Selection fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Binary Image-Based Intrusion Detection for Operational Technology Networks: Extending the SPHBI Methodology from IoT to Modbus TCP</title>
+      <link>https://arxiv.org/abs/2605.04250v2</link>
+      <guid>pd-20260622-18</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve
+
+• 研究Binary Image-Based Intrusion D...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
+      <link>https://arxiv.org/abs/2605.02334v1</link>
+      <guid>pd-20260622-19</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
+
+• 研究Efficient Multi-Market Schedul...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
+      <link>https://arxiv.org/abs/2605.02987v1</link>
+      <guid>pd-20260622-20</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
+
+• 研究LiteShield: Hybrid Feature Sel...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
       <link>https://arxiv.org/abs/2606.14427v1</link>
@@ -422,286 +702,6 @@
       <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
 
 • 研究What changes after deployment?...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Improving IoT Intrusion Detection Through SMOTE-Based Oversampling and Extended Multi-Model Evaluation on Side-Channel Power Data</title>
-      <link>https://arxiv.org/abs/2606.00161v1</link>
-      <guid>pd-20260620-11</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The detection of intrusions in IoT-based networks poses challenges that cannot be overcome using traditional machine learning methods. Perhaps the biggest of them is related to the presence of a class imbalance in the side-channel dataset, where the number of samples in the normal class compared to 
-
-• 研究Improving IoT Intrusion Detect...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>XAI-SOH-FL: Enhancing SOH-FL with Adaptive Aggregation and Explainable AI for Intrusion Detection in Heterogeneous IoT</title>
-      <link>https://arxiv.org/abs/2606.00134v1</link>
-      <guid>pd-20260620-12</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Intrusion Detection Systems (IDS) in Internet of Things (IoT) environments face significant challenges due to data heterogeneity, lack of labeled data, and limited model interpretability. Federated Learning (FL) offers a privacy-preserving solution; however, existing approaches such as SOH-FL suffer
-
-• 研究XAI-SOH-FL: Enhancing SOH-FL w...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Enhancing Autonomous Online Intrusion Detection for IoT with Balanced Learning, Reliable Pseudo-Labels, and Lightweight Architectures</title>
-      <link>https://arxiv.org/abs/2605.26166v1</link>
-      <guid>pd-20260620-13</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of Things (IoT) devices has created an urgent demand for adaptive, resource-efficient Intrusion Detection Systems (IDS) capable of handling dynamic and evolving cyber threats. This paper investigates AOC-IDS, a state-of-the-art autonomous online IDS published at I
-
-• 研究Enhancing Autonomous Online In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>XAI FL-IDS: A Federated Learning and SHAP-Based Explainable Framework for Distributed Intrusion Detection Systems</title>
-      <link>https://arxiv.org/abs/2605.19448v1</link>
-      <guid>pd-20260620-14</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>An Intrusion Detection System (IDS) is vital in cybersecurity, detecting unauthorized activity across networks. With attacks on network layers increasing, stronger IDSs are needed. Yet most IDSs rely on centralized detection, forcing IoT nodes to ship data to a server, adding overhead and offering n
-
-• 研究XAI FL-IDS: A Federated Learni...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Distributionally Robust Model Predictive Control for Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2605.14642v1</link>
-      <guid>pd-20260620-15</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>This paper presents a distributionally robust model predictive control (DRMPC) framework for the optimal Virtual Power Plant (VPP) operation under electricity price uncertainty. A unified VPP model is formulated that captures the interaction between buildings, battery storage, and renewable generati
-
-• 研究Distributionally Robust Model ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Empowering IoT Security: On-Device Intrusion Detection in Resource Constrained Devices</title>
-      <link>https://arxiv.org/abs/2605.13159v1</link>
-      <guid>pd-20260620-16</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>IoT devices particularly microcontrollers are challenged by their inherent limitations in processing capabilities, memory capacity, and energy conservation. Securing communication within IoT networks is further complicated by the heterogeneity of devices and the myriad of potential security threats.
-
-• 研究Empowering IoT Security: On-De...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics</title>
-      <link>https://arxiv.org/abs/2605.05644v1</link>
-      <guid>pd-20260620-17</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Federated learning (FL) is attractive for cloud-edge intrusion detection because it enables collaborative training over distributed telemetry without centralizing raw logs. In production security analytics pipelines, however, only a subset of clients participates in each round, and heterogeneous ban
-
-• 研究AoI-Guided Client Selection fo...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Binary Image-Based Intrusion Detection for Operational Technology Networks: Extending the SPHBI Methodology from IoT to Modbus TCP</title>
-      <link>https://arxiv.org/abs/2605.04250v2</link>
-      <guid>pd-20260620-18</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>This paper extends the Single Packet Header Binary Image (SPHBI) intrusion detection methodology from IoT to Modbus TCP, evaluating five approaches spanning a gradient of protocol depth on the CIC Modbus 2023 dataset (11.4 million packets, eight detectable attack types). TCP/IP headers alone achieve
-
-• 研究Binary Image-Based Intrusion D...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty</title>
-      <link>https://arxiv.org/abs/2605.02334v1</link>
-      <guid>pd-20260620-19</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil
-
-• 研究Efficient Multi-Market Schedul...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>LiteShield: Hybrid Feature Selection-Driven Lightweight Intrusion Detection for Resource-Constrained IoT Networks</title>
-      <link>https://arxiv.org/abs/2605.02987v1</link>
-      <guid>pd-20260620-20</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
-
-• 研究LiteShield: Hybrid Feature Sel...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
-      <link>https://arxiv.org/abs/2606.14427v1</link>
-      <guid>pd-20260618-01</guid>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
-
-• 研究Breaking TinyML: Why Quantized...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
-      <link>https://arxiv.org/abs/2606.14427v1</link>
-      <guid>pd-20260617-01</guid>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
-
-• 研究Breaking TinyML: Why Quantized...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.12336v2</link>
-      <guid>pd-20260617-02</guid>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
-
-• 研究Analysis of a Distributed Opti...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
-      <link>https://arxiv.org/abs/2606.14427v1</link>
-      <guid>pd-20260616-01</guid>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
-
-• 研究Breaking TinyML: Why Quantized...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.12336v2</link>
-      <guid>pd-20260616-02</guid>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
-
-• 研究Analysis of a Distributed Opti...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
-      <link>https://arxiv.org/abs/2606.14427v1</link>
-      <guid>pd-20260615-01</guid>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
-
-• 研究Breaking TinyML: Why Quantized...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.12336v1</link>
-      <guid>pd-20260615-02</guid>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
-
-• 研究Analysis of a Distributed Opti...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.12336v1</link>
-      <guid>pd-20260614-01</guid>
-      <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
-
-• 研究Analysis of a Distributed Opti...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.12336v1</link>
-      <guid>pd-20260613-01</guid>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
-
-• 研究Analysis of a Distributed Opti...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.12336v1</link>
-      <guid>pd-20260612-01</guid>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
-
-• 研究Analysis of a Distributed Opti...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
