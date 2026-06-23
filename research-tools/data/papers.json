@@ -1,5 +1,47 @@
 [
   {
+    "id": "pd-20260623-01",
+    "date": "2026-06-23",
+    "title": "Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems",
+    "authors": "Linyang Wu, Linpeng Jia, Hanwen Zhang, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.23017v1",
+    "url": "https://arxiv.org/abs/2606.23017v1",
+    "abstract": "Federated Learning (FL) enables privacy-preserving collaborative learning for Internet of Vehicles (IoV) scenarios, but the extreme heterogeneity of vehicular-edge-cloud resources severely limits system efficiency. While dynamic scheduling strategies can mitigate this issue, they introduce new trust",
+    "highlights": [
+      "研究Nautilus: A Verifiable Hierarc...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260623-02",
+    "date": "2026-06-23",
+    "title": "Tiny Machine-Learning Operations within Cyber-Physical Systems: a Field Study",
+    "authors": "Filippo Scaramuzza, Damian A. Tamburri",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.20952v1",
+    "url": "https://arxiv.org/abs/2606.20952v1",
+    "abstract": "Machine-Learning Operations (MLOps) is maturing into a software-engineering discipline, yet its tiny-scale variant (TinyMLOps)-targeting the resource-constrained microcontrollers embedded in cyber-physical systems (CPS)-remains poorly understood in industrial practice. Opaque models, noisy heterogen",
+    "highlights": [
+      "研究Tiny Machine-Learning Operatio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260622-01",
     "date": "2026-06-22",
     "title": "Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis",
