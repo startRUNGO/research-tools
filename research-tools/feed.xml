@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jun 2026 04:56:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 04:55:08 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems</title>
+      <link>https://arxiv.org/abs/2606.23017v3</link>
+      <guid>pd-20260625-01</guid>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Federated Learning (FL) enables privacy-preserving collaborative learning for Internet of Vehicles (IoV) scenarios, but extreme heterogeneity of vehicular-edge-cloud resources severely limits system efficiency. Dynamic scheduling strategies mitigate this issue but introduce new trust concerns: verif
+
+• 研究Nautilus: A Verifiable Hierarc...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Tiny Machine-Learning Operations within Cyber-Physical Systems: a Field Study</title>
+      <link>https://arxiv.org/abs/2606.20952v1</link>
+      <guid>pd-20260625-02</guid>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Machine-Learning Operations (MLOps) is maturing into a software-engineering discipline, yet its tiny-scale variant (TinyMLOps)-targeting the resource-constrained microcontrollers embedded in cyber-physical systems (CPS)-remains poorly understood in industrial practice. Opaque models, noisy heterogen
+
+• 研究Tiny Machine-Learning Operatio...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems</title>
       <link>https://arxiv.org/abs/2606.23017v2</link>
@@ -674,34 +702,6 @@
       <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
 
 • 研究TinyML-Driven Cybersecurity fo...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks</title>
-      <link>https://arxiv.org/abs/2606.05776v1</link>
-      <guid>pd-20260620-05</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da
-
-• 研究An Improved CNN-LSTM Based Int...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Towards Intrusion Detection Systems for RPL-based IoT Networks using Foundation Models</title>
-      <link>https://arxiv.org/abs/2606.03530v1</link>
-      <guid>pd-20260620-06</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con
-
-• 研究Towards Intrusion Detection Sy...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
