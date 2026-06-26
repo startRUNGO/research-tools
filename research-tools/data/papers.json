@@ -1,5 +1,27 @@
 [
   {
+    "id": "pd-20260626-01",
+    "date": "2026-06-26",
+    "title": "Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems",
+    "authors": "Linyang Wu, Linpeng Jia, Hanwen Zhang, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.23017v3",
+    "url": "https://arxiv.org/abs/2606.23017v3",
+    "abstract": "Federated Learning (FL) enables privacy-preserving collaborative learning for Internet of Vehicles (IoV) scenarios, but extreme heterogeneity of vehicular-edge-cloud resources severely limits system efficiency. Dynamic scheduling strategies mitigate this issue but introduce new trust concerns: verif",
+    "highlights": [
+      "研究Nautilus: A Verifiable Hierarc...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260625-01",
     "date": "2026-06-25",
     "title": "Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems",
