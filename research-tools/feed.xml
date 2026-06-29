@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Jun 2026 05:09:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 05:20:29 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems</title>
+      <link>https://arxiv.org/abs/2606.23017v3</link>
+      <guid>pd-20260629-01</guid>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Federated Learning (FL) enables privacy-preserving collaborative learning for Internet of Vehicles (IoV) scenarios, but extreme heterogeneity of vehicular-edge-cloud resources severely limits system efficiency. Dynamic scheduling strategies mitigate this issue but introduce new trust concerns: verif
+
+• 研究Nautilus: A Verifiable Hierarc...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems</title>
       <link>https://arxiv.org/abs/2606.23017v3</link>
@@ -688,20 +702,6 @@
       <description>The rapid expansion of Internet of Things (IoT) deployments has enlarged the attack surface of modern digital infrastructure while exposing a key security mismatch: many intrusion detection systems (IDSs) remain too computationally expensive for constrained IoT environments. This paper presents Lite
 
 • 研究LiteShield: Hybrid Feature Sel...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
-      <link>https://arxiv.org/abs/2606.14427v1</link>
-      <guid>pd-20260620-01</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
-
-• 研究Breaking TinyML: Why Quantized...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
