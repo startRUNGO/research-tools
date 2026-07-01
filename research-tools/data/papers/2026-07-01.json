@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pd-20260701-01",
+    "date": "2026-07-01",
+    "title": "TinyML for On-Device and Edge Analytics in Wireless Networks: A Survey of Deployments, Opportunities, and Concept-Drift Mitigation",
+    "authors": "Prasoon Raghuwanshi, Vimal Bhatia, Sridhar Iyer, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.30843v1",
+    "url": "https://arxiv.org/abs/2606.30843v1",
+    "abstract": "Ubiquitous intelligence is essential for enabling real-time, adaptive, autonomous, and scalable operations in the next generation of wireless networks. However, this poses significant challenges in data management and energy consumption on the end-device/edge side, specially under dynamic environmen",
+    "highlights": [
+      "研究TinyML for On-Device and Edge ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260701-02",
+    "date": "2026-07-01",
+    "title": "A Coalitional Stable and Fair Reward Allocation for Dynamic Virtual Power Plants",
+    "authors": "Carl von Holly-Ponientzietz, Saverio Bolognani, Florian Dörfler, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2606.31728v1",
+    "url": "https://arxiv.org/abs/2606.31728v1",
+    "abstract": "This paper establishes crucial cooperation criteria for the operation of Dynamic Virtual Power Plants (DVPPs). We propose a control design and reward allocation mechanism to enable and incentivize Distributed Energy Resources (DERs) to provide dynamic ancillary services (DAS). Our results illustrate",
+    "highlights": [
+      "研究A Coalitional Stable and Fair ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260701-03",
+    "date": "2026-07-01",
+    "title": "Comparative Analysis of Machine Learning based Intrusion Detection in Realistic IoT Networks",
+    "authors": "Rana Alharbi, Chuadhry Mujeeb Ahmed",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.31594v1",
+    "url": "https://arxiv.org/abs/2606.31594v1",
+    "abstract": "The Internet of Things (IoT) is rapidly growing and expanding into various sectors, such as healthcare, transportation, smart homes, and more. Despite the benefits of using IoT devices, they present several challenges. Given the significant role these devices play in our lives, it is crucial to addr",
+    "highlights": [
+      "研究Comparative Analysis of Machin...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
