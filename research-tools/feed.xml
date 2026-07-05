@@ -5,8 +5,78 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Jul 2026 04:25:41 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 04:46:29 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Generative AI and Federated Learning for Intrusion Detection Systems: A Survey</title>
+      <link>https://arxiv.org/abs/2607.01305v1</link>
+      <guid>pd-20260705-01</guid>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Intrusion Detection Systems (IDSs) are essential for monitoring network traffic and identifying malicious activities in modern cyber-physical, Internet of Things (IoT), enterprise, and distributed network environments. However, developing reliable IDS models remains challenging because attack behavi
+
+• 研究Generative AI and Federated Le...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>TinyML for On-Device and Edge Analytics in Wireless Networks: A Survey of Deployments, Opportunities, and Concept-Drift Mitigation</title>
+      <link>https://arxiv.org/abs/2606.30843v1</link>
+      <guid>pd-20260705-02</guid>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Ubiquitous intelligence is essential for enabling real-time, adaptive, autonomous, and scalable operations in the next generation of wireless networks. However, this poses significant challenges in data management and energy consumption on the end-device/edge side, specially under dynamic environmen
+
+• 研究TinyML for On-Device and Edge ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>A Coalitional Stable and Fair Reward Allocation for Dynamic Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2606.31728v1</link>
+      <guid>pd-20260705-03</guid>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>This paper establishes crucial cooperation criteria for the operation of Dynamic Virtual Power Plants (DVPPs). We propose a control design and reward allocation mechanism to enable and incentivize Distributed Energy Resources (DERs) to provide dynamic ancillary services (DAS). Our results illustrate
+
+• 研究A Coalitional Stable and Fair ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Cross-Domain Generalization Failure in Lightweight Intrusion Detection Models for IIoT Networks</title>
+      <link>https://arxiv.org/abs/2607.00553v1</link>
+      <guid>pd-20260705-04</guid>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Lightweight machine learning models are increasingly proposed for intrusion detection in Industrial Internet of Things (IIoT) networks due to their suitability for resource-constrained edge deployment. Most reported results evaluate these models only within their training network, leaving behavior o
+
+• 研究Cross-Domain Generalization Fa...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Comparative Analysis of Machine Learning based Intrusion Detection in Realistic IoT Networks</title>
+      <link>https://arxiv.org/abs/2606.31594v1</link>
+      <guid>pd-20260705-05</guid>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The Internet of Things (IoT) is rapidly growing and expanding into various sectors, such as healthcare, transportation, smart homes, and more. Despite the benefits of using IoT devices, they present several challenges. Given the significant role these devices play in our lives, it is crucial to addr
+
+• 研究Comparative Analysis of Machin...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Generative AI and Federated Learning for Intrusion Detection Systems: A Survey</title>
       <link>https://arxiv.org/abs/2607.01305v1</link>
@@ -632,76 +702,6 @@
       <description>Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan
 
 • 研究Rethinking IoT Intrusion Detec...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
-      <link>https://arxiv.org/abs/2606.05779v1</link>
-      <guid>pd-20260622-04</guid>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
-
-• 研究TinyML-Driven Cybersecurity fo...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks</title>
-      <link>https://arxiv.org/abs/2606.05776v1</link>
-      <guid>pd-20260622-05</guid>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da
-
-• 研究An Improved CNN-LSTM Based Int...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Towards Intrusion Detection Systems for RPL-based IoT Networks using Foundation Models</title>
-      <link>https://arxiv.org/abs/2606.03530v1</link>
-      <guid>pd-20260622-06</guid>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con
-
-• 研究Towards Intrusion Detection Sy...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems</title>
-      <link>https://arxiv.org/abs/2606.02256v1</link>
-      <guid>pd-20260622-07</guid>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded 
-
-• 研究ArrythML: An Autoencoder-Based...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Fairness as an Investment: Dynamic Participation and Long-Run Profit in Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.02820v1</link>
-      <guid>pd-20260622-08</guid>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We show that incorporating fairness constraints into virtual power plant (VPP) operations can incentivize consumer participation and thus improve the aggregator's long-run profitability. VPPs rely on sustained participation from heterogeneous consumers to provide a variety of grid services whose tim
-
-• 研究Fairness as an Investment: Dyn...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
