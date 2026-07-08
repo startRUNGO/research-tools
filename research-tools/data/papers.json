@@ -1,5 +1,88 @@
 [
   {
+    "id": "pd-20260708-01",
+    "date": "2026-07-08",
+    "title": "Generative AI and Federated Learning for Intrusion Detection Systems: A Survey",
+    "authors": "Jiefei Liu, Abu Saleh Md Tayeen, Pratyay Kumar, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.01305v1",
+    "url": "https://arxiv.org/abs/2607.01305v1",
+    "abstract": "Intrusion Detection Systems (IDSs) are essential for monitoring network traffic and identifying malicious activities in modern cyber-physical, Internet of Things (IoT), enterprise, and distributed network environments. However, developing reliable IDS models remains challenging because attack behavi",
+    "highlights": [
+      "研究Generative AI and Federated Le...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260708-02",
+    "date": "2026-07-08",
+    "title": "F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks",
+    "authors": "Mohammad Ansarimehr, Somayeh Changiz, Ehsan Baghishani, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.04698v1",
+    "url": "https://arxiv.org/abs/2607.04698v1",
+    "abstract": "The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens",
+    "highlights": [
+      "研究F-ACVAE: A Federated Adaptive ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260708-03",
+    "date": "2026-07-08",
+    "title": "Enhanced Feature Extraction for IoT Network Intrusion Detection Using GNNs and KAN",
+    "authors": "Long Zhao, Shixun Ji, Bin Cheng, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.02981v1",
+    "url": "https://arxiv.org/abs/2607.02981v1",
+    "abstract": "Recent advancements in the Internet of Things (IoT) emphasize the urgent need for advanced network security, as IoT networks feature dynamic topologies, imbalanced traffic, and complex attack patterns. Unlike general IT networks, IoT environments exhibit extreme heterogeneity and sparse topologies. ",
+    "highlights": [
+      "研究Enhanced Feature Extraction fo...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260708-04",
+    "date": "2026-07-08",
+    "title": "Cross-Domain Generalization Failure in Lightweight Intrusion Detection Models for IIoT Networks",
+    "authors": "MD Azizul Hakim, Md Shihab Uddin, Talha Ibne Anis",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.00553v1",
+    "url": "https://arxiv.org/abs/2607.00553v1",
+    "abstract": "Lightweight machine learning models are increasingly proposed for intrusion detection in Industrial Internet of Things (IIoT) networks due to their suitability for resource-constrained edge deployment. Most reported results evaluate these models only within their training network, leaving behavior o",
+    "highlights": [
+      "研究Cross-Domain Generalization Fa...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260707-01",
     "date": "2026-07-07",
     "title": "Generative AI and Federated Learning for Intrusion Detection Systems: A Survey",
