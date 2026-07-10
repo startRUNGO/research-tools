@@ -1,5 +1,46 @@
 [
   {
+    "id": "pd-20260710-01",
+    "date": "2026-07-10",
+    "title": "F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks",
+    "authors": "Mohammad Ansarimehr, Somayeh Changiz, Ehsan Baghishani, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.04698v1",
+    "url": "https://arxiv.org/abs/2607.04698v1",
+    "abstract": "The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens",
+    "highlights": [
+      "研究F-ACVAE: A Federated Adaptive ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260710-02",
+    "date": "2026-07-10",
+    "title": "Enhanced Feature Extraction for IoT Network Intrusion Detection Using GNNs and KAN",
+    "authors": "Long Zhao, Shixun Ji, Bin Cheng, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.02981v1",
+    "url": "https://arxiv.org/abs/2607.02981v1",
+    "abstract": "Recent advancements in the Internet of Things (IoT) emphasize the urgent need for advanced network security, as IoT networks feature dynamic topologies, imbalanced traffic, and complex attack patterns. Unlike general IT networks, IoT environments exhibit extreme heterogeneity and sparse topologies. ",
+    "highlights": [
+      "研究Enhanced Feature Extraction fo...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260709-01",
     "date": "2026-07-09",
     "title": "F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks",
