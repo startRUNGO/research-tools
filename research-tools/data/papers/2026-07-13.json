@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pd-20260713-01",
+    "date": "2026-07-13",
+    "title": "F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks",
+    "authors": "Mohammad Ansarimehr, Somayeh Changiz, Ehsan Baghishani, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.04698v1",
+    "url": "https://arxiv.org/abs/2607.04698v1",
+    "abstract": "The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens",
+    "highlights": [
+      "研究F-ACVAE: A Federated Adaptive ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
