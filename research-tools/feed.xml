@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jul 2026 03:49:26 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 03:50:28 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
+      <link>https://arxiv.org/abs/2607.10914v1</link>
+      <guid>pd-20260715-01</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
+
+• 研究SoK: Federated Learning for In...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
       <link>https://arxiv.org/abs/2607.10914v1</link>
@@ -688,20 +702,6 @@
       <description>Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded 
 
 • 研究ArrythML: An Autoencoder-Based...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Fairness as an Investment: Dynamic Participation and Long-Run Profit in Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.02820v1</link>
-      <guid>pd-20260630-10</guid>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We show that incorporating fairness constraints into virtual power plant (VPP) operations can incentivize consumer participation and thus improve the aggregator's long-run profitability. VPPs rely on sustained participation from heterogeneous consumers to provide a variety of grid services whose tim
-
-• 研究Fairness as an Investment: Dyn...的新方法
 • 详见原文摘要
 • 具有一定创新性
 

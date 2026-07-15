@@ -1,5 +1,27 @@
 [
   {
+    "id": "pd-20260715-01",
+    "date": "2026-07-15",
+    "title": "SoK: Federated Learning for Intrusion Detection in Vehicular Networks",
+    "authors": "Yahya Shahsavari, Reza Nourmohammadi, Sara Rouhani, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.10914v1",
+    "url": "https://arxiv.org/abs/2607.10914v1",
+    "abstract": "Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri",
+    "highlights": [
+      "研究SoK: Federated Learning for In...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260714-01",
     "date": "2026-07-14",
     "title": "SoK: Federated Learning for Intrusion Detection in Vehicular Networks",
