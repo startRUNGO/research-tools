@@ -1,0 +1,66 @@
+[
+  {
+    "id": "pd-20260724-01",
+    "date": "2026-07-24",
+    "title": "Forecast-Assisted Deep Reinforcement Learning for Energy Management of Hydrogen-Enabled Community Microgrids",
+    "authors": "Mohamed Atef, Sanath Alahakoon, Umme Mumtahina, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2607.18903v2",
+    "url": "https://arxiv.org/abs/2607.18903v2",
+    "abstract": "Hydrogen-enabled community microgrids can improve renewable energy utilization and local resilience, but their operation is complicated by uncertain residential demand, variable renewable generation, dynamic electricity prices, and the coupled dynamics of battery and hydrogen storage. This paper ext",
+    "highlights": [
+      "研究Forecast-Assisted Deep Reinfor...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260724-02",
+    "date": "2026-07-24",
+    "title": "Deep Reinforcement Learning-Based Energy Management for Hydrogen-Enabled Community Microgrids Under Uncertainty",
+    "authors": "Mohamed Atef, Sanath Alahakoon, Umme Mumtahina, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2607.17248v2",
+    "url": "https://arxiv.org/abs/2607.17248v2",
+    "abstract": "Hydrogen-enabled community microgrids can improve renewable energy utilization and local resilience, but their operation is complicated by intermittent generation, uncertain residential demand, dynamic electricity prices, and the coupled dynamics of battery and hydrogen storage. This paper develops ",
+    "highlights": [
+      "研究Deep Reinforcement Learning-Ba...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260724-03",
+    "date": "2026-07-24",
+    "title": "Federated Lightweight Intrusion Detection in Drone Swarms with Knowledge Distillation",
+    "authors": "Fawaz J. Alruwaili, Cihan Tunc",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.17025v1",
+    "url": "https://arxiv.org/abs/2607.17025v1",
+    "abstract": "Drone swarms are increasingly deployed in critical applications such as surveillance, disaster response, and infrastructure monitoring. However, their reliance on open communication channels and their limited computational resources make them vulnerable to a wide range of cyber-threats. There is a g",
+    "highlights": [
+      "研究Federated Lightweight Intrusio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]

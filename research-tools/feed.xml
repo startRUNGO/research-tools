@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jul 2026 04:00:27 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 03:58:57 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Forecast-Assisted Deep Reinforcement Learning for Energy Management of Hydrogen-Enabled Community Microgrids</title>
+      <link>https://arxiv.org/abs/2607.18903v2</link>
+      <guid>pd-20260724-01</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Hydrogen-enabled community microgrids can improve renewable energy utilization and local resilience, but their operation is complicated by uncertain residential demand, variable renewable generation, dynamic electricity prices, and the coupled dynamics of battery and hydrogen storage. This paper ext
+
+• 研究Forecast-Assisted Deep Reinfor...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Deep Reinforcement Learning-Based Energy Management for Hydrogen-Enabled Community Microgrids Under Uncertainty</title>
+      <link>https://arxiv.org/abs/2607.17248v2</link>
+      <guid>pd-20260724-02</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>Hydrogen-enabled community microgrids can improve renewable energy utilization and local resilience, but their operation is complicated by intermittent generation, uncertain residential demand, dynamic electricity prices, and the coupled dynamics of battery and hydrogen storage. This paper develops 
+
+• 研究Deep Reinforcement Learning-Ba...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Federated Lightweight Intrusion Detection in Drone Swarms with Knowledge Distillation</title>
+      <link>https://arxiv.org/abs/2607.17025v1</link>
+      <guid>pd-20260724-03</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Drone swarms are increasingly deployed in critical applications such as surveillance, disaster response, and infrastructure monitoring. However, their reliance on open communication channels and their limited computational resources make them vulnerable to a wide range of cyber-threats. There is a g
+
+• 研究Federated Lightweight Intrusio...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Forecast-Assisted Deep Reinforcement Learning for Energy Management of Hydrogen-Enabled Community Microgrids</title>
       <link>https://arxiv.org/abs/2607.18903v2</link>
@@ -660,48 +702,6 @@
       <description>This paper establishes crucial cooperation criteria for the operation of Dynamic Virtual Power Plants (DVPPs). We propose a control design and reward allocation mechanism to enable and incentivize Distributed Energy Resources (DERs) to provide dynamic ancillary services (DAS). Our results illustrate
 
 • 研究A Coalitional Stable and Fair ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2607.04698v1</link>
-      <guid>pd-20260707-03</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens
-
-• 研究F-ACVAE: A Federated Adaptive ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Enhanced Feature Extraction for IoT Network Intrusion Detection Using GNNs and KAN</title>
-      <link>https://arxiv.org/abs/2607.02981v1</link>
-      <guid>pd-20260707-04</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Recent advancements in the Internet of Things (IoT) emphasize the urgent need for advanced network security, as IoT networks feature dynamic topologies, imbalanced traffic, and complex attack patterns. Unlike general IT networks, IoT environments exhibit extreme heterogeneity and sparse topologies. 
-
-• 研究Enhanced Feature Extraction fo...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Cross-Domain Generalization Failure in Lightweight Intrusion Detection Models for IIoT Networks</title>
-      <link>https://arxiv.org/abs/2607.00553v1</link>
-      <guid>pd-20260707-05</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Lightweight machine learning models are increasingly proposed for intrusion detection in Industrial Internet of Things (IIoT) networks due to their suitability for resource-constrained edge deployment. Most reported results evaluate these models only within their training network, leaving behavior o
-
-• 研究Cross-Domain Generalization Fa...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
