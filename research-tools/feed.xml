@@ -5,8 +5,288 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jul 2026 04:18:53 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 04:30:05 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
+      <link>https://arxiv.org/abs/2607.10914v1</link>
+      <guid>pd-20260727-01</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
+
+• 研究SoK: Federated Learning for In...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Generative AI and Federated Learning for Intrusion Detection Systems: A Survey</title>
+      <link>https://arxiv.org/abs/2607.01305v1</link>
+      <guid>pd-20260727-02</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Intrusion Detection Systems (IDSs) are essential for monitoring network traffic and identifying malicious activities in modern cyber-physical, Internet of Things (IoT), enterprise, and distributed network environments. However, developing reliable IDS models remains challenging because attack behavi
+
+• 研究Generative AI and Federated Le...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>TinyML for On-Device and Edge Analytics in Wireless Networks: A Survey of Deployments, Opportunities, and Concept-Drift Mitigation</title>
+      <link>https://arxiv.org/abs/2606.30843v1</link>
+      <guid>pd-20260727-03</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Ubiquitous intelligence is essential for enabling real-time, adaptive, autonomous, and scalable operations in the next generation of wireless networks. However, this poses significant challenges in data management and energy consumption on the end-device/edge side, specially under dynamic environmen
+
+• 研究TinyML for On-Device and Edge ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems</title>
+      <link>https://arxiv.org/abs/2606.23017v3</link>
+      <guid>pd-20260727-04</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Federated Learning (FL) enables privacy-preserving collaborative learning for Internet of Vehicles (IoV) scenarios, but extreme heterogeneity of vehicular-edge-cloud resources severely limits system efficiency. Dynamic scheduling strategies mitigate this issue but introduce new trust concerns: verif
+
+• 研究Nautilus: A Verifiable Hierarc...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Tiny Machine-Learning Operations within Cyber-Physical Systems: a Field Study</title>
+      <link>https://arxiv.org/abs/2606.20952v1</link>
+      <guid>pd-20260727-05</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Machine-Learning Operations (MLOps) is maturing into a software-engineering discipline, yet its tiny-scale variant (TinyMLOps)-targeting the resource-constrained microcontrollers embedded in cyber-physical systems (CPS)-remains poorly understood in industrial practice. Opaque models, noisy heterogen
+
+• 研究Tiny Machine-Learning Operatio...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
+      <link>https://arxiv.org/abs/2606.14427v1</link>
+      <guid>pd-20260727-06</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
+
+• 研究Breaking TinyML: Why Quantized...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
+      <link>https://arxiv.org/abs/2606.05779v1</link>
+      <guid>pd-20260727-07</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
+
+• 研究TinyML-Driven Cybersecurity fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems</title>
+      <link>https://arxiv.org/abs/2606.02256v1</link>
+      <guid>pd-20260727-08</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded 
+
+• 研究ArrythML: An Autoencoder-Based...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>What changes after deployment? A survey on On-device Learning in TinyML</title>
+      <link>https://arxiv.org/abs/2605.31226v1</link>
+      <guid>pd-20260727-09</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
+
+• 研究What changes after deployment?...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>XAI FL-IDS: A Federated Learning and SHAP-Based Explainable Framework for Distributed Intrusion Detection Systems</title>
+      <link>https://arxiv.org/abs/2605.19448v1</link>
+      <guid>pd-20260727-10</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>An Intrusion Detection System (IDS) is vital in cybersecurity, detecting unauthorized activity across networks. With attacks on network layers increasing, stronger IDSs are needed. Yet most IDSs rely on centralized detection, forcing IoT nodes to ship data to a server, adding overhead and offering n
+
+• 研究XAI FL-IDS: A Federated Learni...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>AoI-Guided Client Selection for Robust and Timely Federated Intrusion Detection in Cloud-Edge Security Analytics</title>
+      <link>https://arxiv.org/abs/2605.05644v1</link>
+      <guid>pd-20260727-11</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Federated learning (FL) is attractive for cloud-edge intrusion detection because it enables collaborative training over distributed telemetry without centralizing raw logs. In production security analytics pipelines, however, only a subset of clients participates in each round, and heterogeneous ban
+
+• 研究AoI-Guided Client Selection fo...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Co-Design of CNN Accelerators for TinyML using Approximate Matrix Decomposition</title>
+      <link>https://arxiv.org/abs/2604.16113v2</link>
+      <guid>pd-20260727-12</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>The paradigm shift towards local and on-device inference under stringent resource constraints is represented by the tiny machine learning (TinyML) domain. The primary goal of TinyML is to integrate intelligence into tiny, low-cost devices under strict resource, energy, and latency constraints. Howev
+
+• 研究Co-Design of CNN Accelerators ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Beyond Nodes vs. Edges: A Multi-View Fusion Framework for Provenance-Based Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2604.14685v1</link>
+      <guid>pd-20260727-13</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Provenance-based intrusion detection has emerged as a promising approach for analyzing complex attack behaviors through system-level provenance graphs. However, existing defense methods face an inherent granularity limitation. Node-centric detectors, which evaluate anomalies using entities' attribut
+
+• 研究Beyond Nodes vs. Edges: A Mult...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Enhancing Cross-Problem Vehicle Routing via Federated Learning</title>
+      <link>https://arxiv.org/abs/2604.10652v1</link>
+      <guid>pd-20260727-14</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Vehicle routing problems (VRPs) constitute a core optimization challenge in modern logistics and supply chain management. The recent neural combinatorial optimization (NCO) has demonstrated superior efficiency over some traditional algorithms. While serving as a primary NCO approach for solving gene
+
+• 研究Enhancing Cross-Problem Vehicl...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Towards Resilient Intrusion Detection in CubeSats: Challenges, TinyML Solutions, and Future Directions</title>
+      <link>https://arxiv.org/abs/2604.06411v1</link>
+      <guid>pd-20260727-15</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>CubeSats have revolutionized access to space by providing affordable and accessible platforms for research and education. However, their reliance on Commercial Off-The-Shelf (COTS) components and open-source software has introduced significant cybersecurity vulnerabilities. Ensuring the cybersecurit
+
+• 研究Towards Resilient Intrusion De...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Incremental Federated Learning for Intrusion Detection in IoT Networks under Evolving Threat Landscape</title>
+      <link>https://arxiv.org/abs/2603.10776v2</link>
+      <guid>pd-20260727-16</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The expansion of Internet of Things (IoT) devices has increased the attack surface of networks, necessitating a robust and adaptive intrusion detection systems. Machine learning based systems have been considered promising in enhancing the detection performance. Federated learning settings enabled u
+
+• 研究Incremental Federated Learning...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Semantic Communication-Enhanced Split Federated Learning for Vehicular Networks: Architecture, Challenges, and Case Study</title>
+      <link>https://arxiv.org/abs/2603.04936v1</link>
+      <guid>pd-20260727-17</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Vehicular edge intelligence (VEI) is vital for future intelligent transportation systems. However, traditional centralized learning in dynamic vehicular networks faces significant communication overhead and privacy risks. Split federated learning (SFL) offers a distributed solution but is often hind
+
+• 研究Semantic Communication-Enhance...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>On Electric Vehicle Energy Demand Forecasting and the Effect of Federated Learning</title>
+      <link>https://arxiv.org/abs/2602.20782v1</link>
+      <guid>pd-20260727-18</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The wide spread of new energy resources, smart devices, and demand side management strategies has motivated several analytics operations, from infrastructure load modeling to user behavior profiling. Energy Demand Forecasting (EDF) of Electric Vehicle Supply Equipments (EVSEs) is one of the most cri
+
+• 研究On Electric Vehicle Energy Dem...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Fractional Order Federated Learning for Battery Electric Vehicle Energy Consumption Modeling</title>
+      <link>https://arxiv.org/abs/2602.12567v1</link>
+      <guid>pd-20260727-19</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Federated learning on connected electric vehicles (BEVs) faces severe instability due to intermittent connectivity, time-varying client participation, and pronounced client-to-client variation induced by diverse operating conditions. Conventional FedAvg and many advanced methods can suffer from exce
+
+• 研究Fractional Order Federated Lea...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Lightweight Cluster-Based Federated Learning for Intrusion Detection in Heterogeneous IoT Networks</title>
+      <link>https://arxiv.org/abs/2602.12543v1</link>
+      <guid>pd-20260727-20</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rise of heterogeneous Internet of Things (IoT) devices has raised security concerns due to their vulnerability to cyberattacks. Intrusion Detection Systems (IDS) are crucial in addressing these threats. Federated Learning (FL) offers a privacy-preserving solution, but IoT heterogeneity and limit
+
+• 研究Lightweight Cluster-Based Fede...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Forecast-Assisted Deep Reinforcement Learning for Energy Management of Hydrogen-Enabled Community Microgrids</title>
       <link>https://arxiv.org/abs/2607.18903v2</link>
@@ -422,286 +702,6 @@
       <description>Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan
 
 • 研究Rethinking IoT Intrusion Detec...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection</title>
-      <link>https://arxiv.org/abs/2606.05779v1</link>
-      <guid>pd-20260720-14</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F
-
-• 研究TinyML-Driven Cybersecurity fo...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks</title>
-      <link>https://arxiv.org/abs/2606.05776v1</link>
-      <guid>pd-20260720-15</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da
-
-• 研究An Improved CNN-LSTM Based Int...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Towards Intrusion Detection Systems for RPL-based IoT Networks using Foundation Models</title>
-      <link>https://arxiv.org/abs/2606.03530v1</link>
-      <guid>pd-20260720-16</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con
-
-• 研究Towards Intrusion Detection Sy...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems</title>
-      <link>https://arxiv.org/abs/2606.02256v1</link>
-      <guid>pd-20260720-17</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded 
-
-• 研究ArrythML: An Autoencoder-Based...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Fairness as an Investment: Dynamic Participation and Long-Run Profit in Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.02820v1</link>
-      <guid>pd-20260720-18</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We show that incorporating fairness constraints into virtual power plant (VPP) operations can incentivize consumer participation and thus improve the aggregator's long-run profitability. VPPs rely on sustained participation from heterogeneous consumers to provide a variety of grid services whose tim
-
-• 研究Fairness as an Investment: Dyn...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Explainable Data-driven Deep Reinforcement Learning Methods for Optimal Energy Management in Buildings</title>
-      <link>https://arxiv.org/abs/2606.02049v1</link>
-      <guid>pd-20260720-19</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Energy</category>
-      <description>The increasing integration of renewable energy sources into power systems, particularly in buildings equipped with photovoltaic (PV) panels and energy storage systems, introduces significant complexity in energy systems. Volatile power generation, varying electricity tariffs, and increased entities,
-
-• 研究Explainable Data-driven Deep R...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>What changes after deployment? A survey on On-device Learning in TinyML</title>
-      <link>https://arxiv.org/abs/2605.31226v1</link>
-      <guid>pd-20260720-20</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Machine learning models on microcontroller-class devices (TinyML) face a fundamental challenge: post-deployment distribution change undermines static models. On-device learning (ODL) addresses this by running the learning process directly on the device. The existing literature has not characterized 
-
-• 研究What changes after deployment?...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
-      <link>https://arxiv.org/abs/2607.10914v1</link>
-      <guid>pd-20260719-01</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
-
-• 研究SoK: Federated Learning for In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
-      <link>https://arxiv.org/abs/2607.10914v1</link>
-      <guid>pd-20260718-01</guid>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
-
-• 研究SoK: Federated Learning for In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
-      <link>https://arxiv.org/abs/2607.10914v1</link>
-      <guid>pd-20260717-01</guid>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
-
-• 研究SoK: Federated Learning for In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
-      <link>https://arxiv.org/abs/2607.10914v1</link>
-      <guid>pd-20260716-01</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
-
-• 研究SoK: Federated Learning for In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
-      <link>https://arxiv.org/abs/2607.10914v1</link>
-      <guid>pd-20260715-01</guid>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
-
-• 研究SoK: Federated Learning for In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
-      <link>https://arxiv.org/abs/2607.10914v1</link>
-      <guid>pd-20260714-01</guid>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
-
-• 研究SoK: Federated Learning for In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2607.04698v1</link>
-      <guid>pd-20260713-01</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens
-
-• 研究F-ACVAE: A Federated Adaptive ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2607.04698v1</link>
-      <guid>pd-20260712-01</guid>
-      <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens
-
-• 研究F-ACVAE: A Federated Adaptive ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2607.04698v1</link>
-      <guid>pd-20260711-01</guid>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens
-
-• 研究F-ACVAE: A Federated Adaptive ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2607.04698v1</link>
-      <guid>pd-20260710-01</guid>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens
-
-• 研究F-ACVAE: A Federated Adaptive ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Enhanced Feature Extraction for IoT Network Intrusion Detection Using GNNs and KAN</title>
-      <link>https://arxiv.org/abs/2607.02981v1</link>
-      <guid>pd-20260710-02</guid>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Recent advancements in the Internet of Things (IoT) emphasize the urgent need for advanced network security, as IoT networks feature dynamic topologies, imbalanced traffic, and complex attack patterns. Unlike general IT networks, IoT environments exhibit extreme heterogeneity and sparse topologies. 
-
-• 研究Enhanced Feature Extraction fo...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2607.04698v1</link>
-      <guid>pd-20260709-01</guid>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens
-
-• 研究F-ACVAE: A Federated Adaptive ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Enhanced Feature Extraction for IoT Network Intrusion Detection Using GNNs and KAN</title>
-      <link>https://arxiv.org/abs/2607.02981v1</link>
-      <guid>pd-20260709-02</guid>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Recent advancements in the Internet of Things (IoT) emphasize the urgent need for advanced network security, as IoT networks feature dynamic topologies, imbalanced traffic, and complex attack patterns. Unlike general IT networks, IoT environments exhibit extreme heterogeneity and sparse topologies. 
-
-• 研究Enhanced Feature Extraction fo...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
