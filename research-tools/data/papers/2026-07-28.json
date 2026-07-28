@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pd-20260728-01",
+    "date": "2026-07-28",
+    "title": "Forecast-Assisted Deep Reinforcement Learning for Energy Management of Hydrogen-Enabled Community Microgrids",
+    "authors": "Mohamed Atef, Sanath Alahakoon, Umme Mumtahina, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2607.18903v3",
+    "url": "https://arxiv.org/abs/2607.18903v3",
+    "abstract": "Hydrogen-enabled community microgrids can improve renewable energy utilization and local resilience, but their operation is complicated by uncertain residential demand, variable renewable generation, dynamic electricity prices, and the coupled dynamics of battery and hydrogen storage. This paper ext",
+    "highlights": [
+      "研究Forecast-Assisted Deep Reinfor...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  }
+]
