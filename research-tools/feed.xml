@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jul 2026 03:52:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 03:56:45 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Robust Unsupervised Network Intrusion Detection via Federated Learning with Selective Aggregation under Anomalous Sample Contamination</title>
+      <link>https://arxiv.org/abs/2607.25439v1</link>
+      <guid>pd-20260729-01</guid>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Network intrusion detection systems (NIDS) have become essential for Internet of Things (IoT) environments, as malware targeting IoT devices continues to evolve in sophistication. Unsupervised learning approaches offer a promising direction by removing the dependency on labeled datasets. However, th
+
+• 研究Robust Unsupervised Network In...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Forecast-Assisted Deep Reinforcement Learning for Energy Management of Hydrogen-Enabled Community Microgrids</title>
       <link>https://arxiv.org/abs/2607.18903v3</link>
@@ -688,20 +702,6 @@
       <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
 
 • 研究Breaking TinyML: Why Quantized...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.12336v2</link>
-      <guid>pd-20260720-12</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.
-
-• 研究Analysis of a Distributed Opti...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
