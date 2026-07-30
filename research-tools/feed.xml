@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2026 03:56:45 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 03:47:44 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Robust Unsupervised Network Intrusion Detection via Federated Learning with Selective Aggregation under Anomalous Sample Contamination</title>
+      <link>https://arxiv.org/abs/2607.25439v1</link>
+      <guid>pd-20260730-01</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Network intrusion detection systems (NIDS) have become essential for Internet of Things (IoT) environments, as malware targeting IoT devices continues to evolve in sophistication. Unsupervised learning approaches offer a promising direction by removing the dependency on labeled datasets. However, th
+
+• 研究Robust Unsupervised Network In...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Robust Unsupervised Network Intrusion Detection via Federated Learning with Selective Aggregation under Anomalous Sample Contamination</title>
       <link>https://arxiv.org/abs/2607.25439v1</link>
@@ -688,20 +702,6 @@
       <description>Machine-Learning Operations (MLOps) is maturing into a software-engineering discipline, yet its tiny-scale variant (TinyMLOps)-targeting the resource-constrained microcontrollers embedded in cyber-physical systems (CPS)-remains poorly understood in industrial practice. Opaque models, noisy heterogen
 
 • 研究Tiny Machine-Learning Operatio...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis</title>
-      <link>https://arxiv.org/abs/2606.14427v1</link>
-      <guid>pd-20260720-11</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons
-
-• 研究Breaking TinyML: Why Quantized...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
