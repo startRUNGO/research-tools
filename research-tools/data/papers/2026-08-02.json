@@ -1,0 +1,43 @@
+[
+  {
+    "id": "pd-20260802-01",
+    "date": "2026-08-02",
+    "title": "Robust Unsupervised Network Intrusion Detection via Federated Learning with Selective Aggregation under Anomalous Sample Contamination",
+    "authors": "Shohei Kamiguchi, Takayuki Nishio",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.25439v1",
+    "url": "https://arxiv.org/abs/2607.25439v1",
+    "abstract": "Network intrusion detection systems (NIDS) have become essential for Internet of Things (IoT) environments, as malware targeting IoT devices continues to evolve in sophistication. Unsupervised learning approaches offer a promising direction by removing the dependency on labeled datasets. However, th",
+    "highlights": [
+      "研究Robust Unsupervised Network In...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260802-02",
+    "date": "2026-08-02",
+    "title": "Testing of machine learning wavefront sensing algorithms on the Tiny Observatory for Telescope Optimization (TOTO) testbed",
+    "authors": "Sanchit Sabhlok, Solvay A. Blomquist, Maggie Y, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2607.27458v1",
+    "url": "https://arxiv.org/abs/2607.27458v1",
+    "abstract": "Phase retrieval techniques are utilized to correct low order wavefront aberrations originating from misalignments of the optical system in space based telescope concepts. Traditional phase retrieval involves observation of the Point Spread Function (PSF) and a diversity measurement, usually focus di",
+    "highlights": [
+      "研究Testing of machine learning wa...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]
