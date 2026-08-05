@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pd-20260805-01",
+    "date": "2026-08-05",
+    "title": "Testing of machine learning wavefront sensing algorithms on the Tiny Observatory for Telescope Optimization (TOTO) testbed",
+    "authors": "Sanchit Sabhlok, Solvay A. Blomquist, Maggie Y, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2607.27458v1",
+    "url": "https://arxiv.org/abs/2607.27458v1",
+    "abstract": "Phase retrieval techniques are utilized to correct low order wavefront aberrations originating from misalignments of the optical system in space based telescope concepts. Traditional phase retrieval involves observation of the Point Spread Function (PSF) and a diversity measurement, usually focus di",
+    "highlights": [
+      "研究Testing of machine learning wa...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]
