@@ -1,0 +1,415 @@
+[
+  {
+    "id": "pd-20260808-01",
+    "date": "2026-08-08",
+    "title": "Testing of machine learning wavefront sensing algorithms on the Tiny Observatory for Telescope Optimization (TOTO) testbed",
+    "authors": "Sanchit Sabhlok, Solvay A. Blomquist, Maggie Y, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2607.27458v1",
+    "url": "https://arxiv.org/abs/2607.27458v1",
+    "abstract": "Phase retrieval techniques are utilized to correct low order wavefront aberrations originating from misalignments of the optical system in space based telescope concepts. Traditional phase retrieval involves observation of the Point Spread Function (PSF) and a diversity measurement, usually focus di",
+    "highlights": [
+      "研究Testing of machine learning wa...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-02",
+    "date": "2026-08-08",
+    "title": "Robust Unsupervised Network Intrusion Detection via Federated Learning with Selective Aggregation under Anomalous Sample Contamination",
+    "authors": "Shohei Kamiguchi, Takayuki Nishio",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.25439v1",
+    "url": "https://arxiv.org/abs/2607.25439v1",
+    "abstract": "Network intrusion detection systems (NIDS) have become essential for Internet of Things (IoT) environments, as malware targeting IoT devices continues to evolve in sophistication. Unsupervised learning approaches offer a promising direction by removing the dependency on labeled datasets. However, th",
+    "highlights": [
+      "研究Robust Unsupervised Network In...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-03",
+    "date": "2026-08-08",
+    "title": "Federated Lightweight Intrusion Detection in Drone Swarms with Knowledge Distillation",
+    "authors": "Fawaz J. Alruwaili, Cihan Tunc",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.17025v1",
+    "url": "https://arxiv.org/abs/2607.17025v1",
+    "abstract": "Drone swarms are increasingly deployed in critical applications such as surveillance, disaster response, and infrastructure monitoring. However, their reliance on open communication channels and their limited computational resources make them vulnerable to a wide range of cyber-threats. There is a g",
+    "highlights": [
+      "研究Federated Lightweight Intrusio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-04",
+    "date": "2026-08-08",
+    "title": "SoK: Federated Learning for Intrusion Detection in Vehicular Networks",
+    "authors": "Yahya Shahsavari, Reza Nourmohammadi, Sara Rouhani, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.10914v1",
+    "url": "https://arxiv.org/abs/2607.10914v1",
+    "abstract": "Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri",
+    "highlights": [
+      "研究SoK: Federated Learning for In...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-05",
+    "date": "2026-08-08",
+    "title": "F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks",
+    "authors": "Mohammad Ansarimehr, Somayeh Changiz, Ehsan Baghishani, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.04698v1",
+    "url": "https://arxiv.org/abs/2607.04698v1",
+    "abstract": "The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens",
+    "highlights": [
+      "研究F-ACVAE: A Federated Adaptive ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-06",
+    "date": "2026-08-08",
+    "title": "Enhanced Feature Extraction for IoT Network Intrusion Detection Using GNNs and KAN",
+    "authors": "Long Zhao, Shixun Ji, Bin Cheng, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.02981v1",
+    "url": "https://arxiv.org/abs/2607.02981v1",
+    "abstract": "Recent advancements in the Internet of Things (IoT) emphasize the urgent need for advanced network security, as IoT networks feature dynamic topologies, imbalanced traffic, and complex attack patterns. Unlike general IT networks, IoT environments exhibit extreme heterogeneity and sparse topologies. ",
+    "highlights": [
+      "研究Enhanced Feature Extraction fo...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-07",
+    "date": "2026-08-08",
+    "title": "Generative AI and Federated Learning for Intrusion Detection Systems: A Survey",
+    "authors": "Jiefei Liu, Abu Saleh Md Tayeen, Pratyay Kumar, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.01305v1",
+    "url": "https://arxiv.org/abs/2607.01305v1",
+    "abstract": "Intrusion Detection Systems (IDSs) are essential for monitoring network traffic and identifying malicious activities in modern cyber-physical, Internet of Things (IoT), enterprise, and distributed network environments. However, developing reliable IDS models remains challenging because attack behavi",
+    "highlights": [
+      "研究Generative AI and Federated Le...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-08",
+    "date": "2026-08-08",
+    "title": "Cross-Domain Generalization Failure in Lightweight Intrusion Detection Models for IIoT Networks",
+    "authors": "MD Azizul Hakim, Md Shihab Uddin, Talha Ibne Anis",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2607.00553v1",
+    "url": "https://arxiv.org/abs/2607.00553v1",
+    "abstract": "Lightweight machine learning models are increasingly proposed for intrusion detection in Industrial Internet of Things (IIoT) networks due to their suitability for resource-constrained edge deployment. Most reported results evaluate these models only within their training network, leaving behavior o",
+    "highlights": [
+      "研究Cross-Domain Generalization Fa...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-09",
+    "date": "2026-08-08",
+    "title": "A Coalitional Stable and Fair Reward Allocation for Dynamic Virtual Power Plants",
+    "authors": "Carl von Holly-Ponientzietz, Saverio Bolognani, Florian Dörfler, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2606.31728v1",
+    "url": "https://arxiv.org/abs/2606.31728v1",
+    "abstract": "This paper establishes crucial cooperation criteria for the operation of Dynamic Virtual Power Plants (DVPPs). We propose a control design and reward allocation mechanism to enable and incentivize Distributed Energy Resources (DERs) to provide dynamic ancillary services (DAS). Our results illustrate",
+    "highlights": [
+      "研究A Coalitional Stable and Fair ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-10",
+    "date": "2026-08-08",
+    "title": "Comparative Analysis of Machine Learning based Intrusion Detection in Realistic IoT Networks",
+    "authors": "Rana Alharbi, Chuadhry Mujeeb Ahmed",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.31594v1",
+    "url": "https://arxiv.org/abs/2606.31594v1",
+    "abstract": "The Internet of Things (IoT) is rapidly growing and expanding into various sectors, such as healthcare, transportation, smart homes, and more. Despite the benefits of using IoT devices, they present several challenges. Given the significant role these devices play in our lives, it is crucial to addr",
+    "highlights": [
+      "研究Comparative Analysis of Machin...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-11",
+    "date": "2026-08-08",
+    "title": "TinyML for On-Device and Edge Analytics in Wireless Networks: A Survey of Deployments, Opportunities, and Concept-Drift Mitigation",
+    "authors": "Prasoon Raghuwanshi, Vimal Bhatia, Sridhar Iyer, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.30843v1",
+    "url": "https://arxiv.org/abs/2606.30843v1",
+    "abstract": "Ubiquitous intelligence is essential for enabling real-time, adaptive, autonomous, and scalable operations in the next generation of wireless networks. However, this poses significant challenges in data management and energy consumption on the end-device/edge side, specially under dynamic environmen",
+    "highlights": [
+      "研究TinyML for On-Device and Edge ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-12",
+    "date": "2026-08-08",
+    "title": "Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems",
+    "authors": "Linyang Wu, Linpeng Jia, Hanwen Zhang, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.23017v4",
+    "url": "https://arxiv.org/abs/2606.23017v4",
+    "abstract": "Federated Learning (FL) enables privacy-preserving collaborative learning for Internet of Vehicles (IoV) scenarios, but extreme heterogeneity of vehicular-edge-cloud resources severely limits system efficiency. Dynamic scheduling strategies mitigate this issue but introduce new trust concerns: verif",
+    "highlights": [
+      "研究Nautilus: A Verifiable Hierarc...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-13",
+    "date": "2026-08-08",
+    "title": "Tiny Machine-Learning Operations within Cyber-Physical Systems: a Field Study",
+    "authors": "Filippo Scaramuzza, Damian A. Tamburri",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.20952v1",
+    "url": "https://arxiv.org/abs/2606.20952v1",
+    "abstract": "Machine-Learning Operations (MLOps) is maturing into a software-engineering discipline, yet its tiny-scale variant (TinyMLOps)-targeting the resource-constrained microcontrollers embedded in cyber-physical systems (CPS)-remains poorly understood in industrial practice. Opaque models, noisy heterogen",
+    "highlights": [
+      "研究Tiny Machine-Learning Operatio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-14",
+    "date": "2026-08-08",
+    "title": "Breaking TinyML: Why Quantized Neural Networks Need Domain-Specific Security Analysis",
+    "authors": "Jacob Huckelberry, Andrea Mattia Garavagno, Yuke Zhang, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.14427v1",
+    "url": "https://arxiv.org/abs/2606.14427v1",
+    "abstract": "Most TinyML hardware accelerators focus on supporting Quantized Neural Networks (QNNs) to meet stringent constraints on power consumption and size. Despite this, the security aspects of quantization within TinyML hardware remain largely unexplored. Although previous studies indicate that QNNs demons",
+    "highlights": [
+      "研究Breaking TinyML: Why Quantized...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化",
+      "深度学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-15",
+    "date": "2026-08-08",
+    "title": "Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants",
+    "authors": "Vivek Khatana, Soham Chakraborty, Murti V. Salapaka",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2606.12336v2",
+    "url": "https://arxiv.org/abs/2606.12336v2",
+    "abstract": "We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.",
+    "highlights": [
+      "研究Analysis of a Distributed Opti...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-16",
+    "date": "2026-08-08",
+    "title": "Rethinking IoT Intrusion Detection: Augmenting Routing Metrics with Radio Features",
+    "authors": "Yichang Sun, Andreas Johnsson, Sourasekhar Banerjee",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.07282v1",
+    "url": "https://arxiv.org/abs/2606.07282v1",
+    "abstract": "Machine learning-based intrusion detection systems (IDS) for RPL-based IoT networks often rely solely on routing layer features, which provide only a partial view of network behaviour. In this work, we investigate whether incorporating Transmit (TX) and Receive (RX) radio features alongside the stan",
+    "highlights": [
+      "研究Rethinking IoT Intrusion Detec...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-17",
+    "date": "2026-08-08",
+    "title": "TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection",
+    "authors": "Van Le, Trevor Tran, Tan Le",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.05779v1",
+    "url": "https://arxiv.org/abs/2606.05779v1",
+    "abstract": "Autonomous spacecraft require rapid, lightweight, and reliable onboard detection of cyber-RF threats. Using the SPARTA attack model, we analyze the latency-accuracy trade-offs of TinyML-compatible classical models -- Random Forest, Logistic Regression, SVM, and MLP -- for detecting uplink jamming, F",
+    "highlights": [
+      "研究TinyML-Driven Cybersecurity fo...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-18",
+    "date": "2026-08-08",
+    "title": "An Improved CNN-LSTM Based Intrusion Detection System for IoT Networks",
+    "authors": "Mohammad Tariq Ikhlas, Pohanyar Khowaja Khil, Malik Muhammad Mueed Aslam, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.05776v1",
+    "url": "https://arxiv.org/abs/2606.05776v1",
+    "abstract": "With the rapid proliferation of IoT devices, security concerns have dramatically escalated and intrusion detection systems have become critical for protecting networked environments. This paper presents an improved CNN-LSTM based intrusion detection model that combines multi-class classification, da",
+    "highlights": [
+      "研究An Improved CNN-LSTM Based Int...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-19",
+    "date": "2026-08-08",
+    "title": "Towards Intrusion Detection Systems for RPL-based IoT Networks using Foundation Models",
+    "authors": "Elias Lunderbye, Sourasekhar Banerjee, Christian Rohner, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2606.03530v1",
+    "url": "https://arxiv.org/abs/2606.03530v1",
+    "abstract": "AI-based intrusion detection systems (IDS) have shown promise in detecting attacks on IoT systems. In this work, we explore the use of foundation models to detect and identify attacks, with a specific focus on RPL-based IoT networks. We study multiple attack types, attack variations, and network con",
+    "highlights": [
+      "研究Towards Intrusion Detection Sy...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260808-20",
+    "date": "2026-08-08",
+    "title": "ArrythML: An Autoencoder-Based TinyML Approach for On-Device Arrhythmia Detection on Resource-Constrained Embedded Systems",
+    "authors": "Nagarajan S, Kurian Polachan",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2606.02256v1",
+    "url": "https://arxiv.org/abs/2606.02256v1",
+    "abstract": "Our work presents a method for ECG segmentation and arrhythmia detection using Tiny Machine Learning (TinyML) models for real-time, on-device inference on resource-constrained embedded systems. We develop INT8 quantized autoencoder-based TinyML models with minimal layers and parameters for embedded ",
+    "highlights": [
+      "研究ArrythML: An Autoencoder-Based...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]
