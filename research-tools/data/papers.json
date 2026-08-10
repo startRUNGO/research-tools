@@ -1,5 +1,47 @@
 [
   {
+    "id": "pd-20260810-01",
+    "date": "2026-08-10",
+    "title": "Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design",
+    "authors": "Zeinab Dehghani, Dhavalkumar Thakker, Koorosh Aslansefat, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2608.07091v1",
+    "url": "https://arxiv.org/abs/2608.07091v1",
+    "abstract": "Edge Artificial Intelligence (Edge AI) enables the deployment of AI models directly on local edge devices, while such deployments are subject to strict resource constraints, particularly in clinical applications requiring local and timely inference. In such contexts, explainable artificial intellige",
+    "highlights": [
+      "研究Human-Centered Explainable AI ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260810-02",
+    "date": "2026-08-10",
+    "title": "FedTransKD-IDS: Robust Federated Transfer Learning with Knowledge Distillation for Intrusion Detection in IoT",
+    "authors": "Mohammad Hosssein Gholamrezazadeh, Ahmadreza MontazerolghaemAhmadreza Montazerolghaem",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2608.06447v1",
+    "url": "https://arxiv.org/abs/2608.06447v1",
+    "abstract": "In modern distributed network environments, particularly in Internet of Things infrastructures and 5G networks, stringent privacy preservation and scalability requirements have created significant challenges for intrusion detection systems. Although federated learning preserves privacy by preventing",
+    "highlights": [
+      "研究FedTransKD-IDS: Robust Federat...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260809-01",
     "date": "2026-08-09",
     "title": "Testing of machine learning wavefront sensing algorithms on the Tiny Observatory for Telescope Optimization (TOTO) testbed",
