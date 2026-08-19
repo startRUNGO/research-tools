@@ -1,5 +1,206 @@
 [
   {
+    "id": "pd-20260819-01",
+    "date": "2026-08-19",
+    "title": "A Coalitional Stable and Fair Reward Allocation for Dynamic Virtual Power Plants",
+    "authors": "Carl von Holly-Ponientzietz, Saverio Bolognani, Florian Dörfler, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2606.31728v1",
+    "url": "https://arxiv.org/abs/2606.31728v1",
+    "abstract": "This paper establishes crucial cooperation criteria for the operation of Dynamic Virtual Power Plants (DVPPs). We propose a control design and reward allocation mechanism to enable and incentivize Distributed Energy Resources (DERs) to provide dynamic ancillary services (DAS). Our results illustrate",
+    "highlights": [
+      "研究A Coalitional Stable and Fair ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-02",
+    "date": "2026-08-19",
+    "title": "Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants",
+    "authors": "Vivek Khatana, Soham Chakraborty, Murti V. Salapaka",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2606.12336v2",
+    "url": "https://arxiv.org/abs/2606.12336v2",
+    "abstract": "We develop a large-signal stability analysis for a sampled-data, optimization-based secondary controller for inverter-interfaced distributed energy resources in virtual power plants.",
+    "highlights": [
+      "研究Analysis of a Distributed Opti...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-03",
+    "date": "2026-08-19",
+    "title": "Fairness as an Investment: Dynamic Participation and Long-Run Profit in Virtual Power Plants",
+    "authors": "Liudong Chen, Bolun Xu",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2606.02820v1",
+    "url": "https://arxiv.org/abs/2606.02820v1",
+    "abstract": "We show that incorporating fairness constraints into virtual power plant (VPP) operations can incentivize consumer participation and thus improve the aggregator's long-run profitability. VPPs rely on sustained participation from heterogeneous consumers to provide a variety of grid services whose tim",
+    "highlights": [
+      "研究Fairness as an Investment: Dyn...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-04",
+    "date": "2026-08-19",
+    "title": "Distributionally Robust Model Predictive Control for Virtual Power Plants",
+    "authors": "Nikolas Recke, Mathias Hudoba de Badyn",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2605.14642v1",
+    "url": "https://arxiv.org/abs/2605.14642v1",
+    "abstract": "This paper presents a distributionally robust model predictive control (DRMPC) framework for the optimal Virtual Power Plant (VPP) operation under electricity price uncertainty. A unified VPP model is formulated that captures the interaction between buildings, battery storage, and renewable generati",
+    "highlights": [
+      "研究Distributionally Robust Model ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-05",
+    "date": "2026-08-19",
+    "title": "Efficient Multi-Market Scheduling of Virtual Power Plants via Spectral Representation of Uncertainty",
+    "authors": "Lorenzo Zapparoli, Blazhe Gjorgiev, Giovanni Sansavini",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2605.02334v1",
+    "url": "https://arxiv.org/abs/2605.02334v1",
+    "abstract": "As the penetration of distributed energy resources increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, existing VPP market scheduling tools exhibit a tradeoff between economic performance and tractabil",
+    "highlights": [
+      "研究Efficient Multi-Market Schedul...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-06",
+    "date": "2026-08-19",
+    "title": "Risk-Aware Multi-Market Scheduling of Virtual Power Plants with Dynamic Network Tariffs",
+    "authors": "Lorenzo Zapparoli, Paul Fäth, Blazhe Gjorgiev, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2604.26424v1",
+    "url": "https://arxiv.org/abs/2604.26424v1",
+    "abstract": "As the penetration of distributed energy resources (DERs) increases, harnessing their flexibility becomes critical for power system operations. Virtual power plants (VPPs) offer a promising solution. However, most existing scheduling tools rely on simplified DER or grid models and largely overlook l",
+    "highlights": [
+      "研究Risk-Aware Multi-Market Schedu...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-07",
+    "date": "2026-08-19",
+    "title": "Fair Aggregation in Virtual Power Plants",
+    "authors": "Liudong Chen, Hyemi Kim, Adam N. Elmachtoub, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2604.03559v1",
+    "url": "https://arxiv.org/abs/2604.03559v1",
+    "abstract": "A virtual power plant (VPP) is operated by an aggregator that acts as a market intermediary, aggregating consumers to participate in wholesale power markets. By setting incentive prices, the aggregator induces consumers to sell energy and profits by providing this aggregated energy to the market. Th",
+    "highlights": [
+      "研究Fair Aggregation in Virtual Po...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-08",
+    "date": "2026-08-19",
+    "title": "Day-Ahead Offering for Virtual Power Plants: A Stochastic Linear Programming Reformulation and Projected Subgradient Method",
+    "authors": "Weiqi Meng, Hongyi Li, Bai Cui",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2604.01755v1",
+    "url": "https://arxiv.org/abs/2604.01755v1",
+    "abstract": "Virtual power plants (VPPs) are an emerging paradigm that aggregates distributed energy resources (DERs) for coordinated participation in power systems, including bidding as a single dispatchable entity in the wholesale market. In this paper, we address a critical operational challenge for VPPs: the",
+    "highlights": [
+      "研究Day-Ahead Offering for Virtual...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-09",
+    "date": "2026-08-19",
+    "title": "Robust Optimal Operation of Virtual Power Plants Under Decision-Dependent Uncertainty of Price Elasticity",
+    "authors": "Tao Tan, Rui Xie, Meng Yang, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2603.24419v1",
+    "url": "https://arxiv.org/abs/2603.24419v1",
+    "abstract": "The rapid deployment of distributed energy resources (DERs) is one of the essential efforts to mitigate global climate change. However, a vast number of small-scale DERs are difficult to manage individually, motivating the introduction of virtual power plants (VPPs). A VPP operator coordinates a gro",
+    "highlights": [
+      "研究Robust Optimal Operation of Vi...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260819-10",
+    "date": "2026-08-19",
+    "title": "Safe Decentralized Operation of EV Virtual Power Plant with Limited Network Visibility via Multi-Agent Reinforcement Learning",
+    "authors": "Chenghao Huang, Jiarong Fan, Weiqing Wang, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2604.03278v1",
+    "url": "https://arxiv.org/abs/2604.03278v1",
+    "abstract": "As power systems advance toward net-zero targets, behind-the-meter renewables are driving rapid growth in distributed energy resources (DERs). Virtual power plants (VPPs) increasingly coordinate these resources to support power distribution network (PDN) operation, with EV charging stations (EVCSs) ",
+    "highlights": [
+      "研究Safe Decentralized Operation o...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260818-01",
     "date": "2026-08-18",
     "title": "Provenance, Not Behaviour: A Serialisation Artifact in Edge-IIoTset and a Leakage-Free Benchmark for Precision-Agriculture Intrusion Detection",
