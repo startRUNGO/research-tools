@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Aug 2026 02:07:25 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 02:15:41 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Provenance, Not Behaviour: A Serialisation Artifact in Edge-IIoTset and a Leakage-Free Benchmark for Precision-Agriculture Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2608.15761v1</link>
+      <guid>pd-20260823-01</guid>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Edge-IIoTset is the reference benchmark for machine-learning intrusion detection in the industrial Internet of Things, and results reported on it cluster above 99%. We show that much of that performance is not intrusion detection. The preprocessing recipe distributed with the dataset instructs resea
+
+• 研究Provenance, Not Behaviour: A S...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Provenance, Not Behaviour: A Serialisation Artifact in Edge-IIoTset and a Leakage-Free Benchmark for Precision-Agriculture Intrusion Detection</title>
       <link>https://arxiv.org/abs/2608.15761v1</link>
@@ -688,20 +702,6 @@
       <description>Network intrusion detection systems (NIDS) have become essential for Internet of Things (IoT) environments, as malware targeting IoT devices continues to evolve in sophistication. Unsupervised learning approaches offer a promising direction by removing the dependency on labeled datasets. However, th
 
 • 研究Robust Unsupervised Network In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Federated Lightweight Intrusion Detection in Drone Swarms with Knowledge Distillation</title>
-      <link>https://arxiv.org/abs/2607.17025v1</link>
-      <guid>pd-20260808-03</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Drone swarms are increasingly deployed in critical applications such as surveillance, disaster response, and infrastructure monitoring. However, their reliance on open communication channels and their limited computational resources make them vulnerable to a wide range of cyber-threats. There is a g
-
-• 研究Federated Lightweight Intrusio...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
