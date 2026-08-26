@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2026 02:09:41 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 02:15:47 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PolyChirp: Multi-Species Birdsong Classification Using TinyML on Low-Power Acoustic Sensors</title>
+      <link>https://arxiv.org/abs/2608.23101v1</link>
+      <guid>pd-20260826-01</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Recent progress in the field of TinyML has demonstrated that low-power hardware based on microcontrollers can achieve bird species monitoring in real time based on acoustic sensor data for an entire breeding period on a single battery charge. However, the state of the art on low-power microcontrolle
+
+• 研究PolyChirp: Multi-Species Birds...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Power-Performance Characterization of TinyML Systems</title>
+      <link>https://arxiv.org/abs/2608.21646v1</link>
+      <guid>pd-20260826-02</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>TinyML systems are enabling machine learning (ML) inference at the edge. However, there is little quantitative analysis of such systems. This paper presents a systematic performance and power characterization of diverse TinyML applications on microcontrollers (MCUs), spanning neural network models, 
+
+• 研究Power-Performance Characteriza...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>PolyChirp: Multi-Species Birdsong Classification Using TinyML on Low-Power Acoustic Sensors</title>
       <link>https://arxiv.org/abs/2608.23101v1</link>
@@ -670,34 +698,6 @@
       <link>https://arxiv.org/abs/2608.06447v1</link>
       <guid>pd-20260811-02</guid>
       <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>In modern distributed network environments, particularly in Internet of Things infrastructures and 5G networks, stringent privacy preservation and scalability requirements have created significant challenges for intrusion detection systems. Although federated learning preserves privacy by preventing
-
-• 研究FedTransKD-IDS: Robust Federat...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design</title>
-      <link>https://arxiv.org/abs/2608.07091v1</link>
-      <guid>pd-20260810-01</guid>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Edge Artificial Intelligence (Edge AI) enables the deployment of AI models directly on local edge devices, while such deployments are subject to strict resource constraints, particularly in clinical applications requiring local and timely inference. In such contexts, explainable artificial intellige
-
-• 研究Human-Centered Explainable AI ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>FedTransKD-IDS: Robust Federated Transfer Learning with Knowledge Distillation for Intrusion Detection in IoT</title>
-      <link>https://arxiv.org/abs/2608.06447v1</link>
-      <guid>pd-20260810-02</guid>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
       <category>Security</category>
       <description>In modern distributed network environments, particularly in Internet of Things infrastructures and 5G networks, stringent privacy preservation and scalability requirements have created significant challenges for intrusion detection systems. Although federated learning preserves privacy by preventing
 

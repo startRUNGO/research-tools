@@ -1,5 +1,45 @@
 [
   {
+    "id": "pd-20260826-01",
+    "date": "2026-08-26",
+    "title": "PolyChirp: Multi-Species Birdsong Classification Using TinyML on Low-Power Acoustic Sensors",
+    "authors": "Nathan Duboisset, Zhaolan Huang, Felix Bießmann, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2608.23101v1",
+    "url": "https://arxiv.org/abs/2608.23101v1",
+    "abstract": "Recent progress in the field of TinyML has demonstrated that low-power hardware based on microcontrollers can achieve bird species monitoring in real time based on acoustic sensor data for an entire breeding period on a single battery charge. However, the state of the art on low-power microcontrolle",
+    "highlights": [
+      "研究PolyChirp: Multi-Species Birds...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260826-02",
+    "date": "2026-08-26",
+    "title": "Power-Performance Characterization of TinyML Systems",
+    "authors": "Yujie Zhang, Dhananjaya Wijerathne, Zhaoying Li, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2608.21646v1",
+    "url": "https://arxiv.org/abs/2608.21646v1",
+    "abstract": "TinyML systems are enabling machine learning (ML) inference at the edge. However, there is little quantitative analysis of such systems. This paper presents a systematic performance and power characterization of diverse TinyML applications on microcontrollers (MCUs), spanning neural network models, ",
+    "highlights": [
+      "研究Power-Performance Characteriza...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260825-01",
     "date": "2026-08-25",
     "title": "PolyChirp: Multi-Species Birdsong Classification Using TinyML on Low-Power Acoustic Sensors",
