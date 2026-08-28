@@ -5,8 +5,78 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Aug 2026 10:41:07 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 12:18:50 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PolyChirp: Multi-Species Birdsong Classification Using TinyML on Low-Power Acoustic Sensors</title>
+      <link>https://arxiv.org/abs/2608.23101v1</link>
+      <guid>pd-20260828-01</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Recent progress in the field of TinyML has demonstrated that low-power hardware based on microcontrollers can achieve bird species monitoring in real time based on acoustic sensor data for an entire breeding period on a single battery charge. However, the state of the art on low-power microcontrolle
+
+• 研究PolyChirp: Multi-Species Birds...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Power-Performance Characterization of TinyML Systems</title>
+      <link>https://arxiv.org/abs/2608.21646v1</link>
+      <guid>pd-20260828-02</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>TinyML systems are enabling machine learning (ML) inference at the edge. However, there is little quantitative analysis of such systems. This paper presents a systematic performance and power characterization of diverse TinyML applications on microcontrollers (MCUs), spanning neural network models, 
+
+• 研究Power-Performance Characteriza...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Real-Time Operation Strategy of Virtual Power Plants With Optimal Power Disaggregation Among Heterogeneous Resources</title>
+      <link>https://arxiv.org/abs/2608.26486v1</link>
+      <guid>pd-20260828-03</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>The virtual power plant (VPP) can aggregate flexible resources on the demand side to provide frequency regulation for the grid, helping address the supply-demand balance challenges. When deploying regulation, the VPP disaggregates the requested power adjustment in real time among its internal hetero
+
+• 研究Real-Time Operation Strategy o...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Approximating Energy-Regulation Feasible Region of Virtual Power Plants: A Data-driven Inverse Optimization Approach</title>
+      <link>https://arxiv.org/abs/2608.25248v1</link>
+      <guid>pd-20260828-04</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>System operators will probably allow virtual power plants (VPPs) to submit their feasible region (FR) for market clearing and dispatch. A VPP needs to determine its FR to submit as a whole based on the individual operation model of its internal distributed energy resources (DERs), which is an FR agg
+
+• 研究Approximating Energy-Regulatio...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Integrating Fast-response Capability into Virtual Power Plant Operation for Ancillary Services</title>
+      <link>https://arxiv.org/abs/2608.25247v1</link>
+      <guid>pd-20260828-05</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>Virtual power plants (VPPs) can aggregate distributed energy resources (DERs) to provide ancillary services for power systems, creating new profit opportunities. Ancillary services such as secondary frequency regulation require providers to have sufficient response capability to follow rapidly chang
+
+• 研究Integrating Fast-response Capa...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>PolyChirp: Multi-Species Birdsong Classification Using TinyML on Low-Power Acoustic Sensors</title>
       <link>https://arxiv.org/abs/2608.23101v1</link>
@@ -628,76 +698,6 @@
       <link>https://arxiv.org/abs/2608.07091v1</link>
       <guid>pd-20260814-01</guid>
       <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Edge Artificial Intelligence (Edge AI) enables the deployment of AI models directly on local edge devices, while such deployments are subject to strict resource constraints, particularly in clinical applications requiring local and timely inference. In such contexts, explainable artificial intellige
-
-• 研究Human-Centered Explainable AI ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Beyond Detection Accuracy: Measuring Explanation Cost, Stability, and Utility for Resource-Aware IoT Intrusion Detection</title>
-      <link>https://arxiv.org/abs/2608.10349v1</link>
-      <guid>pd-20260814-02</guid>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Machine-learning intrusion-detection studies commonly emphasize predictive accuracy while treating explanation generation as a computationally free post-processing step. This study jointly evaluates predictive effectiveness, explanation cost, local explanation stability, and selective explanation fo
-
-• 研究Beyond Detection Accuracy: Mea...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design</title>
-      <link>https://arxiv.org/abs/2608.07091v1</link>
-      <guid>pd-20260813-01</guid>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Edge Artificial Intelligence (Edge AI) enables the deployment of AI models directly on local edge devices, while such deployments are subject to strict resource constraints, particularly in clinical applications requiring local and timely inference. In such contexts, explainable artificial intellige
-
-• 研究Human-Centered Explainable AI ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Beyond Detection Accuracy: Measuring Explanation Cost, Stability, and Utility for Resource-Aware IoT Intrusion Detection</title>
-      <link>https://arxiv.org/abs/2608.10349v1</link>
-      <guid>pd-20260813-02</guid>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Machine-learning intrusion-detection studies commonly emphasize predictive accuracy while treating explanation generation as a computationally free post-processing step. This study jointly evaluates predictive effectiveness, explanation cost, local explanation stability, and selective explanation fo
-
-• 研究Beyond Detection Accuracy: Mea...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>FedTransKD-IDS: Robust Federated Transfer Learning with Knowledge Distillation for Intrusion Detection in IoT</title>
-      <link>https://arxiv.org/abs/2608.06447v1</link>
-      <guid>pd-20260813-03</guid>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>In modern distributed network environments, particularly in Internet of Things infrastructures and 5G networks, stringent privacy preservation and scalability requirements have created significant challenges for intrusion detection systems. Although federated learning preserves privacy by preventing
-
-• 研究FedTransKD-IDS: Robust Federat...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design</title>
-      <link>https://arxiv.org/abs/2608.07091v1</link>
-      <guid>pd-20260812-01</guid>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
       <category>AI/ML</category>
       <description>Edge Artificial Intelligence (Edge AI) enables the deployment of AI models directly on local edge devices, while such deployments are subject to strict resource constraints, particularly in clinical applications requiring local and timely inference. In such contexts, explainable artificial intellige
 
