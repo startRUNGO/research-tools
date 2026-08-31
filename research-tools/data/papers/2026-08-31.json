@@ -1,0 +1,83 @@
+[
+  {
+    "id": "pd-20260831-01",
+    "date": "2026-08-31",
+    "title": "PolyChirp: Multi-Species Birdsong Classification Using TinyML on Low-Power Acoustic Sensors",
+    "authors": "Nathan Duboisset, Zhaolan Huang, Felix Bießmann, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2608.23101v1",
+    "url": "https://arxiv.org/abs/2608.23101v1",
+    "abstract": "Recent progress in the field of TinyML has demonstrated that low-power hardware based on microcontrollers can achieve bird species monitoring in real time based on acoustic sensor data for an entire breeding period on a single battery charge. However, the state of the art on low-power microcontrolle",
+    "highlights": [
+      "研究PolyChirp: Multi-Species Birds...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260831-02",
+    "date": "2026-08-31",
+    "title": "Real-Time Operation Strategy of Virtual Power Plants With Optimal Power Disaggregation Among Heterogeneous Resources",
+    "authors": "Qixin Chen, Ruike Lyu, Hongye Guo, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2608.26486v1",
+    "url": "https://arxiv.org/abs/2608.26486v1",
+    "abstract": "The virtual power plant (VPP) can aggregate flexible resources on the demand side to provide frequency regulation for the grid, helping address the supply-demand balance challenges. When deploying regulation, the VPP disaggregates the requested power adjustment in real time among its internal hetero",
+    "highlights": [
+      "研究Real-Time Operation Strategy o...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260831-03",
+    "date": "2026-08-31",
+    "title": "Approximating Energy-Regulation Feasible Region of Virtual Power Plants: A Data-driven Inverse Optimization Approach",
+    "authors": "Ruike Lyu, Hongye Guo, Qixin Chen",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2608.25248v1",
+    "url": "https://arxiv.org/abs/2608.25248v1",
+    "abstract": "System operators will probably allow virtual power plants (VPPs) to submit their feasible region (FR) for market clearing and dispatch. A VPP needs to determine its FR to submit as a whole based on the individual operation model of its internal distributed energy resources (DERs), which is an FR agg",
+    "highlights": [
+      "研究Approximating Energy-Regulatio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260831-04",
+    "date": "2026-08-31",
+    "title": "Integrating Fast-response Capability into Virtual Power Plant Operation for Ancillary Services",
+    "authors": "Qixing Liu, Ruike Lyu, Zhe Zhai, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2608.25247v1",
+    "url": "https://arxiv.org/abs/2608.25247v1",
+    "abstract": "Virtual power plants (VPPs) can aggregate distributed energy resources (DERs) to provide ancillary services for power systems, creating new profit opportunities. Ancillary services such as secondary frequency regulation require providers to have sufficient response capability to follow rapidly chang",
+    "highlights": [
+      "研究Integrating Fast-response Capa...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  }
+]
