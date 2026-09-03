@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pd-20260903-01",
+    "date": "2026-09-03",
+    "title": "On the Instance Hardness as a Decision Criterion in TinyML Systems",
+    "authors": "Tobiasz Puslecki, Krzysztof Walkowiak",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2608.29913v1",
+    "url": "https://arxiv.org/abs/2608.29913v1",
+    "abstract": "TinyML includes the implementation of machine learning on devices with limited memory and computing resources. With the development of technology, AI systems continue to scale in terms of size and computational requirements. This forces researchers to adapt methods to be environmentally sustainable ",
+    "highlights": [
+      "研究On the Instance Hardness as a ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260903-02",
+    "date": "2026-09-03",
+    "title": "Real-Time Operation Strategy of Virtual Power Plants With Optimal Power Disaggregation Among Heterogeneous Resources",
+    "authors": "Qixin Chen, Ruike Lyu, Hongye Guo, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2608.26486v1",
+    "url": "https://arxiv.org/abs/2608.26486v1",
+    "abstract": "The virtual power plant (VPP) can aggregate flexible resources on the demand side to provide frequency regulation for the grid, helping address the supply-demand balance challenges. When deploying regulation, the VPP disaggregates the requested power adjustment in real time among its internal hetero",
+    "highlights": [
+      "研究Real-Time Operation Strategy o...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  }
+]
