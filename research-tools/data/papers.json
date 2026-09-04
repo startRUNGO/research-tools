@@ -1,5 +1,47 @@
 [
   {
+    "id": "pd-20260904-01",
+    "date": "2026-09-04",
+    "title": "Privacy Leakage in Federated Learning: Gradient-Based Client Identity Inference and Defenses for Inertial Sensing in Vehicular Edge Networks",
+    "authors": "Ali Akarma, Toqeer Ali Syed, Muhammad Khan, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.02971v1",
+    "url": "https://arxiv.org/abs/2609.02971v1",
+    "abstract": "As vehicular networks move toward 5G/6G edge intelligence, federated learning (FL) is widely promoted as a privacy-preserving way for vehicles and infrastructure to train shared models without exposing raw sensor data. Yet the updates clients transmit still leak enough information to identify who se",
+    "highlights": [
+      "研究Privacy Leakage in Federated L...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260904-02",
+    "date": "2026-09-04",
+    "title": "On the Instance Hardness as a Decision Criterion in TinyML Systems",
+    "authors": "Tobiasz Puslecki, Krzysztof Walkowiak",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2608.29913v1",
+    "url": "https://arxiv.org/abs/2608.29913v1",
+    "abstract": "TinyML includes the implementation of machine learning on devices with limited memory and computing resources. With the development of technology, AI systems continue to scale in terms of size and computational requirements. This forces researchers to adapt methods to be environmentally sustainable ",
+    "highlights": [
+      "研究On the Instance Hardness as a ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20260903-01",
     "date": "2026-09-03",
     "title": "On the Instance Hardness as a Decision Criterion in TinyML Systems",
