@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Sep 2026 05:10:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 04:59:50 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Privacy Leakage in Federated Learning: Gradient-Based Client Identity Inference and Defenses for Inertial Sensing in Vehicular Edge Networks</title>
+      <link>https://arxiv.org/abs/2609.02971v1</link>
+      <guid>pd-20260905-01</guid>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>As vehicular networks move toward 5G/6G edge intelligence, federated learning (FL) is widely promoted as a privacy-preserving way for vehicles and infrastructure to train shared models without exposing raw sensor data. Yet the updates clients transmit still leak enough information to identify who se
+
+• 研究Privacy Leakage in Federated L...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>On the Instance Hardness as a Decision Criterion in TinyML Systems</title>
+      <link>https://arxiv.org/abs/2608.29913v1</link>
+      <guid>pd-20260905-02</guid>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>TinyML includes the implementation of machine learning on devices with limited memory and computing resources. With the development of technology, AI systems continue to scale in terms of size and computational requirements. This forces researchers to adapt methods to be environmentally sustainable 
+
+• 研究On the Instance Hardness as a ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Privacy Leakage in Federated Learning: Gradient-Based Client Identity Inference and Defenses for Inertial Sensing in Vehicular Edge Networks</title>
       <link>https://arxiv.org/abs/2609.02971v1</link>
@@ -674,34 +702,6 @@
       <description>Ubiquitous intelligence is essential for enabling real-time, adaptive, autonomous, and scalable operations in the next generation of wireless networks. However, this poses significant challenges in data management and energy consumption on the end-device/edge side, specially under dynamic environmen
 
 • 研究TinyML for On-Device and Edge ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Nautilus: A Verifiable Hierarchical Federated Learning Framework for Vehicular-Edge-Cloud Systems</title>
-      <link>https://arxiv.org/abs/2606.23017v4</link>
-      <guid>pd-20260824-16</guid>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Federated Learning (FL) enables privacy-preserving collaborative learning for Internet of Vehicles (IoV) scenarios, but extreme heterogeneity of vehicular-edge-cloud resources severely limits system efficiency. Dynamic scheduling strategies mitigate this issue but introduce new trust concerns: verif
-
-• 研究Nautilus: A Verifiable Hierarc...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Tiny Machine-Learning Operations within Cyber-Physical Systems: a Field Study</title>
-      <link>https://arxiv.org/abs/2606.20952v1</link>
-      <guid>pd-20260824-17</guid>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Machine-Learning Operations (MLOps) is maturing into a software-engineering discipline, yet its tiny-scale variant (TinyMLOps)-targeting the resource-constrained microcontrollers embedded in cyber-physical systems (CPS)-remains poorly understood in industrial practice. Opaque models, noisy heterogen
-
-• 研究Tiny Machine-Learning Operatio...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
