@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pd-20260907-01",
+    "date": "2026-09-07",
+    "title": "Privacy Leakage in Federated Learning: Gradient-Based Client Identity Inference and Defenses for Inertial Sensing in Vehicular Edge Networks",
+    "authors": "Ali Akarma, Toqeer Ali Syed, Muhammad Khan, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.02971v1",
+    "url": "https://arxiv.org/abs/2609.02971v1",
+    "abstract": "As vehicular networks move toward 5G/6G edge intelligence, federated learning (FL) is widely promoted as a privacy-preserving way for vehicles and infrastructure to train shared models without exposing raw sensor data. Yet the updates clients transmit still leak enough information to identify who se",
+    "highlights": [
+      "研究Privacy Leakage in Federated L...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]
