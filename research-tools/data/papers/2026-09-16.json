@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pd-20260916-01",
+    "date": "2026-09-16",
+    "title": "MPT: Missing Prototype Tracking via Barycentric Reconstruction in Vehicular Federated Learning",
+    "authors": "Hanju Jang, Gyeongmin Han, Sungmin Lee, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.12771v1",
+    "url": "https://arxiv.org/abs/2609.12771v1",
+    "abstract": "Cross-vehicle federated learning enables vehicles to collaboratively improve perception models while keeping locally collected driving data private. However, vehicle participation is transient, and a vehicle may depart before training converges while permanently taking its local data. When this depa",
+    "highlights": [
+      "研究MPT: Missing Prototype Trackin...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  }
+]

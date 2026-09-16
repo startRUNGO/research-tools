@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2026 05:31:28 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 05:23:09 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MPT: Missing Prototype Tracking via Barycentric Reconstruction in Vehicular Federated Learning</title>
+      <link>https://arxiv.org/abs/2609.12771v1</link>
+      <guid>pd-20260916-01</guid>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Cross-vehicle federated learning enables vehicles to collaboratively improve perception models while keeping locally collected driving data private. However, vehicle participation is transient, and a vehicle may depart before training converges while permanently taking its local data. When this depa
+
+• 研究MPT: Missing Prototype Trackin...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Real-Time Operation Strategy of Virtual Power Plants With Optimal Power Disaggregation Among Heterogeneous Resources</title>
       <link>https://arxiv.org/abs/2608.26486v1</link>
@@ -688,20 +702,6 @@
       <description>Lightweight machine learning models are increasingly proposed for intrusion detection in Industrial Internet of Things (IIoT) networks due to their suitability for resource-constrained edge deployment. Most reported results evaluate these models only within their training network, leaving behavior o
 
 • 研究Cross-Domain Generalization Fa...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>A Coalitional Stable and Fair Reward Allocation for Dynamic Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2606.31728v1</link>
-      <guid>pd-20260911-20</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>This paper establishes crucial cooperation criteria for the operation of Dynamic Virtual Power Plants (DVPPs). We propose a control design and reward allocation mechanism to enable and incentivize Distributed Energy Resources (DERs) to provide dynamic ancillary services (DAS). Our results illustrate
-
-• 研究A Coalitional Stable and Fair ...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
