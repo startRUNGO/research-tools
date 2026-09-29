@@ -1,0 +1,104 @@
+[
+  {
+    "id": "pd-20260929-01",
+    "date": "2026-09-29",
+    "title": "Rank-Reliable Teacher-Guided Fitness Approximation for Expensive Evolutionary Optimization: A TinyML Architecture Search Study",
+    "authors": "Soumen Garai, Suman Samui",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.30553v1",
+    "url": "https://arxiv.org/abs/2609.30553v1",
+    "abstract": "Expensive evolutionary search does not always need an exact fitness estimate for every candidate. It often needs a reliable answer to a simpler question: which candidate is better? We address this need through Teacher-Guided Learning NSGA-II (TGL-NSGA-II), a low-fidelity framework for constrained Ti",
+    "highlights": [
+      "研究Rank-Reliable Teacher-Guided F...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260929-02",
+    "date": "2026-09-29",
+    "title": "Reliable Federated TinyML Deployment for IoT Security",
+    "authors": "Younsoo Park, Seokhyoen Bae, Shasi Kumar Ramachandran Prabhu, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.27202v1",
+    "url": "https://arxiv.org/abs/2609.27202v1",
+    "abstract": "The growing deployment of Internet of Things (IoT) devices has increased the need for privacy-preserving intrusion detection systems that operate directly on resource-constrained hardware. Federated Learning enables collaborative model training without sharing raw data, but conventional federated mo",
+    "highlights": [
+      "研究Reliable Federated TinyML Depl...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260929-03",
+    "date": "2026-09-29",
+    "title": "Resource-Aware Rolling-Horizon Controller for Renewable-Based Virtual Power Plants Providing Automatic Frequency Restoration Reserves",
+    "authors": "Marco Vinicio Avendaño-Caiza, Juan Diego Rios-Peñaloza, Javier Roldán-Pérez, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2609.31017v1",
+    "url": "https://arxiv.org/abs/2609.31017v1",
+    "abstract": "Virtual power plants (VPPs) are an effective solution for increasing the penetration of renewable energy sources (RES) in power systems. Moreover, VPPs can provide ancillary services if generators and loads are closely connected and properly coordinated. This aspect has been addressed in several stu",
+    "highlights": [
+      "研究Resource-Aware Rolling-Horizon...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260929-04",
+    "date": "2026-09-29",
+    "title": "Unmasking Shortcut Learning in IoT Intrusion Detection: A Forensic, Multi-Paradigm Evaluation of Feature Dependence and Data Leakage",
+    "authors": "Uday Shankar Roy, Mahbuba Jahan Minu",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.28725v1",
+    "url": "https://arxiv.org/abs/2609.28725v1",
+    "abstract": "Machine learning-based Network Intrusion Detection Systems often report near-perfect performance on IoT benchmarks. However, whether these models learn generalizable attack behavior or exploit spurious dataset shortcuts- such as static testbed IP/MAC addresses and chronological recording artifacts-r",
+    "highlights": [
+      "研究Unmasking Shortcut Learning in...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20260929-05",
+    "date": "2026-09-29",
+    "title": "Improving Service Availability in KubeEdge-Based Architectures Using Lightweight Intrusion Detection",
+    "authors": "Harrol Ndjeudji Kuibou, Mostafa Anouar Ghorab, Mohamed Aymen Saied",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.27052v1",
+    "url": "https://arxiv.org/abs/2609.27052v1",
+    "abstract": "The increasing adoption of the Internet of Things (IoT) and cloud computing has accelerated the evolution of edge computing paradigms [1]. Industry forecasts estimate that the number of connected IoT devices will reach approximately 50 billion by 2030, following an estimated 38 billion connections b",
+    "highlights": [
+      "研究Improving Service Availability...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]

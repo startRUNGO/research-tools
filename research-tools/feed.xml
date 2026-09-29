@@ -5,8 +5,78 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Sep 2026 06:00:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 06:18:15 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Rank-Reliable Teacher-Guided Fitness Approximation for Expensive Evolutionary Optimization: A TinyML Architecture Search Study</title>
+      <link>https://arxiv.org/abs/2609.30553v1</link>
+      <guid>pd-20260929-01</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Expensive evolutionary search does not always need an exact fitness estimate for every candidate. It often needs a reliable answer to a simpler question: which candidate is better? We address this need through Teacher-Guided Learning NSGA-II (TGL-NSGA-II), a low-fidelity framework for constrained Ti
+
+• 研究Rank-Reliable Teacher-Guided F...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Reliable Federated TinyML Deployment for IoT Security</title>
+      <link>https://arxiv.org/abs/2609.27202v1</link>
+      <guid>pd-20260929-02</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The growing deployment of Internet of Things (IoT) devices has increased the need for privacy-preserving intrusion detection systems that operate directly on resource-constrained hardware. Federated Learning enables collaborative model training without sharing raw data, but conventional federated mo
+
+• 研究Reliable Federated TinyML Depl...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Resource-Aware Rolling-Horizon Controller for Renewable-Based Virtual Power Plants Providing Automatic Frequency Restoration Reserves</title>
+      <link>https://arxiv.org/abs/2609.31017v1</link>
+      <guid>pd-20260929-03</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>Virtual power plants (VPPs) are an effective solution for increasing the penetration of renewable energy sources (RES) in power systems. Moreover, VPPs can provide ancillary services if generators and loads are closely connected and properly coordinated. This aspect has been addressed in several stu
+
+• 研究Resource-Aware Rolling-Horizon...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Unmasking Shortcut Learning in IoT Intrusion Detection: A Forensic, Multi-Paradigm Evaluation of Feature Dependence and Data Leakage</title>
+      <link>https://arxiv.org/abs/2609.28725v1</link>
+      <guid>pd-20260929-04</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Machine learning-based Network Intrusion Detection Systems often report near-perfect performance on IoT benchmarks. However, whether these models learn generalizable attack behavior or exploit spurious dataset shortcuts- such as static testbed IP/MAC addresses and chronological recording artifacts-r
+
+• 研究Unmasking Shortcut Learning in...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Improving Service Availability in KubeEdge-Based Architectures Using Lightweight Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2609.27052v1</link>
+      <guid>pd-20260929-05</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The increasing adoption of the Internet of Things (IoT) and cloud computing has accelerated the evolution of edge computing paradigms [1]. Industry forecasts estimate that the number of connected IoT devices will reach approximately 50 billion by 2030, following an estimated 38 billion connections b
+
+• 研究Improving Service Availability...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>MPT: Missing Prototype Tracking via Barycentric Reconstruction in Vehicular Federated Learning</title>
       <link>https://arxiv.org/abs/2609.12771v1</link>
@@ -632,76 +702,6 @@
       <description>Drone swarms are increasingly deployed in critical applications such as surveillance, disaster response, and infrastructure monitoring. However, their reliance on open communication channels and their limited computational resources make them vulnerable to a wide range of cyber-threats. There is a g
 
 • 研究Federated Lightweight Intrusio...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
-      <link>https://arxiv.org/abs/2607.10914v1</link>
-      <guid>pd-20260911-15</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
-
-• 研究SoK: Federated Learning for In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2607.04698v1</link>
-      <guid>pd-20260911-16</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens
-
-• 研究F-ACVAE: A Federated Adaptive ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Enhanced Feature Extraction for IoT Network Intrusion Detection Using GNNs and KAN</title>
-      <link>https://arxiv.org/abs/2607.02981v1</link>
-      <guid>pd-20260911-17</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Recent advancements in the Internet of Things (IoT) emphasize the urgent need for advanced network security, as IoT networks feature dynamic topologies, imbalanced traffic, and complex attack patterns. Unlike general IT networks, IoT environments exhibit extreme heterogeneity and sparse topologies. 
-
-• 研究Enhanced Feature Extraction fo...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Generative AI and Federated Learning for Intrusion Detection Systems: A Survey</title>
-      <link>https://arxiv.org/abs/2607.01305v1</link>
-      <guid>pd-20260911-18</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Intrusion Detection Systems (IDSs) are essential for monitoring network traffic and identifying malicious activities in modern cyber-physical, Internet of Things (IoT), enterprise, and distributed network environments. However, developing reliable IDS models remains challenging because attack behavi
-
-• 研究Generative AI and Federated Le...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Cross-Domain Generalization Failure in Lightweight Intrusion Detection Models for IIoT Networks</title>
-      <link>https://arxiv.org/abs/2607.00553v1</link>
-      <guid>pd-20260911-19</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Lightweight machine learning models are increasingly proposed for intrusion detection in Industrial Internet of Things (IIoT) networks due to their suitability for resource-constrained edge deployment. Most reported results evaluate these models only within their training network, leaving behavior o
-
-• 研究Cross-Domain Generalization Fa...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
