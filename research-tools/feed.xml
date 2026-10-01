@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Sep 2026 06:03:55 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 06:37:48 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework</title>
+      <link>https://arxiv.org/abs/2609.39584v1</link>
+      <guid>pd-20261001-01</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Edge computing has emerged as a critical computing paradigm in modern distributed systems by migrating data processing closer to end users and Internet of Things (IoT) devices. While this paradigm decentralizes processes, minimizes latency, and reduces backhaul bandwidth congestion, it exponentially
+
+• 研究Cybersecurity in Edge Computin...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Rank-Reliable Teacher-Guided Fitness Approximation for Expensive Evolutionary Optimization: A TinyML Architecture Search Study</title>
+      <link>https://arxiv.org/abs/2609.30553v1</link>
+      <guid>pd-20261001-02</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Expensive evolutionary search does not always need an exact fitness estimate for every candidate. It often needs a reliable answer to a simpler question: which candidate is better? We address this need through Teacher-Guided Learning NSGA-II (TGL-NSGA-II), a low-fidelity framework for constrained Ti
+
+• 研究Rank-Reliable Teacher-Guided F...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Resource-Aware Rolling-Horizon Controller for Renewable-Based Virtual Power Plants Providing Automatic Frequency Restoration Reserves</title>
+      <link>https://arxiv.org/abs/2609.31017v1</link>
+      <guid>pd-20261001-03</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>Virtual power plants (VPPs) are an effective solution for increasing the penetration of renewable energy sources (RES) in power systems. Moreover, VPPs can provide ancillary services if generators and loads are closely connected and properly coordinated. This aspect has been addressed in several stu
+
+• 研究Resource-Aware Rolling-Horizon...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Rank-Reliable Teacher-Guided Fitness Approximation for Expensive Evolutionary Optimization: A TinyML Architecture Search Study</title>
       <link>https://arxiv.org/abs/2609.30553v1</link>
@@ -660,48 +702,6 @@
       <description>TinyML systems are enabling machine learning (ML) inference at the edge. However, there is little quantitative analysis of such systems. This paper presents a systematic performance and power characterization of diverse TinyML applications on microcontrollers (MCUs), spanning neural network models, 
 
 • 研究Power-Performance Characteriza...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Provenance, Not Behaviour: A Serialisation Artifact in Edge-IIoTset and a Leakage-Free Benchmark for Precision-Agriculture Intrusion Detection</title>
-      <link>https://arxiv.org/abs/2608.15761v1</link>
-      <guid>pd-20260911-08</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Edge-IIoTset is the reference benchmark for machine-learning intrusion detection in the industrial Internet of Things, and results reported on it cluster above 99%. We show that much of that performance is not intrusion detection. The preprocessing recipe distributed with the dataset instructs resea
-
-• 研究Provenance, Not Behaviour: A S...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Beyond Detection Accuracy: Measuring Explanation Cost, Stability, and Utility for Resource-Aware IoT Intrusion Detection</title>
-      <link>https://arxiv.org/abs/2608.10349v1</link>
-      <guid>pd-20260911-09</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Machine-learning intrusion-detection studies commonly emphasize predictive accuracy while treating explanation generation as a computationally free post-processing step. This study jointly evaluates predictive effectiveness, explanation cost, local explanation stability, and selective explanation fo
-
-• 研究Beyond Detection Accuracy: Mea...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design</title>
-      <link>https://arxiv.org/abs/2608.07091v1</link>
-      <guid>pd-20260911-10</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Edge Artificial Intelligence (Edge AI) enables the deployment of AI models directly on local edge devices, while such deployments are subject to strict resource constraints, particularly in clinical applications requiring local and timely inference. In such contexts, explainable artificial intellige
-
-• 研究Human-Centered Explainable AI ...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
