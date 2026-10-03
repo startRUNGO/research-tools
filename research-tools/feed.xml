@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Oct 2026 06:21:11 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 05:50:57 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework</title>
+      <link>https://arxiv.org/abs/2609.39584v1</link>
+      <guid>pd-20261003-01</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Edge computing has emerged as a critical computing paradigm in modern distributed systems by migrating data processing closer to end users and Internet of Things (IoT) devices. While this paradigm decentralizes processes, minimizes latency, and reduces backhaul bandwidth congestion, it exponentially
+
+• 研究Cybersecurity in Edge Computin...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework</title>
       <link>https://arxiv.org/abs/2609.39584v1</link>
@@ -688,20 +702,6 @@
       <description>System operators will probably allow virtual power plants (VPPs) to submit their feasible region (FR) for market clearing and dispatch. A VPP needs to determine its FR to submit as a whole based on the individual operation model of its internal distributed energy resources (DERs), which is an FR agg
 
 • 研究Approximating Energy-Regulatio...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Integrating Fast-response Capability into Virtual Power Plant Operation for Ancillary Services</title>
-      <link>https://arxiv.org/abs/2608.25247v1</link>
-      <guid>pd-20260911-05</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>Virtual power plants (VPPs) can aggregate distributed energy resources (DERs) to provide ancillary services for power systems, creating new profit opportunities. Ancillary services such as secondary frequency regulation require providers to have sufficient response capability to follow rapidly chang
-
-• 研究Integrating Fast-response Capa...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
