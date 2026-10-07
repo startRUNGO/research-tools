@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pd-20261007-01",
+    "date": "2026-10-07",
+    "title": "Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework",
+    "authors": "Zawad Yalmie Sazid, Robert Abbas",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.39584v1",
+    "url": "https://arxiv.org/abs/2609.39584v1",
+    "abstract": "Edge computing has emerged as a critical computing paradigm in modern distributed systems by migrating data processing closer to end users and Internet of Things (IoT) devices. While this paradigm decentralizes processes, minimizes latency, and reduces backhaul bandwidth congestion, it exponentially",
+    "highlights": [
+      "研究Cybersecurity in Edge Computin...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]
