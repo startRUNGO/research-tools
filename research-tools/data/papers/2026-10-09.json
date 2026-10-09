@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pd-20261009-01",
+    "date": "2026-10-09",
+    "title": "A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures",
+    "authors": "Shaker Nawasra, Munther Abualkibash",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.08867v1",
+    "url": "https://arxiv.org/abs/2610.08867v1",
+    "abstract": "The rapid growth and heterogeneity of Internet of Things (IoT) environments have exposed fundamental limitations in traditional rule-based and signature-based intrusion detection systems. This paper presents a quantitative deployment-aware analysis of machine learning (ML)-based intrusion detection ",
+    "highlights": [
+      "研究A Deployment-Aware Feasibility...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]

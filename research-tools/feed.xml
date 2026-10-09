@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Oct 2026 06:43:26 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 06:50:55 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures</title>
+      <link>https://arxiv.org/abs/2610.08867v1</link>
+      <guid>pd-20261009-01</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid growth and heterogeneity of Internet of Things (IoT) environments have exposed fundamental limitations in traditional rule-based and signature-based intrusion detection systems. This paper presents a quantitative deployment-aware analysis of machine learning (ML)-based intrusion detection 
+
+• 研究A Deployment-Aware Feasibility...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures</title>
       <link>https://arxiv.org/abs/2610.08867v1</link>
@@ -688,20 +702,6 @@
       <description>Intrusion Detection Systems (IDSs) are essential for monitoring network traffic and identifying malicious activities in modern cyber-physical, Internet of Things (IoT), enterprise, and distributed network environments. However, developing reliable IDS models remains challenging because attack behavi
 
 • 研究Generative AI and Federated Le...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Cross-Domain Generalization Failure in Lightweight Intrusion Detection Models for IIoT Networks</title>
-      <link>https://arxiv.org/abs/2607.00553v1</link>
-      <guid>pd-20260912-19</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Lightweight machine learning models are increasingly proposed for intrusion detection in Industrial Internet of Things (IIoT) networks due to their suitability for resource-constrained edge deployment. Most reported results evaluate these models only within their training network, leaving behavior o
-
-• 研究Cross-Domain Generalization Fa...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
