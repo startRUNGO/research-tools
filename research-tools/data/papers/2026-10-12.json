@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pd-20261012-01",
+    "date": "2026-10-12",
+    "title": "SecFD-FL: Frequency-Decoupled Federated Learning with Secure Aggregation for Charging Load Forecasting in Internet of Electric Vehicles",
+    "authors": "Mamunur Rashid, Nan Chen, Syed Ali Asad Rizvi, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.12909v1",
+    "url": "https://arxiv.org/abs/2610.12909v1",
+    "abstract": "Accurate charging load forecasting is essential for the reliability and efficiency of the Internet of Electric Vehicles (IoEV), yet it is challenging on two fronts: charging demand is highly stochastic, and the data collected by distributed sensors is privacy-sensitive. Although federated learning (",
+    "highlights": [
+      "研究SecFD-FL: Frequency-Decoupled ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261012-02",
+    "date": "2026-10-12",
+    "title": "A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures",
+    "authors": "Shaker Nawasra, Munther Abualkibash",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.08867v1",
+    "url": "https://arxiv.org/abs/2610.08867v1",
+    "abstract": "The rapid growth and heterogeneity of Internet of Things (IoT) environments have exposed fundamental limitations in traditional rule-based and signature-based intrusion detection systems. This paper presents a quantitative deployment-aware analysis of machine learning (ML)-based intrusion detection ",
+    "highlights": [
+      "研究A Deployment-Aware Feasibility...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]

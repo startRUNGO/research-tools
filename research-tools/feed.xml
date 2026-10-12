@@ -5,8 +5,36 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Oct 2026 06:34:11 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 06:39:20 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SecFD-FL: Frequency-Decoupled Federated Learning with Secure Aggregation for Charging Load Forecasting in Internet of Electric Vehicles</title>
+      <link>https://arxiv.org/abs/2610.12909v1</link>
+      <guid>pd-20261012-01</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Accurate charging load forecasting is essential for the reliability and efficiency of the Internet of Electric Vehicles (IoEV), yet it is challenging on two fronts: charging demand is highly stochastic, and the data collected by distributed sensors is privacy-sensitive. Although federated learning (
+
+• 研究SecFD-FL: Frequency-Decoupled ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures</title>
+      <link>https://arxiv.org/abs/2610.08867v1</link>
+      <guid>pd-20261012-02</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>The rapid growth and heterogeneity of Internet of Things (IoT) environments have exposed fundamental limitations in traditional rule-based and signature-based intrusion detection systems. This paper presents a quantitative deployment-aware analysis of machine learning (ML)-based intrusion detection 
+
+• 研究A Deployment-Aware Feasibility...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures</title>
       <link>https://arxiv.org/abs/2610.08867v1</link>
@@ -674,34 +702,6 @@
       <description>Drone swarms are increasingly deployed in critical applications such as surveillance, disaster response, and infrastructure monitoring. However, their reliance on open communication channels and their limited computational resources make them vulnerable to a wide range of cyber-threats. There is a g
 
 • 研究Federated Lightweight Intrusio...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SoK: Federated Learning for Intrusion Detection in Vehicular Networks</title>
-      <link>https://arxiv.org/abs/2607.10914v1</link>
-      <guid>pd-20260912-15</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Modern vehicular networks face an expanding attack surface across internal Electronic Control Units (ECUs) and external Vehicle-to-Everything (V2X) communication. Federated Learning (FL) has emerged as a decentralized paradigm to deploy Intrusion Detection Systems (IDS) without compromising data pri
-
-• 研究SoK: Federated Learning for In...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>F-ACVAE: A Federated Adaptive Conditional Variational Auto-Encoder for Privacy-Preserving Intrusion Detection in IoT Networks</title>
-      <link>https://arxiv.org/abs/2607.04698v1</link>
-      <guid>pd-20260912-16</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid proliferation of Internet of things (IoT) devices has significantly expanded the cyber-attack surface, necessitating robust and privacy-preserving intrusion detection systems (IDS). However, centralized learning approaches often suffer from severe performance degradation due to high-dimens
-
-• 研究F-ACVAE: A Federated Adaptive ...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
