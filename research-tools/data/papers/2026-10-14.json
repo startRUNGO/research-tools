@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pd-20261014-01",
+    "date": "2026-10-14",
+    "title": "SecFD-FL: Frequency-Decoupled Federated Learning with Secure Aggregation for Charging Load Forecasting in Internet of Electric Vehicles",
+    "authors": "Mamunur Rashid, Nan Chen, Syed Ali Asad Rizvi, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.12909v1",
+    "url": "https://arxiv.org/abs/2610.12909v1",
+    "abstract": "Accurate charging load forecasting is essential for the reliability and efficiency of the Internet of Electric Vehicles (IoEV), yet it is challenging on two fronts: charging demand is highly stochastic, and the data collected by distributed sensors is privacy-sensitive. Although federated learning (",
+    "highlights": [
+      "研究SecFD-FL: Frequency-Decoupled ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261014-02",
+    "date": "2026-10-14",
+    "title": "Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants",
+    "authors": "Pooja Algikar, Stefano Fenu, Kumarsinh Jhala, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2610.15183v1",
+    "url": "https://arxiv.org/abs/2610.15183v1",
+    "abstract": "The rapid proliferation of distributed energy resources (DERs) aggregated by virtual power plants (VPPs) elevates cybersecurity risk by expanding the attack surface. A coordinated cyberattack has the potential to disrupt distribution-system, bulk-system, and market operations. Existing cyberphysical",
+    "highlights": [
+      "研究Game-Theoretic Reinforcement L...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  }
+]
