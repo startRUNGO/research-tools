@@ -1,5 +1,418 @@
 [
   {
+    "id": "pd-20261018-01",
+    "date": "2026-10-18",
+    "title": "Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants",
+    "authors": "Pooja Algikar, Stefano Fenu, Kumarsinh Jhala, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2610.15183v1",
+    "url": "https://arxiv.org/abs/2610.15183v1",
+    "abstract": "The rapid proliferation of distributed energy resources (DERs) aggregated by virtual power plants (VPPs) elevates cybersecurity risk by expanding the attack surface. A coordinated cyberattack has the potential to disrupt distribution-system, bulk-system, and market operations. Existing cyberphysical",
+    "highlights": [
+      "研究Game-Theoretic Reinforcement L...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-02",
+    "date": "2026-10-18",
+    "title": "SecFD-FL: Frequency-Decoupled Federated Learning with Secure Aggregation for Charging Load Forecasting in Internet of Electric Vehicles",
+    "authors": "Mamunur Rashid, Nan Chen, Syed Ali Asad Rizvi, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.12909v1",
+    "url": "https://arxiv.org/abs/2610.12909v1",
+    "abstract": "Accurate charging load forecasting is essential for the reliability and efficiency of the Internet of Electric Vehicles (IoEV), yet it is challenging on two fronts: charging demand is highly stochastic, and the data collected by distributed sensors is privacy-sensitive. Although federated learning (",
+    "highlights": [
+      "研究SecFD-FL: Frequency-Decoupled ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-03",
+    "date": "2026-10-18",
+    "title": "A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures",
+    "authors": "Shaker Nawasra, Munther Abualkibash",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.08867v1",
+    "url": "https://arxiv.org/abs/2610.08867v1",
+    "abstract": "The rapid growth and heterogeneity of Internet of Things (IoT) environments have exposed fundamental limitations in traditional rule-based and signature-based intrusion detection systems. This paper presents a quantitative deployment-aware analysis of machine learning (ML)-based intrusion detection ",
+    "highlights": [
+      "研究A Deployment-Aware Feasibility...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-04",
+    "date": "2026-10-18",
+    "title": "Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework",
+    "authors": "Zawad Yalmie Sazid, Robert Abbas",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.39584v1",
+    "url": "https://arxiv.org/abs/2609.39584v1",
+    "abstract": "Edge computing has emerged as a critical computing paradigm in modern distributed systems by migrating data processing closer to end users and Internet of Things (IoT) devices. While this paradigm decentralizes processes, minimizes latency, and reduces backhaul bandwidth congestion, it exponentially",
+    "highlights": [
+      "研究Cybersecurity in Edge Computin...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-05",
+    "date": "2026-10-18",
+    "title": "Resource-Aware Rolling-Horizon Controller for Renewable-Based Virtual Power Plants Providing Automatic Frequency Restoration Reserves",
+    "authors": "Marco Vinicio Avendaño-Caiza, Juan Diego Rios-Peñaloza, Javier Roldán-Pérez, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2609.31017v1",
+    "url": "https://arxiv.org/abs/2609.31017v1",
+    "abstract": "Virtual power plants (VPPs) are an effective solution for increasing the penetration of renewable energy sources (RES) in power systems. Moreover, VPPs can provide ancillary services if generators and loads are closely connected and properly coordinated. This aspect has been addressed in several stu",
+    "highlights": [
+      "研究Resource-Aware Rolling-Horizon...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-06",
+    "date": "2026-10-18",
+    "title": "Rank-Reliable Teacher-Guided Fitness Approximation for Expensive Evolutionary Optimization: A TinyML Architecture Search Study",
+    "authors": "Soumen Garai, Suman Samui",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.30553v1",
+    "url": "https://arxiv.org/abs/2609.30553v1",
+    "abstract": "Expensive evolutionary search does not always need an exact fitness estimate for every candidate. It often needs a reliable answer to a simpler question: which candidate is better? We address this need through Teacher-Guided Learning NSGA-II (TGL-NSGA-II), a low-fidelity framework for constrained Ti",
+    "highlights": [
+      "研究Rank-Reliable Teacher-Guided F...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-07",
+    "date": "2026-10-18",
+    "title": "Reliable Federated TinyML Deployment for IoT Security",
+    "authors": "Younsoo Park, Seokhyoen Bae, Shasi Kumar Ramachandran Prabhu, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.27202v1",
+    "url": "https://arxiv.org/abs/2609.27202v1",
+    "abstract": "The growing deployment of Internet of Things (IoT) devices has increased the need for privacy-preserving intrusion detection systems that operate directly on resource-constrained hardware. Federated Learning enables collaborative model training without sharing raw data, but conventional federated mo",
+    "highlights": [
+      "研究Reliable Federated TinyML Depl...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-08",
+    "date": "2026-10-18",
+    "title": "Unmasking Shortcut Learning in IoT Intrusion Detection: A Forensic, Multi-Paradigm Evaluation of Feature Dependence and Data Leakage",
+    "authors": "Uday Shankar Roy, Mahbuba Jahan Minu",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.28725v1",
+    "url": "https://arxiv.org/abs/2609.28725v1",
+    "abstract": "Machine learning-based Network Intrusion Detection Systems often report near-perfect performance on IoT benchmarks. However, whether these models learn generalizable attack behavior or exploit spurious dataset shortcuts- such as static testbed IP/MAC addresses and chronological recording artifacts-r",
+    "highlights": [
+      "研究Unmasking Shortcut Learning in...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-09",
+    "date": "2026-10-18",
+    "title": "Improving Service Availability in KubeEdge-Based Architectures Using Lightweight Intrusion Detection",
+    "authors": "Harrol Ndjeudji Kuibou, Mostafa Anouar Ghorab, Mohamed Aymen Saied",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.27052v1",
+    "url": "https://arxiv.org/abs/2609.27052v1",
+    "abstract": "The increasing adoption of the Internet of Things (IoT) and cloud computing has accelerated the evolution of edge computing paradigms [1]. Industry forecasts estimate that the number of connected IoT devices will reach approximately 50 billion by 2030, following an estimated 38 billion connections b",
+    "highlights": [
+      "研究Improving Service Availability...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-10",
+    "date": "2026-10-18",
+    "title": "An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks",
+    "authors": "Li Yang",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.23097v1",
+    "url": "https://arxiv.org/abs/2609.23097v1",
+    "abstract": "Internet of Things (IoT) systems are increasingly deployed in smart homes, transportation, energy systems, and critical infrastructure. This broad connectivity improves service intelligence, but also enlarges the attack surface of IoT networks. Machine Learning (ML)-based Intrusion Detection Systems",
+    "highlights": [
+      "研究An LLM-Assisted AutoML Framewo...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-11",
+    "date": "2026-10-18",
+    "title": "QoS-Aware Federated Learning for Multimodal In-Cabin Interaction in Smart Vehicles",
+    "authors": "Baran Can Gül, Mert Nakıp, Nasser Jazdi, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.20123v1",
+    "url": "https://arxiv.org/abs/2609.20123v1",
+    "abstract": "Modern smart vehicles leverage multimodal sensors, ranging from high-bandwidth vision systems to low-rate physiological monitors, to provide personalized in-cabin services. However, integrating high-fidelity multimodal fusion with collaborative training is often hindered by the heterogeneous and tim",
+    "highlights": [
+      "研究QoS-Aware Federated Learning f...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-12",
+    "date": "2026-10-18",
+    "title": "FedPGT: Progressive Gradient Transmission for Vehicular Federated Learning over Time-Varying Channels",
+    "authors": "Jintao Yan, Tan Chen, Yuxuan Sun, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.18089v1",
+    "url": "https://arxiv.org/abs/2609.18089v1",
+    "abstract": "Vehicular federated learning (VFL) enables privacy-preserving collaborative model training for intelligent transportation systems, where communication resource allocation and gradient sparsification techniques have been explored to reduce communication overhead. However, vehicle mobility leads to ra",
+    "highlights": [
+      "研究FedPGT: Progressive Gradient T...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-13",
+    "date": "2026-10-18",
+    "title": "Day-ahead Coordination of Virtual Power Plants within Active Distribution Networks using Deterministic Bi-Level Optimization",
+    "authors": "Laura M. Barajas-Arguello, Rafael A. Núñez-Rodríguez, Daniel Gebbran, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2609.17927v1",
+    "url": "https://arxiv.org/abs/2609.17927v1",
+    "abstract": "This paper proposes a deterministic bilevel optimization framework for the coordinated operation of Virtual Power Plants (VPPs) embedded in an active distribution network. The Distribution System Operator (DSO) acts as the upper-level leader, minimizing a weighted combination of expenditure, active ",
+    "highlights": [
+      "研究Day-ahead Coordination of Virt...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-14",
+    "date": "2026-10-18",
+    "title": "MPT: Missing Prototype Tracking via Barycentric Reconstruction in Vehicular Federated Learning",
+    "authors": "Hanju Jang, Gyeongmin Han, Sungmin Lee, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.12771v1",
+    "url": "https://arxiv.org/abs/2609.12771v1",
+    "abstract": "Cross-vehicle federated learning enables vehicles to collaboratively improve perception models while keeping locally collected driving data private. However, vehicle participation is transient, and a vehicle may depart before training converges while permanently taking its local data. When this depa",
+    "highlights": [
+      "研究MPT: Missing Prototype Trackin...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-15",
+    "date": "2026-10-18",
+    "title": "Privacy Leakage in Federated Learning: Gradient-Based Client Identity Inference and Defenses for Inertial Sensing in Vehicular Edge Networks",
+    "authors": "Ali Akarma, Toqeer Ali Syed, Muhammad Khan, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.02971v2",
+    "url": "https://arxiv.org/abs/2609.02971v2",
+    "abstract": "As vehicular networks move toward 5G/6G edge intelligence, federated learning (FL) is widely promoted as a privacy-preserving way for vehicles and infrastructure to train shared models without exposing raw sensor data. Yet the updates clients transmit still leak enough information to identify who se",
+    "highlights": [
+      "研究Privacy Leakage in Federated L...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-16",
+    "date": "2026-10-18",
+    "title": "On the Instance Hardness as a Decision Criterion in TinyML Systems",
+    "authors": "Tobiasz Puslecki, Krzysztof Walkowiak",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2608.29913v1",
+    "url": "https://arxiv.org/abs/2608.29913v1",
+    "abstract": "TinyML includes the implementation of machine learning on devices with limited memory and computing resources. With the development of technology, AI systems continue to scale in terms of size and computational requirements. This forces researchers to adapt methods to be environmentally sustainable ",
+    "highlights": [
+      "研究On the Instance Hardness as a ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-17",
+    "date": "2026-10-18",
+    "title": "Real-Time Operation Strategy of Virtual Power Plants With Optimal Power Disaggregation Among Heterogeneous Resources",
+    "authors": "Qixin Chen, Ruike Lyu, Hongye Guo, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2608.26486v1",
+    "url": "https://arxiv.org/abs/2608.26486v1",
+    "abstract": "The virtual power plant (VPP) can aggregate flexible resources on the demand side to provide frequency regulation for the grid, helping address the supply-demand balance challenges. When deploying regulation, the VPP disaggregates the requested power adjustment in real time among its internal hetero",
+    "highlights": [
+      "研究Real-Time Operation Strategy o...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-18",
+    "date": "2026-10-18",
+    "title": "Approximating Energy-Regulation Feasible Region of Virtual Power Plants: A Data-driven Inverse Optimization Approach",
+    "authors": "Ruike Lyu, Hongye Guo, Qixin Chen",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2608.25248v1",
+    "url": "https://arxiv.org/abs/2608.25248v1",
+    "abstract": "System operators will probably allow virtual power plants (VPPs) to submit their feasible region (FR) for market clearing and dispatch. A VPP needs to determine its FR to submit as a whole based on the individual operation model of its internal distributed energy resources (DERs), which is an FR agg",
+    "highlights": [
+      "研究Approximating Energy-Regulatio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-19",
+    "date": "2026-10-18",
+    "title": "Integrating Fast-response Capability into Virtual Power Plant Operation for Ancillary Services",
+    "authors": "Qixing Liu, Ruike Lyu, Zhe Zhai, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2608.25247v1",
+    "url": "https://arxiv.org/abs/2608.25247v1",
+    "abstract": "Virtual power plants (VPPs) can aggregate distributed energy resources (DERs) to provide ancillary services for power systems, creating new profit opportunities. Ancillary services such as secondary frequency regulation require providers to have sufficient response capability to follow rapidly chang",
+    "highlights": [
+      "研究Integrating Fast-response Capa...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261018-20",
+    "date": "2026-10-18",
+    "title": "PolyChirp: Multi-Species Birdsong Classification Using TinyML on Low-Power Acoustic Sensors",
+    "authors": "Nathan Duboisset, Zhaolan Huang, Felix Bießmann, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2608.23101v2",
+    "url": "https://arxiv.org/abs/2608.23101v2",
+    "abstract": "Recent progress in the field of TinyML has demonstrated that low-power hardware based on microcontrollers can achieve bird species monitoring in real time based on acoustic sensor data for an entire breeding period on a single battery charge. However, the state of the art on low-power microcontrolle",
+    "highlights": [
+      "研究PolyChirp: Multi-Species Birds...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20261016-01",
     "date": "2026-10-16",
     "title": "SecFD-FL: Frequency-Decoupled Federated Learning with Secure Aggregation for Charging Load Forecasting in Internet of Electric Vehicles",
