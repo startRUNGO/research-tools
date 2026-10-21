@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pd-20261021-01",
+    "date": "2026-10-21",
+    "title": "Heart Signal (ECG) as Vibration Signature for Human Authentication Using TinyML",
+    "authors": "Yogeswar Reddy Thota, Student Member,  IEEE, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.24761v1",
+    "url": "https://arxiv.org/abs/2610.24761v1",
+    "abstract": "Ensuring data security in the era of Artificial Intelligence (AI) and deepfake technology requires robust biometric systems. Conventional methods such as facial recognition, iris scans, fingerprints, and voice recognition are increasingly vulnerable to spoofing and provide only one-time authenticati",
+    "highlights": [
+      "研究Heart Signal (ECG) as Vibratio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261021-02",
+    "date": "2026-10-21",
+    "title": "Distributionally Robust Chance-Constrained Reinforcement Learning for Home Energy Management under Electric Vehicle Uncertainty",
+    "authors": "Meng Yuan, Ye Wang, Yi Mei, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2610.25151v1",
+    "url": "https://arxiv.org/abs/2610.25151v1",
+    "abstract": "The electrification of residential energy systems and adoption of electric vehicles (EVs) create demand-side flexibility. However, random driving behaviour makes it difficult to ensure EV readiness at departure and maintain thermal comfort. To address this, we formulate residential scheduling as a d",
+    "highlights": [
+      "研究Distributionally Robust Chance...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "车联网",
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  }
+]
