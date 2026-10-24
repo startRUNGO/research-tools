@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 05:29:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 05:08:12 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Heart Signal (ECG) as Vibration Signature for Human Authentication Using TinyML</title>
+      <link>https://arxiv.org/abs/2610.24761v1</link>
+      <guid>pd-20261024-01</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Ensuring data security in the era of Artificial Intelligence (AI) and deepfake technology requires robust biometric systems. Conventional methods such as facial recognition, iris scans, fingerprints, and voice recognition are increasingly vulnerable to spoofing and provide only one-time authenticati
+
+• 研究Heart Signal (ECG) as Vibratio...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Distributionally Robust Chance-Constrained Reinforcement Learning for Home Energy Management under Electric Vehicle Uncertainty</title>
+      <link>https://arxiv.org/abs/2610.25151v1</link>
+      <guid>pd-20261024-02</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Energy</category>
+      <description>The electrification of residential energy systems and adoption of electric vehicles (EVs) create demand-side flexibility. However, random driving behaviour makes it difficult to ensure EV readiness at departure and maintain thermal comfort. To address this, we formulate residential scheduling as a d
+
+• 研究Distributionally Robust Chance...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Parameters efficient language model with latent cross-attention for IoT intrusion detection</title>
+      <link>https://arxiv.org/abs/2610.30222v1</link>
+      <guid>pd-20261024-03</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Language models have shown strong potential for intrusion detection, but their high memory and computational demands make them difficult to deploy in resource-constrained IoT environments. In this work, we propose a compact Transformer-based architecture that compresses the input into a small latent
+
+• 研究Parameters efficient language ...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Heart Signal (ECG) as Vibration Signature for Human Authentication Using TinyML</title>
       <link>https://arxiv.org/abs/2610.24761v1</link>
@@ -660,48 +702,6 @@
       <description>Accurate charging load forecasting is essential for the reliability and efficiency of the Internet of Electric Vehicles (IoEV), yet it is challenging on two fronts: charging demand is highly stochastic, and the data collected by distributed sensors is privacy-sensitive. Although federated learning (
 
 • 研究SecFD-FL: Frequency-Decoupled ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2610.15183v1</link>
-      <guid>pd-20261016-02</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>The rapid proliferation of distributed energy resources (DERs) aggregated by virtual power plants (VPPs) elevates cybersecurity risk by expanding the attack surface. A coordinated cyberattack has the potential to disrupt distribution-system, bulk-system, and market operations. Existing cyberphysical
-
-• 研究Game-Theoretic Reinforcement L...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SecFD-FL: Frequency-Decoupled Federated Learning with Secure Aggregation for Charging Load Forecasting in Internet of Electric Vehicles</title>
-      <link>https://arxiv.org/abs/2610.12909v1</link>
-      <guid>pd-20261015-01</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Accurate charging load forecasting is essential for the reliability and efficiency of the Internet of Electric Vehicles (IoEV), yet it is challenging on two fronts: charging demand is highly stochastic, and the data collected by distributed sensors is privacy-sensitive. Although federated learning (
-
-• 研究SecFD-FL: Frequency-Decoupled ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2610.15183v1</link>
-      <guid>pd-20261015-02</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>The rapid proliferation of distributed energy resources (DERs) aggregated by virtual power plants (VPPs) elevates cybersecurity risk by expanding the attack surface. A coordinated cyberattack has the potential to disrupt distribution-system, bulk-system, and market operations. Existing cyberphysical
-
-• 研究Game-Theoretic Reinforcement L...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
