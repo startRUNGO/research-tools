@@ -1,5 +1,46 @@
 [
   {
+    "id": "pd-20261027-01",
+    "date": "2026-10-27",
+    "title": "Clean-label Poisoning Attack and Defense Game for Federated Learning in Vehicular Networks",
+    "authors": "Yalin E. Sagduyu, Tugba Erpek, Nathan Stephenson, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.32765v1",
+    "url": "https://arxiv.org/abs/2610.32765v1",
+    "abstract": "This paper studies interactions between clean-label poisoning attack and defense in vehicular networks using federated learning (FL). Basic Safety Message (BSM) classification for anomaly detection is modeled as a distributed learning problem over a vehicular network with dynamic topology. As a crit",
+    "highlights": [
+      "研究Clean-label Poisoning Attack a...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261027-02",
+    "date": "2026-10-27",
+    "title": "Parameters efficient language model with latent cross-attention for IoT intrusion detection",
+    "authors": "Frederic Adjewa, Moez Esseghir, Leila Merghem-Boulahia, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.30222v1",
+    "url": "https://arxiv.org/abs/2610.30222v1",
+    "abstract": "Language models have shown strong potential for intrusion detection, but their high memory and computational demands make them difficult to deploy in resource-constrained IoT environments. In this work, we propose a compact Transformer-based architecture that compresses the input into a small latent",
+    "highlights": [
+      "研究Parameters efficient language ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20261026-01",
     "date": "2026-10-26",
     "title": "Clean-label Poisoning Attack and Defense Game for Federated Learning in Vehicular Networks",
