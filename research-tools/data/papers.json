@@ -1,5 +1,46 @@
 [
   {
+    "id": "pd-20261029-01",
+    "date": "2026-10-29",
+    "title": "Clean-label Poisoning Attack and Defense Game for Federated Learning in Vehicular Networks",
+    "authors": "Yalin E. Sagduyu, Tugba Erpek, Nathan Stephenson, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.32765v1",
+    "url": "https://arxiv.org/abs/2610.32765v1",
+    "abstract": "This paper studies interactions between clean-label poisoning attack and defense in vehicular networks using federated learning (FL). Basic Safety Message (BSM) classification for anomaly detection is modeled as a distributed learning problem over a vehicular network with dynamic topology. As a crit",
+    "highlights": [
+      "研究Clean-label Poisoning Attack a...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261029-02",
+    "date": "2026-10-29",
+    "title": "A lightweight C Code Generator for Heterogeneous TinyML Systems",
+    "authors": "Chen Liu, Bernhard Vogginger, Christian Mayr",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.36907v1",
+    "url": "https://arxiv.org/abs/2610.36907v1",
+    "abstract": "Over the past decade, the significant advancements in artificial intelligence have been closely tied to increasingly sophisticated training frameworks and steadily powerful computing hardware. However, the entire ecosystem remains fragmented. On one hand, models are represented with frameworks depen",
+    "highlights": [
+      "研究A lightweight C Code Generator...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20261028-01",
     "date": "2026-10-28",
     "title": "Clean-label Poisoning Attack and Defense Game for Federated Learning in Vehicular Networks",
