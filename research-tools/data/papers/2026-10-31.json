@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pd-20261031-01",
+    "date": "2026-10-31",
+    "title": "A lightweight C Code Generator for Heterogeneous TinyML Systems",
+    "authors": "Chen Liu, Bernhard Vogginger, Christian Mayr",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.36907v1",
+    "url": "https://arxiv.org/abs/2610.36907v1",
+    "abstract": "Over the past decade, the significant advancements in artificial intelligence have been closely tied to increasingly sophisticated training frameworks and steadily powerful computing hardware. However, the entire ecosystem remains fragmented. On one hand, models are represented with frameworks depen",
+    "highlights": [
+      "研究A lightweight C Code Generator...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261031-02",
+    "date": "2026-10-31",
+    "title": "Uncertainty-Guided Cross-Modal Alignment for Diffusion-Based IoT Intrusion Detection",
+    "authors": "Mahdi Arab Loodaricheh, Anita Raja, Mohammad Hossein Manshaei",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.39117v1",
+    "url": "https://arxiv.org/abs/2610.39117v1",
+    "abstract": "Diffusion models evolve noisy states toward a learned data distribution, so their sampling behavior depends on the geometry of the representation in which denoising occurs. This dependence is especially important for multimodal data: independently trained encoders can map synchronized views to incom",
+    "highlights": [
+      "研究Uncertainty-Guided Cross-Modal...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]
