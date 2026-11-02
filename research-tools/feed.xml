@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Nov 2026 06:55:44 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 06:55:50 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A lightweight C Code Generator for Heterogeneous TinyML Systems</title>
+      <link>https://arxiv.org/abs/2610.36907v1</link>
+      <guid>pd-20261102-01</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Over the past decade, the significant advancements in artificial intelligence have been closely tied to increasingly sophisticated training frameworks and steadily powerful computing hardware. However, the entire ecosystem remains fragmented. On one hand, models are represented with frameworks depen
+
+• 研究A lightweight C Code Generator...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Probability-Layer Clustering for Bound-and-Budget Calibration in Multi-Bound Robust Bidding of Renewable-Based Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2610.41633v1</link>
+      <guid>pd-20261102-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>RVPPs that aggregate dispatchable and non-dispatchable renewable energy sources, storage, and flexible demand that bid in the day-ahead and secondary reserve markets must cope with uncertainties in market prices, renewable generation, and demand. MBRO is well suited to this setting because it hedges
+
+• 研究Probability-Layer Clustering f...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Uncertainty-Guided Cross-Modal Alignment for Diffusion-Based IoT Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2610.39117v1</link>
+      <guid>pd-20261102-03</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Diffusion models evolve noisy states toward a learned data distribution, so their sampling behavior depends on the geometry of the representation in which denoising occurs. This dependence is especially important for multimodal data: independently trained encoders can map synchronized views to incom
+
+• 研究Uncertainty-Guided Cross-Modal...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>A lightweight C Code Generator for Heterogeneous TinyML Systems</title>
       <link>https://arxiv.org/abs/2610.36907v1</link>
@@ -660,48 +702,6 @@
       <description>Recent progress in the field of TinyML has demonstrated that low-power hardware based on microcontrollers can achieve bird species monitoring in real time based on acoustic sensor data for an entire breeding period on a single battery charge. However, the state of the art on low-power microcontrolle
 
 • 研究PolyChirp: Multi-Species Birds...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants</title>
-      <link>https://arxiv.org/abs/2610.15183v1</link>
-      <guid>pd-20261018-01</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>The rapid proliferation of distributed energy resources (DERs) aggregated by virtual power plants (VPPs) elevates cybersecurity risk by expanding the attack surface. A coordinated cyberattack has the potential to disrupt distribution-system, bulk-system, and market operations. Existing cyberphysical
-
-• 研究Game-Theoretic Reinforcement L...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>SecFD-FL: Frequency-Decoupled Federated Learning with Secure Aggregation for Charging Load Forecasting in Internet of Electric Vehicles</title>
-      <link>https://arxiv.org/abs/2610.12909v1</link>
-      <guid>pd-20261018-02</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Accurate charging load forecasting is essential for the reliability and efficiency of the Internet of Electric Vehicles (IoEV), yet it is challenging on two fronts: charging demand is highly stochastic, and the data collected by distributed sensors is privacy-sensitive. Although federated learning (
-
-• 研究SecFD-FL: Frequency-Decoupled ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures</title>
-      <link>https://arxiv.org/abs/2610.08867v1</link>
-      <guid>pd-20261018-03</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>The rapid growth and heterogeneity of Internet of Things (IoT) environments have exposed fundamental limitations in traditional rule-based and signature-based intrusion detection systems. This paper presents a quantitative deployment-aware analysis of machine learning (ML)-based intrusion detection 
-
-• 研究A Deployment-Aware Feasibility...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
