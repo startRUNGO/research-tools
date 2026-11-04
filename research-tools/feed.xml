@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Nov 2026 07:19:05 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 07:01:39 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices</title>
+      <link>https://arxiv.org/abs/2611.03392v1</link>
+      <guid>pd-20261104-01</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Neural network inference at the edge must fit tight energy budgets. Existing benchmarks compare few devices, do not report energy on a common basis, and omit the newest microcontrollers with an NPU or the 1 GHz Cortex-M85. Hardware-aware design also ranks networks by MAC count, yet no study has test
+
+• 研究TinyML Hits the Memory Wall: A...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Probability-Layer Clustering for Bound-and-Budget Calibration in Multi-Bound Robust Bidding of Renewable-Based Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2610.41633v1</link>
+      <guid>pd-20261104-02</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>RVPPs that aggregate dispatchable and non-dispatchable renewable energy sources, storage, and flexible demand that bid in the day-ahead and secondary reserve markets must cope with uncertainties in market prices, renewable generation, and demand. MBRO is well suited to this setting because it hedges
+
+• 研究Probability-Layer Clustering f...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Uncertainty-Guided Cross-Modal Alignment for Diffusion-Based IoT Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2610.39117v1</link>
+      <guid>pd-20261104-03</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Diffusion models evolve noisy states toward a learned data distribution, so their sampling behavior depends on the geometry of the representation in which denoising occurs. This dependence is especially important for multimodal data: independently trained encoders can map synchronized views to incom
+
+• 研究Uncertainty-Guided Cross-Modal...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices</title>
       <link>https://arxiv.org/abs/2611.03392v1</link>
@@ -660,48 +702,6 @@
       <description>This paper proposes a deterministic bilevel optimization framework for the coordinated operation of Virtual Power Plants (VPPs) embedded in an active distribution network. The Distribution System Operator (DSO) acts as the upper-level leader, minimizing a weighted combination of expenditure, active 
 
 • 研究Day-ahead Coordination of Virt...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>MPT: Missing Prototype Tracking via Barycentric Reconstruction in Vehicular Federated Learning</title>
-      <link>https://arxiv.org/abs/2609.12771v1</link>
-      <guid>pd-20261019-14</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Cross-vehicle federated learning enables vehicles to collaboratively improve perception models while keeping locally collected driving data private. However, vehicle participation is transient, and a vehicle may depart before training converges while permanently taking its local data. When this depa
-
-• 研究MPT: Missing Prototype Trackin...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Privacy Leakage in Federated Learning: Gradient-Based Client Identity Inference and Defenses for Inertial Sensing in Vehicular Edge Networks</title>
-      <link>https://arxiv.org/abs/2609.02971v2</link>
-      <guid>pd-20261019-15</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>As vehicular networks move toward 5G/6G edge intelligence, federated learning (FL) is widely promoted as a privacy-preserving way for vehicles and infrastructure to train shared models without exposing raw sensor data. Yet the updates clients transmit still leak enough information to identify who se
-
-• 研究Privacy Leakage in Federated L...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>On the Instance Hardness as a Decision Criterion in TinyML Systems</title>
-      <link>https://arxiv.org/abs/2608.29913v1</link>
-      <guid>pd-20261019-16</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>TinyML includes the implementation of machine learning on devices with limited memory and computing resources. With the development of technology, AI systems continue to scale in terms of size and computational requirements. This forces researchers to adapt methods to be environmentally sustainable 
-
-• 研究On the Instance Hardness as a ...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
