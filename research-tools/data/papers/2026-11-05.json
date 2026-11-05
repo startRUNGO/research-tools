@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pd-20261105-01",
+    "date": "2026-11-05",
+    "title": "TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices",
+    "authors": "Pietro Bonazzi, Luigi Capogrosso, Ahmet Celik, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2611.03392v1",
+    "url": "https://arxiv.org/abs/2611.03392v1",
+    "abstract": "Neural network inference at the edge must fit tight energy budgets. Existing benchmarks compare few devices, do not report energy on a common basis, and omit the newest microcontrollers with an NPU or the 1 GHz Cortex-M85. Hardware-aware design also ranks networks by MAC count, yet no study has test",
+    "highlights": [
+      "研究TinyML Hits the Memory Wall: A...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261105-02",
+    "date": "2026-11-05",
+    "title": "Probability-Layer Clustering for Bound-and-Budget Calibration in Multi-Bound Robust Bidding of Renewable-Based Virtual Power Plants",
+    "authors": "Hadi Nemati, Álvaro Ortega, Enrique Lobato, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2610.41633v1",
+    "url": "https://arxiv.org/abs/2610.41633v1",
+    "abstract": "RVPPs that aggregate dispatchable and non-dispatchable renewable energy sources, storage, and flexible demand that bid in the day-ahead and secondary reserve markets must cope with uncertainties in market prices, renewable generation, and demand. MBRO is well suited to this setting because it hedges",
+    "highlights": [
+      "研究Probability-Layer Clustering f...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261105-03",
+    "date": "2026-11-05",
+    "title": "Uncertainty-Guided Cross-Modal Alignment for Diffusion-Based IoT Intrusion Detection",
+    "authors": "Mahdi Arab Loodaricheh, Anita Raja, Mohammad Hossein Manshaei",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.39117v1",
+    "url": "https://arxiv.org/abs/2610.39117v1",
+    "abstract": "Diffusion models evolve noisy states toward a learned data distribution, so their sampling behavior depends on the geometry of the representation in which denoising occurs. This dependence is especially important for multimodal data: independently trained encoders can map synchronized views to incom",
+    "highlights": [
+      "研究Uncertainty-Guided Cross-Modal...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  }
+]

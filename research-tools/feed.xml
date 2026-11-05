@@ -5,8 +5,50 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Nov 2026 07:01:39 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 07:28:01 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices</title>
+      <link>https://arxiv.org/abs/2611.03392v1</link>
+      <guid>pd-20261105-01</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <category>AI/ML</category>
+      <description>Neural network inference at the edge must fit tight energy budgets. Existing benchmarks compare few devices, do not report energy on a common basis, and omit the newest microcontrollers with an NPU or the 1 GHz Cortex-M85. Hardware-aware design also ranks networks by MAC count, yet no study has test
+
+• 研究TinyML Hits the Memory Wall: A...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Probability-Layer Clustering for Bound-and-Budget Calibration in Multi-Bound Robust Bidding of Renewable-Based Virtual Power Plants</title>
+      <link>https://arxiv.org/abs/2610.41633v1</link>
+      <guid>pd-20261105-02</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <category>VPP</category>
+      <description>RVPPs that aggregate dispatchable and non-dispatchable renewable energy sources, storage, and flexible demand that bid in the day-ahead and secondary reserve markets must cope with uncertainties in market prices, renewable generation, and demand. MBRO is well suited to this setting because it hedges
+
+• 研究Probability-Layer Clustering f...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
+    <item>
+      <title>Uncertainty-Guided Cross-Modal Alignment for Diffusion-Based IoT Intrusion Detection</title>
+      <link>https://arxiv.org/abs/2610.39117v1</link>
+      <guid>pd-20261105-03</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Diffusion models evolve noisy states toward a learned data distribution, so their sampling behavior depends on the geometry of the representation in which denoising occurs. This dependence is especially important for multimodal data: independently trained encoders can map synchronized views to incom
+
+• 研究Uncertainty-Guided Cross-Modal...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices</title>
       <link>https://arxiv.org/abs/2611.03392v1</link>
@@ -660,48 +702,6 @@
       <description>Internet of Things (IoT) systems are increasingly deployed in smart homes, transportation, energy systems, and critical infrastructure. This broad connectivity improves service intelligence, but also enlarges the attack surface of IoT networks. Machine Learning (ML)-based Intrusion Detection Systems
 
 • 研究An LLM-Assisted AutoML Framewo...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>QoS-Aware Federated Learning for Multimodal In-Cabin Interaction in Smart Vehicles</title>
-      <link>https://arxiv.org/abs/2609.20123v1</link>
-      <guid>pd-20261019-11</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Modern smart vehicles leverage multimodal sensors, ranging from high-bandwidth vision systems to low-rate physiological monitors, to provide personalized in-cabin services. However, integrating high-fidelity multimodal fusion with collaborative training is often hindered by the heterogeneous and tim
-
-• 研究QoS-Aware Federated Learning f...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>FedPGT: Progressive Gradient Transmission for Vehicular Federated Learning over Time-Varying Channels</title>
-      <link>https://arxiv.org/abs/2609.18089v1</link>
-      <guid>pd-20261019-12</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Vehicular federated learning (VFL) enables privacy-preserving collaborative model training for intelligent transportation systems, where communication resource allocation and gradient sparsification techniques have been explored to reduce communication overhead. However, vehicle mobility leads to ra
-
-• 研究FedPGT: Progressive Gradient T...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Day-ahead Coordination of Virtual Power Plants within Active Distribution Networks using Deterministic Bi-Level Optimization</title>
-      <link>https://arxiv.org/abs/2609.17927v1</link>
-      <guid>pd-20261019-13</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>VPP</category>
-      <description>This paper proposes a deterministic bilevel optimization framework for the coordinated operation of Virtual Power Plants (VPPs) embedded in an active distribution network. The Distribution System Operator (DSO) acts as the upper-level leader, minimizing a weighted combination of expenditure, active 
-
-• 研究Day-ahead Coordination of Virt...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
