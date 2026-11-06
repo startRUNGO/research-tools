@@ -1,0 +1,63 @@
+[
+  {
+    "id": "pd-20261106-01",
+    "date": "2026-11-06",
+    "title": "Energy Measurement and Optimization of TinyML in Resource-Constrained Embedded Systems: A Systematic Mapping Study",
+    "authors": "Clariele Almeida, Renan Beserra, Rafael Moura, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2611.07264v1",
+    "url": "https://arxiv.org/abs/2611.07264v1",
+    "abstract": "The rapid expansion of the Internet of Things (IoT) has increased the volume of data generated at the network edge, where many devices operate under severe memory, processing, and energy constraints. In this context, Tiny Machine Learning (TinyML) enables machine learning (ML) tasks to be executed o",
+    "highlights": [
+      "研究Energy Measurement and Optimiz...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261106-02",
+    "date": "2026-11-06",
+    "title": "TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices",
+    "authors": "Pietro Bonazzi, Luigi Capogrosso, Ahmet Celik, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2611.03392v1",
+    "url": "https://arxiv.org/abs/2611.03392v1",
+    "abstract": "Neural network inference at the edge must fit tight energy budgets. Existing benchmarks compare few devices, do not report energy on a common basis, and omit the newest microcontrollers with an NPU or the 1 GHz Cortex-M85. Hardware-aware design also ranks networks by MAC count, yet no study has test",
+    "highlights": [
+      "研究TinyML Hits the Memory Wall: A...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261106-03",
+    "date": "2026-11-06",
+    "title": "Probability-Layer Clustering for Bound-and-Budget Calibration in Multi-Bound Robust Bidding of Renewable-Based Virtual Power Plants",
+    "authors": "Hadi Nemati, Álvaro Ortega, Enrique Lobato, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2610.41633v1",
+    "url": "https://arxiv.org/abs/2610.41633v1",
+    "abstract": "RVPPs that aggregate dispatchable and non-dispatchable renewable energy sources, storage, and flexible demand that bid in the day-ahead and secondary reserve markets must cope with uncertainties in market prices, renewable generation, and demand. MBRO is well suited to this setting because it hedges",
+    "highlights": [
+      "研究Probability-Layer Clustering f...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  }
+]
