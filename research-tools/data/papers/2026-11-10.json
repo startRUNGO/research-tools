@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pd-20261110-01",
+    "date": "2026-11-10",
+    "title": "Energy Measurement and Optimization of TinyML in Resource-Constrained Embedded Systems: A Systematic Mapping Study",
+    "authors": "Clariele Almeida, Renan Beserra, Rafael Moura, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2611.07264v1",
+    "url": "https://arxiv.org/abs/2611.07264v1",
+    "abstract": "The rapid expansion of the Internet of Things (IoT) has increased the volume of data generated at the network edge, where many devices operate under severe memory, processing, and energy constraints. In this context, Tiny Machine Learning (TinyML) enables machine learning (ML) tasks to be executed o",
+    "highlights": [
+      "研究Energy Measurement and Optimiz...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261110-02",
+    "date": "2026-11-10",
+    "title": "Towards Lightweight IoT Intrusion Detection: Feature Optimization and Explainable Machine Learning for Resource-Constrained Environment",
+    "authors": "Shaker Nawasra, Munther Abualkibash",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2611.10707v1",
+    "url": "https://arxiv.org/abs/2611.10707v1",
+    "abstract": "Machine learning-based intrusion detection systems (IDSs) can improve IoT security but often rely on large feature sets that increase computational overhead and limit deployment on resource-constrained devices. This paper presents a resource-efficient and explainable feature optimization framework f",
+    "highlights": [
+      "研究Towards Lightweight IoT Intrus...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  }
+]
