@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 07:48:19 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 07:25:31 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Towards Lightweight IoT Intrusion Detection: Feature Optimization and Explainable Machine Learning for Resource-Constrained Environment</title>
+      <link>https://arxiv.org/abs/2611.10707v1</link>
+      <guid>pd-20261113-01</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Machine learning-based intrusion detection systems (IDSs) can improve IoT security but often rely on large feature sets that increase computational overhead and limit deployment on resource-constrained devices. This paper presents a resource-efficient and explainable feature optimization framework f
+
+• 研究Towards Lightweight IoT Intrus...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Energy Measurement and Optimization of TinyML in Resource-Constrained Embedded Systems: A Systematic Mapping Study</title>
       <link>https://arxiv.org/abs/2611.07264v1</link>
@@ -688,20 +702,6 @@
       <description>Language models have shown strong potential for intrusion detection, but their high memory and computational demands make them difficult to deploy in resource-constrained IoT environments. In this work, we propose a compact Transformer-based architecture that compresses the input into a small latent
 
 • 研究Parameters efficient language ...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Heart Signal (ECG) as Vibration Signature for Human Authentication Using TinyML</title>
-      <link>https://arxiv.org/abs/2610.24761v1</link>
-      <guid>pd-20261022-01</guid>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
-      <category>AI/ML</category>
-      <description>Ensuring data security in the era of Artificial Intelligence (AI) and deepfake technology requires robust biometric systems. Conventional methods such as facial recognition, iris scans, fingerprints, and voice recognition are increasingly vulnerable to spoofing and provide only one-time authenticati
-
-• 研究Heart Signal (ECG) as Vibratio...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
