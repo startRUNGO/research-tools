@@ -5,8 +5,22 @@
     <link>https://startrungo.github.io/research-tools/research-tools/#paper-digest</link>
     <description>Daily curated papers from top journals in Federated Learning, IoV Security, TinyML, Virtual Power Plant, and Energy Management.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Nov 2026 07:25:31 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 07:05:54 GMT</lastBuildDate>
     <atom:link href="https://startrungo.github.io/research-tools/research-tools/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Towards Lightweight IoT Intrusion Detection: Feature Optimization and Explainable Machine Learning for Resource-Constrained Environment</title>
+      <link>https://arxiv.org/abs/2611.10707v1</link>
+      <guid>pd-20261114-01</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>Machine learning-based intrusion detection systems (IDSs) can improve IoT security but often rely on large feature sets that increase computational overhead and limit deployment on resource-constrained devices. This paper presents a resource-efficient and explainable feature optimization framework f
+
+• 研究Towards Lightweight IoT Intrus...的新方法
+• 详见原文摘要
+• 具有一定创新性
+
+待详细分析</description>
+    </item>
     <item>
       <title>Towards Lightweight IoT Intrusion Detection: Feature Optimization and Explainable Machine Learning for Resource-Constrained Environment</title>
       <link>https://arxiv.org/abs/2611.10707v1</link>
@@ -688,20 +702,6 @@
       <description>The electrification of residential energy systems and adoption of electric vehicles (EVs) create demand-side flexibility. However, random driving behaviour makes it difficult to ensure EV readiness at departure and maintain thermal comfort. To address this, we formulate residential scheduling as a d
 
 • 研究Distributionally Robust Chance...的新方法
-• 详见原文摘要
-• 具有一定创新性
-
-待详细分析</description>
-    </item>
-    <item>
-      <title>Parameters efficient language model with latent cross-attention for IoT intrusion detection</title>
-      <link>https://arxiv.org/abs/2610.30222v1</link>
-      <guid>pd-20261024-03</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Security</category>
-      <description>Language models have shown strong potential for intrusion detection, but their high memory and computational demands make them difficult to deploy in resource-constrained IoT environments. In this work, we propose a compact Transformer-based architecture that compresses the input into a small latent
-
-• 研究Parameters efficient language ...的新方法
 • 详见原文摘要
 • 具有一定创新性
 
