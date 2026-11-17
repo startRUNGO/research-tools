@@ -1,5 +1,417 @@
 [
   {
+    "id": "pd-20261117-01",
+    "date": "2026-11-17",
+    "title": "Towards Lightweight IoT Intrusion Detection: Feature Optimization and Explainable Machine Learning for Resource-Constrained Environment",
+    "authors": "Shaker Nawasra, Munther Abualkibash",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2611.10707v1",
+    "url": "https://arxiv.org/abs/2611.10707v1",
+    "abstract": "Machine learning-based intrusion detection systems (IDSs) can improve IoT security but often rely on large feature sets that increase computational overhead and limit deployment on resource-constrained devices. This paper presents a resource-efficient and explainable feature optimization framework f",
+    "highlights": [
+      "研究Towards Lightweight IoT Intrus...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-02",
+    "date": "2026-11-17",
+    "title": "Energy Measurement and Optimization of TinyML in Resource-Constrained Embedded Systems: A Systematic Mapping Study",
+    "authors": "Clariele Almeida, Renan Beserra, Rafael Moura, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2611.07264v1",
+    "url": "https://arxiv.org/abs/2611.07264v1",
+    "abstract": "The rapid expansion of the Internet of Things (IoT) has increased the volume of data generated at the network edge, where many devices operate under severe memory, processing, and energy constraints. In this context, Tiny Machine Learning (TinyML) enables machine learning (ML) tasks to be executed o",
+    "highlights": [
+      "研究Energy Measurement and Optimiz...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化",
+      "能源管理"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-03",
+    "date": "2026-11-17",
+    "title": "TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices",
+    "authors": "Pietro Bonazzi, Luigi Capogrosso, Ahmet Celik, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2611.03392v1",
+    "url": "https://arxiv.org/abs/2611.03392v1",
+    "abstract": "Neural network inference at the edge must fit tight energy budgets. Existing benchmarks compare few devices, do not report energy on a common basis, and omit the newest microcontrollers with an NPU or the 1 GHz Cortex-M85. Hardware-aware design also ranks networks by MAC count, yet no study has test",
+    "highlights": [
+      "研究TinyML Hits the Memory Wall: A...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-04",
+    "date": "2026-11-17",
+    "title": "Probability-Layer Clustering for Bound-and-Budget Calibration in Multi-Bound Robust Bidding of Renewable-Based Virtual Power Plants",
+    "authors": "Hadi Nemati, Álvaro Ortega, Enrique Lobato, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2610.41633v1",
+    "url": "https://arxiv.org/abs/2610.41633v1",
+    "abstract": "RVPPs that aggregate dispatchable and non-dispatchable renewable energy sources, storage, and flexible demand that bid in the day-ahead and secondary reserve markets must cope with uncertainties in market prices, renewable generation, and demand. MBRO is well suited to this setting because it hedges",
+    "highlights": [
+      "研究Probability-Layer Clustering f...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-05",
+    "date": "2026-11-17",
+    "title": "Uncertainty-Guided Cross-Modal Alignment for Diffusion-Based IoT Intrusion Detection",
+    "authors": "Mahdi Arab Loodaricheh, Anita Raja, Mohammad Hossein Manshaei",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.39117v1",
+    "url": "https://arxiv.org/abs/2610.39117v1",
+    "abstract": "Diffusion models evolve noisy states toward a learned data distribution, so their sampling behavior depends on the geometry of the representation in which denoising occurs. This dependence is especially important for multimodal data: independently trained encoders can map synchronized views to incom",
+    "highlights": [
+      "研究Uncertainty-Guided Cross-Modal...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-06",
+    "date": "2026-11-17",
+    "title": "A lightweight C Code Generator for Heterogeneous TinyML Systems",
+    "authors": "Chen Liu, Bernhard Vogginger, Christian Mayr",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.36907v1",
+    "url": "https://arxiv.org/abs/2610.36907v1",
+    "abstract": "Over the past decade, the significant advancements in artificial intelligence have been closely tied to increasingly sophisticated training frameworks and steadily powerful computing hardware. However, the entire ecosystem remains fragmented. On one hand, models are represented with frameworks depen",
+    "highlights": [
+      "研究A lightweight C Code Generator...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-07",
+    "date": "2026-11-17",
+    "title": "Clean-label Poisoning Attack and Defense Game for Federated Learning in Vehicular Networks",
+    "authors": "Yalin E. Sagduyu, Tugba Erpek, Nathan Stephenson, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.32765v1",
+    "url": "https://arxiv.org/abs/2610.32765v1",
+    "abstract": "This paper studies interactions between clean-label poisoning attack and defense in vehicular networks using federated learning (FL). Basic Safety Message (BSM) classification for anomaly detection is modeled as a distributed learning problem over a vehicular network with dynamic topology. As a crit",
+    "highlights": [
+      "研究Clean-label Poisoning Attack a...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-08",
+    "date": "2026-11-17",
+    "title": "Parameters efficient language model with latent cross-attention for IoT intrusion detection",
+    "authors": "Frederic Adjewa, Moez Esseghir, Leila Merghem-Boulahia, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.30222v2",
+    "url": "https://arxiv.org/abs/2610.30222v2",
+    "abstract": "Language models have shown strong potential for intrusion detection, but their high memory and computational demands make them difficult to deploy in resource-constrained IoT environments. In this work, we propose a compact Transformer-based architecture that compresses the input into a small latent",
+    "highlights": [
+      "研究Parameters efficient language ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-09",
+    "date": "2026-11-17",
+    "title": "Distributionally Robust Chance-Constrained Reinforcement Learning for Home Energy Management under Electric Vehicle Uncertainty",
+    "authors": "Meng Yuan, Ye Wang, Yi Mei, et al.",
+    "journal": "arXiv",
+    "field": "Energy",
+    "arxiv": "2610.25151v1",
+    "url": "https://arxiv.org/abs/2610.25151v1",
+    "abstract": "The electrification of residential energy systems and adoption of electric vehicles (EVs) create demand-side flexibility. However, random driving behaviour makes it difficult to ensure EV readiness at departure and maintain thermal comfort. To address this, we formulate residential scheduling as a d",
+    "highlights": [
+      "研究Distributionally Robust Chance...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "车联网",
+      "能源管理",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-10",
+    "date": "2026-11-17",
+    "title": "Heart Signal (ECG) as Vibration Signature for Human Authentication Using TinyML",
+    "authors": "Yogeswar Reddy Thota, Student Member,  IEEE, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.24761v1",
+    "url": "https://arxiv.org/abs/2610.24761v1",
+    "abstract": "Ensuring data security in the era of Artificial Intelligence (AI) and deepfake technology requires robust biometric systems. Conventional methods such as facial recognition, iris scans, fingerprints, and voice recognition are increasingly vulnerable to spoofing and provide only one-time authenticati",
+    "highlights": [
+      "研究Heart Signal (ECG) as Vibratio...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-11",
+    "date": "2026-11-17",
+    "title": "Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants",
+    "authors": "Pooja Algikar, Stefano Fenu, Kumarsinh Jhala, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2610.15183v1",
+    "url": "https://arxiv.org/abs/2610.15183v1",
+    "abstract": "The rapid proliferation of distributed energy resources (DERs) aggregated by virtual power plants (VPPs) elevates cybersecurity risk by expanding the attack surface. A coordinated cyberattack has the potential to disrupt distribution-system, bulk-system, and market operations. Existing cyberphysical",
+    "highlights": [
+      "研究Game-Theoretic Reinforcement L...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂",
+      "强化学习"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-12",
+    "date": "2026-11-17",
+    "title": "SecFD-FL: Frequency-Decoupled Federated Learning with Secure Aggregation for Charging Load Forecasting in Internet of Electric Vehicles",
+    "authors": "Mamunur Rashid, Nan Chen, Syed Ali Asad Rizvi, et al.",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2610.12909v1",
+    "url": "https://arxiv.org/abs/2610.12909v1",
+    "abstract": "Accurate charging load forecasting is essential for the reliability and efficiency of the Internet of Electric Vehicles (IoEV), yet it is challenging on two fronts: charging demand is highly stochastic, and the data collected by distributed sensors is privacy-sensitive. Although federated learning (",
+    "highlights": [
+      "研究SecFD-FL: Frequency-Decoupled ...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "车联网"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-13",
+    "date": "2026-11-17",
+    "title": "A Deployment-Aware Feasibility Framework for Machine Learning-Based IoT Intrusion Detection Across Edge, Fog, and Cloud Architectures",
+    "authors": "Shaker Nawasra, Munther Abualkibash",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2610.08867v1",
+    "url": "https://arxiv.org/abs/2610.08867v1",
+    "abstract": "The rapid growth and heterogeneity of Internet of Things (IoT) environments have exposed fundamental limitations in traditional rule-based and signature-based intrusion detection systems. This paper presents a quantitative deployment-aware analysis of machine learning (ML)-based intrusion detection ",
+    "highlights": [
+      "研究A Deployment-Aware Feasibility...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-14",
+    "date": "2026-11-17",
+    "title": "Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework",
+    "authors": "Zawad Yalmie Sazid, Robert Abbas",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.39584v1",
+    "url": "https://arxiv.org/abs/2609.39584v1",
+    "abstract": "Edge computing has emerged as a critical computing paradigm in modern distributed systems by migrating data processing closer to end users and Internet of Things (IoT) devices. While this paradigm decentralizes processes, minimizes latency, and reduces backhaul bandwidth congestion, it exponentially",
+    "highlights": [
+      "研究Cybersecurity in Edge Computin...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-15",
+    "date": "2026-11-17",
+    "title": "Resource-Aware Rolling-Horizon Controller for Renewable-Based Virtual Power Plants Providing Automatic Frequency Restoration Reserves",
+    "authors": "Marco Vinicio Avendaño-Caiza, Juan Diego Rios-Peñaloza, Javier Roldán-Pérez, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2609.31017v1",
+    "url": "https://arxiv.org/abs/2609.31017v1",
+    "abstract": "Virtual power plants (VPPs) are an effective solution for increasing the penetration of renewable energy sources (RES) in power systems. Moreover, VPPs can provide ancillary services if generators and loads are closely connected and properly coordinated. This aspect has been addressed in several stu",
+    "highlights": [
+      "研究Resource-Aware Rolling-Horizon...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-16",
+    "date": "2026-11-17",
+    "title": "Rank-Reliable Teacher-Guided Fitness Approximation for Expensive Evolutionary Optimization: A TinyML Architecture Search Study",
+    "authors": "Soumen Garai, Suman Samui",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2609.30553v1",
+    "url": "https://arxiv.org/abs/2609.30553v1",
+    "abstract": "Expensive evolutionary search does not always need an exact fitness estimate for every candidate. It often needs a reliable answer to a simpler question: which candidate is better? We address this need through Teacher-Guided Learning NSGA-II (TGL-NSGA-II), a low-fidelity framework for constrained Ti",
+    "highlights": [
+      "研究Rank-Reliable Teacher-Guided F...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-17",
+    "date": "2026-11-17",
+    "title": "Reliable Federated TinyML Deployment for IoT Security",
+    "authors": "Younsoo Park, Seokhyoen Bae, Shasi Kumar Ramachandran Prabhu, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.27202v1",
+    "url": "https://arxiv.org/abs/2609.27202v1",
+    "abstract": "The growing deployment of Internet of Things (IoT) devices has increased the need for privacy-preserving intrusion detection systems that operate directly on resource-constrained hardware. Federated Learning enables collaborative model training without sharing raw data, but conventional federated mo",
+    "highlights": [
+      "研究Reliable Federated TinyML Depl...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-18",
+    "date": "2026-11-17",
+    "title": "Unmasking Shortcut Learning in IoT Intrusion Detection: A Forensic, Multi-Paradigm Evaluation of Feature Dependence and Data Leakage",
+    "authors": "Uday Shankar Roy, Mahbuba Jahan Minu",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.28725v1",
+    "url": "https://arxiv.org/abs/2609.28725v1",
+    "abstract": "Machine learning-based Network Intrusion Detection Systems often report near-perfect performance on IoT benchmarks. However, whether these models learn generalizable attack behavior or exploit spurious dataset shortcuts- such as static testbed IP/MAC addresses and chronological recording artifacts-r",
+    "highlights": [
+      "研究Unmasking Shortcut Learning in...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-19",
+    "date": "2026-11-17",
+    "title": "Improving Service Availability in KubeEdge-Based Architectures Using Lightweight Intrusion Detection",
+    "authors": "Harrol Ndjeudji Kuibou, Mostafa Anouar Ghorab, Mohamed Aymen Saied",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.27052v1",
+    "url": "https://arxiv.org/abs/2609.27052v1",
+    "abstract": "The increasing adoption of the Internet of Things (IoT) and cloud computing has accelerated the evolution of edge computing paradigms [1]. Industry forecasts estimate that the number of connected IoT devices will reach approximately 50 billion by 2030, following an estimated 38 billion connections b",
+    "highlights": [
+      "研究Improving Service Availability...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261117-20",
+    "date": "2026-11-17",
+    "title": "An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks",
+    "authors": "Li Yang",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2609.23097v1",
+    "url": "https://arxiv.org/abs/2609.23097v1",
+    "abstract": "Internet of Things (IoT) systems are increasingly deployed in smart homes, transportation, energy systems, and critical infrastructure. This broad connectivity improves service intelligence, but also enlarges the attack surface of IoT networks. Machine Learning (ML)-based Intrusion Detection Systems",
+    "highlights": [
+      "研究An LLM-Assisted AutoML Framewo...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20261116-01",
     "date": "2026-11-16",
     "title": "Towards Lightweight IoT Intrusion Detection: Feature Optimization and Explainable Machine Learning for Resource-Constrained Environment",
