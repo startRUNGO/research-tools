@@ -1,5 +1,46 @@
 [
   {
+    "id": "pd-20261121-01",
+    "date": "2026-11-21",
+    "title": "Hierarchical Personalized Federated Learning for Fine-Grained Intrusion Detection: A Multi-Class Analysis in Heterogeneous Attack Environments",
+    "authors": "Abul Kalam Azad, Travis Atkison",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2611.21970v1",
+    "url": "https://arxiv.org/abs/2611.21970v1",
+    "abstract": "Intrusion Detection Systems (IDS) play a vital role in protecting modern network infrastructures. Although Federated Learning (FL) enables collaborative training without sharing raw network traffic, global models struggle with non-IID attack distributions. Moreover, practical security operations req",
+    "highlights": [
+      "研究Hierarchical Personalized Fede...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "联邦学习",
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261121-02",
+    "date": "2026-11-21",
+    "title": "Who Gets the Grid Capacity? Allocating Dynamic Access Among Multiple Virtual Power Plants",
+    "authors": "Nakul Sreekanth, Jun He, Andrew L. Liu, et al.",
+    "journal": "arXiv",
+    "field": "VPP",
+    "arxiv": "2611.21981v1",
+    "url": "https://arxiv.org/abs/2611.21981v1",
+    "abstract": "Virtual power plants (VPPs) trade in the same wholesale market and share distribution lines and transformers, and uncoordinated, profit-maximizing VPPs can push a shared transformer past its thermal limit or drive a feeder voltage out of band. The utility, which only observes the front-of-the-meter ",
+    "highlights": [
+      "研究Who Gets the Grid Capacity? Al...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "虚拟电厂"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20261120-01",
     "date": "2026-11-20",
     "title": "Hierarchical Personalized Federated Learning for Fine-Grained Intrusion Detection: A Multi-Class Analysis in Heterogeneous Attack Environments",
