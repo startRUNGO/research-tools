@@ -1,5 +1,67 @@
 [
   {
+    "id": "pd-20261126-01",
+    "date": "2026-11-26",
+    "title": "ArrythML-II: An Optimized TinyML Framework for ECG Arrhythmia Detection and Multi-Class Beat Classification on Wearable Devices",
+    "authors": "Nagarajan S, Kurian Polachan",
+    "journal": "arXiv",
+    "field": "AI/ML",
+    "arxiv": "2611.28791v1",
+    "url": "https://arxiv.org/abs/2611.28791v1",
+    "abstract": "This paper presents ArrythML-II, an optimized TinyML framework for on-device ECG arrhythmia detection and multi-class beat classification on wearable platforms. A systematic hyperparameter optimization framework is developed to identify compact autoencoder architectures for binary ECG arrhythmia det",
+    "highlights": [
+      "研究ArrythML-II: An Optimized Tiny...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261126-02",
+    "date": "2026-11-26",
+    "title": "Operationalizing Quantum Machine Learning for IoT Network Intrusion Detection",
+    "authors": "Domenico Ciuonzo, Idio Guarino, Alfredo Nascita, et al.",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2611.32314v1",
+    "url": "https://arxiv.org/abs/2611.32314v1",
+    "abstract": "The rapid growth of the Internet of Things (IoT) has increased networked systems' exposure to cyber threats, making Network Intrusion Detection Systems (NIDSs) essential for securing heterogeneous environments. While Deep Learning (DL) has shown strong performance in traffic analysis, Quantum Machin",
+    "highlights": [
+      "研究Operationalizing Quantum Machi...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测"
+    ],
+    "comment": "待详细分析"
+  },
+  {
+    "id": "pd-20261126-03",
+    "date": "2026-11-26",
+    "title": "Comparative Analysis of Machine Learning Classifiers for Lightweight IoT Intrusion Detection Using Feature Reduction",
+    "authors": "Shaker Nawasra",
+    "journal": "arXiv",
+    "field": "Security",
+    "arxiv": "2611.29869v1",
+    "url": "https://arxiv.org/abs/2611.29869v1",
+    "abstract": "Machine learning-based intrusion detection systems can improve IoT security, but high-dimensional traffic features and imbalanced datasets may reduce model reliability and deployment feasibility in resource-constrained environments. This study presents a lightweight binary IoT intrusion detection fr",
+    "highlights": [
+      "研究Comparative Analysis of Machin...的新方法",
+      "详见原文摘要",
+      "具有一定创新性"
+    ],
+    "tags": [
+      "入侵检测",
+      "轻量化"
+    ],
+    "comment": "待详细分析"
+  },
+  {
     "id": "pd-20261125-01",
     "date": "2026-11-25",
     "title": "ArrythML-II: An Optimized TinyML Framework for ECG Arrhythmia Detection and Multi-Class Beat Classification on Wearable Devices",
